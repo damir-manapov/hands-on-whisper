@@ -49,12 +49,13 @@ def transcribe_openai_whisper(
 def transcribe_whispercpp(
   audio_path: str,
   model_path: str,
+  language: str | None,
 ) -> str:
   """Transcribe using whisper.cpp."""
   from pywhispercpp.model import Model
 
   model = Model(model_path)
-  segments = model.transcribe(audio_path)
+  segments = model.transcribe(audio_path, language=language or "")
   return " ".join(segment.text.strip() for segment in segments)
 
 
@@ -295,7 +296,7 @@ def run_single(  # noqa: PLR0913
   elif backend == "openai":
     result = transcribe_openai_whisper(audio, model, language, device)
   elif backend == "whispercpp":
-    result = transcribe_whispercpp(audio, model)
+    result = transcribe_whispercpp(audio, model, language)
 
   duration = time.perf_counter() - start_time
 
