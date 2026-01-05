@@ -56,8 +56,8 @@ uv run python src/transcribe.py audio.wav --language ru
 # Use GPU
 uv run python src/transcribe.py audio.wav --device cuda
 
-# Save to file
-uv run python src/transcribe.py audio.wav --output transcript.txt
+# Compare multiple backends/models (runs all combinations)
+uv run python src/transcribe.py audio.wav --backend faster-whisper openai --model base large-v3
 
 # Show all options
 uv run python src/transcribe.py --help

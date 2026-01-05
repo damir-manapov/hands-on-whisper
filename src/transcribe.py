@@ -2,6 +2,7 @@
 
 import argparse
 import hashlib
+import itertools
 import json
 import sys
 from datetime import UTC, datetime
@@ -65,6 +66,9 @@ Examples:
   %(prog)s audio.wav --backend openai --model large-v3
   %(prog)s audio.wav --backend whispercpp --model-path models/ggml-base.bin
   %(prog)s audio.wav --language ru --device cuda
+
+  # Compare multiple backends/models (runs all combinations)
+  %(prog)s audio.wav --backend faster-whisper openai --model base large-v3
     """,
   )
 
@@ -72,32 +76,37 @@ Examples:
   parser.add_argument(
     "--backend",
     "-b",
+    nargs="+",
     choices=["faster-whisper", "openai", "whispercpp"],
-    default="faster-whisper",
-    help="Transcription backend (default: faster-whisper)",
+    default=["faster-whisper"],
+    help="Transcription backend(s) (default: faster-whisper)",
   )
   parser.add_argument(
     "--model",
     "-m",
-    default="base",
-    help="Model size: tiny, base, small, medium, large-v3 (default: base)",
+    nargs="+",
+    default=["base"],
+    help="Model size(s): tiny, base, small, medium, large-v3 (default: base)",
   )
   parser.add_argument(
     "--model-path",
-    help="Path to ggml model file (required for whispercpp backend)",
+    nargs="+",
+    help="Path(s) to ggml model file (required for whispercpp backend)",
   )
   parser.add_argument(
     "--language",
     "-l",
-    default=None,
-    help="Language code (e.g., en, ru). Auto-detect if not specified",
+    nargs="+",
+    default=[None],
+    help="Language code(s) (e.g., en, ru). Auto-detect if not specified",
   )
   parser.add_argument(
     "--device",
     "-d",
+    nargs="+",
     choices=["cpu", "cuda"],
-    default="cpu",
-    help="Device to use (default: cpu)",
+    default=["cpu"],
+    help="Device(s) to use (default: cpu)",
   )
   parser.add_argument(
     "--output",
@@ -111,32 +120,14 @@ Examples:
     print(f"Error: Audio file not found: {args.audio}", file=sys.stderr)
     sys.exit(1)
 
-  if args.backend == "whispercpp" and not args.model_path:
+  if "whispercpp" in args.backend and not args.model_path:
     print("Error: --model-path is required for whispercpp backend", file=sys.stderr)
     sys.exit(1)
 
-  if args.backend == "faster-whisper":
-    result = transcribe_faster_whisper(args.audio, args.model, args.language, args.device)
-  elif args.backend == "openai":
-    result = transcribe_openai_whisper(args.audio, args.model, args.language, args.device)
-  elif args.backend == "whispercpp":
-    result = transcribe_whispercpp(args.audio, args.model_path)
+  # Build all combinations
+  combinations = list(itertools.product(args.backend, args.model, args.language, args.device))
+  print(f"Running {len(combinations)} transcription(s)...")
 
-  # Build run record with unique ID based on settings
-  model_used = args.model_path if args.backend == "whispercpp" else args.model
-  run_id = generate_run_id(args.backend, model_used, args.language, args.device)
-
-  run_record = {
-    "id": run_id,
-    "timestamp": datetime.now(UTC).isoformat(),
-    "backend": args.backend,
-    "model": model_used,
-    "language": args.language,
-    "device": args.device,
-    "text": result,
-  }
-
-  # Save to JSON file named after audio file
   audio_path = Path(args.audio)
   json_path = audio_path.with_suffix(".json")
 
@@ -145,22 +136,58 @@ Examples:
   else:
     data = {"audio": str(audio_path), "runs": []}
 
+  for backend, model, language, device in combinations:
+    # For whispercpp, use model_path instead of model
+    if backend == "whispercpp":
+      model_paths = args.model_path or []
+      for model_path in model_paths:
+        run_single(args.audio, backend, model_path, language, device, data)
+    else:
+      run_single(args.audio, backend, model, language, device, data)
+
+  json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+  print(f"\nAll results saved to {json_path}")
+
+
+def run_single(  # noqa: PLR0913
+  audio: str,
+  backend: str,
+  model: str,
+  language: str | None,
+  device: str,
+  data: dict,
+) -> None:
+  """Run a single transcription and update data."""
+  run_id = generate_run_id(backend, model, language, device)
+  print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
+
+  if backend == "faster-whisper":
+    result = transcribe_faster_whisper(audio, model, language, device)
+  elif backend == "openai":
+    result = transcribe_openai_whisper(audio, model, language, device)
+  elif backend == "whispercpp":
+    result = transcribe_whispercpp(audio, model)
+
+  run_record = {
+    "id": run_id,
+    "timestamp": datetime.now(UTC).isoformat(),
+    "backend": backend,
+    "model": model,
+    "language": language,
+    "device": device,
+    "text": result,
+  }
+
   # Update existing run with same ID or append new one
   existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
   if existing_idx is not None:
     data["runs"][existing_idx] = run_record
-    print(f"Updated existing run {run_id} in {json_path}")
+    print("  Updated existing run")
   else:
     data["runs"].append(run_record)
-    print(f"Added new run {run_id} to {json_path}")
+    print("  Added new run")
 
-  json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-
-  if args.output:
-    Path(args.output).write_text(result, encoding="utf-8")
-    print(f"Transcription also saved to {args.output}")
-  else:
-    print(result)
+  print(f"  Text: {result[:100]}..." if len(result) > 100 else f"  Text: {result}")
 
 
 if __name__ == "__main__":
