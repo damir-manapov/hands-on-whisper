@@ -114,7 +114,7 @@ uv run python src/transcribe.py r audio.json
 ```
 
 The report includes:
-- Performance summary table (sorted by duration)
+- Performance summary table (sorted by duration) with memory usage
 - Detailed transcription results for each run
 
 ## Output
@@ -129,6 +129,8 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
       "id": "a1b2c3d4e5f6",
       "timestamp": "2026-01-05T16:00:00+00:00",
       "duration_seconds": 12.34,
+      "memory_delta_mb": 657.8,
+      "memory_peak_mb": 681.5,
       "backend": "faster-whisper",
       "model": "base",
       "language": null,
@@ -138,6 +140,9 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
   ]
 }
 ```
+
+- `memory_delta_mb`: Memory increase during transcription (model loading + inference)
+- `memory_peak_mb`: Peak memory usage during run
 
 Each run has a unique ID based on settings (backend, model, language, device). Re-running with the same settings skips existing runs (use this to resume interrupted comparison runs).
 

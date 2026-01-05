@@ -6,9 +6,9 @@
 
 ## Performance Summary
 
-| # | Backend | Model | Language | Device | Duration (s) |
-|---|---------|-------|----------|--------|--------------|
-| 1 | faster-whisper | tiny | ru | cpu | 12.28 |
+| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) |
+|---|---------|-------|----------|--------|--------------|------------|---------------|
+| 1 | faster-whisper | tiny | ru | cpu | 12.28 | 657.8 | 681.5 |
 
 ## Transcription Results
 

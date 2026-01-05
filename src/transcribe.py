@@ -157,8 +157,8 @@ def generate_report(data: dict[str, Any]) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  lines.append("| # | Backend | Model | Language | Device | Duration (s) | Memory (MB) |")
-  lines.append("|---|---------|-------|----------|--------|--------------|-------------|")
+  lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) |")
+  lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|")
 
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
@@ -166,8 +166,11 @@ def generate_report(data: dict[str, Any]) -> str:
     lang = run.get("language") or "auto"
     device = run.get("device", "?")
     duration = run.get("duration_seconds", 0)
+    mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
-    lines.append(f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_peak} |")
+    lines.append(
+      f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} |"
+    )
 
   lines.append("")
 
