@@ -157,8 +157,8 @@ def generate_report(data: dict[str, Any]) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  lines.append("| # | Backend | Model | Language | Device | Duration (s) |")
-  lines.append("|---|---------|-------|----------|--------|--------------|")
+  lines.append("| # | Backend | Model | Language | Device | Duration (s) | Memory (MB) |")
+  lines.append("|---|---------|-------|----------|--------|--------------|-------------|")
 
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
@@ -166,7 +166,8 @@ def generate_report(data: dict[str, Any]) -> str:
     lang = run.get("language") or "auto"
     device = run.get("device", "?")
     duration = run.get("duration_seconds", 0)
-    lines.append(f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} |")
+    mem_peak = run.get("memory_peak_mb", 0)
+    lines.append(f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_peak} |")
 
   lines.append("")
 
@@ -441,6 +442,10 @@ def run_single(  # noqa: PLR0913
   cond_str = "" if condition_on_prev else ", no_cond_prev"
   print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}")
 
+  import psutil
+
+  process = psutil.Process()
+  mem_before = process.memory_info().rss
   start_time = time.perf_counter()
 
   if backend == "faster-whisper":
@@ -455,11 +460,16 @@ def run_single(  # noqa: PLR0913
     result = transcribe_whispercpp(audio, model, language, beam_size, temperature, compute_type)
 
   duration = time.perf_counter() - start_time
+  mem_after = process.memory_info().rss
+  mem_used_mb = round((mem_after - mem_before) / 1024 / 1024, 1)
+  mem_peak_mb = round(mem_after / 1024 / 1024, 1)
 
   run_record = {
     "id": run_id,
     "timestamp": datetime.now(UTC).isoformat(),
     "duration_seconds": round(duration, 2),
+    "memory_delta_mb": mem_used_mb,
+    "memory_peak_mb": mem_peak_mb,
     "backend": backend,
     "model": model,
     "language": language,
@@ -472,7 +482,7 @@ def run_single(  # noqa: PLR0913
   }
 
   data["runs"].append(run_record)
-  print(f"  Done ({duration:.2f}s)")
+  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB, peak: {mem_peak_mb}MB)")
   print(f"  Text: {result[:100]}..." if len(result) > 100 else f"  Text: {result}")
 
 
