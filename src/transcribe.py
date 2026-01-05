@@ -279,6 +279,13 @@ def run_single(  # noqa: PLR0913
 ) -> None:
   """Run a single transcription and update data."""
   run_id = generate_run_id(backend, model, language, device)
+
+  # Skip if we already have this run
+  existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
+  if existing_idx is not None:
+    print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device} - skipped (exists)")
+    return
+
   print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
 
   start_time = time.perf_counter()
@@ -303,15 +310,8 @@ def run_single(  # noqa: PLR0913
     "text": result,
   }
 
-  # Update existing run with same ID or append new one
-  existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
-  if existing_idx is not None:
-    data["runs"][existing_idx] = run_record
-    print(f"  Updated existing run ({duration:.2f}s)")
-  else:
-    data["runs"].append(run_record)
-    print(f"  Added new run ({duration:.2f}s)")
-
+  data["runs"].append(run_record)
+  print(f"  Done ({duration:.2f}s)")
   print(f"  Text: {result[:100]}..." if len(result) > 100 else f"  Text: {result}")
 
 
