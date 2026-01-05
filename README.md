@@ -41,27 +41,49 @@ curl -L -o models/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/
 
 ```bash
 # Basic transcription (uses faster-whisper by default)
-uv run python src/transcribe.py audio.wav
+uv run python src/transcribe.py transcribe audio.wav
 
 # Specify backend
-uv run python src/transcribe.py audio.wav --backend openai
-uv run python src/transcribe.py audio.wav --backend whispercpp --model-path models/ggml-base.bin
+uv run python src/transcribe.py transcribe audio.wav --backend openai
+uv run python src/transcribe.py transcribe audio.wav --backend whispercpp --model-path models/ggml-base.bin
 
 # Specify model size
-uv run python src/transcribe.py audio.wav --model large-v3
+uv run python src/transcribe.py transcribe audio.wav --model large-v3
 
 # Specify language (auto-detect if not set)
-uv run python src/transcribe.py audio.wav --language ru
+uv run python src/transcribe.py transcribe audio.wav --language ru
 
 # Use GPU
-uv run python src/transcribe.py audio.wav --device cuda
+uv run python src/transcribe.py transcribe audio.wav --device cuda
 
 # Compare multiple backends/models (runs all combinations)
-uv run python src/transcribe.py audio.wav --backend faster-whisper openai --model base large-v3
+uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper openai --model base large-v3
+
+# Short alias: 't' instead of 'transcribe'
+uv run python src/transcribe.py t audio.wav
 
 # Show all options
-uv run python src/transcribe.py --help
+uv run python src/transcribe.py transcribe --help
 ```
+
+## Report
+
+Generate a markdown report from transcription results:
+
+```bash
+# Save report to audio.md (auto-named from JSON file)
+uv run python src/transcribe.py report audio.json
+
+# Save to custom path
+uv run python src/transcribe.py report audio.json -o custom-report.md
+
+# Short alias: 'r' instead of 'report'
+uv run python src/transcribe.py r audio.json
+```
+
+The report includes:
+- Performance summary table (sorted by duration)
+- Detailed transcription results for each run
 
 ## Output
 
@@ -74,6 +96,7 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
     {
       "id": "a1b2c3d4e5f6",
       "timestamp": "2026-01-05T16:00:00+00:00",
+      "duration_seconds": 12.34,
       "backend": "faster-whisper",
       "model": "base",
       "language": null,

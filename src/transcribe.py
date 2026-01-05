@@ -8,6 +8,7 @@ import sys
 import time
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 
 
 def generate_run_id(backend: str, model: str, language: str | None, device: str) -> str:
@@ -57,66 +58,71 @@ def transcribe_whispercpp(
   return " ".join(segment.text.strip() for segment in segments)
 
 
-def main() -> None:
-  parser = argparse.ArgumentParser(
-    description="Transcribe audio using various Whisper backends",
-    formatter_class=argparse.RawDescriptionHelpFormatter,
-    epilog="""
-Examples:
-  %(prog)s audio.wav
-  %(prog)s audio.wav --backend openai --model large-v3
-  %(prog)s audio.wav --backend whispercpp --model-path models/ggml-base.bin
-  %(prog)s audio.wav --language ru --device cuda
+def generate_report(data: dict[str, Any]) -> str:
+  """Generate a markdown report from transcription data."""
+  lines = ["# Transcription Report", ""]
+  lines.append(f"**Audio file:** `{data.get('audio', 'unknown')}`")
+  lines.append("")
 
-  # Compare multiple backends/models (runs all combinations)
-  %(prog)s audio.wav --backend faster-whisper openai --model base large-v3
-    """,
-  )
+  runs = data.get("runs", [])
+  if not runs:
+    lines.append("No transcription runs found.")
+    return "\n".join(lines)
 
-  parser.add_argument("audio", help="Path to audio file")
-  parser.add_argument(
-    "--backend",
-    "-b",
-    nargs="+",
-    choices=["faster-whisper", "openai", "whispercpp"],
-    default=["faster-whisper"],
-    help="Transcription backend(s) (default: faster-whisper)",
-  )
-  parser.add_argument(
-    "--model",
-    "-m",
-    nargs="+",
-    default=["base"],
-    help="Model size(s): tiny, base, small, medium, large-v3 (default: base)",
-  )
-  parser.add_argument(
-    "--model-path",
-    nargs="+",
-    help="Path(s) to ggml model file (required for whispercpp backend)",
-  )
-  parser.add_argument(
-    "--language",
-    "-l",
-    nargs="+",
-    default=[None],
-    help="Language code(s) (e.g., en, ru). Auto-detect if not specified",
-  )
-  parser.add_argument(
-    "--device",
-    "-d",
-    nargs="+",
-    choices=["cpu", "cuda"],
-    default=["cpu"],
-    help="Device(s) to use (default: cpu)",
-  )
-  parser.add_argument(
-    "--output",
-    "-o",
-    help="Output file path (prints to stdout if not specified)",
-  )
+  # Sort by duration for comparison
+  sorted_runs = sorted(runs, key=lambda r: r.get("duration_seconds", 0))
 
-  args = parser.parse_args()
+  lines.append(f"**Total runs:** {len(runs)}")
+  lines.append("")
 
+  # Summary table
+  lines.append("## Performance Summary")
+  lines.append("")
+  lines.append("| # | Backend | Model | Language | Device | Duration (s) |")
+  lines.append("|---|---------|-------|----------|--------|--------------|")
+
+  for i, run in enumerate(sorted_runs, 1):
+    backend = run.get("backend", "?")
+    model = run.get("model", "?")
+    lang = run.get("language") or "auto"
+    device = run.get("device", "?")
+    duration = run.get("duration_seconds", 0)
+    lines.append(f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} |")
+
+  lines.append("")
+
+  # Detailed results
+  lines.append("## Transcription Results")
+  lines.append("")
+
+  for i, run in enumerate(sorted_runs, 1):
+    run_id = run.get("id", "?")
+    backend = run.get("backend", "?")
+    model = run.get("model", "?")
+    lang = run.get("language") or "auto"
+    device = run.get("device", "?")
+    duration = run.get("duration_seconds", 0)
+    timestamp = run.get("timestamp", "?")
+    text = run.get("text", "")
+
+    lines.append(f"### {i}. {backend} / {model}")
+    lines.append("")
+    lines.append(f"- **ID:** `{run_id}`")
+    lines.append(f"- **Language:** {lang}")
+    lines.append(f"- **Device:** {device}")
+    lines.append(f"- **Duration:** {duration:.2f}s")
+    lines.append(f"- **Timestamp:** {timestamp}")
+    lines.append("")
+    lines.append("**Text:**")
+    lines.append("")
+    lines.append(f"> {text}")
+    lines.append("")
+
+  return "\n".join(lines)
+
+
+def cmd_transcribe(args: argparse.Namespace) -> None:
+  """Handle transcribe command."""
   if not Path(args.audio).exists():
     print(f"Error: Audio file not found: {args.audio}", file=sys.stderr)
     sys.exit(1)
@@ -148,6 +154,113 @@ Examples:
 
   json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
   print(f"\nAll results saved to {json_path}")
+
+
+def cmd_report(args: argparse.Namespace) -> None:
+  """Handle report command."""
+  json_path = Path(args.json_file)
+  if not json_path.exists():
+    print(f"Error: JSON file not found: {json_path}", file=sys.stderr)
+    sys.exit(1)
+
+  data = json.loads(json_path.read_text(encoding="utf-8"))
+  report = generate_report(data)
+
+  # Default output path: same name as JSON but with .md extension
+  output_path = Path(args.output) if args.output else json_path.with_suffix(".md")
+  output_path.write_text(report, encoding="utf-8")
+  print(f"Report saved to {output_path}")
+
+
+def main() -> None:
+  parser = argparse.ArgumentParser(
+    description="Transcribe audio using various Whisper backends",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+  )
+  subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+  # Transcribe command
+  trans_parser = subparsers.add_parser(
+    "transcribe",
+    aliases=["t"],
+    help="Transcribe audio file",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+    epilog="""
+Examples:
+  %(prog)s audio.wav
+  %(prog)s audio.wav --backend openai --model large-v3
+  %(prog)s audio.wav --backend whispercpp --model-path models/ggml-base.bin
+  %(prog)s audio.wav --language ru --device cuda
+
+  # Compare multiple backends/models (runs all combinations)
+  %(prog)s audio.wav --backend faster-whisper openai --model base large-v3
+    """,
+  )
+  trans_parser.add_argument("audio", help="Path to audio file")
+  trans_parser.add_argument(
+    "--backend",
+    "-b",
+    nargs="+",
+    choices=["faster-whisper", "openai", "whispercpp"],
+    default=["faster-whisper"],
+    help="Transcription backend(s) (default: faster-whisper)",
+  )
+  trans_parser.add_argument(
+    "--model",
+    "-m",
+    nargs="+",
+    default=["base"],
+    help="Model size(s): tiny, base, small, medium, large-v3 (default: base)",
+  )
+  trans_parser.add_argument(
+    "--model-path",
+    nargs="+",
+    help="Path(s) to ggml model file (required for whispercpp backend)",
+  )
+  trans_parser.add_argument(
+    "--language",
+    "-l",
+    nargs="+",
+    default=[None],
+    help="Language code(s) (e.g., en, ru). Auto-detect if not specified",
+  )
+  trans_parser.add_argument(
+    "--device",
+    "-d",
+    nargs="+",
+    choices=["cpu", "cuda"],
+    default=["cpu"],
+    help="Device(s) to use (default: cpu)",
+  )
+  trans_parser.set_defaults(func=cmd_transcribe)
+
+  # Report command
+  report_parser = subparsers.add_parser(
+    "report",
+    aliases=["r"],
+    help="Generate report from transcription results",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+    epilog="""
+Examples:
+  %(prog)s audio.json                    # Save to audio.md
+  %(prog)s audio.json -o custom.md       # Save to custom.md
+    """,
+  )
+  report_parser.add_argument("json_file", help="Path to JSON results file")
+  report_parser.add_argument(
+    "--output",
+    "-o",
+    help="Output markdown file path (default: <json_file>.md)",
+  )
+  report_parser.set_defaults(func=cmd_report)
+
+  args = parser.parse_args()
+
+  if not args.command:
+    parser.print_help()
+    sys.exit(1)
+
+  args.func(args)
 
 
 def run_single(  # noqa: PLR0913
