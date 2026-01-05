@@ -28,14 +28,25 @@ sudo dnf install ffmpeg
 uv sync
 ```
 
-## Download whisper.cpp models
+## Download models
 
-For whisper.cpp you need to download ggml models:
+Pre-download models for offline use:
 
 ```bash
-# Download from huggingface
-curl -L -o models/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin
+# Download all models for all backends
+uv run python src/download_models.py --backend all
+
+# Download for specific backend
+uv run python src/download_models.py --backend faster-whisper
+uv run python src/download_models.py --backend openai
+uv run python src/download_models.py --backend whispercpp
 ```
+
+Model sizes: tiny, base, small, medium, large-v3
+
+- **faster-whisper**: cached in HuggingFace cache
+- **openai-whisper**: cached in `~/.cache/whisper/`
+- **whisper.cpp**: stored in `models/` directory (ggml format)
 
 ## Usage
 
@@ -109,7 +120,19 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
 }
 ```
 
-Each run has a unique ID based on settings (backend, model, language, device). Re-running with the same settings updates the existing entry.
+Each run has a unique ID based on settings (backend, model, language, device). Re-running with the same settings skips existing runs (use this to resume interrupted comparison runs).
+
+## Benchmarks
+
+Tested on Russian audio (sherbakov_call.wav), CPU, tiny model:
+
+| Backend | Duration | Notes |
+|---------|----------|-------|
+| whispercpp | 16.75s ⚡ | 2.3x faster than faster-whisper |
+| faster-whisper | 39.00s | Good Russian quality |
+| openai | 51.79s | Multi-language output with tiny model |
+
+Note: Results vary by model size, language, and hardware. Larger models (base, small, medium, large-v3) generally produce better quality.
 
 ## Audio preprocessing
 
