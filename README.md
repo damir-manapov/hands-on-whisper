@@ -42,10 +42,10 @@ uv run python src/download_models.py --backend openai
 uv run python src/download_models.py --backend whispercpp
 ```
 
-Model sizes: tiny, base, small, medium, large-v3
+Model sizes: tiny, base, small, medium, large-v3, distil-large-v3
 
 - **faster-whisper**: cached in HuggingFace cache
-- **openai-whisper**: cached in `~/.cache/whisper/`
+- **openai-whisper**: cached in `~/.cache/whisper/` (no distil models)
 - **whisper.cpp**: stored in `models/` directory (f16 and q8_0 quantizations)
 
 ## Usage

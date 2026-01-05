@@ -7,7 +7,7 @@ def download_faster_whisper_models() -> None:
   """Download faster-whisper models."""
   from faster_whisper import WhisperModel
 
-  models = ["tiny", "base", "small", "medium", "large-v3"]
+  models = ["tiny", "base", "small", "medium", "large-v3", "distil-large-v3"]
   for model_name in models:
     print(f"Downloading faster-whisper: {model_name}...")
     WhisperModel(model_name, device="cpu", compute_type="int8")
@@ -33,7 +33,7 @@ def download_whispercpp_models() -> None:
   models_dir = Path("models")
   models_dir.mkdir(exist_ok=True)
 
-  models = ["tiny", "base", "small", "medium", "large-v3"]
+  models = ["tiny", "base", "small", "medium", "large-v3", "distil-large-v3"]
   # f16 (default) and q8_0 (int8) quantizations
   quantizations = ["", "-q8_0"]  # "" = f16 base model
   base_url = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main"
