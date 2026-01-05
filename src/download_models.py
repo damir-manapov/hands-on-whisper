@@ -34,8 +34,7 @@ def download_whispercpp_models() -> None:
   models_dir.mkdir(exist_ok=True)
 
   # Define which quantizations are available for each model
-  # Based on https://huggingface.co/ggerganov/whisper.cpp/tree/main
-  # Note: distil-large-v3 is NOT available in ggml format
+  # Main models from https://huggingface.co/ggerganov/whisper.cpp/tree/main
   model_quantizations = {
     "tiny": ["", "-q8_0"],
     "base": ["", "-q8_0"],
@@ -63,6 +62,22 @@ def download_whispercpp_models() -> None:
         # Remove partial download
         if filepath.exists():
           filepath.unlink()
+
+  # distil-large-v3 is in a separate repo: distil-whisper/distil-large-v3-ggml
+  distil_url = "https://huggingface.co/distil-whisper/distil-large-v3-ggml/resolve/main"
+  distil_filename = "ggml-distil-large-v3.bin"
+  distil_filepath = models_dir / distil_filename
+  if distil_filepath.exists():
+    print(f"whisper.cpp: {distil_filename} already exists")
+  else:
+    print(f"Downloading whisper.cpp: {distil_filename}...")
+    try:
+      urllib.request.urlretrieve(f"{distil_url}/{distil_filename}", distil_filepath)
+      print(f"  Done: {distil_filepath}")
+    except Exception as e:
+      print(f"  Failed: {e}")
+      if distil_filepath.exists():
+        distil_filepath.unlink()
 
 
 def main() -> None:
