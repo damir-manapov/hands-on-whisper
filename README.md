@@ -73,6 +73,9 @@ uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper op
 # Adjust decoding parameters
 uv run python src/transcribe.py transcribe audio.wav --beam-size 10 --temperature 0.2
 
+# Set compute precision
+uv run python src/transcribe.py transcribe audio.wav --compute-type float16
+
 # Short alias: 't' instead of 'transcribe'
 uv run python src/transcribe.py t audio.wav
 
@@ -143,6 +146,7 @@ Note: Results vary by model size, language, and hardware. Larger models (base, s
 |-----------|---------|-------------|
 | `--beam-size` | 5 | Beam search width. Higher = better quality, slower |
 | `--temperature` | 0.0 | Sampling temperature. 0 = greedy, >0 = more varied output |
+| `--compute-type` | auto | Precision: auto, float32, float16, int8. Auto selects int8 (CPU) or float16 (GPU) |
 
 ## Audio preprocessing
 
