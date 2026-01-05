@@ -27,6 +27,12 @@ def generate_run_id(  # noqa: PLR0913
   return hashlib.sha256(settings.encode()).hexdigest()[:12]
 
 
+def resolve_whispercpp_model_path(model: str, compute_type: str) -> str:
+  """Resolve whisper.cpp model path from model name and compute type."""
+  suffix = "-q8_0" if compute_type == "int8" else ""
+  return f"models/ggml-{model}{suffix}.bin"
+
+
 def transcribe_faster_whisper(  # noqa: PLR0913
   audio_path: str,
   model_size: str,
@@ -167,10 +173,6 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
     print(f"Error: Audio file not found: {args.audio}", file=sys.stderr)
     sys.exit(1)
 
-  if "whispercpp" in args.backend and not args.model_path:
-    print("Error: --model-path is required for whispercpp backend", file=sys.stderr)
-    sys.exit(1)
-
   # Build all combinations
   combinations = list(itertools.product(args.backend, args.model, args.language, args.device))
   print(f"Running {len(combinations)} transcription(s)...")
@@ -184,10 +186,29 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
     data = {"audio": str(audio_path), "runs": []}
 
   for backend, model, language, device in combinations:
-    # For whispercpp, use model_path instead of model
+    # For whispercpp, auto-resolve model path or use explicit --model-path
     if backend == "whispercpp":
-      model_paths = args.model_path or []
-      for model_path in model_paths:
+      if args.model_path:
+        # Use explicit model paths
+        for model_path in args.model_path:
+          run_single(
+            args.audio,
+            backend,
+            model_path,
+            language,
+            device,
+            args.beam_size,
+            args.temperature,
+            args.compute_type,
+            data,
+          )
+      else:
+        # Auto-resolve from model name and compute_type
+        model_path = resolve_whispercpp_model_path(model, args.compute_type)
+        if not Path(model_path).exists():
+          print(f"Error: Model file not found: {model_path}", file=sys.stderr)
+          print("Run: uv run python src/download_models.py --backend whispercpp", file=sys.stderr)
+          sys.exit(1)
         run_single(
           args.audio,
           backend,

@@ -46,7 +46,7 @@ Model sizes: tiny, base, small, medium, large-v3
 
 - **faster-whisper**: cached in HuggingFace cache
 - **openai-whisper**: cached in `~/.cache/whisper/`
-- **whisper.cpp**: stored in `models/` directory (ggml format)
+- **whisper.cpp**: stored in `models/` directory (f16 and q8_0 quantizations)
 
 ## Usage
 
@@ -56,7 +56,7 @@ uv run python src/transcribe.py transcribe audio.wav
 
 # Specify backend
 uv run python src/transcribe.py transcribe audio.wav --backend openai
-uv run python src/transcribe.py transcribe audio.wav --backend whispercpp --model-path models/ggml-base.bin
+uv run python src/transcribe.py transcribe audio.wav --backend whispercpp -m base
 
 # Specify model size
 uv run python src/transcribe.py transcribe audio.wav --model large-v3
@@ -146,7 +146,7 @@ Note: Results vary by model size, language, and hardware. Larger models (base, s
 |-----------|---------|-------------|
 | `--beam-size` | 5 | Beam search width. Higher = better quality, slower |
 | `--temperature` | 0.0 | Sampling temperature. 0 = greedy, >0 = more varied output |
-| `--compute-type` | auto | Precision: auto, float32, float16, int8. Auto selects int8 (CPU) or float16 (GPU) |
+| `--compute-type` | auto | Precision: auto, float32, float16, int8. For whispercpp: int8 uses q8_0 models |
 
 ## Audio preprocessing
 

@@ -26,7 +26,7 @@ def download_openai_whisper_models() -> None:
 
 
 def download_whispercpp_models() -> None:
-  """Download whisper.cpp ggml models."""
+  """Download whisper.cpp ggml models (f16 and quantized)."""
   import urllib.request
   from pathlib import Path
 
@@ -34,18 +34,27 @@ def download_whispercpp_models() -> None:
   models_dir.mkdir(exist_ok=True)
 
   models = ["tiny", "base", "small", "medium", "large-v3"]
+  # f16 (default) and q8_0 (int8) quantizations
+  quantizations = ["", "-q8_0"]  # "" = f16 base model
   base_url = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main"
 
   for model_name in models:
-    filename = f"ggml-{model_name}.bin"
-    filepath = models_dir / filename
-    if filepath.exists():
-      print(f"whisper.cpp: {model_name} already exists")
-      continue
-    print(f"Downloading whisper.cpp: {model_name}...")
-    url = f"{base_url}/{filename}"
-    urllib.request.urlretrieve(url, filepath)
-    print(f"  Done: {filepath}")
+    for quant in quantizations:
+      filename = f"ggml-{model_name}{quant}.bin"
+      filepath = models_dir / filename
+      if filepath.exists():
+        print(f"whisper.cpp: {filename} already exists")
+        continue
+      print(f"Downloading whisper.cpp: {filename}...")
+      url = f"{base_url}/{filename}"
+      try:
+        urllib.request.urlretrieve(url, filepath)
+        print(f"  Done: {filepath}")
+      except Exception as e:
+        print(f"  Failed: {e}")
+        # Remove partial download
+        if filepath.exists():
+          filepath.unlink()
 
 
 def main() -> None:
