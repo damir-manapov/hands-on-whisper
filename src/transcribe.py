@@ -55,6 +55,7 @@ def transcribe_faster_whisper(  # noqa: PLR0913
   beam_size: int,
   temperature: float,
   compute_type: str,
+  condition_on_prev: bool = True,
 ) -> str:
   """Transcribe using faster-whisper."""
   from faster_whisper import WhisperModel
@@ -73,7 +74,11 @@ def transcribe_faster_whisper(  # noqa: PLR0913
 
   model = WhisperModel(model_size, device=device, compute_type=ct)
   segments, _info = model.transcribe(
-    audio_path, beam_size=beam_size, language=language, temperature=temperature
+    audio_path,
+    beam_size=beam_size,
+    language=language,
+    temperature=temperature,
+    condition_on_previous_text=condition_on_prev,
   )
   return " ".join(segment.text.strip() for segment in segments)
 
@@ -86,6 +91,7 @@ def transcribe_openai_whisper(  # noqa: PLR0913
   beam_size: int,
   temperature: float,
   compute_type: str,
+  condition_on_prev: bool = True,
 ) -> str:
   """Transcribe using OpenAI whisper."""
   import whisper
@@ -100,7 +106,12 @@ def transcribe_openai_whisper(  # noqa: PLR0913
   else:
     model = whisper.load_model(model_size, device=device)
   result = model.transcribe(
-    audio_path, language=language, beam_size=beam_size, temperature=temperature, fp16=fp16
+    audio_path,
+    language=language,
+    beam_size=beam_size,
+    temperature=temperature,
+    fp16=fp16,
+    condition_on_previous_text=condition_on_prev,
   )
   return result["text"].strip()
 
@@ -217,6 +228,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
 
   for backend, model, language, device in combinations:
     # For whispercpp, auto-resolve model path or use explicit --model-path
+    condition_on_prev = not args.no_condition_on_prev
     if backend == "whispercpp":
       if args.model_path:
         # Use explicit model paths
@@ -230,6 +242,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
             args.beam_size,
             args.temperature,
             args.compute_type,
+            condition_on_prev,
             data,
           )
           save_results(data, json_path)
@@ -249,6 +262,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
           args.beam_size,
           args.temperature,
           args.compute_type,
+          condition_on_prev,
           data,
         )
         save_results(data, json_path)
@@ -262,6 +276,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         args.beam_size,
         args.temperature,
         args.compute_type,
+        condition_on_prev,
         data,
       )
       save_results(data, json_path)
@@ -365,6 +380,11 @@ Examples:
     default="auto",
     help="Compute type: auto, float32, float16, int8 (default: auto)",
   )
+  trans_parser.add_argument(
+    "--no-condition-on-prev",
+    action="store_true",
+    help="Don't condition on previous text (helps reduce repetitive hallucinations)",
+  )
   trans_parser.set_defaults(func=cmd_transcribe)
 
   # Report command
@@ -405,6 +425,7 @@ def run_single(  # noqa: PLR0913
   beam_size: int,
   temperature: float,
   compute_type: str,
+  condition_on_prev: bool,
   data: dict,
 ) -> None:
   """Run a single transcription and update data."""
@@ -423,11 +444,11 @@ def run_single(  # noqa: PLR0913
 
   if backend == "faster-whisper":
     result = transcribe_faster_whisper(
-      audio, model, language, device, beam_size, temperature, compute_type
+      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
     )
   elif backend == "openai":
     result = transcribe_openai_whisper(
-      audio, model, language, device, beam_size, temperature, compute_type
+      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
     )
   elif backend == "whispercpp":
     result = transcribe_whispercpp(audio, model, language, beam_size, temperature, compute_type)
@@ -445,6 +466,7 @@ def run_single(  # noqa: PLR0913
     "beam_size": beam_size,
     "temperature": temperature,
     "compute_type": compute_type,
+    "condition_on_prev": condition_on_prev,
     "text": result,
   }
 
