@@ -42,11 +42,21 @@ uv run python src/download_models.py --backend openai
 uv run python src/download_models.py --backend whispercpp
 ```
 
-Model sizes: tiny, base, small, medium, large-v3, distil-large-v3
+Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo, distil-large-v3
 
-- **faster-whisper**: cached in HuggingFace cache
-- **openai-whisper**: cached in `~/.cache/whisper/` (no distil models)
-- **whisper.cpp**: stored in `models/` directory (f16 and q8_0 quantizations)
+### Model availability
+
+| Model | faster-whisper | openai-whisper | whisper.cpp |
+|-------|---------------|----------------|-------------|
+| tiny, base, small, medium | ✅ | ✅ | ✅ f16 + q8_0 |
+| large-v3 | ✅ | ✅ | ✅ f16 + q5_0 |
+| large-v3-turbo | ✅ | ❌ | ✅ f16 + q8_0 |
+| distil-large-v3 | ✅ | ❌ | ✅ f16 only |
+
+Quantization notes:
+- **q8_0**: 8-bit quantization, ~2x smaller, similar quality (used with `--compute-type int8`)
+- **q5_0**: 5-bit quantization, ~3x smaller, slight quality loss
+- **f16**: float16 (default), best quality
 
 ## Usage
 
