@@ -1,6 +1,6 @@
 # hands-on-whisper
 
-Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper) and [OpenAI Whisper](https://github.com/openai/whisper).
+Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), and [whisper.cpp](https://github.com/ggml-org/whisper.cpp).
 
 ## Prerequisites
 
@@ -15,6 +15,15 @@ Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/fa
 uv sync
 ```
 
+## Download whisper.cpp models
+
+For whisper.cpp you need to download ggml models:
+
+```bash
+# Download from huggingface
+curl -L -o models/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin
+```
+
 ## Usage
 
 ```bash
@@ -23,6 +32,9 @@ uv run python src/transcribe_faster.py audio.wav
 
 # Transcribe with OpenAI whisper
 uv run python src/transcribe_openai.py audio.wav
+
+# Transcribe with whisper.cpp
+uv run python src/transcribe_whispercpp.py models/ggml-base.en.bin audio.wav
 ```
 
 ## Development

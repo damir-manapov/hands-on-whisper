@@ -1,7 +1,7 @@
 [project]
 name = "hands-on-whisper"
 version = "0.1.0"
-description = "Exploring faster-whisper and OpenAI whisper for speech recognition"
+description = "Exploring faster-whisper, OpenAI whisper, and whisper.cpp for speech recognition"
 readme = "README.md"
 license = "MIT"
 authors = [{ name = "Damir Manapov" }]
@@ -9,6 +9,7 @@ requires-python = ">=3.11"
 dependencies = [
   "faster-whisper>=1.1.0",
   "openai-whisper>=20240930",
+  "pywhispercpp>=1.3.0",
 ]
 
 [project.optional-dependencies]
