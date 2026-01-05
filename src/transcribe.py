@@ -28,8 +28,18 @@ def generate_run_id(  # noqa: PLR0913
 
 
 def resolve_whispercpp_model_path(model: str, compute_type: str) -> str:
-  """Resolve whisper.cpp model path from model name and compute type."""
-  suffix = "-q8_0" if compute_type == "int8" else ""
+  """Resolve whisper.cpp model path from model name and compute type.
+
+  Different models have different quantizations available:
+  - tiny, base, small, medium, large-v3-turbo: f16 and q8_0
+  - large-v3: f16 and q5_0 (no q8_0)
+  - distil-large-v3: NOT AVAILABLE for whisper.cpp (use faster-whisper instead)
+  """
+  if model == "distil-large-v3":
+    msg = "distil-large-v3 is not available for whisper.cpp. Use faster-whisper instead."
+    raise ValueError(msg)
+
+  suffix = ("-q5_0" if model == "large-v3" else "-q8_0") if compute_type == "int8" else ""
   return f"models/ggml-{model}{suffix}.bin"
 
 

@@ -33,12 +33,20 @@ def download_whispercpp_models() -> None:
   models_dir = Path("models")
   models_dir.mkdir(exist_ok=True)
 
-  models = ["tiny", "base", "small", "medium", "large-v3", "distil-large-v3"]
-  # f16 (default) and q8_0 (int8) quantizations
-  quantizations = ["", "-q8_0"]  # "" = f16 base model
+  # Define which quantizations are available for each model
+  # Based on https://huggingface.co/ggerganov/whisper.cpp/tree/main
+  # Note: distil-large-v3 is NOT available in ggml format
+  model_quantizations = {
+    "tiny": ["", "-q8_0"],
+    "base": ["", "-q8_0"],
+    "small": ["", "-q8_0"],
+    "medium": ["", "-q8_0"],
+    "large-v3": ["", "-q5_0"],  # No q8_0 available, only q5_0
+    "large-v3-turbo": ["", "-q8_0"],
+  }
   base_url = "https://huggingface.co/ggerganov/whisper.cpp/resolve/main"
 
-  for model_name in models:
+  for model_name, quantizations in model_quantizations.items():
     for quant in quantizations:
       filename = f"ggml-{model_name}{quant}.bin"
       filepath = models_dir / filename
