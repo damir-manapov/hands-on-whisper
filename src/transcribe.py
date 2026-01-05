@@ -438,7 +438,8 @@ def run_single(  # noqa: PLR0913
     return
 
   print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
-  print(f"  beam_size={beam_size}, temperature={temperature}, compute_type={compute_type}")
+  cond_str = "" if condition_on_prev else ", no_cond_prev"
+  print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}")
 
   start_time = time.perf_counter()
 
