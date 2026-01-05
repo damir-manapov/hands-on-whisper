@@ -17,12 +17,25 @@ def download_faster_whisper_models() -> None:
 def download_openai_whisper_models() -> None:
   """Download OpenAI whisper models."""
   import whisper
+  from huggingface_hub import hf_hub_download
 
   models = ["tiny", "base", "small", "medium", "large-v3"]
   for model_name in models:
     print(f"Downloading openai-whisper: {model_name}...")
     whisper.load_model(model_name, device="cpu")
     print(f"  Done: {model_name}")
+
+  # distil-large-v3 requires separate download from HuggingFace
+  print("Downloading openai-whisper: distil-large-v3...")
+  try:
+    hf_hub_download(
+      repo_id="distil-whisper/distil-large-v3-openai",
+      filename="model.bin",
+      local_dir="models/distil-large-v3-openai",
+    )
+    print("  Done: distil-large-v3")
+  except Exception as e:
+    print(f"  Failed: {e}")
 
 
 def download_whispercpp_models() -> None:

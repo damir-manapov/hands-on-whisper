@@ -93,7 +93,12 @@ def transcribe_openai_whisper(  # noqa: PLR0913
   # Map compute_type to fp16 flag
   fp16 = compute_type != "float32" and device == "cuda"
 
-  model = whisper.load_model(model_size, device=device)
+  # distil-large-v3 requires loading from local path
+  if model_size == "distil-large-v3":
+    model_path = "models/distil-large-v3-openai/model.bin"
+    model = whisper.load_model(model_path, device=device)
+  else:
+    model = whisper.load_model(model_size, device=device)
   result = model.transcribe(
     audio_path, language=language, beam_size=beam_size, temperature=temperature, fp16=fp16
   )
