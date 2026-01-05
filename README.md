@@ -46,12 +46,12 @@ Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo, distil-large-v
 
 ### Model availability
 
-| Model | faster-whisper | openai-whisper | whisper.cpp |
-|-------|---------------|----------------|-------------|
-| tiny, base, small, medium | ✅ | ✅ | ✅ f16 + q8_0 |
-| large-v3 | ✅ | ✅ | ✅ f16 + q5_0 |
-| large-v3-turbo | ✅ | ❌ | ✅ f16 + q8_0 |
-| distil-large-v3 | ✅ | ✅ (via HF) | ✅ f16 only |
+| Model | faster-whisper | openai-whisper | whisper.cpp | Notes |
+|-------|---------------|----------------|-------------|-------|
+| tiny, base, small, medium | ✅ | ✅ | ✅ f16 + q8_0 | |
+| large-v3 | ✅ | ✅ | ✅ f16 + q5_0 | Best multilingual quality |
+| large-v3-turbo | ✅ | ❌ | ✅ f16 + q8_0 | Slow on CPU |
+| distil-large-v3 | ✅ | ✅ (via HF) | ✅ f16 only | ⚠️ English only |
 
 Quantization notes:
 - **q8_0**: 8-bit quantization, ~2x smaller, similar quality (used with `--compute-type int8`)
