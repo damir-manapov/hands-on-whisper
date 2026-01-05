@@ -83,6 +83,9 @@ uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper op
 # Adjust decoding parameters
 uv run python src/transcribe.py transcribe audio.wav --beam-size 10 --temperature 0.2
 
+# Reduce repetitive hallucinations
+uv run python src/transcribe.py transcribe audio.wav --no-condition-on-prev
+
 # Set compute precision
 uv run python src/transcribe.py transcribe audio.wav --compute-type float16
 
@@ -157,6 +160,7 @@ Note: Results vary by model size, language, and hardware. Larger models (base, s
 | `--beam-size` | 5 | Beam search width. Higher = better quality, slower |
 | `--temperature` | 0.0 | Sampling temperature. 0 = greedy, >0 = more varied output |
 | `--compute-type` | auto | Precision: auto, float32, float16, int8. For whispercpp: int8 uses q8_0 models |
+| `--no-condition-on-prev` | false | Don't condition on previous text. Helps break repetition loops |
 
 ## Audio preprocessing
 
