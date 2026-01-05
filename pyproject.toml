@@ -57,6 +57,7 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**/*.py" = ["ANN"]
+"src/transcribe.py" = ["PLC0415"]  # lazy imports for backend loading
 
 [tool.ruff.format]
 quote-style = "double"

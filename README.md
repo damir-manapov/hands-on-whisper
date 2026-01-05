@@ -7,7 +7,20 @@ Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/fa
 - Python 3.11+
 - [uv](https://github.com/astral-sh/uv) package manager
 - [gitleaks](https://github.com/gitleaks/gitleaks) for secret scanning
-- FFmpeg (required by whisper)
+- [FFmpeg](https://ffmpeg.org/) (required by whisper)
+
+### Install FFmpeg
+
+```bash
+# Ubuntu/Debian
+sudo apt install ffmpeg
+
+# macOS
+brew install ffmpeg
+
+# Fedora
+sudo dnf install ffmpeg
+```
 
 ## Setup
 
@@ -27,14 +40,42 @@ curl -L -o models/ggml-base.en.bin https://huggingface.co/ggerganov/whisper.cpp/
 ## Usage
 
 ```bash
-# Transcribe with faster-whisper
-uv run python src/transcribe_faster.py audio.wav
+# Basic transcription (uses faster-whisper by default)
+uv run python src/transcribe.py audio.wav
 
-# Transcribe with OpenAI whisper
-uv run python src/transcribe_openai.py audio.wav
+# Specify backend
+uv run python src/transcribe.py audio.wav --backend openai
+uv run python src/transcribe.py audio.wav --backend whispercpp --model-path models/ggml-base.bin
 
-# Transcribe with whisper.cpp
-uv run python src/transcribe_whispercpp.py models/ggml-base.en.bin audio.wav
+# Specify model size
+uv run python src/transcribe.py audio.wav --model large-v3
+
+# Specify language (auto-detect if not set)
+uv run python src/transcribe.py audio.wav --language ru
+
+# Use GPU
+uv run python src/transcribe.py audio.wav --device cuda
+
+# Save to file
+uv run python src/transcribe.py audio.wav --output transcript.txt
+
+# Show all options
+uv run python src/transcribe.py --help
+```
+
+## Audio preprocessing
+
+Whisper expects 16kHz mono audio. Use ffmpeg to convert:
+
+```bash
+# Check audio format
+ffprobe input.mp3
+
+# Convert to 16kHz mono WAV (recommended for whisper.cpp)
+ffmpeg -i input.mp3 -ar 16000 -ac 1 -c:a pcm_s16le output.wav
+
+# For stereo call recordings - mix both channels with volume compensation
+ffmpeg -i input.mp3 -af "pan=mono|c0=0.5*c0+0.5*c1,volume=2" -ar 16000 output.wav
 ```
 
 ## Development

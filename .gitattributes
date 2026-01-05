@@ -1,0 +1,10 @@
+# Treat audio files as binary (no text diff)
+*.mp3 binary
+*.wav binary
+*.m4a binary
+*.flac binary
+*.ogg binary
+
+# Treat model files as binary
+*.bin binary
+*.pt binary

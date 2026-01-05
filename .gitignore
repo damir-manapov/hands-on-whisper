@@ -56,6 +56,10 @@ htmlcov/
 *.flac
 *.ogg
 
+# Allow audio files in calls directory
+!calls/*.mp3
+!calls/*.wav
+
 # OS
 .DS_Store
 Thumbs.db
