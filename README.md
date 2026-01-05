@@ -63,6 +63,29 @@ uv run python src/transcribe.py audio.wav --output transcript.txt
 uv run python src/transcribe.py --help
 ```
 
+## Output
+
+Results are automatically saved to a JSON file named after the audio file (e.g., `audio.json`):
+
+```json
+{
+  "audio": "audio.wav",
+  "runs": [
+    {
+      "id": "a1b2c3d4e5f6",
+      "timestamp": "2026-01-05T16:00:00+00:00",
+      "backend": "faster-whisper",
+      "model": "base",
+      "language": null,
+      "device": "cpu",
+      "text": "transcribed text..."
+    }
+  ]
+}
+```
+
+Each run has a unique ID based on settings (backend, model, language, device). Re-running with the same settings updates the existing entry.
+
 ## Audio preprocessing
 
 Whisper expects 16kHz mono audio. Use ffmpeg to convert:

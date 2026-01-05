@@ -1,8 +1,17 @@
 """Unified transcription script supporting multiple backends."""
 
 import argparse
+import hashlib
+import json
 import sys
+from datetime import UTC, datetime
 from pathlib import Path
+
+
+def generate_run_id(backend: str, model: str, language: str | None, device: str) -> str:
+  """Generate a unique ID based on settings."""
+  settings = f"{backend}:{model}:{language}:{device}"
+  return hashlib.sha256(settings.encode()).hexdigest()[:12]
 
 
 def transcribe_faster_whisper(
@@ -113,9 +122,43 @@ Examples:
   elif args.backend == "whispercpp":
     result = transcribe_whispercpp(args.audio, args.model_path)
 
+  # Build run record with unique ID based on settings
+  model_used = args.model_path if args.backend == "whispercpp" else args.model
+  run_id = generate_run_id(args.backend, model_used, args.language, args.device)
+
+  run_record = {
+    "id": run_id,
+    "timestamp": datetime.now(UTC).isoformat(),
+    "backend": args.backend,
+    "model": model_used,
+    "language": args.language,
+    "device": args.device,
+    "text": result,
+  }
+
+  # Save to JSON file named after audio file
+  audio_path = Path(args.audio)
+  json_path = audio_path.with_suffix(".json")
+
+  if json_path.exists():
+    data = json.loads(json_path.read_text(encoding="utf-8"))
+  else:
+    data = {"audio": str(audio_path), "runs": []}
+
+  # Update existing run with same ID or append new one
+  existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
+  if existing_idx is not None:
+    data["runs"][existing_idx] = run_record
+    print(f"Updated existing run {run_id} in {json_path}")
+  else:
+    data["runs"].append(run_record)
+    print(f"Added new run {run_id} to {json_path}")
+
+  json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
   if args.output:
     Path(args.output).write_text(result, encoding="utf-8")
-    print(f"Transcription saved to {args.output}")
+    print(f"Transcription also saved to {args.output}")
   else:
     print(result)
 
