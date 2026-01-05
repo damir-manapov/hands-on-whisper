@@ -307,7 +307,8 @@ Examples:
     "-m",
     nargs="+",
     default=["base"],
-    help="Model size(s): tiny, base, small, medium, large-v3 (default: base)",
+    help="Model size(s): tiny, base, small, medium, large-v3, large-v3-turbo, "
+    "distil-large-v3 (default: base)",
   )
   trans_parser.add_argument(
     "--model-path",
