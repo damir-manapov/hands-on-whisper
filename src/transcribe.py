@@ -118,7 +118,10 @@ def transcribe_whispercpp(  # noqa: PLR0913
 
   model = Model(model_path)
   segments = model.transcribe(
-    audio_path, language=language or "", beam_size=beam_size, temperature=temperature
+    audio_path,
+    language=language or "",
+    beam_search={"beam_size": beam_size, "patience": -1.0},
+    temperature=temperature,
   )
   return " ".join(segment.text.strip() for segment in segments)
 
@@ -186,6 +189,14 @@ def generate_report(data: dict[str, Any]) -> str:
   return "\n".join(lines)
 
 
+def save_results(data: dict[str, Any], json_path: Path) -> None:
+  """Save JSON data and regenerate MD report."""
+  json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+  report = generate_report(data)
+  md_path = json_path.with_suffix(".md")
+  md_path.write_text(report, encoding="utf-8")
+
+
 def cmd_transcribe(args: argparse.Namespace) -> None:
   """Handle transcribe command."""
   if not Path(args.audio).exists():
@@ -221,6 +232,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
             args.compute_type,
             data,
           )
+          save_results(data, json_path)
       else:
         # Auto-resolve from model name and compute_type
         model_path = resolve_whispercpp_model_path(model, args.compute_type)
@@ -239,6 +251,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
           args.compute_type,
           data,
         )
+        save_results(data, json_path)
     else:
       run_single(
         args.audio,
@@ -251,15 +264,10 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         args.compute_type,
         data,
       )
+      save_results(data, json_path)
 
-  json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
   print(f"\nResults saved to {json_path}")
-
-  # Generate report
-  report = generate_report(data)
-  md_path = json_path.with_suffix(".md")
-  md_path.write_text(report, encoding="utf-8")
-  print(f"Report saved to {md_path}")
+  print(f"Report saved to {json_path.with_suffix('.md')}")
 
 
 def cmd_report(args: argparse.Namespace) -> None:
