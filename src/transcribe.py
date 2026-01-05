@@ -11,38 +11,53 @@ from pathlib import Path
 from typing import Any
 
 
-def generate_run_id(backend: str, model: str, language: str | None, device: str) -> str:
+def generate_run_id(  # noqa: PLR0913
+  backend: str,
+  model: str,
+  language: str | None,
+  device: str,
+  beam_size: int,
+  temperature: float,
+) -> str:
   """Generate a unique ID based on settings."""
-  settings = f"{backend}:{model}:{language}:{device}"
+  settings = f"{backend}:{model}:{language}:{device}:beam{beam_size}:temp{temperature}"
   return hashlib.sha256(settings.encode()).hexdigest()[:12]
 
 
-def transcribe_faster_whisper(
+def transcribe_faster_whisper(  # noqa: PLR0913
   audio_path: str,
   model_size: str,
   language: str | None,
   device: str,
+  beam_size: int,
+  temperature: float,
 ) -> str:
   """Transcribe using faster-whisper."""
   from faster_whisper import WhisperModel
 
   compute_type = "float16" if device == "cuda" else "int8"
   model = WhisperModel(model_size, device=device, compute_type=compute_type)
-  segments, _info = model.transcribe(audio_path, beam_size=5, language=language)
+  segments, _info = model.transcribe(
+    audio_path, beam_size=beam_size, language=language, temperature=temperature
+  )
   return " ".join(segment.text.strip() for segment in segments)
 
 
-def transcribe_openai_whisper(
+def transcribe_openai_whisper(  # noqa: PLR0913
   audio_path: str,
   model_size: str,
   language: str | None,
   device: str,
+  beam_size: int,
+  temperature: float,
 ) -> str:
   """Transcribe using OpenAI whisper."""
   import whisper
 
   model = whisper.load_model(model_size, device=device)
-  result = model.transcribe(audio_path, language=language)
+  result = model.transcribe(
+    audio_path, language=language, beam_size=beam_size, temperature=temperature
+  )
   return result["text"].strip()
 
 
@@ -50,12 +65,16 @@ def transcribe_whispercpp(
   audio_path: str,
   model_path: str,
   language: str | None,
+  beam_size: int,
+  temperature: float,
 ) -> str:
   """Transcribe using whisper.cpp."""
   from pywhispercpp.model import Model
 
   model = Model(model_path)
-  segments = model.transcribe(audio_path, language=language or "")
+  segments = model.transcribe(
+    audio_path, language=language or "", beam_size=beam_size, temperature=temperature
+  )
   return " ".join(segment.text.strip() for segment in segments)
 
 
@@ -149,9 +168,13 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
     if backend == "whispercpp":
       model_paths = args.model_path or []
       for model_path in model_paths:
-        run_single(args.audio, backend, model_path, language, device, data)
+        run_single(
+          args.audio, backend, model_path, language, device, args.beam_size, args.temperature, data
+        )
     else:
-      run_single(args.audio, backend, model, language, device, data)
+      run_single(
+        args.audio, backend, model, language, device, args.beam_size, args.temperature, data
+      )
 
   json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
   print(f"\nResults saved to {json_path}")
@@ -239,6 +262,18 @@ Examples:
     default=["cpu"],
     help="Device(s) to use (default: cpu)",
   )
+  trans_parser.add_argument(
+    "--beam-size",
+    type=int,
+    default=5,
+    help="Beam size for decoding (default: 5, higher = better quality but slower)",
+  )
+  trans_parser.add_argument(
+    "--temperature",
+    type=float,
+    default=0.0,
+    help="Sampling temperature (default: 0.0 = greedy, >0 = more varied)",
+  )
   trans_parser.set_defaults(func=cmd_transcribe)
 
   # Report command
@@ -276,10 +311,12 @@ def run_single(  # noqa: PLR0913
   model: str,
   language: str | None,
   device: str,
+  beam_size: int,
+  temperature: float,
   data: dict,
 ) -> None:
   """Run a single transcription and update data."""
-  run_id = generate_run_id(backend, model, language, device)
+  run_id = generate_run_id(backend, model, language, device, beam_size, temperature)
 
   # Skip if we already have this run
   existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
@@ -288,15 +325,16 @@ def run_single(  # noqa: PLR0913
     return
 
   print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
+  print(f"  beam_size={beam_size}, temperature={temperature}")
 
   start_time = time.perf_counter()
 
   if backend == "faster-whisper":
-    result = transcribe_faster_whisper(audio, model, language, device)
+    result = transcribe_faster_whisper(audio, model, language, device, beam_size, temperature)
   elif backend == "openai":
-    result = transcribe_openai_whisper(audio, model, language, device)
+    result = transcribe_openai_whisper(audio, model, language, device, beam_size, temperature)
   elif backend == "whispercpp":
-    result = transcribe_whispercpp(audio, model, language)
+    result = transcribe_whispercpp(audio, model, language, beam_size, temperature)
 
   duration = time.perf_counter() - start_time
 
@@ -308,6 +346,8 @@ def run_single(  # noqa: PLR0913
     "model": model,
     "language": language,
     "device": device,
+    "beam_size": beam_size,
+    "temperature": temperature,
     "text": result,
   }
 

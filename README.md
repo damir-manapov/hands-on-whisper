@@ -70,6 +70,9 @@ uv run python src/transcribe.py transcribe audio.wav --device cuda
 # Compare multiple backends/models (runs all combinations)
 uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper openai --model base large-v3
 
+# Adjust decoding parameters
+uv run python src/transcribe.py transcribe audio.wav --beam-size 10 --temperature 0.2
+
 # Short alias: 't' instead of 'transcribe'
 uv run python src/transcribe.py t audio.wav
 
@@ -133,6 +136,13 @@ Tested on Russian audio (sherbakov_call.wav), CPU, tiny model:
 | openai | 51.79s | Multi-language output with tiny model |
 
 Note: Results vary by model size, language, and hardware. Larger models (base, small, medium, large-v3) generally produce better quality.
+
+## Parameters
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--beam-size` | 5 | Beam search width. Higher = better quality, slower |
+| `--temperature` | 0.0 | Sampling temperature. 0 = greedy, >0 = more varied output |
 
 ## Audio preprocessing
 
