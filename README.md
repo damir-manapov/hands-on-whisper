@@ -68,10 +68,12 @@ uv run python src/transcribe.py transcribe --help
 
 ## Report
 
-Generate a markdown report from transcription results:
+A markdown report is automatically generated after each transcription run (e.g., `audio.md`).
+
+To regenerate or customize the report:
 
 ```bash
-# Save report to audio.md (auto-named from JSON file)
+# Regenerate report from JSON
 uv run python src/transcribe.py report audio.json
 
 # Save to custom path

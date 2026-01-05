@@ -153,7 +153,13 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
       run_single(args.audio, backend, model, language, device, data)
 
   json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-  print(f"\nAll results saved to {json_path}")
+  print(f"\nResults saved to {json_path}")
+
+  # Generate report
+  report = generate_report(data)
+  md_path = json_path.with_suffix(".md")
+  md_path.write_text(report, encoding="utf-8")
+  print(f"Report saved to {md_path}")
 
 
 def cmd_report(args: argparse.Namespace) -> None:
