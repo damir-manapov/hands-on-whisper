@@ -5,6 +5,7 @@ import hashlib
 import itertools
 import json
 import sys
+import time
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -161,6 +162,8 @@ def run_single(  # noqa: PLR0913
   run_id = generate_run_id(backend, model, language, device)
   print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
 
+  start_time = time.perf_counter()
+
   if backend == "faster-whisper":
     result = transcribe_faster_whisper(audio, model, language, device)
   elif backend == "openai":
@@ -168,9 +171,12 @@ def run_single(  # noqa: PLR0913
   elif backend == "whispercpp":
     result = transcribe_whispercpp(audio, model)
 
+  duration = time.perf_counter() - start_time
+
   run_record = {
     "id": run_id,
     "timestamp": datetime.now(UTC).isoformat(),
+    "duration_seconds": round(duration, 2),
     "backend": backend,
     "model": model,
     "language": language,
@@ -182,10 +188,10 @@ def run_single(  # noqa: PLR0913
   existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
   if existing_idx is not None:
     data["runs"][existing_idx] = run_record
-    print("  Updated existing run")
+    print(f"  Updated existing run ({duration:.2f}s)")
   else:
     data["runs"].append(run_record)
-    print("  Added new run")
+    print(f"  Added new run ({duration:.2f}s)")
 
   print(f"  Text: {result[:100]}..." if len(result) > 100 else f"  Text: {result}")
 
