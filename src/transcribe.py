@@ -392,10 +392,6 @@ def cmd_optimize(args: argparse.Namespace) -> None:
       f"\n[Trial {trial.number}] beam={beam_size}, temp={temperature:.2f}, cond={condition_on_prev}"
     )
 
-    model = args.model
-    if args.backend == "whispercpp":
-      model = resolve_whispercpp_model_path(args.model, "auto")
-
     if args.backend == "faster-whisper":
       result = transcribe_faster_whisper(
         args.audio,
@@ -419,8 +415,9 @@ def cmd_optimize(args: argparse.Namespace) -> None:
         condition_on_prev,
       )
     elif args.backend == "whispercpp":
+      model_path = resolve_whispercpp_model_path(args.model, "auto")
       result = transcribe_whispercpp(
-        args.audio, model, args.language, beam_size, temperature, "auto"
+        args.audio, model_path, args.language, beam_size, temperature, "auto"
       )
 
     hypothesis = normalize_text(result)
