@@ -1,5 +1,7 @@
 """Unified transcription script supporting multiple backends."""
 
+from __future__ import annotations
+
 import argparse
 import hashlib
 import itertools
@@ -8,7 +10,10 @@ import sys
 import time
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
+
+if TYPE_CHECKING:
+  import optuna
 
 
 def normalize_text(text: str) -> str:
@@ -470,6 +475,58 @@ def _run_optimization_trial(  # noqa: PLR0913
   return wer_score / 100
 
 
+def _init_study_with_history(  # noqa: PLR0913
+  study: optuna.Study,
+  data: dict,
+  reference: str,
+  backends: list[str],
+  models: list[str],
+  compute_types: list[str],
+) -> None:
+  """Initialize Optuna study with previous runs so it can learn from them."""
+  import optuna as opt
+
+  for run in data.get("runs", []):
+    # Only add runs that are within current search space
+    run_backend = run.get("backend")
+    run_model = run.get("model")
+    run_compute = run.get("compute_type")
+    if run_backend not in backends or run_model not in models:
+      continue
+    if run_compute and run_compute not in compute_types:
+      continue
+
+    wer_score, _ = calculate_metrics(reference, run.get("text", ""))
+    params = {
+      "backend": run_backend,
+      "model": run_model,
+      "compute_type": run_compute or "int8",
+      "beam_size": run.get("beam_size", 5),
+      "temperature": run.get("temperature", 0.0),
+    }
+    if run_backend != "whispercpp":
+      params["condition_on_prev"] = run.get("condition_on_prev", True)
+
+    study.add_trial(
+      opt.trial.create_trial(
+        params=params,
+        distributions={
+          "backend": opt.distributions.CategoricalDistribution(backends),
+          "model": opt.distributions.CategoricalDistribution(models),
+          "compute_type": opt.distributions.CategoricalDistribution(compute_types),
+          "beam_size": opt.distributions.IntDistribution(1, 10),
+          "temperature": opt.distributions.FloatDistribution(0.0, 0.5),
+          **(
+            {"condition_on_prev": opt.distributions.CategoricalDistribution([True, False])}
+            if run_backend != "whispercpp"
+            else {}
+          ),
+        },
+        values=[wer_score / 100],
+      )
+    )
+
+
 def cmd_optimize(args: argparse.Namespace) -> None:
   """Find optimal parameters using Optuna."""
   import optuna
@@ -535,6 +592,11 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     )
 
   study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
+  _init_study_with_history(study, data, reference, backends, models, compute_types)
+
+  if study.trials:
+    print(f"Initialized with {len(study.trials)} previous trials")
+
   study.optimize(objective, n_trials=args.n_trials)
 
   print("\n" + "=" * 50)
