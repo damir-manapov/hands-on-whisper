@@ -208,7 +208,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
     row = (
-      f"| {i} | {backend} | {model} | {compute} | {beam} | {temp} "
+      f"| {i} | {backend} | {model} | {compute} | {beam} | {temp:.2f} "
       f"| {cond_prev} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
     )
     if reference:
