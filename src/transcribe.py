@@ -283,37 +283,26 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
   else:
     data = {"audio": str(audio_path), "runs": []}
 
+  condition_on_prev = not args.no_condition_on_prev
+
   for backend, model, language, device in combinations:
-    # For whispercpp, auto-resolve model path or use explicit --model-path
-    condition_on_prev = not args.no_condition_on_prev
+    # Resolve model path for whispercpp
     if backend == "whispercpp":
       if args.model_path:
-        # Use explicit model paths
-        for model_path in args.model_path:
-          run_single(
-            args.audio,
-            backend,
-            model_path,
-            language,
-            device,
-            args.beam_size,
-            args.temperature,
-            args.compute_type,
-            condition_on_prev,
-            data,
-          )
-          save_results(data, json_path)
+        model_paths = args.model_path
       else:
-        # Auto-resolve from model name and compute_type
         model_path = resolve_whispercpp_model_path(model, args.compute_type)
         if not Path(model_path).exists():
           print(f"Error: Model file not found: {model_path}", file=sys.stderr)
           print("Run: uv run python src/download_models.py --backend whispercpp", file=sys.stderr)
           sys.exit(1)
+        model_paths = [model_path]
+
+      for mp in model_paths:
         run_single(
           args.audio,
           backend,
-          model_path,
+          mp,
           language,
           device,
           args.beam_size,
