@@ -225,12 +225,14 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   lines.append("")
 
   # Detailed results
-  _append_detailed_results(lines, sorted_runs)
+  _append_detailed_results(lines, sorted_runs, reference)
 
   return "\n".join(lines)
 
 
-def _append_detailed_results(lines: list[str], sorted_runs: list[dict]) -> None:
+def _append_detailed_results(
+  lines: list[str], sorted_runs: list[dict], reference: str | None
+) -> None:
   """Append detailed transcription results to report lines."""
   lines.append("## Transcription Results")
   lines.append("")
@@ -259,9 +261,13 @@ def _append_detailed_results(lines: list[str], sorted_runs: list[dict]) -> None:
     lines.append(f"- **Duration:** {duration:.2f}s")
     lines.append(f"- **Memory:** Δ {mem_delta} MB, peak {mem_peak} MB")
     lines.append(f"- **Beam size:** {beam_size}")
-    lines.append(f"- **Temperature:** {temperature}")
+    lines.append(f"- **Temperature:** {temperature:.2f}")
     lines.append(f"- **Compute type:** {compute_type}")
     lines.append(f"- **Condition on prev:** {condition_on_prev}")
+    if reference:
+      wer_score, cer_score = calculate_metrics(reference, text)
+      lines.append(f"- **WER:** {wer_score:.1f}%")
+      lines.append(f"- **CER:** {cer_score:.1f}%")
     lines.append(f"- **Timestamp:** {timestamp}")
     lines.append("")
     lines.append("**Text:**")
