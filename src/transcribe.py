@@ -365,41 +365,22 @@ def cmd_report(args: argparse.Namespace) -> None:
   print(f"Report saved to {output_path}")
 
 
-def _run_optimization_trial(  # noqa: PLR0913
-  trial_number: int,
+def _run_transcription(  # noqa: PLR0913
+  audio: str,
   backend: str,
   model: str,
-  compute_type: str,
-  beam_size: int,
-  temperature: float,
-  condition_on_prev: bool,
-  audio: str,
   language: str | None,
   device: str,
-  reference: str,
-  data: dict,
-  json_path: Path,
-) -> float:
-  """Run a single optimization trial and return WER score."""
+  beam_size: int,
+  temperature: float,
+  compute_type: str,
+  condition_on_prev: bool,
+) -> dict:
+  """Run transcription and return run record with timing/memory stats."""
   import psutil
-  from jiwer import wer
 
-  # Generate run ID and check if already exists
   run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
-  existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
-  if existing:
-    print(f"\n[Trial {trial_number}] {run_id} - using cached result")
-    hypothesis = normalize_text(existing.get("text", ""))
-    wer_score = wer(reference, hypothesis)
-    print(f"  WER: {wer_score * 100:.1f}%")
-    return wer_score
 
-  print(
-    f"\n[Trial {trial_number}] {backend}/{model} compute={compute_type} "
-    f"beam={beam_size} temp={temperature:.2f} cond={condition_on_prev}"
-  )
-
-  # Track memory and time
   process = psutil.Process()
   mem_before = process.memory_info().rss
   start_time = time.perf_counter()
@@ -426,8 +407,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   mem_used_mb = round((mem_after - mem_before) / 1024 / 1024, 1)
   mem_peak_mb = round(mem_after / 1024 / 1024, 1)
 
-  # Save run to data
-  run_record = {
+  return {
     "id": run_id,
     "timestamp": datetime.now(UTC).isoformat(),
     "duration_seconds": round(duration, 2),
@@ -443,11 +423,51 @@ def _run_optimization_trial(  # noqa: PLR0913
     "condition_on_prev": condition_on_prev,
     "text": result,
   }
+
+
+def _run_optimization_trial(  # noqa: PLR0913
+  trial_number: int,
+  backend: str,
+  model: str,
+  compute_type: str,
+  beam_size: int,
+  temperature: float,
+  condition_on_prev: bool,
+  audio: str,
+  language: str | None,
+  device: str,
+  reference: str,
+  data: dict,
+  json_path: Path,
+) -> float:
+  """Run a single optimization trial and return WER score."""
+  from jiwer import wer
+
+  # Check if already exists (use cached result)
+  run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
+  existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
+  if existing:
+    print(f"\n[Trial {trial_number}] {run_id} - using cached result")
+    hypothesis = normalize_text(existing.get("text", ""))
+    wer_score = wer(reference, hypothesis)
+    print(f"  WER: {wer_score * 100:.1f}%")
+    return wer_score
+
+  print(
+    f"\n[Trial {trial_number}] {backend}/{model} compute={compute_type} "
+    f"beam={beam_size} temp={temperature:.2f} cond={condition_on_prev}"
+  )
+
+  run_record = _run_transcription(
+    audio, backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+  )
   data["runs"].append(run_record)
   save_results(data, json_path)
 
-  hypothesis = normalize_text(result)
+  hypothesis = normalize_text(run_record["text"])
   wer_score = wer(reference, hypothesis)
+  mem_used_mb = run_record["memory_delta_mb"]
+  duration = run_record["duration_seconds"]
   print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) WER: {wer_score * 100:.1f}%")
   return wer_score
 
@@ -705,8 +725,8 @@ def run_single(  # noqa: PLR0913
   run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
 
   # Skip if we already have this run
-  existing_idx = next((i for i, r in enumerate(data["runs"]) if r.get("id") == run_id), None)
-  if existing_idx is not None:
+  existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
+  if existing:
     print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device} - skipped (exists)")
     return
 
@@ -714,46 +734,16 @@ def run_single(  # noqa: PLR0913
   cond_str = "" if condition_on_prev else ", no_cond_prev"
   print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}")
 
-  import psutil
-
-  process = psutil.Process()
-  mem_before = process.memory_info().rss
-  start_time = time.perf_counter()
-
-  if backend == "faster-whisper":
-    result = transcribe_faster_whisper(
-      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
-    )
-  elif backend == "openai":
-    result = transcribe_openai_whisper(
-      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
-    )
-  elif backend == "whispercpp":
-    result = transcribe_whispercpp(audio, model, language, beam_size, temperature, compute_type)
-
-  duration = time.perf_counter() - start_time
-  mem_after = process.memory_info().rss
-  mem_used_mb = round((mem_after - mem_before) / 1024 / 1024, 1)
-  mem_peak_mb = round(mem_after / 1024 / 1024, 1)
-
-  run_record = {
-    "id": run_id,
-    "timestamp": datetime.now(UTC).isoformat(),
-    "duration_seconds": round(duration, 2),
-    "memory_delta_mb": mem_used_mb,
-    "memory_peak_mb": mem_peak_mb,
-    "backend": backend,
-    "model": model,
-    "language": language,
-    "device": device,
-    "beam_size": beam_size,
-    "temperature": temperature,
-    "compute_type": compute_type,
-    "condition_on_prev": condition_on_prev,
-    "text": result,
-  }
-
+  run_record = _run_transcription(
+    audio, backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+  )
   data["runs"].append(run_record)
+
+  duration = run_record["duration_seconds"]
+  mem_used_mb = run_record["memory_delta_mb"]
+  mem_peak_mb = run_record["memory_peak_mb"]
+  result = run_record["text"]
+
   print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB, peak: {mem_peak_mb}MB)")
   print(f"  Text: {result[:100]}..." if len(result) > 100 else f"  Text: {result}")
 
