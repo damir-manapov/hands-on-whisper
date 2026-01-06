@@ -45,10 +45,12 @@ def generate_run_id(  # noqa: PLR0913
   beam_size: int,
   temperature: float,
   compute_type: str,
+  condition_on_prev: bool = True,
 ) -> str:
   """Generate a unique ID based on settings."""
+  cond = "cond" if condition_on_prev else "nocond"
   settings = (
-    f"{backend}:{model}:{language}:{device}:beam{beam_size}:temp{temperature}:{compute_type}"
+    f"{backend}:{model}:{language}:{device}:beam{beam_size}:temp{temperature}:{compute_type}:{cond}"
   )
   return hashlib.sha256(settings.encode()).hexdigest()[:12]
 
@@ -395,7 +397,9 @@ def _run_transcription(  # noqa: PLR0913
   """Run transcription and return run record with timing/memory stats."""
   import psutil
 
-  run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
+  run_id = generate_run_id(
+    backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+  )
 
   process = psutil.Process()
   mem_before = process.memory_info().rss
@@ -463,7 +467,9 @@ def _run_optimization_trial(  # noqa: PLR0913
 ) -> float:
   """Run a single optimization trial and return WER or CER score."""
   # Check if already exists (use cached result)
-  run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
+  run_id = generate_run_id(
+    backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+  )
   existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
   if existing:
     print(f"\n[Trial {trial_number}] {run_id} - using cached result")
@@ -813,7 +819,9 @@ def run_single(  # noqa: PLR0913
   data: dict,
 ) -> None:
   """Run a single transcription and update data."""
-  run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
+  run_id = generate_run_id(
+    backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+  )
 
   # Skip if we already have this run
   existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
