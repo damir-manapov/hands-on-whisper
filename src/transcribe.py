@@ -383,41 +383,60 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   reference = normalize_text(ref_path.read_text(encoding="utf-8").strip())
   print(f"Reference: {len(reference.split())} words (normalized)")
 
+  # Parse search space from args
+  backends = args.backends if args.backends else ["faster-whisper"]
+  models = args.models if args.models else ["base"]
+  compute_types = args.compute_types if args.compute_types else ["auto"]
+
+  print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
+
   def objective(trial: optuna.Trial) -> float:
+    # Categorical parameters for backend/model/compute_type
+    backend = trial.suggest_categorical("backend", backends)
+    model = trial.suggest_categorical("model", models)
+    compute_type = trial.suggest_categorical("compute_type", compute_types)
+
+    # Hyperparameters
     beam_size = trial.suggest_int("beam_size", 1, 10)
     temperature = trial.suggest_float("temperature", 0.0, 0.5)
-    condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
+
+    # whispercpp doesn't support condition_on_prev
+    if backend == "whispercpp":
+      condition_on_prev = False
+    else:
+      condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
 
     print(
-      f"\n[Trial {trial.number}] beam={beam_size}, temp={temperature:.2f}, cond={condition_on_prev}"
+      f"\n[Trial {trial.number}] {backend}/{model} compute={compute_type} "
+      f"beam={beam_size} temp={temperature:.2f} cond={condition_on_prev}"
     )
 
-    if args.backend == "faster-whisper":
+    if backend == "faster-whisper":
       result = transcribe_faster_whisper(
         args.audio,
-        args.model,
+        model,
         args.language,
         args.device,
         beam_size,
         temperature,
-        "auto",
+        compute_type,
         condition_on_prev,
       )
-    elif args.backend == "openai":
+    elif backend == "openai":
       result = transcribe_openai_whisper(
         args.audio,
-        args.model,
+        model,
         args.language,
         args.device,
         beam_size,
         temperature,
-        "auto",
+        compute_type,
         condition_on_prev,
       )
-    elif args.backend == "whispercpp":
-      model_path = resolve_whispercpp_model_path(args.model, "auto")
+    elif backend == "whispercpp":
+      model_path = resolve_whispercpp_model_path(model, compute_type)
       result = transcribe_whispercpp(
-        args.audio, model_path, args.language, beam_size, temperature, "auto"
+        args.audio, model_path, args.language, beam_size, temperature, compute_type
       )
 
     hypothesis = normalize_text(result)
@@ -551,20 +570,37 @@ Examples:
     formatter_class=argparse.RawDescriptionHelpFormatter,
     epilog="""
 Examples:
-  %(prog)s audio.wav                     # Optimize with faster-whisper base
-  %(prog)s audio.wav -m large-v3         # Optimize with specific model
-  %(prog)s audio.wav --n-trials 20       # Run 20 optimization trials
+  %(prog)s audio.wav                                    # Optimize with faster-whisper base
+  %(prog)s audio.wav --models large-v3 large-v3-turbo  # Compare models
+  %(prog)s audio.wav --backends faster-whisper openai  # Compare backends
+  %(prog)s audio.wav --compute-types auto int8         # Compare compute types
+  %(prog)s audio.wav --n-trials 20                     # Run 20 optimization trials
     """,
   )
   optim_parser.add_argument("audio", help="Audio file to transcribe")
   optim_parser.add_argument(
-    "--backend",
+    "--backends",
     "-b",
-    default="faster-whisper",
+    nargs="+",
+    default=None,
     choices=["faster-whisper", "openai", "whispercpp"],
-    help="Backend (default: faster-whisper)",
+    help="Backends to search (default: faster-whisper)",
   )
-  optim_parser.add_argument("--model", "-m", default="base", help="Model size (default: base)")
+  optim_parser.add_argument(
+    "--models",
+    "-m",
+    nargs="+",
+    default=None,
+    help="Models to search (default: base)",
+  )
+  optim_parser.add_argument(
+    "--compute-types",
+    "-c",
+    nargs="+",
+    default=None,
+    choices=["auto", "int8", "float16", "float32"],
+    help="Compute types to search (default: auto)",
+  )
   optim_parser.add_argument(
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"
   )
