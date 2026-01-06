@@ -134,6 +134,25 @@ The report command auto-detects the `.txt` file and includes metrics in the tabl
 
 **Normalization**: Text is normalized before comparison (lowercase, remove punctuation, collapse whitespace). This is standard practice and works with any language including Russian.
 
+## Optimization
+
+Find optimal parameters using Optuna (Bayesian optimization):
+
+```bash
+# Optimize with 10 trials (default)
+uv run python src/transcribe.py optimize audio.wav
+
+# Optimize specific model with more trials
+uv run python src/transcribe.py o audio.wav -m large-v3-turbo -l ru --n-trials 20
+```
+
+Optuna optimizes:
+- `beam_size` (1-10)
+- `temperature` (0.0-0.5)
+- `condition_on_prev` (True/False)
+
+Requires `audio.txt` reference transcription.
+
 ## Output
 
 Results are automatically saved to a JSON file named after the audio file (e.g., `audio.json`):

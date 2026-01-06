@@ -364,6 +364,90 @@ def cmd_report(args: argparse.Namespace) -> None:
   print(f"Report saved to {output_path}")
 
 
+def cmd_optimize(args: argparse.Namespace) -> None:
+  """Find optimal parameters using Optuna."""
+  import re
+
+  import optuna
+  from jiwer import wer
+
+  def normalize(text: str) -> str:
+    """Normalize text for WER comparison."""
+    text = text.lower()
+    text = re.sub(r"[^\w\s]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+  audio_path = Path(args.audio)
+  if not audio_path.exists():
+    print(f"Error: Audio file not found: {audio_path}", file=sys.stderr)
+    sys.exit(1)
+
+  ref_path = audio_path.with_suffix(".txt")
+  if not ref_path.exists():
+    print(f"Error: Reference file required: {ref_path}", file=sys.stderr)
+    sys.exit(1)
+
+  reference = normalize(ref_path.read_text(encoding="utf-8").strip())
+  print(f"Reference: {len(reference.split())} words (normalized)")
+
+  def objective(trial: optuna.Trial) -> float:
+    beam_size = trial.suggest_int("beam_size", 1, 10)
+    temperature = trial.suggest_float("temperature", 0.0, 0.5)
+    condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
+
+    print(
+      f"\n[Trial {trial.number}] beam={beam_size}, temp={temperature:.2f}, cond={condition_on_prev}"
+    )
+
+    model = args.model
+    if args.backend == "whispercpp":
+      model = resolve_whispercpp_model_path(args.model, "auto")
+
+    if args.backend == "faster-whisper":
+      result = transcribe_faster_whisper(
+        args.audio,
+        args.model,
+        args.language,
+        args.device,
+        beam_size,
+        temperature,
+        "auto",
+        condition_on_prev,
+      )
+    elif args.backend == "openai":
+      result = transcribe_openai_whisper(
+        args.audio,
+        args.model,
+        args.language,
+        args.device,
+        beam_size,
+        temperature,
+        "auto",
+        condition_on_prev,
+      )
+    elif args.backend == "whispercpp":
+      result = transcribe_whispercpp(
+        args.audio, model, args.language, beam_size, temperature, "auto"
+      )
+
+    hypothesis = normalize(result)
+    wer_score = wer(reference, hypothesis)
+    print(f"  WER: {wer_score * 100:.1f}%")
+    return wer_score
+
+  study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
+  study.optimize(objective, n_trials=args.n_trials)
+
+  print("\n" + "=" * 50)
+  print("OPTIMIZATION RESULTS")
+  print("=" * 50)
+  print(f"Best WER: {study.best_value * 100:.1f}%")
+  print("Best parameters:")
+  for key, value in study.best_params.items():
+    print(f"  {key}: {value}")
+
+
 def main() -> None:
   parser = argparse.ArgumentParser(
     description="Transcribe audio using various Whisper backends",
@@ -469,6 +553,39 @@ Examples:
     help="Output markdown file path (default: <json_file>.md)",
   )
   report_parser.set_defaults(func=cmd_report)
+
+  # Optimize command
+  optim_parser = subparsers.add_parser(
+    "optimize",
+    aliases=["o"],
+    help="Find optimal parameters using Optuna (requires reference.txt)",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+    epilog="""
+Examples:
+  %(prog)s audio.wav                     # Optimize with faster-whisper base
+  %(prog)s audio.wav -m large-v3         # Optimize with specific model
+  %(prog)s audio.wav --n-trials 20       # Run 20 optimization trials
+    """,
+  )
+  optim_parser.add_argument("audio", help="Audio file to transcribe")
+  optim_parser.add_argument(
+    "--backend",
+    "-b",
+    default="faster-whisper",
+    choices=["faster-whisper", "openai", "whispercpp"],
+    help="Backend (default: faster-whisper)",
+  )
+  optim_parser.add_argument("--model", "-m", default="base", help="Model size (default: base)")
+  optim_parser.add_argument(
+    "--language", "-l", default=None, help="Language code (auto-detect if not set)"
+  )
+  optim_parser.add_argument(
+    "--device", "-d", default="cpu", choices=["cpu", "cuda"], help="Device (default: cpu)"
+  )
+  optim_parser.add_argument(
+    "--n-trials", type=int, default=10, help="Number of optimization trials (default: 10)"
+  )
+  optim_parser.set_defaults(func=cmd_optimize)
 
   args = parser.parse_args()
 
