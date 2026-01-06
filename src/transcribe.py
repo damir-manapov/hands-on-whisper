@@ -365,10 +365,96 @@ def cmd_report(args: argparse.Namespace) -> None:
   print(f"Report saved to {output_path}")
 
 
+def _run_optimization_trial(  # noqa: PLR0913
+  trial_number: int,
+  backend: str,
+  model: str,
+  compute_type: str,
+  beam_size: int,
+  temperature: float,
+  condition_on_prev: bool,
+  audio: str,
+  language: str | None,
+  device: str,
+  reference: str,
+  data: dict,
+  json_path: Path,
+) -> float:
+  """Run a single optimization trial and return WER score."""
+  import psutil
+  from jiwer import wer
+
+  # Generate run ID and check if already exists
+  run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
+  existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
+  if existing:
+    print(f"\n[Trial {trial_number}] {run_id} - using cached result")
+    hypothesis = normalize_text(existing.get("text", ""))
+    wer_score = wer(reference, hypothesis)
+    print(f"  WER: {wer_score * 100:.1f}%")
+    return wer_score
+
+  print(
+    f"\n[Trial {trial_number}] {backend}/{model} compute={compute_type} "
+    f"beam={beam_size} temp={temperature:.2f} cond={condition_on_prev}"
+  )
+
+  # Track memory and time
+  process = psutil.Process()
+  mem_before = process.memory_info().rss
+  start_time = time.perf_counter()
+
+  if backend == "faster-whisper":
+    result = transcribe_faster_whisper(
+      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    )
+  elif backend == "openai":
+    result = transcribe_openai_whisper(
+      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    )
+  elif backend == "whispercpp":
+    model_path = resolve_whispercpp_model_path(model, compute_type)
+    result = transcribe_whispercpp(
+      audio, model_path, language, beam_size, temperature, compute_type
+    )
+  else:
+    msg = f"Unknown backend: {backend}"
+    raise ValueError(msg)
+
+  duration = time.perf_counter() - start_time
+  mem_after = process.memory_info().rss
+  mem_used_mb = round((mem_after - mem_before) / 1024 / 1024, 1)
+  mem_peak_mb = round(mem_after / 1024 / 1024, 1)
+
+  # Save run to data
+  run_record = {
+    "id": run_id,
+    "timestamp": datetime.now(UTC).isoformat(),
+    "duration_seconds": round(duration, 2),
+    "memory_delta_mb": mem_used_mb,
+    "memory_peak_mb": mem_peak_mb,
+    "backend": backend,
+    "model": model,
+    "language": language,
+    "device": device,
+    "beam_size": beam_size,
+    "temperature": temperature,
+    "compute_type": compute_type,
+    "condition_on_prev": condition_on_prev,
+    "text": result,
+  }
+  data["runs"].append(run_record)
+  save_results(data, json_path)
+
+  hypothesis = normalize_text(result)
+  wer_score = wer(reference, hypothesis)
+  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) WER: {wer_score * 100:.1f}%")
+  return wer_score
+
+
 def cmd_optimize(args: argparse.Namespace) -> None:
   """Find optimal parameters using Optuna."""
   import optuna
-  from jiwer import wer
 
   audio_path = Path(args.audio)
   if not audio_path.exists():
@@ -383,6 +469,13 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   reference = normalize_text(ref_path.read_text(encoding="utf-8").strip())
   print(f"Reference: {len(reference.split())} words (normalized)")
 
+  # Load or create JSON data
+  json_path = audio_path.with_suffix(".json")
+  if json_path.exists():
+    data = json.loads(json_path.read_text(encoding="utf-8"))
+  else:
+    data = {"audio": str(audio_path), "runs": []}
+
   # Parse search space from args
   backends = args.backends if args.backends else ["faster-whisper"]
   models = args.models if args.models else ["base"]
@@ -391,12 +484,9 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
 
   def objective(trial: optuna.Trial) -> float:
-    # Categorical parameters for backend/model/compute_type
     backend = trial.suggest_categorical("backend", backends)
     model = trial.suggest_categorical("model", models)
     compute_type = trial.suggest_categorical("compute_type", compute_types)
-
-    # Hyperparameters
     beam_size = trial.suggest_int("beam_size", 1, 10)
     temperature = trial.suggest_float("temperature", 0.0, 0.5)
 
@@ -406,43 +496,21 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     else:
       condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
 
-    print(
-      f"\n[Trial {trial.number}] {backend}/{model} compute={compute_type} "
-      f"beam={beam_size} temp={temperature:.2f} cond={condition_on_prev}"
+    return _run_optimization_trial(
+      trial.number,
+      backend,
+      model,
+      compute_type,
+      beam_size,
+      temperature,
+      condition_on_prev,
+      args.audio,
+      args.language,
+      args.device,
+      reference,
+      data,
+      json_path,
     )
-
-    if backend == "faster-whisper":
-      result = transcribe_faster_whisper(
-        args.audio,
-        model,
-        args.language,
-        args.device,
-        beam_size,
-        temperature,
-        compute_type,
-        condition_on_prev,
-      )
-    elif backend == "openai":
-      result = transcribe_openai_whisper(
-        args.audio,
-        model,
-        args.language,
-        args.device,
-        beam_size,
-        temperature,
-        compute_type,
-        condition_on_prev,
-      )
-    elif backend == "whispercpp":
-      model_path = resolve_whispercpp_model_path(model, compute_type)
-      result = transcribe_whispercpp(
-        args.audio, model_path, args.language, beam_size, temperature, compute_type
-      )
-
-    hypothesis = normalize_text(result)
-    wer_score = wer(reference, hypothesis)
-    print(f"  WER: {wer_score * 100:.1f}%")
-    return wer_score
 
   study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
   study.optimize(objective, n_trials=args.n_trials)
