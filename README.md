@@ -139,34 +139,28 @@ The report command auto-detects the `.txt` file and includes metrics in the tabl
 Find optimal parameters using Optuna (Bayesian optimization):
 
 ```bash
-# Basic optimization with 10 trials (default)
-uv run python src/transcribe.py optimize audio.wav
+# Full search across all backends, models, compute types (default)
+uv run python src/transcribe.py optimize audio.wav -l ru --n-trials 50
 
-# Search across backends and models
-uv run python src/transcribe.py o audio.wav \
-  --backends faster-whisper openai \
-  --models large-v3 large-v3-turbo \
-  --n-trials 30
+# Limit search to specific backends
+uv run python src/transcribe.py o audio.wav --backends faster-whisper -l ru
 
-# Compare compute types
-uv run python src/transcribe.py o audio.wav \
-  --models large-v3 \
-  --compute-types auto int8 float16 \
-  --n-trials 20
+# Limit search to specific models
+uv run python src/transcribe.py o audio.wav --models large-v3 large-v3-turbo -l ru
 
-# Set language explicitly
-uv run python src/transcribe.py o audio.wav -l ru --n-trials 20
+# Quick test with fewer trials
+uv run python src/transcribe.py o audio.wav -l ru --n-trials 10
 ```
 
 ### Search space
 
-Optuna searches over these parameters:
+By default, Optuna searches across **all** backends, models, and compute types:
 
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| `backend` | --backends list | Whisper backend |
-| `model` | --models list | Model size |
-| `compute_type` | --compute-types list | Precision |
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `backend` | all 3 | faster-whisper, openai, whispercpp |
+| `model` | all 6 | tiny, base, small, medium, large-v3, large-v3-turbo |
+| `compute_type` | auto, int8 | Precision options |
 | `beam_size` | 1-10 | Beam search width |
 | `temperature` | 0.0-0.5 | Sampling temperature |
 | `condition_on_prev` | True/False | Condition on previous text |

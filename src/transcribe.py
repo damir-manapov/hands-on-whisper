@@ -484,10 +484,14 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   else:
     data = {"audio": str(audio_path), "runs": []}
 
-  # Parse search space from args
-  backends = args.backends if args.backends else ["faster-whisper"]
-  models = args.models if args.models else ["base"]
-  compute_types = args.compute_types if args.compute_types else ["auto"]
+  # Parse search space from args (defaults to all options)
+  all_backends = ["faster-whisper", "openai", "whispercpp"]
+  all_models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
+  all_compute_types = ["auto", "int8"]
+
+  backends = args.backends if args.backends else all_backends
+  models = args.models if args.models else all_models
+  compute_types = args.compute_types if args.compute_types else all_compute_types
 
   print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
 
@@ -646,11 +650,11 @@ Examples:
     formatter_class=argparse.RawDescriptionHelpFormatter,
     epilog="""
 Examples:
-  %(prog)s audio.wav                                    # Optimize with faster-whisper base
-  %(prog)s audio.wav --models large-v3 large-v3-turbo  # Compare models
-  %(prog)s audio.wav --backends faster-whisper openai  # Compare backends
-  %(prog)s audio.wav --compute-types auto int8         # Compare compute types
-  %(prog)s audio.wav --n-trials 20                     # Run 20 optimization trials
+  %(prog)s audio.wav                        # Full search across all backends/models
+  %(prog)s audio.wav -l ru                  # Full search with Russian language
+  %(prog)s audio.wav --backends faster-whisper  # Limit to one backend
+  %(prog)s audio.wav --models large-v3      # Limit to one model
+  %(prog)s audio.wav --n-trials 50          # Run 50 optimization trials
     """,
   )
   optim_parser.add_argument("audio", help="Audio file to transcribe")
@@ -660,14 +664,14 @@ Examples:
     nargs="+",
     default=None,
     choices=["faster-whisper", "openai", "whispercpp"],
-    help="Backends to search (default: faster-whisper)",
+    help="Backends to search (default: all)",
   )
   optim_parser.add_argument(
     "--models",
     "-m",
     nargs="+",
     default=None,
-    help="Models to search (default: base)",
+    help="Models to search (default: tiny,base,small,medium,large-v3,large-v3-turbo)",
   )
   optim_parser.add_argument(
     "--compute-types",
@@ -675,7 +679,7 @@ Examples:
     nargs="+",
     default=None,
     choices=["auto", "int8", "float16", "float32"],
-    help="Compute types to search (default: auto)",
+    help="Compute types to search (default: auto,int8)",
   )
   optim_parser.add_argument(
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"
