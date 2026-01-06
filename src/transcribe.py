@@ -601,6 +601,10 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     else:
       condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
 
+    # Skip invalid combinations (faster-whisper doesn't support float16 on CPU)
+    if backend == "faster-whisper" and compute_type == "float16" and args.device == "cpu":
+      raise optuna.TrialPruned("faster-whisper float16 not supported on CPU")
+
     return _run_optimization_trial(
       trial.number,
       backend,
