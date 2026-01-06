@@ -114,9 +114,14 @@ uv run python src/transcribe.py r audio.json
 ```
 
 The report includes:
-- Performance summary table (sorted by duration) with memory usage
+- Performance summary table (sorted by WER when reference exists) with all parameters
 - WER/CER metrics (if `audio.txt` reference transcription exists)
 - Detailed transcription results for each run
+
+### Sample Reports
+
+- [sherbakov_call.json](calls/sherbakov_call.json) - Raw benchmark data
+- [sherbakov_call.md](calls/sherbakov_call.md) - Formatted report with WER/CER metrics
 
 ### Metrics
 
