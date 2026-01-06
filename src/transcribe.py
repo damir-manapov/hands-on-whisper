@@ -173,12 +173,14 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
+  base_header = "| # | Backend | Model | Language | Device | Duration (s) | Mem Δ | Mem Peak |"
+  base_sep = "|---|---------|-------|----------|--------|--------------|-------|----------|"
   if ref_normalized:
-    lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) | WER % | CER % |")
-    lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|-------|-------|")
+    lines.append(f"{base_header} WER % | CER % |")
+    lines.append(f"{base_sep}-------|-------|")
   else:
-    lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) |")
-    lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|")
+    lines.append(base_header)
+    lines.append(base_sep)
 
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
@@ -188,22 +190,29 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
+    base_row = (
+      f"| {i} | {backend} | {model} | {lang} | {device} "
+      f"| {duration:.2f} | {mem_delta} | {mem_peak} |"
+    )
     if ref_normalized:
       hypothesis = run.get("text", "")
       hyp_normalized = normalize(hypothesis)
       wer_score = wer(ref_normalized, hyp_normalized) * 100
       cer_score = cer(ref_normalized, hyp_normalized) * 100
-      lines.append(
-        f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} | {wer_score:.1f} | {cer_score:.1f} |"
-      )
+      lines.append(f"{base_row} {wer_score:.1f} | {cer_score:.1f} |")
     else:
-      lines.append(
-        f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} |"
-      )
+      lines.append(base_row)
 
   lines.append("")
 
   # Detailed results
+  _append_detailed_results(lines, sorted_runs)
+
+  return "\n".join(lines)
+
+
+def _append_detailed_results(lines: list[str], sorted_runs: list[dict]) -> None:
+  """Append detailed transcription results to report lines."""
   lines.append("## Transcription Results")
   lines.append("")
 
@@ -241,17 +250,15 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     lines.append(f"> {text}")
     lines.append("")
 
-  return "\n".join(lines)
-
 
 def save_results(data: dict[str, Any], json_path: Path) -> None:
   """Save JSON data and regenerate MD report."""
   json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-  
+
   # Auto-detect reference file
   ref_path = json_path.with_suffix(".txt")
   reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
-  
+
   report = generate_report(data, reference)
   md_path = json_path.with_suffix(".md")
   md_path.write_text(report, encoding="utf-8")
@@ -342,13 +349,13 @@ def cmd_report(args: argparse.Namespace) -> None:
     sys.exit(1)
 
   data = json.loads(json_path.read_text(encoding="utf-8"))
-  
+
   # Auto-detect reference file
   ref_path = json_path.with_suffix(".txt")
   reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
   if reference:
     print(f"Reference: {len(reference)} chars, {len(reference.split())} words")
-  
+
   report = generate_report(data, reference)
 
   # Default output path: same name as JSON but with .md extension
