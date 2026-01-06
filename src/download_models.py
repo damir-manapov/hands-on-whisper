@@ -7,7 +7,7 @@ def download_faster_whisper_models() -> None:
   """Download faster-whisper models."""
   from faster_whisper import WhisperModel
 
-  models = ["tiny", "base", "small", "medium", "large-v3", "distil-large-v3"]
+  models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo", "distil-large-v3"]
   for model_name in models:
     print(f"Downloading faster-whisper: {model_name}...")
     WhisperModel(model_name, device="cpu", compute_type="int8")
@@ -19,7 +19,7 @@ def download_openai_whisper_models() -> None:
   import whisper
   from huggingface_hub import hf_hub_download
 
-  models = ["tiny", "base", "small", "medium", "large-v3"]
+  models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
   for model_name in models:
     print(f"Downloading openai-whisper: {model_name}...")
     whisper.load_model(model_name, device="cpu")

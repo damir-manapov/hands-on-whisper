@@ -169,8 +169,15 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     lines.append("No transcription runs found.")
     return "\n".join(lines)
 
-  # Sort by duration for comparison
-  sorted_runs = sorted(runs, key=lambda r: r.get("duration_seconds", 0))
+  # Calculate WER for sorting if reference provided
+  def get_wer(run: dict) -> float:
+    if reference:
+      wer_score, _ = calculate_metrics(reference, run.get("text", ""))
+      return wer_score
+    return run.get("duration_seconds", 0)
+
+  # Sort by WER (best first) if reference provided, otherwise by duration
+  sorted_runs = sorted(runs, key=get_wer)
 
   lines.append(f"**Total runs:** {len(runs)}")
   if reference:
@@ -180,32 +187,35 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  base_header = "| # | Backend | Model | Language | Device | Duration (s) | Mem Δ | Mem Peak |"
-  base_sep = "|---|---------|-------|----------|--------|--------------|-------|----------|"
+  hdr = "| # | Backend | Model | Compute | Beam | Temp | Cond | Lang | Dur(s) | MemΔ | Peak |"
+  sep = "|---|---------|-------|---------|------|------|------|------|--------|------|------|"
   if reference:
-    lines.append(f"{base_header} WER % | CER % |")
-    lines.append(f"{base_sep}-------|-------|")
+    lines.append(f"{hdr} WER% | CER% |")
+    lines.append(f"{sep}------|------|")
   else:
-    lines.append(base_header)
-    lines.append(base_sep)
+    lines.append(hdr)
+    lines.append(sep)
 
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
     model = run.get("model", "?")
+    compute = run.get("compute_type") or "-"
+    beam = run.get("beam_size", 5)
+    temp = run.get("temperature", 0.0)
+    cond_prev = "Y" if run.get("condition_on_prev", True) else "N"
     lang = run.get("language") or "auto"
-    device = run.get("device", "?")
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
-    base_row = (
-      f"| {i} | {backend} | {model} | {lang} | {device} "
-      f"| {duration:.2f} | {mem_delta} | {mem_peak} |"
+    row = (
+      f"| {i} | {backend} | {model} | {compute} | {beam} | {temp} "
+      f"| {cond_prev} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
     )
     if reference:
       wer_score, cer_score = calculate_metrics(reference, run.get("text", ""))
-      lines.append(f"{base_row} {wer_score:.1f} | {cer_score:.1f} |")
+      lines.append(f"{row} {wer_score:.1f} | {cer_score:.1f} |")
     else:
-      lines.append(base_row)
+      lines.append(row)
 
   lines.append("")
 

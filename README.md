@@ -50,7 +50,7 @@ Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo, distil-large-v
 |-------|---------------|----------------|-------------|-------|
 | tiny, base, small, medium | ✅ | ✅ | ✅ f16 + q8_0 | |
 | large-v3 | ✅ | ✅ | ✅ f16 + q5_0 | Best multilingual quality |
-| large-v3-turbo | ✅ | ❌ | ✅ f16 + q8_0 | Slow on CPU |
+| large-v3-turbo | ✅ | ✅ | ✅ f16 + q8_0 | Fast, good quality |
 | distil-large-v3 | ✅ | ✅ (via HF) | ✅ f16 only | ⚠️ English only |
 
 Quantization notes:
