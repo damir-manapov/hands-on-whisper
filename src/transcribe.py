@@ -11,6 +11,16 @@ from pathlib import Path
 from typing import Any
 
 
+def normalize_text(text: str) -> str:
+  """Normalize text for WER comparison: lowercase, remove punctuation, collapse whitespace."""
+  import re
+
+  text = text.lower()
+  text = re.sub(r"[^\w\s]", "", text)  # Remove punctuation (Unicode-aware)
+  text = re.sub(r"\s+", " ", text).strip()  # Collapse whitespace
+  return text
+
+
 def generate_run_id(  # noqa: PLR0913
   backend: str,
   model: str,
@@ -139,16 +149,7 @@ def transcribe_whispercpp(  # noqa: PLR0913
 
 def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   """Generate a markdown report from transcription data."""
-  import re
-
   from jiwer import cer, wer
-
-  def normalize(text: str) -> str:
-    """Normalize text for WER comparison: lowercase, remove punctuation, collapse whitespace."""
-    text = text.lower()
-    text = re.sub(r"[^\w\s]", "", text)  # Remove punctuation (Unicode-aware)
-    text = re.sub(r"\s+", " ", text).strip()  # Collapse whitespace
-    return text
 
   lines = ["# Transcription Report", ""]
   lines.append(f"**Audio file:** `{data.get('audio', 'unknown')}`")
@@ -163,7 +164,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   sorted_runs = sorted(runs, key=lambda r: r.get("duration_seconds", 0))
 
   # Normalize reference once
-  ref_normalized = normalize(reference) if reference else None
+  ref_normalized = normalize_text(reference) if reference else None
 
   lines.append(f"**Total runs:** {len(runs)}")
   if reference:
@@ -196,7 +197,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     )
     if ref_normalized:
       hypothesis = run.get("text", "")
-      hyp_normalized = normalize(hypothesis)
+      hyp_normalized = normalize_text(hypothesis)
       wer_score = wer(ref_normalized, hyp_normalized) * 100
       cer_score = cer(ref_normalized, hyp_normalized) * 100
       lines.append(f"{base_row} {wer_score:.1f} | {cer_score:.1f} |")
@@ -366,17 +367,8 @@ def cmd_report(args: argparse.Namespace) -> None:
 
 def cmd_optimize(args: argparse.Namespace) -> None:
   """Find optimal parameters using Optuna."""
-  import re
-
   import optuna
   from jiwer import wer
-
-  def normalize(text: str) -> str:
-    """Normalize text for WER comparison."""
-    text = text.lower()
-    text = re.sub(r"[^\w\s]", "", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
 
   audio_path = Path(args.audio)
   if not audio_path.exists():
@@ -388,7 +380,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     print(f"Error: Reference file required: {ref_path}", file=sys.stderr)
     sys.exit(1)
 
-  reference = normalize(ref_path.read_text(encoding="utf-8").strip())
+  reference = normalize_text(ref_path.read_text(encoding="utf-8").strip())
   print(f"Reference: {len(reference.split())} words (normalized)")
 
   def objective(trial: optuna.Trial) -> float:
@@ -431,7 +423,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
         args.audio, model, args.language, beam_size, temperature, "auto"
       )
 
-    hypothesis = normalize(result)
+    hypothesis = normalize_text(result)
     wer_score = wer(reference, hypothesis)
     print(f"  WER: {wer_score * 100:.1f}%")
     return wer_score
