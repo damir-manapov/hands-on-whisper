@@ -407,7 +407,11 @@ def _run_transcription(  # noqa: PLR0913
       audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
     )
   elif backend == "whispercpp":
-    model_path = resolve_whispercpp_model_path(model, compute_type)
+    # Model might already be a path (from cmd_transcribe) or a name (from optimization)
+    if model.endswith(".bin"):
+      model_path = model
+    else:
+      model_path = resolve_whispercpp_model_path(model, compute_type)
     result = transcribe_whispercpp(
       audio, model_path, language, beam_size, temperature, compute_type
     )
