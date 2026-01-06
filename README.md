@@ -115,7 +115,22 @@ uv run python src/transcribe.py r audio.json
 
 The report includes:
 - Performance summary table (sorted by duration) with memory usage
+- WER/CER metrics (if `audio.txt` reference transcription exists)
 - Detailed transcription results for each run
+
+### Metrics
+
+To calculate WER (Word Error Rate) and CER (Character Error Rate), place a reference transcription file alongside your audio:
+
+```
+calls/
+  sherbakov_call.wav    # Audio file
+  sherbakov_call.txt    # Manual reference transcription
+  sherbakov_call.json   # Generated results
+  sherbakov_call.md     # Generated report with WER/CER
+```
+
+The report command auto-detects the `.txt` file and includes metrics in the table.
 
 ## Output
 

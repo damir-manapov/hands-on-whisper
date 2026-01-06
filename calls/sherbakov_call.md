@@ -3,16 +3,17 @@
 **Audio file:** `calls/sherbakov_call.wav`
 
 **Total runs:** 5
+**Reference:** 3558 chars, 623 words
 
 ## Performance Summary
 
-| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) |
-|---|---------|-------|----------|--------|--------------|------------|---------------|
-| 1 | faster-whisper | large-v3-turbo | ru | cpu | 74.61 | 1454.3 | 1473.9 |
-| 2 | faster-whisper | large-v3 | ru | cpu | 102.69 | 2248.5 | 2268.0 |
-| 3 | openai | large-v3 | ru | cpu | 287.76 | 7023.5 | 9291.6 |
-| 4 | whispercpp | models/ggml-large-v3-turbo.bin | ru | cpu | 432.42 | 5.1 | 1479.0 |
-| 5 | whispercpp | models/ggml-large-v3.bin | ru | cpu | 538.15 | 3.3 | 9294.9 |
+| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) | WER % | CER % |
+|---|---------|-------|----------|--------|--------------|------------|---------------|-------|-------|
+| 1 | faster-whisper | large-v3-turbo | ru | cpu | 74.61 | 1454.3 | 1473.9 | 27.0 | 18.2 |
+| 2 | faster-whisper | large-v3 | ru | cpu | 102.69 | 2248.5 | 2268.0 | 64.7 | 51.2 |
+| 3 | openai | large-v3 | ru | cpu | 287.76 | 7023.5 | 9291.6 | 79.5 | 64.8 |
+| 4 | whispercpp | models/ggml-large-v3-turbo.bin | ru | cpu | 432.42 | 5.1 | 1479.0 | 72.2 | 36.1 |
+| 5 | whispercpp | models/ggml-large-v3.bin | ru | cpu | 538.15 | 3.3 | 9294.9 | 137.9 | 94.7 |
 
 ## Transcription Results
 

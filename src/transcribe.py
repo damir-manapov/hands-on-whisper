@@ -137,8 +137,10 @@ def transcribe_whispercpp(  # noqa: PLR0913
   return " ".join(segment.text.strip() for segment in segments)
 
 
-def generate_report(data: dict[str, Any]) -> str:
+def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   """Generate a markdown report from transcription data."""
+  from jiwer import cer, wer
+
   lines = ["# Transcription Report", ""]
   lines.append(f"**Audio file:** `{data.get('audio', 'unknown')}`")
   lines.append("")
@@ -152,13 +154,19 @@ def generate_report(data: dict[str, Any]) -> str:
   sorted_runs = sorted(runs, key=lambda r: r.get("duration_seconds", 0))
 
   lines.append(f"**Total runs:** {len(runs)}")
+  if reference:
+    lines.append(f"**Reference:** {len(reference)} chars, {len(reference.split())} words")
   lines.append("")
 
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) |")
-  lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|")
+  if reference:
+    lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) | WER % | CER % |")
+    lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|-------|-------|")
+  else:
+    lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) |")
+    lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|")
 
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
@@ -168,9 +176,17 @@ def generate_report(data: dict[str, Any]) -> str:
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
-    lines.append(
-      f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} |"
-    )
+    if reference:
+      hypothesis = run.get("text", "")
+      wer_score = wer(reference, hypothesis) * 100
+      cer_score = cer(reference, hypothesis) * 100
+      lines.append(
+        f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} | {wer_score:.1f} | {cer_score:.1f} |"
+      )
+    else:
+      lines.append(
+        f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} |"
+      )
 
   lines.append("")
 
@@ -218,7 +234,12 @@ def generate_report(data: dict[str, Any]) -> str:
 def save_results(data: dict[str, Any], json_path: Path) -> None:
   """Save JSON data and regenerate MD report."""
   json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-  report = generate_report(data)
+  
+  # Auto-detect reference file
+  ref_path = json_path.with_suffix(".txt")
+  reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
+  
+  report = generate_report(data, reference)
   md_path = json_path.with_suffix(".md")
   md_path.write_text(report, encoding="utf-8")
 
@@ -308,7 +329,14 @@ def cmd_report(args: argparse.Namespace) -> None:
     sys.exit(1)
 
   data = json.loads(json_path.read_text(encoding="utf-8"))
-  report = generate_report(data)
+  
+  # Auto-detect reference file
+  ref_path = json_path.with_suffix(".txt")
+  reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
+  if reference:
+    print(f"Reference: {len(reference)} chars, {len(reference.split())} words")
+  
+  report = generate_report(data, reference)
 
   # Default output path: same name as JSON but with .md extension
   output_path = Path(args.output) if args.output else json_path.with_suffix(".md")
