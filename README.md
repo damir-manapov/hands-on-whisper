@@ -139,19 +139,47 @@ The report command auto-detects the `.txt` file and includes metrics in the tabl
 Find optimal parameters using Optuna (Bayesian optimization):
 
 ```bash
-# Optimize with 10 trials (default)
+# Basic optimization with 10 trials (default)
 uv run python src/transcribe.py optimize audio.wav
 
-# Optimize specific model with more trials
-uv run python src/transcribe.py o audio.wav -m large-v3-turbo -l ru --n-trials 20
+# Search across backends and models
+uv run python src/transcribe.py o audio.wav \
+  --backends faster-whisper openai \
+  --models large-v3 large-v3-turbo \
+  --n-trials 30
+
+# Compare compute types
+uv run python src/transcribe.py o audio.wav \
+  --models large-v3 \
+  --compute-types auto int8 float16 \
+  --n-trials 20
+
+# Set language explicitly
+uv run python src/transcribe.py o audio.wav -l ru --n-trials 20
 ```
 
-Optuna optimizes:
-- `beam_size` (1-10)
-- `temperature` (0.0-0.5)
-- `condition_on_prev` (True/False)
+### Search space
 
-Requires `audio.txt` reference transcription.
+Optuna searches over these parameters:
+
+| Parameter | Range | Description |
+|-----------|-------|-------------|
+| `backend` | --backends list | Whisper backend |
+| `model` | --models list | Model size |
+| `compute_type` | --compute-types list | Precision |
+| `beam_size` | 1-10 | Beam search width |
+| `temperature` | 0.0-0.5 | Sampling temperature |
+| `condition_on_prev` | True/False | Condition on previous text |
+
+Note: `condition_on_prev` is always `False` for whispercpp (not supported).
+
+### Features
+
+- **Saves results**: Each trial is saved to JSON and MD report is regenerated
+- **Caching**: If a run with same settings exists, cached result is reused
+- **Resumable**: Stop and restart - already completed trials are skipped
+
+Requires `audio.txt` reference transcription for WER calculation.
 
 ## Output
 
