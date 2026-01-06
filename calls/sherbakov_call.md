@@ -9,11 +9,11 @@
 
 | # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) | WER % | CER % |
 |---|---------|-------|----------|--------|--------------|------------|---------------|-------|-------|
-| 1 | faster-whisper | large-v3-turbo | ru | cpu | 74.61 | 1454.3 | 1473.9 | 27.0 | 18.2 |
-| 2 | faster-whisper | large-v3 | ru | cpu | 102.69 | 2248.5 | 2268.0 | 64.7 | 51.2 |
-| 3 | openai | large-v3 | ru | cpu | 287.76 | 7023.5 | 9291.6 | 79.5 | 64.8 |
-| 4 | whispercpp | models/ggml-large-v3-turbo.bin | ru | cpu | 432.42 | 5.1 | 1479.0 | 72.2 | 36.1 |
-| 5 | whispercpp | models/ggml-large-v3.bin | ru | cpu | 538.15 | 3.3 | 9294.9 | 137.9 | 94.7 |
+| 1 | faster-whisper | large-v3-turbo | ru | cpu | 74.61 | 1454.3 | 1473.9 | 20.3 | 17.0 |
+| 2 | faster-whisper | large-v3 | ru | cpu | 102.69 | 2248.5 | 2268.0 | 55.4 | 49.3 |
+| 3 | openai | large-v3 | ru | cpu | 287.76 | 7023.5 | 9291.6 | 68.1 | 62.5 |
+| 4 | whispercpp | models/ggml-large-v3-turbo.bin | ru | cpu | 432.42 | 5.1 | 1479.0 | 43.5 | 30.9 |
+| 5 | whispercpp | models/ggml-large-v3.bin | ru | cpu | 538.15 | 3.3 | 9294.9 | 129.3 | 96.8 |
 
 ## Transcription Results
 

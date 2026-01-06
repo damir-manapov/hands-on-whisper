@@ -132,6 +132,8 @@ calls/
 
 The report command auto-detects the `.txt` file and includes metrics in the table.
 
+**Normalization**: Text is normalized before comparison (lowercase, remove punctuation, collapse whitespace). This is standard practice and works with any language including Russian.
+
 ## Output
 
 Results are automatically saved to a JSON file named after the audio file (e.g., `audio.json`):

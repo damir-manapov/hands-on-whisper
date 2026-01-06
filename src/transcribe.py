@@ -139,7 +139,16 @@ def transcribe_whispercpp(  # noqa: PLR0913
 
 def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   """Generate a markdown report from transcription data."""
+  import re
+
   from jiwer import cer, wer
+
+  def normalize(text: str) -> str:
+    """Normalize text for WER comparison: lowercase, remove punctuation, collapse whitespace."""
+    text = text.lower()
+    text = re.sub(r"[^\w\s]", "", text)  # Remove punctuation (Unicode-aware)
+    text = re.sub(r"\s+", " ", text).strip()  # Collapse whitespace
+    return text
 
   lines = ["# Transcription Report", ""]
   lines.append(f"**Audio file:** `{data.get('audio', 'unknown')}`")
@@ -153,6 +162,9 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Sort by duration for comparison
   sorted_runs = sorted(runs, key=lambda r: r.get("duration_seconds", 0))
 
+  # Normalize reference once
+  ref_normalized = normalize(reference) if reference else None
+
   lines.append(f"**Total runs:** {len(runs)}")
   if reference:
     lines.append(f"**Reference:** {len(reference)} chars, {len(reference.split())} words")
@@ -161,7 +173,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  if reference:
+  if ref_normalized:
     lines.append("| # | Backend | Model | Language | Device | Duration (s) | Mem Δ (MB) | Mem Peak (MB) | WER % | CER % |")
     lines.append("|---|---------|-------|----------|--------|--------------|------------|---------------|-------|-------|")
   else:
@@ -176,10 +188,11 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
-    if reference:
+    if ref_normalized:
       hypothesis = run.get("text", "")
-      wer_score = wer(reference, hypothesis) * 100
-      cer_score = cer(reference, hypothesis) * 100
+      hyp_normalized = normalize(hypothesis)
+      wer_score = wer(ref_normalized, hyp_normalized) * 100
+      cer_score = cer(ref_normalized, hyp_normalized) * 100
       lines.append(
         f"| {i} | {backend} | {model} | {lang} | {device} | {duration:.2f} | {mem_delta} | {mem_peak} | {wer_score:.1f} | {cer_score:.1f} |"
       )
