@@ -22,11 +22,13 @@ def normalize_text(text: str) -> str:
 
 
 def calculate_metrics(reference: str, hypothesis: str) -> tuple[float, float]:
-  """Calculate WER and CER between reference and hypothesis (both should be normalized)."""
+  """Calculate WER and CER between reference and hypothesis (normalizes both)."""
   from jiwer import cer, wer
 
-  wer_score = wer(reference, hypothesis) * 100
-  cer_score = cer(reference, hypothesis) * 100
+  ref_norm = normalize_text(reference)
+  hyp_norm = normalize_text(hypothesis)
+  wer_score = wer(ref_norm, hyp_norm) * 100
+  cer_score = cer(ref_norm, hyp_norm) * 100
   return wer_score, cer_score
 
 
@@ -170,9 +172,6 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Sort by duration for comparison
   sorted_runs = sorted(runs, key=lambda r: r.get("duration_seconds", 0))
 
-  # Normalize reference once
-  ref_normalized = normalize_text(reference) if reference else None
-
   lines.append(f"**Total runs:** {len(runs)}")
   if reference:
     lines.append(f"**Reference:** {len(reference)} chars, {len(reference.split())} words")
@@ -183,7 +182,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   lines.append("")
   base_header = "| # | Backend | Model | Language | Device | Duration (s) | Mem Δ | Mem Peak |"
   base_sep = "|---|---------|-------|----------|--------|--------------|-------|----------|"
-  if ref_normalized:
+  if reference:
     lines.append(f"{base_header} WER % | CER % |")
     lines.append(f"{base_sep}-------|-------|")
   else:
@@ -202,9 +201,8 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
       f"| {i} | {backend} | {model} | {lang} | {device} "
       f"| {duration:.2f} | {mem_delta} | {mem_peak} |"
     )
-    if ref_normalized:
-      hyp_normalized = normalize_text(run.get("text", ""))
-      wer_score, cer_score = calculate_metrics(ref_normalized, hyp_normalized)
+    if reference:
+      wer_score, cer_score = calculate_metrics(reference, run.get("text", ""))
       lines.append(f"{base_row} {wer_score:.1f} | {cer_score:.1f} |")
     else:
       lines.append(base_row)
@@ -440,8 +438,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
   if existing:
     print(f"\n[Trial {trial_number}] {run_id} - using cached result")
-    hypothesis = normalize_text(existing.get("text", ""))
-    wer_score, _ = calculate_metrics(reference, hypothesis)
+    wer_score, _ = calculate_metrics(reference, existing.get("text", ""))
     print(f"  WER: {wer_score:.1f}%")
     return wer_score / 100
 
@@ -456,8 +453,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   data["runs"].append(run_record)
   save_results(data, json_path)
 
-  hypothesis = normalize_text(run_record["text"])
-  wer_score, _ = calculate_metrics(reference, hypothesis)
+  wer_score, _ = calculate_metrics(reference, run_record["text"])
   mem_used_mb = run_record["memory_delta_mb"]
   duration = run_record["duration_seconds"]
   print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) WER: {wer_score:.1f}%")
@@ -478,8 +474,8 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     print(f"Error: Reference file required: {ref_path}", file=sys.stderr)
     sys.exit(1)
 
-  reference = normalize_text(ref_path.read_text(encoding="utf-8").strip())
-  print(f"Reference: {len(reference.split())} words (normalized)")
+  reference = ref_path.read_text(encoding="utf-8").strip()
+  print(f"Reference: {len(reference.split())} words")
 
   # Load or create JSON data
   json_path = audio_path.with_suffix(".json")
