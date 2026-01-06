@@ -21,6 +21,15 @@ def normalize_text(text: str) -> str:
   return text
 
 
+def calculate_metrics(reference: str, hypothesis: str) -> tuple[float, float]:
+  """Calculate WER and CER between reference and hypothesis (both should be normalized)."""
+  from jiwer import cer, wer
+
+  wer_score = wer(reference, hypothesis) * 100
+  cer_score = cer(reference, hypothesis) * 100
+  return wer_score, cer_score
+
+
 def generate_run_id(  # noqa: PLR0913
   backend: str,
   model: str,
@@ -149,8 +158,6 @@ def transcribe_whispercpp(  # noqa: PLR0913
 
 def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   """Generate a markdown report from transcription data."""
-  from jiwer import cer, wer
-
   lines = ["# Transcription Report", ""]
   lines.append(f"**Audio file:** `{data.get('audio', 'unknown')}`")
   lines.append("")
@@ -196,10 +203,8 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
       f"| {duration:.2f} | {mem_delta} | {mem_peak} |"
     )
     if ref_normalized:
-      hypothesis = run.get("text", "")
-      hyp_normalized = normalize_text(hypothesis)
-      wer_score = wer(ref_normalized, hyp_normalized) * 100
-      cer_score = cer(ref_normalized, hyp_normalized) * 100
+      hyp_normalized = normalize_text(run.get("text", ""))
+      wer_score, cer_score = calculate_metrics(ref_normalized, hyp_normalized)
       lines.append(f"{base_row} {wer_score:.1f} | {cer_score:.1f} |")
     else:
       lines.append(base_row)
@@ -430,17 +435,15 @@ def _run_optimization_trial(  # noqa: PLR0913
   json_path: Path,
 ) -> float:
   """Run a single optimization trial and return WER score."""
-  from jiwer import wer
-
   # Check if already exists (use cached result)
   run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
   existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
   if existing:
     print(f"\n[Trial {trial_number}] {run_id} - using cached result")
     hypothesis = normalize_text(existing.get("text", ""))
-    wer_score = wer(reference, hypothesis)
-    print(f"  WER: {wer_score * 100:.1f}%")
-    return wer_score
+    wer_score, _ = calculate_metrics(reference, hypothesis)
+    print(f"  WER: {wer_score:.1f}%")
+    return wer_score / 100
 
   print(
     f"\n[Trial {trial_number}] {backend}/{model} compute={compute_type} "
@@ -454,11 +457,11 @@ def _run_optimization_trial(  # noqa: PLR0913
   save_results(data, json_path)
 
   hypothesis = normalize_text(run_record["text"])
-  wer_score = wer(reference, hypothesis)
+  wer_score, _ = calculate_metrics(reference, hypothesis)
   mem_used_mb = run_record["memory_delta_mb"]
   duration = run_record["duration_seconds"]
-  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) WER: {wer_score * 100:.1f}%")
-  return wer_score
+  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) WER: {wer_score:.1f}%")
+  return wer_score / 100
 
 
 def cmd_optimize(args: argparse.Namespace) -> None:
