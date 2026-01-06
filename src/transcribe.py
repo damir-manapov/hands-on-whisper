@@ -446,16 +446,18 @@ def _run_optimization_trial(  # noqa: PLR0913
   reference: str,
   data: dict,
   json_path: Path,
+  metric: str = "wer",
 ) -> float:
-  """Run a single optimization trial and return WER score."""
+  """Run a single optimization trial and return WER or CER score."""
   # Check if already exists (use cached result)
   run_id = generate_run_id(backend, model, language, device, beam_size, temperature, compute_type)
   existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
   if existing:
     print(f"\n[Trial {trial_number}] {run_id} - using cached result")
-    wer_score, _ = calculate_metrics(reference, existing.get("text", ""))
-    print(f"  WER: {wer_score:.1f}%")
-    return wer_score / 100
+    wer_score, cer_score = calculate_metrics(reference, existing.get("text", ""))
+    score = wer_score if metric == "wer" else cer_score
+    print(f"  {metric.upper()}: {score:.1f}%")
+    return score / 100
 
   print(
     f"\n[Trial {trial_number}] {backend}/{model} compute={compute_type} "
@@ -468,11 +470,12 @@ def _run_optimization_trial(  # noqa: PLR0913
   data["runs"].append(run_record)
   save_results(data, json_path)
 
-  wer_score, _ = calculate_metrics(reference, run_record["text"])
+  wer_score, cer_score = calculate_metrics(reference, run_record["text"])
+  score = wer_score if metric == "wer" else cer_score
   mem_used_mb = run_record["memory_delta_mb"]
   duration = run_record["duration_seconds"]
-  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) WER: {wer_score:.1f}%")
-  return wer_score / 100
+  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) {metric.upper()}: {score:.1f}%")
+  return score / 100
 
 
 def _init_study_with_history(  # noqa: PLR0913
@@ -482,6 +485,7 @@ def _init_study_with_history(  # noqa: PLR0913
   backends: list[str],
   models: list[str],
   compute_types: list[str],
+  metric: str = "wer",
 ) -> None:
   """Initialize Optuna study with previous runs so it can learn from them."""
   import optuna as opt
@@ -496,7 +500,8 @@ def _init_study_with_history(  # noqa: PLR0913
     if run_compute and run_compute not in compute_types:
       continue
 
-    wer_score, _ = calculate_metrics(reference, run.get("text", ""))
+    wer_score, cer_score = calculate_metrics(reference, run.get("text", ""))
+    score = wer_score if metric == "wer" else cer_score
     params = {
       "backend": run_backend,
       "model": run_model,
@@ -522,7 +527,7 @@ def _init_study_with_history(  # noqa: PLR0913
             else {}
           ),
         },
-        values=[wer_score / 100],
+        values=[score / 100],
       )
     )
 
@@ -560,7 +565,9 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   models = args.models if args.models else all_models
   compute_types = args.compute_types if args.compute_types else all_compute_types
 
+  metric = args.metric
   print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
+  print(f"Optimizing: {metric.upper()}")
 
   def objective(trial: optuna.Trial) -> float:
     backend = trial.suggest_categorical("backend", backends)
@@ -589,10 +596,11 @@ def cmd_optimize(args: argparse.Namespace) -> None:
       reference,
       data,
       json_path,
+      metric,
     )
 
   study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
-  _init_study_with_history(study, data, reference, backends, models, compute_types)
+  _init_study_with_history(study, data, reference, backends, models, compute_types, metric)
 
   if study.trials:
     print(f"Initialized with {len(study.trials)} previous trials")
@@ -602,7 +610,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   print("\n" + "=" * 50)
   print("OPTIMIZATION RESULTS")
   print("=" * 50)
-  print(f"Best WER: {study.best_value * 100:.1f}%")
+  print(f"Best {metric.upper()}: {study.best_value * 100:.1f}%")
   print("Best parameters:")
   for key, value in study.best_params.items():
     print(f"  {key}: {value}")
@@ -761,6 +769,12 @@ Examples:
   )
   optim_parser.add_argument(
     "--n-trials", type=int, default=10, help="Number of optimization trials (default: 10)"
+  )
+  optim_parser.add_argument(
+    "--metric",
+    default="wer",
+    choices=["wer", "cer"],
+    help="Metric to optimize: wer (Word Error Rate) or cer (Character Error Rate) (default: wer)",
   )
   optim_parser.set_defaults(func=cmd_optimize)
 

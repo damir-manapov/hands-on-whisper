@@ -147,6 +147,9 @@ Find optimal parameters using Optuna (Bayesian optimization):
 # Full search across all backends, models, compute types (default)
 uv run python src/transcribe.py optimize audio.wav -l ru --n-trials 50
 
+# Optimize for CER instead of WER
+uv run python src/transcribe.py o audio.wav -l ru --metric cer
+
 # Limit search to specific backends
 uv run python src/transcribe.py o audio.wav --backends faster-whisper -l ru
 
@@ -169,6 +172,7 @@ By default, Optuna searches across **all** backends, models, and compute types:
 | `beam_size` | 1-10 | Beam search width |
 | `temperature` | 0.0-0.5 | Sampling temperature |
 | `condition_on_prev` | True/False | Condition on previous text |
+| `--metric` | wer | Optimize for `wer` or `cer` |
 
 Note: `condition_on_prev` is always `False` for whispercpp (not supported).
 
