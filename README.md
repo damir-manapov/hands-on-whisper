@@ -174,9 +174,10 @@ Note: `condition_on_prev` is always `False` for whispercpp (not supported).
 
 ### Features
 
+- **Learns from history**: Optuna is initialized with all previous runs from JSON
 - **Saves results**: Each trial is saved to JSON and MD report is regenerated
 - **Caching**: If a run with same settings exists, cached result is reused
-- **Resumable**: Stop and restart - already completed trials are skipped
+- **Resumable**: Stop and restart - previous runs inform better suggestions
 
 Requires `audio.txt` reference transcription for WER calculation.
 
