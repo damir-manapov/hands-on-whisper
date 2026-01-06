@@ -39,7 +39,7 @@
 
 ### 1. whispercpp / large-v3-turbo
 
-- **ID:** `1bf9361c312b`
+- **ID:** `be3b373927a8`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 298.96s
@@ -58,7 +58,7 @@
 
 ### 2. whispercpp / large-v3-turbo
 
-- **ID:** `d5451f29f570`
+- **ID:** `53a8280bb496`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 287.03s
@@ -77,7 +77,7 @@
 
 ### 3. whispercpp / large-v3-turbo
 
-- **ID:** `59b5fb9eac11`
+- **ID:** `55a61b2c271b`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 330.37s
@@ -96,7 +96,7 @@
 
 ### 4. whispercpp / ggml-large-v3-turbo
 
-- **ID:** `0a7b9d5eadb3`
+- **ID:** `2745256da836`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 299.43s
@@ -115,7 +115,7 @@
 
 ### 5. faster-whisper / large-v3-turbo
 
-- **ID:** `0c6ebe88b423`
+- **ID:** `4ac4b3f70491`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 74.61s
@@ -134,7 +134,7 @@
 
 ### 6. whispercpp / large-v3-turbo
 
-- **ID:** `36aa77fd28f6`
+- **ID:** `08d3a2c67e7a`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 314.74s
@@ -153,7 +153,7 @@
 
 ### 7. whispercpp / large-v3-turbo
 
-- **ID:** `43616ef1e909`
+- **ID:** `271393584028`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 403.12s
@@ -172,7 +172,7 @@
 
 ### 8. whispercpp / ggml-large-v3-turbo
 
-- **ID:** `afb70256a522`
+- **ID:** `9586f837c07f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 432.42s
@@ -191,7 +191,7 @@
 
 ### 9. whispercpp / medium
 
-- **ID:** `82a799f183d3`
+- **ID:** `d04cc41edbb9`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 263.54s
@@ -210,7 +210,7 @@
 
 ### 10. whispercpp / medium
 
-- **ID:** `66574a38b779`
+- **ID:** `52ce9b935bf1`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 241.13s
@@ -229,7 +229,7 @@
 
 ### 11. whispercpp / large-v3-turbo
 
-- **ID:** `e47e038ac9bc`
+- **ID:** `97e89f18b716`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 420.13s
@@ -248,7 +248,7 @@
 
 ### 12. whispercpp / small
 
-- **ID:** `f62bb3e83b4a`
+- **ID:** `7917acc3cc86`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 82.03s
@@ -267,7 +267,7 @@
 
 ### 13. openai / small
 
-- **ID:** `4cdd2c531637`
+- **ID:** `5976d57f30f9`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 96.10s
@@ -286,7 +286,7 @@
 
 ### 14. openai / large-v3-turbo
 
-- **ID:** `8ca9797b56e0`
+- **ID:** `0ac3d579d08e`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 366.44s
@@ -305,7 +305,7 @@
 
 ### 15. faster-whisper / large-v3-turbo
 
-- **ID:** `785b64c1295c`
+- **ID:** `c9fa75b2c368`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 142.51s
@@ -324,7 +324,7 @@
 
 ### 16. faster-whisper / large-v3
 
-- **ID:** `e3d2a53071f5`
+- **ID:** `c6e8612951b6`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 102.69s
@@ -343,7 +343,7 @@
 
 ### 17. whispercpp / large-v3
 
-- **ID:** `a8d6dff88953`
+- **ID:** `bbf429736d60`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 434.90s
@@ -362,7 +362,7 @@
 
 ### 18. openai / large-v3
 
-- **ID:** `df92e352cf33`
+- **ID:** `80ca1f06ccad`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 287.76s
@@ -381,7 +381,7 @@
 
 ### 19. openai / tiny
 
-- **ID:** `80e9b4231725`
+- **ID:** `2a4896407ec6`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 22.59s
@@ -400,7 +400,7 @@
 
 ### 20. openai / tiny
 
-- **ID:** `8f2660444293`
+- **ID:** `919772e67540`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 17.47s
@@ -419,7 +419,7 @@
 
 ### 21. openai / base
 
-- **ID:** `0570a4bd114b`
+- **ID:** `17b62d6eaca6`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 39.06s
@@ -438,7 +438,7 @@
 
 ### 22. faster-whisper / base
 
-- **ID:** `b41ec794857c`
+- **ID:** `671221cf8616`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 29.57s
@@ -457,7 +457,7 @@
 
 ### 23. faster-whisper / tiny
 
-- **ID:** `a295b03e3f64`
+- **ID:** `6d9504eaa1fd`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 17.97s
@@ -476,7 +476,7 @@
 
 ### 24. whispercpp / ggml-large-v3
 
-- **ID:** `2cd06c8b9ec4`
+- **ID:** `0fb1d244f0be`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 538.15s
@@ -495,7 +495,7 @@
 
 ### 25. faster-whisper / base
 
-- **ID:** `fec4788c697e`
+- **ID:** `085447cdc966`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 30.97s
