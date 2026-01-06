@@ -487,7 +487,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   # Parse search space from args (defaults to all options)
   all_backends = ["faster-whisper", "openai", "whispercpp"]
   all_models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
-  all_compute_types = ["auto", "int8"]
+  all_compute_types = ["int8", "float16", "float32"]
 
   backends = args.backends if args.backends else all_backends
   models = args.models if args.models else all_models
@@ -679,7 +679,7 @@ Examples:
     nargs="+",
     default=None,
     choices=["auto", "int8", "float16", "float32"],
-    help="Compute types to search (default: auto,int8)",
+    help="Compute types to search (default: int8,float16,float32)",
   )
   optim_parser.add_argument(
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"

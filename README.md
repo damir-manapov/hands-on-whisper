@@ -160,7 +160,7 @@ By default, Optuna searches across **all** backends, models, and compute types:
 |-----------|---------|-------------|
 | `backend` | all 3 | faster-whisper, openai, whispercpp |
 | `model` | all 6 | tiny, base, small, medium, large-v3, large-v3-turbo |
-| `compute_type` | auto, int8 | Precision options |
+| `compute_type` | int8, float16, float32 | Precision options |
 | `beam_size` | 1-10 | Beam search width |
 | `temperature` | 0.0-0.5 | Sampling temperature |
 | `condition_on_prev` | True/False | Condition on previous text |
