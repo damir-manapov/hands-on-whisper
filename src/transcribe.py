@@ -310,23 +310,18 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
   condition_on_prev = not args.no_condition_on_prev
 
   for backend, model, language, device in combinations:
-    # Resolve model path for whispercpp
-    if backend == "whispercpp":
-      if args.model_path:
-        model_paths = args.model_path
-      else:
-        model_path = resolve_whispercpp_model_path(model, args.compute_type)
-        if not Path(model_path).exists():
-          print(f"Error: Model file not found: {model_path}", file=sys.stderr)
-          print("Run: uv run python src/download_models.py --backend whispercpp", file=sys.stderr)
+    # For whispercpp with custom model paths
+    if backend == "whispercpp" and args.model_path:
+      for mp in args.model_path:
+        if not Path(mp).exists():
+          print(f"Error: Model file not found: {mp}", file=sys.stderr)
           sys.exit(1)
-        model_paths = [model_path]
-
-      for mp in model_paths:
+        # Extract model name from path: models/ggml-large-v3-turbo.bin -> large-v3-turbo
+        model_name = Path(mp).stem.replace("ggml-", "").replace("-q8_0", "").replace("-q5_0", "")
         run_single(
           args.audio,
           backend,
-          mp,
+          model_name,
           language,
           device,
           args.beam_size,
@@ -337,6 +332,14 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         )
         save_results(data, json_path)
     else:
+      # Check existence for whispercpp
+      if backend == "whispercpp":
+        model_path = resolve_whispercpp_model_path(model, args.compute_type)
+        if not Path(model_path).exists():
+          print(f"Error: Model file not found: {model_path}", file=sys.stderr)
+          print("Run: uv run python src/download_models.py --backend whispercpp", file=sys.stderr)
+          sys.exit(1)
+
       run_single(
         args.audio,
         backend,
