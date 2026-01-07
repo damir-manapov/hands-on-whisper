@@ -757,8 +757,11 @@ def cmd_optimize(args: argparse.Namespace) -> None:
       condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
 
     # batch_size only for faster-whisper (0 = sequential, 1-32 = batched)
-    if backend == "faster-whisper":  # noqa: SIM108
-      batch_size = trial.suggest_int("batch_size", 0, 32)
+    if backend == "faster-whisper":
+      if args.batch_sizes:
+        batch_size = trial.suggest_categorical("batch_size", args.batch_sizes)
+      else:
+        batch_size = trial.suggest_int("batch_size", 0, 32)
     else:
       batch_size = 0
 
@@ -958,6 +961,13 @@ Examples:
     default=None,
     choices=["auto", "int8", "float16", "float32"],
     help="Compute types to search (default: int8,float16,float32)",
+  )
+  optim_parser.add_argument(
+    "--batch-sizes",
+    nargs="+",
+    type=int,
+    default=None,
+    help="Batch sizes to search for faster-whisper (default: 0-32 range)",
   )
   optim_parser.add_argument(
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"

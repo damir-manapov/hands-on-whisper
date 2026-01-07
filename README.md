@@ -202,12 +202,23 @@ By default, Optuna searches across **all** backends, models, and compute types:
 | `backend` | all 3 | faster-whisper, openai, whispercpp |
 | `model` | all 6 | tiny, base, small, medium, large-v3, large-v3-turbo |
 | `compute_type` | int8, float16, float32 | Precision options |
+| `batch_size` | 0-32 | Batch size for faster-whisper (0=sequential) |
 | `beam_size` | 1-10 | Beam search width |
 | `temperature` | 0.0-0.5 | Sampling temperature |
 | `condition_on_prev` | True/False | Condition on previous text |
 | `--metric` | wer | Optimize for `wer` or `cer` |
 
 Note: `condition_on_prev` is always `False` for whispercpp (not supported).
+
+You can constrain the search space with CLI flags:
+
+```bash
+# Search only specific batch sizes
+uv run python src/transcribe.py optimize audio.wav --batch-sizes 0 8 16 24 32
+
+# Combine with other filters
+uv run python src/transcribe.py optimize audio.wav --backends faster-whisper --models large-v3 --compute-types float16 --batch-sizes 16 32
+```
 
 ### Features
 
