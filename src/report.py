@@ -62,9 +62,32 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
   all_cloud = all(run.get("backend") in CLOUD_BACKENDS for run in sorted_runs)
 
   if all_cloud:
-    # Simplified table for cloud backends
-    hdr = "| # | Backend | Model | Temp | Lang | Dur(s) | MemΔ | Peak |"
-    sep = "|---|---------|-------|------|------|--------|------|------|"
+    # Simplified table for cloud backends - build dynamic columns based on params present
+    all_params = set()
+    for run in sorted_runs:
+      backend = run.get("backend", "?")
+      all_params.update(get_backend_params(backend))
+
+    # Build header dynamically
+    hdr_parts = ["| #", "Backend", "Model"]
+    sep_parts = ["|---", "---------", "-------"]
+
+    if "temperature" in all_params:
+      hdr_parts.append("Temp")
+      sep_parts.append("------")
+    if "smart_format" in all_params:
+      hdr_parts.append("SmartFmt")
+      sep_parts.append("----------")
+    if "diarize" in all_params:
+      hdr_parts.append("Diarize")
+      sep_parts.append("---------")
+
+    hdr_parts.extend(["Lang", "Dur(s)", "MemΔ", "Peak |"])
+    sep_parts.extend(["------", "--------|", "------|", "------|"])
+
+    hdr = " | ".join(hdr_parts)
+    sep = "|".join(sep_parts)
+
     if reference:
       lines.append(f"{hdr} WER% | CER% |")
       lines.append(f"{sep}------|------|")
@@ -99,11 +122,23 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
     if all_cloud:
       # Simplified row for cloud backends
       params = get_backend_params(backend)
-      temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
-      row = (
-        f"| {i} | {backend} | {model} | {temp} | {lang} "
-        f"| {duration:.1f} | {mem_delta} | {mem_peak} |"
-      )
+
+      row_parts = [f"| {i}", backend, model]
+
+      if "temperature" in all_params:
+        temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
+        row_parts.append(temp)
+      if "smart_format" in all_params:
+        smart_format = (
+          ("Y" if run.get("smart_format", True) else "N") if "smart_format" in params else "-"
+        )
+        row_parts.append(smart_format)
+      if "diarize" in all_params:
+        diarize = ("Y" if run.get("diarize", False) else "N") if "diarize" in params else "-"
+        row_parts.append(diarize)
+
+      row_parts.extend([lang, f"{duration:.1f}", str(mem_delta), f"{mem_peak} |"])
+      row = " | ".join(row_parts)
     else:
       # Full row for local backends
       gpu_name = run.get("gpu_name") or "-"
@@ -140,7 +175,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
   return "\n".join(lines)
 
 
-def _append_detailed_results(
+def _append_detailed_results(  # noqa: PLR0915
   lines: list[str], sorted_runs: list[dict], reference: str | None
 ) -> None:
   """Append detailed transcription results to report lines."""
@@ -185,6 +220,12 @@ def _append_detailed_results(
       lines.append(f"- **Beam size:** {beam_size}")
     if "temperature" in params:
       lines.append(f"- **Temperature:** {temperature:.2f}")
+    if "smart_format" in params:
+      smart_format_val = run.get("smart_format", True)
+      lines.append(f"- **Smart format:** {smart_format_val}")
+    if "diarize" in params:
+      diarize_val = run.get("diarize", False)
+      lines.append(f"- **Diarize:** {diarize_val}")
     if "compute_type" in params:
       lines.append(f"- **Compute type:** {compute_type}")
     if "condition_on_prev" in params:
