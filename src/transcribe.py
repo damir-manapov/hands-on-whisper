@@ -371,8 +371,9 @@ def cmd_report(args: argparse.Namespace) -> None:
 
   data = json.loads(json_path.read_text(encoding="utf-8"))
 
-  # Auto-detect reference file
-  ref_path = json_path.with_suffix(".txt")
+  # Auto-detect reference file from audio path in JSON data
+  audio_path = Path(data.get("audio", ""))
+  ref_path = audio_path.with_suffix(".txt")
   reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
   if reference:
     print(f"Reference: {len(reference)} chars, {len(reference.split())} words")
