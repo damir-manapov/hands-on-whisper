@@ -122,13 +122,17 @@ The report includes:
 
 **sherbakov_call** - Sample audio from [Sherbakov Call Prank](https://www.youtube.com/watch?v=vZQNgvIoPr0) (Russian):
 
-- [sherbakov_call.json](calls/sherbakov_call.json) - Raw benchmark data
-- [sherbakov_call.md](calls/sherbakov_call.md) - Formatted report with WER/CER metrics
+- [sherbakov_call_cpu.json](calls/sherbakov_call_cpu.json) - CPU benchmark data
+- [sherbakov_call_cpu.md](calls/sherbakov_call_cpu.md) - CPU report with WER/CER metrics
 
 **finance** - Sample audio from [Russian Speech Recognition Dataset](https://huggingface.co/datasets/AxonData/russian-speech-recognition-dataset) (Russian):
 
-- [finance.json](calls/finance.json) - Raw benchmark data
-- [finance.md](calls/finance.md) - Formatted report with WER/CER metrics
+- [finance_cpu.json](calls/finance_cpu.json) - CPU benchmark data
+- [finance_cpu.md](calls/finance_cpu.md) - CPU report with WER/CER metrics
+
+**Output file naming**: Results are auto-saved with device suffix:
+- CPU runs → `audio_cpu.json`, `audio_cpu.md`
+- GPU runs → `audio_gpu.json`, `audio_gpu.md`
 
 ### Metrics
 
@@ -136,10 +140,12 @@ To calculate WER (Word Error Rate) and CER (Character Error Rate), place a refer
 
 ```
 calls/
-  sherbakov_call.wav    # Audio file
-  sherbakov_call.txt    # Manual reference transcription
-  sherbakov_call.json   # Generated results
-  sherbakov_call.md     # Generated report with WER/CER
+  sherbakov_call.wav      # Audio file
+  sherbakov_call.txt      # Manual reference transcription
+  sherbakov_call_cpu.json # CPU results
+  sherbakov_call_cpu.md   # CPU report with WER/CER
+  sherbakov_call_gpu.json # GPU results (if run with --device cuda)
+  sherbakov_call_gpu.md   # GPU report
 ```
 
 The report command auto-detects the `.txt` file and includes metrics in the table.
