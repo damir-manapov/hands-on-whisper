@@ -60,9 +60,9 @@ provider "openstack" {
   region      = var.region
 }
 
-# Get Ubuntu 24.04 image
+# Get OS image (use GPU-optimized for GPU servers)
 data "openstack_images_image_v2" "ubuntu" {
-  name        = "Ubuntu 24.04 LTS 64-bit"
+  name        = var.image_name
   most_recent = true
 
   depends_on = [
@@ -71,11 +71,10 @@ data "openstack_images_image_v2" "ubuntu" {
   ]
 }
 
-# Create a custom flavor for the VM
-# Note: GPU flavors require ordering through Selectel panel or contacting support
-# For GPU, you'll need to use a pool with GPU availability (e.g., ru-7a, ru-7c)
-# and request GPU quota from Selectel support
+# Custom flavor for CPU-only mode (when use_gpu = false)
 resource "openstack_compute_flavor_v2" "whisper" {
+  count = var.use_gpu ? 0 : 1
+
   name      = "whisper-${var.cpu_count}vcpu-${var.ram_gb}gb"
   vcpus     = var.cpu_count
   ram       = var.ram_gb * 1024
@@ -91,6 +90,10 @@ resource "openstack_compute_flavor_v2" "whisper" {
     selectel_iam_serviceuser_v1.whisper
   ]
 }
+
+# For GPU mode: use fixed flavor ID from Selectel
+# GPU flavor IDs are pre-defined by Selectel (e.g., GL2.X-XXXXX-X-XGPU)
+# Use `openstack flavor list | grep GL` to find available GPU flavors
 
 # Create network
 resource "openstack_networking_network_v2" "whisper" {
@@ -180,7 +183,8 @@ resource "openstack_networking_port_v2" "whisper" {
 # Compute instance
 resource "openstack_compute_instance_v2" "whisper" {
   name              = "whisper-${var.environment_name}"
-  flavor_id         = openstack_compute_flavor_v2.whisper.id
+  # Use GPU flavor ID if GPU mode, otherwise use custom CPU flavor
+  flavor_id         = var.use_gpu ? var.gpu_flavor_id : openstack_compute_flavor_v2.whisper[0].id
   key_pair          = selectel_vpc_keypair_v2.whisper.name
   availability_zone = var.availability_zone
   user_data         = file("${path.module}/cloud-init.yaml")

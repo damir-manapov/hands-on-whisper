@@ -110,3 +110,30 @@ If NVIDIA driver isn't ready, reboot:
 ```bash
 reboot
 ```
+
+## OpenStack CLI
+
+For finding GPU flavors and debugging:
+
+```bash
+# Set environment variables
+export OS_AUTH_URL="https://cloud.api.selcloud.ru/identity/v3"
+export OS_IDENTITY_API_VERSION=3
+export OS_PROJECT_DOMAIN_NAME="$TF_VAR_selectel_domain"
+export OS_USER_DOMAIN_NAME="$TF_VAR_selectel_domain"
+export OS_PROJECT_ID="$(terraform output -raw project_id)"
+export OS_USERNAME="$TF_VAR_selectel_username"
+export OS_PASSWORD="$TF_VAR_selectel_password"
+export OS_REGION_NAME="ru-7"
+
+# List all GPU flavors (GL prefix)
+openstack flavor list | grep GL
+
+# Get flavor ID by name
+openstack flavor show "GL2.6-24576-0-1GPU" -f value -c id
+
+# List GPU-optimized images
+openstack image list | grep -i gpu
+```
+
+Common GPU flavor naming: `GLX.vCPU-RAM-DISK-NxGPU` (e.g., `GL2.6-24576-0-1GPU` = 6 vCPU, 24GB RAM, 1 GPU)

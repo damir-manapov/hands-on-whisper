@@ -1,5 +1,5 @@
 output "vm_ip" {
-  description = "Public IP address of the GPU VM"
+  description = "Public IP address of the VM"
   value       = openstack_networking_floatingip_v2.whisper.address
 }
 
@@ -11,12 +11,15 @@ output "ssh_command" {
 output "vm_specs" {
   description = "VM specifications"
   value = {
-    cpu       = var.cpu_count
-    ram_gb    = var.ram_gb
-    disk_gb   = var.disk_size_gb
-    disk_type = var.disk_type
-    region    = var.region
-    zone      = var.availability_zone
+    gpu_mode     = var.use_gpu
+    gpu_flavor   = var.use_gpu ? var.gpu_flavor_id : null
+    cpu          = var.use_gpu ? null : var.cpu_count
+    ram_gb       = var.use_gpu ? null : var.ram_gb
+    disk_gb      = var.disk_size_gb
+    disk_type    = var.disk_type
+    region       = var.region
+    zone         = var.availability_zone
+    image        = var.image_name
   }
 }
 

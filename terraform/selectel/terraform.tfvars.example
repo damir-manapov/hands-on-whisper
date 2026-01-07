@@ -1,5 +1,7 @@
+# Selectel Whisper Benchmark - Example Configuration
 # Copy this file to terraform.tfvars and fill in your values
-# Or set credentials via environment variables (recommended):
+#
+# Credentials - set via environment variables (recommended):
 #   export TF_VAR_selectel_domain="123456"
 #   export TF_VAR_selectel_username="your-username"
 #   export TF_VAR_selectel_password="your-password"
@@ -7,15 +9,45 @@
 
 environment_name = "gpu-benchmark"
 
-# GPU flavor options (check current availability and pricing):
-#   - SL1.4-16384.1xT4     : T4 16GB - cheapest, good for testing
-#   - SL1.8-32768.1xA30    : A30 24GB - mid-range
-#   - SL1.12-122880.1xA100 : A100 40GB - fastest, most expensive
-gpu_flavor = "SL1.4-16384.1xT4"
+# =============================================================================
+# GPU Mode (recommended for Whisper benchmarking)
+# =============================================================================
+use_gpu        = true
+gpu_flavor_id  = "3031"  # GL3.4-32768-0-1GPU: 1 GPU, 4 vCPU, 32GB RAM
+image_name     = "Ubuntu 22.04 LTS 64-bit GPU Driver 580"
 
-# Disk configuration
+# GPU pool/zone configuration
+region            = "ru-7"
+availability_zone = "ru-7a"  # GPU available in ru-7a
+
+# =============================================================================
+# CPU Mode (for testing without GPU)
+# =============================================================================
+# use_gpu   = false
+# cpu_count = 8
+# ram_gb    = 32
+# image_name = "Ubuntu 24.04 LTS 64-bit"
+# availability_zone = "ru-7b"
+
+# =============================================================================
+# Common settings
+# =============================================================================
 disk_size_gb = 100  # Need ~20GB for all Whisper models
 disk_type    = "fast"
 
 # SSH key path
 ssh_public_key_path = "~/.ssh/id_ed25519.pub"
+
+# =============================================================================
+# GPU Flavor Reference (ru-7 pool)
+# =============================================================================
+# Run `openstack flavor list | grep GL` to see all options.
+#
+# Tesla T4 (16GB VRAM) - good for Whisper:
+#   3031 - GL3.4-32768-0-1GPU   - 1 GPU,  4 vCPU,  32GB RAM (recommended)
+#   3033 - GL3.8-32768-0-1GPU   - 1 GPU,  8 vCPU,  32GB RAM
+#   3035 - GL3.8-65536-0-2GPU   - 2 GPU,  8 vCPU,  64GB RAM
+#
+# A100 40GB (fastest, expensive):
+#   3041 - GL4.6-89088-0-1GPU   - 1 GPU,  6 vCPU,  87GB RAM
+#   3042 - GL4.12-179200-0-2GPU - 2 GPU, 12 vCPU, 175GB RAM

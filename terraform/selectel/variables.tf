@@ -45,20 +45,37 @@ variable "region" {
 }
 
 variable "availability_zone" {
-  description = "Availability zone"
+  description = "Availability zone (ru-7a for GPU, ru-7b for CPU)"
   type        = string
-  default     = "ru-7b"
+  default     = "ru-7a" # GPU available in ru-7a
 }
 
 # VM Configuration
+variable "use_gpu" {
+  description = "Whether to use GPU flavor (true) or custom CPU flavor (false)"
+  type        = bool
+  default     = true
+}
+
+variable "gpu_flavor_id" {
+  description = <<-EOT
+    Fixed GPU flavor ID from Selectel. Common options for ru-7:
+    - Tesla T4 1 GPU:  4 vCPU, 32GB RAM  -> check with `openstack flavor list | grep GL`
+    - Tesla T4 2 GPU: 12 vCPU, 175GB RAM -> 3042
+    Use `openstack flavor list` to see available GPU flavors in your pool.
+  EOT
+  type        = string
+  default     = null # Will be required when use_gpu = true
+}
+
 variable "cpu_count" {
-  description = "Number of vCPUs"
+  description = "Number of vCPUs (only used when use_gpu = false)"
   type        = number
   default     = 8
 }
 
 variable "ram_gb" {
-  description = "RAM in GB"
+  description = "RAM in GB (only used when use_gpu = false)"
   type        = number
   default     = 32
 }
@@ -84,4 +101,16 @@ variable "ssh_public_key_path" {
   description = "Path to SSH public key file"
   type        = string
   default     = "~/.ssh/id_ed25519.pub"
+}
+
+variable "image_name" {
+  description = <<-EOT
+    OS image name. For GPU servers, use GPU-optimized images with pre-installed NVIDIA drivers:
+    - "Ubuntu 22.04 LTS 64-bit GPU Driver 580" (recommended)
+    - "Ubuntu 22.04 LTS 64-bit GPU Driver 580 Docker" (with Docker)
+    - "Ubuntu 22.04 LTS Machine Learning 64-bit" (ML tools included)
+    - "Ubuntu 24.04 LTS 64-bit" (requires manual driver installation)
+  EOT
+  type        = string
+  default     = "Ubuntu 22.04 LTS 64-bit GPU Driver 580"
 }
