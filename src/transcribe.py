@@ -16,6 +16,12 @@ if TYPE_CHECKING:
   import optuna
 
 
+# Default search space for optimization
+ALL_BACKENDS = ["faster-whisper", "openai", "whispercpp"]
+ALL_MODELS = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
+ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
+
+
 def normalize_text(text: str) -> str:
   """Normalize text for WER comparison: lowercase, remove punctuation, collapse whitespace."""
   import re
@@ -44,6 +50,11 @@ def load_reference(data: dict[str, Any]) -> str | None:
   if ref_path.exists():
     return ref_path.read_text(encoding="utf-8").strip()
   return None
+
+
+def find_existing_run(data: dict[str, Any], run_id: str) -> dict[str, Any] | None:
+  """Find an existing run by ID in the data."""
+  return next((r for r in data.get("runs", []) if r.get("id") == run_id), None)
 
 
 def generate_run_id(  # noqa: PLR0913
@@ -484,7 +495,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   run_id = generate_run_id(
     backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
   )
-  existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
+  existing = find_existing_run(data, run_id)
   if existing:
     print(f"\n{trial_header} [cached]")
     wer_score, cer_score = calculate_metrics(reference, existing.get("text", ""))
@@ -609,13 +620,9 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     data = {"audio": str(audio_path), "runs": []}
 
   # Parse search space from args (defaults to all options)
-  all_backends = ["faster-whisper", "openai", "whispercpp"]
-  all_models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
-  all_compute_types = ["int8", "float16", "float32"]
-
-  backends = args.backends if args.backends else all_backends
-  models = args.models if args.models else all_models
-  compute_types = args.compute_types if args.compute_types else all_compute_types
+  backends = args.backends if args.backends else ALL_BACKENDS
+  models = args.models if args.models else ALL_MODELS
+  compute_types = args.compute_types if args.compute_types else ALL_COMPUTE_TYPES
 
   metric = args.metric
   print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
@@ -861,8 +868,7 @@ def run_single(  # noqa: PLR0913
   )
 
   # Skip if we already have this run
-  existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
-  if existing:
+  if find_existing_run(data, run_id):
     print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device} - skipped (exists)")
     return
 
