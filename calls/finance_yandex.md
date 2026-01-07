@@ -9,7 +9,7 @@
 
 | # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
 |---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|------|------|
-| 1 | yandex | general | - | auto | 5 | 0.00 | Y | - | ru | 45.1 | 16.1 | 37.1 | 129.59 | 117.41 |
+| 1 | yandex | general | - | - | - | - | - | - | ru | 45.1 | 16.1 | 37.1 | 129.59 | 117.41 |
 
 ## Transcription Results
 
@@ -20,11 +20,6 @@
 - **Device:** cpu
 - **Duration:** 45.10s
 - **Memory:** Δ 16.1 MB, peak 37.1 MB
-- **Beam size:** 5
-- **Temperature:** 0.00
-- **Compute type:** auto
-- **Condition on prev:** True
-- **Batch size:** 0
 - **WER:** 129.59%
 - **CER:** 117.41%
 - **Timestamp:** 2026-01-07T15:18:28.869895+00:00
