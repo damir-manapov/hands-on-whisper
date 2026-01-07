@@ -257,8 +257,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     beam = run.get("beam_size", 5)
     temp = run.get("temperature", 0.0)
     cond_prev = "Y" if run.get("condition_on_prev", True) else "N"
-    # Support both old "batched" bool and new "batch_size" int
-    batch_size = run.get("batch_size", 16 if run.get("batched", False) else 0)
+    batch_size = run.get("batch_size", 0)
     batch_str = str(batch_size) if batch_size > 0 else "-"
     lang = run.get("language") or "auto"
     duration = run.get("duration_seconds", 0)
@@ -302,8 +301,7 @@ def _append_detailed_results(
     temperature = run.get("temperature", 0.0)
     compute_type = run.get("compute_type", "auto")
     condition_on_prev = run.get("condition_on_prev", True)
-    # Support both old "batched" bool and new "batch_size" int
-    batch_size = run.get("batch_size", 16 if run.get("batched", False) else 0)
+    batch_size = run.get("batch_size", 0)
     timestamp = run.get("timestamp", "?")
     text = run.get("text", "")
 
@@ -632,9 +630,7 @@ def _init_study_with_history(  # noqa: PLR0913
     if run_backend != "whispercpp":
       params["condition_on_prev"] = run.get("condition_on_prev", True)
     if run_backend == "faster-whisper":
-      # Support both old "batched" bool and new "batch_size" int
-      batch_size = run.get("batch_size", 16 if run.get("batched", False) else 0)
-      params["batch_size"] = batch_size
+      params["batch_size"] = run.get("batch_size", 0)
 
     study.add_trial(
       opt.trial.create_trial(
