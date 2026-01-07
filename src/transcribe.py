@@ -576,6 +576,20 @@ def save_results(data: dict[str, Any], json_path: Path) -> None:
   md_path.write_text(report, encoding="utf-8")
 
 
+def get_result_suffix(backend: str, device: str) -> str:
+  """Get the result file suffix based on backend and device.
+
+  Cloud backends get their own suffix (e.g., _yandex, _openai-api).
+  Local backends use _gpu or _cpu based on device.
+  """
+  if backend in CLOUD_BACKENDS:
+    return f"_{backend}"
+  elif "cuda" in device:
+    return "_gpu"
+  else:
+    return "_cpu"
+
+
 def cmd_transcribe(args: argparse.Namespace) -> None:
   """Handle transcribe command."""
   if not Path(args.audio).exists():
@@ -587,23 +601,29 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
   print(f"Running {len(combinations)} transcription(s)...")
 
   audio_path = Path(args.audio)
-  # Auto-detect suffix: cloud backends -> _cloud, cuda -> _gpu, cpu -> _cpu
-  if any(b in CLOUD_BACKENDS for b in args.backend):
-    suffix = "_cloud"
-  elif "cuda" in args.device:
-    suffix = "_gpu"
-  else:
-    suffix = "_cpu"
-  json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
-
-  if json_path.exists():
-    data = json.loads(json_path.read_text(encoding="utf-8"))
-  else:
-    data = {"audio": str(audio_path), "runs": []}
-
   condition_on_prev = not args.no_condition_on_prev
 
+  # Track which files we've saved to (for final message)
+  saved_files: set[Path] = set()
+
+  # Cache for loaded data per output file
+  data_cache: dict[Path, dict[str, Any]] = {}
+
+  def get_data_for_path(json_path: Path) -> dict[str, Any]:
+    """Load or create data for a specific output file."""
+    if json_path not in data_cache:
+      if json_path.exists():
+        data_cache[json_path] = json.loads(json_path.read_text(encoding="utf-8"))
+      else:
+        data_cache[json_path] = {"audio": str(audio_path), "runs": []}
+    return data_cache[json_path]
+
   for backend, model, language, device in combinations:
+    # Determine output file based on backend/device
+    suffix = get_result_suffix(backend, device)
+    json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
+    data = get_data_for_path(json_path)
+
     # For whispercpp with custom model paths
     if backend == "whispercpp" and args.model_path:
       for mp in args.model_path:
@@ -627,6 +647,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
           user=args.user,
         )
         save_results(data, json_path)
+        saved_files.add(json_path)
     else:
       # Check existence for whispercpp
       if backend == "whispercpp":
@@ -651,9 +672,13 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         user=args.user,
       )
       save_results(data, json_path)
+      saved_files.add(json_path)
 
-  print(f"\nResults saved to {json_path}")
-  print(f"Report saved to {json_path.with_suffix('.md')}")
+  # Print summary of saved files
+  print("\nResults saved:")
+  for json_path in sorted(saved_files):
+    print(f"  - {json_path}")
+    print(f"  - {json_path.with_suffix('.md')}")
 
 
 def cmd_report(args: argparse.Namespace) -> None:
