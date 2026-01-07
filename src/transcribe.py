@@ -279,7 +279,6 @@ def transcribe_yandex(
   """
   import os
 
-  import requests
 
   api_key = api_key or os.environ.get("YANDEX_API_KEY")
   folder_id = folder_id or os.environ.get("YANDEX_FOLDER_ID")
@@ -409,10 +408,14 @@ def _yandex_async_recognize(
         raise ValueError(f"Yandex recognition error: {data['error']}")
 
       # Fetch results from separate endpoint
-      get_result_url = f"https://stt.api.cloud.yandex.net/stt/v3/getRecognition?operationId={operation_id}"
+      get_result_url = (
+        f"https://stt.api.cloud.yandex.net/stt/v3/getRecognition?operationId={operation_id}"
+      )
       result_response = requests.get(get_result_url, headers=poll_headers, timeout=60)
       if not result_response.ok:
-        raise ValueError(f"Failed to get results: {result_response.status_code}: {result_response.text}")
+        raise ValueError(
+          f"Failed to get results: {result_response.status_code}: {result_response.text}"
+        )
 
       # Parse NDJSON response - prefer finalRefinement (normalized text)
       texts = []
@@ -423,7 +426,9 @@ def _yandex_async_recognize(
         result_data = chunk.get("result", {})
         # Use finalRefinement (normalized) if available, else final
         if "finalRefinement" in result_data:
-          alternatives = result_data["finalRefinement"].get("normalizedText", {}).get("alternatives", [])
+          alternatives = (
+            result_data["finalRefinement"].get("normalizedText", {}).get("alternatives", [])
+          )
         elif "final" in result_data:
           alternatives = result_data["final"].get("alternatives", [])
         else:
@@ -468,12 +473,8 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  hdr = (
-    "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak |"
-  )
-  sep = (
-    "|---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|"
-  )
+  hdr = "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak |"
+  sep = "|---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|"
   if reference:
     lines.append(f"{hdr} WER% | CER% |")
     lines.append(f"{sep}------|------|")
@@ -488,16 +489,18 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     # Shorten GPU name for table (e.g., "NVIDIA GeForce RTX 4090" -> "RTX 4090")
     if gpu_name != "-":
       gpu_name = gpu_name.replace("NVIDIA ", "").replace("GeForce ", "")
-    
+
     # For cloud backends, show "-" for local Whisper params
+    # OpenAI API supports temperature, Yandex doesn't
     is_cloud = backend in CLOUD_BACKENDS
+    is_yandex = backend == "yandex"
     compute = "-" if is_cloud else (run.get("compute_type") or "-")
     beam = "-" if is_cloud else run.get("beam_size", 5)
-    temp = "-" if is_cloud else f"{run.get('temperature', 0.0):.2f}"
+    temp = "-" if is_yandex else f"{run.get('temperature', 0.0):.2f}"
     cond_prev = "-" if is_cloud else ("Y" if run.get("condition_on_prev", True) else "N")
     batch_size = run.get("batch_size", 0)
     batch_str = "-" if is_cloud else (str(batch_size) if batch_size > 0 else "-")
-    
+
     lang = run.get("language") or "auto"
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
@@ -553,13 +556,16 @@ def _append_detailed_results(
     lines.append(f"- **Device:** {device_str}")
     lines.append(f"- **Duration:** {duration:.2f}s")
     lines.append(f"- **Memory:** Δ {mem_delta} MB, peak {mem_peak} MB")
-    # Only show local Whisper params for non-cloud backends
+    # Show params based on backend type
+    # OpenAI API supports temperature, Yandex doesn't
     if backend not in CLOUD_BACKENDS:
       lines.append(f"- **Beam size:** {beam_size}")
       lines.append(f"- **Temperature:** {temperature:.2f}")
       lines.append(f"- **Compute type:** {compute_type}")
       lines.append(f"- **Condition on prev:** {condition_on_prev}")
       lines.append(f"- **Batch size:** {batch_size}")
+    elif backend == "openai-api":
+      lines.append(f"- **Temperature:** {temperature:.2f}")
     if reference:
       wer_score, cer_score = calculate_metrics(reference, text)
       lines.append(f"- **WER:** {wer_score:.2f}%")

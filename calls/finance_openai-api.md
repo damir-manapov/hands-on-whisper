@@ -9,7 +9,7 @@
 
 | # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
 |---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|------|------|
-| 1 | openai-api | gpt-4o-mini | - | - | - | - | - | - | ru | 26.2 | 11.0 | 32.0 | 68.10 | 51.04 |
+| 1 | openai-api | gpt-4o-mini | - | - | - | 0.00 | - | - | ru | 26.2 | 11.0 | 32.0 | 68.10 | 51.04 |
 
 ## Transcription Results
 
@@ -20,6 +20,7 @@
 - **Device:** cpu
 - **Duration:** 26.17s
 - **Memory:** Δ 11.0 MB, peak 32.0 MB
+- **Temperature:** 0.00
 - **WER:** 68.10%
 - **CER:** 51.04%
 - **Timestamp:** 2026-01-07T15:13:36.311666+00:00
