@@ -54,7 +54,7 @@ def transcribe_faster_whisper(  # noqa: PLR0913
   audio_path: str,
   model_size: str,
   language: str | None,
-  device: str,
+  runtime: str,
   beam_size: int,
   temperature: float,
   compute_type: str,
@@ -65,7 +65,7 @@ def transcribe_faster_whisper(  # noqa: PLR0913
   from faster_whisper import WhisperModel
 
   if compute_type == "auto":
-    ct = "float16" if device == "cuda" else "int8"
+    ct = "float16" if runtime == "cuda" else "int8"
   elif compute_type == "float32":
     ct = "float32"
   elif compute_type == "float16":
@@ -75,7 +75,7 @@ def transcribe_faster_whisper(  # noqa: PLR0913
   else:
     ct = compute_type
 
-  model = WhisperModel(model_size, device=device, compute_type=ct)
+  model = WhisperModel(model_size, device=runtime, compute_type=ct)
 
   if batch_size > 0:
     from faster_whisper import BatchedInferencePipeline
@@ -101,7 +101,7 @@ def transcribe_openai_whisper(  # noqa: PLR0913
   audio_path: str,
   model_size: str,
   language: str | None,
-  device: str,
+  runtime: str,
   beam_size: int,
   temperature: float,
   compute_type: str,
@@ -110,13 +110,13 @@ def transcribe_openai_whisper(  # noqa: PLR0913
   """Transcribe using OpenAI whisper."""
   import whisper
 
-  fp16 = compute_type != "float32" and device == "cuda"
+  fp16 = compute_type != "float32" and runtime == "cuda"
 
   if model_size == "distil-large-v3":
     model_path = "models/distil-large-v3-openai/model.bin"
-    model = whisper.load_model(model_path, device=device)
+    model = whisper.load_model(model_path, device=runtime)
   else:
-    model = whisper.load_model(model_size, device=device)
+    model = whisper.load_model(model_size, device=runtime)
 
   result = model.transcribe(
     audio_path,

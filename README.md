@@ -129,7 +129,7 @@ uv run python src/transcribe.py transcribe audio.wav --model large-v3
 uv run python src/transcribe.py transcribe audio.wav --language ru
 
 # Use GPU
-uv run python src/transcribe.py transcribe audio.wav --device cuda
+uv run python src/transcribe.py transcribe audio.wav --runtime cuda
 
 # Compare multiple backends/models (runs all combinations)
 uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper openai --model base large-v3
@@ -190,9 +190,10 @@ The report includes:
 - [finance_cpu.json](calls/finance_cpu.json) - CPU benchmark data
 - [finance_cpu.md](calls/finance_cpu.md) - CPU report with WER/CER metrics
 
-**Output file naming**: Results are auto-saved with device suffix:
+**Output file naming**: Results are auto-saved with runtime suffix:
 - CPU runs → `audio_cpu.json`, `audio_cpu.md`
 - GPU runs → `audio_gpu.json`, `audio_gpu.md`
+- Cloud backends → `audio_openai-api.json`, `audio_yandex.json`
 
 ### Metrics
 
@@ -217,7 +218,7 @@ The report command auto-detects the `.txt` file and includes metrics in the tabl
 Find optimal parameters using Optuna (Bayesian optimization):
 
 ```bash
-# Full search across all backends, models, compute types (default)
+# Full search across all local backends, models, compute types (default)
 uv run python src/transcribe.py optimize audio.wav -l ru --n-trials 50
 
 # Optimize for CER instead of WER
@@ -232,6 +233,22 @@ uv run python src/transcribe.py o audio.wav --models large-v3 large-v3-turbo -l 
 # Quick test with fewer trials
 uv run python src/transcribe.py o audio.wav -l ru --n-trials 10
 ```
+
+### Cloud backend optimization
+
+Optimize OpenAI API parameters:
+
+```bash
+# Optimize OpenAI API (searches across models and temperature)
+uv run python src/transcribe.py optimize audio.wav --backends openai-api -l ru --n-trials 10
+
+# Compare cloud vs local
+uv run python src/transcribe.py optimize audio.wav --backends faster-whisper openai-api -l ru
+```
+
+Cloud optimization search space:
+- **openai-api**: models (whisper-1, gpt-4o-transcribe, gpt-4o-mini-transcribe), temperature (0.0-1.0)
+- **yandex**: not optimizable (single model, no tunable parameters)
 
 ### Search space
 
@@ -289,7 +306,7 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
       "backend": "faster-whisper",
       "model": "base",
       "language": null,
-      "device": "cuda",
+      "runtime": "cuda",
       "gpu_name": "NVIDIA GeForce RTX 4090",
       "text": "transcribed text..."
     }
@@ -400,7 +417,7 @@ terraform apply
 # SSH and run optimization
 ssh root@<vm-ip>
 cd /root/hands-on-whisper
-uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --device cuda --backends faster-whisper openai --n-trials 10
+uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --runtime cuda --backends faster-whisper openai --n-trials 10
 
 # Auto-sync results every 30 seconds (from local terminal)
 watch -n 30 'scp root@<vm-ip>:/root/hands-on-whisper/calls/*_gpu.* calls/'

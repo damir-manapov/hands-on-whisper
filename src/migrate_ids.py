@@ -20,7 +20,7 @@ def migrate_json(json_path: Path) -> int:
       backend=run.get("backend", ""),
       model=run.get("model", ""),
       language=run.get("language"),
-      device=run.get("device", "cpu"),
+      runtime=run.get("runtime", run.get("device", "cpu")),
       beam_size=run.get("beam_size", 5),
       temperature=run.get("temperature", 0.0),
       compute_type=run.get("compute_type", "auto"),

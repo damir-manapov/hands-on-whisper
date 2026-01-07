@@ -23,7 +23,7 @@
 
 - **ID:** `99f24b154192`
 - **Language:** ru
-- **Device:** cloud
+- **Runtime:** cloud
 - **Duration:** 27.98s
 - **Memory:** Δ 8.0 MB, peak 58.2 MB
 - **Temperature:** 0.04
@@ -39,7 +39,7 @@
 
 - **ID:** `4a50fc841b4c`
 - **Language:** ru
-- **Device:** cloud
+- **Runtime:** cloud
 - **Duration:** 33.85s
 - **Memory:** Δ 11.1 MB, peak 32.1 MB
 - **Temperature:** 0.10
@@ -55,7 +55,7 @@
 
 - **ID:** `1b18daf08133`
 - **Language:** ru
-- **Device:** cloud
+- **Runtime:** cloud
 - **Duration:** 19.64s
 - **Memory:** Δ 7.4 MB, peak 58.2 MB
 - **Temperature:** 0.46
@@ -71,7 +71,7 @@
 
 - **ID:** `e60df9c4a38a`
 - **Language:** ru
-- **Device:** cloud
+- **Runtime:** cloud
 - **Duration:** 19.67s
 - **Memory:** Δ 7.6 MB, peak 56.4 MB
 - **Temperature:** 0.06
@@ -87,7 +87,7 @@
 
 - **ID:** `e99ca35f9417`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 26.17s
 - **Memory:** Δ 11.0 MB, peak 32.0 MB
 - **Temperature:** 0.00
@@ -103,7 +103,7 @@
 
 - **ID:** `fc95c6bc106b`
 - **Language:** ru
-- **Device:** cloud
+- **Runtime:** cloud
 - **Duration:** 38.16s
 - **Memory:** Δ 11.1 MB, peak 30.4 MB
 - **Temperature:** 0.00
@@ -119,7 +119,7 @@
 
 - **ID:** `e76c64af70e3`
 - **Language:** ru
-- **Device:** cloud
+- **Runtime:** cloud
 - **Duration:** 39.96s
 - **Memory:** Δ 7.9 MB, peak 58.2 MB
 - **Temperature:** 0.31

@@ -37,7 +37,7 @@ def generate_run_id(  # noqa: PLR0913
   backend: str,
   model: str,
   language: str | None,
-  device: str,
+  runtime: str,
   beam_size: int,
   temperature: float,
   compute_type: str,
@@ -56,7 +56,7 @@ def generate_run_id(  # noqa: PLR0913
       backend,
       model,
       language,
-      device,
+      runtime,
       f"beam{beam_size}",
       f"temp{temperature}",
       compute_type,
@@ -106,7 +106,7 @@ def run_transcription(  # noqa: PLR0913
   backend: str,
   model: str,
   language: str | None,
-  device: str,
+  runtime: str,
   beam_size: int,
   temperature: float,
   compute_type: str,
@@ -123,7 +123,7 @@ def run_transcription(  # noqa: PLR0913
     backend,
     model,
     language,
-    device,
+    runtime,
     beam_size,
     temperature,
     compute_type,
@@ -140,7 +140,7 @@ def run_transcription(  # noqa: PLR0913
       audio,
       model,
       language,
-      device,
+      runtime,
       beam_size,
       temperature,
       compute_type,
@@ -149,7 +149,7 @@ def run_transcription(  # noqa: PLR0913
     )
   elif backend == "openai":
     result = transcribe_openai_whisper(
-      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+      audio, model, language, runtime, beam_size, temperature, compute_type, condition_on_prev
     )
   elif backend == "whispercpp":
     if model.endswith(".bin"):
@@ -183,7 +183,7 @@ def run_transcription(  # noqa: PLR0913
   mem_used_mb = round((mem_after - mem_before) / 1024 / 1024, 1)
   mem_peak_mb = round(mem_after / 1024 / 1024, 1)
 
-  gpu_name = get_gpu_name() if device == "cuda" else None
+  gpu_name = get_gpu_name() if runtime == "cuda" else None
 
   return {
     "id": run_id,
@@ -195,7 +195,7 @@ def run_transcription(  # noqa: PLR0913
     "backend": backend,
     "model": model,
     "language": language,
-    "device": device,
+    "runtime": runtime,
     "gpu_name": gpu_name,
     "beam_size": beam_size,
     "temperature": temperature,
@@ -211,7 +211,7 @@ def run_single(  # noqa: PLR0913
   backend: str,
   model: str,
   language: str | None,
-  device: str,
+  runtime: str,
   beam_size: int,
   temperature: float,
   compute_type: str,
@@ -225,7 +225,7 @@ def run_single(  # noqa: PLR0913
     backend,
     model,
     language,
-    device,
+    runtime,
     beam_size,
     temperature,
     compute_type,
@@ -237,13 +237,13 @@ def run_single(  # noqa: PLR0913
     if backend in CLOUD_BACKENDS:
       print(f"\n[{run_id}] {backend} / lang={language} - skipped (exists)")
     else:
-      print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device} - skipped (exists)")
+      print(f"\n[{run_id}] {backend} / {model} / lang={language} / {runtime} - skipped (exists)")
     return
 
   if backend in CLOUD_BACKENDS:
     print(f"\n[{run_id}] {backend} / lang={language}")
   else:
-    print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
+    print(f"\n[{run_id}] {backend} / {model} / lang={language} / {runtime}")
     cond_str = "" if condition_on_prev else ", no_cond_prev"
     batch_str = f", batch={batch_size}" if batch_size > 0 else ""
     print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}{batch_str}")
@@ -253,7 +253,7 @@ def run_single(  # noqa: PLR0913
     backend,
     model,
     language,
-    device,
+    runtime,
     beam_size,
     temperature,
     compute_type,
