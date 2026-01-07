@@ -120,17 +120,24 @@ For comparing with Deepgram cloud API:
 # Set API key
 export DEEPGRAM_API_KEY="your-api-key"
 
-# Transcribe with Deepgram
+# Transcribe with Deepgram (uses nova-3 by default)
 uv run python src/transcribe.py transcribe audio.wav --backend deepgram -l en
 
 # Try different models
-uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-2 -l en
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-3 -l en
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-2-phonecall -l en
 uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m whisper-large -l en
 
 # Adjust temperature (0-1, higher = more random)
-uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-2 --temperature 0.2 -l en
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-3 --temperature 0.2 -l en
 
-# Available models: nova-2, whisper-large, whisper-medium, whisper-base
+# Available models:
+# - Latest: nova-3, nova-3-general, nova-3-medical
+# - Nova-2: nova-2, nova-2-general, nova-2-meeting, nova-2-phonecall, 
+#           nova-2-finance, nova-2-conversationalai, nova-2-voicemail,
+#           nova-2-video, nova-2-medical, nova-2-drivethru, nova-2-automotive, nova-2-atc
+# - Whisper Cloud: whisper-tiny, whisper-base, whisper-small, whisper-medium, whisper-large
+# - Legacy: nova, enhanced, base (with variants)
 ```
 
 ## Usage
@@ -205,7 +212,9 @@ The report includes:
 
 - [sherbakov_call_cpu.json](calls/sherbakov_call_cpu.json) / [.md](calls/sherbakov_call_cpu.md) - CPU benchmarks with local backends
 - [sherbakov_call_gpu.json](calls/sherbakov_call_gpu.json) / [.md](calls/sherbakov_call_gpu.md) - GPU benchmarks (RTX 4090)
+- [sherbakov_call_openai-api.json](calls/sherbakov_call_openai-api.json) / [.md](calls/sherbakov_call_openai-api.md) - OpenAI Whisper API optimization
 - [sherbakov_call_yandex.json](calls/sherbakov_call_yandex.json) / [.md](calls/sherbakov_call_yandex.md) - Yandex SpeechKit API
+- [sherbakov_call_deepgram.json](calls/sherbakov_call_deepgram.json) / [.md](calls/sherbakov_call_deepgram.md) - Deepgram API
 
 **finance** - Sample audio from [Russian Speech Recognition Dataset](https://huggingface.co/datasets/AxonData/russian-speech-recognition-dataset) (Russian):
 
@@ -213,6 +222,7 @@ The report includes:
 - [finance_gpu.json](calls/finance_gpu.json) / [.md](calls/finance_gpu.md) - GPU benchmarks (RTX 4090)
 - [finance_openai-api.json](calls/finance_openai-api.json) / [.md](calls/finance_openai-api.md) - OpenAI Whisper API optimization
 - [finance_yandex.json](calls/finance_yandex.json) / [.md](calls/finance_yandex.md) - Yandex SpeechKit API
+- [finance_deepgram.json](calls/finance_deepgram.json) / [.md](calls/finance_deepgram.md) - Deepgram API
 
 **Output file naming**: Results are auto-saved with runtime suffix:
 - CPU runs → `audio_cpu.json`, `audio_cpu.md`
