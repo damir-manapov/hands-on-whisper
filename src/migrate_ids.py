@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Migrate existing JSON files to include batched in run IDs."""
+"""Migrate existing JSON files to use batch_size (int) instead of batched (bool)."""
 
 import json
 import sys
@@ -9,12 +9,19 @@ from transcribe import generate_report, generate_run_id, load_reference
 
 
 def migrate_json(json_path: Path) -> int:
-  """Migrate a single JSON file, regenerating all run IDs."""
+  """Migrate a single JSON file, converting batched bool to batch_size int and regenerating IDs."""
   data = json.loads(json_path.read_text(encoding="utf-8"))
   migrated = 0
 
   for run in data.get("runs", []):
     old_id = run.get("id", "")
+
+    # Convert old "batched" bool to "batch_size" int
+    if "batched" in run and "batch_size" not in run:
+      run["batch_size"] = 16 if run.pop("batched") else 0
+
+    batch_size = run.get("batch_size", 0)
+
     new_id = generate_run_id(
       backend=run.get("backend", ""),
       model=run.get("model", ""),
@@ -24,7 +31,7 @@ def migrate_json(json_path: Path) -> int:
       temperature=run.get("temperature", 0.0),
       compute_type=run.get("compute_type", "auto"),
       condition_on_prev=run.get("condition_on_prev", True),
-      batched=run.get("batched", False),
+      batch_size=batch_size,
     )
     if old_id != new_id:
       print(f"  {old_id} -> {new_id}")

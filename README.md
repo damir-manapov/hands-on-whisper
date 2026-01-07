@@ -96,8 +96,8 @@ uv run python src/transcribe.py transcribe audio.wav --beam-size 10 --temperatur
 # Reduce repetitive hallucinations
 uv run python src/transcribe.py transcribe audio.wav --no-condition-on-prev
 
-# Batched inference (faster-whisper only, 2-4x speedup)
-uv run python src/transcribe.py transcribe audio.wav --batched
+# Batched inference (faster-whisper only, parallel segment processing)
+uv run python src/transcribe.py transcribe audio.wav --batch-size 16
 
 # Set compute precision
 uv run python src/transcribe.py transcribe audio.wav --compute-type float16
