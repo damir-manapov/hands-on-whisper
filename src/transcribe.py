@@ -70,6 +70,7 @@ def generate_run_id(  # noqa: PLR0913
 ) -> str:
   """Generate a unique ID based on settings."""
   cond = "cond" if condition_on_prev else "nocond"
+  batch = "batched" if batched else "seq"
   parts = [
     backend,
     model,
@@ -79,10 +80,8 @@ def generate_run_id(  # noqa: PLR0913
     f"temp{temperature}",
     compute_type,
     cond,
+    batch,
   ]
-  # Only include batched if True (backward compatible with pre-batched runs)
-  if batched:
-    parts.append("batched")
   settings = ":".join(str(p) for p in parts)
   return hashlib.sha256(settings.encode()).hexdigest()[:12]
 

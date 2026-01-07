@@ -7,102 +7,102 @@
 
 ## Performance Summary
 
-| # | Backend | Model | Compute | Beam | Temp | Cond | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
-|---|---------|-------|---------|------|------|------|------|--------|------|------|------|------|
-| 1 | whispercpp | large-v3-turbo | float16 | 4 | 0.25 | N | ru | 255.1 | 0.0 | 3436.6 | 24.4 | 12.9 |
-| 2 | whispercpp | large-v3-turbo | float16 | 3 | 0.25 | N | ru | 254.5 | 0.0 | 3485.1 | 24.4 | 12.9 |
-| 3 | whispercpp | large-v3-turbo | float16 | 2 | 0.45 | N | ru | 269.4 | 0.0 | 3485.1 | 24.6 | 12.8 |
-| 4 | whispercpp | large-v3-turbo | float16 | 3 | 0.45 | N | ru | 270.4 | 0.0 | 5329.1 | 24.6 | 12.8 |
-| 5 | whispercpp | large-v3-turbo | float16 | 1 | 0.37 | N | ru | 299.0 | 60.3 | 111.1 | 24.7 | 14.3 |
-| 6 | whispercpp | large-v3-turbo | float16 | 3 | 0.44 | N | ru | 270.4 | 0.0 | 5329.1 | 24.7 | 14.0 |
-| 7 | whispercpp | large-v3-turbo | float16 | 2 | 0.46 | N | ru | 286.4 | 0.0 | 3485.1 | 24.9 | 14.8 |
-| 8 | whispercpp | large-v3-turbo | float16 | 4 | 0.26 | N | ru | 285.3 | 0.0 | 3436.4 | 25.0 | 13.4 |
-| 9 | whispercpp | large-v3-turbo | float16 | 3 | 0.26 | N | ru | 254.5 | 0.0 | 3436.6 | 25.0 | 13.4 |
-| 10 | whispercpp | large-v3-turbo | float16 | 1 | 0.26 | N | ru | 255.3 | 0.0 | 3485.1 | 25.0 | 13.4 |
-| 11 | whispercpp | large-v3-turbo | float16 | 1 | 0.25 | Y | ru | 287.0 | 76.9 | 97.3 | 25.6 | 14.6 |
-| 12 | whispercpp | large-v3-turbo | float16 | 1 | 0.25 | N | ru | 288.5 | 77.1 | 97.5 | 25.6 | 14.6 |
-| 13 | whispercpp | large-v3-turbo | float16 | 3 | 0.32 | N | ru | 253.0 | 0.0 | 3436.6 | 26.1 | 14.3 |
-| 14 | whispercpp | large-v3-turbo | float16 | 4 | 0.23 | N | ru | 269.7 | 0.0 | 3485.1 | 26.1 | 14.8 |
-| 15 | whispercpp | large-v3-turbo | float16 | 2 | 0.46 | N | ru | 273.0 | 0.0 | 3485.1 | 26.1 | 13.8 |
-| 16 | whispercpp | large-v3-turbo | float16 | 2 | 0.31 | N | ru | 330.4 | 45.8 | 230.6 | 26.2 | 14.6 |
-| 17 | whispercpp | large-v3-turbo | float16 | 2 | 0.31 | N | ru | 332.1 | -30.0 | 719.0 | 26.2 | 14.6 |
-| 18 | whispercpp | large-v3-turbo | float16 | 4 | 0.21 | N | ru | 256.0 | 0.0 | 3436.6 | 26.4 | 14.5 |
-| 19 | whispercpp | large-v3-turbo | float16 | 3 | 0.29 | N | ru | 271.5 | 0.0 | 3436.6 | 27.0 | 14.3 |
-| 20 | whispercpp | large-v3-turbo | float16 | 2 | 0.44 | N | ru | 285.1 | 0.0 | 3485.1 | 27.1 | 14.5 |
-| 21 | whispercpp | large-v3-turbo | float16 | 4 | 0.36 | N | ru | 285.1 | 0.0 | 3436.6 | 27.3 | 14.2 |
-| 22 | whispercpp | large-v3-turbo | float16 | 1 | 0.22 | N | ru | 317.5 | 0.0 | 3485.1 | 27.3 | 15.1 |
-| 23 | whispercpp | large-v3-turbo | float16 | 4 | 0.43 | N | ru | 286.0 | 0.0 | 5329.1 | 27.3 | 15.3 |
-| 24 | whispercpp | large-v3-turbo | float32 | 3 | 0.50 | N | ru | 318.1 | 0.0 | 3485.1 | 27.4 | 15.7 |
-| 25 | whispercpp | ggml-large-v3-turbo | float16 | 3 | 0.37 | Y | ru | 299.4 | 76.8 | 97.2 | 28.2 | 17.8 |
-| 26 | whispercpp | large-v3-turbo | float16 | 6 | 0.38 | N | ru | 285.7 | 0.0 | 3436.4 | 28.3 | 18.5 |
-| 27 | whispercpp | large-v3-turbo | int8 | 1 | 0.09 | N | ru | 309.2 | 30.4 | 749.0 | 28.9 | 20.0 |
-| 28 | whispercpp | large-v3-turbo | float16 | 2 | 0.30 | N | ru | 348.5 | 0.0 | 719.1 | 29.4 | 16.3 |
-| 29 | whispercpp | large-v3-turbo | float16 | 2 | 0.08 | N | ru | 360.0 | 30.0 | 146.4 | 30.1 | 19.8 |
-| 30 | whispercpp | large-v3-turbo | float16 | 5 | 0.26 | N | ru | 301.7 | 0.0 | 3436.6 | 30.1 | 16.1 |
-| 31 | whispercpp | large-v3-turbo | float16 | 1 | 0.40 | N | ru | 293.2 | 77.0 | 97.4 | 30.6 | 21.7 |
-| 32 | whispercpp | large-v3-turbo | float16 | 2 | 0.47 | N | ru | 335.0 | 0.0 | 5329.1 | 30.6 | 16.8 |
-| 33 | faster-whisper | large-v3-turbo | auto | 5 | 0.00 | N | ru | 74.6 | 1454.3 | 1473.9 | 30.7 | 26.2 |
-| 34 | whispercpp | large-v3-turbo | float16 | 3 | 0.45 | N | ru | 303.6 | 0.0 | 5329.1 | 31.9 | 19.1 |
-| 35 | whispercpp | medium | float16 | 3 | 0.46 | N | ru | 233.2 | 0.0 | 5329.1 | 32.9 | 17.7 |
-| 36 | whispercpp | large-v3-turbo | float16 | 1 | 0.32 | N | ru | 314.7 | 60.4 | 111.0 | 33.1 | 20.7 |
-| 37 | whispercpp | large-v3-turbo | float16 | 2 | 0.32 | N | ru | 301.8 | 0.1 | 3426.6 | 33.1 | 20.7 |
-| 38 | whispercpp | large-v3-turbo | float16 | 1 | 0.33 | N | ru | 403.1 | 32.1 | 144.3 | 34.0 | 22.7 |
-| 39 | whispercpp | large-v3-turbo | float16 | 3 | 0.34 | N | ru | 319.5 | 0.0 | 3426.6 | 34.7 | 24.7 |
-| 40 | whispercpp | ggml-large-v3-turbo | auto | 5 | 0.00 | N | ru | 432.4 | 5.1 | 1479.0 | 35.0 | 21.8 |
-| 41 | whispercpp | medium | float16 | 2 | 0.41 | N | ru | 263.5 | 37.4 | 223.1 | 35.6 | 21.1 |
-| 42 | openai | large-v3-turbo | int8 | 1 | 0.20 | Y | ru | 150.3 | 3060.6 | 3157.3 | 35.6 | 23.8 |
-| 43 | whispercpp | medium | float16 | 1 | 0.43 | N | ru | 241.1 | 50.4 | 101.2 | 35.9 | 19.5 |
-| 44 | whispercpp | large-v3-turbo | float16 | 2 | 0.50 | N | ru | 420.1 | -45.1 | 185.6 | 35.9 | 23.3 |
-| 45 | whispercpp | large-v3-turbo | float16 | 1 | 0.26 | N | ru | 275.9 | 0.0 | 3485.1 | 38.5 | 25.8 |
-| 46 | openai | large-v3-turbo | float16 | 2 | 0.41 | N | ru | 136.9 | 1881.4 | 5366.4 | 38.5 | 28.3 |
-| 47 | whispercpp | large-v3-turbo | float16 | 1 | 0.28 | N | ru | 333.3 | 0.0 | 3485.1 | 38.6 | 28.2 |
-| 48 | whispercpp | large-v3-turbo | float16 | 4 | 0.28 | N | ru | 338.2 | -30.0 | 116.5 | 41.9 | 26.4 |
-| 49 | whispercpp | large-v3-turbo | float16 | 7 | 0.23 | N | ru | 336.5 | 1.7 | 116.3 | 44.1 | 28.3 |
-| 50 | whispercpp | small | int8 | 10 | 0.18 | N | ru | 82.0 | 3.4 | 5152.2 | 44.7 | 27.2 |
-| 51 | whispercpp | large-v3-turbo | float16 | 4 | 0.26 | N | ru | 314.8 | 0.0 | 3485.1 | 44.9 | 27.7 |
-| 52 | openai | small | float16 | 5 | 0.13 | Y | ru | 96.1 | 854.9 | 900.8 | 45.8 | 26.0 |
-| 53 | whispercpp | large-v3-turbo | float16 | 1 | 0.30 | N | ru | 355.1 | 0.0 | 3426.6 | 45.8 | 30.8 |
-| 54 | whispercpp | large-v3-turbo | float16 | 1 | 0.35 | N | ru | 337.3 | 77.2 | 97.7 | 46.2 | 28.1 |
-| 55 | faster-whisper | small | int8 | 3 | 0.42 | Y | ru | 50.4 | -37.3 | 5329.1 | 46.3 | 30.2 |
-| 56 | whispercpp | large-v3-turbo | float16 | 2 | 0.15 | N | ru | 361.5 | 0.0 | 3426.6 | 47.1 | 31.9 |
-| 57 | openai | large-v3-turbo | float16 | 5 | 0.25 | N | ru | 366.4 | 4306.5 | 5055.1 | 47.4 | 37.6 |
-| 58 | faster-whisper | large-v3-turbo | float32 | 10 | 0.37 | N | ru | 142.5 | 1392.5 | 2296.1 | 48.1 | 41.2 |
-| 59 | whispercpp | medium | float16 | 4 | 0.25 | N | ru | 189.6 | 0.0 | 3436.4 | 49.8 | 36.3 |
-| 60 | openai | small | int8 | 2 | 0.37 | N | ru | 72.8 | 4.7 | 3164.2 | 51.1 | 31.9 |
-| 61 | faster-whisper | large-v3-turbo | float32 | 6 | 0.28 | N | ru | 122.7 | 260.8 | 3426.0 | 53.2 | 46.3 |
-| 62 | openai | small | float16 | 1 | 0.20 | N | ru | 66.7 | 0.1 | 3436.6 | 53.9 | 35.4 |
-| 63 | whispercpp | large-v3-turbo | float16 | 3 | 0.33 | N | ru | 319.1 | 0.0 | 3485.1 | 54.7 | 36.2 |
-| 64 | whispercpp | large-v3 | float16 | 3 | 0.27 | N | ru | 443.4 | 72.9 | 189.4 | 57.5 | 45.9 |
-| 65 | faster-whisper | large-v3 | auto | 5 | 0.00 | N | ru | 102.7 | 2248.5 | 2268.0 | 59.8 | 54.5 |
-| 66 | whispercpp | base | float16 | 4 | 0.48 | N | ru | 27.5 | 0.0 | 3485.1 | 62.6 | 35.1 |
-| 67 | whispercpp | base | float16 | 3 | 0.35 | N | ru | 29.7 | 42.9 | 94.6 | 62.7 | 34.2 |
-| 68 | whispercpp | large-v3 | float16 | 3 | 0.23 | N | ru | 483.3 | 0.0 | 3436.6 | 66.3 | 51.0 |
-| 69 | whispercpp | base | float32 | 3 | 0.30 | N | ru | 27.6 | 43.2 | 94.8 | 69.0 | 45.3 |
-| 70 | whispercpp | large-v3 | float16 | 3 | 0.38 | N | ru | 434.9 | 82.2 | 184.6 | 69.4 | 53.7 |
-| 71 | openai | large-v3 | auto | 5 | 0.00 | N | ru | 287.8 | 7023.5 | 9291.6 | 70.3 | 65.4 |
-| 72 | openai | tiny | float32 | 3 | 0.28 | Y | ru | 22.6 | 92.3 | 5147.8 | 74.5 | 43.3 |
-| 73 | whispercpp | tiny | float16 | 9 | 0.25 | N | ru | 16.5 | 2.4 | 3159.5 | 75.6 | 46.8 |
-| 74 | openai | tiny | float32 | 6 | 0.48 | N | ru | 17.5 | 0.1 | 5153.3 | 75.9 | 52.2 |
-| 75 | openai | base | float16 | 1 | 0.00 | Y | ru | 29.5 | 9.8 | 3436.4 | 75.9 | 40.6 |
-| 76 | openai | base | int8 | 5 | 0.14 | Y | ru | 39.1 | 0.1 | 5148.7 | 79.3 | 44.8 |
-| 77 | whispercpp | tiny | float16 | 2 | 0.48 | N | ru | 15.6 | 0.0 | 3485.1 | 80.0 | 46.2 |
-| 78 | whispercpp | large-v3 | float16 | 7 | 0.40 | N | ru | 403.5 | 0.0 | 3485.1 | 83.6 | 65.2 |
-| 79 | whispercpp | tiny | float32 | 5 | 0.18 | N | ru | 21.7 | 0.0 | 3436.4 | 88.4 | 69.1 |
-| 80 | faster-whisper | base | float32 | 3 | 0.17 | N | ru | 29.6 | -21.5 | 748.6 | 91.5 | 51.2 |
-| 81 | whispercpp | small | float16 | 2 | 0.22 | N | ru | 95.0 | -54.2 | 135.3 | 98.7 | 77.6 |
-| 82 | faster-whisper | medium | int8 | 5 | 0.12 | Y | ru | 165.6 | 48.5 | 3485.1 | 99.4 | 74.3 |
-| 83 | faster-whisper | tiny | int8 | 8 | 0.16 | Y | ru | 18.0 | 642.4 | 688.2 | 100.1 | 75.8 |
-| 84 | faster-whisper | tiny | int8 | 8 | 0.19 | N | ru | 12.3 | 582.4 | 717.7 | 104.5 | 60.8 |
-| 85 | whispercpp | ggml-large-v3 | auto | 5 | 0.00 | N | ru | 538.1 | 3.3 | 9294.9 | 117.4 | 85.5 |
-| 86 | whispercpp | medium | float32 | 4 | 0.45 | N | ru | 304.6 | 0.0 | 135.3 | 227.0 | 122.3 |
-| 87 | whispercpp | large-v3 | float16 | 4 | 0.22 | N | ru | 974.0 | 61.7 | 112.8 | 266.0 | 205.9 |
-| 88 | faster-whisper | base | int8 | 10 | 0.02 | Y | ru | 31.0 | 78.1 | 769.8 | 271.4 | 131.4 |
+| # | Backend | Model | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
+|---|---------|-------|---------|------|------|------|-------|------|--------|------|------|------|------|
+| 1 | whispercpp | large-v3-turbo | float16 | 4 | 0.25 | N | N | ru | 255.1 | 0.0 | 3436.6 | 24.4 | 12.9 |
+| 2 | whispercpp | large-v3-turbo | float16 | 3 | 0.25 | N | N | ru | 254.5 | 0.0 | 3485.1 | 24.4 | 12.9 |
+| 3 | whispercpp | large-v3-turbo | float16 | 2 | 0.45 | N | N | ru | 269.4 | 0.0 | 3485.1 | 24.6 | 12.8 |
+| 4 | whispercpp | large-v3-turbo | float16 | 3 | 0.45 | N | N | ru | 270.4 | 0.0 | 5329.1 | 24.6 | 12.8 |
+| 5 | whispercpp | large-v3-turbo | float16 | 1 | 0.37 | N | N | ru | 299.0 | 60.3 | 111.1 | 24.7 | 14.3 |
+| 6 | whispercpp | large-v3-turbo | float16 | 3 | 0.44 | N | N | ru | 270.4 | 0.0 | 5329.1 | 24.7 | 14.0 |
+| 7 | whispercpp | large-v3-turbo | float16 | 2 | 0.46 | N | N | ru | 286.4 | 0.0 | 3485.1 | 24.9 | 14.8 |
+| 8 | whispercpp | large-v3-turbo | float16 | 4 | 0.26 | N | N | ru | 285.3 | 0.0 | 3436.4 | 25.0 | 13.4 |
+| 9 | whispercpp | large-v3-turbo | float16 | 3 | 0.26 | N | N | ru | 254.5 | 0.0 | 3436.6 | 25.0 | 13.4 |
+| 10 | whispercpp | large-v3-turbo | float16 | 1 | 0.26 | N | N | ru | 255.3 | 0.0 | 3485.1 | 25.0 | 13.4 |
+| 11 | whispercpp | large-v3-turbo | float16 | 1 | 0.25 | Y | N | ru | 287.0 | 76.9 | 97.3 | 25.6 | 14.6 |
+| 12 | whispercpp | large-v3-turbo | float16 | 1 | 0.25 | N | N | ru | 288.5 | 77.1 | 97.5 | 25.6 | 14.6 |
+| 13 | whispercpp | large-v3-turbo | float16 | 3 | 0.32 | N | N | ru | 253.0 | 0.0 | 3436.6 | 26.1 | 14.3 |
+| 14 | whispercpp | large-v3-turbo | float16 | 4 | 0.23 | N | N | ru | 269.7 | 0.0 | 3485.1 | 26.1 | 14.8 |
+| 15 | whispercpp | large-v3-turbo | float16 | 2 | 0.46 | N | N | ru | 273.0 | 0.0 | 3485.1 | 26.1 | 13.8 |
+| 16 | whispercpp | large-v3-turbo | float16 | 2 | 0.31 | N | N | ru | 330.4 | 45.8 | 230.6 | 26.2 | 14.6 |
+| 17 | whispercpp | large-v3-turbo | float16 | 2 | 0.31 | N | N | ru | 332.1 | -30.0 | 719.0 | 26.2 | 14.6 |
+| 18 | whispercpp | large-v3-turbo | float16 | 4 | 0.21 | N | N | ru | 256.0 | 0.0 | 3436.6 | 26.4 | 14.5 |
+| 19 | whispercpp | large-v3-turbo | float16 | 3 | 0.29 | N | N | ru | 271.5 | 0.0 | 3436.6 | 27.0 | 14.3 |
+| 20 | whispercpp | large-v3-turbo | float16 | 2 | 0.44 | N | N | ru | 285.1 | 0.0 | 3485.1 | 27.1 | 14.5 |
+| 21 | whispercpp | large-v3-turbo | float16 | 4 | 0.36 | N | N | ru | 285.1 | 0.0 | 3436.6 | 27.3 | 14.2 |
+| 22 | whispercpp | large-v3-turbo | float16 | 1 | 0.22 | N | N | ru | 317.5 | 0.0 | 3485.1 | 27.3 | 15.1 |
+| 23 | whispercpp | large-v3-turbo | float16 | 4 | 0.43 | N | N | ru | 286.0 | 0.0 | 5329.1 | 27.3 | 15.3 |
+| 24 | whispercpp | large-v3-turbo | float32 | 3 | 0.50 | N | N | ru | 318.1 | 0.0 | 3485.1 | 27.4 | 15.7 |
+| 25 | whispercpp | ggml-large-v3-turbo | float16 | 3 | 0.37 | Y | N | ru | 299.4 | 76.8 | 97.2 | 28.2 | 17.8 |
+| 26 | whispercpp | large-v3-turbo | float16 | 6 | 0.38 | N | N | ru | 285.7 | 0.0 | 3436.4 | 28.3 | 18.5 |
+| 27 | whispercpp | large-v3-turbo | int8 | 1 | 0.09 | N | N | ru | 309.2 | 30.4 | 749.0 | 28.9 | 20.0 |
+| 28 | whispercpp | large-v3-turbo | float16 | 2 | 0.30 | N | N | ru | 348.5 | 0.0 | 719.1 | 29.4 | 16.3 |
+| 29 | whispercpp | large-v3-turbo | float16 | 2 | 0.08 | N | N | ru | 360.0 | 30.0 | 146.4 | 30.1 | 19.8 |
+| 30 | whispercpp | large-v3-turbo | float16 | 5 | 0.26 | N | N | ru | 301.7 | 0.0 | 3436.6 | 30.1 | 16.1 |
+| 31 | whispercpp | large-v3-turbo | float16 | 1 | 0.40 | N | N | ru | 293.2 | 77.0 | 97.4 | 30.6 | 21.7 |
+| 32 | whispercpp | large-v3-turbo | float16 | 2 | 0.47 | N | N | ru | 335.0 | 0.0 | 5329.1 | 30.6 | 16.8 |
+| 33 | faster-whisper | large-v3-turbo | auto | 5 | 0.00 | N | N | ru | 74.6 | 1454.3 | 1473.9 | 30.7 | 26.2 |
+| 34 | whispercpp | large-v3-turbo | float16 | 3 | 0.45 | N | N | ru | 303.6 | 0.0 | 5329.1 | 31.9 | 19.1 |
+| 35 | whispercpp | medium | float16 | 3 | 0.46 | N | N | ru | 233.2 | 0.0 | 5329.1 | 32.9 | 17.7 |
+| 36 | whispercpp | large-v3-turbo | float16 | 1 | 0.32 | N | N | ru | 314.7 | 60.4 | 111.0 | 33.1 | 20.7 |
+| 37 | whispercpp | large-v3-turbo | float16 | 2 | 0.32 | N | N | ru | 301.8 | 0.1 | 3426.6 | 33.1 | 20.7 |
+| 38 | whispercpp | large-v3-turbo | float16 | 1 | 0.33 | N | N | ru | 403.1 | 32.1 | 144.3 | 34.0 | 22.7 |
+| 39 | whispercpp | large-v3-turbo | float16 | 3 | 0.34 | N | N | ru | 319.5 | 0.0 | 3426.6 | 34.7 | 24.7 |
+| 40 | whispercpp | ggml-large-v3-turbo | auto | 5 | 0.00 | N | N | ru | 432.4 | 5.1 | 1479.0 | 35.0 | 21.8 |
+| 41 | whispercpp | medium | float16 | 2 | 0.41 | N | N | ru | 263.5 | 37.4 | 223.1 | 35.6 | 21.1 |
+| 42 | openai | large-v3-turbo | int8 | 1 | 0.20 | Y | N | ru | 150.3 | 3060.6 | 3157.3 | 35.6 | 23.8 |
+| 43 | whispercpp | medium | float16 | 1 | 0.43 | N | N | ru | 241.1 | 50.4 | 101.2 | 35.9 | 19.5 |
+| 44 | whispercpp | large-v3-turbo | float16 | 2 | 0.50 | N | N | ru | 420.1 | -45.1 | 185.6 | 35.9 | 23.3 |
+| 45 | whispercpp | large-v3-turbo | float16 | 1 | 0.26 | N | N | ru | 275.9 | 0.0 | 3485.1 | 38.5 | 25.8 |
+| 46 | openai | large-v3-turbo | float16 | 2 | 0.41 | N | N | ru | 136.9 | 1881.4 | 5366.4 | 38.5 | 28.3 |
+| 47 | whispercpp | large-v3-turbo | float16 | 1 | 0.28 | N | N | ru | 333.3 | 0.0 | 3485.1 | 38.6 | 28.2 |
+| 48 | whispercpp | large-v3-turbo | float16 | 4 | 0.28 | N | N | ru | 338.2 | -30.0 | 116.5 | 41.9 | 26.4 |
+| 49 | whispercpp | large-v3-turbo | float16 | 7 | 0.23 | N | N | ru | 336.5 | 1.7 | 116.3 | 44.1 | 28.3 |
+| 50 | whispercpp | small | int8 | 10 | 0.18 | N | N | ru | 82.0 | 3.4 | 5152.2 | 44.7 | 27.2 |
+| 51 | whispercpp | large-v3-turbo | float16 | 4 | 0.26 | N | N | ru | 314.8 | 0.0 | 3485.1 | 44.9 | 27.7 |
+| 52 | openai | small | float16 | 5 | 0.13 | Y | N | ru | 96.1 | 854.9 | 900.8 | 45.8 | 26.0 |
+| 53 | whispercpp | large-v3-turbo | float16 | 1 | 0.30 | N | N | ru | 355.1 | 0.0 | 3426.6 | 45.8 | 30.8 |
+| 54 | whispercpp | large-v3-turbo | float16 | 1 | 0.35 | N | N | ru | 337.3 | 77.2 | 97.7 | 46.2 | 28.1 |
+| 55 | faster-whisper | small | int8 | 3 | 0.42 | Y | N | ru | 50.4 | -37.3 | 5329.1 | 46.3 | 30.2 |
+| 56 | whispercpp | large-v3-turbo | float16 | 2 | 0.15 | N | N | ru | 361.5 | 0.0 | 3426.6 | 47.1 | 31.9 |
+| 57 | openai | large-v3-turbo | float16 | 5 | 0.25 | N | N | ru | 366.4 | 4306.5 | 5055.1 | 47.4 | 37.6 |
+| 58 | faster-whisper | large-v3-turbo | float32 | 10 | 0.37 | N | N | ru | 142.5 | 1392.5 | 2296.1 | 48.1 | 41.2 |
+| 59 | whispercpp | medium | float16 | 4 | 0.25 | N | N | ru | 189.6 | 0.0 | 3436.4 | 49.8 | 36.3 |
+| 60 | openai | small | int8 | 2 | 0.37 | N | N | ru | 72.8 | 4.7 | 3164.2 | 51.1 | 31.9 |
+| 61 | faster-whisper | large-v3-turbo | float32 | 6 | 0.28 | N | N | ru | 122.7 | 260.8 | 3426.0 | 53.2 | 46.3 |
+| 62 | openai | small | float16 | 1 | 0.20 | N | N | ru | 66.7 | 0.1 | 3436.6 | 53.9 | 35.4 |
+| 63 | whispercpp | large-v3-turbo | float16 | 3 | 0.33 | N | N | ru | 319.1 | 0.0 | 3485.1 | 54.7 | 36.2 |
+| 64 | whispercpp | large-v3 | float16 | 3 | 0.27 | N | N | ru | 443.4 | 72.9 | 189.4 | 57.5 | 45.9 |
+| 65 | faster-whisper | large-v3 | auto | 5 | 0.00 | N | N | ru | 102.7 | 2248.5 | 2268.0 | 59.8 | 54.5 |
+| 66 | whispercpp | base | float16 | 4 | 0.48 | N | N | ru | 27.5 | 0.0 | 3485.1 | 62.6 | 35.1 |
+| 67 | whispercpp | base | float16 | 3 | 0.35 | N | N | ru | 29.7 | 42.9 | 94.6 | 62.7 | 34.2 |
+| 68 | whispercpp | large-v3 | float16 | 3 | 0.23 | N | N | ru | 483.3 | 0.0 | 3436.6 | 66.3 | 51.0 |
+| 69 | whispercpp | base | float32 | 3 | 0.30 | N | N | ru | 27.6 | 43.2 | 94.8 | 69.0 | 45.3 |
+| 70 | whispercpp | large-v3 | float16 | 3 | 0.38 | N | N | ru | 434.9 | 82.2 | 184.6 | 69.4 | 53.7 |
+| 71 | openai | large-v3 | auto | 5 | 0.00 | N | N | ru | 287.8 | 7023.5 | 9291.6 | 70.3 | 65.4 |
+| 72 | openai | tiny | float32 | 3 | 0.28 | Y | N | ru | 22.6 | 92.3 | 5147.8 | 74.5 | 43.3 |
+| 73 | whispercpp | tiny | float16 | 9 | 0.25 | N | N | ru | 16.5 | 2.4 | 3159.5 | 75.6 | 46.8 |
+| 74 | openai | tiny | float32 | 6 | 0.48 | N | N | ru | 17.5 | 0.1 | 5153.3 | 75.9 | 52.2 |
+| 75 | openai | base | float16 | 1 | 0.00 | Y | N | ru | 29.5 | 9.8 | 3436.4 | 75.9 | 40.6 |
+| 76 | openai | base | int8 | 5 | 0.14 | Y | N | ru | 39.1 | 0.1 | 5148.7 | 79.3 | 44.8 |
+| 77 | whispercpp | tiny | float16 | 2 | 0.48 | N | N | ru | 15.6 | 0.0 | 3485.1 | 80.0 | 46.2 |
+| 78 | whispercpp | large-v3 | float16 | 7 | 0.40 | N | N | ru | 403.5 | 0.0 | 3485.1 | 83.6 | 65.2 |
+| 79 | whispercpp | tiny | float32 | 5 | 0.18 | N | N | ru | 21.7 | 0.0 | 3436.4 | 88.4 | 69.1 |
+| 80 | faster-whisper | base | float32 | 3 | 0.17 | N | N | ru | 29.6 | -21.5 | 748.6 | 91.5 | 51.2 |
+| 81 | whispercpp | small | float16 | 2 | 0.22 | N | N | ru | 95.0 | -54.2 | 135.3 | 98.7 | 77.6 |
+| 82 | faster-whisper | medium | int8 | 5 | 0.12 | Y | N | ru | 165.6 | 48.5 | 3485.1 | 99.4 | 74.3 |
+| 83 | faster-whisper | tiny | int8 | 8 | 0.16 | Y | N | ru | 18.0 | 642.4 | 688.2 | 100.1 | 75.8 |
+| 84 | faster-whisper | tiny | int8 | 8 | 0.19 | N | N | ru | 12.3 | 582.4 | 717.7 | 104.5 | 60.8 |
+| 85 | whispercpp | ggml-large-v3 | auto | 5 | 0.00 | N | N | ru | 538.1 | 3.3 | 9294.9 | 117.4 | 85.5 |
+| 86 | whispercpp | medium | float32 | 4 | 0.45 | N | N | ru | 304.6 | 0.0 | 135.3 | 227.0 | 122.3 |
+| 87 | whispercpp | large-v3 | float16 | 4 | 0.22 | N | N | ru | 974.0 | 61.7 | 112.8 | 266.0 | 205.9 |
+| 88 | faster-whisper | base | int8 | 10 | 0.02 | Y | N | ru | 31.0 | 78.1 | 769.8 | 271.4 | 131.4 |
 
 ## Transcription Results
 
 ### 1. whispercpp / large-v3-turbo
 
-- **ID:** `ca81da67cf10`
+- **ID:** `0674a6dd3510`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 255.10s
@@ -111,6 +111,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.4%
 - **CER:** 12.9%
 - **Timestamp:** 2026-01-06T06:13:10.576173+00:00
@@ -121,7 +122,7 @@
 
 ### 2. whispercpp / large-v3-turbo
 
-- **ID:** `3051fdd8eb00`
+- **ID:** `ea31b8bda353`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 254.48s
@@ -130,6 +131,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.4%
 - **CER:** 12.9%
 - **Timestamp:** 2026-01-06T06:51:51.159058+00:00
@@ -140,7 +142,7 @@
 
 ### 3. whispercpp / large-v3-turbo
 
-- **ID:** `6c1d63bf282a`
+- **ID:** `5129b014aef9`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 269.43s
@@ -149,6 +151,7 @@
 - **Temperature:** 0.45
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.6%
 - **CER:** 12.8%
 - **Timestamp:** 2026-01-06T07:26:06.948405+00:00
@@ -159,7 +162,7 @@
 
 ### 4. whispercpp / large-v3-turbo
 
-- **ID:** `2406fa009128`
+- **ID:** `5607a1290c55`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 270.35s
@@ -168,6 +171,7 @@
 - **Temperature:** 0.45
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.6%
 - **CER:** 12.8%
 - **Timestamp:** 2026-01-06T07:43:55.767319+00:00
@@ -178,7 +182,7 @@
 
 ### 5. whispercpp / large-v3-turbo
 
-- **ID:** `be3b373927a8`
+- **ID:** `456ea1a821f0`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 298.96s
@@ -187,6 +191,7 @@
 - **Temperature:** 0.37
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.7%
 - **CER:** 14.3%
 - **Timestamp:** 2026-01-06T01:47:08.565011+00:00
@@ -197,7 +202,7 @@
 
 ### 6. whispercpp / large-v3-turbo
 
-- **ID:** `53543d6a112d`
+- **ID:** `ede691becc3f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 270.45s
@@ -206,6 +211,7 @@
 - **Temperature:** 0.44
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.7%
 - **CER:** 14.0%
 - **Timestamp:** 2026-01-06T07:57:07.400652+00:00
@@ -216,7 +222,7 @@
 
 ### 7. whispercpp / large-v3-turbo
 
-- **ID:** `487a4c724373`
+- **ID:** `e9a45efaa97f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 286.41s
@@ -225,6 +231,7 @@
 - **Temperature:** 0.46
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 24.9%
 - **CER:** 14.8%
 - **Timestamp:** 2026-01-06T06:56:38.089829+00:00
@@ -235,7 +242,7 @@
 
 ### 8. whispercpp / large-v3-turbo
 
-- **ID:** `996b0bff66a8`
+- **ID:** `6033604eabb1`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 285.26s
@@ -244,6 +251,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 25.0%
 - **CER:** 13.4%
 - **Timestamp:** 2026-01-06T05:28:37.903508+00:00
@@ -254,7 +262,7 @@
 
 ### 9. whispercpp / large-v3-turbo
 
-- **ID:** `38f799e2bd3f`
+- **ID:** `8c204cadb9b0`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 254.47s
@@ -263,6 +271,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 25.0%
 - **CER:** 13.4%
 - **Timestamp:** 2026-01-06T05:51:17.149683+00:00
@@ -273,7 +282,7 @@
 
 ### 10. whispercpp / large-v3-turbo
 
-- **ID:** `b56d306ac411`
+- **ID:** `83c911e96ea9`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 255.32s
@@ -282,6 +291,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 25.0%
 - **CER:** 13.4%
 - **Timestamp:** 2026-01-06T07:11:42.386917+00:00
@@ -292,7 +302,7 @@
 
 ### 11. whispercpp / large-v3-turbo
 
-- **ID:** `53a8280bb496`
+- **ID:** `bc215451fc1f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 287.03s
@@ -301,6 +311,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 25.6%
 - **CER:** 14.6%
 - **Timestamp:** 2026-01-06T02:41:53.091232+00:00
@@ -311,7 +322,7 @@
 
 ### 12. whispercpp / large-v3-turbo
 
-- **ID:** `de6905a95e28`
+- **ID:** `ad15b5fb5d33`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 288.50s
@@ -320,6 +331,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 25.6%
 - **CER:** 14.6%
 - **Timestamp:** 2026-01-06T02:52:45.348310+00:00
@@ -330,7 +342,7 @@
 
 ### 13. whispercpp / large-v3-turbo
 
-- **ID:** `328251d19c4a`
+- **ID:** `55f080d50eef`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 253.00s
@@ -339,6 +351,7 @@
 - **Temperature:** 0.32
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 26.1%
 - **CER:** 14.3%
 - **Timestamp:** 2026-01-06T05:42:16.675156+00:00
@@ -349,7 +362,7 @@
 
 ### 14. whispercpp / large-v3-turbo
 
-- **ID:** `d0e5672fbcfd`
+- **ID:** `877ebe329198`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 269.72s
@@ -358,6 +371,7 @@
 - **Temperature:** 0.23
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 26.1%
 - **CER:** 14.8%
 - **Timestamp:** 2026-01-06T06:35:18.274865+00:00
@@ -368,7 +382,7 @@
 
 ### 15. whispercpp / large-v3-turbo
 
-- **ID:** `bbe5629e7a09`
+- **ID:** `e7f3ada02bf3`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 273.04s
@@ -377,6 +391,7 @@
 - **Temperature:** 0.46
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 26.1%
 - **CER:** 13.8%
 - **Timestamp:** 2026-01-06T07:30:40.573174+00:00
@@ -387,7 +402,7 @@
 
 ### 16. whispercpp / large-v3-turbo
 
-- **ID:** `55a61b2c271b`
+- **ID:** `e88039427727`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 330.37s
@@ -396,6 +411,7 @@
 - **Temperature:** 0.31
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 26.2%
 - **CER:** 14.6%
 - **Timestamp:** 2026-01-06T02:04:21.802219+00:00
@@ -406,7 +422,7 @@
 
 ### 17. whispercpp / large-v3-turbo
 
-- **ID:** `2661226c331e`
+- **ID:** `003e255018c4`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 332.15s
@@ -415,6 +431,7 @@
 - **Temperature:** 0.31
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 26.2%
 - **CER:** 14.6%
 - **Timestamp:** 2026-01-06T04:03:58.681787+00:00
@@ -425,7 +442,7 @@
 
 ### 18. whispercpp / large-v3-turbo
 
-- **ID:** `6196fe518e1b`
+- **ID:** `dfc4318c5b59`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 255.97s
@@ -434,6 +451,7 @@
 - **Temperature:** 0.21
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 26.4%
 - **CER:** 14.5%
 - **Timestamp:** 2026-01-06T06:17:27.013937+00:00
@@ -444,7 +462,7 @@
 
 ### 19. whispercpp / large-v3-turbo
 
-- **ID:** `70940c2a777f`
+- **ID:** `bfad104fa567`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 271.52s
@@ -453,6 +471,7 @@
 - **Temperature:** 0.29
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 27.0%
 - **CER:** 14.3%
 - **Timestamp:** 2026-01-06T06:08:55.023044+00:00
@@ -463,7 +482,7 @@
 
 ### 20. whispercpp / large-v3-turbo
 
-- **ID:** `69b81dc604e8`
+- **ID:** `6b18bb2e3115`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 285.09s
@@ -472,6 +491,7 @@
 - **Temperature:** 0.44
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 27.1%
 - **CER:** 14.5%
 - **Timestamp:** 2026-01-06T07:01:23.687712+00:00
@@ -482,7 +502,7 @@
 
 ### 21. whispercpp / large-v3-turbo
 
-- **ID:** `69059ce1b810`
+- **ID:** `6277f2123ef8`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 285.15s
@@ -491,6 +511,7 @@
 - **Temperature:** 0.36
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 27.3%
 - **CER:** 14.2%
 - **Timestamp:** 2026-01-06T05:47:02.242873+00:00
@@ -501,7 +522,7 @@
 
 ### 22. whispercpp / large-v3-turbo
 
-- **ID:** `b7a2d4902839`
+- **ID:** `d655db415d16`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 317.48s
@@ -510,6 +531,7 @@
 - **Temperature:** 0.22
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 27.3%
 - **CER:** 15.1%
 - **Timestamp:** 2026-01-06T07:21:36.962600+00:00
@@ -520,7 +542,7 @@
 
 ### 23. whispercpp / large-v3-turbo
 
-- **ID:** `ebc93851b7a1`
+- **ID:** `8df52c5ee146`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 286.01s
@@ -529,6 +551,7 @@
 - **Temperature:** 0.43
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 27.3%
 - **CER:** 15.3%
 - **Timestamp:** 2026-01-06T07:52:36.346714+00:00
@@ -539,7 +562,7 @@
 
 ### 24. whispercpp / large-v3-turbo
 
-- **ID:** `3e07809ecdb2`
+- **ID:** `5bdcddbb17c5`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 318.05s
@@ -548,6 +571,7 @@
 - **Temperature:** 0.50
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 27.4%
 - **CER:** 15.7%
 - **Timestamp:** 2026-01-06T07:06:42.332877+00:00
@@ -558,7 +582,7 @@
 
 ### 25. whispercpp / ggml-large-v3-turbo
 
-- **ID:** `2745256da836`
+- **ID:** `4db61468c62f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 299.43s
@@ -567,6 +591,7 @@
 - **Temperature:** 0.37
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 28.2%
 - **CER:** 17.8%
 - **Timestamp:** 2026-01-06T02:31:02.230646+00:00
@@ -577,7 +602,7 @@
 
 ### 26. whispercpp / large-v3-turbo
 
-- **ID:** `d14296cbc048`
+- **ID:** `98dd05e7bfbd`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 285.74s
@@ -586,6 +611,7 @@
 - **Temperature:** 0.38
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.3%
 - **CER:** 18.5%
 - **Timestamp:** 2026-01-06T05:36:56.085082+00:00
@@ -596,7 +622,7 @@
 
 ### 27. whispercpp / large-v3-turbo
 
-- **ID:** `d15c5f17b037`
+- **ID:** `079397e9ccf5`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 309.20s
@@ -605,6 +631,7 @@
 - **Temperature:** 0.09
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.9%
 - **CER:** 20.0%
 - **Timestamp:** 2026-01-06T03:58:26.277234+00:00
@@ -615,7 +642,7 @@
 
 ### 28. whispercpp / large-v3-turbo
 
-- **ID:** `5bd43b916e6d`
+- **ID:** `45f7c5404f91`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 348.46s
@@ -624,6 +651,7 @@
 - **Temperature:** 0.30
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 29.4%
 - **CER:** 16.3%
 - **Timestamp:** 2026-01-06T04:23:44.162673+00:00
@@ -634,7 +662,7 @@
 
 ### 29. whispercpp / large-v3-turbo
 
-- **ID:** `877d4f11a0d8`
+- **ID:** `21057e161c2d`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 359.97s
@@ -643,6 +671,7 @@
 - **Temperature:** 0.08
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 30.1%
 - **CER:** 19.8%
 - **Timestamp:** 2026-01-06T03:33:22.002245+00:00
@@ -653,7 +682,7 @@
 
 ### 30. whispercpp / large-v3-turbo
 
-- **ID:** `ef60f7c42aff`
+- **ID:** `a3b64ca82a78`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 301.67s
@@ -662,6 +691,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 30.1%
 - **CER:** 16.1%
 - **Timestamp:** 2026-01-06T06:04:23.051900+00:00
@@ -672,7 +702,7 @@
 
 ### 31. whispercpp / large-v3-turbo
 
-- **ID:** `212ad40d9463`
+- **ID:** `8e15372c44ad`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 293.19s
@@ -681,6 +711,7 @@
 - **Temperature:** 0.40
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 30.6%
 - **CER:** 21.7%
 - **Timestamp:** 2026-01-06T02:58:29.146503+00:00
@@ -691,7 +722,7 @@
 
 ### 32. whispercpp / large-v3-turbo
 
-- **ID:** `c0056b296d02`
+- **ID:** `0509d5ec0530`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 334.98s
@@ -700,6 +731,7 @@
 - **Temperature:** 0.47
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 30.6%
 - **CER:** 16.8%
 - **Timestamp:** 2026-01-06T07:39:24.813072+00:00
@@ -710,7 +742,7 @@
 
 ### 33. faster-whisper / large-v3-turbo
 
-- **ID:** `4ac4b3f70491`
+- **ID:** `76a914da7c10`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 74.61s
@@ -719,6 +751,7 @@
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 30.7%
 - **CER:** 26.2%
 - **Timestamp:** 2026-01-05T23:09:00.979084+00:00
@@ -729,7 +762,7 @@
 
 ### 34. whispercpp / large-v3-turbo
 
-- **ID:** `3005288aee6a`
+- **ID:** `c6105c64055a`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 303.65s
@@ -738,6 +771,7 @@
 - **Temperature:** 0.45
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 31.9%
 - **CER:** 19.1%
 - **Timestamp:** 2026-01-06T08:02:11.689802+00:00
@@ -748,7 +782,7 @@
 
 ### 35. whispercpp / medium
 
-- **ID:** `4d883256b9bd`
+- **ID:** `3044cf0a3700`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 233.20s
@@ -757,6 +791,7 @@
 - **Temperature:** 0.46
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 32.9%
 - **CER:** 17.7%
 - **Timestamp:** 2026-01-06T07:47:49.563870+00:00
@@ -767,7 +802,7 @@
 
 ### 36. whispercpp / large-v3-turbo
 
-- **ID:** `08d3a2c67e7a`
+- **ID:** `3852f8b35413`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 314.74s
@@ -776,6 +811,7 @@
 - **Temperature:** 0.32
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 33.1%
 - **CER:** 20.7%
 - **Timestamp:** 2026-01-06T01:29:05.324740+00:00
@@ -786,7 +822,7 @@
 
 ### 37. whispercpp / large-v3-turbo
 
-- **ID:** `4fc830b765f0`
+- **ID:** `fcad46ea7a61`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 301.82s
@@ -795,6 +831,7 @@
 - **Temperature:** 0.32
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 33.1%
 - **CER:** 20.7%
 - **Timestamp:** 2026-01-06T05:06:05.175872+00:00
@@ -805,7 +842,7 @@
 
 ### 38. whispercpp / large-v3-turbo
 
-- **ID:** `271393584028`
+- **ID:** `1873e37e4733`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 403.12s
@@ -814,6 +851,7 @@
 - **Temperature:** 0.33
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 34.0%
 - **CER:** 22.7%
 - **Timestamp:** 2026-01-06T01:35:48.549295+00:00
@@ -824,7 +862,7 @@
 
 ### 39. whispercpp / large-v3-turbo
 
-- **ID:** `98a0d9b0f9c9`
+- **ID:** `1bb958bcfe9b`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 319.46s
@@ -833,6 +871,7 @@
 - **Temperature:** 0.34
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 34.7%
 - **CER:** 24.7%
 - **Timestamp:** 2026-01-06T05:17:20.479737+00:00
@@ -843,7 +882,7 @@
 
 ### 40. whispercpp / ggml-large-v3-turbo
 
-- **ID:** `9586f837c07f`
+- **ID:** `8a6946ef49b7`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 432.42s
@@ -852,6 +891,7 @@
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 35.0%
 - **CER:** 21.8%
 - **Timestamp:** 2026-01-05T23:16:13.404406+00:00
@@ -862,7 +902,7 @@
 
 ### 41. whispercpp / medium
 
-- **ID:** `d04cc41edbb9`
+- **ID:** `a9374b5a0056`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 263.54s
@@ -871,6 +911,7 @@
 - **Temperature:** 0.41
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 35.6%
 - **CER:** 21.1%
 - **Timestamp:** 2026-01-06T02:15:45.791092+00:00
@@ -881,7 +922,7 @@
 
 ### 42. openai / large-v3-turbo
 
-- **ID:** `2d058875e622`
+- **ID:** `811748cf8524`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 150.33s
@@ -890,6 +931,7 @@
 - **Temperature:** 0.20
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 35.6%
 - **CER:** 23.8%
 - **Timestamp:** 2026-01-06T04:57:29.924622+00:00
@@ -900,7 +942,7 @@
 
 ### 43. whispercpp / medium
 
-- **ID:** `52ce9b935bf1`
+- **ID:** `322c39bff291`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 241.13s
@@ -909,6 +951,7 @@
 - **Temperature:** 0.43
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 35.9%
 - **CER:** 19.5%
 - **Timestamp:** 2026-01-06T01:51:36.188289+00:00
@@ -919,7 +962,7 @@
 
 ### 44. whispercpp / large-v3-turbo
 
-- **ID:** `97e89f18b716`
+- **ID:** `e87bf6115d48`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 420.13s
@@ -928,6 +971,7 @@
 - **Temperature:** 0.50
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 35.9%
 - **CER:** 23.3%
 - **Timestamp:** 2026-01-06T02:11:22.086282+00:00
@@ -938,7 +982,7 @@
 
 ### 45. whispercpp / large-v3-turbo
 
-- **ID:** `681a38febd2f`
+- **ID:** `d1bac54be202`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 275.89s
@@ -947,6 +991,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 38.5%
 - **CER:** 25.8%
 - **Timestamp:** 2026-01-06T07:16:18.906780+00:00
@@ -957,7 +1002,7 @@
 
 ### 46. openai / large-v3-turbo
 
-- **ID:** `8a3f2b2b7d05`
+- **ID:** `b0ec9ee3bfad`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 136.94s
@@ -966,6 +1011,7 @@
 - **Temperature:** 0.41
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 38.5%
 - **CER:** 28.3%
 - **Timestamp:** 2026-01-06T07:32:58.179803+00:00
@@ -976,7 +1022,7 @@
 
 ### 47. whispercpp / large-v3-turbo
 
-- **ID:** `2d34327ab77d`
+- **ID:** `e1c82275e5fc`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 333.33s
@@ -985,6 +1031,7 @@
 - **Temperature:** 0.28
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 38.6%
 - **CER:** 28.2%
 - **Timestamp:** 2026-01-06T06:40:52.085493+00:00
@@ -995,7 +1042,7 @@
 
 ### 48. whispercpp / large-v3-turbo
 
-- **ID:** `6d36e5c672af`
+- **ID:** `a6edcbcbcbbe`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 338.18s
@@ -1004,6 +1051,7 @@
 - **Temperature:** 0.28
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 41.9%
 - **CER:** 26.4%
 - **Timestamp:** 2026-01-06T03:39:00.407749+00:00
@@ -1014,7 +1062,7 @@
 
 ### 49. whispercpp / large-v3-turbo
 
-- **ID:** `3cea2e21f407`
+- **ID:** `5f26bee55b6b`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 336.50s
@@ -1023,6 +1071,7 @@
 - **Temperature:** 0.23
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 44.1%
 - **CER:** 28.3%
 - **Timestamp:** 2026-01-06T03:27:21.809742+00:00
@@ -1033,7 +1082,7 @@
 
 ### 50. whispercpp / small
 
-- **ID:** `7917acc3cc86`
+- **ID:** `d0c1675954c8`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 82.03s
@@ -1042,6 +1091,7 @@
 - **Temperature:** 0.18
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 44.7%
 - **CER:** 27.2%
 - **Timestamp:** 2026-01-06T01:16:05.006022+00:00
@@ -1052,7 +1102,7 @@
 
 ### 51. whispercpp / large-v3-turbo
 
-- **ID:** `d92009194608`
+- **ID:** `14d419ed1044`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 314.76s
@@ -1061,6 +1111,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 44.9%
 - **CER:** 27.7%
 - **Timestamp:** 2026-01-06T06:25:28.413550+00:00
@@ -1071,7 +1122,7 @@
 
 ### 52. openai / small
 
-- **ID:** `5976d57f30f9`
+- **ID:** `ea605418dbd6`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 96.10s
@@ -1080,6 +1131,7 @@
 - **Temperature:** 0.13
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 45.8%
 - **CER:** 26.0%
 - **Timestamp:** 2026-01-06T01:19:35.469776+00:00
@@ -1090,7 +1142,7 @@
 
 ### 53. whispercpp / large-v3-turbo
 
-- **ID:** `771a9a567af4`
+- **ID:** `1a28ac18c9f2`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 355.12s
@@ -1099,6 +1151,7 @@
 - **Temperature:** 0.30
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 45.8%
 - **CER:** 30.8%
 - **Timestamp:** 2026-01-06T05:12:00.673202+00:00
@@ -1109,7 +1162,7 @@
 
 ### 54. whispercpp / large-v3-turbo
 
-- **ID:** `69b3dcf33f59`
+- **ID:** `5a4907d524f1`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 337.33s
@@ -1118,6 +1171,7 @@
 - **Temperature:** 0.35
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 46.2%
 - **CER:** 28.1%
 - **Timestamp:** 2026-01-06T03:04:35.163508+00:00
@@ -1128,7 +1182,7 @@
 
 ### 55. faster-whisper / small
 
-- **ID:** `75a386da624b`
+- **ID:** `75849808042b`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 50.42s
@@ -1137,6 +1191,7 @@
 - **Temperature:** 0.42
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 46.3%
 - **CER:** 30.2%
 - **Timestamp:** 2026-01-06T07:33:49.183010+00:00
@@ -1147,7 +1202,7 @@
 
 ### 56. whispercpp / large-v3-turbo
 
-- **ID:** `3cb684d00cdf`
+- **ID:** `a55bbd08ce82`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 361.47s
@@ -1156,6 +1211,7 @@
 - **Temperature:** 0.15
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 47.1%
 - **CER:** 31.9%
 - **Timestamp:** 2026-01-06T05:23:22.314340+00:00
@@ -1166,7 +1222,7 @@
 
 ### 57. openai / large-v3-turbo
 
-- **ID:** `0ac3d579d08e`
+- **ID:** `a83fd4fb3ef5`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 366.44s
@@ -1175,6 +1231,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 47.4%
 - **CER:** 37.6%
 - **Timestamp:** 2026-01-06T01:13:41.218839+00:00
@@ -1185,7 +1242,7 @@
 
 ### 58. faster-whisper / large-v3-turbo
 
-- **ID:** `c9fa75b2c368`
+- **ID:** `c06f2ff75268`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 142.51s
@@ -1194,6 +1251,7 @@
 - **Temperature:** 0.37
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 48.1%
 - **CER:** 41.2%
 - **Timestamp:** 2026-01-06T01:21:58.063066+00:00
@@ -1204,7 +1262,7 @@
 
 ### 59. whispercpp / medium
 
-- **ID:** `c64942433b9a`
+- **ID:** `edf23cd453aa`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 189.55s
@@ -1213,6 +1271,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 49.8%
 - **CER:** 36.3%
 - **Timestamp:** 2026-01-06T05:31:47.852766+00:00
@@ -1223,7 +1282,7 @@
 
 ### 60. openai / small
 
-- **ID:** `b095b2435bb0`
+- **ID:** `5e6c7571d964`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 72.76s
@@ -1232,6 +1291,7 @@
 - **Temperature:** 0.37
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 51.1%
 - **CER:** 31.9%
 - **Timestamp:** 2026-01-06T04:58:59.993985+00:00
@@ -1242,7 +1302,7 @@
 
 ### 61. faster-whisper / large-v3-turbo
 
-- **ID:** `88d57c80ce79`
+- **ID:** `a28b7c867a1e`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 122.68s
@@ -1251,6 +1311,7 @@
 - **Temperature:** 0.28
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 53.2%
 - **CER:** 46.3%
 - **Timestamp:** 2026-01-06T05:01:03.009916+00:00
@@ -1261,7 +1322,7 @@
 
 ### 62. openai / small
 
-- **ID:** `1ab01357e733`
+- **ID:** `7b1f23dcf7ef`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 66.70s
@@ -1270,6 +1331,7 @@
 - **Temperature:** 0.20
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 53.9%
 - **CER:** 35.4%
 - **Timestamp:** 2026-01-06T05:38:03.276166+00:00
@@ -1280,7 +1342,7 @@
 
 ### 63. whispercpp / large-v3-turbo
 
-- **ID:** `b2e6932e9baf`
+- **ID:** `25db650f8d29`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 319.15s
@@ -1289,6 +1351,7 @@
 - **Temperature:** 0.33
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 54.7%
 - **CER:** 36.2%
 - **Timestamp:** 2026-01-06T06:30:48.061762+00:00
@@ -1299,7 +1362,7 @@
 
 ### 64. whispercpp / large-v3
 
-- **ID:** `3b7f30d4db4a`
+- **ID:** `50a72c964a6d`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 443.40s
@@ -1308,6 +1371,7 @@
 - **Temperature:** 0.27
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 57.5%
 - **CER:** 45.9%
 - **Timestamp:** 2026-01-06T03:46:24.041253+00:00
@@ -1318,7 +1382,7 @@
 
 ### 65. faster-whisper / large-v3
 
-- **ID:** `c6e8612951b6`
+- **ID:** `ef96238e58e0`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 102.69s
@@ -1327,6 +1391,7 @@
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 59.8%
 - **CER:** 54.5%
 - **Timestamp:** 2026-01-05T22:51:29.075677+00:00
@@ -1337,7 +1402,7 @@
 
 ### 66. whispercpp / base
 
-- **ID:** `38dd4d57cbe0`
+- **ID:** `3d3061aa4bce`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 27.47s
@@ -1346,6 +1411,7 @@
 - **Temperature:** 0.48
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 62.6%
 - **CER:** 35.1%
 - **Timestamp:** 2026-01-06T07:07:10.326545+00:00
@@ -1356,7 +1422,7 @@
 
 ### 67. whispercpp / base
 
-- **ID:** `848d8b5bc9c3`
+- **ID:** `1489a798fd20`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 29.71s
@@ -1365,6 +1431,7 @@
 - **Temperature:** 0.35
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 62.7%
 - **CER:** 34.2%
 - **Timestamp:** 2026-01-06T04:54:05.619643+00:00
@@ -1375,7 +1442,7 @@
 
 ### 68. whispercpp / large-v3
 
-- **ID:** `221772adc7c9`
+- **ID:** `80351aba8cd8`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 483.27s
@@ -1384,6 +1451,7 @@
 - **Temperature:** 0.23
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 66.3%
 - **CER:** 51.0%
 - **Timestamp:** 2026-01-06T05:59:20.919119+00:00
@@ -1394,7 +1462,7 @@
 
 ### 69. whispercpp / base
 
-- **ID:** `3ada95008c37`
+- **ID:** `6999952e95e8`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 27.57s
@@ -1403,6 +1471,7 @@
 - **Temperature:** 0.30
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 69.0%
 - **CER:** 45.3%
 - **Timestamp:** 2026-01-06T04:54:58.032887+00:00
@@ -1413,7 +1482,7 @@
 
 ### 70. whispercpp / large-v3
 
-- **ID:** `bbf429736d60`
+- **ID:** `32663562bbce`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 434.90s
@@ -1422,6 +1491,7 @@
 - **Temperature:** 0.38
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 69.4%
 - **CER:** 53.7%
 - **Timestamp:** 2026-01-06T01:58:51.245985+00:00
@@ -1432,7 +1502,7 @@
 
 ### 71. openai / large-v3
 
-- **ID:** `80ca1f06ccad`
+- **ID:** `da7eded243b4`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 287.76s
@@ -1441,6 +1511,7 @@
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 70.3%
 - **CER:** 65.4%
 - **Timestamp:** 2026-01-05T22:56:16.834844+00:00
@@ -1451,7 +1522,7 @@
 
 ### 72. openai / tiny
 
-- **ID:** `2a4896407ec6`
+- **ID:** `744ea4ef8aa5`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 22.59s
@@ -1460,6 +1531,7 @@
 - **Temperature:** 0.28
 - **Compute type:** float32
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 74.5%
 - **CER:** 43.3%
 - **Timestamp:** 2026-01-06T01:14:03.839914+00:00
@@ -1470,7 +1542,7 @@
 
 ### 73. whispercpp / tiny
 
-- **ID:** `48eb4185699a`
+- **ID:** `8d22b3385a3f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 16.52s
@@ -1479,6 +1551,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 75.6%
 - **CER:** 46.8%
 - **Timestamp:** 2026-01-06T04:57:46.890495+00:00
@@ -1489,7 +1562,7 @@
 
 ### 74. openai / tiny
 
-- **ID:** `919772e67540`
+- **ID:** `3db1da1098f7`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 17.47s
@@ -1498,6 +1571,7 @@
 - **Temperature:** 0.48
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 75.9%
 - **CER:** 52.2%
 - **Timestamp:** 2026-01-06T01:16:22.505576+00:00
@@ -1508,7 +1582,7 @@
 
 ### 75. openai / base
 
-- **ID:** `9e662dd5cf31`
+- **ID:** `19426753f178`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 29.53s
@@ -1517,6 +1591,7 @@
 - **Temperature:** 0.00
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 75.9%
 - **CER:** 40.6%
 - **Timestamp:** 2026-01-06T05:23:52.288095+00:00
@@ -1527,7 +1602,7 @@
 
 ### 76. openai / base
 
-- **ID:** `17b62d6eaca6`
+- **ID:** `0640a707bd7f`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 39.06s
@@ -1536,6 +1611,7 @@
 - **Temperature:** 0.14
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 79.3%
 - **CER:** 44.8%
 - **Timestamp:** 2026-01-06T01:14:42.938758+00:00
@@ -1546,7 +1622,7 @@
 
 ### 77. whispercpp / tiny
 
-- **ID:** `b5f54d48ad64`
+- **ID:** `0183d08838c7`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 15.64s
@@ -1555,6 +1631,7 @@
 - **Temperature:** 0.48
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 80.0%
 - **CER:** 46.2%
 - **Timestamp:** 2026-01-06T07:07:26.521804+00:00
@@ -1565,7 +1642,7 @@
 
 ### 78. whispercpp / large-v3
 
-- **ID:** `51927d3fc678`
+- **ID:** `f0806194393e`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 403.51s
@@ -1574,6 +1651,7 @@
 - **Temperature:** 0.40
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 83.6%
 - **CER:** 65.2%
 - **Timestamp:** 2026-01-06T06:47:36.162434+00:00
@@ -1584,7 +1662,7 @@
 
 ### 79. whispercpp / tiny
 
-- **ID:** `e9ab634367d8`
+- **ID:** `a8b6f8f36640`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 21.68s
@@ -1593,6 +1671,7 @@
 - **Temperature:** 0.18
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 88.4%
 - **CER:** 69.1%
 - **Timestamp:** 2026-01-06T05:32:09.936224+00:00
@@ -1603,7 +1682,7 @@
 
 ### 80. faster-whisper / base
 
-- **ID:** `671221cf8616`
+- **ID:** `cfd3a7ddab46`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 29.57s
@@ -1612,6 +1691,7 @@
 - **Temperature:** 0.17
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 91.5%
 - **CER:** 51.2%
 - **Timestamp:** 2026-01-06T01:07:34.756634+00:00
@@ -1622,7 +1702,7 @@
 
 ### 81. whispercpp / small
 
-- **ID:** `81060b4a7bf8`
+- **ID:** `d22daa964082`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 95.04s
@@ -1631,6 +1711,7 @@
 - **Temperature:** 0.22
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 98.7%
 - **CER:** 77.6%
 - **Timestamp:** 2026-01-06T03:47:59.309599+00:00
@@ -1641,7 +1722,7 @@
 
 ### 82. faster-whisper / medium
 
-- **ID:** `9ca091d234e5`
+- **ID:** `b4c491a656bf`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 165.57s
@@ -1650,6 +1731,7 @@
 - **Temperature:** 0.12
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 99.4%
 - **CER:** 74.3%
 - **Timestamp:** 2026-01-06T06:20:13.120664+00:00
@@ -1660,7 +1742,7 @@
 
 ### 83. faster-whisper / tiny
 
-- **ID:** `6d9504eaa1fd`
+- **ID:** `bc2bfc62dce7`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 17.97s
@@ -1669,6 +1751,7 @@
 - **Temperature:** 0.16
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 100.1%
 - **CER:** 75.8%
 - **Timestamp:** 2026-01-06T01:06:34.159719+00:00
@@ -1679,7 +1762,7 @@
 
 ### 84. faster-whisper / tiny
 
-- **ID:** `a63377fb00e7`
+- **ID:** `6426a20dec29`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 12.31s
@@ -1688,6 +1771,7 @@
 - **Temperature:** 0.19
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 104.5%
 - **CER:** 60.8%
 - **Timestamp:** 2026-01-06T03:53:16.797606+00:00
@@ -1698,7 +1782,7 @@
 
 ### 85. whispercpp / ggml-large-v3
 
-- **ID:** `0fb1d244f0be`
+- **ID:** `f7ba0913b4dc`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 538.15s
@@ -1707,6 +1791,7 @@
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 117.4%
 - **CER:** 85.5%
 - **Timestamp:** 2026-01-05T23:05:14.980888+00:00
@@ -1717,7 +1802,7 @@
 
 ### 86. whispercpp / medium
 
-- **ID:** `a3d632e276d8`
+- **ID:** `d09651017989`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 304.63s
@@ -1726,6 +1811,7 @@
 - **Temperature:** 0.45
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 227.0%
 - **CER:** 122.3%
 - **Timestamp:** 2026-01-06T03:53:04.209058+00:00
@@ -1736,7 +1822,7 @@
 
 ### 87. whispercpp / large-v3
 
-- **ID:** `42cb5633020f`
+- **ID:** `5c920d49ac59`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 974.04s
@@ -1745,6 +1831,7 @@
 - **Temperature:** 0.22
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 266.0%
 - **CER:** 205.9%
 - **Timestamp:** 2026-01-06T03:21:45.097185+00:00
@@ -1755,7 +1842,7 @@
 
 ### 88. faster-whisper / base
 
-- **ID:** `085447cdc966`
+- **ID:** `1525d6ce9a8e`
 - **Language:** ru
 - **Device:** cpu
 - **Duration:** 30.97s
@@ -1764,6 +1851,7 @@
 - **Temperature:** 0.02
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 271.4%
 - **CER:** 131.4%
 - **Timestamp:** 2026-01-06T01:07:05.154575+00:00

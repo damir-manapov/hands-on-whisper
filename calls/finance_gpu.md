@@ -7,42 +7,42 @@
 
 ## Performance Summary
 
-| # | Backend | Model | Compute | Beam | Temp | Cond | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
-|---|---------|-------|---------|------|------|------|------|--------|------|------|------|------|
-| 1 | openai | large-v3 | int8 | 3 | 0.16 | N | ru | 133.5 | 622.0 | 8547.0 | 25.8 | 17.9 |
-| 2 | openai | large-v3-turbo | int8 | 2 | 0.09 | N | ru | 45.6 | 2579.3 | 2629.3 | 28.3 | 18.9 |
-| 3 | openai | large-v3-turbo | int8 | 2 | 0.11 | N | ru | 41.8 | 2493.6 | 5126.0 | 28.5 | 18.3 |
-| 4 | openai | large-v3-turbo | int8 | 2 | 0.14 | N | ru | 39.3 | 0.0 | 7925.0 | 28.5 | 18.6 |
-| 5 | openai | large-v3-turbo | int8 | 1 | 0.12 | N | ru | 41.8 | -0.8 | 2632.3 | 28.7 | 19.7 |
-| 6 | openai | large-v3-turbo | int8 | 2 | 0.17 | N | ru | 45.7 | 0.0 | 7925.0 | 28.7 | 19.1 |
-| 7 | openai | large-v3-turbo | int8 | 2 | 0.04 | N | ru | 38.9 | 0.0 | 7925.0 | 28.8 | 19.5 |
-| 8 | openai | large-v3-turbo | int8 | 1 | 0.13 | N | ru | 41.8 | 0.2 | 2633.1 | 29.4 | 19.2 |
-| 9 | openai | large-v3-turbo | int8 | 3 | 0.08 | N | ru | 39.8 | 0.0 | 7925.0 | 29.4 | 19.2 |
-| 10 | openai | large-v3-turbo | int8 | 4 | 0.11 | N | ru | 39.3 | 0.0 | 7925.0 | 29.5 | 19.3 |
-| 11 | openai | large-v3 | int8 | 3 | 0.49 | N | ru | 138.9 | 2787.6 | 7913.6 | 30.7 | 22.0 |
-| 12 | openai | large-v3-turbo | int8 | 2 | 0.15 | N | ru | 39.8 | 0.0 | 7925.0 | 33.8 | 21.3 |
-| 13 | whispercpp | small | int8 | 3 | 0.07 | N | ru | 438.7 | 5.5 | 7924.6 | 46.2 | 29.9 |
-| 14 | openai | medium | float16 | 2 | 0.07 | N | ru | 103.2 | 5.2 | 7918.8 | 49.1 | 36.4 |
-| 15 | openai | base | int8 | 5 | 0.23 | Y | ru | 33.5 | 192.4 | 1899.4 | 79.9 | 55.9 |
-| 16 | faster-whisper | tiny | int8 | 8 | 0.06 | N | ru | 15.8 | 6.1 | 1011.3 | 97.7 | 68.0 |
-| 17 | faster-whisper | base | float32 | 7 | 0.26 | Y | ru | 23.4 | 915.8 | 960.4 | 99.8 | 83.8 |
-| 18 | openai | base | int8 | 6 | 0.19 | Y | ru | 39.0 | 556.1 | 1706.6 | 110.8 | 69.1 |
-| 19 | faster-whisper | tiny | float32 | 5 | 0.20 | Y | ru | 13.8 | 7.1 | 1652.6 | 112.5 | 82.5 |
-| 20 | faster-whisper | base | int8 | 10 | 0.26 | N | ru | 14.6 | 186.0 | 1150.6 | 114.8 | 70.4 |
-| 21 | faster-whisper | tiny | int8 | 8 | 0.25 | N | ru | 14.5 | 0.0 | 1657.6 | 115.4 | 77.4 |
-| 22 | faster-whisper | tiny | float32 | 4 | 0.13 | N | ru | 15.2 | 4.9 | 1657.6 | 123.8 | 78.4 |
-| 23 | whispercpp | tiny | int8 | 4 | 0.31 | N | ru | 89.2 | 1.9 | 1004.4 | 133.7 | 91.8 |
-| 24 | whispercpp | tiny | int8 | 8 | 0.01 | N | ru | 102.5 | 0.1 | 1011.4 | 134.4 | 77.9 |
-| 25 | faster-whisper | tiny | float16 | 5 | 0.00 | Y | ru | 25.9 | 1.2 | 1002.5 | 147.4 | 76.7 |
-| 26 | faster-whisper | tiny | float16 | 6 | 0.25 | Y | ru | 15.0 | 952.4 | 996.9 | 254.7 | 197.1 |
-| 27 | openai | tiny | float16 | 1 | 0.40 | Y | ru | 37.7 | 543.2 | 1644.9 | 260.2 | 117.7 |
-| 28 | faster-whisper | tiny | float32 | 6 | 0.40 | Y | ru | 15.5 | 90.3 | 1101.7 | 295.4 | 104.6 |
+| # | Backend | Model | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
+|---|---------|-------|---------|------|------|------|-------|------|--------|------|------|------|------|
+| 1 | openai | large-v3 | int8 | 3 | 0.16 | N | N | ru | 133.5 | 622.0 | 8547.0 | 25.8 | 17.9 |
+| 2 | openai | large-v3-turbo | int8 | 2 | 0.09 | N | N | ru | 45.6 | 2579.3 | 2629.3 | 28.3 | 18.9 |
+| 3 | openai | large-v3-turbo | int8 | 2 | 0.11 | N | N | ru | 41.8 | 2493.6 | 5126.0 | 28.5 | 18.3 |
+| 4 | openai | large-v3-turbo | int8 | 2 | 0.14 | N | N | ru | 39.3 | 0.0 | 7925.0 | 28.5 | 18.6 |
+| 5 | openai | large-v3-turbo | int8 | 1 | 0.12 | N | N | ru | 41.8 | -0.8 | 2632.3 | 28.7 | 19.7 |
+| 6 | openai | large-v3-turbo | int8 | 2 | 0.17 | N | N | ru | 45.7 | 0.0 | 7925.0 | 28.7 | 19.1 |
+| 7 | openai | large-v3-turbo | int8 | 2 | 0.04 | N | N | ru | 38.9 | 0.0 | 7925.0 | 28.8 | 19.5 |
+| 8 | openai | large-v3-turbo | int8 | 1 | 0.13 | N | N | ru | 41.8 | 0.2 | 2633.1 | 29.4 | 19.2 |
+| 9 | openai | large-v3-turbo | int8 | 3 | 0.08 | N | N | ru | 39.8 | 0.0 | 7925.0 | 29.4 | 19.2 |
+| 10 | openai | large-v3-turbo | int8 | 4 | 0.11 | N | N | ru | 39.3 | 0.0 | 7925.0 | 29.5 | 19.3 |
+| 11 | openai | large-v3 | int8 | 3 | 0.49 | N | N | ru | 138.9 | 2787.6 | 7913.6 | 30.7 | 22.0 |
+| 12 | openai | large-v3-turbo | int8 | 2 | 0.15 | N | N | ru | 39.8 | 0.0 | 7925.0 | 33.8 | 21.3 |
+| 13 | whispercpp | small | int8 | 3 | 0.07 | N | N | ru | 438.7 | 5.5 | 7924.6 | 46.2 | 29.9 |
+| 14 | openai | medium | float16 | 2 | 0.07 | N | N | ru | 103.2 | 5.2 | 7918.8 | 49.1 | 36.4 |
+| 15 | openai | base | int8 | 5 | 0.23 | Y | N | ru | 33.5 | 192.4 | 1899.4 | 79.9 | 55.9 |
+| 16 | faster-whisper | tiny | int8 | 8 | 0.06 | N | N | ru | 15.8 | 6.1 | 1011.3 | 97.7 | 68.0 |
+| 17 | faster-whisper | base | float32 | 7 | 0.26 | Y | N | ru | 23.4 | 915.8 | 960.4 | 99.8 | 83.8 |
+| 18 | openai | base | int8 | 6 | 0.19 | Y | N | ru | 39.0 | 556.1 | 1706.6 | 110.8 | 69.1 |
+| 19 | faster-whisper | tiny | float32 | 5 | 0.20 | Y | N | ru | 13.8 | 7.1 | 1652.6 | 112.5 | 82.5 |
+| 20 | faster-whisper | base | int8 | 10 | 0.26 | N | N | ru | 14.6 | 186.0 | 1150.6 | 114.8 | 70.4 |
+| 21 | faster-whisper | tiny | int8 | 8 | 0.25 | N | N | ru | 14.5 | 0.0 | 1657.6 | 115.4 | 77.4 |
+| 22 | faster-whisper | tiny | float32 | 4 | 0.13 | N | N | ru | 15.2 | 4.9 | 1657.6 | 123.8 | 78.4 |
+| 23 | whispercpp | tiny | int8 | 4 | 0.31 | N | N | ru | 89.2 | 1.9 | 1004.4 | 133.7 | 91.8 |
+| 24 | whispercpp | tiny | int8 | 8 | 0.01 | N | N | ru | 102.5 | 0.1 | 1011.4 | 134.4 | 77.9 |
+| 25 | faster-whisper | tiny | float16 | 5 | 0.00 | Y | N | ru | 25.9 | 1.2 | 1002.5 | 147.4 | 76.7 |
+| 26 | faster-whisper | tiny | float16 | 6 | 0.25 | Y | N | ru | 15.0 | 952.4 | 996.9 | 254.7 | 197.1 |
+| 27 | openai | tiny | float16 | 1 | 0.40 | Y | N | ru | 37.7 | 543.2 | 1644.9 | 260.2 | 117.7 |
+| 28 | faster-whisper | tiny | float32 | 6 | 0.40 | Y | N | ru | 15.5 | 90.3 | 1101.7 | 295.4 | 104.6 |
 
 ## Transcription Results
 
 ### 1. openai / large-v3
 
-- **ID:** `803c15dd8f9a`
+- **ID:** `eb0430266fdd`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 133.54s
@@ -51,6 +51,7 @@
 - **Temperature:** 0.16
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 25.8%
 - **CER:** 17.9%
 - **Timestamp:** 2026-01-07T08:52:47.793985+00:00
@@ -61,7 +62,7 @@
 
 ### 2. openai / large-v3-turbo
 
-- **ID:** `a99190cba333`
+- **ID:** `52b305ecbc55`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 45.60s
@@ -70,6 +71,7 @@
 - **Temperature:** 0.09
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.3%
 - **CER:** 18.9%
 - **Timestamp:** 2026-01-07T08:32:49.668381+00:00
@@ -80,7 +82,7 @@
 
 ### 3. openai / large-v3-turbo
 
-- **ID:** `049ed5769311`
+- **ID:** `3378941acccc`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 41.76s
@@ -89,6 +91,7 @@
 - **Temperature:** 0.11
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.5%
 - **CER:** 18.3%
 - **Timestamp:** 2026-01-07T08:34:57.462584+00:00
@@ -99,7 +102,7 @@
 
 ### 4. openai / large-v3-turbo
 
-- **ID:** `7d8789658243`
+- **ID:** `bb93a3c84b99`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 39.32s
@@ -108,6 +111,7 @@
 - **Temperature:** 0.14
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.5%
 - **CER:** 18.6%
 - **Timestamp:** 2026-01-07T08:47:01.509850+00:00
@@ -118,7 +122,7 @@
 
 ### 5. openai / large-v3-turbo
 
-- **ID:** `897918eea09e`
+- **ID:** `c91dd2742b61`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 41.84s
@@ -127,6 +131,7 @@
 - **Temperature:** 0.12
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.7%
 - **CER:** 19.7%
 - **Timestamp:** 2026-01-07T08:34:14.875865+00:00
@@ -137,7 +142,7 @@
 
 ### 6. openai / large-v3-turbo
 
-- **ID:** `7d29b8690844`
+- **ID:** `2992d3fd20f4`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 45.73s
@@ -146,6 +151,7 @@
 - **Temperature:** 0.17
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.7%
 - **CER:** 19.1%
 - **Timestamp:** 2026-01-07T08:48:29.169329+00:00
@@ -156,7 +162,7 @@
 
 ### 7. openai / large-v3-turbo
 
-- **ID:** `ee66af34aed6`
+- **ID:** `2f36150b9427`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 38.93s
@@ -165,6 +171,7 @@
 - **Temperature:** 0.04
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 28.8%
 - **CER:** 19.5%
 - **Timestamp:** 2026-01-07T08:49:52.633006+00:00
@@ -175,7 +182,7 @@
 
 ### 8. openai / large-v3-turbo
 
-- **ID:** `4f35f3ac138c`
+- **ID:** `f359a5111653`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 41.81s
@@ -184,6 +191,7 @@
 - **Temperature:** 0.13
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 29.4%
 - **CER:** 19.2%
 - **Timestamp:** 2026-01-07T08:33:32.241320+00:00
@@ -194,7 +202,7 @@
 
 ### 9. openai / large-v3-turbo
 
-- **ID:** `254da8149717`
+- **ID:** `6a7adf72ad7f`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 39.78s
@@ -203,6 +211,7 @@
 - **Temperature:** 0.08
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 29.4%
 - **CER:** 19.2%
 - **Timestamp:** 2026-01-07T08:49:12.555034+00:00
@@ -213,7 +222,7 @@
 
 ### 10. openai / large-v3-turbo
 
-- **ID:** `f58f790256de`
+- **ID:** `4fb1a2f18772`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 39.33s
@@ -222,6 +231,7 @@
 - **Temperature:** 0.11
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 29.5%
 - **CER:** 19.3%
 - **Timestamp:** 2026-01-07T08:50:33.051868+00:00
@@ -232,7 +242,7 @@
 
 ### 11. openai / large-v3
 
-- **ID:** `247951d037b9`
+- **ID:** `0cc1d3bc0e23`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 138.94s
@@ -241,6 +251,7 @@
 - **Temperature:** 0.49
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 30.7%
 - **CER:** 22.0%
 - **Timestamp:** 2026-01-07T08:37:17.337745+00:00
@@ -251,7 +262,7 @@
 
 ### 12. openai / large-v3-turbo
 
-- **ID:** `30fc8fd41040`
+- **ID:** `177125a88eb5`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 39.84s
@@ -260,6 +271,7 @@
 - **Temperature:** 0.15
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 33.8%
 - **CER:** 21.3%
 - **Timestamp:** 2026-01-07T08:47:42.398675+00:00
@@ -270,7 +282,7 @@
 
 ### 13. whispercpp / small
 
-- **ID:** `bf1ad604de1c`
+- **ID:** `7de60c55f3eb`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 438.71s
@@ -279,6 +291,7 @@
 - **Temperature:** 0.07
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 46.2%
 - **CER:** 29.9%
 - **Timestamp:** 2026-01-07T08:46:21.132731+00:00
@@ -289,7 +302,7 @@
 
 ### 14. openai / medium
 
-- **ID:** `e6c7944a5324`
+- **ID:** `ee6681c07bf2`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 103.19s
@@ -298,6 +311,7 @@
 - **Temperature:** 0.07
 - **Compute type:** float16
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 49.1%
 - **CER:** 36.4%
 - **Timestamp:** 2026-01-07T08:39:01.513976+00:00
@@ -308,7 +322,7 @@
 
 ### 15. openai / base
 
-- **ID:** `8b29cdaa2bcb`
+- **ID:** `06019fc59653`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 33.45s
@@ -317,6 +331,7 @@
 - **Temperature:** 0.23
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 79.9%
 - **CER:** 55.9%
 - **Timestamp:** 2026-01-07T08:31:48.096730+00:00
@@ -327,7 +342,7 @@
 
 ### 16. faster-whisper / tiny
 
-- **ID:** `a4a471acc5e3`
+- **ID:** `e04ccebcfd2e`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 15.82s
@@ -336,6 +351,7 @@
 - **Temperature:** 0.06
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 97.7%
 - **CER:** 68.0%
 - **Timestamp:** 2026-01-07T08:18:20.699812+00:00
@@ -346,7 +362,7 @@
 
 ### 17. faster-whisper / base
 
-- **ID:** `99933490e325`
+- **ID:** `d9c97f2c7c87`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 23.42s
@@ -355,6 +371,7 @@
 - **Temperature:** 0.26
 - **Compute type:** float32
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 99.8%
 - **CER:** 83.8%
 - **Timestamp:** 2026-01-07T08:30:18.947632+00:00
@@ -365,7 +382,7 @@
 
 ### 18. openai / base
 
-- **ID:** `cd757c9ae913`
+- **ID:** `5e7b48856c49`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 39.04s
@@ -374,6 +391,7 @@
 - **Temperature:** 0.19
 - **Compute type:** int8
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 110.8%
 - **CER:** 69.1%
 - **Timestamp:** 2026-01-07T08:31:13.856978+00:00
@@ -384,7 +402,7 @@
 
 ### 19. faster-whisper / tiny
 
-- **ID:** `73f6c543880f`
+- **ID:** `5a41426c70f2`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 13.77s
@@ -393,6 +411,7 @@
 - **Temperature:** 0.20
 - **Compute type:** float32
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 112.5%
 - **CER:** 82.5%
 - **Timestamp:** 2026-01-07T08:21:10.756201+00:00
@@ -403,7 +422,7 @@
 
 ### 20. faster-whisper / base
 
-- **ID:** `9c4d710691e9`
+- **ID:** `0c6e8ce7331f`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 14.60s
@@ -412,6 +431,7 @@
 - **Temperature:** 0.26
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 114.8%
 - **CER:** 70.4%
 - **Timestamp:** 2026-01-07T08:30:34.158810+00:00
@@ -422,7 +442,7 @@
 
 ### 21. faster-whisper / tiny
 
-- **ID:** `968976102b11`
+- **ID:** `30479464935f`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 14.54s
@@ -431,6 +451,7 @@
 - **Temperature:** 0.25
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 115.4%
 - **CER:** 77.4%
 - **Timestamp:** 2026-01-07T08:21:40.589710+00:00
@@ -441,7 +462,7 @@
 
 ### 22. faster-whisper / tiny
 
-- **ID:** `ae42adae0ddb`
+- **ID:** `3ebbfb42a243`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 15.25s
@@ -450,6 +471,7 @@
 - **Temperature:** 0.13
 - **Compute type:** float32
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 123.8%
 - **CER:** 78.4%
 - **Timestamp:** 2026-01-07T08:21:26.027492+00:00
@@ -460,7 +482,7 @@
 
 ### 23. whispercpp / tiny
 
-- **ID:** `dee61c490d54`
+- **ID:** `9228baa6785d`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 89.22s
@@ -469,6 +491,7 @@
 - **Temperature:** 0.31
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 133.7%
 - **CER:** 91.8%
 - **Timestamp:** 2026-01-07T08:18:04.457216+00:00
@@ -479,7 +502,7 @@
 
 ### 24. whispercpp / tiny
 
-- **ID:** `b4e3dbf0cf21`
+- **ID:** `b7ed99800b26`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 102.45s
@@ -488,6 +511,7 @@
 - **Temperature:** 0.01
 - **Compute type:** int8
 - **Condition on prev:** False
+- **Batched:** False
 - **WER:** 134.4%
 - **CER:** 77.9%
 - **Timestamp:** 2026-01-07T08:20:03.204538+00:00
@@ -498,7 +522,7 @@
 
 ### 25. faster-whisper / tiny
 
-- **ID:** `416a16259ee8`
+- **ID:** `80889d63c271`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 25.87s
@@ -507,6 +531,7 @@
 - **Temperature:** 0.00
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 147.4%
 - **CER:** 76.7%
 - **Timestamp:** 2026-01-07T08:16:34.998094+00:00
@@ -517,7 +542,7 @@
 
 ### 26. faster-whisper / tiny
 
-- **ID:** `4f5fa9b59b9d`
+- **ID:** `3bf2ac8e28f0`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 15.00s
@@ -526,6 +551,7 @@
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 254.7%
 - **CER:** 197.1%
 - **Timestamp:** 2026-01-07T08:16:09.052153+00:00
@@ -536,7 +562,7 @@
 
 ### 27. openai / tiny
 
-- **ID:** `76f1059cb537`
+- **ID:** `6eec80d0e537`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 37.74s
@@ -545,6 +571,7 @@
 - **Temperature:** 0.40
 - **Compute type:** float16
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 260.2%
 - **CER:** 117.7%
 - **Timestamp:** 2026-01-07T08:20:56.956069+00:00
@@ -555,7 +582,7 @@
 
 ### 28. faster-whisper / tiny
 
-- **ID:** `120d8a5b7d33`
+- **ID:** `39667da4ed07`
 - **Language:** ru
 - **Device:** cuda
 - **Duration:** 15.48s
@@ -564,6 +591,7 @@
 - **Temperature:** 0.40
 - **Compute type:** float32
 - **Condition on prev:** True
+- **Batched:** False
 - **WER:** 295.4%
 - **CER:** 104.6%
 - **Timestamp:** 2026-01-07T08:20:19.190326+00:00
