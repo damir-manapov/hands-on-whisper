@@ -21,6 +21,9 @@ ALL_BACKENDS = ["faster-whisper", "openai", "whispercpp"]
 ALL_MODELS = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
 ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 
+# Cloud backends (not included in optimization by default)
+CLOUD_BACKENDS = ["yandex"]
+
 
 def get_gpu_name() -> str | None:
   """Get GPU name if CUDA is available."""
@@ -218,6 +221,191 @@ def transcribe_whispercpp(  # noqa: PLR0913
     temperature=temperature,
   )
   return " ".join(segment.text.strip() for segment in segments)
+
+
+def transcribe_yandex(
+  audio_path: str,
+  language: str | None,
+  api_key: str | None = None,
+  folder_id: str | None = None,
+) -> str:
+  """Transcribe using Yandex SpeechKit (async recognition for long audio).
+
+  Requires:
+    - YANDEX_API_KEY or --yandex-api-key
+    - YANDEX_FOLDER_ID or --yandex-folder-id
+  """
+  import os
+
+  import requests
+
+  api_key = api_key or os.environ.get("YANDEX_API_KEY")
+  folder_id = folder_id or os.environ.get("YANDEX_FOLDER_ID")
+
+  if not api_key:
+    raise ValueError("YANDEX_API_KEY environment variable or --yandex-api-key required")
+  if not folder_id:
+    raise ValueError("YANDEX_FOLDER_ID environment variable or --yandex-folder-id required")
+
+  # Use synchronous recognition for files up to 30 seconds
+  # Use async recognition for longer files
+  audio_duration = _get_audio_duration(audio_path)
+
+  if audio_duration <= 30:
+    return _yandex_sync_recognize(audio_path, language, api_key, folder_id)
+  else:
+    return _yandex_async_recognize(audio_path, language, api_key, folder_id)
+
+
+def _get_audio_duration(audio_path: str) -> float:
+  """Get audio duration in seconds using ffprobe."""
+  import subprocess
+
+  result = subprocess.run(
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      audio_path,
+    ],
+    capture_output=True,
+    text=True,
+    check=True,
+  )
+  return float(result.stdout.strip())
+
+
+def _yandex_sync_recognize(
+  audio_path: str,
+  language: str | None,
+  api_key: str,
+  folder_id: str,
+) -> str:
+  """Synchronous recognition for short audio (up to 30 seconds)."""
+  import requests
+
+  audio_data = Path(audio_path).read_bytes()
+
+  url = "https://stt.api.cloud.yandex.net/speech/v1/stt:recognize"
+  headers = {"Authorization": f"Api-Key {api_key}"}
+  params = {
+    "folderId": folder_id,
+    "lang": language or "ru-RU",
+  }
+
+  response = requests.post(url, headers=headers, params=params, data=audio_data, timeout=60)
+  response.raise_for_status()
+  return response.json().get("result", "")
+
+
+def _yandex_async_recognize(
+  audio_path: str,
+  language: str | None,
+  api_key: str,
+  folder_id: str,
+) -> str:
+  """Async recognition for long audio."""
+  import base64
+
+  import requests
+
+  audio_data = Path(audio_path).read_bytes()
+
+  # Determine format from extension
+  ext = Path(audio_path).suffix.lower()
+  if ext == ".wav":
+    audio_format = "LINEAR16_PCM"
+  elif ext == ".ogg":
+    audio_format = "OGG_OPUS"
+  elif ext == ".mp3":
+    audio_format = "MP3"
+  else:
+    audio_format = "LINEAR16_PCM"  # Default
+
+  # Submit async recognition
+  url = "https://transcribe.api.cloud.yandex.net/speech/stt/v2/longRunningRecognize"
+  headers = {
+    "Authorization": f"Api-Key {api_key}",
+    "Content-Type": "application/json",
+  }
+
+  # Get sample rate from audio
+  sample_rate = _get_audio_sample_rate(audio_path)
+
+  payload = {
+    "config": {
+      "specification": {
+        "languageCode": language or "ru-RU",
+        "model": "general",
+        "profanityFilter": False,
+        "literature_text": True,
+        "audioEncoding": audio_format,
+        "sampleRateHertz": sample_rate,
+        "audioChannelCount": 1,
+      },
+      "folderId": folder_id,
+    },
+    "audio": {"content": base64.b64encode(audio_data).decode("utf-8")},
+  }
+
+  response = requests.post(url, headers=headers, json=payload, timeout=120)
+  response.raise_for_status()
+
+  operation_id = response.json().get("id")
+  if not operation_id:
+    raise ValueError(f"No operation ID in response: {response.json()}")
+
+  # Poll for results
+  result_url = f"https://operation.api.cloud.yandex.net/operations/{operation_id}"
+
+  for _ in range(120):  # Max 10 minutes
+    time.sleep(5)
+    result = requests.get(result_url, headers=headers, timeout=30)
+    result.raise_for_status()
+    data = result.json()
+
+    if data.get("done"):
+      if "error" in data:
+        raise ValueError(f"Yandex recognition error: {data['error']}")
+
+      # Extract text from chunks
+      chunks = data.get("response", {}).get("chunks", [])
+      texts = []
+      for chunk in chunks:
+        alternatives = chunk.get("alternatives", [])
+        if alternatives:
+          texts.append(alternatives[0].get("text", ""))
+      return " ".join(texts)
+
+  raise TimeoutError("Yandex recognition timed out after 10 minutes")
+
+
+def _get_audio_sample_rate(audio_path: str) -> int:
+  """Get audio sample rate using ffprobe."""
+  import subprocess
+
+  result = subprocess.run(
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-select_streams",
+      "a:0",
+      "-show_entries",
+      "stream=sample_rate",
+      "-of",
+      "default=noprint_wrappers=1:nokey=1",
+      audio_path,
+    ],
+    capture_output=True,
+    text=True,
+    check=True,
+  )
+  return int(result.stdout.strip())
 
 
 def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
@@ -509,6 +697,15 @@ def _run_transcription(  # noqa: PLR0913
       model_path = resolve_whispercpp_model_path(model, compute_type)
     result = transcribe_whispercpp(
       audio, model_path, language, beam_size, temperature, compute_type
+    )
+  elif backend == "yandex":
+    import os
+
+    result = transcribe_yandex(
+      audio,
+      language,
+      api_key=os.environ.get("YANDEX_API_KEY"),
+      folder_id=os.environ.get("YANDEX_FOLDER_ID"),
     )
   else:
     msg = f"Unknown backend: {backend}"
@@ -837,7 +1034,7 @@ Examples:
     "--backend",
     "-b",
     nargs="+",
-    choices=["faster-whisper", "openai", "whispercpp"],
+    choices=["faster-whisper", "openai", "whispercpp", "yandex"],
     default=["faster-whisper"],
     help="Transcription backend(s) (default: faster-whisper)",
   )
@@ -947,8 +1144,8 @@ Examples:
     "-b",
     nargs="+",
     default=None,
-    choices=["faster-whisper", "openai", "whispercpp"],
-    help="Backends to search (default: all)",
+    choices=["faster-whisper", "openai", "whispercpp", "yandex"],
+    help="Backends to search (default: all local backends)",
   )
   optim_parser.add_argument(
     "--models",

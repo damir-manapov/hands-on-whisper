@@ -1,6 +1,6 @@
 # hands-on-whisper
 
-Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), and [whisper.cpp](https://github.com/ggml-org/whisper.cpp).
+Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), [whisper.cpp](https://github.com/ggml-org/whisper.cpp), and [Yandex SpeechKit](https://cloud.yandex.com/services/speechkit).
 
 ## Prerequisites
 
@@ -71,6 +71,26 @@ Quantization notes:
 - **q8_0**: 8-bit quantization, ~2x smaller, similar quality (used with `--compute-type int8`)
 - **q5_0**: 5-bit quantization, ~3x smaller, slight quality loss
 - **f16**: float16 (default), best quality
+
+### Cloud backends
+
+#### Yandex SpeechKit
+
+For comparing with Yandex SpeechKit cloud API:
+
+```bash
+# Set credentials
+export YANDEX_API_KEY="your-api-key"
+export YANDEX_FOLDER_ID="your-folder-id"
+
+# Transcribe with Yandex
+uv run python src/transcribe.py transcribe audio.wav --backend yandex -l ru-RU
+
+# Compare local vs cloud
+uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper yandex -l ru
+```
+
+Yandex automatically uses async recognition for audio > 30 seconds.
 
 ## Usage
 
