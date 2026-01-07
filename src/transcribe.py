@@ -358,7 +358,7 @@ def _yandex_async_recognize(
 
   # Determine container format from extension
   ext = audio_path.suffix.lower()
-  container_type = {"mp3": "MP3", ".wav": "WAV", ".ogg": "OGG_OPUS"}.get(ext, "WAV")
+  container_type = {".mp3": "MP3", ".wav": "WAV", ".ogg": "OGG_OPUS"}.get(ext, "WAV")
 
   url = "https://stt.api.cloud.yandex.net/stt/v3/recognizeFileAsync"
   headers = {
