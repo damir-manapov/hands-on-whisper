@@ -9,9 +9,10 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 
 from backends import (
-  ALL_BACKENDS,
   ALL_COMPUTE_TYPES,
   ALL_MODELS,
+  CLOUD_BACKENDS,
+  LOCAL_BACKENDS,
   OPENAI_API_MODELS,
 )
 from report import calculate_metrics
@@ -35,7 +36,7 @@ def _prepare_search_space(
   args: argparse.Namespace,
 ) -> tuple[list[str], list[str], list[str]]:
   """Prepare search space for optimization."""
-  backends = args.backends if args.backends else ALL_BACKENDS
+  backends = args.backends if args.backends else LOCAL_BACKENDS
   if args.runtime == "cuda" and "whispercpp" in backends:
     backends = [b for b in backends if b != "whispercpp"]
     print("Note: whispercpp excluded (no GPU support in pywhispercpp)")
@@ -383,9 +384,9 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   print(f"Reference: {len(reference.split())} words")
 
   # Validate backend selection
-  backends = args.backends if args.backends else ALL_BACKENDS
-  cloud_backends = [b for b in backends if b in ["openai-api", "yandex"]]
-  local_backends = [b for b in backends if b not in ["openai-api", "yandex"]]
+  backends = args.backends if args.backends else LOCAL_BACKENDS
+  cloud_backends = [b for b in backends if b in CLOUD_BACKENDS]
+  local_backends = [b for b in backends if b not in CLOUD_BACKENDS]
 
   if cloud_backends and local_backends:
     msg = f"Cannot mix cloud ({cloud_backends}) and local ({local_backends}) backends"

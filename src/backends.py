@@ -11,7 +11,7 @@ CLOUD_BACKENDS = ["yandex", "openai-api"]
 OPENAI_API_MODELS = ["whisper-1", "gpt-4o-transcribe", "gpt-4o-mini-transcribe"]
 
 # Default search space for optimization
-ALL_BACKENDS = ["faster-whisper", "openai", "whispercpp"]
+LOCAL_BACKENDS = ["faster-whisper", "openai", "whispercpp"]
 ALL_MODELS = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
 ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 
