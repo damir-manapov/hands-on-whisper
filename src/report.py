@@ -121,7 +121,7 @@ def _append_detailed_results(
     backend = run.get("backend", "?")
     model = run.get("model", "?")
     lang = run.get("language") or "auto"
-    runtime = run.get("runtime", run.get("device", "?"))  # backward compat
+    runtime = run.get("runtime", "?")
     gpu_name = run.get("gpu_name")
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
