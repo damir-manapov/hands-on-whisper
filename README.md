@@ -40,9 +40,14 @@ uv run python src/download_models.py --backend all
 uv run python src/download_models.py --backend faster-whisper
 uv run python src/download_models.py --backend openai
 uv run python src/download_models.py --backend whispercpp
+
+# Include distil-large-v3 (English only, large download)
+uv run python src/download_models.py --include-distil
 ```
 
-Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo, distil-large-v3
+Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo
+
+Optional: distil-large-v3 (English only, use `--include-distil` to download)
 
 ### Model availability
 
@@ -51,7 +56,6 @@ Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo, distil-large-v
 | tiny, base, small, medium | ✅ | ✅ | ✅ f16 + q8_0 | |
 | large-v3 | ✅ | ✅ | ✅ f16 + q5_0 | Best multilingual quality |
 | large-v3-turbo | ✅ | ✅ | ✅ f16 + q8_0 | Fast, good quality |
-| distil-large-v3 | ✅ | ✅ (via HF) | ✅ f16 only | ⚠️ English only |
 
 ### GPU support
 
@@ -289,7 +293,7 @@ Run benchmarks on cloud GPU instances using Terraform (Selectel):
 | A100 | 40GB | 6 | 87GB | 3041 | ~218 ₽ | ~4x faster than T4 |
 | A100 | 40GB | 12 | 175GB | 3042 | ~380 ₽ | 2 GPUs |
 | A100 | 80GB | 12 | 128GB | 3920 | ~400 ₽ | More VRAM for large batches |
-| RTX 4090 | 24GB | 8 | 32GB | 3101 | ~120 ₽ | Good price/performance |
+| RTX 4090 | 24GB | 8 | 32GB | 3101 | ~85 ₽ | Good price/performance |
 | H100 | 80GB | 12 | 128GB | 13930 | ~600 ₽ | Fastest, most expensive |
 
 ### List all GPU flavors

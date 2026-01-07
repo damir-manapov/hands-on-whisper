@@ -3,18 +3,20 @@
 import argparse
 
 
-def download_faster_whisper_models() -> None:
+def download_faster_whisper_models(include_distil: bool = False) -> None:
   """Download faster-whisper models."""
   from faster_whisper import WhisperModel
 
-  models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo", "distil-large-v3"]
+  models = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
+  if include_distil:
+    models.append("distil-large-v3")
   for model_name in models:
     print(f"Downloading faster-whisper: {model_name}...")
     WhisperModel(model_name, device="cpu", compute_type="int8")
     print(f"  Done: {model_name}")
 
 
-def download_openai_whisper_models() -> None:
+def download_openai_whisper_models(include_distil: bool = False) -> None:
   """Download OpenAI whisper models."""
   import whisper
   from huggingface_hub import hf_hub_download
@@ -25,20 +27,21 @@ def download_openai_whisper_models() -> None:
     whisper.load_model(model_name, device="cpu")
     print(f"  Done: {model_name}")
 
-  # distil-large-v3 requires separate download from HuggingFace
-  print("Downloading openai-whisper: distil-large-v3...")
-  try:
-    hf_hub_download(
-      repo_id="distil-whisper/distil-large-v3-openai",
-      filename="model.bin",
-      local_dir="models/distil-large-v3-openai",
-    )
-    print("  Done: distil-large-v3")
-  except Exception as e:
-    print(f"  Failed: {e}")
+  if include_distil:
+    # distil-large-v3 requires separate download from HuggingFace
+    print("Downloading openai-whisper: distil-large-v3...")
+    try:
+      hf_hub_download(
+        repo_id="distil-whisper/distil-large-v3-openai",
+        filename="model.bin",
+        local_dir="models/distil-large-v3-openai",
+      )
+      print("  Done: distil-large-v3")
+    except Exception as e:
+      print(f"  Failed: {e}")
 
 
-def download_whispercpp_models() -> None:
+def download_whispercpp_models(include_distil: bool = False) -> None:
   """Download whisper.cpp ggml models (f16 and quantized)."""
   import urllib.request
   from pathlib import Path
@@ -76,21 +79,22 @@ def download_whispercpp_models() -> None:
         if filepath.exists():
           filepath.unlink()
 
-  # distil-large-v3 is in a separate repo: distil-whisper/distil-large-v3-ggml
-  distil_url = "https://huggingface.co/distil-whisper/distil-large-v3-ggml/resolve/main"
-  distil_filename = "ggml-distil-large-v3.bin"
-  distil_filepath = models_dir / distil_filename
-  if distil_filepath.exists():
-    print(f"whisper.cpp: {distil_filename} already exists")
-  else:
-    print(f"Downloading whisper.cpp: {distil_filename}...")
-    try:
-      urllib.request.urlretrieve(f"{distil_url}/{distil_filename}", distil_filepath)
-      print(f"  Done: {distil_filepath}")
-    except Exception as e:
-      print(f"  Failed: {e}")
-      if distil_filepath.exists():
-        distil_filepath.unlink()
+  if include_distil:
+    # distil-large-v3 is in a separate repo: distil-whisper/distil-large-v3-ggml
+    distil_url = "https://huggingface.co/distil-whisper/distil-large-v3-ggml/resolve/main"
+    distil_filename = "ggml-distil-large-v3.bin"
+    distil_filepath = models_dir / distil_filename
+    if distil_filepath.exists():
+      print(f"whisper.cpp: {distil_filename} already exists")
+    else:
+      print(f"Downloading whisper.cpp: {distil_filename}...")
+      try:
+        urllib.request.urlretrieve(f"{distil_url}/{distil_filename}", distil_filepath)
+        print(f"  Done: {distil_filepath}")
+      except Exception as e:
+        print(f"  Failed: {e}")
+        if distil_filepath.exists():
+          distil_filepath.unlink()
 
 
 def main() -> None:
@@ -102,16 +106,21 @@ def main() -> None:
     default="all",
     help="Which backend to download models for (default: all)",
   )
+  parser.add_argument(
+    "--include-distil",
+    action="store_true",
+    help="Also download distil-large-v3 model (English only, large download)",
+  )
   args = parser.parse_args()
 
   if args.backend in ("faster-whisper", "all"):
-    download_faster_whisper_models()
+    download_faster_whisper_models(include_distil=args.include_distil)
 
   if args.backend in ("openai", "all"):
-    download_openai_whisper_models()
+    download_openai_whisper_models(include_distil=args.include_distil)
 
   if args.backend in ("whispercpp", "all"):
-    download_whispercpp_models()
+    download_whispercpp_models(include_distil=args.include_distil)
 
   print("\nAll models downloaded!")
 
