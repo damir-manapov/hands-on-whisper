@@ -232,7 +232,8 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
       "backend": "faster-whisper",
       "model": "base",
       "language": null,
-      "device": "cpu",
+      "device": "cuda",
+      "gpu_name": "NVIDIA GeForce RTX 4090",
       "text": "transcribed text..."
     }
   ]
@@ -241,6 +242,7 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
 
 - `memory_delta_mb`: Memory increase during transcription (model loading + inference)
 - `memory_peak_mb`: Peak memory usage during run
+- `gpu_name`: GPU model name when running on CUDA (null for CPU)
 
 Each run has a unique ID based on settings (backend, model, language, device). Re-running with the same settings skips existing runs (use this to resume interrupted comparison runs).
 

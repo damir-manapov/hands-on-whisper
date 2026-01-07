@@ -22,6 +22,18 @@ ALL_MODELS = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
 ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 
 
+def get_gpu_name() -> str | None:
+  """Get GPU name if CUDA is available."""
+  try:
+    import torch
+
+    if torch.cuda.is_available():
+      return torch.cuda.get_device_name(0)
+  except ImportError:
+    pass
+  return None
+
+
 def normalize_text(text: str) -> str:
   """Normalize text for WER comparison: lowercase, remove punctuation, collapse whitespace."""
   import re
@@ -294,6 +306,7 @@ def _append_detailed_results(
     model = run.get("model", "?")
     lang = run.get("language") or "auto"
     device = run.get("device", "?")
+    gpu_name = run.get("gpu_name")
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
@@ -309,7 +322,8 @@ def _append_detailed_results(
     lines.append("")
     lines.append(f"- **ID:** `{run_id}`")
     lines.append(f"- **Language:** {lang}")
-    lines.append(f"- **Device:** {device}")
+    device_str = f"{device} ({gpu_name})" if gpu_name else device
+    lines.append(f"- **Device:** {device_str}")
     lines.append(f"- **Duration:** {duration:.2f}s")
     lines.append(f"- **Memory:** Δ {mem_delta} MB, peak {mem_peak} MB")
     lines.append(f"- **Beam size:** {beam_size}")
@@ -498,6 +512,9 @@ def _run_transcription(  # noqa: PLR0913
   mem_used_mb = round((mem_after - mem_before) / 1024 / 1024, 1)
   mem_peak_mb = round(mem_after / 1024 / 1024, 1)
 
+  # Get GPU name if running on CUDA
+  gpu_name = get_gpu_name() if device == "cuda" else None
+
   return {
     "id": run_id,
     "timestamp": datetime.now(UTC).isoformat(),
@@ -508,6 +525,7 @@ def _run_transcription(  # noqa: PLR0913
     "model": model,
     "language": language,
     "device": device,
+    "gpu_name": gpu_name,
     "beam_size": beam_size,
     "temperature": temperature,
     "compute_type": compute_type,
