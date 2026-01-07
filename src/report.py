@@ -28,7 +28,7 @@ def calculate_metrics(reference: str, hypothesis: str) -> tuple[float, float]:
   return wer_score, cer_score
 
 
-def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
+def generate_report(data: dict[str, Any], reference: str | None = None) -> str:  # noqa: PLR0912, PLR0915
   """Generate a markdown report from transcription data."""
   lines = ["# Transcription Report", ""]
   lines.append(f"**Audio file:** `{data.get('audio', 'unknown')}`")
@@ -55,46 +55,77 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  hdr = (
-    "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch "
-    "| Lang | Dur(s) | MemΔ | Peak |"
-  )
-  sep = (
-    "|---|---------|-------|-----|---------|------|------|------|"
-    "-------|------|--------|------|------|"
-  )
-  if reference:
-    lines.append(f"{hdr} WER% | CER% |")
-    lines.append(f"{sep}------|------|")
+
+  # Check if all runs are cloud backends
+  from backends import CLOUD_BACKENDS
+
+  all_cloud = all(run.get("backend") in CLOUD_BACKENDS for run in sorted_runs)
+
+  if all_cloud:
+    # Simplified table for cloud backends
+    hdr = "| # | Backend | Model | Temp | Lang | Dur(s) | MemΔ | Peak |"
+    sep = "|---|---------|-------|------|------|--------|------|------|"
+    if reference:
+      lines.append(f"{hdr} WER% | CER% |")
+      lines.append(f"{sep}------|------|")
+    else:
+      lines.append(hdr)
+      lines.append(sep)
   else:
-    lines.append(hdr)
-    lines.append(sep)
+    # Full table for local backends
+    hdr = (
+      "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch "
+      "| Lang | Dur(s) | MemΔ | Peak |"
+    )
+    sep = (
+      "|---|---------|-------|-----|---------|------|------|------|"
+      "-------|------|--------|------|------|"
+    )
+    if reference:
+      lines.append(f"{hdr} WER% | CER% |")
+      lines.append(f"{sep}------|------|")
+    else:
+      lines.append(hdr)
+      lines.append(sep)
 
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
     model = run.get("model", "?")
-    gpu_name = run.get("gpu_name") or "-"
-    if gpu_name != "-":
-      gpu_name = gpu_name.replace("NVIDIA ", "").replace("GeForce ", "")
-
-    params = get_backend_params(backend)
-    compute = run.get("compute_type") or "-" if "compute_type" in params else "-"
-    beam = run.get("beam_size", 5) if "beam_size" in params else "-"
-    temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
-    cond_prev = (
-      ("Y" if run.get("condition_on_prev", True) else "N") if "condition_on_prev" in params else "-"
-    )
-    batch_size = run.get("batch_size", 0)
-    batch_str = (str(batch_size) if batch_size > 0 else "-") if "batch_size" in params else "-"
-
     lang = run.get("language") or "auto"
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
-    row = (
-      f"| {i} | {backend} | {model} | {gpu_name} | {compute} | {beam} | {temp} "
-      f"| {cond_prev} | {batch_str} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
-    )
+
+    if all_cloud:
+      # Simplified row for cloud backends
+      params = get_backend_params(backend)
+      temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
+      row = (
+        f"| {i} | {backend} | {model} | {temp} | {lang} "
+        f"| {duration:.1f} | {mem_delta} | {mem_peak} |"
+      )
+    else:
+      # Full row for local backends
+      gpu_name = run.get("gpu_name") or "-"
+      if gpu_name != "-":
+        gpu_name = gpu_name.replace("NVIDIA ", "").replace("GeForce ", "")
+
+      params = get_backend_params(backend)
+      compute = run.get("compute_type") or "-" if "compute_type" in params else "-"
+      beam = run.get("beam_size", 5) if "beam_size" in params else "-"
+      temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
+      cond_prev = (
+        ("Y" if run.get("condition_on_prev", True) else "N")
+        if "condition_on_prev" in params
+        else "-"
+      )
+      batch_size = run.get("batch_size", 0)
+      batch_str = (str(batch_size) if batch_size > 0 else "-") if "batch_size" in params else "-"
+      row = (
+        f"| {i} | {backend} | {model} | {gpu_name} | {compute} | {beam} | {temp} "
+        f"| {cond_prev} | {batch_str} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
+      )
+
     if reference:
       wer_score, cer_score = calculate_metrics(reference, run.get("text", ""))
       lines.append(f"{row} {wer_score:.2f} | {cer_score:.2f} |")
@@ -134,12 +165,18 @@ def _append_detailed_results(
     timestamp = run.get("timestamp", "?")
     text = run.get("text", "")
 
+    from backends import CLOUD_BACKENDS
+
     lines.append(f"### {i}. {backend} / {model}")
     lines.append("")
     lines.append(f"- **ID:** `{run_id}`")
     lines.append(f"- **Language:** {lang}")
-    runtime_str = f"{runtime} ({gpu_name})" if gpu_name else runtime
-    lines.append(f"- **Runtime:** {runtime_str}")
+
+    # Only show runtime for local backends
+    if backend not in CLOUD_BACKENDS:
+      runtime_str = f"{runtime} ({gpu_name})" if gpu_name else runtime
+      lines.append(f"- **Runtime:** {runtime_str}")
+
     lines.append(f"- **Duration:** {duration:.2f}s")
     lines.append(f"- **Memory:** Δ {mem_delta} MB, peak {mem_peak} MB")
 
