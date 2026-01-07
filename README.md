@@ -120,6 +120,8 @@ The report includes:
 
 ### Sample Reports
 
+Sample audio from [Sherbakov Call Prank](https://www.youtube.com/watch?v=vZQNgvIoPr0) (Russian):
+
 - [sherbakov_call.json](calls/sherbakov_call.json) - Raw benchmark data
 - [sherbakov_call.md](calls/sherbakov_call.md) - Formatted report with WER/CER metrics
 
