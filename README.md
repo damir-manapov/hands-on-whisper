@@ -257,6 +257,29 @@ ffmpeg -i input.mp3 -ar 16000 -ac 1 -c:a pcm_s16le output.wav
 ffmpeg -i input.mp3 -af "pan=mono|c0=0.5*c0+0.5*c1,volume=2" -ar 16000 output.wav
 ```
 
+## GPU Benchmarking
+
+Run benchmarks on cloud GPU instances using Terraform:
+
+```bash
+cd terraform/selectel
+cp terraform.tfvars.example terraform.tfvars
+# Set credentials (see terraform/selectel/README.md)
+
+terraform init
+terraform apply
+
+# SSH and run optimization
+ssh root@<vm-ip>
+cd /root/hands-on-whisper
+uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --n-trials 50
+
+# Don't forget to destroy when done!
+terraform destroy
+```
+
+See [terraform/selectel/README.md](terraform/selectel/README.md) for full instructions.
+
 ## Development
 
 ```bash

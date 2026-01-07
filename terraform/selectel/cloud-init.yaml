@@ -1,0 +1,51 @@
+#cloud-config
+# Whisper GPU Benchmark VM - Selectel
+package_update: true
+package_upgrade: true
+
+packages:
+  - git
+  - curl
+  - build-essential
+  - ffmpeg
+  # CUDA dependencies
+  - linux-headers-$(uname -r)
+
+runcmd:
+  # Install NVIDIA drivers and CUDA
+  - |
+    # Add NVIDIA package repository
+    curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb -o /tmp/cuda-keyring.deb
+    dpkg -i /tmp/cuda-keyring.deb
+    apt-get update
+
+    # Install CUDA toolkit and drivers
+    apt-get install -y cuda-toolkit-12-4 nvidia-driver-550
+
+    # Add CUDA to PATH for all users
+    echo 'export PATH=/usr/local/cuda/bin:$PATH' >> /etc/profile.d/cuda.sh
+    echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> /etc/profile.d/cuda.sh
+
+  # Install uv (Python package manager)
+  - curl -LsSf https://astral.sh/uv/install.sh | sh
+  - echo 'source $HOME/.local/bin/env' >> /root/.bashrc
+  - export PATH="/root/.local/bin:$PATH"
+
+  # Clone project
+  - cd /root
+  - git clone https://github.com/damir-manapov/hands-on-whisper.git
+  - cd hands-on-whisper
+
+  # Install Python dependencies
+  - /root/.local/bin/uv sync
+
+  # Download all Whisper models for benchmarking
+  - /root/.local/bin/uv run python src/download_models.py --backend all
+
+  # Verify NVIDIA driver is working
+  - nvidia-smi > /root/nvidia-smi.log 2>&1 || echo "NVIDIA driver not ready yet"
+
+  # Create ready marker
+  - touch /root/cloud-init-ready
+
+final_message: "Whisper GPU benchmark VM ready after $UPTIME seconds"

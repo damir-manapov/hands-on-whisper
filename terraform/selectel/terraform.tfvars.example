@@ -1,0 +1,21 @@
+# Copy this file to terraform.tfvars and fill in your values
+# Or set credentials via environment variables (recommended):
+#   export TF_VAR_selectel_domain="123456"
+#   export TF_VAR_selectel_username="your-username"
+#   export TF_VAR_selectel_password="your-password"
+#   export TF_VAR_selectel_openstack_password="your-openstack-password"
+
+environment_name = "gpu-benchmark"
+
+# GPU flavor options (check current availability and pricing):
+#   - SL1.4-16384.1xT4     : T4 16GB - cheapest, good for testing
+#   - SL1.8-32768.1xA30    : A30 24GB - mid-range
+#   - SL1.12-122880.1xA100 : A100 40GB - fastest, most expensive
+gpu_flavor = "SL1.4-16384.1xT4"
+
+# Disk configuration
+disk_size_gb = 100  # Need ~20GB for all Whisper models
+disk_type    = "fast"
+
+# SSH key path
+ssh_public_key_path = "~/.ssh/id_ed25519.pub"

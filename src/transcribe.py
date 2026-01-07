@@ -510,9 +510,16 @@ def _init_study_with_history(  # noqa: PLR0913
   models: list[str],
   compute_types: list[str],
   metric: str = "wer",
-) -> None:
-  """Initialize Optuna study with previous runs so it can learn from them."""
+) -> tuple[int, int]:
+  """Initialize Optuna study with previous runs so it can learn from them.
+
+  Returns:
+    Tuple of (loaded_count, total_count) for reporting.
+  """
   import optuna as opt
+
+  total_runs = len(data.get("runs", []))
+  loaded_count = 0
 
   for run in data.get("runs", []):
     # Only add runs that are within current search space
@@ -554,6 +561,20 @@ def _init_study_with_history(  # noqa: PLR0913
         values=[score / 100],
       )
     )
+    loaded_count += 1
+
+  return loaded_count, total_runs
+
+
+def _print_optimization_results(study: optuna.Study, metric: str) -> None:
+  """Print optimization results summary."""
+  print("\n" + "=" * 50)
+  print("OPTIMIZATION RESULTS")
+  print("=" * 50)
+  print(f"Best {metric.upper()}: {study.best_value * 100:.1f}%")
+  print("Best parameters:")
+  for key, value in study.best_params.items():
+    print(f"  {key}: {value}")
 
 
 def cmd_optimize(args: argparse.Namespace) -> None:
@@ -629,20 +650,19 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     )
 
   study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
-  _init_study_with_history(study, data, reference, backends, models, compute_types, metric)
+  loaded, total = _init_study_with_history(
+    study, data, reference, backends, models, compute_types, metric
+  )
 
-  if study.trials:
-    print(f"Initialized with {len(study.trials)} previous trials")
+  if loaded > 0:
+    filtered = total - loaded
+    if filtered > 0:
+      print(f"Loaded {loaded} previous trials ({filtered} filtered by search space)")
+    else:
+      print(f"Loaded {loaded} previous trials")
 
   study.optimize(objective, n_trials=args.n_trials)
-
-  print("\n" + "=" * 50)
-  print("OPTIMIZATION RESULTS")
-  print("=" * 50)
-  print(f"Best {metric.upper()}: {study.best_value * 100:.1f}%")
-  print("Best parameters:")
-  for key, value in study.best_params.items():
-    print(f"  {key}: {value}")
+  _print_optimization_results(study, metric)
 
 
 def main() -> None:
