@@ -31,7 +31,7 @@ runcmd:
 
   # Install uv (Python package manager)
   - curl -LsSf https://astral.sh/uv/install.sh | sh
-  - echo 'source $HOME/.local/bin/env' >> /root/.bashrc
+  - echo 'export PATH="/root/.local/bin:$PATH"' >> /etc/profile.d/uv.sh
   - export PATH="/root/.local/bin:$PATH"
 
   # Clone project and install with Python 3.12 (for onnxruntime compatibility)
