@@ -747,7 +747,10 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     backend = trial.suggest_categorical("backend", backends)
     model = trial.suggest_categorical("model", models)
     compute_type = trial.suggest_categorical("compute_type", compute_types)
-    beam_size = trial.suggest_int("beam_size", 1, 10)
+    if args.beam_sizes:
+      beam_size = trial.suggest_categorical("beam_size", args.beam_sizes)
+    else:
+      beam_size = trial.suggest_int("beam_size", 1, 10)
     temperature = trial.suggest_float("temperature", 0.0, 0.5)
 
     # whispercpp doesn't support condition_on_prev
@@ -968,6 +971,13 @@ Examples:
     type=int,
     default=None,
     help="Batch sizes to search for faster-whisper (default: 0-32 range)",
+  )
+  optim_parser.add_argument(
+    "--beam-sizes",
+    nargs="+",
+    type=int,
+    default=None,
+    help="Beam sizes to search (default: 1-10 range)",
   )
   optim_parser.add_argument(
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"

@@ -216,8 +216,11 @@ You can constrain the search space with CLI flags:
 # Search only specific batch sizes
 uv run python src/transcribe.py optimize audio.wav --batch-sizes 0 8 16 24 32
 
+# Search only specific beam sizes
+uv run python src/transcribe.py optimize audio.wav --beam-sizes 1 5 10
+
 # Combine with other filters
-uv run python src/transcribe.py optimize audio.wav --backends faster-whisper --models large-v3 --compute-types float16 --batch-sizes 16 32
+uv run python src/transcribe.py optimize audio.wav --backends faster-whisper --models large-v3 --compute-types float16 --batch-sizes 16 32 --beam-sizes 5
 ```
 
 ### Features
