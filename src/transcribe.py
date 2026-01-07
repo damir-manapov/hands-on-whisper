@@ -24,6 +24,27 @@ ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 # Cloud backends (not included in optimization by default)
 CLOUD_BACKENDS = ["yandex", "openai-api"]
 
+# Fields shown in reports per backend type
+# Local backends show all fields by default
+LOCAL_BACKEND_FIELDS = [
+  "beam_size",
+  "temperature",
+  "compute_type",
+  "condition_on_prev",
+  "batch_size",
+]
+CLOUD_BACKEND_FIELDS: dict[str, list[str]] = {
+  "yandex": [],
+  "openai-api": ["temperature"],
+}
+
+
+def get_backend_fields(backend: str) -> list[str]:
+  """Get the list of parameter fields to show for a backend."""
+  if backend in CLOUD_BACKEND_FIELDS:
+    return CLOUD_BACKEND_FIELDS[backend]
+  return LOCAL_BACKEND_FIELDS
+
 
 def get_gpu_name() -> str | None:
   """Get GPU name if CUDA is available."""
@@ -495,16 +516,16 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     if gpu_name != "-":
       gpu_name = gpu_name.replace("NVIDIA ", "").replace("GeForce ", "")
 
-    # For cloud backends, show "-" for local Whisper params
-    # OpenAI API supports temperature, Yandex doesn't
-    is_cloud = backend in CLOUD_BACKENDS
-    is_yandex = backend == "yandex"
-    compute = "-" if is_cloud else (run.get("compute_type") or "-")
-    beam = "-" if is_cloud else run.get("beam_size", 5)
-    temp = "-" if is_yandex else f"{run.get('temperature', 0.0):.2f}"
-    cond_prev = "-" if is_cloud else ("Y" if run.get("condition_on_prev", True) else "N")
+    # Use backend field config to determine which fields to show
+    fields = get_backend_fields(backend)
+    compute = run.get("compute_type") or "-" if "compute_type" in fields else "-"
+    beam = run.get("beam_size", 5) if "beam_size" in fields else "-"
+    temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in fields else "-"
+    cond_prev = (
+      ("Y" if run.get("condition_on_prev", True) else "N") if "condition_on_prev" in fields else "-"
+    )
     batch_size = run.get("batch_size", 0)
-    batch_str = "-" if is_cloud else (str(batch_size) if batch_size > 0 else "-")
+    batch_str = (str(batch_size) if batch_size > 0 else "-") if "batch_size" in fields else "-"
 
     lang = run.get("language") or "auto"
     duration = run.get("duration_seconds", 0)
@@ -561,16 +582,18 @@ def _append_detailed_results(
     lines.append(f"- **Device:** {device_str}")
     lines.append(f"- **Duration:** {duration:.2f}s")
     lines.append(f"- **Memory:** Δ {mem_delta} MB, peak {mem_peak} MB")
-    # Show params based on backend type
-    # OpenAI API supports temperature, Yandex doesn't
-    if backend not in CLOUD_BACKENDS:
+    # Show params based on backend field config
+    fields = get_backend_fields(backend)
+    if "beam_size" in fields:
       lines.append(f"- **Beam size:** {beam_size}")
+    if "temperature" in fields:
       lines.append(f"- **Temperature:** {temperature:.2f}")
+    if "compute_type" in fields:
       lines.append(f"- **Compute type:** {compute_type}")
+    if "condition_on_prev" in fields:
       lines.append(f"- **Condition on prev:** {condition_on_prev}")
+    if "batch_size" in fields:
       lines.append(f"- **Batch size:** {batch_size}")
-    elif backend == "openai-api":
-      lines.append(f"- **Temperature:** {temperature:.2f}")
     if reference:
       wer_score, cer_score = calculate_metrics(reference, text)
       lines.append(f"- **WER:** {wer_score:.2f}%")
