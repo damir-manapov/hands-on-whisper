@@ -337,9 +337,15 @@ ssh root@<vm-ip>
 cd /root/hands-on-whisper
 uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --device cuda --backends faster-whisper openai --n-trials 10
 
-# Copy results back to local machine (from local terminal)
+# Auto-sync results every 30 seconds (from local terminal)
+watch -n 30 'scp root@<vm-ip>:/root/hands-on-whisper/calls/*_gpu.* calls/'
+
+# Or copy results manually
 scp root@<vm-ip>:/root/hands-on-whisper/calls/*_gpu.json calls/
 scp root@<vm-ip>:/root/hands-on-whisper/calls/*_gpu.md calls/
+
+# Regenerate report locally (to get latest formatting)
+uv run python src/transcribe.py report calls/finance_gpu.json
 
 # Don't forget to destroy when done!
 terraform destroy
