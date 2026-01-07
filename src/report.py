@@ -69,8 +69,8 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
       all_params.update(get_backend_params(backend))
 
     # Build header dynamically
-    hdr_parts = ["| #", "Backend", "Model"]
-    sep_parts = ["|---", "---------", "-------"]
+    hdr_parts = ["#", "Backend", "Model"]
+    sep_parts = ["---", "---------", "-------"]
 
     if "temperature" in all_params:
       hdr_parts.append("Temp")
@@ -82,11 +82,11 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
       hdr_parts.append("Diarize")
       sep_parts.append("---------")
 
-    hdr_parts.extend(["Lang", "Dur(s)", "MemΔ", "Peak |"])
-    sep_parts.extend(["------", "--------|", "------|", "------|"])
+    hdr_parts.extend(["Lang", "Dur(s)", "MemΔ", "Peak"])
+    sep_parts.extend(["------", "--------", "------", "------"])
 
-    hdr = " | ".join(hdr_parts)
-    sep = "|".join(sep_parts)
+    hdr = "| " + " | ".join(hdr_parts) + " |"
+    sep = "|" + "|".join(sep_parts) + "|"
 
     if reference:
       lines.append(f"{hdr} WER% | CER% |")
@@ -123,7 +123,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
       # Simplified row for cloud backends
       params = get_backend_params(backend)
 
-      row_parts = [f"| {i}", backend, model]
+      row_parts = [str(i), backend, model]
 
       if "temperature" in all_params:
         temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
@@ -137,8 +137,8 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str: 
         diarize = ("Y" if run.get("diarize", False) else "N") if "diarize" in params else "-"
         row_parts.append(diarize)
 
-      row_parts.extend([lang, f"{duration:.1f}", str(mem_delta), f"{mem_peak} |"])
-      row = " | ".join(row_parts)
+      row_parts.extend([lang, f"{duration:.1f}", str(mem_delta), str(mem_peak)])
+      row = "| " + " | ".join(row_parts) + " |"
     else:
       # Full row for local backends
       gpu_name = run.get("gpu_name") or "-"
