@@ -382,7 +382,17 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   reference = ref_path.read_text(encoding="utf-8").strip()
   print(f"Reference: {len(reference.split())} words")
 
-  if args.runtime == "cloud":
+  # Validate backend selection
+  backends = args.backends if args.backends else ALL_BACKENDS
+  cloud_backends = [b for b in backends if b in ["openai-api", "yandex"]]
+  local_backends = [b for b in backends if b not in ["openai-api", "yandex"]]
+
+  if cloud_backends and local_backends:
+    msg = f"Cannot mix cloud ({cloud_backends}) and local ({local_backends}) backends"
+    print(f"Error: {msg}", file=sys.stderr)
+    sys.exit(1)
+
+  if cloud_backends:
     optimize_cloud(args, audio_path, reference, args.metric)
   else:
     optimize_local(args, audio_path, reference, args.metric)
