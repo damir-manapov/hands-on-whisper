@@ -140,6 +140,15 @@ uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-
 # - Legacy: nova, enhanced, base (with variants)
 ```
 
+**Deepgram Parameters:**
+
+During optimization, the following parameters are tuned alongside model and temperature:
+
+- `smart_format` (default: True) - Automatically formats currency amounts ($100), phone numbers (555-1234), email addresses, and dates for improved readability
+- `diarize` (default: False) - Enables speaker detection and assigns speaker numbers (0, 1, 2...) to each word for multi-speaker conversations
+
+These parameters significantly impact transcription quality and are included in the optimization search space.
+
 ## Usage
 
 ```bash
