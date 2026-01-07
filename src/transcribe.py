@@ -621,6 +621,10 @@ def cmd_optimize(args: argparse.Namespace) -> None:
 
   # Parse search space from args (defaults to all options)
   backends = args.backends if args.backends else ALL_BACKENDS
+  # whispercpp doesn't support GPU (pywhispercpp is CPU-only)
+  if args.device == "cuda" and "whispercpp" in backends:
+    backends = [b for b in backends if b != "whispercpp"]
+    print("Note: whispercpp excluded (no GPU support in pywhispercpp)")
   models = args.models if args.models else ALL_MODELS
   compute_types = args.compute_types if args.compute_types else ALL_COMPUTE_TYPES
 

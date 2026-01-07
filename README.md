@@ -53,6 +53,16 @@ Model sizes: tiny, base, small, medium, large-v3, large-v3-turbo, distil-large-v
 | large-v3-turbo | ✅ | ✅ | ✅ f16 + q8_0 | Fast, good quality |
 | distil-large-v3 | ✅ | ✅ (via HF) | ✅ f16 only | ⚠️ English only |
 
+### GPU support
+
+| Backend | GPU Support | Notes |
+|---------|-------------|-------|
+| faster-whisper | ✅ CUDA | Full GPU acceleration via CTranslate2 |
+| openai-whisper | ✅ CUDA | Full GPU acceleration via PyTorch |
+| whisper.cpp | ❌ CPU only | pywhispercpp package is CPU-only |
+
+Note: whisper.cpp can support GPU when compiled from source with CUDA/cuBLAS, but the Python package (pywhispercpp) doesn't include GPU support. It's automatically excluded from GPU optimization runs.
+
 Quantization notes:
 - **q8_0**: 8-bit quantization, ~2x smaller, similar quality (used with `--compute-type int8`)
 - **q5_0**: 5-bit quantization, ~3x smaller, slight quality loss
