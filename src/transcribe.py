@@ -37,6 +37,15 @@ def calculate_metrics(reference: str, hypothesis: str) -> tuple[float, float]:
   return wer_score, cer_score
 
 
+def load_reference(data: dict[str, Any]) -> str | None:
+  """Load reference text file based on audio path in JSON data."""
+  audio_path = Path(data.get("audio", ""))
+  ref_path = audio_path.with_suffix(".txt")
+  if ref_path.exists():
+    return ref_path.read_text(encoding="utf-8").strip()
+  return None
+
+
 def generate_run_id(  # noqa: PLR0913
   backend: str,
   model: str,
@@ -282,10 +291,7 @@ def save_results(data: dict[str, Any], json_path: Path) -> None:
   """Save JSON data and regenerate MD report."""
   json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-  # Auto-detect reference file
-  ref_path = json_path.with_suffix(".txt")
-  reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
-
+  reference = load_reference(data)
   report = generate_report(data, reference)
   md_path = json_path.with_suffix(".md")
   md_path.write_text(report, encoding="utf-8")
@@ -371,10 +377,7 @@ def cmd_report(args: argparse.Namespace) -> None:
 
   data = json.loads(json_path.read_text(encoding="utf-8"))
 
-  # Auto-detect reference file from audio path in JSON data
-  audio_path = Path(data.get("audio", ""))
-  ref_path = audio_path.with_suffix(".txt")
-  reference = ref_path.read_text(encoding="utf-8").strip() if ref_path.exists() else None
+  reference = load_reference(data)
   if reference:
     print(f"Reference: {len(reference)} chars, {len(reference.split())} words")
 
