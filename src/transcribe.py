@@ -250,7 +250,7 @@ def transcribe_openai_api(
   url = "https://api.openai.com/v1/audio/transcriptions"
   headers = {"Authorization": f"Bearer {api_key}"}
 
-  with open(audio_path, "rb") as f:
+  with Path(audio_path).open("rb") as f:
     files = {"file": (Path(audio_path).name, f, "audio/mpeg")}
     data = {"model": model, "temperature": str(temperature)}
     if language:
@@ -278,7 +278,6 @@ def transcribe_yandex(
     - YANDEX_FOLDER_ID or --yandex-folder-id
   """
   import os
-
 
   api_key = api_key or os.environ.get("YANDEX_API_KEY")
   folder_id = folder_id or os.environ.get("YANDEX_FOLDER_ID")
@@ -343,7 +342,7 @@ def _yandex_sync_recognize(
   return response.json().get("result", "")
 
 
-def _yandex_async_recognize(
+def _yandex_async_recognize(  # noqa: PLR0912
   audio_path: str,
   language: str | None,
   api_key: str,
@@ -473,8 +472,14 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  hdr = "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak |"
-  sep = "|---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|"
+  hdr = (
+    "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch "
+    "| Lang | Dur(s) | MemΔ | Peak |"
+  )
+  sep = (
+    "|---|---------|-------|-----|---------|------|------|------|"
+    "-------|------|--------|------|------|"
+  )
   if reference:
     lines.append(f"{hdr} WER% | CER% |")
     lines.append(f"{sep}------|------|")
@@ -993,7 +998,7 @@ def _prepare_optimize_search_space(
   return backends, models, compute_types
 
 
-def cmd_optimize(args: argparse.Namespace) -> None:
+def cmd_optimize(args: argparse.Namespace) -> None:  # noqa: PLR0915
   """Find optimal parameters using Optuna."""
   import optuna
 
