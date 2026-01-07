@@ -312,63 +312,57 @@ def _yandex_async_recognize(
   api_key: str,
   folder_id: str,
 ) -> str:
-  """Async recognition for long audio."""
-  import base64
-
+  """Async recognition for long audio using Yandex SpeechKit v3 API."""
   import requests
 
-  audio_data = Path(audio_path).read_bytes()
+  audio_path = Path(audio_path)
+  audio_data = audio_path.read_bytes()
 
-  # Determine format from extension
-  ext = Path(audio_path).suffix.lower()
-  if ext == ".wav":
-    audio_format = "LINEAR16_PCM"
-  elif ext == ".ogg":
-    audio_format = "OGG_OPUS"
-  elif ext == ".mp3":
-    audio_format = "MP3"
-  else:
-    audio_format = "LINEAR16_PCM"  # Default
+  # Determine container format from extension
+  ext = audio_path.suffix.lower()
+  container_type = {"mp3": "MP3", ".wav": "WAV", ".ogg": "OGG_OPUS"}.get(ext, "WAV")
 
-  # Submit async recognition
-  url = "https://transcribe.api.cloud.yandex.net/speech/stt/v2/longRunningRecognize"
+  url = "https://stt.api.cloud.yandex.net/stt/v3/recognizeFileAsync"
   headers = {
     "Authorization": f"Api-Key {api_key}",
+    "x-folder-id": folder_id,
     "Content-Type": "application/json",
   }
 
-  # Get sample rate from audio
-  sample_rate = _get_audio_sample_rate(audio_path)
+  import base64
 
   payload = {
-    "config": {
-      "specification": {
-        "languageCode": language or "ru-RU",
-        "model": "general",
+    "content": base64.b64encode(audio_data).decode("utf-8"),
+    "recognitionModel": {
+      "model": "general",
+      "audioFormat": {"containerAudio": {"containerAudioType": container_type}},
+      "textNormalization": {
+        "textNormalization": "TEXT_NORMALIZATION_ENABLED",
         "profanityFilter": False,
-        "literature_text": True,
-        "audioEncoding": audio_format,
-        "sampleRateHertz": sample_rate,
-        "audioChannelCount": 1,
+        "literatureText": True,
       },
-      "folderId": folder_id,
+      "languageRestriction": {
+        "restrictionType": "WHITELIST",
+        "languageCode": [language or "ru-RU"],
+      },
     },
-    "audio": {"content": base64.b64encode(audio_data).decode("utf-8")},
   }
 
   response = requests.post(url, headers=headers, json=payload, timeout=120)
-  response.raise_for_status()
+  if not response.ok:
+    raise ValueError(f"Yandex API error {response.status_code}: {response.text}")
 
   operation_id = response.json().get("id")
   if not operation_id:
     raise ValueError(f"No operation ID in response: {response.json()}")
 
-  # Poll for results
+  # Poll for completion
   result_url = f"https://operation.api.cloud.yandex.net/operations/{operation_id}"
+  poll_headers = {"Authorization": f"Api-Key {api_key}"}
 
   for _ in range(120):  # Max 10 minutes
     time.sleep(5)
-    result = requests.get(result_url, headers=headers, timeout=30)
+    result = requests.get(result_url, headers=poll_headers, timeout=30)
     result.raise_for_status()
     data = result.json()
 
@@ -376,40 +370,35 @@ def _yandex_async_recognize(
       if "error" in data:
         raise ValueError(f"Yandex recognition error: {data['error']}")
 
-      # Extract text from chunks
-      chunks = data.get("response", {}).get("chunks", [])
+      # Fetch results from separate endpoint
+      get_result_url = f"https://stt.api.cloud.yandex.net/stt/v3/getRecognition?operationId={operation_id}"
+      result_response = requests.get(get_result_url, headers=poll_headers, timeout=60)
+      if not result_response.ok:
+        raise ValueError(f"Failed to get results: {result_response.status_code}: {result_response.text}")
+
+      # Parse NDJSON response - prefer finalRefinement (normalized text)
       texts = []
-      for chunk in chunks:
-        alternatives = chunk.get("alternatives", [])
+      for line in result_response.text.strip().split("\n"):
+        if not line.strip():
+          continue
+        chunk = json.loads(line)
+        result_data = chunk.get("result", {})
+        # Use finalRefinement (normalized) if available, else final
+        if "finalRefinement" in result_data:
+          alternatives = result_data["finalRefinement"].get("normalizedText", {}).get("alternatives", [])
+        elif "final" in result_data:
+          alternatives = result_data["final"].get("alternatives", [])
+        else:
+          continue
         if alternatives:
           texts.append(alternatives[0].get("text", ""))
-      return " ".join(texts)
+
+      if texts:
+        return " ".join(texts)
+
+      raise ValueError(f"Could not extract text from results: {result_response.text[:500]}")
 
   raise TimeoutError("Yandex recognition timed out after 10 minutes")
-
-
-def _get_audio_sample_rate(audio_path: str) -> int:
-  """Get audio sample rate using ffprobe."""
-  import subprocess
-
-  result = subprocess.run(
-    [
-      "ffprobe",
-      "-v",
-      "error",
-      "-select_streams",
-      "a:0",
-      "-show_entries",
-      "stream=sample_rate",
-      "-of",
-      "default=noprint_wrappers=1:nokey=1",
-      audio_path,
-    ],
-    capture_output=True,
-    text=True,
-    check=True,
-  )
-  return int(result.stdout.strip())
 
 
 def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
@@ -560,8 +549,13 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
   print(f"Running {len(combinations)} transcription(s)...")
 
   audio_path = Path(args.audio)
-  # Auto-detect suffix from device: cuda->_gpu, cpu->_cpu
-  suffix = "_gpu" if "cuda" in args.device else "_cpu"
+  # Auto-detect suffix: cloud backends -> _cloud, cuda -> _gpu, cpu -> _cpu
+  if any(b in CLOUD_BACKENDS for b in args.backend):
+    suffix = "_cloud"
+  elif "cuda" in args.device:
+    suffix = "_gpu"
+  else:
+    suffix = "_cpu"
   json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
 
   if json_path.exists():
