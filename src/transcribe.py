@@ -250,10 +250,10 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   lines.append("## Performance Summary")
   lines.append("")
   hdr = (
-    "| # | Backend | Model | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak |"
+    "| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak |"
   )
   sep = (
-    "|---|---------|-------|---------|------|------|------|-------|------|--------|------|------|"
+    "|---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|"
   )
   if reference:
     lines.append(f"{hdr} WER% | CER% |")
@@ -265,6 +265,10 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   for i, run in enumerate(sorted_runs, 1):
     backend = run.get("backend", "?")
     model = run.get("model", "?")
+    gpu_name = run.get("gpu_name") or "-"
+    # Shorten GPU name for table (e.g., "NVIDIA GeForce RTX 4090" -> "RTX 4090")
+    if gpu_name != "-":
+      gpu_name = gpu_name.replace("NVIDIA ", "").replace("GeForce ", "")
     compute = run.get("compute_type") or "-"
     beam = run.get("beam_size", 5)
     temp = run.get("temperature", 0.0)
@@ -276,7 +280,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
     row = (
-      f"| {i} | {backend} | {model} | {compute} | {beam} | {temp:.2f} "
+      f"| {i} | {backend} | {model} | {gpu_name} | {compute} | {beam} | {temp:.2f} "
       f"| {cond_prev} | {batch_str} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
     )
     if reference:
