@@ -280,6 +280,10 @@ ssh root@<vm-ip>
 cd /root/hands-on-whisper
 uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --device cuda --backends faster-whisper openai --n-trials 10
 
+# Copy results back to local machine (from local terminal)
+scp root@<vm-ip>:/root/hands-on-whisper/calls/*_gpu.json calls/
+scp root@<vm-ip>:/root/hands-on-whisper/calls/*_gpu.md calls/
+
 # Don't forget to destroy when done!
 terraform destroy
 ```
