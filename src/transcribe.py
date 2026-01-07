@@ -617,15 +617,15 @@ def save_results(data: dict[str, Any], json_path: Path) -> None:
   md_path.write_text(report, encoding="utf-8")
 
 
-def get_result_suffix(backend: str, device: str) -> str:
-  """Get the result file suffix based on backend and device.
+def get_result_suffix(backend: str, runtime: str) -> str:
+  """Get the result file suffix based on backend and runtime.
 
   Cloud backends get their own suffix (e.g., _yandex, _openai-api).
-  Local backends use _gpu or _cpu based on device.
+  Local backends use _gpu or _cpu based on runtime.
   """
   if backend in CLOUD_BACKENDS:
     return f"_{backend}"
-  elif "cuda" in device:
+  elif runtime == "cuda":
     return "_gpu"
   else:
     return "_cpu"
@@ -638,7 +638,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
     sys.exit(1)
 
   # Build all combinations
-  combinations = list(itertools.product(args.backend, args.model, args.language, args.device))
+  combinations = list(itertools.product(args.backend, args.model, args.language, args.runtime))
   print(f"Running {len(combinations)} transcription(s)...")
 
   audio_path = Path(args.audio)
@@ -659,9 +659,12 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         data_cache[json_path] = {"audio": str(audio_path), "runs": []}
     return data_cache[json_path]
 
-  for backend, model, language, device in combinations:
-    # Determine output file based on backend/device
-    suffix = get_result_suffix(backend, device)
+  for backend, model, language, runtime_arg in combinations:
+    # Override runtime to "cloud" for cloud backends
+    runtime = "cloud" if backend in CLOUD_BACKENDS else runtime_arg
+
+    # Determine output file based on backend/runtime
+    suffix = get_result_suffix(backend, runtime)
     json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
     data = get_data_for_path(json_path)
 
@@ -678,7 +681,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
           backend,
           model_name,
           language,
-          device,
+          runtime,
           args.beam_size,
           args.temperature,
           args.compute_type,
@@ -703,7 +706,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         backend,
         model,
         language,
-        device,
+        runtime,
         args.beam_size,
         args.temperature,
         args.compute_type,
@@ -1014,7 +1017,7 @@ def _prepare_optimize_search_space(
   """Prepare search space for optimization, filtering unavailable options."""
   backends = args.backends if args.backends else ALL_BACKENDS
   # whispercpp doesn't support GPU (pywhispercpp is CPU-only)
-  if args.device == "cuda" and "whispercpp" in backends:
+  if args.runtime == "cuda" and "whispercpp" in backends:
     backends = [b for b in backends if b != "whispercpp"]
     print("Note: whispercpp excluded (no GPU support in pywhispercpp)")
   models = args.models if args.models else ALL_MODELS
@@ -1039,8 +1042,8 @@ def cmd_optimize(args: argparse.Namespace) -> None:  # noqa: PLR0915
   reference = ref_path.read_text(encoding="utf-8").strip()
   print(f"Reference: {len(reference.split())} words")
 
-  # Load or create JSON data - auto-detect suffix from device
-  suffix = "_gpu" if args.device == "cuda" else "_cpu"
+  # Load or create JSON data - auto-detect suffix from runtime
+  suffix = "_gpu" if args.runtime == "cuda" else "_cpu"
   json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
   if json_path.exists():
     data = json.loads(json_path.read_text(encoding="utf-8"))
@@ -1078,7 +1081,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:  # noqa: PLR0915
       batch_size = 0
 
     # Skip invalid combinations (faster-whisper doesn't support float16 on CPU)
-    if backend == "faster-whisper" and compute_type == "float16" and args.device == "cpu":
+    if backend == "faster-whisper" and compute_type == "float16" and args.runtime == "cpu":
       raise optuna.TrialPruned("faster-whisper float16 not supported on CPU")
 
     return _run_optimization_trial(
@@ -1093,7 +1096,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:  # noqa: PLR0915
       batch_size,
       args.audio,
       args.language,
-      args.device,
+      args.runtime,
       reference,
       data,
       json_path,
@@ -1135,7 +1138,8 @@ Examples:
   %(prog)s audio.wav
   %(prog)s audio.wav --backend openai --model large-v3
   %(prog)s audio.wav --backend whispercpp --model-path models/ggml-base.bin
-  %(prog)s audio.wav --language ru --device cuda
+  %(prog)s audio.wav --language ru --runtime cuda
+  %(prog)s audio.wav --backend openai-api --model gpt-4o --runtime cloud
 
   # Compare multiple backends/models (runs all combinations)
   %(prog)s audio.wav --backend faster-whisper openai --model base large-v3
@@ -1171,12 +1175,12 @@ Examples:
     help="Language code(s) (e.g., en, ru). Auto-detect if not specified",
   )
   trans_parser.add_argument(
-    "--device",
+    "--runtime",
     "-d",
     nargs="+",
-    choices=["cpu", "cuda"],
+    choices=["cpu", "cuda", "cloud"],
     default=["cpu"],
-    help="Device(s) to use (default: cpu)",
+    help="Runtime(s) to use: cpu, cuda for local, cloud for cloud backends (default: cpu)",
   )
   trans_parser.add_argument(
     "--beam-size",
@@ -1292,7 +1296,7 @@ Examples:
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"
   )
   optim_parser.add_argument(
-    "--device", "-d", default="cpu", choices=["cpu", "cuda"], help="Device (default: cpu)"
+    "--runtime", "-d", default="cpu", choices=["cpu", "cuda"], help="Runtime (default: cpu)"
   )
   optim_parser.add_argument(
     "--n-trials", type=int, default=10, help="Number of optimization trials (default: 10)"
