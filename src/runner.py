@@ -215,6 +215,8 @@ def run_transcription(  # noqa: PLR0913
     "compute_type": compute_type,
     "condition_on_prev": condition_on_prev,
     "batch_size": batch_size,
+    "smart_format": smart_format,
+    "diarize": diarize,
     "text": result,
   }
 
