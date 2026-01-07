@@ -282,13 +282,38 @@ Run benchmarks on cloud GPU instances using Terraform (Selectel):
 
 ### Available GPU flavors (ru-7 region)
 
-| GPU | vCPU | RAM | Flavor ID | Price |
-|-----|------|-----|-----------|-------|
-| Tesla T4 (16GB) | 4 | 32GB | 3031 | ~52 ₽/hr |
-| Tesla T4 (16GB) | 8 | 32GB | 3033 | ~56 ₽/hr |
-| A100 (40GB) | 6 | 87GB | 3041 | ~218 ₽/hr |
+| GPU | VRAM | vCPU | RAM | Flavor ID | Price/hr | Notes |
+|-----|------|------|-----|-----------|----------|-------|
+| Tesla T4 | 16GB | 4 | 32GB | 3031 | ~52 ₽ | Budget option |
+| Tesla T4 | 16GB | 8 | 32GB | 3033 | ~56 ₽ | More vCPUs |
+| A100 | 40GB | 6 | 87GB | 3041 | ~218 ₽ | ~4x faster than T4 |
+| A100 | 40GB | 12 | 175GB | 3042 | ~380 ₽ | 2 GPUs |
+| A100 | 80GB | 12 | 128GB | 3920 | ~400 ₽ | More VRAM for large batches |
+| RTX 4090 | 24GB | 8 | 32GB | 3101 | ~120 ₽ | Good price/performance |
+| H100 | 80GB | 12 | 128GB | 13930 | ~600 ₽ | Fastest, most expensive |
 
-A100 is ~4x faster than T4 for Whisper inference.
+### List all GPU flavors
+
+To see all available GPU flavors, use OpenStack CLI:
+
+```bash
+# Install OpenStack CLI
+pip install python-openstackclient
+
+# Set credentials (after terraform init)
+cd terraform/selectel
+export OS_AUTH_URL="https://cloud.api.selcloud.ru/identity/v3"
+export OS_IDENTITY_API_VERSION=3
+export OS_PROJECT_DOMAIN_NAME="$TF_VAR_selectel_domain"
+export OS_USER_DOMAIN_NAME="$TF_VAR_selectel_domain"
+export OS_PROJECT_ID="$(terraform output -raw project_id)"
+export OS_USERNAME="$TF_VAR_selectel_username"
+export OS_PASSWORD="$TF_VAR_selectel_password"
+export OS_REGION_NAME="ru-7"
+
+# List GPU flavors
+openstack flavor list | grep GL
+```
 
 ### Setup and run
 
