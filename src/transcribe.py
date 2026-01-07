@@ -285,7 +285,7 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     )
     if reference:
       wer_score, cer_score = calculate_metrics(reference, run.get("text", ""))
-      lines.append(f"{row} {wer_score:.1f} | {cer_score:.1f} |")
+      lines.append(f"{row} {wer_score:.2f} | {cer_score:.2f} |")
     else:
       lines.append(row)
 
@@ -337,8 +337,8 @@ def _append_detailed_results(
     lines.append(f"- **Batch size:** {batch_size}")
     if reference:
       wer_score, cer_score = calculate_metrics(reference, text)
-      lines.append(f"- **WER:** {wer_score:.1f}%")
-      lines.append(f"- **CER:** {cer_score:.1f}%")
+      lines.append(f"- **WER:** {wer_score:.2f}%")
+      lines.append(f"- **CER:** {cer_score:.2f}%")
     lines.append(f"- **Timestamp:** {timestamp}")
     lines.append("")
     lines.append("**Text:**")
@@ -588,7 +588,7 @@ def _run_optimization_trial(  # noqa: PLR0913
     print(f"\n{trial_header} [cached]")
     wer_score, cer_score = calculate_metrics(reference, existing.get("text", ""))
     score = wer_score if metric == "wer" else cer_score
-    print(f"  → {metric.upper()}: {score:.1f}%")
+    print(f"  → {metric.upper()}: {score:.2f}%")
     return score / 100
 
   print(f"\n{trial_header}")
@@ -613,7 +613,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   score = wer_score if metric == "wer" else cer_score
   mem_used_mb = run_record["memory_delta_mb"]
   duration = run_record["duration_seconds"]
-  print(f"  → {metric.upper()}: {score:.1f}% ({duration:.1f}s, +{mem_used_mb:.0f}MB)")
+  print(f"  → {metric.upper()}: {score:.2f}% ({duration:.1f}s, +{mem_used_mb:.0f}MB)")
   return score / 100
 
 
