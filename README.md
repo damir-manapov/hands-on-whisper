@@ -103,6 +103,9 @@ uv run python src/transcribe.py transcribe audio.wav --no-condition-on-prev
 # Batched inference (faster-whisper only, parallel segment processing)
 uv run python src/transcribe.py transcribe audio.wav --batch-size 16
 
+# Track who ran the benchmark
+uv run python src/transcribe.py transcribe audio.wav --user your-login
+
 # Set compute precision
 uv run python src/transcribe.py transcribe audio.wav --compute-type float16
 

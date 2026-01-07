@@ -400,6 +400,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
           condition_on_prev,
           args.batch_size if backend == "faster-whisper" else 0,
           data,
+          user=args.user,
         )
         save_results(data, json_path)
     else:
@@ -423,6 +424,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         condition_on_prev,
         args.batch_size if backend == "faster-whisper" else 0,
         data,
+        user=args.user,
       )
       save_results(data, json_path)
 
@@ -462,6 +464,7 @@ def _run_transcription(  # noqa: PLR0913
   compute_type: str,
   condition_on_prev: bool,
   batch_size: int = 0,
+  user: str | None = None,
 ) -> dict:
   """Run transcription and return run record with timing/memory stats."""
   import psutil
@@ -522,6 +525,7 @@ def _run_transcription(  # noqa: PLR0913
   return {
     "id": run_id,
     "timestamp": datetime.now(UTC).isoformat(),
+    "user": user,
     "duration_seconds": round(duration, 2),
     "memory_delta_mb": mem_used_mb,
     "memory_peak_mb": mem_peak_mb,
@@ -556,6 +560,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   data: dict,
   json_path: Path,
   metric: str = "wer",
+  user: str | None = None,
 ) -> float:
   """Run a single optimization trial and return WER or CER score."""
   # Format trial header
@@ -599,6 +604,7 @@ def _run_optimization_trial(  # noqa: PLR0913
     compute_type,
     condition_on_prev,
     batch_size,
+    user=user,
   )
   data["runs"].append(run_record)
   save_results(data, json_path)
@@ -777,6 +783,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
       data,
       json_path,
       metric,
+      user=args.user,
     )
 
   study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
@@ -885,6 +892,12 @@ Examples:
     default=0,
     help="Batch size for faster-whisper (0=sequential, 1-32=parallel segments, default: 0)",
   )
+  trans_parser.add_argument(
+    "--user",
+    type=str,
+    default=None,
+    help="Username to record in results",
+  )
   trans_parser.set_defaults(func=cmd_transcribe)
 
   # Report command
@@ -961,6 +974,12 @@ Examples:
     choices=["wer", "cer"],
     help="Metric to optimize: wer (Word Error Rate) or cer (Character Error Rate) (default: wer)",
   )
+  optim_parser.add_argument(
+    "--user",
+    type=str,
+    default=None,
+    help="Username to record in results",
+  )
   optim_parser.set_defaults(func=cmd_optimize)
 
   args = parser.parse_args()
@@ -984,6 +1003,7 @@ def run_single(  # noqa: PLR0913
   condition_on_prev: bool,
   batch_size: int,
   data: dict,
+  user: str | None = None,
 ) -> None:
   """Run a single transcription and update data."""
   run_id = generate_run_id(
@@ -1019,6 +1039,7 @@ def run_single(  # noqa: PLR0913
     compute_type,
     condition_on_prev,
     batch_size,
+    user=user,
   )
   data["runs"].append(run_record)
 
