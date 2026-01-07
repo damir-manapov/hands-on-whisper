@@ -127,8 +127,8 @@ The report includes:
 
 **finance** - Sample audio from [Russian Speech Recognition Dataset](https://huggingface.co/datasets/AxonData/russian-speech-recognition-dataset) (Russian):
 
-- [finance.mp3](calls/finance.mp3) - Audio file
-- [finance.txt](calls/finance.txt) - Reference transcription
+- [finance.json](calls/finance.json) - Raw benchmark data
+- [finance.md](calls/finance.md) - Formatted report with WER/CER metrics
 
 ### Metrics
 
