@@ -21,8 +21,9 @@ ALL_BACKENDS = ["faster-whisper", "openai", "whispercpp"]
 ALL_MODELS = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
 ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 
-# Cloud backends (not included in optimization by default)
+# Cloud backends and their models
 CLOUD_BACKENDS = ["yandex", "openai-api"]
+OPENAI_API_MODELS = ["whisper-1", "gpt-4o-transcribe", "gpt-4o-mini-transcribe"]
 
 # Optional parameter fields shown in reports per backend type.
 # Base fields (model, language, device, duration, memory, timestamp) are always shown.
@@ -106,9 +107,11 @@ def generate_run_id(  # noqa: PLR0913
   batch_size: int = 0,
 ) -> str:
   """Generate a unique ID based on settings."""
-  # Cloud backends don't have local params (beam, temp, etc.)
-  if backend in CLOUD_BACKENDS:
+  # Cloud backends don't have local params (beam, compute_type, etc.)
+  if backend == "yandex":
     parts = [backend, model, language]
+  elif backend == "openai-api":
+    parts = [backend, model, language, f"temp{temperature}"]
   else:
     cond = "cond" if condition_on_prev else "nocond"
     batch = f"batch{batch_size}" if batch_size > 0 else "seq"
@@ -875,13 +878,20 @@ def _run_optimization_trial(  # noqa: PLR0913
   user: str | None = None,
 ) -> float:
   """Run a single optimization trial and return WER or CER score."""
-  # Format trial header
-  batch_str = f" batch={batch_size}" if batch_size > 0 else ""
-  trial_header = (
-    f"[Trial {trial_number + 1}/{total_trials}] "
-    f"{backend}/{model} | {compute_type} | beam={beam_size} temp={temperature:.2f} "
-    f"cond={condition_on_prev}{batch_str}"
-  )
+  # Format trial header based on backend type
+  if backend == "yandex":
+    trial_header = f"[Trial {trial_number + 1}/{total_trials}] {backend}/{model}"
+  elif backend == "openai-api":
+    trial_header = (
+      f"[Trial {trial_number + 1}/{total_trials}] {backend}/{model} | temp={temperature:.2f}"
+    )
+  else:
+    batch_str = f" batch={batch_size}" if batch_size > 0 else ""
+    trial_header = (
+      f"[Trial {trial_number + 1}/{total_trials}] "
+      f"{backend}/{model} | {compute_type} | beam={beam_size} temp={temperature:.2f} "
+      f"cond={condition_on_prev}{batch_str}"
+    )
 
   # Check if already exists (use cached result)
   run_id = generate_run_id(
@@ -1025,33 +1035,96 @@ def _prepare_optimize_search_space(
   return backends, models, compute_types
 
 
-def cmd_optimize(args: argparse.Namespace) -> None:  # noqa: PLR0915
-  """Find optimal parameters using Optuna."""
-  import optuna
-
-  audio_path = Path(args.audio)
-  if not audio_path.exists():
-    print(f"Error: Audio file not found: {audio_path}", file=sys.stderr)
-    sys.exit(1)
-
-  ref_path = audio_path.with_suffix(".txt")
-  if not ref_path.exists():
-    print(f"Error: Reference file required: {ref_path}", file=sys.stderr)
-    sys.exit(1)
-
-  reference = ref_path.read_text(encoding="utf-8").strip()
-  print(f"Reference: {len(reference.split())} words")
-
-  # Load or create JSON data - auto-detect suffix from runtime
-  suffix = "_gpu" if args.runtime == "cuda" else "_cpu"
+def _load_results_json(audio_path: Path, suffix: str) -> tuple[Path, dict]:
+  """Load or create results JSON file."""
   json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
   if json_path.exists():
     data = json.loads(json_path.read_text(encoding="utf-8"))
   else:
     data = {"audio": str(audio_path), "runs": []}
+  return json_path, data
+
+
+def _optimize_cloud(
+  args: argparse.Namespace,
+  audio_path: Path,
+  reference: str,
+  metric: str,
+) -> None:
+  """Run cloud backend optimization."""
+  import optuna
+
+  backend = "openai-api"
+  models = args.models if args.models else OPENAI_API_MODELS
+  json_path, data = _load_results_json(audio_path, f"_{backend}")
+
+  print(f"Cloud optimization: backend={backend}, models={models}")
+  print(f"Optimizing: {metric.upper()}")
+
+  def objective(trial: optuna.Trial) -> float:
+    model = trial.suggest_categorical("model", models)
+    temperature = trial.suggest_float("temperature", 0.0, 0.5)
+
+    return _run_optimization_trial(
+      trial.number,
+      args.n_trials,
+      backend,
+      model,
+      "auto",
+      5,
+      temperature,
+      True,
+      0,
+      args.audio,
+      args.language,
+      "cloud",
+      reference,
+      data,
+      json_path,
+      metric,
+      user=args.user,
+    )
+
+  study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
+
+  # Load previous cloud trials
+  for run in data.get("runs", []):
+    if run.get("backend") != backend or run.get("model") not in models:
+      continue
+    text = run.get("text", "")
+    wer_score, cer_score = calculate_metrics(reference, text)
+    score = wer_score if metric == "wer" else cer_score
+    study.add_trial(
+      optuna.trial.create_trial(
+        params={"model": run.get("model"), "temperature": run.get("temperature", 0.0)},
+        distributions={
+          "model": optuna.distributions.CategoricalDistribution(models),
+          "temperature": optuna.distributions.FloatDistribution(0.0, 0.5),
+        },
+        values=[score],
+      )
+    )
+
+  if len(study.trials) > 0:
+    print(f"Loaded {len(study.trials)} previous trials")
+
+  study.optimize(objective, n_trials=args.n_trials)
+  _print_optimization_results(study, metric)
+
+
+def _optimize_local(
+  args: argparse.Namespace,
+  audio_path: Path,
+  reference: str,
+  metric: str,
+) -> None:
+  """Run local backend optimization."""
+  import optuna
+
+  suffix = "_gpu" if args.runtime == "cuda" else "_cpu"
+  json_path, data = _load_results_json(audio_path, suffix)
 
   backends, models, compute_types = _prepare_optimize_search_space(args)
-  metric = args.metric
   print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
   print(f"Optimizing: {metric.upper()}")
 
@@ -1118,6 +1191,27 @@ def cmd_optimize(args: argparse.Namespace) -> None:  # noqa: PLR0915
 
   study.optimize(objective, n_trials=args.n_trials)
   _print_optimization_results(study, metric)
+
+
+def cmd_optimize(args: argparse.Namespace) -> None:
+  """Find optimal parameters using Optuna."""
+  audio_path = Path(args.audio)
+  if not audio_path.exists():
+    print(f"Error: Audio file not found: {audio_path}", file=sys.stderr)
+    sys.exit(1)
+
+  ref_path = audio_path.with_suffix(".txt")
+  if not ref_path.exists():
+    print(f"Error: Reference file required: {ref_path}", file=sys.stderr)
+    sys.exit(1)
+
+  reference = ref_path.read_text(encoding="utf-8").strip()
+  print(f"Reference: {len(reference.split())} words")
+
+  if args.runtime == "cloud":
+    _optimize_cloud(args, audio_path, reference, args.metric)
+  else:
+    _optimize_local(args, audio_path, reference, args.metric)
 
 
 def main() -> None:
@@ -1296,7 +1390,11 @@ Examples:
     "--language", "-l", default=None, help="Language code (auto-detect if not set)"
   )
   optim_parser.add_argument(
-    "--runtime", "-d", default="cpu", choices=["cpu", "cuda"], help="Runtime (default: cpu)"
+    "--runtime",
+    "-d",
+    default="cpu",
+    choices=["cpu", "cuda", "cloud"],
+    help="Runtime (default: cpu)",
   )
   optim_parser.add_argument(
     "--n-trials", type=int, default=10, help="Number of optimization trials (default: 10)"
