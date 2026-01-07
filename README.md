@@ -90,7 +90,7 @@ uv run python src/transcribe.py transcribe audio.wav --backend yandex -l ru-RU
 uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper yandex -l ru
 ```
 
-Yandex automatically uses async recognition for audio > 30 seconds.
+The tool automatically uses async recognition for audio > 30 seconds (Yandex sync API limit).
 
 ## Usage
 
