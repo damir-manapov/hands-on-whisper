@@ -278,7 +278,7 @@ terraform apply
 # SSH and run optimization
 ssh root@<vm-ip>
 cd /root/hands-on-whisper
-uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --n-trials 50
+uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --device cuda --backends faster-whisper openai --n-trials 10
 
 # Don't forget to destroy when done!
 terraform destroy
