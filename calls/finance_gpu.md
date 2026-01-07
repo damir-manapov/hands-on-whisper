@@ -2,7 +2,7 @@
 
 **Audio file:** `calls/finance.mp3`
 
-**Total runs:** 274
+**Total runs:** 321
 **Reference:** 5721 chars, 999 words
 
 ## Performance Summary
@@ -29,260 +29,307 @@
 | 18 | faster-whisper | large-v3 | RTX 4090 | int8 | 6 | 0.31 | N | 4 | ru | 10.7 | 6.7 | 2600.7 | 25.18 | 17.17 |
 | 19 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.18 | Y | 4 | ru | 11.0 | 0.0 | 2601.5 | 25.18 | 17.17 |
 | 20 | faster-whisper | large-v3 | RTX 4090 | int8 | 5 | 0.45 | N | 4 | ru | 10.7 | -0.0 | 2600.8 | 25.18 | 17.17 |
-| 21 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.03 | N | - | ru | 36.8 | 25.8 | 9353.7 | 25.28 | 17.23 |
-| 22 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.14 | N | - | ru | 35.8 | 0.4 | 9354.2 | 25.28 | 17.17 |
-| 23 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.34 | N | 6 | ru | 9.6 | 1.5 | 2705.0 | 25.28 | 17.34 |
-| 24 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.37 | Y | 6 | ru | 9.0 | 0.0 | 2705.1 | 25.28 | 17.34 |
-| 25 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.36 | Y | 6 | ru | 9.8 | 0.6 | 2727.6 | 25.28 | 17.34 |
-| 26 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.43 | Y | 6 | ru | 9.7 | -0.0 | 2727.5 | 25.28 | 17.34 |
-| 27 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.50 | N | 6 | ru | 11.0 | -0.0 | 2727.8 | 25.28 | 17.34 |
-| 28 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.02 | N | - | ru | 19.1 | -0.7 | 1122.0 | 25.28 | 17.52 |
-| 29 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.13 | N | 6 | ru | 9.4 | -0.0 | 3829.2 | 25.28 | 17.34 |
-| 30 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.12 | N | - | ru | 22.9 | 2650.4 | 2704.6 | 25.28 | 16.93 |
-| 31 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.20 | N | - | ru | 21.2 | -0.0 | 2703.1 | 25.28 | 17.56 |
-| 32 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.43 | Y | 15 | ru | 8.3 | -0.0 | 2720.4 | 25.38 | 17.30 |
-| 33 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.37 | Y | 10 | ru | 8.6 | -0.0 | 2727.6 | 25.38 | 17.51 |
-| 34 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.38 | N | - | ru | 20.6 | 9.2 | 1122.7 | 25.38 | 17.49 |
-| 35 | openai | large-v3 | RTX 4090 | float32 | 7 | 0.06 | N | - | ru | 40.7 | 7416.1 | 8675.4 | 25.48 | 17.30 |
-| 36 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.23 | N | 2 | ru | 13.0 | 2.9 | 2593.9 | 25.48 | 17.34 |
-| 37 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.18 | Y | 2 | ru | 12.3 | 0.1 | 2700.5 | 25.48 | 17.34 |
-| 38 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.38 | Y | 5 | ru | 9.5 | -0.0 | 2720.6 | 25.48 | 17.45 |
-| 39 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.26 | Y | 2 | ru | 12.9 | -0.0 | 2727.5 | 25.48 | 17.34 |
-| 40 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.24 | N | 2 | ru | 13.7 | -0.0 | 2727.8 | 25.48 | 17.34 |
-| 41 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.15 | Y | 2 | ru | 17.6 | 2516.0 | 2569.8 | 25.48 | 17.34 |
-| 42 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.27 | Y | 2 | ru | 14.2 | 22.8 | 3845.5 | 25.48 | 17.34 |
-| 43 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.42 | N | 5 | ru | 11.2 | 0.0 | 3825.8 | 25.48 | 17.45 |
-| 44 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.49 | N | 5 | ru | 11.2 | -0.0 | 3825.8 | 25.48 | 17.45 |
-| 45 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.44 | N | 2 | ru | 12.2 | 0.0 | 3825.8 | 25.48 | 17.34 |
-| 46 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.37 | N | 5 | ru | 11.2 | 2.1 | 3827.9 | 25.48 | 17.45 |
-| 47 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.15 | N | 5 | ru | 10.9 | -0.0 | 3829.2 | 25.48 | 17.45 |
-| 48 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.28 | N | 2 | ru | 13.9 | 0.2 | 3829.9 | 25.48 | 17.34 |
-| 49 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.32 | N | 5 | ru | 10.2 | -0.0 | 3829.7 | 25.48 | 17.45 |
-| 50 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.40 | Y | 9 | ru | 8.5 | -0.0 | 2720.6 | 25.58 | 17.58 |
-| 51 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.33 | N | - | ru | 31.9 | 2.9 | 2139.3 | 25.58 | 18.08 |
-| 52 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.21 | N | - | ru | 20.4 | 1024.2 | 1076.8 | 25.58 | 17.63 |
-| 53 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.16 | Y | 9 | ru | 8.6 | -0.0 | 3829.8 | 25.58 | 17.58 |
-| 54 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.01 | N | - | ru | 36.7 | 3.1 | 9327.9 | 25.68 | 17.86 |
-| 55 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.40 | N | 7 | ru | 9.1 | 0.7 | 2716.2 | 25.68 | 17.58 |
-| 56 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.36 | Y | 7 | ru | 9.8 | 1230.6 | 3822.5 | 25.68 | 17.58 |
-| 57 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.44 | N | 7 | ru | 9.4 | -0.1 | 3825.8 | 25.68 | 17.58 |
-| 58 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.47 | Y | 7 | ru | 9.3 | 1.5 | 3829.3 | 25.68 | 17.58 |
-| 59 | faster-whisper | large-v3 | RTX 4090 | int8 | 10 | 0.20 | N | - | ru | 21.3 | -0.0 | 2703.2 | 25.68 | 17.71 |
-| 60 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.01 | N | - | ru | 18.6 | -2.4 | 1119.8 | 25.78 | 17.95 |
-| 61 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.01 | N | - | ru | 18.5 | -1.8 | 1118.4 | 25.78 | 17.97 |
-| 62 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.35 | N | 1 | ru | 16.6 | -0.0 | 3825.8 | 25.78 | 17.58 |
-| 63 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.45 | N | 1 | ru | 16.7 | -0.0 | 3825.7 | 25.78 | 17.58 |
-| 64 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.48 | N | 1 | ru | 17.8 | -0.0 | 3829.3 | 25.78 | 17.58 |
-| 65 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.24 | N | 1 | ru | 17.9 | -0.0 | 3829.8 | 25.78 | 17.58 |
-| 66 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.48 | Y | 13 | ru | 10.9 | 2517.9 | 2568.2 | 25.88 | 17.74 |
-| 67 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.20 | Y | 3 | ru | 10.9 | -0.0 | 2720.5 | 25.88 | 17.65 |
-| 68 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.19 | N | - | ru | 164.8 | 2056.9 | 2109.9 | 25.88 | 18.00 |
-| 69 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.32 | Y | 3 | ru | 11.2 | -20.4 | 3825.9 | 25.88 | 17.65 |
-| 70 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.04 | N | 3 | ru | 12.8 | -0.0 | 3825.8 | 25.88 | 17.65 |
-| 71 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.50 | N | 3 | ru | 10.7 | -0.0 | 3829.2 | 25.88 | 17.65 |
-| 72 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.11 | N | 3 | ru | 11.2 | 0.5 | 3829.7 | 25.88 | 17.65 |
-| 73 | faster-whisper | large-v3 | RTX 4090 | float16 | 10 | 0.47 | Y | 26 | ru | 7.4 | 1073.9 | 1118.8 | 26.18 | 17.78 |
-| 74 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.13 | N | - | ru | 19.3 | 0.1 | 1124.6 | 26.18 | 18.13 |
-| 75 | faster-whisper | large-v3 | RTX 4090 | float16 | 6 | 0.34 | N | 11 | ru | 8.0 | 1153.2 | 1202.1 | 26.28 | 17.76 |
-| 76 | faster-whisper | large-v3 | RTX 4090 | float16 | 6 | 0.07 | N | - | ru | 19.2 | -1.9 | 1119.3 | 26.28 | 18.52 |
-| 77 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.26 | N | - | ru | 20.4 | -1.6 | 1112.9 | 26.28 | 18.54 |
-| 78 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.31 | N | - | ru | 31.8 | 0.0 | 2139.3 | 26.48 | 19.09 |
-| 79 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.34 | N | - | ru | 35.0 | 2058.4 | 2111.5 | 26.48 | 18.61 |
-| 80 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.07 | N | - | ru | 19.8 | 0.0 | 1124.5 | 26.48 | 18.24 |
-| 81 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.28 | Y | 29 | ru | 11.6 | 35.9 | 1258.2 | 26.58 | 18.04 |
-| 82 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.46 | N | 18 | ru | 11.4 | 0.3 | 1259.3 | 26.58 | 18.04 |
-| 83 | faster-whisper | large-v3 | RTX 4090 | float16 | 10 | 0.11 | N | 6 | ru | 6.3 | 9.1 | 8684.5 | 26.58 | 18.04 |
-| 84 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.12 | N | 15 | ru | 11.6 | 97.6 | 2692.3 | 26.58 | 18.04 |
-| 85 | faster-whisper | large-v3 | RTX 4090 | float32 | 6 | 0.27 | Y | 10 | ru | 11.9 | 0.5 | 2693.5 | 26.58 | 18.04 |
-| 86 | faster-whisper | large-v3 | RTX 4090 | float32 | 3 | 0.46 | Y | 12 | ru | 12.1 | -0.4 | 2693.9 | 26.58 | 18.04 |
-| 87 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.08 | Y | 8 | ru | 8.4 | 3.7 | 2719.8 | 26.58 | 18.15 |
-| 88 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.31 | N | 4 | ru | 7.3 | 0.8 | 2720.6 | 26.58 | 18.04 |
-| 89 | faster-whisper | large-v3 | RTX 4090 | float16 | 2 | 0.42 | N | 8 | ru | 6.2 | 0.0 | 2727.0 | 26.58 | 18.04 |
-| 90 | faster-whisper | large-v3 | RTX 4090 | float16 | 4 | 0.31 | Y | 4 | ru | 7.4 | 0.0 | 2727.0 | 26.58 | 18.04 |
-| 91 | faster-whisper | large-v3 | RTX 4090 | float32 | 2 | 0.33 | Y | 13 | ru | 11.8 | 0.2 | 2727.6 | 26.58 | 18.04 |
-| 92 | faster-whisper | large-v3 | RTX 4090 | float16 | 3 | 0.16 | N | 4 | ru | 7.4 | 0.3 | 2727.9 | 26.58 | 18.04 |
-| 93 | faster-whisper | large-v3 | RTX 4090 | float32 | 2 | 0.48 | N | 11 | ru | 12.0 | 0.0 | 2727.8 | 26.58 | 18.04 |
-| 94 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.45 | N | 8 | ru | 9.1 | -0.0 | 2727.7 | 26.58 | 18.15 |
-| 95 | faster-whisper | large-v3 | RTX 4090 | float32 | 3 | 0.47 | N | 3 | ru | 17.7 | 2069.1 | 2120.2 | 26.58 | 18.04 |
-| 96 | faster-whisper | large-v3 | RTX 4090 | float32 | 4 | 0.47 | Y | 8 | ru | 12.2 | 1266.2 | 3409.5 | 26.58 | 18.04 |
-| 97 | faster-whisper | large-v3 | RTX 4090 | float32 | 1 | 0.05 | Y | 28 | ru | 11.3 | -630.4 | 2779.9 | 26.58 | 18.04 |
-| 98 | faster-whisper | large-v3 | RTX 4090 | float32 | 10 | 0.17 | Y | 32 | ru | 11.0 | 1.2 | 2782.3 | 26.58 | 18.04 |
-| 99 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.34 | N | 23 | ru | 11.0 | 0.0 | 2148.0 | 26.58 | 18.04 |
-| 100 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.38 | N | 21 | ru | 11.0 | 1500.1 | 3648.2 | 26.58 | 18.04 |
-| 101 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.22 | N | 22 | ru | 10.6 | 0.9 | 3648.2 | 26.58 | 18.04 |
-| 102 | faster-whisper | large-v3 | RTX 4090 | float32 | 5 | 0.38 | Y | 27 | ru | 11.4 | -1500.0 | 2148.2 | 26.58 | 18.04 |
-| 103 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.02 | N | 19 | ru | 11.1 | 1275.0 | 3423.3 | 26.58 | 18.04 |
-| 104 | faster-whisper | large-v3 | RTX 4090 | float32 | 10 | 0.25 | N | 31 | ru | 11.6 | 0.0 | 3423.3 | 26.58 | 18.04 |
-| 105 | faster-whisper | large-v3 | RTX 4090 | float32 | 6 | 0.17 | N | 26 | ru | 10.6 | 0.0 | 3427.9 | 26.58 | 18.04 |
-| 106 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.29 | Y | 17 | ru | 11.9 | 0.0 | 3427.9 | 26.58 | 18.04 |
-| 107 | faster-whisper | large-v3 | RTX 4090 | float32 | 5 | 0.41 | Y | 6 | ru | 12.2 | 0.0 | 3428.0 | 26.58 | 18.04 |
-| 108 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.10 | N | 15 | ru | 11.2 | 0.0 | 3427.9 | 26.58 | 18.04 |
-| 109 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.10 | N | 18 | ru | 10.6 | 0.0 | 3428.0 | 26.58 | 18.04 |
-| 110 | faster-whisper | large-v3 | RTX 4090 | float16 | 9 | 0.24 | N | - | ru | 19.5 | 3.1 | 1124.5 | 26.58 | 18.28 |
-| 111 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.11 | N | - | ru | 19.1 | 14.5 | 1113.4 | 26.58 | 18.98 |
-| 112 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.29 | N | 4 | ru | 9.6 | 1078.8 | 1131.9 | 26.58 | 18.04 |
-| 113 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.05 | N | 4 | ru | 8.3 | 6.0 | 1159.8 | 26.58 | 18.04 |
-| 114 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.22 | Y | 4 | ru | 8.6 | 6.0 | 1165.8 | 26.58 | 18.04 |
-| 115 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.14 | N | 4 | ru | 8.0 | 0.0 | 1165.9 | 26.58 | 18.04 |
-| 116 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.03 | N | 4 | ru | 8.0 | 0.0 | 1165.9 | 26.58 | 18.04 |
-| 117 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.09 | N | 4 | ru | 8.0 | 0.0 | 1166.0 | 26.58 | 18.04 |
-| 118 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.04 | N | 4 | ru | 8.7 | 0.0 | 1166.0 | 26.58 | 18.04 |
-| 119 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.09 | N | 4 | ru | 8.6 | 0.0 | 1166.0 | 26.58 | 18.04 |
-| 120 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.07 | N | - | ru | 20.6 | 0.2 | 2702.3 | 26.58 | 18.33 |
-| 121 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.48 | N | - | ru | 21.6 | 0.6 | 2703.2 | 26.68 | 18.24 |
-| 122 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.19 | N | - | ru | 31.2 | 3.0 | 2135.7 | 26.78 | 18.61 |
-| 123 | faster-whisper | large-v3 | RTX 4090 | float32 | 6 | 0.22 | N | - | ru | 31.1 | 0.7 | 2136.4 | 26.78 | 17.80 |
-| 124 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.14 | N | - | ru | 22.8 | -33.4 | 2693.1 | 26.78 | 18.26 |
-| 125 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.15 | N | - | ru | 36.5 | 0.0 | 9354.2 | 26.88 | 18.48 |
-| 126 | faster-whisper | large-v3 | RTX 4090 | float32 | 10 | 0.30 | N | - | ru | 32.1 | 3.1 | 2137.3 | 26.88 | 18.72 |
-| 127 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.26 | N | - | ru | 19.6 | -5.1 | 1112.5 | 26.98 | 18.35 |
-| 128 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.00 | N | - | ru | 20.9 | 5.6 | 2700.5 | 27.08 | 18.37 |
-| 129 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.49 | N | - | ru | 20.7 | 2.7 | 2702.1 | 27.08 | 18.54 |
-| 130 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.39 | N | - | ru | 23.0 | -0.0 | 2703.1 | 27.08 | 18.72 |
-| 131 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.33 | Y | 19 | ru | 7.7 | 10.4 | 2715.4 | 27.38 | 18.78 |
-| 132 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.22 | N | 23 | ru | 7.7 | -0.0 | 2716.1 | 27.38 | 18.78 |
-| 133 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.27 | Y | 32 | ru | 8.3 | 6.1 | 2726.5 | 27.38 | 18.78 |
-| 134 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.35 | Y | 22 | ru | 138.3 | -0.0 | 2727.0 | 27.38 | 18.78 |
-| 135 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.28 | N | 18 | ru | 9.1 | -0.0 | 2727.8 | 27.38 | 18.78 |
-| 136 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.46 | N | - | ru | 20.8 | -0.0 | 2703.1 | 27.78 | 19.05 |
-| 137 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.42 | N | - | ru | 21.6 | -0.0 | 2703.1 | 27.88 | 19.62 |
-| 138 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.44 | N | - | ru | 21.4 | 0.0 | 2703.1 | 27.88 | 19.24 |
-| 139 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.07 | N | - | ru | 11.6 | 174.7 | 5153.2 | 27.98 | 18.48 |
-| 140 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.21 | N | - | ru | 11.5 | 0.0 | 4966.7 | 28.28 | 18.76 |
-| 141 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.28 | N | - | ru | 11.5 | 268.5 | 5228.2 | 28.39 | 19.07 |
-| 142 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.17 | N | - | ru | 11.4 | -412.4 | 4966.7 | 28.39 | 18.91 |
-| 143 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.18 | N | - | ru | 11.6 | 0.1 | 5215.8 | 28.59 | 19.03 |
-| 144 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.14 | N | - | ru | 11.3 | 174.7 | 5153.2 | 28.59 | 19.33 |
-| 145 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.03 | N | - | ru | 12.2 | 306.1 | 5258.7 | 28.69 | 19.50 |
-| 146 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.17 | N | - | ru | 11.6 | 12.5 | 5215.8 | 28.99 | 18.65 |
-| 147 | openai | large-v3-turbo | RTX 4090 | float16 | 1 | 0.46 | N | - | ru | 11.3 | 299.9 | 5253.0 | 29.09 | 19.96 |
-| 148 | openai | large-v3-turbo | RTX 4090 | int8 | 1 | 0.47 | N | - | ru | 11.4 | 256.0 | 5215.7 | 29.09 | 20.40 |
-| 149 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.22 | N | - | ru | 11.7 | 412.4 | 5379.1 | 29.09 | 19.22 |
-| 150 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.32 | N | - | ru | 11.6 | 146.9 | 5382.2 | 29.29 | 19.70 |
-| 151 | openai | large-v3-turbo | RTX 4090 | float32 | 4 | 0.20 | N | - | ru | 11.4 | 0.0 | 4978.5 | 29.29 | 19.53 |
-| 152 | openai | large-v3-turbo | RTX 4090 | float32 | 5 | 0.12 | N | - | ru | 11.7 | 399.9 | 5393.9 | 29.29 | 19.26 |
-| 153 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.41 | N | - | ru | 21.7 | -0.0 | 2703.1 | 29.49 | 20.27 |
-| 154 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.06 | N | - | ru | 11.7 | 240.8 | 5394.0 | 29.79 | 19.99 |
-| 155 | openai | large-v3-turbo | RTX 4090 | float32 | 5 | 0.13 | N | - | ru | 11.7 | 399.9 | 5390.1 | 29.79 | 19.90 |
-| 156 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.37 | Y | 10 | ru | 4.6 | -33.4 | 1563.6 | 29.79 | 20.88 |
-| 157 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.10 | N | - | ru | 11.7 | 243.6 | 5203.3 | 29.99 | 20.47 |
-| 158 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.38 | Y | 4 | ru | 5.0 | 0.4 | 1563.6 | 29.99 | 20.95 |
-| 159 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.38 | Y | 4 | ru | 5.0 | -0.4 | 1563.2 | 29.99 | 20.95 |
-| 160 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.38 | Y | 4 | ru | 5.0 | 0.4 | 1563.6 | 29.99 | 20.95 |
-| 161 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.37 | Y | 3 | ru | 5.2 | -0.4 | 1563.2 | 29.99 | 20.95 |
-| 162 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.39 | Y | 3 | ru | 5.2 | 0.4 | 1563.6 | 29.99 | 20.95 |
-| 163 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.21 | N | - | ru | 11.5 | 0.0 | 4978.5 | 30.09 | 20.10 |
-| 164 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 3 | 0.38 | N | 7 | ru | 5.2 | -0.4 | 1563.3 | 30.09 | 20.93 |
-| 165 | openai | large-v3-turbo | RTX 4090 | int8 | 2 | 0.37 | N | - | ru | 11.1 | -533.8 | 4952.6 | 30.19 | 20.75 |
-| 166 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.41 | Y | 29 | ru | 3.0 | 11.8 | 4978.5 | 30.19 | 21.04 |
-| 167 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.32 | N | 32 | ru | 3.0 | 11.7 | 4990.2 | 30.19 | 21.04 |
-| 168 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.06 | N | - | ru | 11.6 | -399.9 | 4994.1 | 30.19 | 19.09 |
-| 169 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.35 | N | 20 | ru | 3.2 | 0.0 | 4994.1 | 30.19 | 21.04 |
-| 170 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.50 | Y | 32 | ru | 3.6 | 260.1 | 1504.8 | 30.19 | 21.04 |
-| 171 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 7 | 0.48 | Y | 32 | ru | 3.4 | 9.8 | 1515.2 | 30.19 | 21.04 |
-| 172 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.41 | N | 27 | ru | 3.4 | 11.7 | 1527.1 | 30.19 | 21.04 |
-| 173 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.40 | Y | 27 | ru | 3.4 | 0.0 | 1527.1 | 30.19 | 21.04 |
-| 174 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 5 | 0.41 | N | 23 | ru | 3.4 | 0.0 | 1527.2 | 30.19 | 21.04 |
-| 175 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.33 | N | 19 | ru | 3.4 | 0.0 | 1544.6 | 30.19 | 21.04 |
-| 176 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.43 | Y | 28 | ru | 3.4 | 11.6 | 1556.3 | 30.19 | 21.04 |
-| 177 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.37 | Y | 16 | ru | 3.4 | 0.0 | 1559.3 | 30.19 | 21.04 |
-| 178 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.32 | N | 22 | ru | 3.4 | 0.4 | 1560.4 | 30.19 | 21.04 |
-| 179 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.45 | N | 29 | ru | 3.4 | 2.6 | 1563.8 | 30.19 | 21.04 |
-| 180 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.35 | N | 20 | ru | 3.4 | 0.1 | 1563.8 | 30.19 | 21.04 |
-| 181 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 5 | 0.38 | N | 32 | ru | 3.4 | 0.0 | 1562.9 | 30.19 | 21.04 |
-| 182 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.32 | N | 25 | ru | 3.4 | 0.0 | 1562.9 | 30.19 | 21.04 |
-| 183 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.45 | N | 30 | ru | 3.4 | 0.0 | 1562.9 | 30.19 | 21.04 |
-| 184 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.25 | N | 16 | ru | 3.4 | 0.0 | 1563.0 | 30.19 | 21.04 |
-| 185 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.49 | Y | 32 | ru | 3.5 | 0.0 | 1562.7 | 30.19 | 21.04 |
-| 186 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.47 | Y | 30 | ru | 3.3 | 0.0 | 1562.5 | 30.19 | 21.04 |
-| 187 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.35 | Y | 29 | ru | 3.6 | 0.0 | 1562.6 | 30.19 | 21.04 |
-| 188 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.43 | Y | 32 | ru | 3.4 | 0.0 | 1562.6 | 30.19 | 21.04 |
-| 189 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.50 | Y | 25 | ru | 3.5 | 34.4 | 1597.0 | 30.19 | 21.04 |
-| 190 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 8 | 0.11 | N | 25 | ru | 7.8 | 1174.1 | 1223.5 | 30.29 | 21.12 |
-| 191 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 3 | 0.36 | N | 6 | ru | 6.2 | 280.5 | 1524.4 | 30.29 | 21.12 |
-| 192 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.27 | N | - | ru | 11.7 | 541.1 | 5486.4 | 30.29 | 20.69 |
-| 193 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 7 | 0.29 | Y | 9 | ru | 6.2 | 0.4 | 1559.2 | 30.29 | 21.12 |
-| 194 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 8 | 0.26 | Y | 26 | ru | 5.9 | 0.0 | 1562.9 | 30.29 | 21.12 |
-| 195 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 5 | 0.31 | N | 17 | ru | 6.0 | 0.0 | 1562.6 | 30.29 | 21.12 |
-| 196 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.29 | Y | 12 | ru | 3.2 | 7.2 | 5235.3 | 30.49 | 21.19 |
-| 197 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.25 | N | - | ru | 11.4 | 0.0 | 4978.5 | 30.49 | 20.64 |
-| 198 | openai | large-v3-turbo | RTX 4090 | float32 | 5 | 0.05 | N | - | ru | 13.9 | 3157.1 | 4944.6 | 30.59 | 21.52 |
-| 199 | openai | large-v3-turbo | RTX 4090 | float16 | 5 | 0.23 | N | - | ru | 11.9 | 399.7 | 5366.5 | 30.59 | 19.96 |
-| 200 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 7 | 0.27 | N | 14 | ru | 3.1 | 3.9 | 5393.9 | 30.59 | 21.32 |
-| 201 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.22 | N | - | ru | 14.8 | 2609.7 | 2654.3 | 30.69 | 20.86 |
-| 202 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 3 | 0.12 | N | 20 | ru | 4.7 | 263.3 | 1787.5 | 30.69 | 21.32 |
-| 203 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.20 | Y | 30 | ru | 4.6 | 17.5 | 1544.7 | 30.69 | 21.32 |
-| 204 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.20 | N | 24 | ru | 4.6 | 2.6 | 1558.9 | 30.69 | 21.32 |
-| 205 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.10 | N | 22 | ru | 4.7 | -0.4 | 1562.6 | 30.69 | 21.32 |
-| 206 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.26 | N | - | ru | 20.4 | -0.0 | 2703.1 | 31.29 | 23.84 |
-| 207 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.49 | N | - | ru | 17.9 | 2.9 | 1116.4 | 31.39 | 24.18 |
-| 208 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.17 | N | - | ru | 21.9 | 0.0 | 2699.7 | 31.49 | 24.54 |
-| 209 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.24 | N | - | ru | 11.3 | -399.9 | 4994.1 | 31.80 | 22.15 |
-| 210 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.09 | N | - | ru | 11.1 | 12.5 | 5165.7 | 33.50 | 24.38 |
-| 211 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.16 | N | - | ru | 11.1 | 9.4 | 5375.9 | 33.60 | 25.83 |
-| 212 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.30 | N | - | ru | 11.1 | -409.2 | 4966.7 | 33.70 | 25.41 |
-| 213 | openai | medium | RTX 4090 | int8 | 2 | 0.03 | Y | - | ru | 32.8 | 3335.4 | 4513.6 | 36.51 | 25.39 |
-| 214 | faster-whisper | medium | RTX 4090 | float32 | 7 | 0.47 | N | 32 | ru | 11.1 | 1109.9 | 1154.7 | 39.12 | 25.89 |
-| 215 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.07 | Y | 13 | ru | 4.2 | 21.7 | 4520.0 | 40.72 | 28.17 |
-| 216 | openai | small | RTX 4090 | float16 | 10 | 0.33 | Y | - | ru | 13.9 | -0.1 | 2367.3 | 47.44 | 31.47 |
-| 217 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.02 | Y | - | ru | 9.8 | 6.6 | 5259.5 | 50.25 | 36.52 |
-| 218 | faster-whisper | small | RTX 4090 | int8 | 5 | 0.19 | N | 3 | ru | 6.0 | 1217.3 | 1262.1 | 50.75 | 40.89 |
-| 219 | openai | large-v3-turbo | RTX 4090 | int8 | 6 | 0.18 | Y | - | ru | 14.2 | 0.0 | 4959.7 | 50.95 | 37.02 |
-| 220 | openai | medium | RTX 4090 | int8 | 2 | 0.42 | N | - | ru | 33.7 | 0.0 | 4498.3 | 51.25 | 37.79 |
-| 221 | openai | large-v3-turbo | RTX 4090 | float16 | 5 | 0.47 | Y | - | ru | 11.9 | -299.9 | 4959.7 | 52.76 | 38.84 |
-| 222 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.19 | Y | - | ru | 27.1 | 13.9 | 1113.6 | 52.86 | 50.25 |
-| 223 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.17 | Y | - | ru | 26.0 | 6.6 | 1121.4 | 53.26 | 44.06 |
-| 224 | openai | large-v3 | RTX 4090 | float32 | 9 | 0.43 | Y | - | ru | 51.5 | 655.8 | 9249.7 | 54.46 | 47.65 |
-| 225 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.05 | Y | - | ru | 27.1 | 0.4 | 1125.0 | 54.46 | 47.82 |
-| 226 | faster-whisper | large-v3 | RTX 4090 | float16 | 1 | 0.40 | Y | - | ru | 28.8 | 1026.3 | 1077.6 | 55.57 | 40.98 |
-| 227 | faster-whisper | small | RTX 4090 | float32 | 7 | 0.09 | Y | 3 | ru | 4.5 | 63.3 | 1363.4 | 55.77 | 40.81 |
-| 228 | faster-whisper | small | RTX 4090 | float32 | 5 | 0.03 | Y | 7 | ru | 4.0 | 0.2 | 1363.6 | 55.77 | 40.81 |
-| 229 | faster-whisper | small | RTX 4090 | float32 | 7 | 0.29 | N | 23 | ru | 3.5 | 41.3 | 1404.9 | 55.77 | 40.81 |
-| 230 | faster-whisper | small | RTX 4090 | float16 | 8 | 0.37 | N | 27 | ru | 2.6 | 14.4 | 1300.1 | 56.07 | 41.51 |
-| 231 | openai | small | RTX 4090 | float16 | 1 | 0.04 | N | - | ru | 18.1 | 961.9 | 2366.9 | 56.07 | 42.80 |
-| 232 | faster-whisper | large-v3 | RTX 4090 | int8 | 5 | 0.31 | Y | - | ru | 31.7 | 0.5 | 2727.0 | 56.37 | 48.09 |
-| 233 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.36 | Y | - | ru | 14.4 | -305.6 | 4953.1 | 56.47 | 39.30 |
-| 234 | openai | large-v3 | RTX 4090 | float16 | 9 | 0.33 | Y | - | ru | 52.6 | 35.2 | 8719.6 | 56.67 | 46.31 |
-| 235 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.46 | Y | - | ru | 26.6 | 5.3 | 2698.6 | 56.77 | 41.94 |
-| 236 | openai | medium | RTX 4090 | int8 | 3 | 0.45 | Y | - | ru | 32.7 | 0.3 | 4498.3 | 56.97 | 41.18 |
-| 237 | openai | small | RTX 4090 | float16 | 3 | 0.40 | N | - | ru | 16.1 | 0.6 | 2367.4 | 58.48 | 43.84 |
-| 238 | faster-whisper | base | RTX 4090 | float32 | 5 | 0.25 | N | 31 | ru | 2.2 | 7.3 | 1856.8 | 59.68 | 41.29 |
-| 239 | faster-whisper | base | RTX 4090 | float32 | 8 | 0.18 | N | 30 | ru | 2.1 | 45.0 | 2126.4 | 59.68 | 41.29 |
-| 240 | faster-whisper | base | RTX 4090 | float32 | 7 | 0.17 | N | 31 | ru | 2.1 | -62.9 | 2063.5 | 59.68 | 41.29 |
-| 241 | faster-whisper | base | RTX 4090 | float32 | 9 | 0.18 | N | 32 | ru | 2.1 | 61.8 | 2125.3 | 59.68 | 41.29 |
-| 242 | faster-whisper | base | RTX 4090 | float32 | 7 | 0.16 | N | 10 | ru | 2.3 | -61.7 | 2063.6 | 59.68 | 41.29 |
-| 243 | faster-whisper | base | RTX 4090 | float32 | 5 | 0.22 | N | 26 | ru | 2.2 | 0.2 | 2063.7 | 59.68 | 41.29 |
-| 244 | faster-whisper | base | RTX 4090 | float32 | 8 | 0.50 | N | 14 | ru | 2.3 | 0.0 | 2063.7 | 59.68 | 41.29 |
-| 245 | faster-whisper | base | RTX 4090 | float32 | 6 | 0.14 | N | 26 | ru | 2.1 | 60.9 | 2124.9 | 59.68 | 41.29 |
-| 246 | faster-whisper | base | RTX 4090 | float16 | 4 | 0.05 | Y | 19 | ru | 3.5 | 1197.7 | 1242.4 | 59.98 | 41.48 |
-| 247 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.31 | N | 21 | ru | 2.0 | 11.1 | 1849.5 | 59.98 | 41.48 |
-| 248 | faster-whisper | base | RTX 4090 | float16 | 2 | 0.28 | Y | 21 | ru | 1.9 | 2.9 | 2044.7 | 59.98 | 41.48 |
-| 249 | faster-whisper | base | RTX 4090 | float16 | 1 | 0.42 | N | 27 | ru | 1.9 | 0.1 | 2063.5 | 59.98 | 41.48 |
-| 250 | openai | large-v3 | RTX 4090 | int8 | 7 | 0.26 | Y | - | ru | 47.6 | 7452.5 | 8593.9 | 63.49 | 48.28 |
-| 251 | openai | medium | RTX 4090 | int8 | 1 | 0.48 | Y | - | ru | 23.2 | -18.5 | 4498.1 | 63.69 | 48.42 |
-| 252 | openai | medium | RTX 4090 | float32 | 3 | 0.25 | Y | - | ru | 24.5 | 3.8 | 4523.8 | 64.39 | 49.99 |
-| 253 | openai | base | RTX 4090 | float16 | 4 | 0.28 | N | - | ru | 9.7 | 184.7 | 2041.5 | 65.30 | 43.01 |
-| 254 | faster-whisper | base | RTX 4090 | int8 | 5 | 0.39 | Y | 7 | ru | 2.3 | 17.9 | 2081.4 | 67.80 | 46.03 |
-| 255 | faster-whisper | base | RTX 4090 | int8 | 10 | 0.33 | N | 1 | ru | 3.7 | 0.3 | 2064.1 | 70.11 | 47.19 |
-| 256 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.16 | N | 8 | ru | 2.1 | 8.8 | 1869.2 | 88.57 | 63.50 |
-| 257 | faster-whisper | tiny | RTX 4090 | int8 | 8 | 0.05 | Y | 7 | ru | 3.8 | 1156.5 | 1200.9 | 88.87 | 63.64 |
-| 258 | faster-whisper | tiny | RTX 4090 | int8 | 4 | 0.17 | N | 20 | ru | 2.2 | 7.4 | 1860.4 | 89.37 | 64.23 |
-| 259 | openai | tiny | RTX 4090 | float32 | 4 | 0.04 | N | - | ru | 7.2 | -1.2 | 1868.0 | 89.67 | 72.71 |
-| 260 | faster-whisper | tiny | RTX 4090 | int8 | 9 | 0.10 | Y | 10 | ru | 2.3 | 17.3 | 1885.3 | 89.67 | 64.29 |
-| 261 | openai | tiny | RTX 4090 | float16 | 1 | 0.31 | N | - | ru | 7.7 | 0.1 | 1868.1 | 91.68 | 76.99 |
-| 262 | faster-whisper | tiny | RTX 4090 | float16 | 6 | 0.05 | Y | 4 | ru | 2.2 | 21.1 | 1244.9 | 94.68 | 60.49 |
-| 263 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 5 | 0.20 | Y | - | ru | 16.1 | 1173.2 | 1223.4 | 94.68 | 53.16 |
-| 264 | openai | tiny | RTX 4090 | int8 | 3 | 0.46 | N | - | ru | 6.5 | -0.1 | 1853.0 | 95.99 | 92.74 |
-| 265 | faster-whisper | tiny | RTX 4090 | float32 | 5 | 0.12 | Y | 19 | ru | 2.0 | 83.4 | 1328.2 | 97.49 | 65.27 |
-| 266 | faster-whisper | tiny | RTX 4090 | float32 | 5 | 0.44 | N | 2 | ru | 3.3 | 6.6 | 1851.9 | 97.49 | 65.27 |
-| 267 | faster-whisper | tiny | RTX 4090 | float32 | 5 | 0.26 | Y | 11 | ru | 2.2 | 1.2 | 1853.1 | 97.49 | 65.27 |
-| 268 | openai | base | RTX 4090 | float32 | 2 | 0.07 | Y | - | ru | 5.3 | 571.9 | 1837.1 | 99.80 | 79.20 |
-| 269 | openai | base | RTX 4090 | int8 | 6 | 0.40 | Y | - | ru | 5.9 | 0.3 | 2041.8 | 99.80 | 78.85 |
-| 270 | openai | base | RTX 4090 | float32 | 10 | 0.09 | Y | - | ru | 4.5 | 18.7 | 2063.4 | 99.80 | 79.10 |
-| 271 | openai | tiny | RTX 4090 | int8 | 5 | 0.16 | Y | - | ru | 14.0 | 516.6 | 1844.8 | 176.23 | 111.41 |
-| 272 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.40 | Y | - | ru | 70.7 | 4.6 | 3427.9 | 201.81 | 105.05 |
-| 273 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.12 | Y | - | ru | 61.7 | 0.1 | 2703.2 | 341.93 | 202.63 |
-| 274 | openai | large-v3 | RTX 4090 | int8 | 4 | 0.50 | Y | - | ru | 135.2 | 605.1 | 9324.8 | 435.01 | 289.24 |
+| 21 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 4 | ru | 9.1 | 0.4 | 9009.0 | 25.18 | 17.17 |
+| 22 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 4 | ru | 9.0 | 1.9 | 9010.9 | 25.18 | 17.17 |
+| 23 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 4 | ru | 9.1 | 0.0 | 9010.9 | 25.18 | 17.17 |
+| 24 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 4 | ru | 9.1 | 0.1 | 9011.1 | 25.18 | 17.17 |
+| 25 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 4 | ru | 9.2 | 0.1 | 9011.2 | 25.18 | 17.17 |
+| 26 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 4 | ru | 9.2 | 0.0 | 9011.2 | 25.18 | 17.17 |
+| 27 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 4 | ru | 9.2 | 0.0 | 9011.2 | 25.18 | 17.17 |
+| 28 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 4 | ru | 9.3 | 0.0 | 9011.2 | 25.18 | 17.17 |
+| 29 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 4 | ru | 9.4 | 0.0 | 9011.2 | 25.18 | 17.17 |
+| 30 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.02 | N | 4 | ru | 9.1 | 0.0 | 9011.5 | 25.18 | 17.17 |
+| 31 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 4 | ru | 9.6 | 0.2 | 9011.7 | 25.18 | 17.17 |
+| 32 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.03 | N | - | ru | 36.8 | 25.8 | 9353.7 | 25.28 | 17.23 |
+| 33 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.14 | N | - | ru | 35.8 | 0.4 | 9354.2 | 25.28 | 17.17 |
+| 34 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.34 | N | 6 | ru | 9.6 | 1.5 | 2705.0 | 25.28 | 17.34 |
+| 35 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.37 | Y | 6 | ru | 9.0 | 0.0 | 2705.1 | 25.28 | 17.34 |
+| 36 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.36 | Y | 6 | ru | 9.8 | 0.6 | 2727.6 | 25.28 | 17.34 |
+| 37 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.43 | Y | 6 | ru | 9.7 | -0.0 | 2727.5 | 25.28 | 17.34 |
+| 38 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.50 | N | 6 | ru | 11.0 | -0.0 | 2727.8 | 25.28 | 17.34 |
+| 39 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.02 | N | - | ru | 19.1 | -0.7 | 1122.0 | 25.28 | 17.52 |
+| 40 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.13 | N | 6 | ru | 9.4 | -0.0 | 3829.2 | 25.28 | 17.34 |
+| 41 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.12 | N | - | ru | 22.9 | 2650.4 | 2704.6 | 25.28 | 16.93 |
+| 42 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.20 | N | - | ru | 21.2 | -0.0 | 2703.1 | 25.28 | 17.56 |
+| 43 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.23 | N | 6 | ru | 8.4 | 0.7 | 9008.6 | 25.28 | 17.34 |
+| 44 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.43 | Y | 15 | ru | 8.3 | -0.0 | 2720.4 | 25.38 | 17.30 |
+| 45 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.37 | Y | 10 | ru | 8.6 | -0.0 | 2727.6 | 25.38 | 17.51 |
+| 46 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.38 | N | - | ru | 20.6 | 9.2 | 1122.7 | 25.38 | 17.49 |
+| 47 | openai | large-v3 | RTX 4090 | float32 | 7 | 0.06 | N | - | ru | 40.7 | 7416.1 | 8675.4 | 25.48 | 17.30 |
+| 48 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.23 | N | 2 | ru | 13.0 | 2.9 | 2593.9 | 25.48 | 17.34 |
+| 49 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.18 | Y | 2 | ru | 12.3 | 0.1 | 2700.5 | 25.48 | 17.34 |
+| 50 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.38 | Y | 5 | ru | 9.5 | -0.0 | 2720.6 | 25.48 | 17.45 |
+| 51 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.26 | Y | 2 | ru | 12.9 | -0.0 | 2727.5 | 25.48 | 17.34 |
+| 52 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.24 | N | 2 | ru | 13.7 | -0.0 | 2727.8 | 25.48 | 17.34 |
+| 53 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.15 | Y | 2 | ru | 17.6 | 2516.0 | 2569.8 | 25.48 | 17.34 |
+| 54 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.27 | Y | 2 | ru | 14.2 | 22.8 | 3845.5 | 25.48 | 17.34 |
+| 55 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.42 | N | 5 | ru | 11.2 | 0.0 | 3825.8 | 25.48 | 17.45 |
+| 56 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.49 | N | 5 | ru | 11.2 | -0.0 | 3825.8 | 25.48 | 17.45 |
+| 57 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.44 | N | 2 | ru | 12.2 | 0.0 | 3825.8 | 25.48 | 17.34 |
+| 58 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.37 | N | 5 | ru | 11.2 | 2.1 | 3827.9 | 25.48 | 17.45 |
+| 59 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.15 | N | 5 | ru | 10.9 | -0.0 | 3829.2 | 25.48 | 17.45 |
+| 60 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.28 | N | 2 | ru | 13.9 | 0.2 | 3829.9 | 25.48 | 17.34 |
+| 61 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.32 | N | 5 | ru | 10.2 | -0.0 | 3829.7 | 25.48 | 17.45 |
+| 62 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.15 | N | 5 | ru | 10.0 | 4.9 | 3363.0 | 25.48 | 17.45 |
+| 63 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.17 | N | 5 | ru | 9.9 | 0.3 | 3363.3 | 25.48 | 17.45 |
+| 64 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.03 | N | 5 | ru | 8.7 | 6.1 | 9007.1 | 25.48 | 17.45 |
+| 65 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.02 | N | 5 | ru | 8.8 | 0.0 | 9011.2 | 25.48 | 17.45 |
+| 66 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.02 | N | 5 | ru | 9.5 | 0.0 | 9011.4 | 25.48 | 17.45 |
+| 67 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 2 | ru | 12.3 | 0.0 | 9011.4 | 25.48 | 17.34 |
+| 68 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 5 | ru | 9.4 | 0.0 | 9011.5 | 25.48 | 17.45 |
+| 69 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | 2 | ru | 12.0 | 0.0 | 9011.5 | 25.48 | 17.34 |
+| 70 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.04 | N | 5 | ru | 9.7 | 0.0 | 9011.5 | 25.48 | 17.45 |
+| 71 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.18 | N | 2 | ru | 12.6 | 0.0 | 9011.7 | 25.48 | 17.34 |
+| 72 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.03 | N | 5 | ru | 9.0 | 0.8 | 9012.4 | 25.48 | 17.45 |
+| 73 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.40 | Y | 9 | ru | 8.5 | -0.0 | 2720.6 | 25.58 | 17.58 |
+| 74 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.33 | N | - | ru | 31.9 | 2.9 | 2139.3 | 25.58 | 18.08 |
+| 75 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.21 | N | - | ru | 20.4 | 1024.2 | 1076.8 | 25.58 | 17.63 |
+| 76 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.16 | Y | 9 | ru | 8.6 | -0.0 | 3829.8 | 25.58 | 17.58 |
+| 77 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.01 | N | - | ru | 36.7 | 3.1 | 9327.9 | 25.68 | 17.86 |
+| 78 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.40 | N | 7 | ru | 9.1 | 0.7 | 2716.2 | 25.68 | 17.58 |
+| 79 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.36 | Y | 7 | ru | 9.8 | 1230.6 | 3822.5 | 25.68 | 17.58 |
+| 80 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.44 | N | 7 | ru | 9.4 | -0.1 | 3825.8 | 25.68 | 17.58 |
+| 81 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.47 | Y | 7 | ru | 9.3 | 1.5 | 3829.3 | 25.68 | 17.58 |
+| 82 | faster-whisper | large-v3 | RTX 4090 | int8 | 10 | 0.20 | N | - | ru | 21.3 | -0.0 | 2703.2 | 25.68 | 17.71 |
+| 83 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.01 | N | - | ru | 18.6 | -2.4 | 1119.8 | 25.78 | 17.95 |
+| 84 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.01 | N | - | ru | 18.5 | -1.8 | 1118.4 | 25.78 | 17.97 |
+| 85 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.35 | N | 1 | ru | 16.6 | -0.0 | 3825.8 | 25.78 | 17.58 |
+| 86 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.45 | N | 1 | ru | 16.7 | -0.0 | 3825.7 | 25.78 | 17.58 |
+| 87 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.48 | N | 1 | ru | 17.8 | -0.0 | 3829.3 | 25.78 | 17.58 |
+| 88 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.24 | N | 1 | ru | 17.9 | -0.0 | 3829.8 | 25.78 | 17.58 |
+| 89 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.48 | Y | 13 | ru | 10.9 | 2517.9 | 2568.2 | 25.88 | 17.74 |
+| 90 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.20 | Y | 3 | ru | 10.9 | -0.0 | 2720.5 | 25.88 | 17.65 |
+| 91 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.19 | N | - | ru | 164.8 | 2056.9 | 2109.9 | 25.88 | 18.00 |
+| 92 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.32 | Y | 3 | ru | 11.2 | -20.4 | 3825.9 | 25.88 | 17.65 |
+| 93 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.04 | N | 3 | ru | 12.8 | -0.0 | 3825.8 | 25.88 | 17.65 |
+| 94 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.50 | N | 3 | ru | 10.7 | -0.0 | 3829.2 | 25.88 | 17.65 |
+| 95 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.11 | N | 3 | ru | 11.2 | 0.5 | 3829.7 | 25.88 | 17.65 |
+| 96 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.36 | N | 3 | ru | 10.2 | 0.8 | 9007.9 | 25.88 | 17.65 |
+| 97 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 3 | ru | 10.5 | 0.0 | 9011.2 | 25.88 | 17.65 |
+| 98 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.02 | N | 3 | ru | 10.9 | 0.1 | 9011.4 | 25.88 | 17.65 |
+| 99 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.02 | N | 3 | ru | 10.8 | 0.0 | 9011.5 | 25.88 | 17.65 |
+| 100 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.00 | N | 3 | ru | 10.9 | 0.0 | 9011.5 | 25.88 | 17.65 |
+| 101 | openai | large-v3 | RTX 4090 | int8 | 1 | 0.14 | N | - | ru | 47.4 | 5637.4 | 9001.3 | 26.08 | 18.52 |
+| 102 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.01 | N | - | ru | 43.8 | 0.0 | 9010.9 | 26.08 | 18.13 |
+| 103 | faster-whisper | large-v3 | RTX 4090 | float16 | 10 | 0.47 | Y | 26 | ru | 7.4 | 1073.9 | 1118.8 | 26.18 | 17.78 |
+| 104 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.13 | N | - | ru | 19.3 | 0.1 | 1124.6 | 26.18 | 18.13 |
+| 105 | faster-whisper | large-v3 | RTX 4090 | float16 | 6 | 0.34 | N | 11 | ru | 8.0 | 1153.2 | 1202.1 | 26.28 | 17.76 |
+| 106 | faster-whisper | large-v3 | RTX 4090 | float16 | 6 | 0.07 | N | - | ru | 19.2 | -1.9 | 1119.3 | 26.28 | 18.52 |
+| 107 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.26 | N | - | ru | 20.4 | -1.6 | 1112.9 | 26.28 | 18.54 |
+| 108 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.31 | N | - | ru | 31.8 | 0.0 | 2139.3 | 26.48 | 19.09 |
+| 109 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.34 | N | - | ru | 35.0 | 2058.4 | 2111.5 | 26.48 | 18.61 |
+| 110 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.07 | N | - | ru | 19.8 | 0.0 | 1124.5 | 26.48 | 18.24 |
+| 111 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.28 | Y | 29 | ru | 11.6 | 35.9 | 1258.2 | 26.58 | 18.04 |
+| 112 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.46 | N | 18 | ru | 11.4 | 0.3 | 1259.3 | 26.58 | 18.04 |
+| 113 | faster-whisper | large-v3 | RTX 4090 | float16 | 10 | 0.11 | N | 6 | ru | 6.3 | 9.1 | 8684.5 | 26.58 | 18.04 |
+| 114 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.12 | N | 15 | ru | 11.6 | 97.6 | 2692.3 | 26.58 | 18.04 |
+| 115 | faster-whisper | large-v3 | RTX 4090 | float32 | 6 | 0.27 | Y | 10 | ru | 11.9 | 0.5 | 2693.5 | 26.58 | 18.04 |
+| 116 | faster-whisper | large-v3 | RTX 4090 | float32 | 3 | 0.46 | Y | 12 | ru | 12.1 | -0.4 | 2693.9 | 26.58 | 18.04 |
+| 117 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.08 | Y | 8 | ru | 8.4 | 3.7 | 2719.8 | 26.58 | 18.15 |
+| 118 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.31 | N | 4 | ru | 7.3 | 0.8 | 2720.6 | 26.58 | 18.04 |
+| 119 | faster-whisper | large-v3 | RTX 4090 | float16 | 2 | 0.42 | N | 8 | ru | 6.2 | 0.0 | 2727.0 | 26.58 | 18.04 |
+| 120 | faster-whisper | large-v3 | RTX 4090 | float16 | 4 | 0.31 | Y | 4 | ru | 7.4 | 0.0 | 2727.0 | 26.58 | 18.04 |
+| 121 | faster-whisper | large-v3 | RTX 4090 | float32 | 2 | 0.33 | Y | 13 | ru | 11.8 | 0.2 | 2727.6 | 26.58 | 18.04 |
+| 122 | faster-whisper | large-v3 | RTX 4090 | float16 | 3 | 0.16 | N | 4 | ru | 7.4 | 0.3 | 2727.9 | 26.58 | 18.04 |
+| 123 | faster-whisper | large-v3 | RTX 4090 | float32 | 2 | 0.48 | N | 11 | ru | 12.0 | 0.0 | 2727.8 | 26.58 | 18.04 |
+| 124 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.45 | N | 8 | ru | 9.1 | -0.0 | 2727.7 | 26.58 | 18.15 |
+| 125 | faster-whisper | large-v3 | RTX 4090 | float32 | 3 | 0.47 | N | 3 | ru | 17.7 | 2069.1 | 2120.2 | 26.58 | 18.04 |
+| 126 | faster-whisper | large-v3 | RTX 4090 | float32 | 4 | 0.47 | Y | 8 | ru | 12.2 | 1266.2 | 3409.5 | 26.58 | 18.04 |
+| 127 | faster-whisper | large-v3 | RTX 4090 | float32 | 1 | 0.05 | Y | 28 | ru | 11.3 | -630.4 | 2779.9 | 26.58 | 18.04 |
+| 128 | faster-whisper | large-v3 | RTX 4090 | float32 | 10 | 0.17 | Y | 32 | ru | 11.0 | 1.2 | 2782.3 | 26.58 | 18.04 |
+| 129 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.34 | N | 23 | ru | 11.0 | 0.0 | 2148.0 | 26.58 | 18.04 |
+| 130 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.38 | N | 21 | ru | 11.0 | 1500.1 | 3648.2 | 26.58 | 18.04 |
+| 131 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.22 | N | 22 | ru | 10.6 | 0.9 | 3648.2 | 26.58 | 18.04 |
+| 132 | faster-whisper | large-v3 | RTX 4090 | float32 | 5 | 0.38 | Y | 27 | ru | 11.4 | -1500.0 | 2148.2 | 26.58 | 18.04 |
+| 133 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.02 | N | 19 | ru | 11.1 | 1275.0 | 3423.3 | 26.58 | 18.04 |
+| 134 | faster-whisper | large-v3 | RTX 4090 | float32 | 10 | 0.25 | N | 31 | ru | 11.6 | 0.0 | 3423.3 | 26.58 | 18.04 |
+| 135 | faster-whisper | large-v3 | RTX 4090 | float32 | 6 | 0.17 | N | 26 | ru | 10.6 | 0.0 | 3427.9 | 26.58 | 18.04 |
+| 136 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.29 | Y | 17 | ru | 11.9 | 0.0 | 3427.9 | 26.58 | 18.04 |
+| 137 | faster-whisper | large-v3 | RTX 4090 | float32 | 5 | 0.41 | Y | 6 | ru | 12.2 | 0.0 | 3428.0 | 26.58 | 18.04 |
+| 138 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.10 | N | 15 | ru | 11.2 | 0.0 | 3427.9 | 26.58 | 18.04 |
+| 139 | faster-whisper | large-v3 | RTX 4090 | float32 | 9 | 0.10 | N | 18 | ru | 10.6 | 0.0 | 3428.0 | 26.58 | 18.04 |
+| 140 | faster-whisper | large-v3 | RTX 4090 | float16 | 9 | 0.24 | N | - | ru | 19.5 | 3.1 | 1124.5 | 26.58 | 18.28 |
+| 141 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.11 | N | - | ru | 19.1 | 14.5 | 1113.4 | 26.58 | 18.98 |
+| 142 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.29 | N | 4 | ru | 9.6 | 1078.8 | 1131.9 | 26.58 | 18.04 |
+| 143 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.05 | N | 4 | ru | 8.3 | 6.0 | 1159.8 | 26.58 | 18.04 |
+| 144 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.22 | Y | 4 | ru | 8.6 | 6.0 | 1165.8 | 26.58 | 18.04 |
+| 145 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.14 | N | 4 | ru | 8.0 | 0.0 | 1165.9 | 26.58 | 18.04 |
+| 146 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.03 | N | 4 | ru | 8.0 | 0.0 | 1165.9 | 26.58 | 18.04 |
+| 147 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.09 | N | 4 | ru | 8.0 | 0.0 | 1166.0 | 26.58 | 18.04 |
+| 148 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.04 | N | 4 | ru | 8.7 | 0.0 | 1166.0 | 26.58 | 18.04 |
+| 149 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.09 | N | 4 | ru | 8.6 | 0.0 | 1166.0 | 26.58 | 18.04 |
+| 150 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.07 | N | - | ru | 20.6 | 0.2 | 2702.3 | 26.58 | 18.33 |
+| 151 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.48 | N | - | ru | 21.6 | 0.6 | 2703.2 | 26.68 | 18.24 |
+| 152 | faster-whisper | large-v3 | RTX 4090 | float32 | 7 | 0.19 | N | - | ru | 31.2 | 3.0 | 2135.7 | 26.78 | 18.61 |
+| 153 | faster-whisper | large-v3 | RTX 4090 | float32 | 6 | 0.22 | N | - | ru | 31.1 | 0.7 | 2136.4 | 26.78 | 17.80 |
+| 154 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.14 | N | - | ru | 22.8 | -33.4 | 2693.1 | 26.78 | 18.26 |
+| 155 | openai | large-v3 | RTX 4090 | float32 | 1 | 0.15 | N | - | ru | 36.5 | 0.0 | 9354.2 | 26.88 | 18.48 |
+| 156 | faster-whisper | large-v3 | RTX 4090 | float32 | 10 | 0.30 | N | - | ru | 32.1 | 3.1 | 2137.3 | 26.88 | 18.72 |
+| 157 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.26 | N | - | ru | 19.6 | -5.1 | 1112.5 | 26.98 | 18.35 |
+| 158 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.03 | N | - | ru | 21.8 | -0.0 | 2703.0 | 26.98 | 18.56 |
+| 159 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.00 | N | - | ru | 20.9 | 5.6 | 2700.5 | 27.08 | 18.37 |
+| 160 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.49 | N | - | ru | 20.7 | 2.7 | 2702.1 | 27.08 | 18.54 |
+| 161 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.39 | N | - | ru | 23.0 | -0.0 | 2703.1 | 27.08 | 18.72 |
+| 162 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.33 | Y | 19 | ru | 7.7 | 10.4 | 2715.4 | 27.38 | 18.78 |
+| 163 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.22 | N | 23 | ru | 7.7 | -0.0 | 2716.1 | 27.38 | 18.78 |
+| 164 | faster-whisper | large-v3 | RTX 4090 | int8 | 2 | 0.27 | Y | 32 | ru | 8.3 | 6.1 | 2726.5 | 27.38 | 18.78 |
+| 165 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.35 | Y | 22 | ru | 138.3 | -0.0 | 2727.0 | 27.38 | 18.78 |
+| 166 | faster-whisper | large-v3 | RTX 4090 | int8 | 7 | 0.28 | N | 18 | ru | 9.1 | -0.0 | 2727.8 | 27.38 | 18.78 |
+| 167 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.46 | N | - | ru | 20.8 | -0.0 | 2703.1 | 27.78 | 19.05 |
+| 168 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.42 | N | - | ru | 21.6 | -0.0 | 2703.1 | 27.88 | 19.62 |
+| 169 | faster-whisper | large-v3 | RTX 4090 | int8 | 1 | 0.44 | N | - | ru | 21.4 | 0.0 | 2703.1 | 27.88 | 19.24 |
+| 170 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.07 | N | - | ru | 11.6 | 174.7 | 5153.2 | 27.98 | 18.48 |
+| 171 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.21 | N | - | ru | 11.5 | 0.0 | 4966.7 | 28.28 | 18.76 |
+| 172 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.28 | N | - | ru | 11.5 | 268.5 | 5228.2 | 28.39 | 19.07 |
+| 173 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.17 | N | - | ru | 11.4 | -412.4 | 4966.7 | 28.39 | 18.91 |
+| 174 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.18 | N | - | ru | 11.6 | 0.1 | 5215.8 | 28.59 | 19.03 |
+| 175 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.14 | N | - | ru | 11.3 | 174.7 | 5153.2 | 28.59 | 19.33 |
+| 176 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.03 | N | - | ru | 12.2 | 306.1 | 5258.7 | 28.69 | 19.50 |
+| 177 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.17 | N | - | ru | 11.6 | 12.5 | 5215.8 | 28.99 | 18.65 |
+| 178 | openai | large-v3-turbo | RTX 4090 | float16 | 1 | 0.46 | N | - | ru | 11.3 | 299.9 | 5253.0 | 29.09 | 19.96 |
+| 179 | openai | large-v3-turbo | RTX 4090 | int8 | 1 | 0.47 | N | - | ru | 11.4 | 256.0 | 5215.7 | 29.09 | 20.40 |
+| 180 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.22 | N | - | ru | 11.7 | 412.4 | 5379.1 | 29.09 | 19.22 |
+| 181 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.32 | N | - | ru | 11.6 | 146.9 | 5382.2 | 29.29 | 19.70 |
+| 182 | openai | large-v3-turbo | RTX 4090 | float32 | 4 | 0.20 | N | - | ru | 11.4 | 0.0 | 4978.5 | 29.29 | 19.53 |
+| 183 | openai | large-v3-turbo | RTX 4090 | float32 | 5 | 0.12 | N | - | ru | 11.7 | 399.9 | 5393.9 | 29.29 | 19.26 |
+| 184 | faster-whisper | large-v3 | RTX 4090 | int8 | 9 | 0.41 | N | - | ru | 21.7 | -0.0 | 2703.1 | 29.49 | 20.27 |
+| 185 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.06 | N | - | ru | 11.7 | 240.8 | 5394.0 | 29.79 | 19.99 |
+| 186 | openai | large-v3-turbo | RTX 4090 | float32 | 5 | 0.13 | N | - | ru | 11.7 | 399.9 | 5390.1 | 29.79 | 19.90 |
+| 187 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.37 | Y | 10 | ru | 4.6 | -33.4 | 1563.6 | 29.79 | 20.88 |
+| 188 | openai | large-v3-turbo | RTX 4090 | float16 | 6 | 0.10 | N | - | ru | 11.7 | 243.6 | 5203.3 | 29.99 | 20.47 |
+| 189 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.38 | Y | 4 | ru | 5.0 | 0.4 | 1563.6 | 29.99 | 20.95 |
+| 190 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.38 | Y | 4 | ru | 5.0 | -0.4 | 1563.2 | 29.99 | 20.95 |
+| 191 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.38 | Y | 4 | ru | 5.0 | 0.4 | 1563.6 | 29.99 | 20.95 |
+| 192 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.37 | Y | 3 | ru | 5.2 | -0.4 | 1563.2 | 29.99 | 20.95 |
+| 193 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.39 | Y | 3 | ru | 5.2 | 0.4 | 1563.6 | 29.99 | 20.95 |
+| 194 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.21 | N | - | ru | 11.5 | 0.0 | 4978.5 | 30.09 | 20.10 |
+| 195 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 3 | 0.38 | N | 7 | ru | 5.2 | -0.4 | 1563.3 | 30.09 | 20.93 |
+| 196 | openai | large-v3-turbo | RTX 4090 | int8 | 2 | 0.37 | N | - | ru | 11.1 | -533.8 | 4952.6 | 30.19 | 20.75 |
+| 197 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.41 | Y | 29 | ru | 3.0 | 11.8 | 4978.5 | 30.19 | 21.04 |
+| 198 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.32 | N | 32 | ru | 3.0 | 11.7 | 4990.2 | 30.19 | 21.04 |
+| 199 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.06 | N | - | ru | 11.6 | -399.9 | 4994.1 | 30.19 | 19.09 |
+| 200 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.35 | N | 20 | ru | 3.2 | 0.0 | 4994.1 | 30.19 | 21.04 |
+| 201 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.50 | Y | 32 | ru | 3.6 | 260.1 | 1504.8 | 30.19 | 21.04 |
+| 202 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 7 | 0.48 | Y | 32 | ru | 3.4 | 9.8 | 1515.2 | 30.19 | 21.04 |
+| 203 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.41 | N | 27 | ru | 3.4 | 11.7 | 1527.1 | 30.19 | 21.04 |
+| 204 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.40 | Y | 27 | ru | 3.4 | 0.0 | 1527.1 | 30.19 | 21.04 |
+| 205 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 5 | 0.41 | N | 23 | ru | 3.4 | 0.0 | 1527.2 | 30.19 | 21.04 |
+| 206 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.33 | N | 19 | ru | 3.4 | 0.0 | 1544.6 | 30.19 | 21.04 |
+| 207 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.43 | Y | 28 | ru | 3.4 | 11.6 | 1556.3 | 30.19 | 21.04 |
+| 208 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.37 | Y | 16 | ru | 3.4 | 0.0 | 1559.3 | 30.19 | 21.04 |
+| 209 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.32 | N | 22 | ru | 3.4 | 0.4 | 1560.4 | 30.19 | 21.04 |
+| 210 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.45 | N | 29 | ru | 3.4 | 2.6 | 1563.8 | 30.19 | 21.04 |
+| 211 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.35 | N | 20 | ru | 3.4 | 0.1 | 1563.8 | 30.19 | 21.04 |
+| 212 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 5 | 0.38 | N | 32 | ru | 3.4 | 0.0 | 1562.9 | 30.19 | 21.04 |
+| 213 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.32 | N | 25 | ru | 3.4 | 0.0 | 1562.9 | 30.19 | 21.04 |
+| 214 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.45 | N | 30 | ru | 3.4 | 0.0 | 1562.9 | 30.19 | 21.04 |
+| 215 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.25 | N | 16 | ru | 3.4 | 0.0 | 1563.0 | 30.19 | 21.04 |
+| 216 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.49 | Y | 32 | ru | 3.5 | 0.0 | 1562.7 | 30.19 | 21.04 |
+| 217 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.47 | Y | 30 | ru | 3.3 | 0.0 | 1562.5 | 30.19 | 21.04 |
+| 218 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.35 | Y | 29 | ru | 3.6 | 0.0 | 1562.6 | 30.19 | 21.04 |
+| 219 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 3 | 0.43 | Y | 32 | ru | 3.4 | 0.0 | 1562.6 | 30.19 | 21.04 |
+| 220 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.50 | Y | 25 | ru | 3.5 | 34.4 | 1597.0 | 30.19 | 21.04 |
+| 221 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 8 | 0.11 | N | 25 | ru | 7.8 | 1174.1 | 1223.5 | 30.29 | 21.12 |
+| 222 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 3 | 0.36 | N | 6 | ru | 6.2 | 280.5 | 1524.4 | 30.29 | 21.12 |
+| 223 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.27 | N | - | ru | 11.7 | 541.1 | 5486.4 | 30.29 | 20.69 |
+| 224 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 7 | 0.29 | Y | 9 | ru | 6.2 | 0.4 | 1559.2 | 30.29 | 21.12 |
+| 225 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 8 | 0.26 | Y | 26 | ru | 5.9 | 0.0 | 1562.9 | 30.29 | 21.12 |
+| 226 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 5 | 0.31 | N | 17 | ru | 6.0 | 0.0 | 1562.6 | 30.29 | 21.12 |
+| 227 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 4 | 0.29 | Y | 12 | ru | 3.2 | 7.2 | 5235.3 | 30.49 | 21.19 |
+| 228 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.25 | N | - | ru | 11.4 | 0.0 | 4978.5 | 30.49 | 20.64 |
+| 229 | openai | large-v3-turbo | RTX 4090 | float32 | 5 | 0.05 | N | - | ru | 13.9 | 3157.1 | 4944.6 | 30.59 | 21.52 |
+| 230 | openai | large-v3-turbo | RTX 4090 | float16 | 5 | 0.23 | N | - | ru | 11.9 | 399.7 | 5366.5 | 30.59 | 19.96 |
+| 231 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 7 | 0.27 | N | 14 | ru | 3.1 | 3.9 | 5393.9 | 30.59 | 21.32 |
+| 232 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.22 | N | - | ru | 14.8 | 2609.7 | 2654.3 | 30.69 | 20.86 |
+| 233 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 3 | 0.12 | N | 20 | ru | 4.7 | 263.3 | 1787.5 | 30.69 | 21.32 |
+| 234 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.20 | Y | 30 | ru | 4.6 | 17.5 | 1544.7 | 30.69 | 21.32 |
+| 235 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 2 | 0.20 | N | 24 | ru | 4.6 | 2.6 | 1558.9 | 30.69 | 21.32 |
+| 236 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.10 | N | 22 | ru | 4.7 | -0.4 | 1562.6 | 30.69 | 21.32 |
+| 237 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.26 | N | - | ru | 20.4 | -0.0 | 2703.1 | 31.29 | 23.84 |
+| 238 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.49 | N | - | ru | 17.9 | 2.9 | 1116.4 | 31.39 | 24.18 |
+| 239 | faster-whisper | large-v3 | RTX 4090 | int8 | 3 | 0.17 | N | - | ru | 21.9 | 0.0 | 2699.7 | 31.49 | 24.54 |
+| 240 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.24 | N | - | ru | 11.3 | -399.9 | 4994.1 | 31.80 | 22.15 |
+| 241 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.09 | N | - | ru | 11.1 | 12.5 | 5165.7 | 33.50 | 24.38 |
+| 242 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.16 | N | - | ru | 11.1 | 9.4 | 5375.9 | 33.60 | 25.83 |
+| 243 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.30 | N | - | ru | 11.1 | -409.2 | 4966.7 | 33.70 | 25.41 |
+| 244 | openai | medium | RTX 4090 | int8 | 1 | 0.02 | N | - | ru | 30.5 | 705.0 | 3239.7 | 34.70 | 24.53 |
+| 245 | openai | medium | RTX 4090 | int8 | 2 | 0.03 | Y | - | ru | 32.8 | 3335.4 | 4513.6 | 36.51 | 25.39 |
+| 246 | faster-whisper | medium | RTX 4090 | float32 | 7 | 0.47 | N | 32 | ru | 11.1 | 1109.9 | 1154.7 | 39.12 | 25.89 |
+| 247 | faster-whisper | medium | RTX 4090 | int8 | 1 | 0.30 | N | 3 | ru | 7.1 | 0.0 | 3363.0 | 40.12 | 24.95 |
+| 248 | faster-whisper | medium | RTX 4090 | int8 | 8 | 0.03 | N | 4 | ru | 7.0 | 0.0 | 9011.4 | 40.62 | 25.26 |
+| 249 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.07 | Y | 13 | ru | 4.2 | 21.7 | 4520.0 | 40.72 | 28.17 |
+| 250 | openai | small | RTX 4090 | float16 | 10 | 0.33 | Y | - | ru | 13.9 | -0.1 | 2367.3 | 47.44 | 31.47 |
+| 251 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.02 | Y | - | ru | 9.8 | 6.6 | 5259.5 | 50.25 | 36.52 |
+| 252 | faster-whisper | small | RTX 4090 | int8 | 8 | 0.01 | N | 4 | ru | 3.3 | 0.2 | 9011.4 | 50.55 | 40.93 |
+| 253 | faster-whisper | small | RTX 4090 | int8 | 5 | 0.19 | N | 3 | ru | 6.0 | 1217.3 | 1262.1 | 50.75 | 40.89 |
+| 254 | openai | large-v3-turbo | RTX 4090 | int8 | 6 | 0.18 | Y | - | ru | 14.2 | 0.0 | 4959.7 | 50.95 | 37.02 |
+| 255 | openai | medium | RTX 4090 | int8 | 2 | 0.42 | N | - | ru | 33.7 | 0.0 | 4498.3 | 51.25 | 37.79 |
+| 256 | openai | medium | RTX 4090 | int8 | 1 | 0.04 | N | - | ru | 35.4 | 0.2 | 3239.9 | 51.86 | 42.34 |
+| 257 | openai | large-v3-turbo | RTX 4090 | float16 | 5 | 0.47 | Y | - | ru | 11.9 | -299.9 | 4959.7 | 52.76 | 38.84 |
+| 258 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.19 | Y | - | ru | 27.1 | 13.9 | 1113.6 | 52.86 | 50.25 |
+| 259 | faster-whisper | large-v3 | RTX 4090 | float16 | 8 | 0.17 | Y | - | ru | 26.0 | 6.6 | 1121.4 | 53.26 | 44.06 |
+| 260 | openai | large-v3 | RTX 4090 | float32 | 9 | 0.43 | Y | - | ru | 51.5 | 655.8 | 9249.7 | 54.46 | 47.65 |
+| 261 | faster-whisper | large-v3 | RTX 4090 | float16 | 7 | 0.05 | Y | - | ru | 27.1 | 0.4 | 1125.0 | 54.46 | 47.82 |
+| 262 | faster-whisper | small | RTX 4090 | int8 | 1 | 0.36 | N | 5 | ru | 3.4 | 113.5 | 3353.4 | 54.56 | 41.18 |
+| 263 | faster-whisper | large-v3 | RTX 4090 | float16 | 1 | 0.40 | Y | - | ru | 28.8 | 1026.3 | 1077.6 | 55.57 | 40.98 |
+| 264 | faster-whisper | small | RTX 4090 | float32 | 7 | 0.09 | Y | 3 | ru | 4.5 | 63.3 | 1363.4 | 55.77 | 40.81 |
+| 265 | faster-whisper | small | RTX 4090 | float32 | 5 | 0.03 | Y | 7 | ru | 4.0 | 0.2 | 1363.6 | 55.77 | 40.81 |
+| 266 | faster-whisper | small | RTX 4090 | float32 | 7 | 0.29 | N | 23 | ru | 3.5 | 41.3 | 1404.9 | 55.77 | 40.81 |
+| 267 | faster-whisper | small | RTX 4090 | float16 | 8 | 0.37 | N | 27 | ru | 2.6 | 14.4 | 1300.1 | 56.07 | 41.51 |
+| 268 | openai | small | RTX 4090 | float16 | 1 | 0.04 | N | - | ru | 18.1 | 961.9 | 2366.9 | 56.07 | 42.80 |
+| 269 | faster-whisper | large-v3 | RTX 4090 | int8 | 5 | 0.31 | Y | - | ru | 31.7 | 0.5 | 2727.0 | 56.37 | 48.09 |
+| 270 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.36 | Y | - | ru | 14.4 | -305.6 | 4953.1 | 56.47 | 39.30 |
+| 271 | openai | large-v3 | RTX 4090 | float16 | 9 | 0.33 | Y | - | ru | 52.6 | 35.2 | 8719.6 | 56.67 | 46.31 |
+| 272 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.46 | Y | - | ru | 26.6 | 5.3 | 2698.6 | 56.77 | 41.94 |
+| 273 | openai | medium | RTX 4090 | int8 | 3 | 0.45 | Y | - | ru | 32.7 | 0.3 | 4498.3 | 56.97 | 41.18 |
+| 274 | openai | small | RTX 4090 | float16 | 3 | 0.40 | N | - | ru | 16.1 | 0.6 | 2367.4 | 58.48 | 43.84 |
+| 275 | faster-whisper | base | RTX 4090 | float32 | 5 | 0.25 | N | 31 | ru | 2.2 | 7.3 | 1856.8 | 59.68 | 41.29 |
+| 276 | faster-whisper | base | RTX 4090 | float32 | 8 | 0.18 | N | 30 | ru | 2.1 | 45.0 | 2126.4 | 59.68 | 41.29 |
+| 277 | faster-whisper | base | RTX 4090 | float32 | 7 | 0.17 | N | 31 | ru | 2.1 | -62.9 | 2063.5 | 59.68 | 41.29 |
+| 278 | faster-whisper | base | RTX 4090 | float32 | 9 | 0.18 | N | 32 | ru | 2.1 | 61.8 | 2125.3 | 59.68 | 41.29 |
+| 279 | faster-whisper | base | RTX 4090 | float32 | 7 | 0.16 | N | 10 | ru | 2.3 | -61.7 | 2063.6 | 59.68 | 41.29 |
+| 280 | faster-whisper | base | RTX 4090 | float32 | 5 | 0.22 | N | 26 | ru | 2.2 | 0.2 | 2063.7 | 59.68 | 41.29 |
+| 281 | faster-whisper | base | RTX 4090 | float32 | 8 | 0.50 | N | 14 | ru | 2.3 | 0.0 | 2063.7 | 59.68 | 41.29 |
+| 282 | faster-whisper | base | RTX 4090 | float32 | 6 | 0.14 | N | 26 | ru | 2.1 | 60.9 | 2124.9 | 59.68 | 41.29 |
+| 283 | faster-whisper | base | RTX 4090 | float16 | 4 | 0.05 | Y | 19 | ru | 3.5 | 1197.7 | 1242.4 | 59.98 | 41.48 |
+| 284 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.31 | N | 21 | ru | 2.0 | 11.1 | 1849.5 | 59.98 | 41.48 |
+| 285 | faster-whisper | base | RTX 4090 | float16 | 2 | 0.28 | Y | 21 | ru | 1.9 | 2.9 | 2044.7 | 59.98 | 41.48 |
+| 286 | faster-whisper | base | RTX 4090 | float16 | 1 | 0.42 | N | 27 | ru | 1.9 | 0.1 | 2063.5 | 59.98 | 41.48 |
+| 287 | openai | large-v3 | RTX 4090 | int8 | 7 | 0.26 | Y | - | ru | 47.6 | 7452.5 | 8593.9 | 63.49 | 48.28 |
+| 288 | openai | small | RTX 4090 | int8 | 1 | 0.16 | N | - | ru | 21.4 | 959.9 | 2534.7 | 63.49 | 51.93 |
+| 289 | openai | medium | RTX 4090 | int8 | 1 | 0.48 | Y | - | ru | 23.2 | -18.5 | 4498.1 | 63.69 | 48.42 |
+| 290 | openai | medium | RTX 4090 | float32 | 3 | 0.25 | Y | - | ru | 24.5 | 3.8 | 4523.8 | 64.39 | 49.99 |
+| 291 | openai | base | RTX 4090 | float16 | 4 | 0.28 | N | - | ru | 9.7 | 184.7 | 2041.5 | 65.30 | 43.01 |
+| 292 | openai | small | RTX 4090 | int8 | 1 | 0.15 | N | - | ru | 19.2 | 0.0 | 3239.7 | 66.70 | 48.22 |
+| 293 | faster-whisper | base | RTX 4090 | int8 | 5 | 0.39 | Y | 7 | ru | 2.3 | 17.9 | 2081.4 | 67.80 | 46.03 |
+| 294 | faster-whisper | base | RTX 4090 | int8 | 3 | 0.19 | N | 3 | ru | 2.6 | 0.6 | 3363.9 | 67.80 | 46.25 |
+| 295 | faster-whisper | base | RTX 4090 | int8 | 10 | 0.33 | N | 1 | ru | 3.7 | 0.3 | 2064.1 | 70.11 | 47.19 |
+| 296 | openai | base | RTX 4090 | int8 | 3 | 0.18 | N | - | ru | 9.8 | 0.0 | 3239.9 | 80.04 | 54.04 |
+| 297 | openai | base | RTX 4090 | int8 | 3 | 0.03 | N | - | ru | 10.8 | 0.0 | 3239.7 | 83.85 | 54.87 |
+| 298 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.16 | N | 8 | ru | 2.1 | 8.8 | 1869.2 | 88.57 | 63.50 |
+| 299 | faster-whisper | tiny | RTX 4090 | int8 | 8 | 0.05 | Y | 7 | ru | 3.8 | 1156.5 | 1200.9 | 88.87 | 63.64 |
+| 300 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.35 | N | 6 | ru | 2.2 | 3.1 | 3358.1 | 88.87 | 63.64 |
+| 301 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.48 | N | 4 | ru | 2.3 | 0.0 | 9011.5 | 88.87 | 63.63 |
+| 302 | faster-whisper | tiny | RTX 4090 | int8 | 4 | 0.17 | N | 20 | ru | 2.2 | 7.4 | 1860.4 | 89.37 | 64.23 |
+| 303 | openai | tiny | RTX 4090 | float32 | 4 | 0.04 | N | - | ru | 7.2 | -1.2 | 1868.0 | 89.67 | 72.71 |
+| 304 | faster-whisper | tiny | RTX 4090 | int8 | 9 | 0.10 | Y | 10 | ru | 2.3 | 17.3 | 1885.3 | 89.67 | 64.29 |
+| 305 | openai | tiny | RTX 4090 | int8 | 1 | 0.03 | N | - | ru | 8.5 | 0.0 | 3239.9 | 89.97 | 69.47 |
+| 306 | openai | tiny | RTX 4090 | int8 | 1 | 0.35 | N | - | ru | 7.7 | 0.0 | 3239.7 | 90.97 | 71.77 |
+| 307 | openai | tiny | RTX 4090 | float16 | 1 | 0.31 | N | - | ru | 7.7 | 0.1 | 1868.1 | 91.68 | 76.99 |
+| 308 | faster-whisper | tiny | RTX 4090 | float16 | 6 | 0.05 | Y | 4 | ru | 2.2 | 21.1 | 1244.9 | 94.68 | 60.49 |
+| 309 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 5 | 0.20 | Y | - | ru | 16.1 | 1173.2 | 1223.4 | 94.68 | 53.16 |
+| 310 | openai | tiny | RTX 4090 | int8 | 1 | 0.36 | N | - | ru | 8.3 | 1518.2 | 1574.2 | 95.79 | 86.36 |
+| 311 | openai | tiny | RTX 4090 | int8 | 3 | 0.46 | N | - | ru | 6.5 | -0.1 | 1853.0 | 95.99 | 92.74 |
+| 312 | faster-whisper | tiny | RTX 4090 | float32 | 5 | 0.12 | Y | 19 | ru | 2.0 | 83.4 | 1328.2 | 97.49 | 65.27 |
+| 313 | faster-whisper | tiny | RTX 4090 | float32 | 5 | 0.44 | N | 2 | ru | 3.3 | 6.6 | 1851.9 | 97.49 | 65.27 |
+| 314 | faster-whisper | tiny | RTX 4090 | float32 | 5 | 0.26 | Y | 11 | ru | 2.2 | 1.2 | 1853.1 | 97.49 | 65.27 |
+| 315 | openai | base | RTX 4090 | float32 | 2 | 0.07 | Y | - | ru | 5.3 | 571.9 | 1837.1 | 99.80 | 79.20 |
+| 316 | openai | base | RTX 4090 | int8 | 6 | 0.40 | Y | - | ru | 5.9 | 0.3 | 2041.8 | 99.80 | 78.85 |
+| 317 | openai | base | RTX 4090 | float32 | 10 | 0.09 | Y | - | ru | 4.5 | 18.7 | 2063.4 | 99.80 | 79.10 |
+| 318 | openai | tiny | RTX 4090 | int8 | 5 | 0.16 | Y | - | ru | 14.0 | 516.6 | 1844.8 | 176.23 | 111.41 |
+| 319 | faster-whisper | large-v3 | RTX 4090 | float32 | 8 | 0.40 | Y | - | ru | 70.7 | 4.6 | 3427.9 | 201.81 | 105.05 |
+| 320 | faster-whisper | large-v3 | RTX 4090 | int8 | 8 | 0.12 | Y | - | ru | 61.7 | 0.1 | 2703.2 | 341.93 | 202.63 |
+| 321 | openai | large-v3 | RTX 4090 | int8 | 4 | 0.50 | Y | - | ru | 135.2 | 605.1 | 9324.8 | 435.01 | 289.24 |
 
 ## Transcription Results
 
@@ -686,7 +733,227 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 21. openai / large-v3
+### 21. faster-whisper / large-v3
+
+- **ID:** `dc58c333bc86`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.14s
+- **Memory:** Δ 0.4 MB, peak 9009.0 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:47:46.036093+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 22. faster-whisper / large-v3
+
+- **ID:** `0337e2992a39`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.04s
+- **Memory:** Δ 1.9 MB, peak 9010.9 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:47:58.591306+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 23. faster-whisper / large-v3
+
+- **ID:** `a5fb71c3e63b`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.10s
+- **Memory:** Δ 0.0 MB, peak 9010.9 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:48:11.213739+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 24. faster-whisper / large-v3
+
+- **ID:** `38751b579fbc`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.14s
+- **Memory:** Δ 0.1 MB, peak 9011.1 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:49:11.289063+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 25. faster-whisper / large-v3
+
+- **ID:** `2fd78317e1e2`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.20s
+- **Memory:** Δ 0.1 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:49:24.048875+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 26. faster-whisper / large-v3
+
+- **ID:** `2470acfca37a`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.23s
+- **Memory:** Δ 0.0 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:49:36.854048+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 27. faster-whisper / large-v3
+
+- **ID:** `f80167daa3fe`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.17s
+- **Memory:** Δ 0.0 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:49:49.612757+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 28. faster-whisper / large-v3
+
+- **ID:** `b2364dbdd456`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.35s
+- **Memory:** Δ 0.0 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:50:02.564868+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 29. faster-whisper / large-v3
+
+- **ID:** `76ac3fadf811`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.40s
+- **Memory:** Δ 0.0 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:50:15.580860+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 30. faster-whisper / large-v3
+
+- **ID:** `3fcf02717630`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.09s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 8
+- **Temperature:** 0.02
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:52:24.000772+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 31. faster-whisper / large-v3
+
+- **ID:** `d4eabfc68f72`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.56s
+- **Memory:** Δ 0.2 MB, peak 9011.7 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 25.18%
+- **CER:** 17.17%
+- **Timestamp:** 2026-01-07T13:53:27.302955+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 32. openai / large-v3
 
 - **ID:** `e75f351811ce`
 - **Language:** ru
@@ -706,7 +973,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я хочу посмотреть на вашу позицию. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Поколение минуты. Побудьте в ринге буквально минуту. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Да, дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержала. Я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то увидела, как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс, заседал. Послушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, то есть я потерял на этом 25 тысяч долларов, а тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто ревмус большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 22. openai / large-v3
+### 33. openai / large-v3
 
 - **ID:** `2c6061e6b8a8`
 - **Language:** ru
@@ -726,7 +993,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, Я к ним не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы мы Новый год встретили спокойно и не переживали, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется какой-нибудь прогноз? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Поколение минуты. Побудьте в дуэли буквально минуту. А, хорошо, хорошо. Спасибо. Продолжение следует... Спасибо. Продолжение следует... Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержала. Я как бы желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то увидела, как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс, заседал. Послушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, то есть я потерял на этом 25 тысяч долларов, а тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто ревмс большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 23. faster-whisper / large-v3
+### 34. faster-whisper / large-v3
 
 - **ID:** `0a2d260665bd`
 - **Language:** ru
@@ -746,7 +1013,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 24. faster-whisper / large-v3
+### 35. faster-whisper / large-v3
 
 - **ID:** `54940d6ce06a`
 - **Language:** ru
@@ -766,7 +1033,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 25. faster-whisper / large-v3
+### 36. faster-whisper / large-v3
 
 - **ID:** `730efbb39690`
 - **Language:** ru
@@ -786,7 +1053,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 26. faster-whisper / large-v3
+### 37. faster-whisper / large-v3
 
 - **ID:** `89aaa6eb27be`
 - **Language:** ru
@@ -806,7 +1073,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 27. faster-whisper / large-v3
+### 38. faster-whisper / large-v3
 
 - **ID:** `3ccfeb43ddd1`
 - **Language:** ru
@@ -826,7 +1093,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 28. faster-whisper / large-v3
+### 39. faster-whisper / large-v3
 
 - **ID:** `7a7fb002c367`
 - **Language:** ru
@@ -846,7 +1113,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть и опалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то... Ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла. Я прям в шоке была. У меня мертвый крыльц заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А я только что заходила, была 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Любое чуть-чуть, даже изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 29. faster-whisper / large-v3
+### 40. faster-whisper / large-v3
 
 - **ID:** `d0da0bfd9fb5`
 - **Language:** ru
@@ -866,7 +1133,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 30. faster-whisper / large-v3
+### 41. faster-whisper / large-v3
 
 - **ID:** `aafcc1ae0601`
 - **Language:** ru
@@ -886,7 +1153,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровой завис интернет, видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Да, слушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговался одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Что там, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не перерывали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Могу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы проневали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте в ринге буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю Никита второй раз такую позицию не выдержит. Я сама не выдержала. Желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я мертвый, срочно седал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть у меня, я поделал на этом двадцать пять тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, прыгай, сиди, не спринцуй. Это просто объем большой, поэтому любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также спасибо большое. До свидания.
 
-### 31. faster-whisper / large-v3
+### 42. faster-whisper / large-v3
 
 - **ID:** `f3f7ca2eff89`
 - **Language:** ru
@@ -906,7 +1173,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровые зависы интернет, видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали, прямо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, да, то есть будем уже смотреть по ситуации. То есть, будет до того, что там даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это конечно не минус 25. Да. Буквально минутку. Побыть на минутке буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду, что... Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, было 22. Да, приблизительно. Это просто объем большой, поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой Хорошо? Хорошо, в любое время Спасибо Спасибо вам большое И вас также, спасибо большое До свидания
 
-### 32. faster-whisper / large-v3
+### 43. faster-whisper / large-v3
+
+- **ID:** `a9f8f5a7b5ce`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.36s
+- **Memory:** Δ 0.7 MB, peak 9008.6 MB
+- **Beam size:** 1
+- **Temperature:** 0.23
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 6
+- **WER:** 25.28%
+- **CER:** 17.34%
+- **Timestamp:** 2026-01-07T13:47:33.387237+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 44. faster-whisper / large-v3
 
 - **ID:** `101cfa0c18b3`
 - **Language:** ru
@@ -926,7 +1213,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит. Интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 33. faster-whisper / large-v3
+### 45. faster-whisper / large-v3
 
 - **ID:** `55d999d616f8`
 - **Language:** ru
@@ -946,7 +1233,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 34. faster-whisper / large-v3
+### 46. faster-whisper / large-v3
 
 - **ID:** `cd8dba5a9436`
 - **Language:** ru
@@ -966,7 +1253,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он не умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. И у меня цифровой завист интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Да, у нас там… Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговался с одним брокером, там спреды вообще были сумасшедшие, и я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией и чтобы она дальше не пошла в минус. потому что я видел, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра ну вот, скорее всего, какие-то качели еще будут а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я мы с вами будем да, конечно, конечно меня попросили, то есть я, если что, являюсь руководителем Никиты я в целом работаю с миллионными счетами, да, то есть что там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно, и не переживали о том, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Смотрите, прогноз по Поэтому эта позиция более чем хорошая. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте на минутку. Буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прямо в шоке была, я мёртвый, срыс, расседался. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть, и у меня, я потерял на этом двадцать пять тысяч долларов. А тут, померь, для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, так что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, тем более, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, прибыли. Это просто объем большой, поэтому любое изменение цены сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 35. openai / large-v3
+### 47. openai / large-v3
 
 - **ID:** `084ab4446613`
 - **Language:** ru
@@ -986,7 +1273,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. У меня цифровые записи в интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус, и все в праздник. Самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Поколение минуты. Побудьте в ринге буквально минуту. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Да, дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержала. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то увидела, как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс, заседал. Послушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, то есть я потерял на этом 25 тысяч долларов, а тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто ревмус большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 36. faster-whisper / large-v3
+### 48. faster-whisper / large-v3
 
 - **ID:** `9785970473b7`
 - **Language:** ru
@@ -1006,7 +1293,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 37. faster-whisper / large-v3
+### 49. faster-whisper / large-v3
 
 - **ID:** `85d819f6eecf`
 - **Language:** ru
@@ -1026,7 +1313,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 38. faster-whisper / large-v3
+### 50. faster-whisper / large-v3
 
 - **ID:** `4190fdc0a30e`
 - **Language:** ru
@@ -1046,7 +1333,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 39. faster-whisper / large-v3
+### 51. faster-whisper / large-v3
 
 - **ID:** `20aab6c2800a`
 - **Language:** ru
@@ -1066,7 +1353,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 40. faster-whisper / large-v3
+### 52. faster-whisper / large-v3
 
 - **ID:** `221fb64cf3b8`
 - **Language:** ru
@@ -1086,7 +1373,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 41. faster-whisper / large-v3
+### 53. faster-whisper / large-v3
 
 - **ID:** `87fb90ee3e87`
 - **Language:** ru
@@ -1106,7 +1393,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 42. faster-whisper / large-v3
+### 54. faster-whisper / large-v3
 
 - **ID:** `2358e0e43d27`
 - **Language:** ru
@@ -1126,7 +1413,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 43. faster-whisper / large-v3
+### 55. faster-whisper / large-v3
 
 - **ID:** `501749899324`
 - **Language:** ru
@@ -1146,7 +1433,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 44. faster-whisper / large-v3
+### 56. faster-whisper / large-v3
 
 - **ID:** `5f82b79c31ed`
 - **Language:** ru
@@ -1166,7 +1453,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 45. faster-whisper / large-v3
+### 57. faster-whisper / large-v3
 
 - **ID:** `380320b57e29`
 - **Language:** ru
@@ -1186,7 +1473,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 46. faster-whisper / large-v3
+### 58. faster-whisper / large-v3
 
 - **ID:** `0be24b49eada`
 - **Language:** ru
@@ -1206,7 +1493,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 47. faster-whisper / large-v3
+### 59. faster-whisper / large-v3
 
 - **ID:** `80452d4bb413`
 - **Language:** ru
@@ -1226,7 +1513,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 48. faster-whisper / large-v3
+### 60. faster-whisper / large-v3
 
 - **ID:** `e57ae25af412`
 - **Language:** ru
@@ -1246,7 +1533,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 49. faster-whisper / large-v3
+### 61. faster-whisper / large-v3
 
 - **ID:** `9143fff9029a`
 - **Language:** ru
@@ -1266,7 +1553,227 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 50. faster-whisper / large-v3
+### 62. faster-whisper / large-v3
+
+- **ID:** `02cac3bcf391`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.99s
+- **Memory:** Δ 4.9 MB, peak 3363.0 MB
+- **Beam size:** 1
+- **Temperature:** 0.15
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:45:34.966216+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 63. faster-whisper / large-v3
+
+- **ID:** `260fac5f2e36`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.90s
+- **Memory:** Δ 0.3 MB, peak 3363.3 MB
+- **Beam size:** 1
+- **Temperature:** 0.17
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:45:58.781614+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 64. faster-whisper / large-v3
+
+- **ID:** `cf305c0f5c8f`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.72s
+- **Memory:** Δ 6.1 MB, peak 9007.1 MB
+- **Beam size:** 1
+- **Temperature:** 0.03
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:47:07.888423+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 65. faster-whisper / large-v3
+
+- **ID:** `6b55e6032434`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.80s
+- **Memory:** Δ 0.0 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.02
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:50:42.140588+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 66. faster-whisper / large-v3
+
+- **ID:** `d2a8c36991d1`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.46s
+- **Memory:** Δ 0.0 MB, peak 9011.4 MB
+- **Beam size:** 8
+- **Temperature:** 0.02
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:51:16.833360+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 67. faster-whisper / large-v3
+
+- **ID:** `aeffe6331bac`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 12.34s
+- **Memory:** Δ 0.0 MB, peak 9011.4 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 2
+- **WER:** 25.48%
+- **CER:** 17.34%
+- **Timestamp:** 2026-01-07T13:51:32.860489+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 68. faster-whisper / large-v3
+
+- **ID:** `d50a16117edc`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.36s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:51:56.595496+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 69. faster-whisper / large-v3
+
+- **ID:** `98e6c3cda24d`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 12.04s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 2
+- **WER:** 25.48%
+- **CER:** 17.34%
+- **Timestamp:** 2026-01-07T13:52:39.790569+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 70. faster-whisper / large-v3
+
+- **ID:** `2e9f13569caf`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.67s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 8
+- **Temperature:** 0.04
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:53:13.934563+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 71. faster-whisper / large-v3
+
+- **ID:** `8421b3751828`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 12.55s
+- **Memory:** Δ 0.0 MB, peak 9011.7 MB
+- **Beam size:** 8
+- **Temperature:** 0.18
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 2
+- **WER:** 25.48%
+- **CER:** 17.34%
+- **Timestamp:** 2026-01-07T13:53:43.669499+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 72. faster-whisper / large-v3
+
+- **ID:** `8b572bc33342`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.96s
+- **Memory:** Δ 0.8 MB, peak 9012.4 MB
+- **Beam size:** 8
+- **Temperature:** 0.03
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 25.48%
+- **CER:** 17.45%
+- **Timestamp:** 2026-01-07T13:53:56.450140+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. Ну, я хочу ответить. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 73. faster-whisper / large-v3
 
 - **ID:** `e2f9c4248000`
 - **Language:** ru
@@ -1286,7 +1793,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прощение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс заседал. Ну, слушайте, вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 51. faster-whisper / large-v3
+### 74. faster-whisper / large-v3
 
 - **ID:** `cb758be17928`
 - **Language:** ru
@@ -1306,7 +1813,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы, мне объяснил. И я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровой завис интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он не открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Вы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. Я тогда открыл вместо 5 лотов случайно 50. Получилось так, что я торговался одним брокером, там спреды вообще были сумасшедшие и я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было вывозить деньги как раз, потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже, да, то есть, тут... Я брала опять этот, как его, как его называют... Авантор инвестиций, я вижу. Да, да. Объединенный депозит, да, я вижу. Смотрите, то есть, у вас, по факту, как я вижу, другого выбора и не было, то есть, у вас был выбор либо потерять, да, то есть, из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть, и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть, просто надо будет наблюдать, да, то есть, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус две, минус тысячу идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидите, то, да, то есть, может быть, придется чуть-чуть пожертвовать, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует. Продолжение следует... Спасибо. Да, прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не веду, что... Я, как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не вспомнила, я прям в шоке была, я мертвый, срыс, заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть, и у меня я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, была 22. Да, примерно. Это просто объем большой, поэтому любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 52. faster-whisper / large-v3
+### 75. faster-whisper / large-v3
 
 - **ID:** `f15777eda603`
 - **Language:** ru
@@ -1326,7 +1833,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. И у меня цифровые записи интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь я могу его... Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть будет до того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит... Да, то есть может быть придется чуть-чуть пожертвовать и да, то есть, ну, на крайней мере чтобы не было такого, что Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый хрыс проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, было 22. Да, прыгает, но это просто объем большой, поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить, то есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться, меня еще раз зовут Александр, я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое.
 
-### 53. faster-whisper / large-v3
+### 76. faster-whisper / large-v3
 
 - **ID:** `e2f5adea3ad9`
 - **Language:** ru
@@ -1346,7 +1853,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прощение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс заседал. Ну, слушайте, вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 54. openai / large-v3
+### 77. openai / large-v3
 
 - **ID:** `feae3e904e91`
 - **Language:** ru
@@ -1366,7 +1873,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть и опалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то... Ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла. Я прям в шоке была. У меня мертвый крыльц заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А я только что заходила, была 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Любое чуть-чуть, даже изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 55. faster-whisper / large-v3
+### 78. faster-whisper / large-v3
 
 - **ID:** `00ce7cbbfa48`
 - **Language:** ru
@@ -1386,7 +1893,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прощение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс заседал. Ну, слушайте, вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 56. faster-whisper / large-v3
+### 79. faster-whisper / large-v3
 
 - **ID:** `e07bd44ac941`
 - **Language:** ru
@@ -1406,7 +1913,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прощение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс заседал. Ну, слушайте, вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 57. faster-whisper / large-v3
+### 80. faster-whisper / large-v3
 
 - **ID:** `1a233bf03812`
 - **Language:** ru
@@ -1426,7 +1933,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прощение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс заседал. Ну, слушайте, вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 58. faster-whisper / large-v3
+### 81. faster-whisper / large-v3
 
 - **ID:** `1b4464d07236`
 - **Language:** ru
@@ -1446,7 +1953,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прощение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый крыс заседал. Ну, слушайте, вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично аксел позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 59. faster-whisper / large-v3
+### 82. faster-whisper / large-v3
 
 - **ID:** `88cbd01ef3c9`
 - **Language:** ru
@@ -1466,7 +1973,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умеет. Не, умеет, умеет. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в баржу. Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые зависы интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. Вот, и получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра ну вот, скорее всего, какие-то качели еще будут а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я мы с вами будем да, конечно, конечно меня попросили, то есть я, если что, являюсь руководителем Никиты я в целом работаю с миллионными счетами, да, то есть что там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно, и не переживали что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Могу я его? Смотрите, прогноз по этой позиции более чем хорошей. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус, или в ноль, да, то есть будем уже смотреть по ситуации. То есть будет до того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидите... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Ну да. Да. Буквально минутку, по бытию длины буквально минутку. А, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... По поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержала. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то увидела, как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый хрыс заседал. Послушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, то есть я потерял на этом 25 тысяч долларов, а тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто прыгает. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 60. faster-whisper / large-v3
+### 83. faster-whisper / large-v3
 
 - **ID:** `b03460d07973`
 - **Language:** ru
@@ -1486,7 +1993,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть и опалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то... Ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла. Я прям в шоке была. У меня мертвый крыльц заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А я только что заходила, была 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Любое изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 61. faster-whisper / large-v3
+### 84. faster-whisper / large-v3
 
 - **ID:** `2549bcd982f3`
 - **Language:** ru
@@ -1506,7 +2013,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть и опалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то... Ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла. Я прям в шоке была. У меня мертвый крыльц заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А я только что заходила, была 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Любое чуть-чуть, даже изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 62. faster-whisper / large-v3
+### 85. faster-whisper / large-v3
 
 - **ID:** `7c34dd0add13`
 - **Language:** ru
@@ -1526,7 +2033,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 63. faster-whisper / large-v3
+### 86. faster-whisper / large-v3
 
 - **ID:** `8ad2ebafe336`
 - **Language:** ru
@@ -1546,7 +2053,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 64. faster-whisper / large-v3
+### 87. faster-whisper / large-v3
 
 - **ID:** `561ce14e04f9`
 - **Language:** ru
@@ -1566,7 +2073,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 65. faster-whisper / large-v3
+### 88. faster-whisper / large-v3
 
 - **ID:** `bba175284cdc`
 - **Language:** ru
@@ -1586,7 +2093,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 66. faster-whisper / large-v3
+### 89. faster-whisper / large-v3
 
 - **ID:** `73bd9045ce7a`
 - **Language:** ru
@@ -1606,7 +2113,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 67. faster-whisper / large-v3
+### 90. faster-whisper / large-v3
 
 - **ID:** `38947b4f20e4`
 - **Language:** ru
@@ -1626,7 +2133,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 68. faster-whisper / large-v3
+### 91. faster-whisper / large-v3
 
 - **ID:** `1fb020b8c7c3`
 - **Language:** ru
@@ -1646,7 +2153,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. И мне цепь завис, интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь я могу его... Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется закрыть в небольшом минусе. Но если это увидит... Да, то есть может быть придется чуть-чуть пожертвовать и, да, то есть, ну, на крайней мере чтобы не было такого, что Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не веду, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не помню, но я прям в шоке была, у меня мертвый крыс проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 8... А уже, а я только что заходила, было 22. Да, прыгает 23. Ну, это просто рывок большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 69. faster-whisper / large-v3
+### 92. faster-whisper / large-v3
 
 - **ID:** `03bd1b2e5b49`
 - **Language:** ru
@@ -1666,7 +2173,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 70. faster-whisper / large-v3
+### 93. faster-whisper / large-v3
 
 - **ID:** `d056cbe6b648`
 - **Language:** ru
@@ -1686,7 +2193,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 71. faster-whisper / large-v3
+### 94. faster-whisper / large-v3
 
 - **ID:** `40bd05390142`
 - **Language:** ru
@@ -1706,7 +2213,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 72. faster-whisper / large-v3
+### 95. faster-whisper / large-v3
 
 - **ID:** `ad47c68f7332`
 - **Language:** ru
@@ -1726,7 +2233,147 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 73. faster-whisper / large-v3
+### 96. faster-whisper / large-v3
+
+- **ID:** `8e32448d6850`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 10.20s
+- **Memory:** Δ 0.8 MB, peak 9007.9 MB
+- **Beam size:** 3
+- **Temperature:** 0.36
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 25.88%
+- **CER:** 17.65%
+- **Timestamp:** 2026-01-07T13:47:21.547612+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 97. faster-whisper / large-v3
+
+- **ID:** `44c328bf70d5`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 10.50s
+- **Memory:** Δ 0.0 MB, peak 9011.2 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 25.88%
+- **CER:** 17.65%
+- **Timestamp:** 2026-01-07T13:50:29.701205+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 98. faster-whisper / large-v3
+
+- **ID:** `e9433501030e`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 10.94s
+- **Memory:** Δ 0.1 MB, peak 9011.4 MB
+- **Beam size:** 8
+- **Temperature:** 0.02
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 25.88%
+- **CER:** 17.65%
+- **Timestamp:** 2026-01-07T13:51:03.700008+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 99. faster-whisper / large-v3
+
+- **ID:** `bca582697bf2`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 10.84s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 8
+- **Temperature:** 0.02
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 25.88%
+- **CER:** 17.65%
+- **Timestamp:** 2026-01-07T13:52:11.165327+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 100. faster-whisper / large-v3
+
+- **ID:** `4e4db9be3caf`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 10.88s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 8
+- **Temperature:** 0.00
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 25.88%
+- **CER:** 17.65%
+- **Timestamp:** 2026-01-07T13:52:54.422113+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Извращение. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 101. openai / large-v3
+
+- **ID:** `3fc61c5896a9`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 47.43s
+- **Memory:** Δ 5637.4 MB, peak 9001.3 MB
+- **Beam size:** 1
+- **Temperature:** 0.14
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 26.08%
+- **CER:** 18.52%
+- **Timestamp:** 2026-01-07T13:46:55.670233+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровой завист интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Ой, Новый год! встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь, да, мы смогу его... Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть, будет до того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один это, конечно, не минус 25. Да. Буквально минутку. Побудьте буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае Приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не помню, а я прям в шоке была. У меня мёртвый хрыс заседал. Вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, и я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто рев большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Спасибо. До свидания. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 102. openai / large-v3
+
+- **ID:** `95eaac9cea03`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 43.80s
+- **Memory:** Δ 0.0 MB, peak 9010.9 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 26.08%
+- **CER:** 18.13%
+- **Timestamp:** 2026-01-07T13:48:58.547804+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я хочу посмотреть на вашу позицию. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. То есть просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть и опалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то... Ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла. Я прям в шоке была. У меня мертвый крыльц заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А я только что заходила, была 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Любое изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
+
+### 103. faster-whisper / large-v3
 
 - **ID:** `89f685b949ea`
 - **Language:** ru
@@ -1746,7 +2393,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит. Интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 74. faster-whisper / large-v3
+### 104. faster-whisper / large-v3
 
 - **ID:** `5de23f1cc8ac`
 - **Language:** ru
@@ -1766,7 +2413,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Да, у нас там… Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что у меня, как бы я торговался с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусы, и мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть, и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, если пик у меня закроется, как-нибудь прогноз смогу я взять? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть, просто надо будет наблюдать, да, то есть, чтобы не было, не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть, будет до того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит в курсе, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один это, конечно, не минус 25. Да. Буквально минутку. Побудьте буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложившие усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержала. Я как-то желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не помню, а я прям в шоке была. У меня мертвый срыв, я сидела. Послушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто рывок большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 75. faster-whisper / large-v3
+### 105. faster-whisper / large-v3
 
 - **ID:** `5c728dd70a87`
 - **Language:** ru
@@ -1786,7 +2433,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит. Интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 76. faster-whisper / large-v3
+### 106. faster-whisper / large-v3
 
 - **ID:** `7c27278a89cd`
 - **Language:** ru
@@ -1806,7 +2453,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минус. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь я могу его... Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть будет до того, что там, даже если я буду видеть, что сделка там минус две, минус тысячу идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется закрыть в небольшом минусе. Но если это увидит... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Понял, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, была 22. Да, прыгает. У меня 23. Ну, это просто ревмус большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 77. faster-whisper / large-v3
+### 107. faster-whisper / large-v3
 
 - **ID:** `c3b7dfe4d2f1`
 - **Language:** ru
@@ -1826,7 +2473,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Да-да-да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Присмотрелся на твиттер, то есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умеет. Не, умеет, умеет. Мне просто надо... Он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в баржу. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, как бы, мне объяснил. И я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровой завис интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все, у нас само... Слушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и я даже не обратил внимания, я захожу после обеда, на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не перерывали, прямо от того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, да, то есть будем уже смотреть по ситуации. То есть, будет до того, что там даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я Минус один это Конечно не минус 25 Да Буквально минутку Побудьте две буквально минутку А хорошо хорошо Спасибо. Продолжение следует... Продолжение следует... Продолжение следует... Да, прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду, что... Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс проседал. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть у меня, я потеряла на этом двадцать пять тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже, а я только что заходила, было 22. Да, прыгай, прыгай, прыгай. Это просто объем большой, поэтому любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой Хорошо? Хорошо, в любое время Спасибо Спасибо вам большое И вас также, спасибо большое До свидания
 
-### 78. faster-whisper / large-v3
+### 108. faster-whisper / large-v3
 
 - **ID:** `cf5fb06d66b6`
 - **Language:** ru
@@ -1846,7 +2493,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Присмотрелся на твиттер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умеет. Не, умеет, умеет. Мне просто надо... Он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу... Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все, у нас само... Вы на самом деле отделались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. Я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз. Потому что, ну, и получается, что просто вот все время... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть, тут... Я брала опять этот, как его, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Так вот, скорее всего, какие-то качели еще будут. я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию. Потому что у нас, по факту, будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидеть, то... Да, то есть, может быть, придётся чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Ну да. Да. А буквально минутку, побудьте в виде буквально минутки. А, хорошо, хорошо. Продолжение следует... Спасибо. Субтитры создавал DimaTorzok Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. То есть будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду, что... Я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мертвый срыв заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже, а я только что заходила, была 22. Да, прыгает. У меня там еще 30. Ну, это просто прыгает. Большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем, хорошо? Спасибо вам большое. Да, всё, Ольга, тогда приятно было с вами познакомиться. Меня ещё раз зовут Александр. Я вас наберу ещё после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Спасибо, до свидания. Спасибо вам большое и вас также. Спасибо большое. До свидания.
 
-### 79. faster-whisper / large-v3
+### 109. faster-whisper / large-v3
 
 - **ID:** `22b8f021bf7a`
 - **Language:** ru
@@ -1866,7 +2513,7 @@
 
 > Алло. Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все, у нас само... Послушайте, мы, на самом деле, делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз. Потому что, ну, и получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть, тут... Я брала опять этот, как его, как его называют? Авантор инвестиций, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Так вот, скорее всего, какие-то качели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что инфекция у меня закроется как-нибудь, да, мы смогли его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть, вот для того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть и дальше уже просто ну будьте более внимательны, когда будете открывать, потому что я думаю Никита второй раз такую позицию не выдержит. И я сама не лидерство. Я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мертвый крыс заседал. Послушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто рывок большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть, не пугайтесь, мы под контролем. Хорошо? Ага, спасибо вам большое. Да. Всё, Ольга, тогда приятно было с вами познакомиться. Меня ещё раз зовут Александр. Я вас наберу ещё после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. До свидания. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 80. faster-whisper / large-v3
+### 110. faster-whisper / large-v3
 
 - **ID:** `77ec96391417`
 - **Language:** ru
@@ -1886,7 +2533,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все, у нас само... Вы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Смогу я его? Прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, может быть, придется чуть-чуть пожертвовать, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не веду, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить, научиться. Это точно. Ну, желательно не наступать на них, конечно. Ну, раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мертвый срыв, я сидела. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят. Да, то есть у меня, я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Пошли, Тима. Тем более, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, было 22. Да, прыгает. У меня 23. Ну, это просто ревмус большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 81. faster-whisper / large-v3
+### 111. faster-whisper / large-v3
 
 - **ID:** `1aaa78504338`
 - **Language:** ru
@@ -1906,7 +2553,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 82. faster-whisper / large-v3
+### 112. faster-whisper / large-v3
 
 - **ID:** `c021ddf58eed`
 - **Language:** ru
@@ -1926,7 +2573,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 83. faster-whisper / large-v3
+### 113. faster-whisper / large-v3
 
 - **ID:** `3844e40b6866`
 - **Language:** ru
@@ -1946,7 +2593,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 84. faster-whisper / large-v3
+### 114. faster-whisper / large-v3
 
 - **ID:** `3a413913a185`
 - **Language:** ru
@@ -1966,7 +2613,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 85. faster-whisper / large-v3
+### 115. faster-whisper / large-v3
 
 - **ID:** `eede909abe76`
 - **Language:** ru
@@ -1986,7 +2633,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 86. faster-whisper / large-v3
+### 116. faster-whisper / large-v3
 
 - **ID:** `93f0f60086cc`
 - **Language:** ru
@@ -2006,7 +2653,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 87. faster-whisper / large-v3
+### 117. faster-whisper / large-v3
 
 - **ID:** `37e6f5a00afa`
 - **Language:** ru
@@ -2026,7 +2673,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигаться буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 88. faster-whisper / large-v3
+### 118. faster-whisper / large-v3
 
 - **ID:** `134d5ebe5ec6`
 - **Language:** ru
@@ -2046,7 +2693,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 89. faster-whisper / large-v3
+### 119. faster-whisper / large-v3
 
 - **ID:** `6b6066d959b8`
 - **Language:** ru
@@ -2066,7 +2713,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 90. faster-whisper / large-v3
+### 120. faster-whisper / large-v3
 
 - **ID:** `164b4a6daf50`
 - **Language:** ru
@@ -2086,7 +2733,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 91. faster-whisper / large-v3
+### 121. faster-whisper / large-v3
 
 - **ID:** `1a1177972b49`
 - **Language:** ru
@@ -2106,7 +2753,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 92. faster-whisper / large-v3
+### 122. faster-whisper / large-v3
 
 - **ID:** `d9ffa9753415`
 - **Language:** ru
@@ -2126,7 +2773,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 93. faster-whisper / large-v3
+### 123. faster-whisper / large-v3
 
 - **ID:** `0bc8ec5e5b23`
 - **Language:** ru
@@ -2146,7 +2793,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 94. faster-whisper / large-v3
+### 124. faster-whisper / large-v3
 
 - **ID:** `23790a0f6042`
 - **Language:** ru
@@ -2166,7 +2813,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было вывозить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигаться буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 95. faster-whisper / large-v3
+### 125. faster-whisper / large-v3
 
 - **ID:** `73cc68ce21a9`
 - **Language:** ru
@@ -2186,7 +2833,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 96. faster-whisper / large-v3
+### 126. faster-whisper / large-v3
 
 - **ID:** `8ac002a21d5a`
 - **Language:** ru
@@ -2206,7 +2853,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 97. faster-whisper / large-v3
+### 127. faster-whisper / large-v3
 
 - **ID:** `e8a5d01e3140`
 - **Language:** ru
@@ -2226,7 +2873,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 98. faster-whisper / large-v3
+### 128. faster-whisper / large-v3
 
 - **ID:** `73efa7fb52a5`
 - **Language:** ru
@@ -2246,7 +2893,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 99. faster-whisper / large-v3
+### 129. faster-whisper / large-v3
 
 - **ID:** `ce42d7f0ef38`
 - **Language:** ru
@@ -2266,7 +2913,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 100. faster-whisper / large-v3
+### 130. faster-whisper / large-v3
 
 - **ID:** `ef5e4b272cee`
 - **Language:** ru
@@ -2286,7 +2933,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 101. faster-whisper / large-v3
+### 131. faster-whisper / large-v3
 
 - **ID:** `11d017f649ea`
 - **Language:** ru
@@ -2306,7 +2953,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 102. faster-whisper / large-v3
+### 132. faster-whisper / large-v3
 
 - **ID:** `0aa88b06ce93`
 - **Language:** ru
@@ -2326,7 +2973,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 103. faster-whisper / large-v3
+### 133. faster-whisper / large-v3
 
 - **ID:** `cb0521c3c528`
 - **Language:** ru
@@ -2346,7 +2993,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 104. faster-whisper / large-v3
+### 134. faster-whisper / large-v3
 
 - **ID:** `016ee0615223`
 - **Language:** ru
@@ -2366,7 +3013,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 105. faster-whisper / large-v3
+### 135. faster-whisper / large-v3
 
 - **ID:** `a0450104bbb7`
 - **Language:** ru
@@ -2386,7 +3033,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 106. faster-whisper / large-v3
+### 136. faster-whisper / large-v3
 
 - **ID:** `fc3ede8a7c34`
 - **Language:** ru
@@ -2406,7 +3053,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 107. faster-whisper / large-v3
+### 137. faster-whisper / large-v3
 
 - **ID:** `4571a468422a`
 - **Language:** ru
@@ -2426,7 +3073,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 108. faster-whisper / large-v3
+### 138. faster-whisper / large-v3
 
 - **ID:** `f368e1ef786c`
 - **Language:** ru
@@ -2446,7 +3093,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 109. faster-whisper / large-v3
+### 139. faster-whisper / large-v3
 
 - **ID:** `24eb8f62029a`
 - **Language:** ru
@@ -2466,7 +3113,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 110. faster-whisper / large-v3
+### 140. faster-whisper / large-v3
 
 - **ID:** `05e418d94842`
 - **Language:** ru
@@ -2486,7 +3133,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Да, у нас там… Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что у меня, как бы я торговался одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не перерывали, прямо от того, что что-то будет не так. Можно вопрос? А вы думаете, что если у меня закроется какой-нибудь прогноз? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. то есть будем уже смотреть по ситуации. То есть, вот до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Спасибо. Продолжение следует... Спасибо. Продолжение следует... Да, прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый хрыс проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть, и у меня, я потерял на этом двадцать пять тысяч долларов. А то, померли, у меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Слушай, пока мы говорили с вами, уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, прыгает, если не сотрясая. Это просто объем большой, поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой Хорошо? Хорошо, в любое время Спасибо Спасибо вам большое И вас также, спасибо большое До свидания
 
-### 111. faster-whisper / large-v3
+### 141. faster-whisper / large-v3
 
 - **ID:** `8c6e69dfb8a5`
 - **Language:** ru
@@ -2506,7 +3153,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. Я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговался одним брокером, там спреды вообще были сумасшедшие, и я даже не обратил внимание, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли. капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я права опять, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я к счетам не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что если петлю у меня закроется, как-нибудь проноюсь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы пронивали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Ну да. Да. Буквально минутку, побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мертвый крыльц заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 112. faster-whisper / large-v3
+### 142. faster-whisper / large-v3
 
 - **ID:** `33a95b95f7be`
 - **Language:** ru
@@ -2526,7 +3173,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 113. faster-whisper / large-v3
+### 143. faster-whisper / large-v3
 
 - **ID:** `0300a71c8a55`
 - **Language:** ru
@@ -2546,7 +3193,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 114. faster-whisper / large-v3
+### 144. faster-whisper / large-v3
 
 - **ID:** `d47adabc9c79`
 - **Language:** ru
@@ -2566,7 +3213,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 115. faster-whisper / large-v3
+### 145. faster-whisper / large-v3
 
 - **ID:** `b3b762765027`
 - **Language:** ru
@@ -2586,7 +3233,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 116. faster-whisper / large-v3
+### 146. faster-whisper / large-v3
 
 - **ID:** `1c8864a7f4c4`
 - **Language:** ru
@@ -2606,7 +3253,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 117. faster-whisper / large-v3
+### 147. faster-whisper / large-v3
 
 - **ID:** `3f62fae7aa0b`
 - **Language:** ru
@@ -2626,7 +3273,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 118. faster-whisper / large-v3
+### 148. faster-whisper / large-v3
 
 - **ID:** `98f9cc8fb31e`
 - **Language:** ru
@@ -2646,7 +3293,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 119. faster-whisper / large-v3
+### 149. faster-whisper / large-v3
 
 - **ID:** `a2037a1653e4`
 - **Language:** ru
@@ -2666,7 +3313,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все. То есть он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его... Авансовая инвестиция, вижу. Да, да. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали как-то прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, приблизительно. У меня там еще 2, ну, 2,3. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 120. faster-whisper / large-v3
+### 150. faster-whisper / large-v3
 
 - **ID:** `3d751037cf9f`
 - **Language:** ru
@@ -2686,7 +3333,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровые зависы интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговался одним брокером, там спреды вообще были сумасшедшие, и я даже не обратил внимания я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся, и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я права опять, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что-то являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Ой, Новый год встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь, да, ну, смогу я его... Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Ну да. Да. Буквально минутку, побудьте на минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Продолжение следует... Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю Никита второй раз такую позицию не выдержит. Я сама не выдержала. Желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я мертвый, срочно седал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня я подделал на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, было 22. Да, прыгай, сиди, не спрятайся. Это просто объем большой, поэтому любое изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также спасибо большое. До свидания.
 
-### 121. faster-whisper / large-v3
+### 151. faster-whisper / large-v3
 
 - **ID:** `718075e4cf43`
 - **Language:** ru
@@ -2706,7 +3353,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да. Здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она осталась на ноль, чтобы не закрывать. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровой завис интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад, то есть я тогда открыл вместо 5, вот он случайно 50, вот, и получилось так, что у меня, как бы я торговался одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда, На свой торговый аккаунт у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусы. И мне надо было выводить деньги как раз. Потому что, ну... И получается, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять четко, как его называют. Аванс инвестиций вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное, сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я, в целом, работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь, да? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль. Будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я. Минус 1 это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Да, прошу прощения. Да, поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то... Ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие. И смотрю, я не поняла, я прям в шоке была. И я быстро их рассчитал. Послушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозиций вместо 5 лотов на 50, да, то есть, и у меня я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы это была прибыль. Для меня это тоже скажем, тем более, тем более у меня была уже пока мы говорили с вами уже 17,718. А я только что заходила, была 22. Да, прыгает. Ну, это просто бьет. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 122. faster-whisper / large-v3
+### 152. faster-whisper / large-v3
 
 - **ID:** `4f43d3313343`
 - **Language:** ru
@@ -2726,7 +3373,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все, у нас само... Слушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусах. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра ну вот, скорее всего, какие-то качели еще будут а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я мы с вами будем да, конечно, конечно меня попросили, то есть я, если что, являюсь руководителем Никиты я в целом работаю с миллионными счетами, да, то есть что там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно, и не переживали о том, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть, просто надо будет наблюдать, да, то есть, чтобы не было, не было такого, что мы прозевали эту позицию, потому что у нас, по факту, будет буквально одна попытка закрыть эту позицию, там, в минимальный плюс или в минимальный минус или в ноль, да, то есть, будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Да. Буквально минутку, по бытию длины буквально минутку. А, хорошо, хорошо. Спасибо. Продолжение следует... Спасибо. Спасибо. Продолжение следует... она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что Я думаю, Никита второй раз такой позиции не выдержит. Я сама не выдержала. Я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я в этой ситуации начинал. Послушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже, а я только что заходила, была 22. Да, прыгает. У меня там еще 30, ну, это просто рюкзак большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, мы под контролем. Хорошо? Спасибо вам большое. Да, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо. Продолжение следует...
 
-### 123. faster-whisper / large-v3
+### 153. faster-whisper / large-v3
 
 - **ID:** `257701c6ca0f`
 - **Language:** ru
@@ -2746,7 +3393,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он и умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровые записи в интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само... Да, слушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся, и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять, как его называют. Авантор инвестиций вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь, да? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка идет в минус минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Я понимаю, я... Минус 1, это, конечно, не минус 25. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Поэтому смотрите, по поводу вашей ситуации еще раз не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый сыр проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, прыгает. У меня 23. Ну, это просто ревмус большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 124. faster-whisper / large-v3
+### 154. faster-whisper / large-v3
 
 - **ID:** `4b5001c53338`
 - **Language:** ru
@@ -2766,7 +3413,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровые зависы интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что в инфекции у меня закроется какой-нибудь прогноз? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас, по факту, будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится, то, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не веду, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Ну, раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не вспомнила, я прям в шоке была. У меня мертвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят. Да, то есть у меня я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 8... А уже, а я только что заходила, было 22. Да, прыгает. У меня 23. Ну, это просто ревмус большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 125. openai / large-v3
+### 155. openai / large-v3
 
 - **ID:** `4a8b7809fa11`
 - **Language:** ru
@@ -2786,7 +3433,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она осталась на 0, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил. И я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые записи интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минус, и все в праздник. Самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я видел, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да. Ага. Чего там, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как-нибудь поможет? Могу я его? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Побудьте в ринге буквально минутку. А, хорошо, хорошо. Спасибо. Продолжение следует... Спасибо. Продолжение следует... Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду, что… Желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не вспомнила, я прям в шоке была, у меня мертвый хрыс проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, Да, то есть у меня я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, прыгает. У меня 23. Это просто рюмка большая. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 126. faster-whisper / large-v3
+### 156. faster-whisper / large-v3
 
 - **ID:** `8f187a77edfa`
 - **Language:** ru
@@ -2806,7 +3453,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга. Представлюсь. Меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он не умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. И мне цепь завис, интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз. Потому что, ну, и получается, что просто вот все время... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что инфекция у меня закроется как-нибудь, да, ну, смогу я его? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть, вот для того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидите, то, может быть, придется чуть-чуть пожертвовать, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побудьте на минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый хрыс заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть, и у меня, я потерял на этом двадцать пять тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти двадцать пять, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, прыгает. У меня там еще 3, ну, 2,3. Большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое Да, все, Ольга, тогда приятно было с вами познакомиться Меня еще раз зовут Александр Я вас наберу еще после обеда И проверим, что с вашей сделкой, хорошо? Хорошо, в любое время Да, спасибо Спасибо вам большое И вас также, спасибо большое До свидания
 
-### 127. faster-whisper / large-v3
+### 157. faster-whisper / large-v3
 
 - **ID:** `fdfb2cf70ad1`
 - **Language:** ru
@@ -2826,7 +3473,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрут? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровые записи в интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, то есть из-за ошибки, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что, в любом случае, вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если кто-то у меня закроется, как -нибудь, да, мы смогли его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было, не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Спасибо. Да, прошу прощения. Да, поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не вспомнила, я прям в шоке была. Я мертвый, срыт, заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть у меня я подделал на этом двадцать пять тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, примерно. У меня там есть ответ. Это просто объем большой. Поэтому там любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также спасибо большое. До свидания.
 
-### 128. faster-whisper / large-v3
+### 158. faster-whisper / large-v3
+
+- **ID:** `cd1bfe644535`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 21.81s
+- **Memory:** Δ -0.0 MB, peak 2703.0 MB
+- **Beam size:** 8
+- **Temperature:** 0.03
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 26.98%
+- **CER:** 18.56%
+- **Timestamp:** 2026-01-07T13:41:39.516520+00:00
+
+**Text:**
+
+> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она осталась на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровые зависы интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все, у нас само... Вы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусом. И мне надо было вывозить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не перерывали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если петух у меня закроется, как-нибудь поможет? Смогу я его? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Ну да. Да. Буквально минутку, побудьте на минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Продолжение следует... Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто ну, будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, Ну раз уже страх получился, я конечно была сразу в шоке. Я когда-то увидела, как вы говорите, я начала закрывать другие, смотрю, я не вспомнила, я прям в шоке была, у меня мёртвый срыт, заседал. Ну слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицирую вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, было 22. Да, прибыли. Ну, я не хочу трескать. Это просто объем большой, поэтому любое изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть, не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также спасибо большое. До свидания.
+
+### 159. faster-whisper / large-v3
 
 - **ID:** `4b5f1c29ad97`
 - **Language:** ru
@@ -2846,7 +3513,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она осталась на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровой завис интернет, видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Вы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили. То есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не перерывали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что если петух у меня закроется, как-нибудь поможет? Смогу я его? Прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется закрыть в небольшом минусе. Но если это увидится, то, может быть, придется чуть-чуть пожертвовать, на крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не веду, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не вспомнила, я прям в шоке была. У меня мертвый хрыс заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Пошли тем более. Тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 818. А уже, а я только что заходила, было 22. Да, прыгает. У меня 23. Ну, это просто ревмус большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 129. faster-whisper / large-v3
+### 160. faster-whisper / large-v3
 
 - **ID:** `26230f943914`
 - **Language:** ru
@@ -2866,7 +3533,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29. Ай-яй-яй, я понял. Мне цепь зависит. Интернет видно. И я набирала. И это у меня хорошо произошло. Потому что он мне открывает. Я умею открывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо. Второй раз сделала хорошо. А это где-то у меня... Короче, я еще не готова была. Сама сама. Мы, на самом деле, делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговался с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусы, и мне надо было вывозить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют? Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть то, что вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я, мы с вами будем... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. Можно вопрос? А вы думаете, что если пункт у меня закроется, как-нибудь, да, ну, смогу я его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть, вот до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус 1 это, конечно, не минус 25. Да. Буквально минутку. Побудьте, говорите, буквально минутку. А, хорошо, хорошо. Спасибо. Продолжение следует... Субтитры создавал DimaTorzok Субтитры создавал DimaTorzok Я прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не помню, а я прям в шоке была, у меня мёртвый хрыс на седал. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня я потеряла на этом 25 тысяч долларов. А тут по мне для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я пока, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 8... А уже, а я только что заходила, была 22. Да, прыгает. У меня 22, но это просто въем большой. Поэтому там любое чувство, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 130. faster-whisper / large-v3
+### 161. faster-whisper / large-v3
 
 - **ID:** `8fd1b9516385`
 - **Language:** ru
@@ -2886,7 +3553,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Не, он не умеет. Мне просто надо... Он сказал, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу... Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровой завис интернет, видно, и я вот набирала, и, короче, вот это вот у меня как-то ошибка произошла. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, мы, на самом деле, делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называется. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позицией и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просапка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Ой, Новый год! встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. А можно вопрос? А Вы думаете, что если кто-то у меня закроется, как-нибудь, да, мы смогли его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было не было такого, что мы прозевали эту позицию, потому что у нас по факту будет Буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидеть... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. А буквально минутку, побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Мертвый крыс поседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потираю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17, 717, 817. А уже? А я только что заходила, было 22. Да, прыгает. У меня уже 200, 300. Большой. Любое очевидное изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да, спасибо. До свидания. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 131. faster-whisper / large-v3
+### 162. faster-whisper / large-v3
 
 - **ID:** `a01e390a3c50`
 - **Language:** ru
@@ -2906,7 +3573,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. У меня там еще 2, ну, 2,3. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 132. faster-whisper / large-v3
+### 163. faster-whisper / large-v3
 
 - **ID:** `1e7ef53d24d9`
 - **Language:** ru
@@ -2926,7 +3593,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. У меня там еще 2, ну, 2,3. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 133. faster-whisper / large-v3
+### 164. faster-whisper / large-v3
 
 - **ID:** `c537bd5877a2`
 - **Language:** ru
@@ -2946,7 +3613,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. У меня там еще 2, ну, 2,3. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 134. faster-whisper / large-v3
+### 165. faster-whisper / large-v3
 
 - **ID:** `f41d70cd896e`
 - **Language:** ru
@@ -2966,7 +3633,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. У меня там еще 2, ну, 2,3. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 135. faster-whisper / large-v3
+### 166. faster-whisper / large-v3
 
 - **ID:** `1584be3fa96d`
 - **Language:** ru
@@ -2986,7 +3653,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрут. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что у меня... Я торговался одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять... да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг... потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Встретили спокойно, да, то есть и не переживали прямо о том, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь донос? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было... Не было такого, что мы пронивали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка там минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двигай буквально минутку. А, хорошо, хорошо. Прошу прощения. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как-то, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию опозицировал вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, поощрительно. Тем более. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, привет. У меня там еще 2, ну, 2,3. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 136. faster-whisper / large-v3
+### 167. faster-whisper / large-v3
 
 - **ID:** `e76f353ad153`
 - **Language:** ru
@@ -3006,7 +3673,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да-да-да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на 0, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. И у меня цеповый завист интернет видно. И я вот набирала, и вот это у меня хорошо произошло. Потому что он мне открывает, я умею открывать. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну короче, наверное, я ещё не готова была. Вы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всему капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрытая, убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусом. И мне надо было вывозить деньги как раз. Потому что, ну, и получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Но я брала опять этот, как его, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали прямо того, что что-то будет не так. А можно вопрос? А Вы думаете, что если кто-то у меня закроется, как-нибудь там смогу я его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... Не было такого, что мы продевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть, будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидите, то может быть придется чуть-чуть пожертвовать, на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Буквально минутку, побудьте в длине буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшно, что он, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведерсов. Я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый хрыс наседался. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов, на тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль, для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами уже 17,700, 17,800. А уже? А я только что заходила, была 22. Да, прыгает. У меня там еще 30. У тебя просто рывок большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет минус 4, плюс 4 и так далее. Она может подниматься. Но если будет подниматься, я в любом случае буду за этим следить. не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться, меня еще раз зовут Александр, я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо, до свидания. Спасибо вам большое, и вас также, спасибо большое. До свидания.
 
-### 137. faster-whisper / large-v3
+### 168. faster-whisper / large-v3
 
 - **ID:** `dc3e7556e8c0`
 - **Language:** ru
@@ -3026,7 +3693,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умеет, умеет, умеет. Мне просто надо, он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы, мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. У меня цифровой зависть интернет видна, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все, у нас само. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте. Я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда. на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я видел, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что-то являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы, ой, Новый год встретили спокойно, да, то есть и не перерывали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь, да, может? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте на виду буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Субтитры сделал DimaTorzok Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. То есть будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшно сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что стояла я как-то. Желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я мертвый средств начинал. Послушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть, и у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже. Тем более у меня была уже... Смотри, пока мы говорили с вами, уже 17-700, 17-800... А уже, а я только что заходила, была 22. Да, приближение есть 30. Ну, это просто ржавый большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 138. faster-whisper / large-v3
+### 169. faster-whisper / large-v3
 
 - **ID:** `898289c001d7`
 - **Language:** ru
@@ -3046,7 +3713,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо, он сказал, чтобы она вышла на ноль, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. И у меня цифровой завис интернет, видно. И я вот набирала и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова было. Послушайте, вы на самом деле отделались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад, то есть я тогда открыл вместо 5 лотов случайно 50, вот, и получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый У меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все время. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять, как он называется. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять из-за ошибки, либо хотя бы как-то постараться спасти. Вы спасли это намного лучше, потому что в любом случае вы потом можете просто вывести больше. Но самое главное сейчас решить с этой позицией, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, была ситуация, то есть хотел бы, чтобы... Ой, Новый год встретили спокойно, да, то есть и не перерывали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня все-таки закроется как-нибудь, да, ну, смогу я его... Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, об этом нам придется закрыть в небольшом минусе. Но если это увидим, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю. Минус 1 это, конечно, не минус 25. Да. Буквально минутку. Побудьте длиннее буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Понятно. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не ведет, что... Я, ну, я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый хрыс заседал. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потеряла на этом 25 тысяч долларов. А тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем, тем более у меня была уже... Пока мы говорили с вами уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, прыгай. У меня 23. Ну, это просто рюкзак большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, мы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 139. openai / large-v3-turbo
+### 170. openai / large-v3-turbo
 
 - **ID:** `66ddd9a38caf`
 - **Language:** ru
@@ -3066,7 +3733,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну короче, наверное, я еще не готова была сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять этот, как его называют. Авангарная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно, если не переживали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, будем уже смотреть по ситуации. То есть, вот до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку, по бытию, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно один раз на грабле наступить, научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я в мёртвый срыв заседал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня, я потеряла на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги. Поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю. То есть, как бы, это была прибыль. Для меня это тоже... Поощутимо. Тем более, у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже, а я только что заходила, было 22. Да, прыгали. Это просто объем большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем, хорошо? Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 140. openai / large-v3-turbo
+### 171. openai / large-v3-turbo
 
 - **ID:** `de28f51fe733`
 - **Language:** ru
@@ -3086,7 +3753,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Тибер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. У меня все зависит интернет, видно, и я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну короче, наверное, я еще не готова была. Мы делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. Я тогда открыл вместо 5 лет, а то случайно 50. Получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что, ага. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5, как его называют. Аванкарная инвестиция, вижу. Да, да. Объективный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я и все, что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что это тяжелая ситуация, то есть хотел бы, чтобы новый год встретили спокойно, если не переживали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть вводя того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть может быть придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку, по бытии буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. Даже в плюс, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не понял, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 23. Да, прыгай. У меня там еще 23. У тебя просто 2. Большой. Поэтому любое число, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое Да, все, Ольга, тогда приятно было с вами познакомиться Меня еще раз зовут Александр Я вас наберу еще после обеда И проверим, что с вашей сделкой, хорошо? Хорошо, в любое время Спасибо вам большое И вас также, спасибо большое Спасибо, Даня
 
-### 141. openai / large-v3-turbo
+### 172. openai / large-v3-turbo
 
 - **ID:** `3cfa50a8eedc`
 - **Language:** ru
@@ -3106,7 +3773,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это зависит интернет, видно. И я вот набирала, и вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была сама-сама. Послушайте, вы, на самом деле, делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, У меня просто позиции закрыты, убыток. То есть я на тот момент потерялся. И первые 25 тысяч долларов это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получила сменусь. И мне надо было выводить деньги как раз. Потому что, ага. И получалось, что просто вот все в смену. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут. Я брала 5 сетов, как его называют. Аванковая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я и все, что я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, хотел бы чтобы Новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать ей, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. Даже в плюс, да, то есть, ну, будем смотреть уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я как бы, ну, желательно на один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мёртвый срыв насидал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, то есть я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги. Ну для меня сейчас, если я потеряю эти 25, это в принципе тоже. Так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... А я только что заходила, было 22. Да, прыгай. Ну, я думаю, что 2. У тебя просто 2. Большой. Поэтому любой очаг, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. Стоит-давен.
 
-### 142. openai / large-v3-turbo
+### 173. openai / large-v3-turbo
 
 - **ID:** `ba8f70877c66`
 - **Language:** ru
@@ -3126,7 +3793,7 @@
 
 > Алло? Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Я в Тибер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо... Он сказал, чтобы достаточная, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. И мне все-таки забился интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама-сама. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5, как его называют. Авангарная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть то, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты, я в целом работаю с миллионными счетами, ничего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно, Если не переживали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию. в минимальный плюс или в минимальный минус или в ноль, будем уже смотреть по ситуации. То есть, вот до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку... Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Спасибо. Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Мы будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Желательно, один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я у меня мертвый срыг заседал. Ну, слушайте, вы на самом деле легким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня, я потеряла на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем, поощрительно. Тем более у меня была уже... Ну, вот, пока мы говорили с вами уже 17, 700, 17, 800. А уже, а я только что заходила, было 22. Да, прыгай, ты не можешь ответить. Это просто объем большой. Любой очевидный, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо. Спасибо.
 
-### 143. openai / large-v3-turbo
+### 174. openai / large-v3-turbo
 
 - **ID:** `47035a282d19`
 - **Language:** ru
@@ -3146,7 +3813,7 @@
 
 > Алло. Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте. Здравствуйте, Ольга. Представлюсь. Меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить. В твоей позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, умею, умею. Он сказал, чтобы доставка вышла на ноль, чтобы не закрывать ее времени. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай, я понял. У меня все-таки забился интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама-сама. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять этот, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что-то являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, у тебя была ситуация, то есть я хотел бы, чтобы новый год встретили спокойно, да, То есть они не переживали касаемо того, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть, вплоть до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я это увидел, то может быть придется чуть-чуть пожертвовать ей, Да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Спасибо. Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет себя. Я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я у меня мёртвы срыв начинался. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже? А я только что заходила, было 22. Да, прыгай. Ну, у меня там еще 3. У тебя просто 2. Большой. Поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. Субтитры создавал DimaTorzok
 
-### 144. openai / large-v3-turbo
+### 175. openai / large-v3-turbo
 
 - **ID:** `87939d99cf1d`
 - **Language:** ru
@@ -3166,7 +3833,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Тибер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделал. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. А, я-я-я, я понял. Да, я понял. У меня все это зависит интернет, видно. И я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну короче, наверное, я еще не готова была. Сама, сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять, как его называют. Аванковая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно. если не переживали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один это, конечно, не минус 25. Да. Буквально минутку. Побыть и дверь, буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Я чувствую. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведешься. Я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я у меня мёртвый срыв начинал. Ну, слушайте, вы на самом деле легким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже 17 700, 17 800. А я только что заходила, было 22. Да, прыгай. У меня там еще 2, 2 и 3. Большой. Поэтому любое чуть-чуть, даже изменение цены, она сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 145. openai / large-v3-turbo
+### 176. openai / large-v3-turbo
 
 - **ID:** `a95b77d9ccdd`
 - **Language:** ru
@@ -3186,7 +3853,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть базиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять этот, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты, я в целом работаю с миллионными счетами. Я там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь прогноз? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. То есть будем уже смотреть по ситуации. То есть вводя до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я это увидел, то может быть придется чуть-чуть пожертвовать ей, Да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведешься. Я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я у меня мёртвый срыг заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на 50, то есть у меня я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, пощитим. Тем более у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже? А я только что заходила, было 22. Да, прыгай. Ну, у меня там еще 3. У тебя просто 2. Большой. Поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. С вами был Игорь Негода. С вами был Игорь Негода. Субтитры создавал DimaTorzok
 
-### 146. openai / large-v3-turbo
+### 177. openai / large-v3-turbo
 
 - **ID:** `1ddc955988d3`
 - **Language:** ru
@@ -3206,7 +3873,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это зависит интернет, видно. И я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну короче, наверное, я еще не готова была. Сама-сама. Послушайте, вы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, У меня просто позиции закрыты, убыток. То есть я на тот момент потерялся. И первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что, ага. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, что вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Четам не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что у тебя была ситуация. Я хотел бы, чтобы Новый год встретили спокойно и не перенесывали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать ей, но крайней мере, чтобы не было такого, что... Вы понимаете. Конечно, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Да. Буквально минутку... Побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно, один раз на грабле наступить, но очень Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мертвый срыг начинал. Ну, слушайте, вы на самом деле легким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо петила, то на 50, да, То есть у меня я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, то есть как бы это была прибыль моя. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, пока мы говорили с вами уже 17,700, 17,800. А уже, а я только что заходила, было 23. Да, прыгай. Ну, это просто объем большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой Хорошо? Хорошо, в любое время Спасибо Спасибо вам большое И вас также Спасибо большое Стоси дали
 
-### 147. openai / large-v3-turbo
+### 178. openai / large-v3-turbo
 
 - **ID:** `3057ffb7440c`
 - **Language:** ru
@@ -3226,7 +3893,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Привет. Привет. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее времени. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделает. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. У меня все по-взабису интернет видно. И я вот набирала и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит насколько надо закрывать и... А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну короче, наверное, я еще не готова была... сама сама. Мы делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был новичком, но это было лет 7 назад. Я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что я торговал с одним брокером, спреды были сумасшедшие. и я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ага. И получалось, что просто вот все в минусе, все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансная инвестиция, вижу. Да. Объектный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас процентка чуть опустилась, у вас было 26.22 с утра. Вот скорее всего какие-то качели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно. Меня попросили, я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что это тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно и не перерывали. касаемо того, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы продевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. будем смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я буду видеть, что может быть придется чуть-чуть пожертвовать, но крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... А минус один – это, конечно, не минус 25. Да. Буквально минутку... Побыть о друге буквально минутку. А, хорошо, хорошо. Субтитры создавал DimaTorzok Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Поэтому смотрите. По поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. Дальше уже будьте более внимательны, когда будете открывать. Потому что я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабле наступить, научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я не в дырке начинал. Вы, на самом деле, легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на 50, то есть я потерял на этом 25 тыс долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну для меня сейчас, если я потеряю эти 25, то это, в принципе, тоже так, все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже. Поощительно. Тем более у меня была уже. Пока мы говорили с вами уже 17, 700, 17, 800. А уже? А я только что заходила, было 22. Да, прыгай. У меня там еще 2. У меня просто 2. Большой. Поэтому любой очиститель, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Стос свидания.
 
-### 148. openai / large-v3-turbo
+### 179. openai / large-v3-turbo
 
 - **ID:** `6b831ecc2ef7`
 - **Language:** ru
@@ -3246,7 +3913,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я сегодня с вами в Типер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу оточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрус. Да, он обычно мне сам открывал и сделает. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это забисло, интернет видно. И я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну короче, наверное, я еще не готова была сама-сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позиций в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл место 5, а то случайно 50. И получилось так, что я торговался с одним брокером, там спреды вообще были сумасшедшие. и я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта, в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что... И получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Аванковая инвестиция, вижу. Да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, вы спасли это намного лучше, потому что, в любом случае, вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка сегодня пустилась, у вас было 26.22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. Я, конечно, я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, я ничего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно и не и переживали касаемо того, что что-то будет не так. А вы думаете, что все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, будем уже смотреть по ситуации. То есть, вот до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать, но, по крайней мере, чтобы не было такого, что... что понимаете. Конечно, конечно. Я понимаю. Минус один это, конечно, не минус 25. Да. Буквально минутку. Побыть в инвестии буквально минутку. А, хорошо, хорошо. Продолжение следует... Субтитры создавал DimaTorzok Продолжение следует... Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, но будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. Дальше будьте более внимательны, когда будете открывать, потому что я думаю Никита второй раз такую позицию не выдержит. И я сама не ведет себя. Желательно один раз на грабле наступить, научить. Желательно не наступать на них, конечно. Но раз уже страх получилось, я вообще была сразу в шоке. Я когда-то же увидела, как вы говорите, я сначала начала закрывать другие. Смотрю, я не поняла, я прям в шоке была. У меня мертвый срыг начинал. вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, то есть я потерял на этом 25 тысяч долларов, на тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль, Понял, для меня это тоже, поощрительно. Тем более у меня была уже... Пока мы говорили с вами уже 17 700, 17 800. А уже, а я только что заходила, было 22. Да, прыгай, прыгай, прыгай, прыгай, прыгай. Поэтому любой очевид, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое. Да. Все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 149. openai / large-v3-turbo
+### 180. openai / large-v3-turbo
 
 - **ID:** `420ddafa0909`
 - **Language:** ru
@@ -3266,7 +3933,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Тибер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он не умеет. Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. У меня все-таки забился интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была сама-сама. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда, У меня позиции закрыты, убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. И получалось, что просто все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Но я брала 5, как его называют. А вам к инвестициям вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Скорее всего, какие-то качели еще будут, я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть мы с вами будем... А, то с вами будете присматривать? Да, конечно, конечно. Я являюсь руководителем Никиты. Я работаю с миллионными счетами. Я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы новый год встретили спокойно и не перерывали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть одни буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. даже в плюс, да, то есть, ну, будем смотреть уже, оталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я, я как бы, ну, желательно на один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже... Поощупим. Тем более, у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже, а я только что заходила, было 23. Да, прыгай. Ну, у меня там есть ответ. У тебя просто объем большой. Поэтому любое, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой Хорошо? Хорошо, в любое время Спасибо Спасибо вам большое И вас также Спасибо большое Стоит
 
-### 150. openai / large-v3-turbo
+### 181. openai / large-v3-turbo
 
 - **ID:** `592363f6a76e`
 - **Language:** ru
@@ -3286,7 +3953,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я не знаю, что ты в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделок. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, у меня все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. – Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад, то есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговал с одним брокером, там спреды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня позиции закрыты в убыток. Я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. И получается, что просто все вновь нужно снять. – Самое главное, что Вы не потеряли капитал, потому что все могло закончиться намного хуже. – Я брала опять этот, как его называют. – Аванс на инвестиции вижу. – Да. – Объединен депозит. Да, я вижу. – Да. – Смотрите, у Вас по факту другого выбора и не было. было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это консисты, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка спустилась, у вас было 26, 6, 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуется, какие-то срочные меры. То есть я... А, то сроков и присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что является руководителем Никиты, я в целом работаю с миллионными счетами, то есть я ничего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация. Хотел бы чтобы новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что все-таки у меня закроется? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль. То есть будем уже смотреть по ситуации. То есть вводить до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать ей, Да, по крайней мере, чтобы не было такого, что... Ну понимаете. Конечно, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку, по бытию длини буквально минутку. А, хорошо, хорошо. Спасибо. Спасибо. Спасибо. Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия, чтобы эту ситуацию перекрыть в плюс, но будем смотреть уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. и я сама не ведешься. Я как бы, ну, желательно один раз на грабле наступить научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мёртный срыг начинался. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, так что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Пощупим. Тем более у меня была уже... Пока мы говорили с вами уже 17,700, 17,800. А я только что заходила, было 22. Да, прыгает. Ну, у меня там еще 3. У тебя просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания. Спасибо.
 
-### 151. openai / large-v3-turbo
+### 182. openai / large-v3-turbo
 
 - **ID:** `89a58ae023d8`
 - **Language:** ru
@@ -3306,7 +3973,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно. И я набирала, и вот это у меня хорошо произошло. Он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, я еще не готова была сама-сама. Послушайте, вы на самом деле делали с легким испугом, Потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике. На личном опыте я еще был тоже новичком. Но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером. Там спреды вообще были сумасшедшие. Я даже не обратил внимания. Я захожу после обеда на свой торговый аккаунт. у меня просто позиции закрыты, убыток. То есть я на тот момент потерялся, и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его называют. Авансная инвестиция, вижу. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться спасти. Вы спасли это намного лучше, потому что в любом случае вы можете вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, я еще что-то являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку, по бытию, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. даже в плюс, да, то есть, ну, будем смотреть уже, оталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не понял, я прям в шоке была, я мёртвый срыв заседал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на 50, Да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так, поощрительно. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,800. А уже, а я только что заходила, было 22. Да, прыгай. Ну, у меня там еще две, две еще другие. Поэтому, там, любое, даже изменение цены, оно сразу идет там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Стоит.
 
-### 152. openai / large-v3-turbo
+### 183. openai / large-v3-turbo
 
 - **ID:** `81038d7ad209`
 - **Language:** ru
@@ -3326,7 +3993,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну короче, наверное, я еще не готова была сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. И получалось, что просто все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5, как его называют. Аванцерная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно, спокойно, да, то есть не переживали, что что-то будет не так. А вы думаете, что все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию, в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть, вот до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если это будет... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. даже в плюс, да, то есть, ну, будем смотреть уже, оталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то померя для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так, поощрительно. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,800. А я только заходила, было 22. Да, прыгай. Ну, у меня там есть ответы. У тебя просто объем большой. Любой очаг, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 153. faster-whisper / large-v3
+### 184. faster-whisper / large-v3
 
 - **ID:** `7e8e59d13301`
 - **Language:** ru
@@ -3346,7 +4013,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да-да-да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр, то есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умеет. Не, умеет, умеет. Мне просто надо, он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрут? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. И у меня цифровые зависы интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Да у нас, у нас. Послушайте, мы на самом деле делались с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что у меня, как бы я торговался с одним брокером, там спреды вообще были сумасшедшие, и я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией и чтобы она дальше не пошла в минус. потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра ну вот, скорее всего, какие-то качели еще будут а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я мы с вами будем да, конечно, конечно меня попросили, то есть я, если что, являюсь руководителем Никиты я в целом работаю с миллионными счетами, да, то есть что там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А может вопрос? А вы думаете, если Питер у меня закроется, как-нибудь смогу я его... Смотрите, прогноз по этой позиции более чем хорошей. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть будет до того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то... Да, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку, по бытию длительной, буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, Потому что я думаю, Никита второй раз Экспозицию не выдержит И я сама не выдержала Я как бы Ну, желательно один раз На грабли наступить и научиться Это точно Ну, желательно не наступать На них, конечно, но раз уже Страх получился, я, конечно, вообще была Сразу в шоке Я когда-то же увидела, вот как вы говорите Я сначала Начала закрывать другие Я не поняла, я прям в шоке была я бы меня в мертвый срок рассчитал. Ну, слушайте, вы на самом деле легкими с пугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть у меня, я потерял на этом двадцать пять тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти двадцать пять, это, в принципе, тоже, так что я показываю, то есть, как бы, это была прибыль. Для меня это тоже. Слушайте, пока мы говорили с вами уже 17,700, 17,800. А уже, а я только что заходила, было 22. Да, прыгает. У меня там есть 30. Ну, это просто ржавеет. Большое. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также спасибо большое. До свидания.
 
-### 154. openai / large-v3-turbo
+### 185. openai / large-v3-turbo
 
 - **ID:** `b5f7c1a62686`
 - **Language:** ru
@@ -3366,7 +4033,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаточная, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно. И я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы на самом деле делали с легким испугом, Потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте. Я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт. У меня просто позиции закрыты, убыток. То есть я на тот момент потерялся. И первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что, ага. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что у тебя была ситуация, хотел бы, чтобы Новый год встретили спокойно, и не перерывали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... А минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Спасибо. Продолжение следует... Продолжение следует... Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да. То есть будем смотреть уже, оталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы... Ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них конечно, но раз уже страх получилось, я конечно была сразу в шоке. Я когда-то увидела, как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я мёртвый срыг заседал. Вы на самом деле лёгким испугом оделались, потому что я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то померяк для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так. Поощупим. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,800. А я только что заходила, было 22. Да, прыгай. Ну, у меня там еще 3. У тебя просто 2. Большой. Поэтому любой очаг, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. До свидания. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 155. openai / large-v3-turbo
+### 186. openai / large-v3-turbo
 
 - **ID:** `6c179a16d22a`
 - **Language:** ru
@@ -3386,7 +4053,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типпер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Если он мне говорит, насколько надо закрывать, то есть. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад, то есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять этот, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Скорее всего, какие-то качели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я и все, что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, то есть я ничего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как сказал, тяжелая ситуация, то есть хотел бы, чтобы новый год встретили спокойно, если не переживали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть, вот до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. Даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я у меня мёртвый срыг начинал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то, померя, для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль моя. Для меня это тоже, скажем так. Поощутимо. Тем более, тем более у меня была уже... Ну, то есть, пока мы говорили с вами уже 17,700, 17,200. А я только заходила, было 22. Да, прыгай. Ну, у меня там еще 3. У тебя просто 2. Большой. Поэтому любой очаг, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Субтитры создавал DimaTorzok
 
-### 156. faster-whisper / large-v3-turbo
+### 187. faster-whisper / large-v3-turbo
 
 - **ID:** `cf6aed4491e1`
 - **Language:** ru
@@ -3406,7 +4073,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять. Авансная инвестиция, вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я видел, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили. То есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. То есть я ничего там не отношусь. Но учитывая то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. То есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 157. openai / large-v3-turbo
+### 188. openai / large-v3-turbo
 
 - **ID:** `1334d11345be`
 - **Language:** ru
@@ -3426,7 +4093,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это забился интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня позиции закрыты в убыток. Я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Вот у меня сейчас тоже. Получалось, что я получилась в минусе и мне надо было выводить деньги как раз. и получается, что просто все время нужно брать. – Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. – Я брала опять этот, как его называют. – Аванс на инвестиции, вижу. – Да, да. – Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора было. То есть у вас был выбор либо потерять, да, то есть из-за ашисти, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это конец, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка сегодня опустилась, у вас было 26-22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то сроки присматривать. Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я... Ага. Чего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. А вы думаете, что все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, будем смотреть уже по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это будет круто, то может быть придется чуть-чуть Пожарствуйте, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку, по бытии длины буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. и я сама не ведешься. Я как бы, ну, желательно один раз на грабле наступить и научить. Это тоже. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я у меня мёртвый срыг начинал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, так что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Пощутимо. Тем более у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже? А я только что заходила, было 22. Да, прыгай. Ну, у меня там еще 2. У тебя просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. С вами был Игорь Негода.
 
-### 158. faster-whisper / large-v3-turbo
+### 189. faster-whisper / large-v3-turbo
 
 - **ID:** `641214f3f8c0`
 - **Language:** ru
@@ -3446,7 +4113,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 159. faster-whisper / large-v3-turbo
+### 190. faster-whisper / large-v3-turbo
 
 - **ID:** `b1cf09d97b60`
 - **Language:** ru
@@ -3466,7 +4133,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 160. faster-whisper / large-v3-turbo
+### 191. faster-whisper / large-v3-turbo
 
 - **ID:** `7a0ec95bf851`
 - **Language:** ru
@@ -3486,7 +4153,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 161. faster-whisper / large-v3-turbo
+### 192. faster-whisper / large-v3-turbo
 
 - **ID:** `f4875dc686d7`
 - **Language:** ru
@@ -3506,7 +4173,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 162. faster-whisper / large-v3-turbo
+### 193. faster-whisper / large-v3-turbo
 
 - **ID:** `5702634e276f`
 - **Language:** ru
@@ -3526,7 +4193,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мёртвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 163. openai / large-v3-turbo
+### 194. openai / large-v3-turbo
 
 - **ID:** `ca0b4cc3cd9e`
 - **Language:** ru
@@ -3546,7 +4213,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Тибер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделок. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. И у меня все это забисло, интернет видно, и я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну короче, наверное, я еще не готова была. Мы делали с легким испугом, потому что открыть в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был новичком, но это было лет 7 назад. Я тогда открыл вместо 5, а то случайно 50. Получилось так, что я торговал с одним брокером, там спреды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. И получалось, что просто все в минусе, все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Аванс на инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасли это намного лучше, потому что в любом случае вы это потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно, спокойно и не переживали, что что-то будет не так. А вы думаете, что у меня все-таки закроется, как-нибудь приносит? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать, но, по крайней мере, чтобы не было такого, что, ну, понимаете. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку, побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, ну, я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не понял, а я прям в шоке была. Я мёртвый срыг начинал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо петила, то на 50. Да, то есть я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги. Поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже... Поощутимо. Тем более у меня была уже... Ну, вот, пока мы говорили с вами уже 17,700, 17,800. А я только заходила, было 23. Да, прыгай. Ну, у меня там еще 3. У тебя просто 2. Большой. Поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. До свидания. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 164. faster-whisper / large-v3-turbo
+### 195. faster-whisper / large-v3-turbo
 
 - **ID:** `e485b559a24f`
 - **Language:** ru
@@ -3566,7 +4233,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять. Авансная инвестиция, вижу. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я видел, у вас проставка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили. То есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. То есть я ничего там не отношусь. Но учитывая то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. То есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не веду тебя. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 165. openai / large-v3-turbo
+### 196. openai / large-v3-turbo
 
 - **ID:** `78ad6b78b678`
 - **Language:** ru
@@ -3586,7 +4253,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я тебя. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать денег. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и короче, вот это у меня хорошо произошло. Потому что, ну как бы, он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня... ну, короче, наверное, я еще не готова была. Сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть фазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять же этот, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, вы спасли это намного лучше, потому что в любом случае вы можете вывести больше. Но самое главное сейчас решить все эти позиции и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Скорее всего, какие-то качели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то с вами присматривать? Да, конечно, конечно. Меня попросили, я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, еще не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, Хочу бы, чтобы новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что все-таки у меня закроется, как-нибудь прогноз? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если это увидеть, то может быть придется чуть-чуть пожертвовать, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один – это, конечно, не минус двадцать пять. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Продолжение следует... Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отбалкиваться конкретно от ситуации. Я думаю, в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже будьте более внимательны, когда будете открывать, потому что я думаю Никита второй раз такую позицию не выдержит. Я сама не ведешься. Я, я как бы, ну, желательно один раз на грабле наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я у меня мертвый срыв начинал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 латун на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, так что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже 17700, 17800. А я только заходила, было 22. Да, прыгай. У меня там еще 2300. У меня просто 2. Большой. Любое чуть-чуть, даже изменение цены, она сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. Садится.
 
-### 166. faster-whisper / large-v3-turbo
+### 197. faster-whisper / large-v3-turbo
 
 - **ID:** `13e62bd5d8b3`
 - **Language:** ru
@@ -3606,7 +4273,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 167. faster-whisper / large-v3-turbo
+### 198. faster-whisper / large-v3-turbo
 
 - **ID:** `a5bdb42054c3`
 - **Language:** ru
@@ -3626,7 +4293,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 168. openai / large-v3-turbo
+### 199. openai / large-v3-turbo
 
 - **ID:** `f5678c32094a`
 - **Language:** ru
@@ -3646,7 +4313,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Не умею. Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. У меня все-таки забился интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама-сама. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять этот, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно, спокойно, да, то есть они не переживали касаемо того, что что-то будет не так. А вы думаете, что все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, будем уже смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что, ну, понимаете. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не понял, а я прям в шоке была. Я мёртвый срыг начинал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо петила, то на 50. Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то померяк для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так, поощрительно. Тем более, тем более у меня была уже... Ну, вот, пока мы говорили с вами уже 17,700, 17,800. А я только заходила, было 22. Да, прыгай. Ну, у меня там есть 2. У тебя просто 2. Большой. Поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 169. faster-whisper / large-v3-turbo
+### 200. faster-whisper / large-v3-turbo
 
 - **ID:** `f749011580cb`
 - **Language:** ru
@@ -3666,7 +4333,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 170. faster-whisper / large-v3-turbo
+### 201. faster-whisper / large-v3-turbo
 
 - **ID:** `34f0080da81e`
 - **Language:** ru
@@ -3686,7 +4353,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 171. faster-whisper / large-v3-turbo
+### 202. faster-whisper / large-v3-turbo
 
 - **ID:** `6bab2fb9bb9a`
 - **Language:** ru
@@ -3706,7 +4373,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 172. faster-whisper / large-v3-turbo
+### 203. faster-whisper / large-v3-turbo
 
 - **ID:** `ca0220990de6`
 - **Language:** ru
@@ -3726,7 +4393,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 173. faster-whisper / large-v3-turbo
+### 204. faster-whisper / large-v3-turbo
 
 - **ID:** `9d34e40a5ff6`
 - **Language:** ru
@@ -3746,7 +4413,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 174. faster-whisper / large-v3-turbo
+### 205. faster-whisper / large-v3-turbo
 
 - **ID:** `d93fc5e6b404`
 - **Language:** ru
@@ -3766,7 +4433,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 175. faster-whisper / large-v3-turbo
+### 206. faster-whisper / large-v3-turbo
 
 - **ID:** `59d3e41205a3`
 - **Language:** ru
@@ -3786,7 +4453,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 176. faster-whisper / large-v3-turbo
+### 207. faster-whisper / large-v3-turbo
 
 - **ID:** `f3d7a5be00ca`
 - **Language:** ru
@@ -3806,7 +4473,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 177. faster-whisper / large-v3-turbo
+### 208. faster-whisper / large-v3-turbo
 
 - **ID:** `9410057553f7`
 - **Language:** ru
@@ -3826,7 +4493,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 178. faster-whisper / large-v3-turbo
+### 209. faster-whisper / large-v3-turbo
 
 - **ID:** `e9bdffe5a697`
 - **Language:** ru
@@ -3846,7 +4513,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 179. faster-whisper / large-v3-turbo
+### 210. faster-whisper / large-v3-turbo
 
 - **ID:** `52307c120efd`
 - **Language:** ru
@@ -3866,7 +4533,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 180. faster-whisper / large-v3-turbo
+### 211. faster-whisper / large-v3-turbo
 
 - **ID:** `aeca79c9955b`
 - **Language:** ru
@@ -3886,7 +4553,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 181. faster-whisper / large-v3-turbo
+### 212. faster-whisper / large-v3-turbo
 
 - **ID:** `65e5d7528e82`
 - **Language:** ru
@@ -3906,7 +4573,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 182. faster-whisper / large-v3-turbo
+### 213. faster-whisper / large-v3-turbo
 
 - **ID:** `0814e0bc91f0`
 - **Language:** ru
@@ -3926,7 +4593,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 183. faster-whisper / large-v3-turbo
+### 214. faster-whisper / large-v3-turbo
 
 - **ID:** `dd30b2f15327`
 - **Language:** ru
@@ -3946,7 +4613,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 184. faster-whisper / large-v3-turbo
+### 215. faster-whisper / large-v3-turbo
 
 - **ID:** `520c411e05ee`
 - **Language:** ru
@@ -3966,7 +4633,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 185. faster-whisper / large-v3-turbo
+### 216. faster-whisper / large-v3-turbo
 
 - **ID:** `31799b97236f`
 - **Language:** ru
@@ -3986,7 +4653,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 186. faster-whisper / large-v3-turbo
+### 217. faster-whisper / large-v3-turbo
 
 - **ID:** `68b390b1b136`
 - **Language:** ru
@@ -4006,7 +4673,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 187. faster-whisper / large-v3-turbo
+### 218. faster-whisper / large-v3-turbo
 
 - **ID:** `86a31e65ec25`
 - **Language:** ru
@@ -4026,7 +4693,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 188. faster-whisper / large-v3-turbo
+### 219. faster-whisper / large-v3-turbo
 
 - **ID:** `21796613d35e`
 - **Language:** ru
@@ -4046,7 +4713,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 189. faster-whisper / large-v3-turbo
+### 220. faster-whisper / large-v3-turbo
 
 - **ID:** `36477c5d5cea`
 - **Language:** ru
@@ -4066,7 +4733,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. Ну, у меня там есть ответ. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 190. faster-whisper / large-v3-turbo
+### 221. faster-whisper / large-v3-turbo
 
 - **ID:** `5d026a4318ab`
 - **Language:** ru
@@ -4086,7 +4753,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. У меня там еще 30 минут. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 191. faster-whisper / large-v3-turbo
+### 222. faster-whisper / large-v3-turbo
 
 - **ID:** `1fc4549ebf32`
 - **Language:** ru
@@ -4106,7 +4773,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. У меня там еще 30 минут. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 192. openai / large-v3-turbo
+### 223. openai / large-v3-turbo
 
 - **ID:** `9917cea238e0`
 - **Language:** ru
@@ -4126,7 +4793,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Титлер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была сама-сама. Послушайте, мы на самом деле делали с легким испугом, потому что открыть базиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права, как его называют. Аванс на инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. Я являюсь руководителем Никиты, я работаю с миллионными счетами, не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно и не перерывали. что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь на ноль? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. будем смотреть по ситуации. То есть, даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то может быть придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Вы понимаете? Конечно, конечно. Я понимаю. я. Минус один это конечно не минус 25. Да. Буквально минутку. Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже и опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, ну, я как бы, ну, желательно один раз на грабле наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я в мёртвый срык засидал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня я потеряла на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так. Поощутимо. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17, 700, 17, 800. А уже, а я только что заходила, было 23. Да, прыгали. Это просто объем большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также, спасибо большое. Спасибо.
 
-### 193. faster-whisper / large-v3-turbo
+### 224. faster-whisper / large-v3-turbo
 
 - **ID:** `15364ed762c6`
 - **Language:** ru
@@ -4146,7 +4813,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. У меня там еще 30 минут. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 194. faster-whisper / large-v3-turbo
+### 225. faster-whisper / large-v3-turbo
 
 - **ID:** `460a5d5b4f4d`
 - **Language:** ru
@@ -4166,7 +4833,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. У меня там еще 30 минут. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 195. faster-whisper / large-v3-turbo
+### 226. faster-whisper / large-v3-turbo
 
 - **ID:** `cc4b9eb992db`
 - **Language:** ru
@@ -4186,7 +4853,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А я только что заходила, было 22. Да, привет. У меня там еще 30 минут. Это просто объем большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 196. faster-whisper / large-v3-turbo
+### 227. faster-whisper / large-v3-turbo
 
 - **ID:** `64609258f7a7`
 - **Language:** ru
@@ -4206,7 +4873,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку... Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, привет. Ну, у меня там еще 3. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 197. openai / large-v3-turbo
+### 228. openai / large-v3-turbo
 
 - **ID:** `83080ae98b3f`
 - **Language:** ru
@@ -4226,7 +4893,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Тибер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это забил интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Мы делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Я был на личном опыте, но это было лет 7 назад. Я тогда открыл вместо 5 лет, а то случайно 50. Я торговал с одним брокером, там спреды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты, убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права, как его назвать. Авангарная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, вы спасли это намного лучше, потому что, в любом случае, вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас процентка чуть опустилась, у вас было 26.22 с утра. Скорее всего, какие-то качели еще будут, я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ничего там не отношусь. Но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно. если не переживали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, будем уже смотреть по ситуации. То есть вот до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть может быть придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует. Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. даже в плюс, будем смотреть уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон, да, и дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. – И я сама не выдержу. Я как бы, ну, желательно один раз на грабле наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыг заседал. Ну, слушайте, вы на самом деле легким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо петила, то на 50, Да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так. Поощутимо. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,800. А я только что заходила, было 22. Да, прыгай. Ну, у меня там есть 2. У тебя просто 2. Большой. Поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 198. openai / large-v3-turbo
+### 229. openai / large-v3-turbo
 
 - **ID:** `4256c5f3fe50`
 - **Language:** ru
@@ -4246,7 +4913,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо... Он сказал, чтобы достаточная, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз. Потому что, и получалось, что просто вот все в минусе, и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я права опять этот, как его называют. Аванс на инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Так вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы новый год встретили спокойно, если не переживали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, будем уже смотреть по ситуации. То есть, вот до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Да. Буквально минутку, по бытию, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. даже в плюс, да, то есть, ну, будем смотреть уже, оталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я, я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я мёртвый срыв заседал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то померя для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так. Поощупим. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,200. А я только заходила, было 22. Да, прыгай. Ну, у меня там еще 2. У тебя просто 2. Большой. Поэтому любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Субтитры создавал DimaTorzok Субтитры создавал DimaTorzok Субтитры создавал DimaTorzok Субтитры создавал DimaTorzok Субтитры создавал DimaTorzok
 
-### 199. openai / large-v3-turbo
+### 230. openai / large-v3-turbo
 
 - **ID:** `7f7abd85e9e0`
 - **Language:** ru
@@ -4266,7 +4933,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделает. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда, на свой торговый аккаунт, у меня просто позиции закрыты, убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть, тут... Но я брала 5 сетов, как его называют. А вам, как инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции и чтобы она дальше не пошла в минус. Я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Скорее всего, какие-то качели еще будут, я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то с вами будете присматривать. Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты, Я работаю с миллионными счетами, не отношусь, но учитывая то, что Никита попросил за Вами присмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно и не перерывали, что что-то будет не так. А вы думаете, что у меня все-таки закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть и дверь не буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да. То есть будем смотреть, уже отталкиваются конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я как бы... Ну, желательно один раз на грабли наступить научить. Это точно. Ну, желательно не наступать на них, конечно, Ну раз уже страх получилось, я конечно вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала закрывать другие, смотрю, я не понял, а я прям в шоке была. Я в мёртвый срыв заседал. Ну слушайте, вы на самом деле лёгким испугом оделались, потому что я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня, я потеряла на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги. Поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю. То есть, как бы, это была прибыль. Для меня это тоже, скажем так. Поощрительно. Тем более, тем более у меня была уже... Ну, вот, пока мы говорили с вами уже 17, 700, 17, 800. А уже, а я только что заходила, было 22. Да, прыгали. Ну, у меня там еще 3. Это просто объем большой. Любой очаг, даже изменение цены, оно сразу идет минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 200. faster-whisper / large-v3-turbo
+### 231. faster-whisper / large-v3-turbo
 
 - **ID:** `3f94c385c320`
 - **Language:** ru
@@ -4286,7 +4953,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Аванс на инвестиции вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и двери буквально минутку. А, хорошо, хорошо. Прошу, нет. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, привет. Ну, у меня там еще 3. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 201. openai / large-v3-turbo
+### 232. openai / large-v3-turbo
 
 - **ID:** `921d85079e85`
 - **Language:** ru
@@ -4306,7 +4973,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Тибер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это зависит интернет, видно, и я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все, он мне говорит насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну короче, наверное, я еще не готова была. Мы делали с легким испугом, потому что открыть в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. Я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спренды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. И получается, что просто все время нужно брать. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Аванс на инвестиции, вижу. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасти это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это количество, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Скорее всего, какие-то качели еще будут, я в любом случае буду с вами на связи, если вдруг потребуются срочные меры. А, то что вы будете присматривать? Да, конечно. Меня попросили, я еще что-то являюсь руководителем Никиты, я в целом работаю с миллионными счетами. Я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы новый год встретили спокойно и не перерывали, что что-то будет не так. А вы думаете, что у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это убедиться, да, то есть может быть придется чуть-чуть пожаловать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно, я понимаю, я... минус 1 это, конечно, не минус 25. Да. Да. Буквально минутку. Побыть от линии буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Я прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию вы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не понял, а я прям в шоке была. Я мёртвый срыг начинал. Ну, слушайте, вы на самом деле лёгким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо петила, то на 50. Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то померяк для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем, поощрительно. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,800. А я только заходила, было 22. Да, прыгай. Ну, у меня там еще 2. У тебя просто 2. Большой. Поэтому, в любой очереди, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 202. faster-whisper / large-v3-turbo
+### 233. faster-whisper / large-v3-turbo
 
 - **ID:** `cd6a71d19acb`
 - **Language:** ru
@@ -4326,7 +4993,7 @@
 
 > Алло. Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. То есть он попросил присмотреть за Вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, Вы позиции, если что, умеете самостоятельно закрывать или Вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на наличном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Авансная инвестиция, вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть, чтобы вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 203. faster-whisper / large-v3-turbo
+### 234. faster-whisper / large-v3-turbo
 
 - **ID:** `3276b792c211`
 - **Language:** ru
@@ -4346,7 +5013,7 @@
 
 > Алло. Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. То есть он попросил присмотреть за Вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, Вы позиции, если что, умеете самостоятельно закрывать или Вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на наличном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Авансная инвестиция, вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть, чтобы вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 204. faster-whisper / large-v3-turbo
+### 235. faster-whisper / large-v3-turbo
 
 - **ID:** `aaf6c3b3a697`
 - **Language:** ru
@@ -4366,7 +5033,7 @@
 
 > Алло. Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. То есть он попросил присмотреть за Вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, Вы позиции, если что, умеете самостоятельно закрывать или Вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на наличном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Авансная инвестиция, вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть, чтобы вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 205. faster-whisper / large-v3-turbo
+### 236. faster-whisper / large-v3-turbo
 
 - **ID:** `d160e6508a4a`
 - **Language:** ru
@@ -4386,7 +5053,7 @@
 
 > Алло. Алло, здравствуйте. Я говорю с Ольгой. Да, да, да. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. То есть он попросил присмотреть за Вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, Вы позиции, если что, умеете самостоятельно закрывать или Вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать деньги. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на наличном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лет, а то случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Авансная инвестиция, вижу. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. То есть, чтобы вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, 6, 22 с утра. Вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг... Потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что такая тяжелая ситуация, то есть я хотел бы, чтобы... Ой, новый год. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, что нам придется ее закрыть в небольшом минусе. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один — это, конечно, не минус двадцать пять. Да. Да. Буквально минутку. Побыть и дверь буквально минутку. А, хорошо, хорошо. Обращение. Поэтому смотрите, по поводу вашей ситуации еще раз. Не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбалкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведется. Я как бы, ну, желательно один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо 5 лотов на 50, да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыль. Для меня это тоже, скажем так, поощрительно. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17700, 17800. А уже? А я только что заходила, было 22. Да, приблизительно. Ну, у меня там есть 2. Ну, это просто 2. Большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага. Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 206. faster-whisper / large-v3
+### 237. faster-whisper / large-v3
 
 - **ID:** `c0561ebd6268`
 - **Language:** ru
@@ -4406,7 +5073,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он умеет. Он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу. Да, он обычно мне сам открывал сделки. А это он перед отпуском мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. Да, и у меня цифровой завис интернет, видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Да, у нас там… Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад, то есть я тогда открыл вместо 5 лотов случайно 50, вот, и получилось так, что у меня как бы я торговался одним брокером, там спреды вообще были сумасшедшие и я даже не обратил внимание, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну вот у меня сейчас тоже и просто получалось, что я получила с минусами и мне надо было вывозить деньги как раз, потому что и получалось, что просто Самое главное, чтобы вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансовая инвестиция. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы можете просто вывести больше. Но самое главное сейчас решить с этой позицией и чтобы она дальше не пошла в минус. Потому что я вижу, что у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? будет не так. Можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы пронивали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то, да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно. Я понимаю, я... Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку. Побудьте длиннее, буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Спасибо. Да, прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что... Я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мертвый хрыс заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть, и у меня, я потерял на этом двадцать пять тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти двадцать пять, это в принципе тоже, это все, что я показываю, то есть, как бы это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А я только что заходила, была 22. Да, прыгает. Но у меня там еще 300. У тебя просто рывок большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также, спасибо большое. До свидания.
 
-### 207. faster-whisper / large-v3
+### 238. faster-whisper / large-v3
 
 - **ID:** `af5ee21b8d73`
 - **Language:** ru
@@ -4426,7 +5093,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо... он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать время. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в баржу... Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, как бы мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. И у меня цифровые зависы интернет видны, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама-сама. Послушайте, мы на самом деле делались легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот он случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие, Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получила с минусами. И мне надо было выводить деньги как раз. Потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, что вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше, но самое главное сейчас решить с этой позицией и чтобы она дальше не пошла в минус, потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра, ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я... А, вы хотите присматривать? может, вопрос? а Вы думаете, если у меня закроется какой-нибудь прогноз? смотрите, прогноз по этой позиции более чем хороший просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию потому что у нас, по факту, будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль То есть, будем уже смотреть по ситуации. То есть, будет до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус 1 это, конечно, не минус 25. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Субтитры создавал DimaTorzok Продолжение следует... Продолжение следует... Субтитры создавал DimaTorzok Да, прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть, ну, будем смотреть уже и отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получился, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыв, проседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо 5 лотов на 50, да, то есть у меня, я потеряла на этом 25 тысяч долларов. На тот момент, для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем, тем более, тем более у меня была уже... Пока мы говорили с вами, уже 17, 717, 817. А уже, а я только что заходила, было 22. Да, приблизительно. Ну, у меня уже 30. Это просто объем большой, поэтому любое изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть, не пугайтесь, мы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
 
-### 208. faster-whisper / large-v3
+### 239. faster-whisper / large-v3
 
 - **ID:** `fdded63e6724`
 - **Language:** ru
@@ -4446,7 +5113,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрут? Да, он обычно мне сам открывал сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, И я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял, я понял. И у меня цифровой завис интернет, видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он не открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Все у нас само. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. И получилось так, что я торговался с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть, я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток, то есть, я на тот момент потерялся, и первые 25 тысяч долларов, это было очень сложно. Ну, вот у меня сейчас тоже, и просто получалось, что я получила с минусами, и мне надо было вывозить деньги как раз, И получается, что просто все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют? Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Так вот, скорее всего, какие-то качели еще будут. я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь, да, мы смогли его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, то есть будем уже смотреть по ситуации. То есть будет до того, что даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидите, то, да, то есть, может быть, придется чуть-чуть пожертвовать, и да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю, я. Минус один, это, конечно, не минус 25. Да. Да. Буквально минутку, побудьте на минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае предложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. И дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не ведет, что стояла я как-то, ну, желательно один раз на грабли наступить и научиться. Это точно. Ну, желательно не наступать на них, конечно, но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, я мертвый хрыс, заседал. Слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позицию вместо пяти лотов на пятьдесят, да, то есть, и у меня, я потерял на этом двадцать пять тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Для меня сейчас, вот если я потеряю эти двадцать пять, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль. Для меня это тоже, скажем так. Тем более у меня была уже... Пока мы говорили с вами, уже 17,700, 17,800. А уже? А я только что заходила, было 22. Да, прыгает. У меня там еще 30. Ну, это просто прием большой. Поэтому там любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также спасибо большое. До свидания.
 
-### 209. openai / large-v3-turbo
+### 240. openai / large-v3-turbo
 
 - **ID:** `d39cfe709cdd`
 - **Language:** ru
@@ -4466,27 +5133,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделок. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все-таки записывается интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была сама-сама. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то у случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда, на свой торговый аккаунт, у меня просто позиции закрыты, убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... И получалось, что просто вот все в минусе и все в праздник. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала опять этот, как его называют. Авансная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. Я работаю с миллионными счетами, но учитывая то, что Никита очень попросил за вами присмотреть, Встретили очень сильно, потому что у тебя была ситуация, хотел бы, чтобы Новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что все-таки у меня закроется? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс, или в минимальный минус, или в ноль. Будем смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, об этом нам придется ее закрыть в небольшом минусе. Но если это вы видите, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. А, буквально минутку... Побыть и дверь, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Продолжение следует... Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержала. Я как бы, ну, желательно один раз на грабле наступить, научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала закрывать другие, и смотрю, я не вспомнила, я прямо в шоке была. Я у меня в днисрит начинал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот, если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть, как бы, это была прибыль Для меня это тоже... Поощупимо. Тем более у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже? А я только что заходила, было 22. Да, прыгай. Ну, у меня там еще 2, ну, 2 и 3. Большой. Поэтому там любой очаг, даже изменение цены, оно сразу идет там, минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 210. openai / large-v3-turbo
-
-- **ID:** `3fee603b4cd6`
-- **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
-- **Duration:** 11.13s
-- **Memory:** Δ 12.5 MB, peak 5165.7 MB
-- **Beam size:** 7
-- **Temperature:** 0.09
-- **Compute type:** float16
-- **Condition on prev:** False
-- **Batch size:** 0
-- **WER:** 33.50%
-- **CER:** 24.38%
-- **Timestamp:** 2026-01-07T12:40:20.196814+00:00
-
-**Text:**
-
-> Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это забился интернет, видно. И я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, У меня просто позиции закрыты, убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась минусы. И мне надо было выводить деньги как раз. Потому что, ага. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его называют. Авансная инвестиция, вижу. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться спасти. То есть, что вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что это такая ситуация, хотел бы, чтобы Новый год встретили спокойно, и не перерывали, что что-то будет не так. А вы думаете, что он закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс, в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то �, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс, или в минимальный минус, или в ноль. Будем смотреть по ситуации. Даже если я буду видеть, что сделка минус 2, минус 1000 идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу, об этом нам придется ее закрыть в небольшом минусе. Но если это вы видите, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, но, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. А, буквально минутку... Побыть и дверь, буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Продолжение следует... Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будьте более внимательны, когда когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержала. Я как бы, ну, желательно один раз на грабле наступить, научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала закрывать другие, и смотрю, я не вспомнила, я прямо в шоке была. Я у меня в днисрит начинал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть у меня я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот, если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть, как бы, это была прибыль Для меня это тоже... Поощупимо. Тем более у меня была уже... Пока мы говорили с вами уже 17, 700, 17, 800. А уже? А я только что заходила, было 22. Да, прыгай. Ну, у меня там еще 2, ну, 2 и 3. Большой. Поэтому там любой очаг, даже изменение цены, оно сразу идет там, минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо, в любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
-
-### 211. openai / large-v3-turbo
+### 241. openai / large-v3-turbo
 
 - **ID:** `3fee603b4cd6`
 - **Language:** ru
@@ -4506,7 +5153,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, я понял. У меня все это забился интернет, видно. И я вот набирала, и короче, вот это вот у меня хорошо произошло. Потому что, ну как бы он мне открывает, я умею закрывать все. Он мне говорит, насколько надо закрывать. А это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, У меня просто позиции закрыты, убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов. Это было очень сложно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась минусы. И мне надо было выводить деньги как раз. Потому что, ага. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его называют. Авансная инвестиция, вижу. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться спасти. То есть, что вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что это такая ситуация, хотел бы, чтобы Новый год встретили спокойно, и не перерывали, что что-то будет не так. А вы думаете, что он закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс, в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... А минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Спасибо. Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да. То есть будем смотреть, уже отталкиваться конкретно. это от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон, да, то есть и дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я как бы, ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них, Ну раз уже так получилось, я была сразу в шоке. Я когда-то увидела, как вы говорите, я сначала закрывала другие, смотрю, я не поняла, я прям в шоке была. Я мёртвый срыг начинал. Ну слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50, Да, то есть я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги. Поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже... Поощутимо. Тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17,700, 17,800. А уже, а я только что заходила, было 22. Да, прыгай. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 212. openai / large-v3-turbo
+### 242. openai / large-v3-turbo
 
 - **ID:** `e50372360983`
 - **Language:** ru
@@ -4526,7 +5173,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закладить. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. в 10 раз больше, обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты, убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась минусы, и мне надо было выводить деньги как раз. И получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его называют. Авангарная инвестиция, вижу. Объединенный депозит. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, что вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то с вами будем присматривать. Да, конечно, конечно. Меня попросили, то есть я еще что-то являюсь руководителем Никиты, Я работаю с миллионными счетами, не отношусь, но учитывая то, что Никита очень попросил за Вами присмотреть, очень сильно, потому что тяжелая ситуация, хотел бы, чтобы Новый год встретили спокойно и не переживали, что что-то будет не так. А вы думаете, что он все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть, и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Продолжение следует... Продолжение следует... Продолжение следует... Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да, то есть будем смотреть уже, отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть их страшный сон. Дальше уже просто будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. Я сама не выдержу. Я как бы... Ну, желательно один раз на грабле наступить и научить. Это точно. Ну, желательно не наступать на них конечно, но раз уже страх получилось, я конечно была сразу в шоке. Я когда-то увидела, как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была. Я мёртвый срыг заседал. Вы на самом деле легким испугом оделались, потому что я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо 5 лотов на 50. Да, то есть у меня, я потерял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это в принципе тоже, это все, что я показываю, то есть как бы это была прибыль моя. Для меня это тоже, скажем так, поощрительно. Тем более, тем более у меня была уже... Ну, то есть пока мы говорили с вами уже 17, 700, 17, 800. А уже, а я только что заходила, было 22. Да, прыгай. Ну, у меня там есть ответ. Ну, это просто объем большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда И проверим, что с вашей сделкой Хорошо? Хорошо, в любое время Спасибо Спасибо вам большое И вас также Спасибо большое Спасибо
 
-### 213. openai / large-v3-turbo
+### 243. openai / large-v3-turbo
 
 - **ID:** `2dc4b49252e1`
 - **Language:** ru
@@ -4546,7 +5193,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Тибер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу оточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать. Да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделает. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. в 10 раз больше, обычно чревато потерей всего капитала. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты, убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов это было очень больно. Ну вот у меня сейчас тоже. И просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз. Потому что... и получалось, что просто вот все в минусе. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5 сетов, как его назвали. Авангарная инвестиция, вижу. Объединенный депозит. Да, я вижу. Смотрите, у Вас по факту, как я вижу, другого выбора и не было. У Вас был выбор либо потерять, либо хотя бы как-то постараться спасти. То есть, что Вы спасти это намного лучше, потому что в любом случае Вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.22 с утра. Ну вот, скорее всего, какие-то качели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то с вами будете присматривать. Да, конечно, конечно. Меня попросили, я являюсь руководителем Никиты, я в целом работаю с миллионными счетами, я не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что у тебя была ситуация, хотел бы, чтобы Новый год встретили спокойно, и не переживали, что что-то будет не так. А вы думаете, что все-таки у меня закроется как-нибудь? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс, или в минимальный минус, или в ноль. Будем уже смотреть по ситуации. То есть, вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожаловать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Да, конечно. Я понимаю. Минус один – это, конечно, не минус 25. Да. Буквально минутку. Побыть от времени буквально минутку. А, хорошо, хорошо. Продолжение следует... Спасибо. Продолжение следует... Спасибо. Прошу прощения. Ничего страшного. Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз. Не переживайте. Она полностью под контролем. Она будет полностью под контролем. Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть. даже в плюс, будем смотреть уже отталкиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон, и дальше уже просто будьте более внимательны, когда будете открывать, потому что я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержу. Я как бы, ну, желательно один раз на грабли наступить и научиться. Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я не поняла, я прям в шоке была, у меня мертвый срыг заседал. Ну, слушайте, вы на самом деле легким испугом оделались, потому что, я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на пятьдесят, Да, то есть у меня, я потерял на этом 25 тысяч долларов. А то, померя, для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль моя. Для меня это тоже, скажем так. Поощупимо. Тем более, тем более у меня была уже... Ну, то есть, пока мы говорили с вами уже 17,700, 17,200. А я только заходила, было 22. Да, прыгаем. Ну, у меня там еще 2. У тебя просто 2. Большой. Поэтому любой очаг, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, кто под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Да. Спасибо. До свидания. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. До свидания.
 
-### 214. openai / medium
+### 244. openai / medium
+
+- **ID:** `90426c32a9ca`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 30.46s
+- **Memory:** Δ 705.0 MB, peak 3239.7 MB
+- **Beam size:** 1
+- **Temperature:** 0.02
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 34.70%
+- **CER:** 24.53%
+- **Timestamp:** 2026-01-07T13:43:17.742980+00:00
+
+**Text:**
+
+> Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня буду наблюдать. Хотел бы сразу выточить твою позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он не умеет. Он сказал, что достаётся, чтобы она вышла на ноль, чтобы не закрывать. Да, он уже домил по поводу трудной ситуации, которая у вас возникла. Да, он обычно мне сам открывал изделки. А это он перед отпуском мне объяснил. Просто на 100.2.91 поставила 29.1 и открыла 29.1 Ай-я-я-я, я понял У меня цеповый завис интернет, видно, и я вот набирала, и короче, и вот это вот у меня хорошо произошло Потому что он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать А это он мне объяснил, первый раз я сделала хорошо, второй раз я сделала хорошо Я не готова к этим. Мы делали с легким испугом, потому что открыть тазийство в 10 раз больше, обычно черевато потерять всего капитала. Я был на своей практике, на личном опыте, я еще был новичком, но это было лет 7 назад. Я тогда отбыл пяти лотов, случайно 50. И получилось так, что я торговал с одним брокером, брокером, там спреды вообще были сумасшедшие, и я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, помещая в минус. И получилось, что просто вот все время... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут же... Но я брала 5 лет, как его насыпать. Аванкра инвестиция, вижу. Да, да. Объединен депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, либо хотя бы как-то постараться стасти. То есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все каковистые, и чтобы она дальше не пошла в минус. Потому что я видел у вас проставка, если это пустилась, у вас было 26, сейчас 22 с утра. Я буду с вами на связи, если потребуются дозрочные меры. Я являюсь руководителем Никиты. Я работаю с миллионными счетами. В этом году я не отношусь, но я считаю, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно, если не перерывали, что что-то будет не так. А может вопрос? А вы думаете, что у меня закроется какой-нибудь поновь? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или минимальный минус, или в ноль. Будем уже смотреть на ситуацию. То есть будет для того, что там даже если я буду видеть, сделка там минус две, минус тысячу идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом мидусе. Но если это будет видеть, то... Да, то есть может быть придется чуть-чуть пожертвовать, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один это конечно минус 25. Да. Буквально минутку. Побыть и двигать буквально минутку. А, хорошо, хорошо. Прошу прощения. Вы чего ставите? Да. Поэтому смотрите, по поводу вашей ситуации, еще раз не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы эту всю датчу перекрыть даже в плюс. Будем смотреть, как отталкивается от ситуации. Я думаю, что до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон. И дальше будем более внимательны, когда будете открывать, потому что Никита второй раз не выдержит. Я сама не веду, что... Желательно один раз на грабли наступить, но лучше... Ну, желательно не наступать на них, конечно. Ну, раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, и я уже не вспомнила, я в чем шоке была. Я, мне кажется, заседал. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцел позиции вместо 5 лотов на 50. Я поделал на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги. Поверьте, огромные. Для меня сейчас, если я потираю эти 25, то это тоже. Все, что я показываю, это была прибыть. Для меня это тоже... Почти. Тем более у меня была уже... Пока мы говорили, наверное, уже 17,7, 17, 18. А я только что заходила была 23. Да, пригрыз. У меня там было 2. У тебя просто объем большой. Любое чеклик, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. То есть не пугайтесь, вы под контролем. Хорошо? Спасибо вам за счастье. Да, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. С нас не пасть. Спасибо вам большое. И вас так же. Спасибо большое. До свидания.
+
+### 245. openai / medium
 
 - **ID:** `14a15c83db11`
 - **Language:** ru
@@ -4566,7 +5233,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня буду наблюдать. Хотел бы сразу выточить твою позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Он сказал, что она должна вышла на ноль, чтобы не закрывать. Он уже дамил по поводу трудной ситуации, которая у вас возникла. Да, он обычно мне сам открывал изделки. А это он перед отпуском мне объяснил. Я просто на 2.91 поставила 29.1 и открыла 29.1. Я понял. У меня зависит интернет, видно. Я набирала, и вот это у меня хорошо произошло. Он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. Это он мне объяснил. Я делала хорошо второй раз, а это у меня не готово было. Мы делали с легким испугом, потому что открыть позицию в 10 раз больше, обычно черевато потерять капитала. Я был на своей практике, на личном опыте, я был новичком. Это было лет 7 назад. Я тогда открыл 5, а потом случайно 50. Я торговал с одним брокером, там спреды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня закрытый убыток. Я на тот момент потерял свои первые 25 тысяч долларов. У меня сейчас тоже. Получалось, что я получила с минусов. Мне надо было выводить деньги по месторжению. Получалось, что все время нужно было брать. Самое главное, что вы не потеряли капитал, потому что закончилось намного хуже. Я брала 5 лет, как его называют. Аванкра инвестиция, вижу. Обеден депозит, да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться стасти. Вы спасли это намного лучше, потому что в любом случае вы это сделаете, вы можете просто ввести больше. Самое главное, сейчас решить все как и вистое, чтобы она дальше не пошла в минус. Я вижу, что у вас проставка опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие-то качели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры. А, вы хотите присматривать? Да, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Я не отношусь к этому, но учитывая то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно, если бы не перерывали, что что-то будет не так. Можно вопрос? Да, да. А вы думаете, что у вас все-таки у меня закроется каким-то панель? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или минимальный минус, или в ноль. Будем уже смотреть на ситуацию. Если я буду видеть, что сделка минус две, минус тысячу идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль. Я вам скажу об этом, нам придется закрыть небольшой минус. Но если это будет видеть, то может быть придется чуть-чуть пожертвовать. Но на крайней мере, чтобы не было такого, что вы понимаете. Конечно, конечно. Я понимаю, минус один это, конечно, не минус 25. Да. Буквально минутка. Побыть и видеть буквально минутку. А, хорошо, хорошо. Хорошо. Прошу прощения. Вы чего ставите? Да. Поэтому смотрите, по поводу вашей ситуации. Еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы это все дальше перекрыть даже в плюс. Будем смотреть уже от получившейся конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию вы должны от нее избавиться, забыть, как страшный сон. И дальше уже просто будем более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз эту позицию не выдержит. Я сама не веду себя. Я как-то желательно на один раз на грабли наступить. Это точно. Ну, желательно не наступать на них, конечно. Но раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, как вы говорите, я сначала начала закрывать другие. Но я уже не поняла, чем в шоке была. Я уже не облескалась. Вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично открыл позицию вместо 5 лотов на 50. То есть, я поднял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, если я потираю эти 25, то это тоже, в принципе, это все, что я показываю, это была прибыть. Для меня это тоже, скажем, тем более у меня была уже... Ну, пока мы говорили, наверное, уже 17,717, 18. А уже? А я только что заходила, была 22. Да, прибыли. Ну, у меня там не сутрица. Ну, у тебя просто объем большой. Любое чуть-чуть, даже изменение цены, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. То есть, не пугайтесь под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда, и проверим, что с вашей сделкой, хорошо? Хорошо, в любой время. Да, спасибо. Спасибо вам большое. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 215. faster-whisper / medium
+### 246. faster-whisper / medium
 
 - **ID:** `f1360c1ed1e5`
 - **Language:** ru
@@ -4586,7 +5253,47 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Мне просто надо... Он сказал, что достаточно, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уже дамил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку? Да, он обычно мне сам и прикрывал изделки. А это он перед отпуском как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня записан интернет, видно, и я вот набирала, и короче, и вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать, если он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня, ну короче, наверное, я и не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерять всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а потом случайно 50. И получилось так, что у меня... как бы я торговал с одним брокером, там спреды вообще были сумасшедшие и ну то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток то есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно ну вот у меня сейчас тоже и просто получалось, что я получилась в минусе и мне надо было выводить деньги как раз по мастеру Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, потребуются какие-то срочные меры. А, вы хотите пересматривать? Да, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Ничего там не отношусь. Но учитывая то, что Никита очень попросил за вами пересмотреть очень сильно, потому что у тебя была ситуация. Хотел бы, чтобы... Очень. Новый год. Встретили спокойно, да, если не переживали как-то прямо того, что что-то будет не так. А можно вопрос? А вы думаете, у меня закроется какой-нибудь панель? Смотрите, прогноз по этой позиции более чем хороший. То есть, просто надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там минимальный плюс или минимальный минус или в ноль, да, то есть будем уже смотреть на ситуацию. То есть будет до того, что там даже если я буду видеть, сделка там минус две, минус тысячу идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется закрыть небольшой минус. Но если это будет... Да, может быть придется чуть-чуть пожертвовать, но на крайней мере, чтобы не было такого, что... Ну, понимаете? Конечно, конечно. Я понимаю, я... Минус один, это, конечно, минус два. Да. Буквально минутку. Побыть и двигать буквально минутку. А, хорошо, хорошо. Извращение. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбавчиваться конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будем более внимательны, когда будете открывать, потому что я думаю Никита второй раз в секунду позицию не выдержит. Я сама не веду себя. Стоял я как-то, ну, желательно на один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно. Ну, раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала закрываю, начала закрывать другие и смотрю, я уже не поняла, я чем в шоке была. Я, мне кажется, я сдаюсь. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцел позиции вместо 5 лотов на 50. Да, то есть, у меня, я поделал на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то, в принципе, тоже это всё, что я показываю, то есть, как бы это была прибыть. Для меня это тоже, скажем... Почти тем более. Тем более у меня была уже... Ну, подождите, пока мы говорили, наверное, уже 17700, 17800. А уже? А я только что заходила, была 22. Да, привет. Ну, у меня там 23. Ну, у тебя был такой большой. Да, ну, там... Любое чуть-чуть, даже изменение цены, оно сразу же идет там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься там, я в любом случае буду за этим следить. То есть, не пугайтесь, вы под контролем, хорошо? Ага. Спасибо вам большое. Да. Все Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой. Хорошо? Хорошо. В любой время. Да. Спасибо. Спасибо вам большое. И вас так же. Спасибо большое.
 
-### 216. faster-whisper / medium
+### 247. faster-whisper / medium
+
+- **ID:** `bb08ea26cc2b`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.14s
+- **Memory:** Δ 0.0 MB, peak 3363.0 MB
+- **Beam size:** 1
+- **Temperature:** 0.30
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 40.12%
+- **CER:** 24.95%
+- **Timestamp:** 2026-01-07T13:45:45.477932+00:00
+
+**Text:**
+
+> Алло? Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, он не умеет. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уже дымил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в Мартинкову? Да, он обычно мне сам открывал изделки. А это он перед отпуском как бы мне объяснил, и я просто на 100.2.91 поставила 20.9.1 и открыла 20.9.1. А, я понял. Я понял. У меня записан интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что он мне открывает, я умею закрывать. Вот если он мне говорит, насколько надо закрывать, то это он мне объяснил. Первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня... Ну, короче, наверное, я и не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерять всего капитала. У меня был один раз такой на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл не 5, а случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже и просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз по мастеру. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Ну, я брала 5 лет какого-то аванкровестиция, вижу. Да, да. Обиден гипозис. Да, я вижу. Ну, смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, потребуются какие-то срочные меры. А, вы хотели бы пересматривать? Да, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Ничего там не отношусь. Но учитывая то, что Никита очень попросил за вами пересмотреть, очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы... Очень. Новый год. Встретили спокойно, да, если не переживали, как-то прямо того, что что-то будет не так. А можно вопрос? А вы думаете, что все-таки у меня закроется какой-нибудь панель? Смотрите, прогноз по этой позиции более чем хороший. То есть, просто надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть на ситуацию. То есть будет до того, что там даже если я буду видеть, то сделка там минус две, минус тысячу идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я все равно об этом нам придется закрыть в небольшом минусе. Но если это будет... Так, может быть, придется чуть-чуть пожертвовать, но на крайней мере, чтобы не было такого, что... Ну, понимаете? Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус посетитель. Да. Буквально минутку. Побыть и двигать буквально минутку. А, хорошо, хорошо. Извращение. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отмачиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будем более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз в секунду позицию не выдержит. И я сама не веду себя. Стоял я как-то, ну, желательно на один раз на грабле наступить и научиться. Ну, желательно не наступать на них, конечно. Ну, раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, уже не вспомнила, чем в шоке была. Я, мне кажется, заседал. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцел позиции вместо 5 лотов на 50. Да, то есть, у меня, я поделал на этом 25 тысяч долларов. На тот момент, для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то, в принципе, тоже это всё, что я показываю, то есть, как бы, это была прибыть. Для меня это тоже, скажем... Почти тем более. Тем более у меня была уже... Ну, подождите, пока мы говорили, наверное, уже 17700, 17800. А уже? А я только что заходила, была 22. Да, привет. Ну, у меня там уже 3... Ну, у тебя просто уже 2. Большое. Да, ну, там... Любое чуть-чуть, даже изменение цены, оно сразу же идет там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься там, я в любом случае буду за этим следить. То есть, не пугайтесь под контролем, хорошо? Ага. Спасибо вам большое. Да. Все Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любой время. Да. Спасибо. Спасибо вам большое. И вас так же. Спасибо большое.
+
+### 248. faster-whisper / medium
+
+- **ID:** `2b0556802185`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 6.95s
+- **Memory:** Δ 0.0 MB, peak 9011.4 MB
+- **Beam size:** 8
+- **Temperature:** 0.03
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 40.62%
+- **CER:** 25.26%
+- **Timestamp:** 2026-01-07T13:51:43.517535+00:00
+
+**Text:**
+
+> Алло? Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу сочинить твою позицию. Если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, он не умеет. Мне просто надо... Он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уже дымил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в Мартинкову? Да, он обычно мне сам и прикрывал изделки. А это он перед отпуском, как он мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Я понял. У меня записан интернет, видно. И я набирала, и вот это у меня хорошо произошло. Он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. Это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо. А это где-то у меня... Ну, короче, наверное, я их не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерять всего капитала. У меня был один раз такой на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл не 5, а случайно 50. И получилось так, что у меня... Я торговал с одним брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже и просто получалось, что я получилась в минусе. И мне надо было выводить деньги как раз по мастеру. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Ну, я брала 5 лет какого-то. Аванкра инвестиция, вижу. Да, да. Обиден не пользует. Да, я вижу. Ну, смотрите, у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять... Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, потребуются какие-то срочные меры. А, вы хотели бы пересматривать? Да, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Ничего там не отношусь, но учитывая то, что Никита очень попросил за вами пересмотреть очень сильно, потому что тяжелая ситуация. Хотел бы, чтобы... Очень. Новый год. Встретили спокойно, да, если не переживали, как-то прямо того, что что-то будет не так. А можно вопрос? А вы думаете, что все-таки у меня закроется какой-нибудь панель? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там минимальный плюс или минимальный минус, или в ноль, да, то есть будем уже смотреть на ситуацию. То есть будет до того, что там даже если я буду видеть, сделка там минус две, минус тысячу идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется закрыть небольшой минус. Так, может быть, придется чуть-чуть пожертвовать, но на крайней мере, чтобы не было такого, что... Ну, понимаете? Конечно, конечно. Я понимаю, я... Минус один, это, конечно, не минус последний. Да. Буквально минутку... Побыть и двигать буквально минутку. А, хорошо, хорошо. Извращение. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбавчиваться конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будем более внимательны, когда будете открывать, потому что я думаю Никита второй раз в секунду позицию не выдержит. И я сама не веду себя. Стоял я как-то, ну, желательно на один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно. Ну, раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, уже не вспомнила я, чем в шоке была. Я, мне кажется, наседался. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцел позиции вместо 5 лотов на 50. Да, то есть, у меня, я поделал на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то, в принципе, тоже это всё, что я показываю, то есть, как бы, это была прибыть. Для меня это тоже, скажем. Почти не более. Тем более у меня была уже... Ну, подождите, пока мы говорили, наверное, уже 17700, 17800. А уже? А я только что заходила, была 22. Да, привет. Ну, у меня там уже 3... Ну, у тебя просто уже 2. Большое... Да, ну, там... Любое чуть-чуть, даже изменение цены, оно сразу же идет там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, там... Я в любом случае буду за этим следить. То есть, не пугайтесь, вы под контролем. Хорошо? Ага. Спасибо вам большое. Да, все Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любой время. Да, спасибо. Спасибо вам большое. И вас так же, спасибо большое.
+
+### 249. faster-whisper / medium
 
 - **ID:** `d82f0f663926`
 - **Language:** ru
@@ -4606,7 +5313,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Мне просто надо... Он сказал, что достаётся, чтобы она вышла на ноль, чтобы не закрывать... Да, да. Он уже дамил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в Мартинцовую? Да, он обычно мне сам и прикрывал изделки. А это он перед отпуском как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Это он мне объяснил, первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня... Ну короче, наверное, я их не готова была. Послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерять всего капитала. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а потом случайно 50. И получилось так, что у меня... как бы я торговал с одним брокером, там спреды вообще были сумасшедшие и ну то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток то есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень больно ну вот у меня сейчас тоже и просто получалось, что я получилась в минусе и мне надо было выводить деньги как раз по мастеру Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, да, да. Да, потребуются какие-то срочные меры. А, вы хотите пересматривать? Да, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Ничего там не отношусь. Но учитывая то, что Никита очень попросил за вами пересмотреть очень сильно, потому что у тебя была ситуация. Хотел бы, чтобы... Очень. Новый год. Встретили спокойно, да, если не переживали как-то прямо того, что что-то будет не так. А можно вопрос? А вы думаете, у меня закроется какой-нибудь панель? Смотрите, прогноз по этой позиции более чем хороший. То есть, просто надо будет наблюдать, чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там минимальный плюс или минимальный минус или в ноль, да, то есть будем уже смотреть на ситуацию. То есть будет до того, что там даже если я буду видеть, сделка там минус две, минус тысячу идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется закрыть небольшой минус. Но если это будет... Да, может быть придется чуть-чуть пожертвовать, но на крайней мере, чтобы не было такого, что... Ну, понимаете? Конечно, конечно. Я понимаю, я... Минус один, это, конечно, минус два. Да. Буквально минутку. Побыть и двигать буквально минутку. А, хорошо, хорошо. Извращение. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть уже и отбавчиваться конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будем более внимательны, когда будете открывать, потому что я думаю Никита второй раз в секунду позицию не выдержит. Я сама не веду себя. Стоял я как-то, ну, желательно на один раз на грабли наступить и научить. Ну, желательно не наступать на них, конечно. Ну, раз уже так получилось, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала закрываю, начала закрывать другие и смотрю, я уже не поняла, я чем в шоке была. Я, мне кажется, наседался. Ну, слушайте, вы на самом деле лёгким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцел позиции вместо 5 лотов на 50. Да, то есть, у меня, я поделал на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, то, в принципе, тоже это всё, что я показываю, то есть, как бы это была прибыть. Для меня это тоже, скажем. Почти тем более. Тем более у меня была уже... Ну, подождите, пока мы говорили, наверное, уже 17700, 17800. А уже? А я только что заходила, была 22. Да, привет. Ну, у меня там 23. Ну, у тебя был такой большой. Да, ну, там... Любое чуть-чуть, даже изменение цены, оно сразу же идет там, минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься там, я в любом случае буду за этим следить. То есть, не пугайтесь, вы под контролем, хорошо? Ага. Спасибо вам большое. Да. Все Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любой время. Да. Спасибо. Спасибо вам большое. И вас так же. Спасибо большое.
 
-### 217. openai / small
+### 250. openai / small
 
 - **ID:** `91bb433f7565`
 - **Language:** ru
@@ -4626,7 +5333,7 @@
 
 > Присмотреть за вашей позиции. Я в течение сегодняшнего дня буду наблюдать. Вы посидите, если вы знаете самостоятельно закрывать или вам нужно будет помочь? Да, он не умеет. Он сказал мне, что она вышла намоль, чтобы не закрывать. Он уже домил по поводу трудной ситуации, которая у вас возникла? Да. Он обычно мне сам открывал и сделал. Это он увидел, что я на 2.91 поставила на 2.29, и открыла 2.39. Я понял. Я на 2.29 забисти не пересчитала. Я набирала, и это хорошо зашло. Он мне открывает, я у нее закрываю, если он мне говорит, насколько надо закрывать. Это он мне сделал, 1 раз я сделал хорошо, 2 раз я сделал хорошо, а это где-то мне... Выкрутить на верно я не готова была. Я у нас самая. Вы на самом деле делали с легким искусством, потому что открыть садистку в 10 раз больше, а обычно ширевата потери всего капитала. Я был один раз на своей практике, на личном опыте, я еще был тоже на вещь вам. Это было лишь 7 назад. Я тогда открыл 5-го, то в случай на 50. Я торговал с одним брокером, там страйды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на тракулы. У меня просто признатель закрытый, я на тот момент потерялся и первый 25 000$. Вот у меня сейчас тоже, я получилась на носе. И мне надо было выводить деньги, как раз. И получилась просто сумма. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Я брала 5-го, как его, как его назвали. А вам кромистиция, Визжа? Я визжал. Посмотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться в стасте. Вы сделали это намного лучше, потому что в его случае вы можете потом просто вывести больше. Самое главное, сейчас решится капитализация и чтобы она дальше не пошла с минус. Потому что я видел, что у вас просто сфитопустилась, возбыл 26-22. В сутра скорее всего, какие нахачили еще будут. А я в любом случае буду с вами на связи, если вдруг потребуется какие-то срочные меры. А, по-почтему, не присматривать? Конечно, конечно. Меня попросили, я и все что является руководителем Никиты. Я работаю с миллионами счетами. Чи там не отношусь. Но в читом это очень попросило, что я вам присмотрел. Очень сильно. Потому что тяжелая ситуация. Чтобы в Новый год встретили спокойно, не перезывали к этому, что будет не так. Может вопрос? Обнимается, чтобы пяти у меня закроется? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс, в минимальный минус. То есть будем уже смотреть по ситуации. И то, что я буду видеть, что в минус две, в минус тысячу идет. И она потом дальше будет осуществляться, и нет вряд ли, что она выйдет в ноль. Я вам сказал об этом, нам придется ее закрыть небольшом в минимум. Но если это будет видно, то можно быть придется чуть-чуть потратить. Но в крайней мере, чтобы не было такого, что... Я понимаю. В минус один, в минус двадцать тысяч. Да. Попытить и говорить буквально на другое? А, хорошо. Прошу прощения. Вы чего ставите? Да. Поэтому смотрите. По поводу вашей ситуации. Еще раз не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжу усиливать, что эту ситуацию перекрит даже плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, до конца этого дня, эту позицию мы должны отними избавиться, забыть их страшно. И дальше уже будет более внимательное, когда будете открывать, потому что я думаю, не где-то второй раз эту позицию не выдержать. Я сама не ведешь. Я желательно один раз на грабли наступить, научиться. Потому что? Ну, желательно не наступать на не конец, ну раз уже страх получился, конец вообще была сразу в шоке. Я когда-то увидела, как вы говорите, я начала закрывать другие, но я там в шоке была, я в дне сырый соседал. Вы на самом деле легче, чем и с пугом. Я был ситуатом, когда я лично от всего позиции, вместо 5, от 5 на 50. То есть у меня, я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Для меня сейчас, вот я ее потеряю, 25 это принеси тоже. То есть я показываю, это была в прибытии. Для меня это тоже. Тим более у меня была уже... Как мы говорили с нами, уже 17, 717, 8, 8... А уже? А я только что застогила, было 23. Да, прибытии, прибытии, прибытии, прибытии. Но это большой, поэтому любой очередь, даже изменение сына, сразу идет минус 4, плюс 4 и так далее. Она может подниматься, то есть, если будет подниматься, я в любом случае буду за этим следить. То есть не пугайте, если под контролем, хорошо? Ага, спасибо вам большое. Да, все, Ольга, тогда приятно было с вами познакомиться. Мне еще зовут Александр. Я вас наберу еще после обеда и проверю, что с вашей делой. Хорошо? Хорошо, в любое время. Спасибо, спасибо вам большое. Спасибо вам большое. Спасибо большое.
 
-### 218. faster-whisper / large-v3-turbo
+### 251. faster-whisper / large-v3-turbo
 
 - **ID:** `f43332bd75b9`
 - **Language:** ru
@@ -4646,7 +5353,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее время. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал стрелки. А это он, ну, ребят, перед отпуском, он мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, у меня все это забил интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была сама-сама. Послушайте, мы, на самом деле, делали с легким испугом, потому что открыть тазиску в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто, получалось, что я получила с минуси, и мне надо было выводить деньги как раз, потому что, и, получалось, что просто вот все в минусе, и все в праздник. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже, да, то есть тут я... Ну я брала 5, как его называют. Авансная инвестиция, вижу. Да, да. Abating deposit, да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за... Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть вы спасти это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше, но самое главное сейчас решить все это позиции, и чтобы она дальше не пошла в минус. Я и да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26.622 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я... А, то есть вы будете присматривать? Да, конечно, конечно, меня попросили, то есть я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я... Ага. ...четам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, у тебя была ситуация, то есть хотел бы, чтобы... Новый год встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. А вы думаете, что у меня все-таки закроется как-нибудь? Смогу я... Смотрите, прогноз по этой позиции более чем хороший, да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть может быть придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один это, конечно, не минус 25. Ну да. Да. А, буквально минутку... Побыть от времени буквально минутку. А, хорошо, хорошо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Большое. Да. Ольга. Тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо. Спасибо вам большое. И вас также. Спасибо большое. Спасибо.
 
-### 219. faster-whisper / small
+### 252. faster-whisper / small
+
+- **ID:** `b67cc47f1d81`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 3.32s
+- **Memory:** Δ 0.2 MB, peak 9011.4 MB
+- **Beam size:** 8
+- **Temperature:** 0.01
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 50.55%
+- **CER:** 40.93%
+- **Timestamp:** 2026-01-07T13:50:49.104774+00:00
+
+**Text:**
+
+> Алло, здравствуйте. Я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать или вам нужно будет помочь. Он сказал, что она вышла на ноль, чтобы не закрывать деньги. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209.1. Я не знаю, как это было, но я не знаю. Вы делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз на своей практике, именно на личном опыте. Я еще был тоже новичком, но это было лет семь назад. Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, потому что у меня просто принесли закрытые бубы. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в манусе. И мне надо было вывести деньги как раз по месту. Самое главное, что вы не потеряли капитал, потому что сам могло закончиться намного хуже. Я брала отец как его. Авангкран висит, я вижу. Посмотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я работаю с миллионами считами. Что там не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Встретили спокойно синий перезывалик от того, что что-то будет не так. Смотрите, прогноз по этой позиции более чем хороший. Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть, что сделка там минус две, минус тысячу идет, то есть и она потом дальше будет усугубляться, и нет в порядке, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю. Я понимаю. Немножко одинный, это, конечно, минимум 20-30 секунд. Да. Буквально минутку. Побыть и взгляни буквально минутку. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательнее, когда будете открывать, потому что я думаю, они в второй раз эту позицию не выдержат. И я сама не держу. Я выглядел как-то, ну, желательно, найден раз на грабли наступить, но учить. Ну, желательно, не наступать на них, конечно, но раз уже страх получился у нас, конечно, он вообще была сразу в шоке. Я когда-то уже увидела, как вы говорите, я начала закрывать другие, смотрю, не было я, чем в шоке была. Я, наверное, их рыцарь посидал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя потерять, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже. Спасибо. Тем более у меня была уже... А уже? А я только что заходила, была 22. Да, привет, Денис Утрица. У меня это не кудрица, но у меня есть кудрица большая. Поэтому там любое чудо, даже изменение сына, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься там, я в любом случае буду за этим садить. То есть не пугайтесь под контролем, хорошо? Спасибо вам большое.
+
+### 253. faster-whisper / small
 
 - **ID:** `c1f7c7b46f09`
 - **Language:** ru
@@ -4666,7 +5393,7 @@
 
 > Алло, здравствуйте. Я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать или вам нужно будет помочь. Он сказал, что она вышла на ноль, чтобы не закрывать деньги. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209.1. Я не знаю, как это было, но я не знаю. Вы делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз на своей практике, именно на личном опыте. Я еще был тоже новичком, но это было лет семь назад. Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, потому что у меня просто принесли закрытые бубы. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в манусе. И мне надо было вывести деньги как раз по месту. Самое главное, что вы не потеряли капитал, потому что сам могло закончиться намного хуже. Я брала отец как его. Авангкран висит, я вижу. Посмотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я работаю с миллионами считами. Что там не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Встретили спокойно синий перезывалик от того, что что-то будет не так. Смотрите, прогноз по этой позиции более чем хороший. Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть, что сделка там минус две, минус тысячу идет, то есть и она потом дальше будет усугубляться, и нет в порядке, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю. Я понимаю. Немножко одинный, это конечно. Немножко 70, да. Да. Пусть будет... Побыть и взгляни буквально в минуту. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжу все усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательнее, когда будете открывать, потому что я думаю, они в второй раз эту позицию не выдержат. И я сама не держу. Я выглядел как-то, ну, желательно, найден раз на грабли наступить, но учить. Ну, желательно, не наступать на них, конечно, но раз уже страх получился у нас, конечно, он вообще была сразу в шоке. Я когда-то уже увидела, как вы говорите, я начала закрывать другие, смотрю, не было я, чем в шоке была. Я, наверное, их рыцарь посидал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя потерять, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже. Спасибо. Тем более у меня была уже... А уже? А я только что заходила, была 22. Да, привет, Денис Утрица. У меня это не кудрица, но у меня есть кудрица большая. Поэтому там любое чудо, даже изменение сына, оно сразу идет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься там, я в любом случае буду за этим садить. То есть не пугайтесь под контролем, хорошо? Спасибо вам большое.
 
-### 220. openai / large-v3-turbo
+### 254. openai / large-v3-turbo
 
 - **ID:** `0d84fe8431a3`
 - **Language:** ru
@@ -4686,7 +5413,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Типпер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умеет, не, умеет, умеет. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршруту. Да, он обычно мне сам открывал и сделал. А это он, ну, видно, перед отпуском, он мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. А, я понял. Да, у меня тупо забился интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, и это он мне объяснил. Первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все у нас, самое. Да, слушайте, мы, на самом деле, делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. Вот. И получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты, в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто, получалось, что я получилась минусы, и мне надо было выводить деньги как раз, потому что, ага, и получалось, что просто вот все в минусе, и все в трат. И самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Ну, я брала 5, а этот, как его, как его называют. Аванс на инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть, что вы спасли это намного лучше, потому что, в любом случае, вы вот потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то что вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я и все, что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да. То есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, у тебя была ситуация. То есть я хотел бы, чтобы новый год встретили спокойно, да, то есть и не переживали, как прямо того, что что-то будет не так. Ну, а вы, может, вопрос? А вы думаете, если у меня закроется как-нибудь? Да, да. Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, да. То есть будем уже смотреть по ситуации. То есть, вводя того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то, да, то есть может быть придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что, ну, понимаете. Да, конечно, я понимаю, я... Минус один это, конечно, не минус 25. Да. Да. Буквально минутку, по бытию двери буквально минутку. А, хорошо, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. В любом случае, приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс. Да. То есть, ну, будем смотреть уже и опалчиваться конкретно от ситуации. Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон, да. То есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит. И я сама не выдержала. Я, ну, я как бы, ну, желательно один раз на грабли наступить и научить. Это точно. Ну, желательно не наступать на них, конечно, но раз уже страх получилась, я, конечно, вообще была сразу в шоке. Я когда-то же увидела, вот как вы говорите, я сначала закрывать другие, смотрю, я не поняла, я прям в шоке была. У меня мёртвый срыг начинался. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо петила, то на 50, да, то есть, у меня, я потеряла на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль моя. Для меня это тоже, скажем так. Поощутимо. Тем более, тем более у меня была уже… Ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну, ну Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. Хорошо. Согласен.
 
-### 221. openai / medium
+### 255. openai / medium
 
 - **ID:** `4813ecc61bdb`
 - **Language:** ru
@@ -4706,7 +5433,27 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте Ольга, представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу выточить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Он сказал, что достаться, чтобы она вышла на 0, чтобы не закрывать время. Да, он уже домил по поводу трудной ситуации, которая у вас разникла. Он обычно мне сам открывал изделки. А это он перед отпуском как бы мне объяснил. Я просто на 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. У меня в цеповой завис интернет, видно. И я вот набирала, и короче, и вот это вот у меня хорошо произошло. Потому что он меня открывает, я умею закрывать, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня... Ну, короче, наверное, я их и не готова была сама-самой. Мы на самом деле делали с легким испугом, потому что открыть тазисы в 10 раз больше обычно в чревато потери всего капитала. У меня был один раз такой на своей практике, на личном опыте. Я еще был тоже новичком. Это было лет 7 назад. Я тогда отвергл 5 лотов, а случайно 50. Получилось так, что я торговал с одним брокером. Спреды были сумасшедшие. Я даже не обратил внимания. Я захожу после обеда на свой торговый аккаунт, а у меня просто практически закрытый убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну вот у меня сейчас тоже и просто получалось, что я получилась в минусе, и мне надо было вывести деньги как раз по месту ажиних. И получалось все просто вот, все время… Вот и самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Но я брала 5-й ассетов как его, как его называют. Аванкра инвестиция, вижу. Да. Но самое главное сейчас решиться с этой позиции, и чтобы она дальше не пошла в минус. Я да, да. Потому что я видел, у вас проставка как-то опустилась, у вас было 26, сейчас 22 с утра. Скорее всего, какие лагачели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры. А, вы хотите попросить? Да, конечно, конечно, меня попросили. Если я являюсь руководителем Никиты, то я работаю с миллионными считами. Я не отношусь к этой ситуации. Но Никита очень попросил за вами присмотреться. Очень сильно. Сказала, что ситуация тяжелая. Хотел бы, чтобы вы Новый год встретили спокойно, а не перерывали, что что-то будет не так. Можно вопрос, а вы думаете, что у меня закроется какой-нибудь проной? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или минимальный минус или в ноль. Будем уже смотреть ситуацию. То есть будет до того что там даже если я буду видеть, что сделка там минус две, минус тысячу идет, да. То есть и она потом дальше будет усугубляться и нет варианта что она вот выйдет в ноль. То я вам скажу об этом нам придется загреть небольшой мизик. Но если это увидеть, то... Так, то есть может быть придется чуть-чуть пожертвовать, да? То есть ну на крайней мере чтобы не было такого, что ну понимаете. Конечно, конечно. Я понимаю, я... Минус один это конечно минус 25. Да. Буквально минутку. Побыть в виде буквально минутка. А, хорошо. Дорогие друзья, я надеюсь, что это все, а вы не думаете, что я не буду выигрывать? Я надеюсь, что это все, что я буду выигрывать? Я надеюсь, что это все, а вы не думаете, что я буду выигрывать? Я надеюсь, что это все, а вы не думаете, что я буду выигрывать? Я надеюсь, что это все, а вы не думаете, что я буду выигрывать? Я надеюсь, что это все, а вы не думаете, что я буду выигрывать? Взяли. Поехали. Взяли. Взяли. Поехали. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Взяли. Прошу прощения. Я ничего не знаю. Да, поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае перерожу все усилия, для того, чтобы это все дальше было в порядке. А если вы хотите переработать на эту ситуацию, то вы можете переработать на эту ситуацию, и вы можете переработать на эту ситуацию, усилий для того, чтобы это все дальше перекрыть даже в плюс. Но будем смотреть уже от получившейся конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже просто будем более внимательны, когда будете открывать, потому что я думаю Никита второй раз в секунду позицию не выдержит. Я сама не веду, что... Я бы как то желательно один раз на грабли наступить и научить. Это точно. Ха-ха-ха. Ну желательно не наступать на них конечно. Ну раз уже так получилось, я конечно была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, смотрю, я уже не вспомнила, я в чем в шоке была. Я... я бессрысно себя уж... Ну слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцел позиции вместо 5 лотов на 50, то есть у меня, я поднял на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Но для меня сейчас, вот если я потираю эти 25, то, в принципе, тоже это все, что я показываю, то есть, как бы, это была прибыть, я понимаю. Для меня это тоже, скажем, поощитимо. Тем более у меня была уже… Мы говорили, что 17700, 17800. А уже? А я только что заходила, была на 22. У меня такой ответ. Это просто объем большой. Любое чеклик даже изменения цены. А то сразу идет минус 4, плюс 4 и так далее. Она может подниматься. Но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь, вы под контролем. Хорошо? Ага, спасибо вам большое. Да, все Ольга. Тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда и проверим что с Вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо Вам большое. И Вас так же, спасибо большое. До свидания.
 
-### 222. openai / large-v3-turbo
+### 256. openai / medium
+
+- **ID:** `9a95e07febbe`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 35.40s
+- **Memory:** Δ 0.2 MB, peak 3239.9 MB
+- **Beam size:** 1
+- **Temperature:** 0.04
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 51.86%
+- **CER:** 42.34%
+- **Timestamp:** 2026-01-07T13:44:44.185505+00:00
+
+**Text:**
+
+> Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня буду наблюдать. Хотел бы сразу выточить твою позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, он не умеет. Он сказал, что достаётся, чтобы она вышла на ноль, чтобы не закрывать. Да, он уже домил по поводу трудной ситуации, которая у вас возникла. Да, он обычно мне сам открывал изделки. А это он перед отпуском не объяснил. Просто на 100.2.91 поставила 29.1 и открыла 29.1 Ай-я-я-я, я понял У меня цеповый завис интернет, видно, и я вот набирала, и короче, и вот это вот у меня хорошо произошло Потому что он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать А это он мне объяснил, первый раз я сделала хорошо, второй раз я сделала хорошо Я не готова к этим. Мы делали с легким испугом, потому что открыть тазийство в 10 раз больше, обычно черевато потерять всего капитала. Я был на своей практике, на личном опыте, я еще был новичком, но это было лет 7 назад. Я тогда отбыл 5 лет, а потом случайно 50. И получилось так, что я торговал с одним брокером, брокером, там спреды вообще были сумасшедшие. Я даже не обратил внимание, я захожу после обеда на свой торговый аккаунт, у меня просто практически закрытый убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было выводить деньги как раз, помещая в мину. И получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Но я брала 5 лет какого насправки. Аванкра инвестиция, вижу. Да, да. Объединен депозит, да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. либо потерять, либо хотя бы как-то постараться стасти. То есть, чтобы вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решится экозистая, есть чтобы она дальше не пошла в минус. Потому что я видел, у вас проставка действительно опустилась, у вас было 26, сейчас 22 с утра. Вот, скорее всего, какие вагачели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я есть то, что являюсь руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Чего там не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что у тебя была ситуация. Я хотел бы, чтобы Новый год встретили спокойно, если не перерывали, как раз, что что-то будет не так. Можно вопрос? А вы думаете, что у меня закроется какой-нибудь пронос? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы пройдевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или минимальный минус, или в ноль, то есть будем уже смотреть на ситуацию. То есть будет до того, что там даже если я буду видеть, сделка там минус две, минус тысячу идет, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется закрыть небольшое минутое. Но если это увидеть... Да, может быть придется чуть-чуть пожадливать, но на крайней мере чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю. Я... Минус один это... конечно, минус два, пять. Да. А буквально минутку... Побыть и двигать буквально минутку. А, хорошо, хорошо. В этом году мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. И мы будем работать с вами. Прошу прощения. Вы чего ставите? Да. Поэтому смотрите, по поводу вашей стати, еще раз не переживайте, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью под контролем, она полностью Прошу прощения. В общем, у вас тайт-плаф. Да. Поэтому смотрите, по поводу вашей ситуации, еще раз не переживайте, она полностью под контролем. Она будет полностью под контролем. Я в любом случае переложу все усилия для того, чтобы эту всю датчу перекрыть даже в плюс. Будем смотреть уже от получившаяся конкретно от ситуации. Я думаю в принципе до конца этого дня эту позицию мы должны от нее избавиться, забыть как страшный сон. И дальше уже будем более внимательны, когда будете открывать, потому что я думаю Никита второй раз не выдержит. Я сама не ведешь его. Я бы как-то желательно один раз на грабли наступить, но лучше. Ну, желательно не наступать на них, конечно. Ну раз уже так получилось, я конечно вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала начала закрывать другие, но я уже не вспомнила, чем в шоке была. Я не облескалась, я сидала уже. Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично позицию вместо 5 лотов на 50, то есть у меня на этом 25 тысяч долларов. На тот момент для меня это были огромные деньги, поверьте, огромные. Ну, для меня сейчас, вот если я потираю эти 25, то в принципе тоже это все, что я показываю, то есть как бы это была прибыть. Для меня это тоже, скажем, тем более, тем более у меня была уже... пока мы говорили, наверное, уже 17700, 17800 а уже? а я только что заходила, была 23 да, пригрыз, я просто обвел большую в любом случае даже изменение цены оно сразу идет там минус 4, плюс 4 и так далее она может подниматься, да, то есть, но если будет подниматься там я в любом случае буду за этим стоять то есть не пугайтесь, вы под контролем, хорошо? ага, спасибо вам точно Да, Ольга, тогда приятно было с вами познакомиться. Меня еще раз зовут Александр. Я вас наберу еще после обеда. И проверим, что с вашей сделкой, хорошо? Хорошо, в любое время. Да, спасибо. Спасибо вам большое. И вас также. Спасибо большое. До свидания.
+
+### 257. openai / large-v3-turbo
 
 - **ID:** `a45e6f379fce`
 - **Language:** ru
@@ -4726,7 +5473,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я в Типпер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в баржан-суру. Да, он обычно мне сам открывал и сделает. Ага. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все-таки записан интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама-сама. Ну, послушайте, мы на самом деле делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. Это было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну, вот у меня сейчас тоже, и просто получалось, что я получила с минуси, и мне надо было выводить деньги как раз, и получалось, что просто вот все вмену. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут я думаю... Ну, я брала опять этот, как его называют? Аванс на инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть то, что вы спасли, это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решить все, как они есть, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, что у вас просадка сейчас опустилась, у вас было 26.22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы с вами будете присматривать? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, у тебя была ситуация, то есть я хотел бы, чтобы новый год встретили спокойно, да, то есть и не перенували, как прямо того, что что-то будет не так. А вы, может, вопрос? А вы думаете, что все-таки у меня закроется как-нибудь? Ну, смогу я... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть вводя того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это то, что... Да, то есть может быть придется чуть-чуть пожертвовать ей, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... А минус 1 это, конечно, не минус 25. Ну да. Да. Буквально минутку... Побыть и двери буквально минутку. А, хорошо, хорошо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо.. Спасибо., что заходяло. И проверим, что с вашей сделкой. Хорошо. Хорошо. В любое время. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо.
 
-### 223. faster-whisper / large-v3
+### 258. faster-whisper / large-v3
 
 - **ID:** `44c1acd4366f`
 - **Language:** ru
@@ -4746,7 +5493,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. А-а-а, я-я-я. Я понял, я понял. Да. И у меня все зависит, интернет видно, и я вот набирала, и, короче, вот это вот у меня в маршрутках произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы, на самом деле, делали строгий баскетбол. Да. Я не был беспугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. Вот. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все время нужно было все спрятать. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут я думаю... Я брала опять этот, как его, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решится эта позиция... Да, да, да. И чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать. Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными. С миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы... Ой, что-то будет Новый год. ...встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется какой-нибудь прогноз? Смогу я его... А, смотрите, прогноз по... По этой позиции более чем хороший, да, то есть просто надо будет наблюдать, да, то есть чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. То есть будет до того, что там даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть и она потом дальше будет усугубляться. И нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидит, то... Да, то есть может быть придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Понимаю, конечно. Я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Да. Буквально минутку. Побыть на виду буквально минутку. А, хорошо, хорошо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо.
 
-### 224. faster-whisper / large-v3
+### 259. faster-whisper / large-v3
 
 - **ID:** `4c7af6d5206e`
 - **Language:** ru
@@ -4766,7 +5513,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо... он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы, мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. А-а-а, я-я-я. Я понял, я понял. Да. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня в маршрутках произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы, на самом деле, делали слегки баскетбол. Да. И я был не с пугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50, вот. И получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все время... Смотрите, самое, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Ну, я брала опять этот, как его, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, да, да. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решится эта позиция... Да, да, да. ...и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну, вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы будете присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными. С миллионными счетами, да, то есть я... Ага. ...с счетами не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы... Ой, что-нибудь Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А может вопрос? Да, да. А вы думаете, что у меня закроется как-нибудь прогноз? Смогу я его... А, смотрите, прогноз по... По этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Угу. То есть будет до того, что там даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть и она потом дальше будет усугубляться. И нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то... Да, то есть может быть придется чуть-чуть пожертвовать, и да, то есть ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Да. Буквально минутку, по бытию времени буквально минутку. А, хорошо, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо.
 
-### 225. openai / large-v3
+### 260. openai / large-v3
 
 - **ID:** `e594b63798bd`
 - **Language:** ru
@@ -4786,7 +5533,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да-да-да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Привет. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закрывать. Да-да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрут... Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ага, я-я-я. Я понял, я понял. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня так хорошо произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама сама. Послушайте, вы, на самом деле, делали строгие баскетболы. Да. Да. И, конечно, это было не с пугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну, вот у меня сейчас тоже, и просто, получается, что я получила минусы, и мне надо было выводить деньги как раз, потому что, ну, и, получается, что просто вот все время... Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Я брала опять этот, как его, как его называют. Авантор инвестиций, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было, то есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть вы спасли это намного лучше, потому что, в любом случае, вы вот потом сделаете, можете просто вывести больше, но самое главное, если сейчас решится эта позиция, то... Да, да, да. И чтобы она дальше не пошла в минус. Да, да, да. Потому что, я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну, вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть вы хотите присматривать? Да. Конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Ага. Я... С миллионными счетами, да, то есть я... Ага. Чем там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, как я сказал, тяжелая ситуация, то есть хотел бы, чтобы... Ой, чтоли Новый Год! ...встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. Вот, поэтому... А можно вопрос? Да, да. А вы думаете, что у меня закроется какой-нибудь прогноз? Могу я его... А, смотрите, прогноз по... Прогноз по этой позиции более, чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... Не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию, там, в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Ага. То есть будет до того, что там, даже если я буду видеть, что сделка, там, минус две, минус тысяча идет, да, то есть... И она потом дальше будет усугубляться и нет варианта, что она, вот, выйдет в ноль. Но я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидится... Да, да, да, хорошо. Да, то есть, может быть, придется чуть-чуть пожертвовать и, да, то есть, ну, на крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один – это, конечно, не минус двадцать пять. Ну да. Да. Буквально минутку. Буквально минутку. Побудьте двойники буквально минутку. А, хорошо, хорошо. Хорошо, хорошо. Хорошо. Хорошо, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо.
 
-### 226. faster-whisper / large-v3
+### 261. faster-whisper / large-v3
 
 - **ID:** `b58371cee6ad`
 - **Language:** ru
@@ -4806,7 +5553,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в баржу. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. Ага. Я понял, я понял. Да. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы, на самом деле, делали строгие баскетболы. Да. И я, конечно, не был испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. Вот. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто получалось, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минусе, и мне нужно было все спрятать. Смотрите, самое, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть. Да, то есть. Ну, я брала опять этот, как его, как его называют. Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное, если сейчас решится эта позиция. Да, да, да. И чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась. У вас было 26, сейчас 22 с утра. Ну, вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я, мы с вами будем. А, то есть вы будете присматривать. Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Я в целом работаю с миллионными. С миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. А можно вопрос? А вы думаете, что у меня закроется как-нибудь прогноз? Могу я его? Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было, не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Угу. То есть будет до того, что там даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть и она потом будет... Угу. И она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, да, да, хорошо. Но если это увидим, то... Да, то есть может быть придется чуть-чуть пожертвовать и да, то есть ну, на крайней мере, чтобы не было такого, что, ну понимаете. Конечно, конечно, я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Да. Буквально минутку. Буквально минутку. Побудьте в виде буквально минутки. А, хорошо, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо.
 
-### 227. faster-whisper / large-v3
+### 262. faster-whisper / small
+
+- **ID:** `f25dbec2c31e`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 3.41s
+- **Memory:** Δ 113.5 MB, peak 3353.4 MB
+- **Beam size:** 1
+- **Temperature:** 0.36
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 5
+- **WER:** 54.56%
+- **CER:** 41.18%
+- **Timestamp:** 2026-01-07T13:45:16.028119+00:00
+
+**Text:**
+
+> Алло, здравствуйте. Я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать или вам нужно будет помочь. Он сказал, что она вышла на ноль, чтобы не закрывать деньги. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209. Я не знаю, где он. Я не знаю, где он. Вы делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз на своей практике, именно на личном опыте. Я еще был тоже новичком, но это было лет семь назад. Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, потому что у меня просто принесли закрытые бубы, то есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в манусе, и мне надо было вывести деньги как раз по мастеру. Самое главное, что вы не потеряли капитал, потому что сам могло закончиться намного хуже. Я брала отец как его. Авангкран висит, я вижу. Посмотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю миллионами считами. Читам не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Встретили спокойно, да, то есть и не перезывали как прямо того, что что-то будет не так. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было. Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть, что сделка там минус две, минус тысячу идет, то есть и она потом дальше будет усугубляться, и нет в порядке, что она выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус одинный, это, конечно, минус 20-30 секунд. Да. Пускально минутку... Побыть и взгляни буквально минутку. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем, она будет полностью под контролем. Я, в любом случае, продолжу все усилие для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательное, когда будете открывать, потому что, я думаю, некий-то второй раз эту позицию не выдержать. И я сама не держу. Я выглядел как-то, ну, желательно, найден раз на грабли наступить, но учить. Ну, желательно, не наступать на них, конечно. Ну, раз уже страх получился у нас, конечно, он вообще была сразу в шоке. Я когда-то уже увидела, как вы говорите, я начала закрывать другие, смотрю, не было я, чем в шоке была. Я, наверное, и с рыцей посидал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я подделал на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя покирать, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже... Тем более у меня была уже... А уже? А я только что заходила, была 22. Да, привет, Денис. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не кудрец. Ну, у меня это не куд Спасибо вам большое.
+
+### 263. faster-whisper / large-v3
 
 - **ID:** `bde666de46c1`
 - **Language:** ru
@@ -4826,7 +5593,7 @@
 
 > Алло? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрут? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. И у меня цифровой завист на интернет видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, то я... А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы, на самом деле, отделались легким испугом, потому что открыть позицию в 10 раз... ...в 10 раз больше обычно чревато потерей всему капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерялся, и первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто получалось, что я получилась в минусе, и мне надо было вывозить деньги, как раз, потому что, ну, и получалось, что просто вот все в минусе. Смотрите, самое, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут я думаю... Ну, я брала опять этот, как его, как его называют? Авантурная инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки... Да, да, да. ...либо хотя бы как-то постараться спасти. Да, то есть, то, что вы спасли это намного лучше, потому что, в любом случае, вы потом сделаете, можете просто вывезти больше. Но самое главное сейчас решить с этой позицией. Да, да, да. И чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну, вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Угу. Я в целом работаю с миллионными. Угу. Читами, да, то есть я... Ага. Читам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, тяжелая ситуация, то есть я хотел бы, чтобы... Ой, будет Новый год! ...встретили спокойно, да, то есть и не переживали, касаемо того, что что-то будет не так. Да, вот, поэтому... А может вопрос? Да, да. А вы думаете, если кто-то у меня закроется, как-нибудь проноюсь, смогу я его... А, смотрите, прогноз по этой позиции... У нас по этой позиции более чем хороший, да, то есть просто надо будет наблюдать, да, то есть чтобы не было... ...не было такого, что мы проневали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию, там, в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Угу. То есть будет до того, что там, даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть и она потом дальше будет усугубляться... ...и нет варианта, что она вот выйдет в ноль, то я вам скажу, об этом нам придется закрыть в небольшом минусе. Да, да, ну хорошо. Но если это увидим, то... Да, то есть, может быть, придется чуть-чуть пожертвовать и, да, то есть, ну, на крайней мере, чтобы не было такого, что... ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Да. А буквально минутку, по бытию времени, буквально минутку. Да. А, хорошо, хорошо. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да.
 
-### 228. faster-whisper / small
+### 264. faster-whisper / small
 
 - **ID:** `859e84c1d689`
 - **Language:** ru
@@ -4846,7 +5613,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, не называют Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать, или вам нужно будет помочь. Он сказал, что она вышла на мольхать, чтобы не закрывать. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209. Я не знаю, где это было. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз такой на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет семь назад, то есть я тогда открыл пятилото в случай на пятьдесят, и получилось так, что у меня... Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто конечный закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в МНС, и мне надо было вывести деньги как раз по месту. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Да, то есть тут зеркало. Ну я брала 5 лет от какого-какого. А в Анкран висится, вижу. Да, да. Я видел депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю миллионами считами. Что там не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть сделка минус две, минус тысячу идёт, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придётся её закрыть в небольшом месяце. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус одинный, это, конечно, не минус 20-30 минут. Да. Пускально минуту... Побыть и взгляни буквально минуту. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем, она будет полностью под контролем. Я, в любом случае, продолжу все усилие для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательное, когда будете открывать, потому что я думаю, что они в второй раз эту позицию не выдержат. И я сама не держу. Я выглядел как-то... Ну, желательно, на один раз на грабли наступить, но... Ахаха, потому что... Ну, желательно, не наступать на них, конечно. Ну, раз уже страх получился у нас, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот, как вы говорите, я начала закрывать другие, смотрю, не было, но я, чем к шоке была, я, наверное, и срык наседал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя потерять, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже. Спасибо. Тем более у меня была уже... А уже? А я только что засадила, была 22. Да, привет. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну Спасибо вам большое.
 
-### 229. faster-whisper / small
+### 265. faster-whisper / small
 
 - **ID:** `fbdb2714b34f`
 - **Language:** ru
@@ -4866,7 +5633,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, не называют Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать, или вам нужно будет помочь. Он сказал, что она вышла на мольхать, чтобы не закрывать. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209. Я не знаю, где это было. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз такой на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет семь назад, то есть я тогда открыл пятилото в случай на пятьдесят, и получилось так, что у меня... Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто конечный закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в МНС, и мне надо было вывести деньги как раз по месту. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Да, то есть тут зеркало. Ну я брала 5 лет от какого-какого. А в Анкран висится, вижу. Да, да. Я видел депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю миллионами считами. Что там не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть сделка минус две, минус тысячу идёт, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придётся её закрыть в небольшом месяце. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус одинный, это, конечно, не минус 20-30 минут. Да. Пускально минуту... Побыть и взгляни буквально минуту. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем, она будет полностью под контролем. Я, в любом случае, продолжу все усилие для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательное, когда будете открывать, потому что я думаю, что они в второй раз эту позицию не выдержат. И я сама не держу. Я выглядел как-то... Ну, желательно, на один раз на грабли наступить, но... Ахаха, потому что... Ну, желательно, не наступать на них, конечно. Ну, раз уже страх получился у нас, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот, как вы говорите, я начала закрывать другие, смотрю, не было, но я, чем к шоке была, я, наверное, и срык наседал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя потерять, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже. Спасибо. Тем более у меня была уже... А уже? А я только что засадила, была 22. Да, привет. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну Спасибо вам большое.
 
-### 230. faster-whisper / small
+### 266. faster-whisper / small
 
 - **ID:** `f8e2aa3c152f`
 - **Language:** ru
@@ -4886,7 +5653,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, не называют Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать, или вам нужно будет помочь. Он сказал, что она вышла на мольхать, чтобы не закрывать. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209. Я не знаю, где это было. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз такой на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет семь назад, то есть я тогда открыл пятилото в случай на пятьдесят, и получилось так, что у меня... Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто конечный закрытый убыток. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в МНС, и мне надо было вывести деньги как раз по месту. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Да, то есть тут зеркало. Ну я брала 5 лет от какого-какого. А в Анкран висится, вижу. Да, да. Я видел депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю миллионами считами. Что там не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть сделка минус две, минус тысячу идёт, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придётся её закрыть в небольшом месяце. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус одинный, это, конечно, не минус 20-30 минут. Да. Пускально минуту... Побыть и взгляни буквально минуту. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем, она будет полностью под контролем. Я, в любом случае, продолжу все усилие для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательное, когда будете открывать, потому что я думаю, что они в второй раз эту позицию не выдержат. И я сама не держу. Я выглядел как-то... Ну, желательно, на один раз на грабли наступить, но... Ахаха, потому что... Ну, желательно, не наступать на них, конечно. Ну, раз уже страх получился у нас, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот, как вы говорите, я начала закрывать другие, смотрю, не было, но я, чем к шоке была, я, наверное, и срык наседал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя потерять, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже. Спасибо. Тем более у меня была уже... А уже? А я только что засадила, была 22. Да, привет. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну, у меня это не кудрицы. Ну Спасибо вам большое.
 
-### 231. faster-whisper / small
+### 267. faster-whisper / small
 
 - **ID:** `266f637da05d`
 - **Language:** ru
@@ -4906,7 +5673,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга. Представлюсь, не называют Александр. Он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Делаю нас сразу по позиции, если что, увейте самостоятельно закрывать, или вам нужно будет помочь. Он сказал, что она вышла на мольхать, чтобы не закрывать. Он уже домил по поводу трудной ситуации, у которого созникла? Да, он обычно мне сам открывал из белки. А это он, видно, территорпушком, он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209. Я не знаю, где это было. Слушайте, мы на самом деле делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз такой на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет семь назад, то есть я тогда открыл пятилото в случай на пятьдесят, и получилось так, что у меня... Я торговал с этим брокером, там спрайды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто конечный закрытый убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получалось, что я получилась в манусе. И мне надо было вывести деньги как раз по мастеру. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Да, то есть тут зеркало. Но я права отчетов, как его. А в Анкран висится, вижу. Да, да. Объедем депозит. Да, я вижу. Смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять. Я в любом случае буду с вами на связи. Потребуются какие-то срочные меры. Да, конечно, конечно. Меня попросили. Я являюсь руководителем Никиты. Я в целом работаю миллионами считами. Что там не отношусь, но считаю то, что Никита очень попросил за вами присмотреть. Очень сильно, потому что тяжелая ситуация. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль, то есть будем уже смотреть по ситуации. То есть вот для того, что даже если я буду видеть сделка минус две, минус тысячу идёт, то есть и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придётся её закрыть в небольшом месяце. Так, то есть, может быть, придется чуть-чуть пожатывать, но на крайней мере, чтобы не было такого, что... Ну, понимаете. Я понимаю, я... Минус одинный, это, конечно, минус 20-30 секунд. Да. Пускально минутку... Побыть и взгляни буквально минутку. А, хорошо, хорошо. Вообще нет. Поэтому, смотрите, по поводу вашей ситуации, еще раз, не переживайте, она полностью под контролем, она будет полностью под контролем. Я, в любом случае, продолжу все усилие для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, что до конца этого дня эту позицию мы должны одни избавиться, забыть их в страшный сон. Дальше уже будет более внимательное, когда будете открывать, потому что я думаю, они в второй раз в эту позицию не выдержат. Я сама не держу. Я выглядел как-то... Ну, желательно, на один раз на грабли наступить, но... Ахаха, потому что... Ну, желательно, не наступать на них, конечно. Ну, раз уже страх получился у нас, я, конечно, вообще была сразу в шоке. Я когда-то уже увидела, вот, как вы говорите, я начала закрывать другие, смотрю, не было, но я, чем к шоке была, я, наверное, и срык наседал. Слушайте, вы на самом деле легчими с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пяти лотов на 50, то есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте, огромные. Ну вот для меня сейчас вот ее нельзя потерять, 25 это в принципе тоже, так все, что я показываю, то есть как бы это была в прибытии, понятно. Для меня это тоже. Спасибо. Тем более у меня была уже... А уже? А я только что засадила, была 22. Да, привет. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество. Ну, у меня это не художество Спасибо вам большое.
 
-### 232. openai / small
+### 268. openai / small
 
 - **ID:** `20706abb1a4d`
 - **Language:** ru
@@ -4926,7 +5693,7 @@
 
 > Привет, я говорю с Ольгой. Привет, я с Ольгой представлюсь, я зовут Александр. Я с Войнешней Воднячной буду наблюдать. Я хотел бы сразу оттащить с Войнешней Воднячной, если что, вы знаете самостоятельно закрывать или вам нужно будет Вы же выросли, что вы не могли бы. Высло намоль, чтобы не закрывать деньги. Да, он уже добил по поводу трудной ситуации, у которого созникла. Вы понимаете, вы попали в бардерскую? Да, он обычно мне сам открывал из Белки. А это он видно, перед Тортушком он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 22.1. Я понял. Я не знаю, как это было. Я не знаю, как это было. Он мне открывает, я у него есть. Он мне говорит, насколько надо закрывать. Это он мне объяснил, первый раз я сделаю хорошо, второй раз я сделаю хорошо. А это где-то у меня... Ну, короче, наверное, я и не готова была. Мы делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно через лата потеряем всего капитала. Я был один раз на своей практике, на личном опыте, я еще был тоже новичком, но это было лишь 7 назад. Я тогда открыл пятилотов, случайно 50. И получилось так, что я торговал с одним брокером, там стрэды были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой тракт локал, потому что у меня просто пронесли закрытые бубы. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень много. Ну вот у меня сейчас тоже. И просто получалось, я получилась в минусе. И мне надо было вывести деньги как раз по мисточку. И получалось просто, вот, субъем. Смотрите, самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Я брала этот, как его, как его у нас спает. А вам кромвисиция, вижу. Да, да. Я бы этим не пользовался. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться В любом случае вы можете сделать и больше. Но главное, чтобы она не пошла в минус. Потому что у вас проставка спустилась. В сутра скорее всего какие-то их речи еще будут. Я в любом случае буду с вами на связи. Если вдруг потребуется какие-то срочные меры. Я попросил, что я и с руководителем Никита, я работаю с миллионами читами. Я не отношусь, но считаю, что Никита очень попросил Высвобождать, что это не так. Можете вопрос об этом, чтобы у меня закроется какой-нибудь панель? Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный мир или в ноль. Будем уже смотреть по ситуации. Если я буду видеть, что сделка минус 1,000, то будет сагубляться и нет, что она выйдет в ноль. Я вам сказал, что нам придется ее закрыть в небольшом месяце. Но если это будет видно, то может быть придется чуть чуть-чуть сфотографировать, но в крайней мере, чтобы не было такого, что... Я понимаю, я... Немедленно садился, это... Какая-то вещь-то, не надо посыпать. Да. Попытя грехи, буквально, это буквально. А, хорошо, хорошо. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. По поводу вашей ситуации, не переживайте, она будет полностью под контролем. Я в любом случае продолжу сэусивить для того, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, что я получился конкретно от ситуации. Я думаю, до конца этого дня эту позицию мы должны отними сбавиться, забыть их в страшный сон. Дальше уже более внимательно, когда будете открывать, потому что я думаю, не какие-то вторые раз в секунду позицию не выдержать. Я сама не ведешь. Я веду. Ну, желательно, найден раз на грабли наступить, но это уж... Ну, желательно, не наступать на не конец. Ну, раз уже так получилось, я конец-то вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я начала закрывать другие смотрения, но я там в шоке была. Я в мисры сочинался. Вы на самом деле легче мискугом отделались? Потому что я повторюсь, у меня была ситуация, когда я лично в позиции вместо 5-го, то на 50-го. То есть у меня я поднял на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги. По идее, огромные. Для меня сейчас вот ее нельзя потерять. 25 это принес ты тоже. Так все, что я показываю, то есть как бы это была прибытия. Для меня это тоже. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Собственно, это не так. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь под контролем. Спасибо вам большое. Тогда приятно было с вами познакомиться. Меня еще зовут Александр. Я вас наберу после обеда и проверю, что с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. И вас так же. Спасибо большое. Спасибо.
 
-### 233. faster-whisper / large-v3
+### 269. faster-whisper / large-v3
 
 - **ID:** `ac43d920555a`
 - **Language:** ru
@@ -4946,7 +5713,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да. Здравствуйте. Здравствуйте, Ольга. Представлюсь, меня зовут Александр. Привет. Привет. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Не, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать её. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в баржу... Да, он обычно мне сам открывал сделки. Ага. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. И мне цифровой завист интернет видно, и я вот набирала, и, короче, и вот это вот у меня как-то хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, всё, то есть он мне говорит, насколько надо закрывать, а это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я ещё не готова была. Всё, у нас само... Послушайте, вы, на самом деле, делались с лёгким испугом, потому что открыть позицию в 10 раз, открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я ещё был тоже новичком, да, но это было лет 7 назад, то есть я тогда открыл вместо 5 лотов случайно 50, вот, и получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиция закрыта в убыток, то есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень сложно. Ну, вот у меня сейчас тоже, и просто получалось, что у меня получилось в минусе, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот всё в длинных... Смотрите, самое главное, что вы не потеряли капитал, потому что всё могло закончиться намного хуже, да, то есть... Но я брала опять этот как его, как его называют... Авансовая инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было, то есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, да, да. Да, то есть вы спасли это намного лучше, потому что в любом случае, вы вот потом сделаете, можете просто вывести больше, но самое главное, если сейчас решится эта позиция, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели ещё будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я... А, то есть вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Угу. В целом работаю с миллионными счетами, да, то есть я... Ага. С счетом не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы... Ой. ... чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. Вот, поэтому... А может вопрос? Да, да. А вы думаете, что у меня закроется как-нибудь прогноз? Могу я его... А, смотрите, прогноз по этой позиции более чем хороший, да, то есть просто надо будет наблюдать, да, то есть чтобы не было... ... не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Угу. То есть будет до того, что там... Угу. ... даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть... ... да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Но если это увидим, то... Да, да, да, то есть, кажется. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... ну, понимаете. Конечно, конечно. Я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Да. Да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо.
 
-### 234. openai / large-v3-turbo
+### 270. openai / large-v3-turbo
 
 - **ID:** `d31f24be6fd8`
 - **Language:** ru
@@ -4966,7 +5733,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я говорю, что я не пилитер. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточнить, вы позиции, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, ну, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, он как бы мне объяснил, и я просто на 102.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да. Я понял. И мне все зависит, интернет видно, и я вот набирала, и, короче, и вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать, а это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, ну, а это где-то у меня, ну, короче, наверное, я еще не готова была. Все у нас, все у нас. Ну, послушайте, мы на самом деле делали с легким испугом, потому что открыть базиску в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. Вот, и получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиция закрыта в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень сложно. Ну, вот у меня сейчас тоже, и просто получалось, что я получила с минуси, и мне надо было выводить деньги как раз. Потому что, ага. И получилось, что просто вот все время нужно не брать. Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да, то есть тут... Ну, я брала 5, как его называют. А вам как инвестиции, вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ажисти. Да, да, да. Либо хотя бы как-то постараться спасти. Да, то есть то, что вы спасти это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить все эти позиции, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас проставка чуть опустилась, у вас было 26.6.22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то сроки вы присматриваете? Да, конечно, конечно. Меня попросили, то есть я еще что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я ничего там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что это тяжелая ситуация, то есть я хотел бы, чтобы новый год встретили спокойно, да, то есть и не перерывали к оттеням о том, что что-то будет не так. А вы, может, вопрос? А вы думаете, он все-таки у меня закроется как-нибудь, потому что смогу я его... Смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто... Надо будет наблюдать, да, то есть чтобы не было... Не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус, или в ноль, да, то есть будем уже смотреть по ситуации. То есть, влоги до того, что там, даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться, и нет варианта, что она вот выйдет в ноль, то я вам скажу, но об этом нам придется ее закрыть в небольшом минусе. Но если я буду видеть, то... Да, то есть, может быть, придется чуть-чуть пожертвовать, и, да, то есть, ну, по крайней мере, чтобы не было такого, что... Ну, понимаете. Конечно, конечно. Я понимаю, я... Минус 1 это, конечно, не минус 25. Да. Да. Буквально минутку... Побыть и другие буквально минутку. Да. А, кажется... Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да.. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Прошу прощения. Да. Да. Да. Да. Поэтому смотрите. По поводу вашей ситуации еще раз. Не переживайте. Она полностью под контролем. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да. Да.
 
-### 235. openai / large-v3
+### 271. openai / large-v3
 
 - **ID:** `33670000265a`
 - **Language:** ru
@@ -4986,7 +5753,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Присмотрелся на твиттер, то есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо... он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в баржу с головой? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, как бы, мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ага. Я понял, я понял. Да. У меня все зависит, интернет видно, и я вот набирала, и, короче, вот это вот у меня как-то хорошо произошло. Потому что, ну, как бы, он не открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы, на самом деле, делали слегки быстрее. Да. И, конечно, все это делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всему капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5 лотов случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый ордер, и, ну, я не знаю, что у меня получилось. И, ну, я просто на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну, вот у меня сейчас тоже, и просто, получается, что я получила с минусом, и мне надо было выводить деньги как раз, потому что, ну, и, получается, что просто вот все время нужно было все убрать. Смотрите, самое, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Да. Да, то есть тут я думаю, что... Ну, я брала опять этот, как его, как его называют? Авантор инвестиций, я вижу. Да, да. Объединенный депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, да, да. То есть то, что вы спасли это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Да. И, конечно, вы можете решить с этой позицией и чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я... А, то есть хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я, если что, являюсь руководителем Никиты. Ага. В целом работаю с миллионными счетами. Да, то есть я... Ага. Чем там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что тяжелая ситуация, то есть хотел бы, чтобы... Ой. ... чтобы Новый год встретили спокойно, да, то есть и не переживали касаемо того, что что-то будет не так. Вот. А может вопрос? Да, да. А вы думаете, что у меня закроется как-нибудь прогноз? Могу я его... А, смотрите, прогноз по, по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было... ... не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию, там, в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Угу. То есть будет до того, что там, даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть и она потом... ... да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, да. Но если это увидим, то... Да, то есть может быть придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что... ну понимаете. Я знаю, что, конечно. Я понимаю, я... Минус один это, конечно, не минус двадцать пять. Ну да. Буквально минутку, по бытию на виду, буквально минутку. А, хорошо, хорошо. А, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо.
 
-### 236. faster-whisper / large-v3
+### 272. faster-whisper / large-v3
 
 - **ID:** `fe50086c1742`
 - **Language:** ru
@@ -5006,7 +5773,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Здравствуйте Ольга, представлюсь, меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня ещё буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, хоть, ну, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в баржу. Да, он обычно мне сам открывал из сделки. А это он, ну, видимо, перед отпуском, как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. А-а-а. Ай, я понял, я понял. Да. У меня целый кабинет виден, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, если он мне говорит, насколько надо закрывать, то это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я ещё не готова была. Сама, сама. Но это было, я думаю, не так, чтобы я делал, я делал это с лёгким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я ещё был тоже новичком, да, но это было лет 7 назад, то есть я тогда открыл вместо пяти лотов случайно 50. Вот. И получилось так, что у меня, как бы я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый организм. Да. И я на свой, на свой торговый аккаунт, у меня просто позиция закрыта в убыток, то есть я на тот момент потерялся, и первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто, получается, что я получилась в минусе, и мне надо было выводить деньги как раз, потому что, ну, и, получается, что просто вот всё в минусе, всё в трассе. Смотрите, самое, самое главное, что вы не потеряли капитал, потому что всё могло закончиться намного хуже. Ну. Да, то есть тут. Я брала опять этот, как его, как его называют. Авансер инвестиция, вижу. Да, да. Объединенный депозит. Да, я вижу. Угу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было. То есть у вас был выбор либо потерять, да, то есть из-за ошибки. Да, да, да. Либо хотя бы как-то постараться спасти. Да, да, да. Да, то есть вы спасли это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Ну. Ну. Но я думаю, что вы должны улучшить эту позицию, и чтобы она дальше не пошла в минус. Да, да, да. Потому что я видела у вас просадка чуть опустилась. У вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели ещё будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. То есть я, мы с вами будем. А, то есть вы будете присматривать. Да, конечно, конечно. Меня попросили. То есть, я, если что, являюсь руководителем Никиты. Ага. В целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, так сказать, тяжелая ситуация, то есть хотел бы, чтобы мы Новый год встретили спокойно, да, то есть и не перерывали, касаемо того, что что-то будет не так. Да, вот. А может вопрос? Да, да. А вы думаете, что у меня закроется какой-нибудь прогноз? Могу я знать? Ну, смотрите, прогноз по этой позиции более чем хороший, да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию, там, в минимальный плюс или в минимальный минус или в ноль, да, то есть будем уже смотреть по ситуации. Ага. То есть даже если я буду видеть, что сделка там минус две, минус тысяча идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, да, конечно. Да, то есть, может быть, придется чуть-чуть пожертвовать ей, да, то есть, ну, на крайней мере, чтобы не было такого, что, ну, понимаете. Конечно, конечно. Я понимаю. Минус один это, конечно, не минус 25. Ну, да. Да. Буквально минутку, побудьте длиннее, буквально минутку. А, хорошо, хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо. Хорошо.
 
-### 237. openai / medium
+### 273. openai / medium
 
 - **ID:** `d70c6eeabbfb`
 - **Language:** ru
@@ -5026,7 +5793,7 @@
 
 > Алло, здравствуйте, я с Ольгой. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Он попросил присмотреться к вашей позиции. Я в течение сегодняшнего дня буду наблюдать. Хотел бы сразу вытащить твою позицию, если что. Умеете самостоятельно закрывать или вам нужно будет помочь? Он сказал, что она должна вышла на 0, чтобы не закрывать. Он уже дымил по поводу трудной ситуации, которая у вас возникла. Вы попали в парк. Да, он обычно мне сам открывал. А это он перед отпуском мне объяснил. Я просто поставила 29.1 и открыла 29.1. Да, я понял. Я набирала его и он мне хорошо произошел. Он не открывает, я умею закрывать. Если он мне говорит, насколько надо закрывать, то он мне объяснил. Первый раз я сделала хорошо, второй раз я сделала хорошо. А это где-то у меня... Ну, короче, я не готова была сама. Мы, на самом деле, делались легким испугом, потому что открыть тазис в 10 раз больше обычно черевато потерять всему капиталу. У меня был один раз такой на своей практике, на личном опыте. Я еще был тоже новичком. Да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. И получилось так, что я торговал с одним брокером. Там спреды были вообще сумасшедшие. Я даже не обратил внимания, я захожу после обеда. На свой торговый аккаунт у меня просто позиции закрыты, в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. Ну, вот у меня сейчас тоже. И просто получалось... Я получила сниноси, и мне надо было выводить деньги как раз помещу в ажниль. И получалось, что просто вот все время... Самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже. Я брала 5, как его насыпали. Аванкта-инвестиция вижу. Да-да. Обеден-депозит. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться стости. Да. Вы спасли это намного лучше. Потому что вы в любом случае вывод потом сделаете, можете просто вывести больше. Но самое главное, сейчас решить все как-то импульсы, и чтобы она дальше не пошла в минус. Потому что я видел, у вас процедура как-то опустилась. У вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие нырочели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры. А вы будете присматривать. Да, конечно, конечно. Меня попросили, я и есть руководителем Никиты. Я в целом работаю с миллионными счетами. Ага. Не отношусь, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что у тебя была ситуация. Хотел бы, чтобы вы Новый год встретили спокойно, если не перерывали, как раз, прямо того, что что-то будет не так. Ну, а можно вопрос? Обыденуете ли у меня все пяти закроются какими-то мной? Смотрим. Смотрите, прогноз по этой позиции более чем хороший. Просто надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка изменить позицию в минимальный плюс или в минус, или в ноль. Будем смотреть ситуацию. Даже если я буду видеть, сделка минус две, минус тысячу идет, и она потом дальше будет усугубляться, и нет варианта, что она выйдет в ноль, то я вам скажу об этом, нам придется закрыть небольшой минусть. Но если это будет... Может быть придется чуть чуть поджаркувать. Но, на крайней мере, чтобы не было такого, что... Конечно, конечно. Я понимаю, я... Минус один это, конечно, минус два, три, пять. Да. Побыть изменить буквально минутку. А, хорошо, хорошо. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа. Победа.
 
-### 238. openai / small
+### 274. openai / small
 
 - **ID:** `e882e6b1d2f9`
 - **Language:** ru
@@ -5046,7 +5813,7 @@
 
 > Привет, я говорю с Ольгой. Привет, я с Ольгой представлюсь, я зовут Александр. Я с Вадимом Китер, он попросил присмотреть за ваши позиции. Я в течение сегодняшнего дня буду наблюдать, хотел бы сразу оттащить свои позиции, если что, вы знаете самостоятельно закрывать или вам нужно будет помочь. Он сказал, что она вышла намоль. Он уже домил по поводу трудной ситуации, которая у вас созникла. Он обычно мне сам открывал из Белки. А это он видел. Перед Торташком он объяснил и я просто на 1002.91 поставила Я открыла пасы Терри Путу. Я отбирала и у меня хорошо шел. Он мне открывает, я у него закрываю, если он мне говорит, насколько надо закрывать. Это он мне обезвил, первый раз он сделает хорошо, второй раз сделает хорошо. А это где-то у меня покройте. Я ещё не готова была. Всё, у нас в самом деле. Вы на самом деле делали с лёгким испугом, потому что открыть тазиску в 10 раз больше, а обычно через лата потери всего капитала. Я был один раз такой на своей практике, на личном опыте, я ещё был тоже новичком. Это было лишь 7 назад. Я тогда открыл пяти лотов в слоё время в 50. Получилось так, что у меня торговал с одним брокером, Я не обратил внимания, зашел после обеда на тракулы аккаунта, у меня просто пронесли закрытые бубы. То есть я на тот момент потерял свои первые 25000$. Это было очень много. Ну вот у меня сейчас тоже. И просто получилось, я получилась наносить. И мне надо было вывести деньги, как раз. И получалось, что просто сублимирует. Смотрите, самое главное, что вы не потеряли капитал, потому что самогло закончено намного хуже. Да, то есть тут... Ну я брала этот какого-то у нас спать. А в Анкран висице вижу. Да, да. Я в этом не пользуюсь. Да, я вижу. Ну смотрите, то есть у вас по факту, какие вижу, в другого выбора и не было. То есть, у вас был выбор либо потерять, либо как-то постараться спасти. То есть, если вы спасти это намного лучше, потому что в любом случае вы потом сделаете, можете просто вывести больше. Вот самое главное, если у вас решится это позиция, и чтобы она дальше не пошла в минус. Потому что я видел у вас просто опять спустилась, у вас было 26-22, с утра. Скорее всего, какие вещества еще будут, а я в любом случае в связи. Если вдруг потребуются срочные меры, то я буду присматривать. Я в целом работаю миллионными счетами. В этом позиции не отношусь. Некита попросила посмотреть на себя. Очень сильно. Я хотел бы встретить этот год спокойно. Не переживали, что будет не так. Может вопрос, что я могу зато закрою. Смотрите, прогноз по этой позиции более чем хороший. Та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та-та- Вместе с этим, мы не будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Мы будем об этом сделать. Прошу прощения. Прошу прощения. Но если вы не переживаете, она будет полностью под контролем. Я в любом случае продолжу усиливать, чтобы эту ситуацию перекрыть. Будем смотреть, что я получил от ситуации. До конца этого дня эту позицию я должен отгибать чтобы быть в страшной сон, да, то есть дальше уже будет более внимательное, когда будете открывать, потому что я думаю, они где-то второй раз в секунду позицию не выдержат. Я сама не выдержала. Я выдержала. Ну, желательно найти раз на грабль, наступить, научить. Это точно. Ну, желательно не наступать на них конец, ну раз уже страх получился у нас, я конец-то вообще была сразу в шоке. Я даже когда увидела, как говорите, я начала закрывать другие, смотрю, не было, но я к шоке была. Я на срыцах оседал. Послушайте, вы на самом деле легче мескуга? Вы делались, потому что, я повторюсь, у меня была ситуация, когда я лично актуал позицию вместо пятилотов на 50, то есть у меня, я подделал на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги. Для меня сейчас её нельзя потерять, 25 это принеси ты тоже, потому что я показываю, то есть это была прибыль, для меня это тоже. Смажем. Пошли. Тем более у меня была уже... Пока мы говорили, наверное, уже 17, 17, 17, 18. А уже? А я только что заходила, была 22. Да, привет. Ну, у меня там есть предсмысленная... Она может подниматься. Если будет подниматься, я в любом случае буду за этим следить. Не пугайте, если под контролем. Хорошо? Да. Тогда приятно было с вами познакомиться. Я вас наберу после обеда. Проверим, что с вашей сделкой. Хорошо? любое время. Спасибо вам большое. Спасибо вам большое. И вам также спасибо большое. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо.
 
-### 239. faster-whisper / base
+### 275. faster-whisper / base
 
 - **ID:** `b195bb416523`
 - **Language:** ru
@@ -5066,7 +5833,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 240. faster-whisper / base
+### 276. faster-whisper / base
 
 - **ID:** `2178264092c8`
 - **Language:** ru
@@ -5086,7 +5853,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 241. faster-whisper / base
+### 277. faster-whisper / base
 
 - **ID:** `242967b663b0`
 - **Language:** ru
@@ -5106,7 +5873,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 242. faster-whisper / base
+### 278. faster-whisper / base
 
 - **ID:** `ced10f277931`
 - **Language:** ru
@@ -5126,7 +5893,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 243. faster-whisper / base
+### 279. faster-whisper / base
 
 - **ID:** `0560a759fc92`
 - **Language:** ru
@@ -5146,7 +5913,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 244. faster-whisper / base
+### 280. faster-whisper / base
 
 - **ID:** `23e105222b1e`
 - **Language:** ru
@@ -5166,7 +5933,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 245. faster-whisper / base
+### 281. faster-whisper / base
 
 - **ID:** `34e8edb7354a`
 - **Language:** ru
@@ -5186,7 +5953,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 246. faster-whisper / base
+### 282. faster-whisper / base
 
 - **ID:** `4fbdd26da854`
 - **Language:** ru
@@ -5206,7 +5973,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1, и открыл от 20 серий. Я понял. И мне вступали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко, как-то я зашел, потому что, ну как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать, а это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова плахать. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была погибра с такой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получается, что я получилась наноси. И мне надо было вводить деньги как раз. Потому что уже не... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете, да, да, что-то у меня закроется, как у меня. Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет, в порядке, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке была, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 247. faster-whisper / base
+### 283. faster-whisper / base
 
 - **ID:** `929bd9b54cdb`
 - **Language:** ru
@@ -5226,7 +5993,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1 и открыл от 20 серий. А, я понял. И мне вступали из-за действия интернет видно. И я вот набирала, и короче, вот этого-то немножко, как-то я зашел. Потому что, ну как бы он мне открывает, я у меня закрывать, если он мне говорит, насколько надо закрывать. А это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова было. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была по-дюмра с таковой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получалось, что я получилась наноси. И мне надо было вводить деньги как раз. И... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что являюсь руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого-то была ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете... Да, да, что-то у меня закроется, как было-то, но... Ну, конечно. Ну, смотрите, про глаз по этой позиции более чем хрошей. То-то просто надо будет наблюдать, то-то, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимально плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет варианта, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не визбавиться, забыть их с хорошим шансом, да, и... Да, дальше уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. И я сомна не видеть, что... Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке было, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду же этим среди. То есть не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 248. faster-whisper / base
+### 284. faster-whisper / base
 
 - **ID:** `cc65584ee508`
 - **Language:** ru
@@ -5246,7 +6013,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1 и открыл от 20 серий. А, я понял. И мне вступали из-за действия интернет видно. И я вот набирала, и короче, вот этого-то немножко, как-то я зашел. Потому что, ну как бы он мне открывает, я у меня закрывать, если он мне говорит, насколько надо закрывать. А это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова было. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была по-дюмра с таковой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получалось, что я получилась наноси. И мне надо было вводить деньги как раз. И... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что являюсь руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого-то была ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете... Да, да, что-то у меня закроется, как было-то, но... Ну, конечно. Ну, смотрите, про глаз по этой позиции более чем хрошей. То-то просто надо будет наблюдать, то-то, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимально плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет варианта, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не визбавиться, забыть их с хорошим шансом, да, и... Да, дальше уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. И я сомна не видеть, что... Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке было, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду же этим среди. То есть не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 249. faster-whisper / base
+### 285. faster-whisper / base
 
 - **ID:** `159885809846`
 - **Language:** ru
@@ -5266,7 +6033,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1 и открыл от 20 серий. А, я понял. И мне вступали из-за действия интернет видно. И я вот набирала, и короче, вот этого-то немножко, как-то я зашел. Потому что, ну как бы он мне открывает, я у меня закрывать, если он мне говорит, насколько надо закрывать. А это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова было. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была по-дюмра с таковой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получалось, что я получилась наноси. И мне надо было вводить деньги как раз. И... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что являюсь руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого-то была ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете... Да, да, что-то у меня закроется, как было-то, но... Ну, конечно. Ну, смотрите, про глаз по этой позиции более чем хрошей. То-то просто надо будет наблюдать, то-то, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимально плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет варианта, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не визбавиться, забыть их с хорошим шансом, да, и... Да, дальше уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. И я сомна не видеть, что... Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке было, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду же этим среди. То есть не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 250. faster-whisper / base
+### 286. faster-whisper / base
 
 - **ID:** `694a91ba6d1d`
 - **Language:** ru
@@ -5286,7 +6053,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Да, да, он уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видеть, перетодкушка, он как бы не объяснил. И я просто не с па-2, точка 91, подпадал от 20 серий, точка 1 и открыл от 20 серий. А, я понял. И мне вступали из-за действия интернет видно. И я вот набирала, и короче, вот этого-то немножко, как-то я зашел. Потому что, ну как бы он мне открывает, я у меня закрывать, если он мне говорит, насколько надо закрывать. А это он мне без фильм, первый раз я сделала, хорошо, второй раз я сделала, хорошо, а это где-то у меня, короче, наверное, я их не готова было. Послушайте, вы на самом деле делали слегки на спугам, потому что открыть то, не если раз больше, обычно черевато потеряйся его капитана. Я была по-дюмра с таковой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50, и получилась так, что у меня... Как бы я торговался один брокер, там в предыду вообще были самошедшие. И даже не обратил внимание, я захожу после отеда. У нас такой урокал, а у меня просто понесли закрыты. То есть я этот момент потерялся. И первый 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже. И просто получалось, что я получилась наноси. И мне надо было вводить деньги как раз. И... Смотрите, у вас по факту, как я вижу, другого выбора не было. Дальше не пошла в минус. Потребуются какие-то сручные меры у капиталя, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть я все, что являюсь руководителем Никиты. Я в целом работаю миллионами, считаю, да, то есть она, что там не отошлась, стала учитывая то, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого-то была ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали-ка, потому что что-то будет не так. Ну, можно вопрос, а вы думаете... Да, да, что-то у меня закроется, как было-то, но... Ну, конечно. Ну, смотрите, про глаз по этой позиции более чем хрошей. То-то просто надо будет наблюдать, то-то, чтобы не было. Где было такого, что мы продевали эту позицию? Потому что у нас попак, что будет буквально одна попытка закрыть эту позицию, там минимально плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть, вот до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет варианта, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Так, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете. Я понимаю, я... А именно с одним, это, по-моему, из-за 60. Да. Да. Попробуйте сбить буквально грустно. А, хорошо. Пощения. Поэтому смотрите, по поводу вашей станции. Еще раз, не переживайте, а нас полностью под контролем. Она будет полностью под контролем. Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть, и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не визбавиться, забыть их с хорошим шансом, да, и... Да, дальше уже просто более внимательный, когда будет идти открывать, потому что я думаю, иди-то второй раз, и тут позицию не выдержать. И я сомна не видеть, что... Зелательно раз на грабе наступить на утиль. Зелательно не наступать на них, а не конец, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другие из-под тюзей, но я тем, к шоке было, я не облистся, я сидал. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то на 50, то есть у меня он взял на 1,25 долларов, а то поверили, мне это были огромные деньги, поверили. Для меня сейчас, вот если я покидал эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более у меня была уже 17-17 век. А уже? А я только что заставила бы на 23. Да, предвеса. Да, предвеса на 23-17 век. Да, большая. Да, да. Любое чудо. Даже из меня единственное, как раз живет там минус 4, плюс 4 и так далее. Она может подниматься, да, то есть, но если будет подниматься, я в любом случае буду же этим среди. То есть не пугать им под контролем. Хорошо? Спасибо вам большое. Да. Солго. Тогда приятно было с вами познакомиться, мне еще вызовут Александр, я вас заберу еще после аппетта и проверим, что с вашей делкой. Хорошо. Хорошо. В любую время. Да. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас также спасибо большое.
 
-### 251. openai / large-v3
+### 287. openai / large-v3
 
 - **ID:** `ba7e0665684f`
 - **Language:** ru
@@ -5306,7 +6073,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да-да-да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр, то есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать, или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы она осталась, чтобы она вышла на ноль, хоть, ну, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто место 2.91 поставила 29.1 и открыла 29.1. А-а-а, я-я-я. Я понял, я понял. Да, и у меня все зависит, интернет видно, и я вот набирала, и, короче, вот это вот у меня в маршрутках произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать, и это он мне объяснил. Первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте, вы, на самом деле, делали слегки баскетбол. Да. Ну, я не был беспогом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, вот, случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, а у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень больно. Ну, вот у меня сейчас тоже, и просто получалось так, что я получила минусы, и мне надо было выводить деньги как раз, потому что, ну, и получалось, что просто вот все в минус, и мне нужно было все спрятать. Смотрите, самое, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже, да, то есть, то есть, тут, я думаю, Ну, я брала опять этот, как его, как его называют. Авантор инвестиций, вижу. Да, да. Объединенный депозит, да, я вижу. Ну, смотрите, то есть у вас, по факту, как я вижу, другого выбора и не было, то есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, да, да. То есть вы спасли это намного лучше, потому что, в любом случае, вы вот потом сделаете, можете просто вывести больше, но самое главное, если сейчас решится эта позиция, то, Да, да, да. И чтобы она дальше не пошла в минус. Да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну, вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я, мы с вами будем. А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но, учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, у тебя была еще одна проблема, да, то есть, я, в любом случае, буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я, мы с вами будем. А, вы хотите присматривать? Да, конечно, конечно, меня попросили, то есть я, если что, являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я к счетам не отношусь, да, но, учитывая то, что Никита очень попросил за вами присмотреть очень сильно, потому что, как я сказал, у тебя была еще одна проблема, да, то есть я, в любом случае, буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я, мы с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я, мы с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть я, мы с вами на связи, если вдруг потребуются какие-то срочные меры и так далее, то есть да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да да. Буквально минутку, побудьте на виде буквально минутку. А, хорошо, хорошо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо.
 
-### 252. openai / medium
+### 288. openai / small
+
+- **ID:** `ab0d8377d2ac`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 21.38s
+- **Memory:** Δ 959.9 MB, peak 2534.7 MB
+- **Beam size:** 1
+- **Temperature:** 0.16
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 63.49%
+- **CER:** 51.93%
+- **Timestamp:** 2026-01-07T13:42:44.039311+00:00
+
+**Text:**
+
+> Привет. Здравствуйте. Я говорю с Ольгой. Здравствуйте. Ольга. Представлюсь. Меня зовут Александр. Представлюсь. Я не видел. Он попросил присмотреть за вашей позиции. Смотрите. Я в течение сегодняшнего дня буду наблюдать. Хотел бы сразу оттащить с этой позиции. Если что, вы веете самостоятельно закрывать или вам нужно будет помочь. Да, он и не умеет. Мне кажется, он сказал себе, что он не умеет. Я не умею. Я не умею. Он сказал, что она вышла на моль, чтобы не закрывать деньги. Он уже добил по поводу трудной ситуации, у которых созникла. Он сам открывал из Белла. Это он видел перед Торпушком. Он объяснил мне. Я просто на 102.91 поставила 20.90 и открыла 20.90. Я понял. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Я не знаю, как это было. Мы делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно черевата потери всего капитала. Я был один раз на своей практике, на личном опыте, я еще был тоже новичком, но это было лет семь назад. Я тогда открыл пятилотов, случайно пятьдесят. И получилось так, что у меня как бы я торговал с одним брокером, там спрэды вообще были сумасшедшие. Я даже не обратил внимание, я захожу после обеда на свой тракт локал, у меня просто проникнутые закрыты губы. То есть я на тот момент потерял свои первые 25 тысяч долларов. Это было очень интересно. Ну вот у меня сейчас тоже, и просто получалось, я получилась в Минусе, и мне надо было вывести деньги как раз по месту, и получалось просто вот. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Я брала 5 лет от какого-то у нас спать. А вам кромистиция, вижу? Да, да. Я бы этим не пользовался. Да, я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться стости. Вы можете сделать это больше, но главное, чтобы она не пошла в минус. В сутра скорее всего, какие нахачели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуется какие-то срочные меры. А, то есть, вы можете присматривать? Да, конечно, конечно. Меня попросили, то есть, я и сиропроводителем Никиты, я в целом работаю миллионами считами, да, то есть, что там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, скажем, тяжелая ситуация, то есть, хотел бы не снаряжать, но, конечно, я не могу. Вы за вами присмотреть очень сильно, потому что тяжелая ситуация. То есть, хотел бы, чтобы, будь новый год, встретили спокойно, да, то есть, не перезывали к этому, что что-то будет не так. Да, вот. А может вопрос, обоединение с этим у меня закроется, как-нибудь, потому что многое было. Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль. Будем уже смотреть по ситуации. То есть, если я буду видеть свою делку минус две, минус тысячу, то будет сагубляться и нет варианта, что она выйдет в ноль. и у нас придется ее закрыть небольшом в неделю. Но если это увидит, то ты можешь быть предпочтёсно чуть-чуть пожатывать и даст, но на крайне веришь, чтобы не было такого, что... Ну понимаешь. Я понимаю. Я... Немедленно садимный это, конечно, минут 20. Да. Пусть в неделю, побыть и в неделю, буквально в неделю. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Повторяю. Прошу прощения. Прошу прощения. По поводу вашей ситуации не переживайте, она будет полностью под контролем. Я в любом случае продолжу селусивить, чтобы эту ситуацию перекрыть даже в плюс. Будем смотреть, как это получается от ситуации. Я думаю, до конца этого дня эту позицию вы должны не избавиться, забыть их страшно сон, да, то есть и дальше уже просто будет более внимательное, когда будете открывать, потому что я думаю, не где-то второй раз в секунду позицию не выдержать. Я сама не выдержала. Я выдержала. Ну, желательно найти раз на граблено, вступить, но учить. Это точно. Ну, желательно не наступать на не конец, ну раз уже страх получился, на конец он вообще была сразу в шоке. Я когда-то уже увидела, как вы говорите, я начала закрывать другие, смотрю, что не было, но я тем к шоке была. Я в мгнессере наседал. Вы на самом деле легче мгнессера с пугом отделались, потому что я повторюсь, у меня была ситуация, когда я лично актуал позиции вместо пяти латугна пятьдесят, то есть у меня я подделал на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги, поверьте Для меня сейчас ее нельзя потерять. 25 это в принципе тоже. Так ведь, что я показываю, то есть как бы это была прибыль. Для меня это тоже. Слышишь? Пошли 7. Тем более у меня была уже... Пока мы говорили, наверное, уже 17, 17, 18. А уже? А я только что заходила была, 23. Да, привет, привет, привет. У меня есть много людей. В любом случае изменения с себя. Она может подниматься. Но если будет подниматься, я в любом случае буду за этим сидеть. Не пугайтесь под контролем. Спасибо. Спасибо. Все, Ольга. Тогда приятно было с вами познакомиться. Меня еще зовут Александр. Я вас наберу после обеда и проверю, что с вашей делкой. с вашей сделкой. Хорошо? Хорошо. В любое время. Спасибо. Спасибо вам большое. Спасибо вам большое. И вас так же. Спасибо большое. Спасибо. Спасибо. Спасибо. Спасибо. Спасибо.
+
+### 289. openai / medium
 
 - **ID:** `f228f5bede35`
 - **Language:** ru
@@ -5326,7 +6113,7 @@
 
 > Алло. Здравствуйте. Я говорю с Ольгой. Здравствуйте. Ольга. Представлюсь. Меня зовут Александр. То есть он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня буду наблюдать. Хотел бы сразу защищать твою позицию. Умеете самостоятельно закрывать? Или вам нужно будет помочь? Не умею. Он сказал, что она вышла на ноль. Он уже домил по поводу трудной ситуации, которая у вас возникла. Да. Он обычно мне сам открывал изделки. А это он перед отпуском объяснил. Я просто на 102.91 поставила 29.1. Я открыла 29.1. Я понял. У меня завис интернет видно. Я набирала. Это у меня произошло. Он не открывает. Я умею закрывать. Если он говорит, насколько надо закрывать. Это он объяснил. Первый раз я сделала хорошо. Второй раз я сделала хорошо. А это у меня... Я не готова была. Мы делали с легким испугом. Потому что открыть позицию в десять раз больше обычно чревато потерей всего капитала. Я был на своей практике. На личном опыте. Я был новичком. Это было лет семь назад. Я тогда открыл место в пяти. А потом в пятьдесят. Я торговал с одним брокером. Спреды были вообще сумасшедшие. Я даже не обратил внимания. Захожу после обеда на свой торговый аккаунт. У меня позиции закрыты, убыток. Я на тот момент потерялся. Первые 25 тысяч долларов. Это было очень много. У меня сейчас тоже. Получалось, что я получилась минусы. Мне надо было выводить деньги. Получалось, что все время нужно брать. Самое главное, что вы не потеряли капитал. Потому что закончится много хуже. Я брала опять этот, как его называют? Манкрогрессия. Я вижу. У вас по факту другого выбора и не было. У вас был выбор либо потерять капитал, либо хотя бы как-то постараться стасти. Вы спасли это намного лучше, потому что в любом случае вы вывести больше. Самое главное, сейчас решиться этой позиции. Чтобы она дальше не пошла в минус. Потому что я видел, что у вас процедура как-то опустилась. У вас было 26, сейчас 22 с утра. Скорее всего, какие вагачели еще будут. Я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры. Вы с вами будете пересматривать? Конечно. Меня попросили. Я являюсь руководителем Никиты. Я работаю миллионными счетами. Я там не отношусь. Но Никита очень попросил за вами присмотреть. Очень сильно. Потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно. Я думаю, что это будет неправда. Можно вопрос? Прогноз по этой позиции более чем хороший. Надо будет наблюдать. Чтобы не было такого, что мы прозевали эту позицию. Я думаю, что мы должны быть в настройках. Я думаю, что нам придется закрыть эту позицию. Мы должны быть в минимальной позиции. Если я буду видеть, что сделка уходит, то она будет дальше усугубляться. И, если нет, то нам придется закрыть небольшую позицию. Я понимаю, что вы понимаете. Я понимаю. Это не моё посольство. Буквально минутка. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать. Я не знаю, что делать.
 
-### 253. openai / medium
+### 290. openai / medium
 
 - **ID:** `19222828597f`
 - **Language:** ru
@@ -5346,7 +6133,7 @@
 
 > Алло, здравствуйте, я говорю с Ольгой. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Он попросил присмотреть за вашей позиции. Я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу выточить твою позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею. Он сказал, что она должна вышла на ноль, чтобы не закрывать. Он уже дымил по поводу трудной ситуации, которая у вас возникла. Да, он обычно мне сам открывал изделки. А это он перед отпуском мне объяснил. Я просто на 2.91 поставила 29.1 и открыла 29.1. Я понял. У меня завис интернет, видно. И я набирала, и вот это у меня хорошо произошло. Он мне открывает, я умею закрывать. Он мне говорит, насколько надо закрывать. Это он мне объяснил. Я это делала хорошо, второй раз. А это у меня не готова. Мы делали с легким испугом. Потому что открыть позицию в 10 раз больше обычно черевато потерять всего капитала. У меня было на 1 раз такое на своей практике. На личном опыте. Я был новичком. Это было лет 7 назад. Я тогда открыл. Получилось так, что я торговал с одним брокером. Спреды были сумасшедшие. Я даже не обратил внимания. Я захожу после обеда на свой торговый аккаунт. У меня позиция закрытая, убыток. Я на тот момент потерял свои первые 25 тысяч долларов. Это было очень больно. У меня сейчас тоже. Получалось, что я получила с минусы. Я получила деньги. Получалось, что все время нужно брать. Самое главное, что вы не потеряли капитал. Потому что закончилось намного хуже. Я брала 5 лет какого насправа. Аванкра инвестиция. Да. Обеден депозит. Смотрите. Как я вижу, у вас другого выбора и не было. У вас был выбор либо потерять, либо хотя бы как-то постараться стасти. Вы спасли это намного лучше. Потому что вы вывести больше. Самое главное, сейчас решить все как и вистое. И чтобы она дальше не пошла в минус. Я видел, что у вас процедура опустилась. Скорее всего, какие логичи еще будут. Я в любом случае буду с вами на связи. Если вдруг потребуются какие-то срочные меры. А, вы хотите присматривать? Да, конечно. Меня попросили. Я являюсь руководителем Никиты. Я работаю с миллионными счетами. Я попросил за вами присмотреть. Очень сильно. Потому что тяжелая ситуация. Хотел бы, чтобы Новый год встретили спокойно. Если бы не перерывали, что будет не так. Можно вопрос? Обеден депозит. Как он будет по мной? Смотрите, прогноз по этой позиции более чем хороший. Надо будет наблюдать. Чтобы не было такого, что мы прозевали эту позицию. Потому что у нас будет одна попытка закрыть эту позицию. Минимальный плюс или минус. Будем смотреть ситуацию. Если я буду видеть, сделка минус две, минус тысячу идет. И она потом будет усугубляться. И нет варианта, что она выйдет в ноль. Может быть придется чуть-чуть пожертвовать. Но, на крайней мере, чтобы не было такого. Я понимаю. Минус один это минус пять. Побыть и двери буквально минутка. Хорошо. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи. Держи.
 
-### 254. openai / base
+### 291. openai / base
 
 - **ID:** `9ca5424fab54`
 - **Language:** ru
@@ -5366,7 +6153,27 @@
 
 > Алло, здравствуйте. Здравствуйте, Ольга, представлюсь не вызову Александр. Я, в течение сегодняшнего дня, еще буду наблюдать. В 1911 оставил 20 сервис т.к. я открыл 20 сервис. А, я... Я понял. Я понял. И мне, вступовая, я делал, и я вот набирал. И короче, вот это вот немножко, как-то я зашел. Это, ну как бы, он не открывает, я у меня закрывать. Слушай, если он не поворит, насколько надо закрывать. А это он не без сил, первый раз я сделала. Хорошо, второй раз я сделала. Хорошо. А это где-то у меня... Но, короче, ну, я их не готова. Сама у нас сама. Послушайте, мы на самом деле делали с легким доспугом, потому что открыть то, не если уехит раз больше, обычно через лата потеряется его капитана. Я была по-дюнерасной, такой на своей практике, на неречном опыте, и ещё был тоже мричом. Это было лет 7 назад. То есть я тогда был лет 5-лет, он случайно 50. И получилась так, что у меня, как бы я торгался, один брокером, там с прайдой вообще были сомошатшие. и даже не обратил внимание, я закажу после отеда. У вас такой закал, у меня просто понесли закрыты, вот так, я этот момент потерялся и первые 25 тысяч долларов, это было очень... Ну вот у меня сейчас тоже и просто получалось, сейчас ты же получилась в нанесе, и мне надо было говорить деньги как раз, потому что... Ну и получалось, просто вот вот... Самое главное, что вы не потеряли капитал, потому что что могло закончить самым много хуже, то есть тут все изерплировали. А вот, конечно, видите, вижу. И вы идете к депозит. Да, я вижу. Посмотрите, у вас по факту какие вижу, другого выбора и не было. То есть, у вас был выбор, или до потерять. То есть изерпл, либо как-то, то же, то же, то есть изерпл, В финале вы стофли это нам долго лучше, потому что вы улучшивываются, то вы делаете можете просто вывести больше. На мой главный, сейчас решить этой позиции, и чтобы она дальше не пошла с Минос. Да, да, да, да. А вот протофельный тапосивается, вот, было 26-22, с утра, вот скорее всего, какие-то гочели еще будут, а я в любом случае буду с вами наскази, если тут потребуется какие-то срочные меры в культале, то есть я, а, в Да, конечно, конечно, меня попросили. Я все, что является в квадителем нититы. Я в целом работаю миллионами, считаю, да, отрезаю. Там она, что там не отташилась, там она учитала, что нититал очень попросил в завале 3-3. Очень сильно, потому что с кого-то была ситуация. То есть, хотел бы, чтобы... Ой, ты новый жиль. Стретьте, спокойно, да, да, то есть и не перезаваляй, Это было просто не было. Дело в том, что это будет не так. Ну, я просто вопрос. А вы думаете, что пяти меня закроется, как пребывается нос? Ну, конечно. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет обглядать, чтобы не было, где было такого, чтобы вы продевали эту позицию. Потому что у нас попак, что будет буквально задапопытка, в минимальный плюс или в минимальный мир, вновь или вновь, да? То есть будем уже смотреть по ситуации. То есть, будешь до того, что там так, если я буду видеть, то есть делка там в минус 9000, и вот так. То есть, и она потом дальше будет у скурбляться, и нет, порядка, что она будет вновь, то я виновь, но там, например, привез ее за глить небольшой бизнес. То есть, если я буду видеть, то есть, то есть, может быть, придется чуть-чуть поджарствовать ей, да? То есть, ну, в таком виде, чтобы не было такого, чтобы понимаете, на коммуслим. Я не знаю, я... Мои седины это, как и веще, минулась ваше седя. Да, да. А, по-почариваю, по-почариваю, по-почариваю, по-почариваю. А, вон. Редактор субтитров Н. О. Олзоева Редактор субтитров А.Семкин Корректор А.Егорова Редактор субтитров А.Синецкая Корректор В.Сухиашвили Прошу прощения. Да. В этом смотрите по поводу вашей ситуации. Еще раз. Не переживайте. Она с полностью под контролем. Она будет полностью под контролем. Я в другом случае продолжил сиеверить, потому что наше перекрыть даже плюс. Датри, ну, будем смотреть и же оболчиваться компета от ситуации. Я думаю, в 30 как-то до конца этого тебя, это по-действие, вы должны быть неизбавятся, забыть их с хорошим шон, и даже уже просто более внимательные, когда будет идти открывать, потому что я думаю, не дит второй вас и корпор, подинь сегодня выдержать. Я со мной не дитерство. Я выдержал, Зелательно, на один раз, награбли на степите, но у тебя это тоже. Это точно. Зелательно, не наступать на них, а не конец. Ну, раз уже вжистах получилось. Я конец, то вообще было сразу в шоке. Я когда-то даже увидела, вот как поговорить, у меня сначала закрепить, она начала закрепить другие, и с мою жизнь не было, я тем, что у тебя было. Я не обнесли, с насидался. Просто, слушайте, вы на самом деле легкие господа делались, что я по перестам не было ситуации, когда я лично акционализировал не в 55-х годов, но в 50-х годов, то есть у меня он взяв на 1,5 000 долларов, а то поверили мне это были огромные деньги, поверили. Для меня сейчас я покидаю эти 25-й годы, это принципе тоже. Так что я показывал, это было прибыть. Для жена это тоже. Почти более. Тимболе у меня была уже 17-17 век. А уже, а я только что застальила было 23. Да, припекали, что 3. Ну, это было 12 веков. Да, это было. Любое чудо. Даже из меня единственный оба сразу идет там, минус 4, 3, 4 и так далее. А там можешь подниматься, да, то есть, ну, если будет подниматься, я в любом случае буду же этим сидеть. То есть не пугать, не пугать под контролем. Спасибо вам большое. Да, столько. Тогда приятно было с вами познакомиться. Я еще вызываю колесандр. Я вас выберу еще после обеда. Проверим, что с вас и делать. Хорошо? Хорошо. В любой время. Да, спасибо. Спасибо большое. Спасибо вам большое. И вас также спасибо большое. Спасибо. Садитесь.
 
-### 255. faster-whisper / base
+### 292. openai / small
+
+- **ID:** `cf1ad954b8ff`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 19.21s
+- **Memory:** Δ 0.0 MB, peak 3239.7 MB
+- **Beam size:** 1
+- **Temperature:** 0.15
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 66.70%
+- **CER:** 48.22%
+- **Timestamp:** 2026-01-07T13:44:05.433869+00:00
+
+**Text:**
+
+> А ну? Алло, здравствуйте, я говорю с Ольгой. Да, да, да, сразу. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Присаживай, я не видел. Присаживай, я не видел. То есть он попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу оттащить в твоей позиции, если что, вы знаете самостоятельно закрывать или вам нужно будет Да, он не умеет. Мне нужно сказал, что это статус, чтобы она вышла на моль, чтобы не закрывать деньги. Да, он уже домил по поводу трудной ситуации, которого созникла. Вы понимаете, вы попали в бардерскую? Да, он обычно мне сам открывал из Белки. А это он видно, перед тортышком он как бы мне объяснил, и я просто на 1002.91 поставила 209.1 и открыла 209.1. Я понял. Я понял. Я не знаю, что это за бисер интернет видно. Я набирала и вот это вот у меня хорошо зашел. Потому что он мне открывает, я у него есть открывать. Если он мне говорит, насколько надо закрывать, то это он мне объяснил. Первый раз я сделала хорошо, второй раз я сделала хорошо. А это где-то у меня... Короче, наверное я и не готова была. Мы делали с легким испугом, потому что открыть тазиску в 10 раз больше, а обычно через ватта потеряем всего капитала. Я был один раз на своей практике, на личном опыте, я еще был тоже новичком, но это было лишь 7 назад. Я тогда открыл пятилотов, в случае на 50. И получилось так, что у меня, как бы я торговал с одним брокером, там страды вообще были сумасшедшие. Я даже не обратил внимания, я захожу после обеда на свой тракт, у меня просто проникнутые закрыты, и в углы так. То есть я на тот момент потерялся и первые 25 тысяч долларов, это было очень много. Ну вот у меня сейчас тоже, и просто получилось, что я получилась в Минусе, и мне надо было вывести деньги как раз, помещать в Минус, и получилось просто, вот все время. Самое главное, что вы не потеряли капитал, потому что самогло закончится намного хуже. Я брала этот какого-то, который у нас спает. А вам трамвисиция, вижу. Я бы этим не пользовался. Я вижу. Смотрите, у вас по факту, как я вижу, другого выбора и не было. У вас был выбор либо потерять, либо как-то постараться стости. Вы можете просто визитить больше. Самое главное, чтобы она дальше не пошла в минус. Потому что я видел, что у вас проставка слипустилась. Раз было 26-22. С утра скорее всего, какие нахачели еще будут. А я в любом случае буду с вами на связи, если вдруг потребуется какие-то срочные меры. Я попросил, что я и с руководителем Никита. Я работаю с миллионами читами. Я не отношусь к читам, но я очень попросил просмотреть Серьезно, потому что у тебя тяжелая ситуация. То есть, чтобы в Новый год встретили спокойно, то есть, и не перезывали к этому, что будет не так. Может вопрос, обоединение с оптией у меня закроется, как-нибудь помочь? Смотрите, прогноз по этой позиции более чем хороший. Продавая на пакет, нужно будет наблюдать, чтобы не было такого, что мы прозевали эту позицию. Потому что у нас по факту будет буквально одна попытка закрыть эту позицию в минимальный плюс или в минимальный минус, или в ноль. То есть, будем уже смотреть по ситуации. То есть, если я буду видеть свою делку, то в минус две, в минус тысячу идет, то есть, и она потом дальше будет В результате нет варианта, что она выйдет в ноль. Я вам сказал об этом, нам придется ее закрыть небольшом гидерце. Но если это будет... Да, да, ну хорошо. Да, ты можешь быть предпочитанным, пожатывать ей, да, то есть ну... Какая-то вери, чтобы не было такого, что... Ну, понимаете. Ну, это не таковески. Я понимаю, я... Немнадцатимны это... Конечно, не нужно 20 минут. Да. Да. Пусть в гидерце... Побудьте двигать буквально друг друга. А, хорошо, хорошо. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Повтори. Прошу прощения. Ну чего ставить? Ну, что ж, я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. По поводу вашей ситуации не переживайте, она будет полностью под контролем. Я в любом случае продолжу усиливать, чтобы эту ситуацию перекрыть. Будем смотреть, что я получил от ситуации. До конца этого дня эту позицию вы должны отними в шоке. Я думаю, не в коем случае вы не выдержите. Я сама не выдержу. Я выдержал. Ну, желательно найти раз на грабли наступить. Ну, желательно не наступать на них, конечно. Ну, раз уже так получилось, я конечно была сразу в шоке. Я когда-то что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, Я сама не ведешь. Я веду. Ну, желательно, найден раз на грабли наступить, но очень... Ну, желательно, не наступать на не конец. Ну, раз уже так получилось, я конец-то вообще была сразу в шоке. Я когда-то уже увидела, вот как вы говорите, я сначала закрывала... Начала закрывать другие, смотрю, не было, но я чем к шоке была, я... Я в дне сырый соседал. Вы на самом деле легче, чем и с пугом. Я был ситуатом, когда я лично актуал позицию вместо пяти латурна 50. У меня на этом 25 тысяч долларов. Но тут померли меня, это были огромные деньги. Для меня сейчас я потеряю эти 25. Это я показываю. Это была прибыль. Для меня это тоже. Собственно, что в этом случае не будет. Я только что засадила бомба 22. Да, припев. Но я не путрец. Это просто очень большое. Любое чинное, даже изменения с себя, она сразу идет минус 4,4 и так далее. Она может подниматься, но если будет подниматься, я в любом случае буду за этим следить. Не пугайтесь под контролем. Хорошо? Спасибо, бабонда. Я вас наберу после обеда и проверю, что с Вашей сделка. Хорошо? В любое время. Спасибо. Спасибо вам большое. Спасибо вам большое. Спасибо вам большое. Спасибо. Спасибо.
+
+### 293. faster-whisper / base
 
 - **ID:** `b3207e8a87a8`
 - **Language:** ru
@@ -5386,7 +6193,27 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Я пришел попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду набродать. Да, да, уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видя перетодкушка, он как бы не объяснил, и я просто 12.91 остадала 27.1 и открыла 21.00. И мне вступали из-за действия интернет видно. И я вот набирала и короче вот этого-то минута. Потому что... Ну как бы он мне открывает, я у меня закрывает. Слушай, если он мне говорит, насколько надо закрывать. А это он мне без фильм, первый раз я сделала. Хорошо, второй раз я сделала. Хорошо, а это где-то у меня. По короче, наверное, я их не готова было. Слушайте, вы на самом деле делали с легким доспугом, потому что открыть-то несколько раз больше обычной череватопотерей всему Капитана. Я была погибра с таковой на своей практике, именно на личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5-15 лет, и получилась так, что у меня... как бы я торговался один брокером там в предыду вообще были самошедшие и вот и я даже не обратил внимание я закажу после отеда у вас такой закалов у меня просто понесли закрытый бутылок то есть я на тот момент потерялся и первый двадцать пять тысяч долларов это было очень хорошо но вот у меня сейчас тоже и просто получалось я получилась наноси и не надо было вроде деньги как раз Смотрите, у вас по факту, какие вижу, другого выбора и не было. Дальше не пошла в минус. Дальше не пошла в минус. Потребуется какие-то срочные меры, в капитале, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили, то есть, я все, что является руководителем Никиты, я в целом работаю миллионами считаю, да, то есть, там, что там не отошлось, там, но считаю, что Никита очень попросил вызования тресматрейся, очень сильно, потому что с кого-то была ситуация, то есть, хотел бы, чтобы, очень быстро выжло. Смотрите, спокойно, да, то если не переживали, от того, что что-то будет не так. А вы думаете, что ты у меня закроется, как прибыть-то, но кое-то. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Я была такого, что мы продевали эту позицию, потому что у нас попак будет буквально одна попытка закрыть эту позицию минимальный плюс или минимальный минус или в ноль, да? То есть, будем уже смотреть по ситуации. То есть, вот до того, что там, так же, если я буду видеть, то сделка там минус 9000 ее, да? То есть, и она потом дальше будет усыкубляться, и нет варианта, что она вот выйдет в ноль, то яался, но об этом напряжении загреть не большом бизнесе. То есть, если я буду видеть, то просто... Так, и может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете, наконец-то. Я понимаю, я не носу один. Это, конечно, минус, восхитив. Да. Да. Пополезут, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Допись, ну, будем смотреть и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим словом. Допись. Допись уже просто более внимательный, когда вы теперь открываете, потому что я думаю, иди-то в второй раз, икур позицию не выдержать. Зелательно, один раз на грабе наступить на утиль. Зелательно, не наступать на них и не есть, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другую изма, ты уже не знала, я тем, к шоке была, я не облесрысь, посидался. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозиции не стопитил, а то в на 50, то есть у меня взял на 1,25 долларов, а то поверили мне, это были огромные деньги, поверили. А для меня сейчас, вот, если я потеряю эти 25, это, в принципе, тоже, так что я показывал, то есть, как бы это было прибыть. Глядя, это тоже. Почти более. Тем более, у меня была уже 17, 17 век. А уже? А я только что заставила было 23. Да, предвеса. Да, предвеса. Ну, что было? Большое. Большое. Большое. Даже из меня единственный обо сразу живет там минус 4, плюс 4, и так далее. Она может подниматься, да, то есть, ну, если будет подниматься там, я в любом случае буду же этим среди. То есть, не пугать им под контролем. Хорошо? Спасибо вам большое.
 
-### 256. faster-whisper / base
+### 294. faster-whisper / base
+
+- **ID:** `ab42ebdcb7ac`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 2.62s
+- **Memory:** Δ 0.6 MB, peak 3363.9 MB
+- **Beam size:** 3
+- **Temperature:** 0.19
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 3
+- **WER:** 67.80%
+- **CER:** 46.25%
+- **Timestamp:** 2026-01-07T13:46:04.811645+00:00
+
+**Text:**
+
+> Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете, я зовут Александр. Здравствуйте. Я пришел попросил присмотреть за вашей позиции. Смотрите, я в течение сегодняшнего дня еще буду набродать. Да, да, уже добил по поводу трудной ситуации, которого судикла. Да, он обычно не самый прекрасный стрелки. А это он, но, видя перетодкушка, он как бы не объяснил, и я просто 12.91 остадала 27.1 и открыла 21.00. И мне вступали из-за действия интернет видно. И я вот набирала и короче вот этого-то минута. Потому что... Ну как бы он мне открывает, я у меня закрывает. Слушай, если он мне говорит, насколько надо закрывать. А это он мне без фильм, первый раз я сделала. Хорошо, второй раз я сделала. Хорошо, а это где-то у меня. По короче, наверное, я их не готова было. Слушайте, вы на самом деле делали с легким доспугом, потому что открыть-то несколько раз больше обычный шелиллата потеряющего капитана. Я была по-дивра с такой на своей практике, на этой личном опыте, я еще был тоже на речном, даже это было 7 назад, то есть я тогда был 5 лет, он случайно 50. И получилась так, что у меня... как бы я торговался один брокером там в предыду вообще были самошедшие и вот и я даже не обратил внимание я закажу после отеда у вас такой закалов у меня просто понесли закрытый бутылок то есть я на тот момент потерялся и первый двадцать пять тысяч долларов это было очень хорошо но вот у меня сейчас тоже и просто получалось я получилась наноси и не надо было вроде деньги как раз Смотрите, у вас по факту, какие вижу, другого выбора и не было. Дальше не пошла в минус. Дальше не пошла в минус. Потребуется какие-то срочные меры, в капитале, то есть я... А вы с вами будем просматывать? Да, и, конечно, конечно. Меня попросили. То есть я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да? То есть она, что там не отошлась, стала учитывать то, что Никита очень попросил. Вызывание тресматрейся очень сильно, потому что с кого тяжелая ситуация, то есть хотел бы, чтобы очень быстро выжло. Смотрите, спокойно, да, то если не переживали, от того, что что-то будет не так. А вы думаете, что ты у меня закроется, как прибыть-то, но кое-то. Смотрите, про глаз по этой позиции более чем хорошее. То есть, просто надо будет наблюдать, то есть, чтобы не было. Я была такого, что мы продевали эту позицию, потому что у нас попак будет буквально одна попытка закрыть эту позицию минимальный плюс или минимальный минус или в ноль, да? То есть, будем уже смотреть по ситуации. То есть, вот до того, что там, так же, если я буду видеть, то сделка там минус 9000 ее, да? То есть, и она потом дальше будет усыкубляться, и нет варианта, что она вот выйдет в ноль, то яался, но об этом напряжении загреть не большом бизнесе. То есть, если я буду видеть, то просто... Так, и может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, на крайней вере, чтобы не было такого, что поднимаете, наконец-то. Я понимаю, я не носу один. Это, конечно, минус, восхитив. Да. Да. Пополезут, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыт даже плюс. Допись, ну, будем смотреть и же ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим словом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, они идти до второй раз, и тут позицию не выдержать. Зелательно, один раз на грабе наступить на утиль. Зелательно, не наступать на них и не есть, но раз уже так получилось. Я когда-то же увидела, как поговорить, я сначала закрываю, она стала закрывать другую измотюзию, но я тем к шоке была. Слушайте, вы на самом деле, легче мы с пугом отделались, потому что это в пересом я была ситуация, когда я лично актилпозицию не стопитил, а то в на 50, то есть у меня он взял на этом глаз 5 тысяч долларов, а то поверили мне это были огромные деньги, поверили. А для меня сейчас, если я потеряю эти 25, то принципе тоже, так что я показывал, то есть, как бы это было прибыть. Для жена это тоже. Почти более. Тем более, у меня была уже 17, 17 век. А уже? А я только что заставила было 23. Да, предвеса. Да, предвеса. Ну, что было? Большое. Большое. Большое. Даже из меня единственный обо сразу живет там, минус 4, плюс 4, и так далее. Она может подниматься, да, то есть, ну, если будет подниматься, я в любом случае буду же этим среди. То есть, не пугайте под контролем, хорошо? Спасибо вам большое.
+
+### 295. faster-whisper / base
 
 - **ID:** `d505f15f3a13`
 - **Language:** ru
@@ -5406,7 +6233,47 @@
 
 > Алло. Здравствуйте. Я говорю с Ольга. Здравствуйте, Ольга. Представляете? Я зовут Александр. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Здравствуйте. Он сказал, что пацаны вышли на ноль, чтобы не закрывать. Да, он уже добил, по поводу трудной ситуации, которого садикла. Да, он обычно не сам открасал и сделал. А это он, ну, видят. Перед отпуском он как-то не объяснил, и я просто 12.91 остадал от 21.01 и открыл от 21.00. Я понял. У меня скупывали из-за действия интернет видно, и я вот набирала, и короче, вот этого-то немножко расширкнулся, потому что, ну, как бы он мне открывает, я у меня закрывать, если он мне поверить на сколько надо закрывать. А это он мне без фильм, первый раз я сделала хорошо, второй раз я сделала хорошо, а это где-то у меня, по короче, наверное, я их не готова плахать. Слушайте, вы на самом деле делали с легким доспугом, потому что открыть-то несколько раз больше обычный шелиллата потеряющего капитана. Я была по-дивра с такой на своей практике, на этой личном опыте, я еще был тоже на речном, даже это было ли всем назад. То есть я тогда был 5-й лотов, случайно 50. И получилась так, что у меня... как бы я торгался один брокером там в предыду вообще были самошедшие и вот и я даже не обратил внимание я закажу после отеда у вас вы такой закал, а у меня просто понесли закрытым убыток то есть я на тот момент потерялся и первый двадцать пять тысяч долларов это было очень. Ну вот у меня сейчас тоже и просто получалось, что я получилась наноси и не надо было вводить деньги как раз. Смотрите, у вас по факту, какие вижу, другого выбора и не было. Дальше не пошла в минус. Дальше не пошла в минус. Потребуются какие-то сручные меры, ухитали. То есть, я... А вы с вами будем просматывать. Да, конечно, конечно. Меня попросили. То есть, я все, что является руководителем Никиты. Я в целом работаю миллионами, считаю, да? То есть, там, что там не отошлось, то оно считалось, что Никита очень попросил вызования тресматрейся. Очень сильно, потому что с кого-то была ситуация. То есть, хотел бы, чтобы... Ой, что будет новый желт. Смотрите, спокойно, да, то если не переживали, от того, что что-то будет не так. Ну, можно вопрос. А вы думаете, да, да, все-таки у меня закроется, как прибыть-то нос. Ну, конечно. Ну, смотрите, про глаз, по этой позиции более чем хрошей. То есть, просто надо будет наблюдать, то есть, чтобы не было. Я была такого, что мы продевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию на минимальный плюс или минимальный минус, или в ноль, да? То есть будем уже смотреть по ситуации. То есть в ноль до того, что там так, если я буду видеть, то сделка там минус 9000, и вот так. То есть, и она потом дальше будет усыкубляться, и нет варианта, что она выйдет в ноль, то яался, но об этом напряжении загретьте большом бизнесе. То есть, если я буду видеть, то просто... Ты, может быть, придется чуть-чуть спрашиваться и даст пояс. Ну, в экране, вере, чтобы не было такого, чтобы поймать. Я понимаю, я. А именно с одним, это, по-моему, ну, восхищать. Да. Пополезут ли? То, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то, то Я в любом случае продолжил всё выставить, потому что это всё-таки перекрыт даже плюс. Допись, ну, будем смотреть, уже ополчиваться конкретно от ситуации. Я думаю, в 30 как-то до конца этого дня это позиция, вы должны быть не избавиться, забыть их с хорошим шансом. Допись. Допись уже просто более внимательный, когда будет идти открывать, потому что я думаю, они идти до второй раз, которые позицию не выдержать. И я со мной не видеть, что... Извелательный раз на грабе наступить на утиль. Извелательный раз наступать на них, конечно, но раз уже так получилось. Я когда-то уже увидела, как поговорить, я сначала закрываю, начало закрывать другую измотюзию, но я чем к шоке была. Ну, слушайте, вы на самом деле легче мы с пугом отделались, потому что я по-вторитвам не было ситуации, когда я лично актилпозицию не стопитил, а то на 50. То есть, у меня взял на 1,25 долларов. А то, по-вторитвам, мне это были огромные деньги, по-вторитвам. Ну, для меня сейчас, вот если я покидал эти 25, это, в принципе, тоже. Так что, что я показывал, то есть, как бы это было прибыть, понимаете? Глядя, это тоже. Почти более. Тем более у меня была уже 17-17 лет. А уже, а я только что заставила было 20 лет. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, предвеса. Да, пред Спасибо вам большое.
 
-### 257. faster-whisper / tiny
+### 296. openai / base
+
+- **ID:** `a508eb327843`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 9.80s
+- **Memory:** Δ 0.0 MB, peak 3239.9 MB
+- **Beam size:** 3
+- **Temperature:** 0.18
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 80.04%
+- **CER:** 54.04%
+- **Timestamp:** 2026-01-07T13:44:57.373423+00:00
+
+**Text:**
+
+> Алло. Здравствуйте. Я говорю, Солгой. Да-да-да. Здравствуйте, Ольга. Представляешь, я зовут Александр. Привет. Я вам попросил присмотреть за вас опадицы. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Я уже сразу с пыпочисткой. Если что, у меня есть и хомослительно закрываете, или вам нужно быть и с помощью? Да, не, не, не, не. Мне просто надо, он сказал, что в пустах, что что-то по новую шлой на ноль, хотя не чтобы не закрывать. Да, да, он уже добил по поводу трудной ситуации, которого созрекла. Так, подива, вы попали в парку? Да, он обычно не сам открепалась. А это он, ну, бей, перед вотушком, он ко мне объяснил и я просто, ну, с па-2.91, Слушайте, вы на самом деле делали с трёхтем на скуком, потому что открыть то низко в десять раз больше обычный шериллата потерей всему капитана. Я была по-дюнерасной практике на неречном опыте, и ещё был тоже на речном. Это было лет с тем назад. Я тогда открыл несколько пятилотов, случайно 50. И получилась так, что у меня, как бы я торгался, один брокером там с пройдем вообще были сомашатшие. Я даже не обратил внимание, я закажу после отведа. У нас такой закал, у меня просто понесли закрыты. То есть я на тот момент потерялся и первые 25 тысяч долларов. Это было очень важно. Ну вот у меня сейчас тоже и просто получалось, это я получилась на носи и не надо было вывать деньги как раз. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Если вы не забываете, то это не будет. Потребуется какие-то срочные меры, в контакте. А, в общем, это будет репрессматик. Да, конечно, конечно. Меня попросили, то есть я все что является в квадителям Никиты. Я в целом работаю миллионами, считаю, да? То есть, там, что там не отташлось, там, но считаю, что Никита очень попросил в звони 30-30, очень сильно, потому что, сколотя была ситуация. чтобы выжил, что бы вы жил, встретили, спокойно, да, то есть и не переживали, как это было, что-то будет и так. Ну, я забыл, может, об этом и даю, что-то меня закроется, как пребребено, могло ехать. Ну, смотрите, про глаз по этой позиции более чем хрошей. Так, и просто надо будет обрядать, да, то есть, чтобы не было, где было такого, чтобы вы пронивали этой позиции, потому У нас попак, что будет буквально отдам попытка закрыть эту позицию, там минимально плюс или минимальный мир, что ли в ноль, да, то есть будем уже смотреть по ситуации. То есть, вот до того, что там так есть, и я буду видеть, в делках это в минусе минус тысячу, и вот так. То есть, и она потом дальше будет усыкуваться, и нет, в порядке, что она вот выйдет в ноль. То есть, я в сироба там, например, привез ее за глить небольшой вниз. То есть, если я буду видеть, то есть, то есть, может быть, то есть, то есть, ты идёте чуть-чуть, пожалуйста, Смотрите, да, по сути, да, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, по сути, Редактор субтитров А.Синецкая Корректор А.Егорова Редактор субтитров А.Синецкая Корректор В.Сухиашвили Редактор субтитров Е. Кулакова Корректор А. Кулакова Редактор субтитров А.Семкин Корректор А.Егорова Прошу прощения. Да, поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, а на полныйсябот контроля, она будет полныйсябот контроля, я в любой случае продолжил всё выскеве, потому что это всё-таки перекрой даже плюс, Датри, ну, будем смотреть и же обаучиваться комплекта от ситуации. Я думаю, в 30-х годов конца этого дня, это позиция, вы должны быть не избавиться, забыть их с хорошим шон, и даже уже просто более внимательны, когда будет открывать, потому что я думаю, у меня есть вторую раз, и корпор позицию не выдержать. И я со мной не викишла. Я выдержал, что, ну, если лайк, то на один раз на грабе наступить на утиль. Это точно. Ну, желательно не наступать на них, конечно. Ну, раз уже в страх получилось. Я кинец был вообще сразу в шоке. Я когда-то уже увидела, как поговорить, я сначала закреплю, она стала закрывать другие, из-за чего не было, я тем, что ли, была. Я не обнесли, с насидался. Ну слушайте, вы на самом деле, легче мы с пугом отделались, потому что я по перестам не была ситуация, и у меня это было на 25 долларов. Это было на 25 долларов. Для меня сейчас я покажу. Я покажу. Это было прибыть. Для меня это тоже. Тимболя. Тимболя у меня была уже 17-17 век. А уже, а я только что застегила было 23? Да, припеки. Да, прибеги, я пришла 3. Да, больше. Любой чему? Даже из меня единственный обо сразу идет там, минус 4, 3, 4 и так далее. Она может подниматься, да? То есть, если будет подниматься, я в любом случае буду же этим сидеть. Испокойтесь, под контролем. Хорошо? Ага, спасибо вам большое. Да, столько-то приятно было с вами познакомиться. Я еще вызову колесандеры. Я вас выберу еще после апеда и проверим, что с вас и делать. Хорошо. В любую время. Да, спасибо. Спасибо вам большое. Спасибо большое. И вас также спасибо большое. Садитесь.
+
+### 297. openai / base
+
+- **ID:** `c4a92f79d797`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 10.81s
+- **Memory:** Δ 0.0 MB, peak 3239.7 MB
+- **Beam size:** 3
+- **Temperature:** 0.03
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 83.85%
+- **CER:** 54.87%
+- **Timestamp:** 2026-01-07T13:43:42.884001+00:00
+
+**Text:**
+
+> Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Не просто, надо, он сказал, что пацаны вышли на ноль, чтобы не закрывать. Да, да, он уже добил по поводу трудной ситуации, которого созликла. Я как-то подива, вы попали в партн. Это было? Да, он обычно не сам открепал из пелки. А это он, ну, вебя, перед воткушком, он к этому не объяснил. И я просто, ну, с па-2.91, остадала 20 серий с точкой 1 и открыла 20 серий. Я тебе понял. Я понял. И мне это было изобийство не так неаспредственно. И я вот набирал и короче вот этого-то немножко. Хорошо, это было не открывать. Я у меня есть открывать. Слушай, если у меня говорить, насколько надо закрывать. А это у меня без вилки. Первый раз я сделала. Хорошо, второй раз я делала. Хорошо, а это где-то у меня. По короче, наверное, я их не готова было. Слушайте, мы на самом деле делали с трёхтим наскругом, потому что открыть то низко в 10 раз больше обычный шереват, а потеряющий его капитана. Я была в один раз такой на своей практике, на нерещиком опыте, и ещё был тоже мричом, но это было лет 7 назад, то есть я тогда открыл несколько пяти лотов, случайно 50. И получилась так, что у меня, как бы я торгался, демброкером, там с пройдем вообще были сомошедшие, и вот, и, я даже не Я обратил внимание, я закажу после отеда. У вас такой акал, у меня просто позиция закрыта, и вот этот момент потерялся и первые 25 тысяч долларов. Это было очень... Ну вот у меня сейчас тоже и просто получалось, ты же получилась на носи и не надо было выгодить деньги как раз. Ну что ж, и получалось просто вот просто вот. Самое главное, что вы не потеряли капитал, потому что что могло закончить самого много хуже. Я порала тебя все, как его, как его, спать. А в артеровистице, вижу? Да, да. Я выйду к депозе. Я вижу. Смотрите, у вас по факту, какие вижу, другого выбора и не было. У вас был выбор, или до потерять. Если вы не понимаете, то есть вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, что вы не понимаете, Если я, а вы сами будем просматривать. Да, конечно, конечно. Меня попросили, то есть я все что является у квадителем Никиты. Я в целом работаю в билетном и считаю, да? Если там не отташусь, то оно считалось, что Никита очень попросил в заварной тресматрейся очень сильно, потому что кого-то было из ситуации, то есть хотел бы, чтобы очень, хоть новый жлоц, встретили спокойно, да? Если не перезаваляйка с того, что-то будет не так. Ну, я таковол. Можешь того вопрос. А вы думаете, что пяти меня закроется, как пребывается нос? Ну, конечно. Смотрите, прогноз по этой позиции более чем хроши. То есть, просто надо будет обрядать, чтобы не было... Где было такого, чтобы вы продевали эту позицию? Потому что у нас попак, то будет буквально от дапа пытка закрытие по позиции, минимальный плюс или минимальный мир, что ли в ноль, да, то есть будем уже смотреть по ситуации. То есть, вот до того, что там так есть, и я буду видеть, что их делка там не нуждее, не нужд тысячу ее, да, то есть и она потом дальше будет у скурбляться, и нет, порядка, что она вот выйдет в ноль, то я в ноль, это, например, привез ее за грики большого бизнеса. То есть, теперь нужно видеть у скурса. То есть, может быть, придется чуть-чуть позжествовать ей, да, то есть, ну, в таком деле, чтобы не было такого, что... Это как можно? Я думаю, да. А именно седины это как можно, именно с вакцией. Да. Да. Попутча Рыбки, попал на друсу. А, а потом? Редактор субтитров А.Семкин Корректор А.Егорова Редактор субтитров А.Семкин Корректор А.Егорова Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Я не знаю, что это было. Да, поэтому смотрите, по поводу вашей ситуации, еще раз, не переживайте, а на полной сетонатикой под контрольом. Она будет полной сетонатикой под контрольом. Я в любом случае, продолжил всё выставить, потому что это всё-таки перекрыть даже плюс. Дапись, ну, будем смотреть, уже облачиваться комплекта от ситуации. Я думаю, в 30-х другом сайтовый тя, это позиция, вы должны быть неизбавится, забыть их с хорошим сонатикой. и даже просто более внимательное, когда будет открывать, потому что я думаю, а ведь и то второй вас, и корпор будет сегодня выдержать. И я сама не видеть, что я выдержал, ну, желательно на один раз ограбить наступитель на утинику. Это точно. Ну, желательно не наступать на них, конечно, но раз уже в так получилось, в этом месте. Он вообще был сразу в шоке. Я когда-то даже увидела, когда поговорить, я с тебя сначала закреплю, начало закрывать другую из-под тюзени, было я тем, что было. Я мне в лейсере посидал. Вы на самом деле легкие мы с пугом отделались, потому что я по перестам не была ситуация, когда я лично акционалистов не стопитил от он на 50, то есть у меня взорвен делал на 1,25 долларов, на тот побежливый Это были отробы деньги, повесы отрубы. Для меня сейчас я покидаю эти 25, это принципе тоже. Это все, что я показывал. То есть, как было, требует. Понятно. Для меня это тоже. Важно. Почти более. Тем более у меня была уже... Ух ты, пока поговорили, мы уже 17-17-17. А уже? А это, как же застакило было 23? Да, пригорьяя, пришут 3. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Это было очень большое. Спасибо. До свидания.
+
+### 298. faster-whisper / tiny
 
 - **ID:** `0865f4dd979e`
 - **Language:** ru
@@ -5426,7 +6293,7 @@
 
 > А ну-ка. Алло, здравствуйте, я говорю, что ли ты? Да, да, раздувался. Здравствуйте, Ольга, приставлюсь, я зовут Александр Бортий. Присыл, присмотреть за вашей позиции. Смотрите, я вообще не заводишься, у меня еще буду набредать. Ничего-то сразу за счастливые позиции. Слушай, что, где эти самостоятельно закрываете? Ну, вам нужно будет помочь. А это он обещал, что там у нас нет. А это он обещал. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете. Все, у нас саму. Послушайте, мы в самом деле отделались на кем-то с Пугом, потому что открытый низкий здесь и транспорща, обычно перевата потерясь в его капитану. У меня было один раз такую на своей практике, но именно на нанавелье, кого потеряясь, а был тоже на речком, да, но это было листьям назад. То есть я тогда, когда-то и на пяти, вот он случайно пидесят. Да, вот и получилась так, что у меня... Как бы я торгала с этим брочером, там в предыду вообще были сумасшедшие. И вот так же, я братье унимание, я захожу после ответа, у меня просто перенесу закрыты в убыток. То есть, я в этот момент потерялся и первый 25 тысяч долларов, это было очень. Ну вот она меня есть, что я и просто получила со стей. Я получила со стей, я получила со мной вместе. И не надо было, но давайте деньги, как раз, помнишь-то, и... Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал это, потому что что могло заходить на многохуже. Да, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть. То есть, если заождать, то есть, когда вы как-то постараться в гостей. То есть, то, что ли это намного лучше, потому что в его случилось, что там сделать его, что просто вы здесь и больше. На мой главный, сейчас решится, как они их и, чтобы она дальше не пошла в минус. Да, и, да, вот, просто так, если ты подсиваешь, он был 2622, с утра. Вот, крейсов каких-то щели еще будут. Я в любом случае буду с вами на связи, я не буду. Потребуется гитрохрошечной меры, но это есть я... А вы с вами будем просматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита, я в целом работаю миллионы, и считаю это, да, ты все. Она, что там, не оттошилась встанно, учитывая то, что Никита очень попросил, вызование присмотреться очень сильно, потому что, что у тебя была ситуация, ты хотел бы, чтобы, очень много золотых. Смотрите, что будет, что будет, что будет, что? А вот, может, вопрос? А, думаю, дадо все-пппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где левлоль, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я в любом случае тоже сын с теми, что что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то. Да, я, как-то... Зелайся на демораз на грабе, на степите, но у тебя... Зелайся на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демор Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторюсь, у меня у меня уже вернём на этот год, пять и долларов. А тот повезли меня, то были огромные деньги, повезли огонь. Тем более у меня была уже. Как бы говорили, наверное, уже 17-17-18-18. А уже, а это, конечно, за 16-18-20. Да, приведен в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то вы улыбали хастры. Я вас надеюсь, что после отеда и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо за вам большое. Из-за есть аксистации по-прочнему.
 
-### 258. faster-whisper / tiny
+### 299. faster-whisper / tiny
 
 - **ID:** `b893563f1e04`
 - **Language:** ru
@@ -5446,7 +6313,47 @@
 
 > А ну-ка. Алло, здравствуйте, я говорю, что ли ты? Да, да, раздувался. Здравствуйте, Ольга, приставлюсь, я зовут Александр Бортий. Присыл, присмотреть за вашей позиции. Смотрите, я вообще не заводишься, у меня еще буду набредать. Ничего-то сразу за счастливые позиции. Слушай, что, где эти самостоятельно закрываете? Ну, вам нужно будет помочь. А это он обещал, что там у нас нет. А это он обещал. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете. Все, у нас саму. Послушайте, мы в самом деле отделались на кем-то с Пугом, потому что открытый низкий здесь и транспорща, обычно перевата потерясь в его капитану. У меня было один раз такую на своей практике, но именно на нанавелье, кого потеряясь, а был тоже на речком, да, но это было листьям назад. То есть я тогда, когда-то и на пяти, вот он случайно пидесят. Да, вот и получилась так, что у меня... Как бы я торгала с этим брочером, там в предыду вообще были сумасшедшие. И вот так же, я братье унимание, я захожу после ответа, у меня просто перенесу закрыты в убыток. То есть, я в этот момент потерялся и первый 25 тысяч долларов, это было очень. Ну вот она меня есть, что я и просто получила со стей. Я получила со стей, я получила со мной вместе. И не надо было, но давайте деньги, как раз, помнишь-то, и... Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал это, потому что что могло заходить на многохуже. Да, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть. То есть, если заождать, то есть, когда вы как-то постараться в гостей. То есть, то, что ли это намного лучше, потому что в его случилось, что там сделать его, что просто вы здесь и больше. На мой главный, сейчас решится, как они их и, чтобы она дальше не пошла в минус. Да, и, да, вот, просто так, если ты подсиваешь, он был 2622, с утра. Вот, крейсов каких-то щели еще будут. Я в любом случае буду с вами на связи, я не буду. Потребуется гитрохрошечной меры, но это есть я... А вы с вами будем просматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита, я в целом работаю миллионы, и считаю это, да, ты все. Она, что там, не оттошилась встанно, учитывая то, что Никита очень попросил, вызование присмотреться очень сильно, потому что, что у тебя была ситуация, ты хотел бы, чтобы, очень много золотых. Смотрите, что будет, что будет, что будет, что? А вот, может, вопрос? А, думаю, дадо все-пппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где левлоль, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я в любом случае тоже сын с теми, что что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то. Да, я, как-то... Зелайся на демораз на грабе, на степите, но у тебя... Зелайся на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демор Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторюсь, у меня у меня уже вернём на этот год, пять и долларов. А тот повезли меня, то были огромные деньги, повезли огонь. Тем более у меня была уже. Как бы говорили, наверное, уже 17-17-18-18. А уже, а это, конечно, за 16-18-20. Да, приведен в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то вы улыбали хастры. Я вас надеюсь, что после отеда и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо за вам большое. Из-за есть аксистации по-прочнему.
 
-### 259. faster-whisper / tiny
+### 300. faster-whisper / tiny
+
+- **ID:** `f608e185ab39`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 2.21s
+- **Memory:** Δ 3.1 MB, peak 3358.1 MB
+- **Beam size:** 3
+- **Temperature:** 0.35
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 6
+- **WER:** 88.87%
+- **CER:** 63.64%
+- **Timestamp:** 2026-01-07T13:45:21.613162+00:00
+
+**Text:**
+
+> А ну-ка. Алло, здравствуйте, я говорю, что ли ты? Да, да, раздувался. Здравствуйте, Ольга, приставлюсь, я зовут Александр Бортий. Присыл, присмотреть за вашей позиции. Смотрите, я вообще не заводишься, у меня еще буду набредать. Ничего-то сразу за счастливые позиции. Слушай, что, где эти самостоятельно закрываете? Ну, вам нужно будет помочь. А это он обещал, что там у нас нет. А это он обещал. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете. Все, у нас саму. Послушайте, мы в самом деле отделались на кем-то с Пугом, потому что открытый низкий здесь и транспорща, обычно перевата потерясь в его капитану. У меня было один раз такую на своей практике, но именно на нанавелье, кого потеряясь, а был тоже на речком, да, но это было листьям назад. То есть я тогда, когда-то и на пяти, вот он случайно пидесят. Да, вот и получилась так, что у меня... Как бы я торгала с этим брочером, там в предыду вообще были сумасшедшие. И вот так же, я братье унимание, я захожу после ответа, у меня просто перенесу закрыты в убыток. То есть, я в этот момент потерялся и первый 25 тысяч долларов, это было очень. Ну вот она меня есть, что я и просто получила со стей. Я получила со стей, я получила со мной вместе. И не надо было, но давайте деньги, как раз, помнишь-то, и... Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал это, потому что что могло заходить на многохуже. Да, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть. То есть, если заождать, то есть, когда вы как-то постараться в гостей. То есть, то, что ли это намного лучше, потому что в его случилось, что там сделать его, что просто вы здесь и больше. На мой главный, сейчас решится, как они их и, чтобы она дальше не пошла в минус. Да, и, да, вот, просто так, если ты подсиваешь, он был 2622, с утра. Вот, крейсов каких-то щели еще будут. Я в любом случае буду с вами на связи, я не буду. Потребуется гитрохрошечной меры, но это есть я... А вы с вами будем просматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита, я в целом работаю миллионы, и считаю это, да, ты все. Она, что там, не оттошилась встанно, учитывая то, что Никита очень попросил, вызование присмотреться очень сильно, потому что, что у тебя была ситуация, ты хотел бы, чтобы, очень много золотых. Смотрите, что будет, что будет, что будет, что? А вот, может, вопрос? А, думаю, дадо все-пппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где левлоль, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я в любом случае тоже сын с теми, что что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то. Да, я, как-то... Зелайся на демораз на грабе, на степите, но у тебя... Зелайся на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демор Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторюсь, у меня у меня уже вернём на этот год, пять и долларов. А тот повезли меня, то были огромные деньги, повезли огонь. Тем более у меня была уже. Как бы говорили, наверное, уже 17-17-18-18. А уже, а это, конечно, за 16-18-20. Да, приведен в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то вы улыбали хастры. Я вас надеюсь, что после отеда и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо за вам большое. Из-за есть аксистации по-прочнему.
+
+### 301. faster-whisper / tiny
+
+- **ID:** `75de10e6c5c5`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 2.29s
+- **Memory:** Δ 0.0 MB, peak 9011.5 MB
+- **Beam size:** 3
+- **Temperature:** 0.48
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 4
+- **WER:** 88.87%
+- **CER:** 63.63%
+- **Timestamp:** 2026-01-07T13:53:00.472199+00:00
+
+**Text:**
+
+> А ну-ка. Алло, здравствуйте, я говорю, что ли ты? Да, да, раздувался. Здравствуйте, Ольга, приставлюсь, я зовут Александр Бортий. Присыл, присмотреть за вашей позиции. Смотрите, я вообще не заводишься, у меня еще буду набредать. Ничего-то сразу за счастливые позиции. Слушай, что, где эти самостоятельно закрываете? Ну, вам нужно будет помочь. А это он обещал, что там у нас нет. А это он обещал. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете. Все, у нас саму. Послушайте, мы в самом деле отделались на кем-то с Пугом, потому что открытый низкий здесь и транспорща, обычно перевата потерясь в его капитану. У меня было один раз такую на своей практике, но именно на нанавелье, кого потеряясь, а был тоже на речком, да, но это было листьям назад. То есть я тогда, когда-то и на пяти, вот он случайно пидесят. А вот и получилась так, что у меня... Как бы я торгала с этим брочером, там в предыду вообще были сумасшедшие. И вот так же, я братье унимание, я захожу после ответа, у меня просто перенесу закрыты в убыток. То есть, я в этот момент потерялся и первый 25 тысяч долларов, это было очень. Ну вот она меня есть, что я и просто получила со стей. Я получила со стей, я получила со мной вместе. И не надо было, но давайте деньги, как раз, помнишь-то, и... Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал это, потому что что могло заходить на многохуже. Да, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть. То есть, если заождать, то есть, когда вы как-то постараться в гостей. То есть, то, что ли это намного лучше, потому что в его случилось, что там сделать его, что просто вы здесь и больше. На мой главный, сейчас решится, как они их и, чтобы она дальше не пошла в минус. Да, и, да, вот, просто так, если ты подсиваешь, он был 2622, с утра. Вот, крейсов каких-то щели еще будут. Я в любом случае буду с вами на связи, я не буду. Потребуется гитрохрошечной меры, но это есть я... А вы с вами будем просматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита, я в целом работаю миллионы, и считаю это, да, ты все. Она, что там, не оттошилась встанно, учитывая то, что Никита очень попросил, вызование присмотреться очень сильно, потому что, что у тебя была ситуация, ты хотел бы, чтобы, очень много золотых. Смотрите, что будет, что будет, что будет, что? А вот, может, вопрос? А, думаю, дадо все-пппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где левлоль, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я в любом случае тоже сын с теми, что что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то. Да, я, как-то... Зелайся на демораз на грабе, на степите, но у тебя... Зелайся на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демор Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторюсь, у меня у меня уже вернём на этот год, пять и долларов. А тот повезли меня, то были огромные деньги, повезли огонь. Тем более у меня была уже. Как бы говорили, наверное, уже 17-17-18-18. А уже, а это, конечно, за 16-18-20. Да, приведен в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то вы улыбали хастры. Я вас надеюсь, что после отеда и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо за вам большое. Из-за есть аксистации по-прочнему.
+
+### 302. faster-whisper / tiny
 
 - **ID:** `e1ab4fa94a94`
 - **Language:** ru
@@ -5466,7 +6373,7 @@
 
 > А ну-ка. Алло, здравствуйте, я говорю, что ли вы? Да, да, да. Раздувался, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите. А это он обещал, что там у нас нет. А это он обещал. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете. Все, у нас саму. Послушайте, мы в самом деле отделались на кем-то с Пугом, потому что открытый низкий взесет разбольше, обычно перевата потерясь в его капитану. У меня было один раз такого на своей пактике, но именно на нынгом-то еще был тоже на речком. Да, но это было листьям назад. То есть я тогда, когда-то и на пяти утол случайно пидесят. Да, вот, и получилась так, что у меня... Как бы я торгала с этим брочером, там в предыду вообще были сумасшедшие. И вот так же, я братье унимание, я захожу после ответа, у меня просто перенесу закрыты в убыток. То есть, я в этот момент потерялся и первый 25 тысяч долларов, это было очень много. Но вот она меня есть, что я и просто получилась в те, что я получилась наносить, и не надо было было найти деньги, как раз. Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал это, потому что что могло заходить на многохуже. Да, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть. То есть, если заождать, то есть, когда вы как-то постараться в гостей. То есть, то, что ли это намного лучше, потому что в его случилось, что там сделать его, что просто вы здесь и больше. На мой главный, сейчас решится, как они их и, чтобы она дальше не пошла в минус. Да, и, да, вот, просто так, если ты подсиваешь, он был 2622, с утра. Вот, крейсов каких-то вещей или еще будут. Я в любом случае буду с вами на связи и есть эту труп. Потребуется гитрохрошечной меры, но это есть я... А вы с вами будем просматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита, я в целом работаю миллионы, и считаю это, да, ты все. Она, что там, не оттошилась встанно, учитывая то, что Никита очень попросил, вызование присмотреться очень сильно, потому что, что у тебя была ситуация, ты хотел бы, чтобы, очень много золотых. Смотрите, что будет, что будет, что будет, что? А вот, может, вопрос? А, думаю, дадо все-пппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где левлоль, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я в любом случае тоже сын с теми, что что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то. Да, я, как-то... Зелайся на демораз на грабе, на степите, но у тебя... Зелайся на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демор Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторюсь, у меня у меня уже вернём на этот год, пять и долларов. А тот повезли меня, то были огромные деньги, повезли огонь. Тем более у меня была уже. Как бы говорили, наверное, уже 17-17-18-18. А уже, а это, конечно, за 16-18-20. Да, приведен в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то вы улыбали хастры. Я вас надеюсь, что после отеда и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо за вам большое. Из-за есть аксистации по-прочнему.
 
-### 260. openai / tiny
+### 303. openai / tiny
 
 - **ID:** `fb9d9db4735c`
 - **Language:** ru
@@ -5486,7 +6393,7 @@
 
 > Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю Вы звали, присмотреться очень сильно, потому что вы говорите, что вы жете, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что Я был вот такого, что вы пронивали это позиция, потому что у нас по факту будет буквально запопытка, закритет по позиции там, где маленьные плюсили, где маленьные миру, где ли в роль, да, то есть будем уже смотрим на ситуация. И вот это у вас тут там, там, где есть я буду видеть, где я делал к этом недустей, недустей, еще еще есть я удах, и она потом дальше будет уступлаться, и нет, порядка, что она будет в мой взгляд, и у вас пирот, это нам пригласили Виктибль, шамни, да. Но не дерьте, что у вас есть у короса. Так, вы не стесешься, но это рот, да? Да, да. Это что-то, что вы не было, как вы вовошу? Что вы говорите? Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. В этом случае пополдывайся в ситуации, еще раз не переживайте, а на сполвность А ты купен, и всё не выйдет. И я сама не виду, что я не знаю, как это. Сознавляемся, что после отъеда и проверившись в вашей девке. Хорошо. В любую время. Спасибо. Спасибо. И заставь с этой повреждения. Спасибо.
 
-### 261. faster-whisper / tiny
+### 304. faster-whisper / tiny
 
 - **ID:** `5980c83d72c2`
 - **Language:** ru
@@ -5506,7 +6413,47 @@
 
 > А ну-ка. Алло, здравствуйте, я говорю, что ли вы? Да, да, да. Раздувался, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите, что вы говорите. А это он обещал, что там у нас нет. А это он обещал. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете и я не купил ездить в интернете. Все, у нас саму. Послушайте, мы в самом деле отделались на кем-то с Пугом, потому что открытый низкий взесет разбольше, обычно перевата потерясь в его капитану. У меня было один раз такого на своей пактике, но именно на нынгом-то еще был тоже на речком. Да, но это было листьям назад. То есть я тогда, когда-то и на пяти утол случайно пидесят. Да, вот, и получилась так, что у меня... Как бы я торгала с этим брочером, там в предыду вообще были сумасшедшие. И вот так же, я братье унимание, я захожу после ответа, у меня просто перенесу закрыты в убыток. То есть, я в этот момент потерялся и первый 25 тысяч долларов, это было очень много. Но вот она меня есть, что я и просто получилась в те, что я получилась наносить, и не надо было было найти деньги, как раз. Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал это, потому что что могло заходить на многохуже. Да, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть, то есть. То есть, если заождать, то есть, когда вы как-то постараться в гостей. То есть, то, что ли это намного лучше, потому что в его случилось, что там сделать его, что просто вы здесь и больше. На мой главный, сейчас решится, как они их и, чтобы она дальше не пошла в минус. Да, и, да, вот, просто так, если ты подсиваешь, он был 2622, с утра. Вот, крейсов каких-то щели еще будут. Я в любом случае буду с вами на связи, я не буду. Потребуется гитрохрошечной меры, но это есть я... А вы с вами будем просматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита, я в целом работаю миллионы, и считаю это, да, ты все. Она, что там, не оттошилась встанно, учитывая то, что Никита очень попросил, вызование присмотреться очень сильно, потому что, что у тебя была ситуация, ты хотел бы, чтобы, очень много золотых. Смотрите, что будет, что будет, что будет, что? А вот, может, вопрос? А, думаю, дадо все-пппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппппп Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где левлоль, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я в любом случае тоже сын с теми, что что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то. Да, я, как-то... Зелайся на демораз на грабе, на степите, но у тебя... Зелайся на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демораз на демор Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторюсь, у меня у меня уже вернём на этот год, пять и долларов. А тот повезли меня, то были огромные деньги, повезли огонь. Тем более у меня была уже. Как бы говорили, наверное, уже 17-17-18-18. А уже, а это, конечно, за 16-18-20. Да, приведен в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в месяц. Да, в Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то вы улыбали хастры. Я вас надеюсь, что после отеда и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо за вам большое. Из-за есть аксистации по-прочнему.
 
-### 262. openai / tiny
+### 305. openai / tiny
+
+- **ID:** `62a14c07df6b`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.49s
+- **Memory:** Δ 0.0 MB, peak 3239.9 MB
+- **Beam size:** 1
+- **Temperature:** 0.03
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 89.97%
+- **CER:** 69.47%
+- **Timestamp:** 2026-01-07T13:45:09.240421+00:00
+
+**Text:**
+
+> А, что это? Это, что это, что это, что это? Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю и вот это вот именно к нашу. Потому что, как бы, у меня открывает, я у меня есть открывать, вот здесь и у меня говорить на сколько надо закрывать. А там не эвенцией, у первого раза сделала хорошо, там уже разделала хорошо, а это где-то у меня, ну, короче, мне не готово было. Все у нас само. Да, слушайте, мы в самом деле делали с ночью, в Москву, потому что открытый низкий уезжий и транспорща, обычно перевата потерясь в его капитала. Я был один раз такой на своей практике, но на нынно, на нынно, на нынно, в том, где ещё был тоже мричком, давно это было листьям назад. То есть я тогда был не на пяти, вот он случайно 50. И получилась так, что у меня, я так долго у вас этим брочером, там, в предывоксии были слышать, и вот он, я даже не обратил внимание, я захожу после ответа на свою такую вакам, а у меня просто понесли закрыты в убыток. То есть я разотновен потерялся Я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я не могу сказать, что я Так, и вы что-то сейчас сейчас предотвратить? Да, да, да, да. Казерери, чтобы не было какого-то. Какой мой, а? Латома. Да. Ну, это не на сегненно, это, это не на сегненно. Да. Да. Да. Пополеду, что вы, чтобы вы же выиграли, пополеду, что. А, хорошо. Присупрошения. Пошли, что я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Если вы можете спать, а что будет спать, а что будет спать? Я облеговующее буду задеть. Не пугайте, но подсупролям. Ага, 10, за бундесят. Да, что он, когда приятно было, что я познакомился, В элитасера я вас надею, что после отбеда и проверяю, что у вас есть. Хорошо. Хорошо. В любую время. Да, спасибо. Спасибо. И заставьте, спасибо, заставьте. Спасибо.
+
+### 306. openai / tiny
+
+- **ID:** `280789141f11`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.72s
+- **Memory:** Δ 0.0 MB, peak 3239.7 MB
+- **Beam size:** 1
+- **Temperature:** 0.35
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 90.97%
+- **CER:** 71.77%
+- **Timestamp:** 2026-01-07T13:43:28.769511+00:00
+
+**Text:**
+
+> Я не знаю, что я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю. перевата потерясь ему капитала. Да. У меня один раз такого на своей практике, на ночь, кому-то те еще был тоже на речком. Да, но это было листе назад. То есть я тогда, когда он из-за пятилотов, случайно 50. Вот и получилась так, что у меня, когда я таковался не брокером, там, в предыдущей были сомочатшей. И вот так же я брокил унимание, я нахожу после ответа на свою такую ракану, у меня просто понесли закрыты в Убыток. В общем, он сказал, что ты не был, но спистиется, что я прощу, я тебе не буду. Ах, что это? Ну, что это? Да, да. Что это? Ну, что это? Ну, что это? Что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Ну, что это? Редактор субтитров А.Синецкая Корректор А.Сухиашвили А я не знаю, что я не знаю, что я не знаю. А я не знаю, что я не знаю. А я не знаю, что я не знаю. А я не знаю, что я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. А я не знаю. Прошу прощения. А вот это, а вот это, вот это, это это, это это, это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это это Я облеговующее будущее темстые. И пока я не пропадкам проявляю хорошо. Ага, ты сезал он, да? Да, что он, когда приятно была сезал, ты заходим, ты в ещё раз улыбал их хастры. Я вас надерющее после отеда и проверить, что у вас есть. Хорошо. Хорошо, в любую время. Да, спасибо. Спасибо. Спасибо вам, что я не знаю. И заставься с тех, кто в большинстве. Спасибо.
+
+### 307. openai / tiny
 
 - **ID:** `ec43249ef406`
 - **Language:** ru
@@ -5526,7 +6473,7 @@
 
 > Я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю. Я не знаю, что я не знаю. Это вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище, что вытекище А вот это будет, что это будет, а вот это будет. А теперь, вы же не будем. А вот это будет. Вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. А вот это будет. Редактор субтитров А.Синецкая Корректор А.Кулакова Слышь, вот так, вот так, вот так, вот так, вот так. Причем, пощиньте более. Тем более у меня была уже. Как вам говорили? Я уже 18-17 в Афте. А уже? А это кажется за 50 в Афте? Да, при 50. Причем, что это? В Афте? Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. Да, при 50. обо всё ещё буду зайдем следить. И с ней покажем, что под контролем хорошо? Ага, ты сезонда ещё есть? Да. Да. С如果你 тогда приятно было с вами познакомиться, в ещё раз у нас Александра. Я вас надеюсь, что после отеда и проверить, что у вас ещё есть. Хорошо. Хорошо. В любой время. Да. Спасибо. Спасибо. И заставься. Спасибо.
 
-### 263. faster-whisper / tiny
+### 308. faster-whisper / tiny
 
 - **ID:** `2946899d9a3a`
 - **Language:** ru
@@ -5546,7 +6493,7 @@
 
 > А ну-ка? Алло, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, И мне кажется, он сказал, что она вышла на мой ход, что бы не закройте. Да, да. Уже-добину попуту трудной ситуации, которая у вас возрекла. Да, он обещал мне сам отскрывал из пилки. А это он нам не динентировать тут, потому что он укрепил не объяснил, и я просто не спедва, точка и рецептий, чтобы отложить, чтобы точка и рецептий, чтобы точка и рецептий. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете. Все у нас само. Послушайте, мы в самом деле отделались на кем-то с пугом, потому что открытый низкий взесит разбольше, а обычный перевата потерясь в его капитану. У меня было один раз такую на своей пактике, но именно на грязь, кого потеряясь, а был тоже на речком. Да, но это было листьям назад. То есть я тогда, когда ты у меня петилотов случайно 50. Да, вот, и получилась так, что у меня... Как бы я торговался с этим брочером, там в предыду вообще были сумасшедшие. И вот так же я братьи у демагии, я захожу после ответа на свою торговую ракану, а у меня просто принеси закрыты в убыток. То есть я в этот момент потерялся и первые 25 тысячу долларов, это было очень много. Ну вот она мне сейчас тоже, и просто получилась в те, что я получилась на ночь. И мне надо было было идти деньги, как раз помещалась. И... Повучается, что просто подсумно. Самое главное, что вы не потеряли. Кобитал, потому что что могло заходить на многохуже. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, То есть, если заождать, то есть, хотя бы как-то постараться в гостей. То есть, если это намного лучше, потому что вы его случилось, то там сделать его, что просто вы здесь и больше. Нам о главной истрации шлицы, как они их и, чтобы она дальше не пошла в минус. Да, да, это просто так, если ты подсиваешь, то было 2622, с утра. Вот, крейсер у каких-то вещей или еще будут? Я в любом случае буду с вами на связи и есть эту. Потребуется гитрохручной меры. То есть я... А вы что-то будем пресматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита. Я в целом работаю миллионы, и считаю это. Да, ты все. А она, что там, не оттошусь, встану, учитывая то, что Никита очень попросил вызование присмотреться очень сильно, потому что, что у тебя была ситуация. То есть, хотел бы, чтобы очень много злодствовать. Смотрите, что твой зададный сини переливания к отцерва того, что-то будет деталь. А вот можно вопрос, а бы думать, да, да, все-таки не разокровится, как и вытромно. Ну, по-моему, смотрите, прогноз по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где вернули, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это вот что там, та же есть, и я буду видеть, сделка там, минуты, минуты, тысяч видео, да? То есть, и она потом дальше будет ускоркувляться, и нет, порядка, что она будет в мольтой. Я успела бы там напрягаться, и выключить небольшой милицию, да? То есть, это будет ускорота. Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я дубом расширожу с теми, что что-то что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторю, чтобы я боюсь ситуации, когда я лично, чтобы позицию не стопить его отогнатить нещадь, то то есть у меня вернём на этот глаз пятий долларов. А тот повезли меня, то были отробные деньги, позиция. Огромом для меня сейчас, вот есть, и зарпокидавайте, но сейчас, это принести тоже, то есть, что я покажу, то есть, как бы это была прибыта. Глядена, и как тоже. Спасибо. Спасибо. Спасибо. Тем более он меня была уже. Как бы говорили, наверное, уже 17-17-18. А уже, а это, конечно, застегила бы на 20 дней? Да, привезли. Да, привезли. Да, в принципе. Да, в принципе. Да, в принципе. Да, в принципе. Да, в принципе, я бы сразу идет по-минуть 4-4-4-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5-5- Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то улыбали хастры. Я вас веду, что пустое педа, и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо, вам большое. Из-за есть акций, спасибо. Спасибо.
 
-### 264. faster-whisper / large-v3-turbo
+### 309. faster-whisper / large-v3-turbo
 
 - **ID:** `aa9c3a7cddd7`
 - **Language:** ru
@@ -5566,7 +6513,27 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. Я с вами Титлер. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу отточить, вы позиции, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею. Мне просто надо, он сказал, чтобы достаться, чтобы она вышла на ноль, чтобы не закрывать. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я не понимаю, вы попали в маршрутку. Да, он обычно мне сам открывал и сделки. А это он, ну, видно, перед отпуском, как он мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ай-яй-яй, я понял. Да, у меня все зависит интернет, видно, и я вот набирала, и, короче, вот это вот у меня хорошо произошло. Потому что, ну, как бы, он мне открывает, я умею закрывать все, если он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была сама-сама. Послушайте, мы, на самом деле, делали с легким испугом, потому что открыть позицию в 10 раз больше обычно чревато потерей всего капитала. Да. У меня было один раз такое на своей практике, именно на личном опыте, я еще был тоже новичком, да, но это было лет 7 назад. То есть я тогда открыл вместо 5, а то случайно 50. Вот, и получилось так, что у меня, как бы, я торговал с одним брокером, там спреды вообще были сумасшедшие, и, ну, то есть я даже не обратил внимания, я захожу после обеда на свой торговый аккаунт, у меня просто позиции закрыты в убыток. То есть я на тот момент потерял свои первые 25 тысяч долларов, это было очень сложно. Ну, вот у меня сейчас тоже, и просто, получалось, что я получила с минуси, и мне надо было выводить деньги как раз, потому что, ага, и, получалось, что просто вот все в минусе, и все в праздник. Смотрите, самое главное, что вы не потеряли капитал, потому что все могло закончиться намного хуже, да, то есть тут... Ну, я брала опять этот, как его, как его называют. А ванкроинвестиции вижу. Да, да. Абейтинг депозит. Да, я вижу. Ну, смотрите, то есть у вас по факту, как я вижу, другого выбора и не было, то есть у вас был выбор либо потерять, да, то есть из-за ошибки, либо хотя бы как-то постараться спасти. Да, то есть, чтобы вы спасти это намного лучше, потому что в любом случае вы вот потом сделаете, можете просто вывести больше. Но самое главное сейчас решить с этой позиции, и чтобы она дальше не пошла в минус. Да, да, да, да, да. Потому что я вижу, у вас просадка чуть опустилась, у вас было 26, сейчас 22 с утра. Ну вот, скорее всего, какие-то качели еще будут, а я в любом случае буду с вами на связи, если вдруг потребуются какие-то срочные меры и так далее. А, то есть вы хотите присматривать? Да, конечно, конечно. Меня попросили, то есть я и все, что являюсь руководителем Никиты, я в целом работаю с миллионными счетами, да, то есть я еще там не отношусь, да, но учитывая то, что Никита очень попросил за вами присмотреть, очень сильно, потому что, так сказать, у тебя была ситуация, то есть я хотел бы, ну, чтобы новый год встретили спокойно, да, то есть и не перерывали катастрою. И не перерывали катастрою того, что что-то будет не так. Да, да. А вы думаете, что он все-таки у меня закроется как-нибудь? Смогу я его? Ну, смотрите, прогноз по этой позиции более чем хороший. Да, то есть просто надо будет наблюдать, да, то есть чтобы не было такого, что мы прозевали эту позицию, потому что у нас по факту будет буквально одна попытка закрыть эту позицию там в минимальный плюс или в минимальный минус, или в ноль, да, то есть будем уже смотреть по ситуации. То есть вот для того, что там даже если я буду видеть, что сделка там минус 2, минус 1000 идет, да, то есть и она потом дальше будет усугубляться и нет варианта, что она вот выйдет в ноль, то я вам скажу об этом, нам придется ее закрыть в небольшом минусе. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Она будет полностью под контролем Я в любом случае приложу свои усилия для того, чтобы эту ситуацию перекрыть даже в плюс, да, то есть, ну, будем смотреть уже и отбалкиваться конкретно от ситуации Я думаю, в принципе, до конца этого дня эту позицию мы должны от нее избавиться, забыть, как страшный сон, да, то есть, и дальше уже просто, ну, будьте более внимательны, когда будете открывать, потому что, я думаю, Никита второй раз такую позицию не выдержит И я сама не выдержала Я, ну, я как бы, ну, желательно один раз на грабле наступить и научить Это точно Ну, желательно не наступать на них, конечно, но раз уже страх получилось, я, конечно, вообще была сразу в шоке Я когда-то же увидела, вот как вы говорите, я сначала закрывать другие, смотрю, я не поняла, я прям в шоке была Я в шоке начинал Ну, слушайте, вы на самом деле легким испугом отделались, потому что, я повторюсь, у меня была ситуация, когда я лично акцию позиции вместо пяти лотов на пятьдесят, да, то есть, и у меня, я потерял на этом 25 тысяч долларов На тот момент для меня это были огромные деньги, поверьте, огромные Ну, для меня сейчас, вот если я потеряю эти 25, это, в принципе, тоже, это все, что я показываю, то есть, как бы, это была прибыль Для меня это тоже, скажем, поощутимо Тем более, тем более у меня была уже Ну, то есть, пока мы говорили с вами уже 17, 700, 17, 800 А уже, а я только что заходила, было 22 Да, прыгай, ну, у меня там есть ответ, ну, это просто объем большой Поэтому, там, любое, даже изменение цены, оно сразу идет, там, минус 4, плюс 4 и так далее Она может подниматься, да, то есть, но если будет подниматься, там, я в любом случае буду за этим следить То есть, не пугайтесь, вы под контролем, хорошо? Ага, спасибо вам большое Да, все, Ольга, тогда приятно было с вами познакомиться Меня еще раз зовут Александр, я вас наберу еще после обеда и проверим, что с вашей сделкой, хорошо? Хорошо, в любое время Да, спасибо Спасибо вам большое И вас также, спасибо большое До свидания
 
-### 265. openai / tiny
+### 310. openai / tiny
+
+- **ID:** `984037a35596`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.29s
+- **Memory:** Δ 1518.2 MB, peak 1574.2 MB
+- **Beam size:** 1
+- **Temperature:** 0.36
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 95.79%
+- **CER:** 86.36%
+- **Timestamp:** 2026-01-07T13:42:19.419269+00:00
+
+**Text:**
+
+> А ну-ка, а лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, лову, л Смотрите, что это что-то? Это что? Смотрите, что это что-то? Это что? Что это? Лотома. Да. Смотри, что это что-то. Это что-то? Да. Да. Да. Попробуйте. Попробуйте. Попробуйте. Попробуйте. Ах, это не. ДИНАМИЧНАЯ МУЗЫКА ДИНАМИЧНАЯ МУЗЫКА Это мы стоприке. По полуду вашей ситуации еще раз не переживайте, а на полной В этом случае мы должны быть в этом случае. Да, что он, когда приятно было всё, что я закончу, мы должны быть в этом случае. В этом случае мы должны быть в этом случае. Я вас на дружку с педа и проверяю, что у вас есть делать. Хорошо. Хорошо, в любую время. Да. Спасибо. Спасибо. И васть так же, спасибо, васть так же, спасибо, васть так же. Спасибо. ДИНАМИЧНАЯ МУЗЫКА
+
+### 311. openai / tiny
 
 - **ID:** `d9f152e67f4d`
 - **Language:** ru
@@ -5586,7 +6553,7 @@
 
 > Я не знаю, что я не знаю, что я не знаю. Но я не знаю, что я не знаю. Я не знаю, что я не знаю, что я не знаю. ДИНАМИЧНАЯ МУЗЫКА Если будет пойти маслятся, я не облеговываю в случае буду зайти в среде. И покатим на подсупроле. Хорошо? Ага. Песи забыл. Да, что ли? Когда приятно было все это закончилось, в зависимости от этого статерующего пустоя, да. И проверившись в случае сделать. Хорошо. Вы облезите время? Спасибо. Спасибо. И застокше в песи.
 
-### 266. faster-whisper / tiny
+### 312. faster-whisper / tiny
 
 - **ID:** `5882713451d2`
 - **Language:** ru
@@ -5606,7 +6573,7 @@
 
 > А ну-ка? Алло, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, И мне кажется, он сказал, что она вышла на мой ход, что бы не закройте. Да, да. Уже-добину попуту трудной ситуации, которая у вас возрекла. Да, он обещал мне сам отскрывал из пилки. А это он нам не динентировать тут, потому что он укрепил не объяснил, и я просто не спедва, точка и рецептий, чтобы отложить, чтобы точка и рецептий, чтобы точка и рецептий. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете. Все у нас само. Послушайте, мы в самом деле отделались на кем-то с пугом, потому что открытый низкий взесет разбольше, обычно перевата потерясь в его капитану. У меня было один раз такую на своей пактике, но именно на граническом опыте, я еще был тоже на речлом. Да, но это было листьям назад. То есть я тогда, чтобы петилотов случайно 50. Да, вот, и получилась так, что у меня... Как бы я торговался с этим брочером, там в предыду вообще были сумасшедшие. И вот так же я братьи у демагии, я захожу после ответа на свою торговую ракану, а у меня просто принеси закрыты в убыток. То есть я в этот момент потерялся и первый 25 тысяч долларов, это было очень... Ну вот она меня есть, что я и просто получила со стей. Я получила со стей. Я получила со стей. Я получила со стей. Я получила со мной со мной со мной со мной со мной. И не надо было. Но давайте деньги, как раз, помещала. И... Повыше отсутствует, просто подсумни. Самое главное, что вы не потеряли. Кобитал, потому что что могло заходить на многохуже. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, То есть, если заождать, то есть, хотя бы как-то постараться в гостей. То есть, если это намного лучше, потому что вы его случилось, то там сделать его, что просто вы здесь и больше. Нам о главной истрации шлицы, как они их и, чтобы она дальше не пошла в минус. Да, да, это просто так, если ты подсиваешь, то было 2622, с утра. Он вот кирицу каких-то щели еще будут. Я в любом случае буду с вами на связи и есть эту. Потребуется гитрохручной меры. То есть я... А вы что-то будем пресматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита. Я в целом работаю миллионы, и считаю это. Да, ты все. А она, что там, не оттошусь, встану, учитывая то, что Никита очень попросил вызование присмотреться очень сильно, потому что, что у тебя была ситуация. То есть, хотел бы, чтобы уйдут его злодить. Смотрите, что твой зададный сини переливания к отцерва того, что-то будет деталь. А вот можно вопрос, а бы думать, да, да, все-таки не разокровится как-нибудь. Ну, по-моему, смотрите, прогноз по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-мо Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где вернули, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, и я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я дубом расширожу с теми, что что-то что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторю, чтобы я боюсь ситуации, когда я лично, чтобы позиции не стопить его отогнатить нещадь, то то есть у меня вернём на этот глаз пятий долларов. А тот повезли меня, то были отробные деньги. Пойдется. Огромом для меня сейчас, вот есть, и зарпокидавайте, но сейчас, это принести тоже, то есть, что я покажу, то есть, как бы это была прибыта. Глядена, это тоже. Спасибо. Спасибо. Спасибо. Тем более он меня была уже. Как бы говорили, наверное, уже 17-17-18. А уже, а это, конечно, застегила бы на 20 дней? Да, привезли. Да, привезли. Да, в принципе. Да, в принципе. Да, в принципе, я бы сразу идет по-минуть 4-4-4-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3- Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то улыбали хастры. Я вас веду, что пустое педа, и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо, вам большое. Из-за есть акций, спасибо. Спасибо.
 
-### 267. faster-whisper / tiny
+### 313. faster-whisper / tiny
 
 - **ID:** `fc4e2ed934be`
 - **Language:** ru
@@ -5626,7 +6593,7 @@
 
 > А ну-ка? Алло, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, И мне кажется, он сказал, что она вышла на мой ход, что бы не закройте. Да, да. Уже-добину попуту трудной ситуации, которая у вас возрекла. Да, он обещал мне сам отскрывал из пилки. А это он нам не динентировать тут, потому что он укрепил не объяснил, и я просто не спедва, точка и рецептий, чтобы отложить, чтобы точка и рецептий, чтобы точка и рецептий. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете. Все у нас само. Послушайте, мы в самом деле отделались на кем-то с пугом, потому что открытый низкий взесет разбольше, обычно перевата потерясь в его капитану. У меня было один раз такую на своей пактике, но именно на граническом опыте, я еще был тоже на речлом. Да, но это было листьям назад. То есть я тогда, чтобы петилотов случайно 50. Да, вот, и получилась так, что у меня... Как бы я торговался с этим брочером, там в предыду вообще были сумасшедшие. И вот так же я братьи у демагии, я захожу после ответа на свою торговую ракану, а у меня просто принеси закрыты в убыток. То есть я в этот момент потерялся и первый 25 тысяч долларов, это было очень... Ну вот она меня есть, что я и просто получила со стей. Я получила со стей. Я получила со стей. Я получила со стей. Я получила со мной со мной со мной со мной со мной. И не надо было. Но давайте деньги, как раз, помещала. И... Повыше отсутствует, просто подсумни. Самое главное, что вы не потеряли. Кобитал, потому что что могло заходить на многохуже. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, То есть, если заождать, то есть, хотя бы как-то постараться в гостей. То есть, если это намного лучше, потому что вы его случилось, то там сделать его, что просто вы здесь и больше. Нам о главной истрации шлицы, как они их и, чтобы она дальше не пошла в минус. Да, да, это просто так, если ты подсиваешь, то было 2622, с утра. Он вот кирицу каких-то щели еще будут. Я в любом случае буду с вами на связи и есть эту. Потребуется гитрохручной меры. То есть я... А вы что-то будем пресматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита. Я в целом работаю миллионы, и считаю это. Да, ты все. А она, что там, не оттошусь, встану, учитывая то, что Никита очень попросил вызование присмотреться очень сильно, потому что, что у тебя была ситуация. То есть, хотел бы, чтобы уйдут его злодить. Смотрите, что твой зададный сини переливания к отцерва того, что-то будет деталь. А вот можно вопрос, а бы думать, да, да, все-таки не разокровится как-нибудь. Ну, по-моему, смотрите, прогноз по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-мо Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где вернули, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, и я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я дубом расширожу с теми, что что-то что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторю, чтобы я боюсь ситуации, когда я лично, чтобы позиции не стопить его отогнатить нещадь, то то есть у меня вернём на этот глаз пятий долларов. А тот повезли меня, то были отробные деньги. Пойдется. Огромом для меня сейчас, вот есть, и зарпокидавайте, но сейчас, это принести тоже, то есть, что я покажу, то есть, как бы это была прибыта. Глядена, это тоже. Спасибо. Спасибо. Спасибо. Тем более он меня была уже. Как бы говорили, наверное, уже 17-17-18. А уже, а это, конечно, застегила бы на 20 дней? Да, привезли. Да, привезли. Да, в принципе. Да, в принципе. Да, в принципе, я бы сразу идет по-минуть 4-4-4-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3- Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то улыбали хастры. Я вас веду, что пустое педа, и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо, вам большое. Из-за есть акций, спасибо. Спасибо.
 
-### 268. faster-whisper / tiny
+### 314. faster-whisper / tiny
 
 - **ID:** `b7031b91e4f8`
 - **Language:** ru
@@ -5646,7 +6613,7 @@
 
 > А ну-ка? Алло, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, ну-ка, И мне кажется, он сказал, что она вышла на мой ход, что бы не закройте. Да, да. Уже-добину попуту трудной ситуации, которая у вас возрекла. Да, он обещал мне сам отскрывал из пилки. А это он нам не динентировать тут, потому что он укрепил не объяснил, и я просто не спедва, точка и рецептий, чтобы отложить, чтобы точка и рецептий, чтобы точка и рецептий. Я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете, но я не купил ездить в интернете. Все у нас само. Послушайте, мы в самом деле отделались на кем-то с пугом, потому что открытый низкий взесет разбольше, обычно перевата потерясь в его капитану. У меня было один раз такую на своей пактике, но именно на граническом опыте, я еще был тоже на речлом. Да, но это было листьям назад. То есть я тогда, чтобы петилотов случайно 50. Да, вот, и получилась так, что у меня... Как бы я торговался с этим брочером, там в предыду вообще были сумасшедшие. И вот так же я братьи у демагии, я захожу после ответа на свою торговую ракану, а у меня просто принеси закрыты в убыток. То есть я в этот момент потерялся и первый 25 тысяч долларов, это было очень... Ну вот она меня есть, что я и просто получила со стей. Я получила со стей. Я получила со стей. Я получила со стей. Я получила со мной со мной со мной со мной со мной. И не надо было. Но давайте деньги, как раз, помещала. И... Повыше отсутствует, просто подсумни. Самое главное, что вы не потеряли. Кобитал, потому что что могло заходить на многохуже. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, То есть, если заождать, то есть, хотя бы как-то постараться в гостей. То есть, если это намного лучше, потому что вы его случилось, то там сделать его, что просто вы здесь и больше. Нам о главной истрации шлицы, как они их и, чтобы она дальше не пошла в минус. Да, да, это просто так, если ты подсиваешь, то было 2622, с утра. Он вот кирицу каких-то щели еще будут. Я в любом случае буду с вами на связи и есть эту. Потребуется гитрохручной меры. То есть я... А вы что-то будем пресматривать? Да, и, конечно, конечно, я по-посимлюсь, и все-таки у детей на Никита. Я в целом работаю миллионы, и считаю это. Да, ты все. А она, что там, не оттошусь, встану, учитывая то, что Никита очень попросил вызование присмотреться очень сильно, потому что, что у тебя была ситуация. То есть, хотел бы, чтобы уйдут его злодить. Смотрите, что твой зададный сини переливания к отцерва того, что-то будет деталь. А вот можно вопрос, а бы думать, да, да, все-таки не разокровится как-нибудь. Ну, по-моему, смотрите, прогноз по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-моему, по-мо Где было такого, что вы пронивали эту позицию? Потому что у нас по факту будет буквально запопытка закрыть эту позицию там, где больные плюсы, где больные миру, где вернули, да? То есть, будем уже смотрим в этой ситуации. То есть, вот это просто там, там, где есть, и я буду видеть, сделка там, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, где-нибудь, Т.е. у нас предприятие тысячи препятствий, да? То есть, ну, в магазине, что бы не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как вово что-то не было, как Я дубом расширожу с теми, что что-то что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, что-то, Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Послушайте, вы на самом деле, легче мы с пугом отделились, потому что я повторю, чтобы я боюсь ситуации, когда я лично, чтобы позиции не стопить его отогнатить нещадь, то то есть у меня вернём на этот глаз пятий долларов. А тот повезли меня, то были отробные деньги. Пойдется. Огромом для меня сейчас, вот есть, и зарпокидавайте, но сейчас, это принести тоже, то есть, что я покажу, то есть, как бы это была прибыта. Глядена, это тоже. Спасибо. Спасибо. Спасибо. Тем более он меня была уже. Как бы говорили, наверное, уже 17-17-18. А уже, а это, конечно, застегила бы на 20 дней? Да, привезли. Да, привезли. Да, в принципе. Да, в принципе. Да, в принципе, я бы сразу идет по-минуть 4-4-4-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3- Да, что вы готовы, когда приятно было что-то закончим, что в ней что-то улыбали хастры. Я вас веду, что пустое педа, и проверяю, что у вас есть делать. Хорошо? Хорошо, в любую время. Да, спасибо. Спасибо, вам большое. Из-за есть акций, спасибо. Спасибо.
 
-### 269. openai / base
+### 315. openai / base
 
 - **ID:** `573cf77d032f`
 - **Language:** ru
@@ -5666,7 +6633,7 @@
 
 > Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте!
 
-### 270. openai / base
+### 316. openai / base
 
 - **ID:** `90c9c41d5e6a`
 - **Language:** ru
@@ -5686,7 +6653,7 @@
 
 > Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте!
 
-### 271. openai / base
+### 317. openai / base
 
 - **ID:** `48325df37e03`
 - **Language:** ru
@@ -5706,7 +6673,7 @@
 
 > Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте! Здравствуйте!
 
-### 272. openai / tiny
+### 318. openai / tiny
 
 - **ID:** `00040fbe2394`
 - **Language:** ru
@@ -5726,7 +6693,7 @@
 
 > и на герале и короче, вот это вот он не отпросит, вот это что-то. Вот это вот. Ну как бы он открывает, я у нее есть открывать, вот здесь и у меня говорить на сколько надо закрывать. А там не и вести, у первых раз я сделала хорошо, что он уже разделала хорошо, а это где-то у меня, но короче, мы меня и не готовы было. Все у нас само. Послушайте, я не выросил в день, я делали, с ночью, поспугал, потому что открыто не соучился больше, обычно черевата потерясь ему капитан. У меня один раз такой на своей практике, но на нынгом потеешь был тоже на речком. Это было весь всем назад. То есть я тогда был не на пяти, вот он случайно 50. И получилась так, что у меня, я таковался не брокером, там в предыду вообще были слышать, что и вот он даже не обратил внимания нахожу после ответа на свою такую руакану, у меня просто принесу закрыты в убыток, то есть я вас тот момент потерялся и первый 25 тысяч долларов, это было очень много. Но вот он и не сейчас тоже и просто получилась все в те, что это очень уносит. И не надо было было, но очень деньги, как раз, у меня сейчас не уно. И получился просто вот, что будет, что бы не будет. Слава и главная, что вы не потеряли, когда бы это было, потому что что мы было, что закончено на многохуже, то есть тут все, ну я проявлясь все, как он у кого-то у нас. Варкономидиве, и я же. Да, я вижу, что смотрите, что у вас, в fact, какие видео у кого выборы не было, чтобы он был выбор или поперед, то есть не заождать. Это бы как-то страшно в такие. То есть, что это намного лучше, потому что у него что-то сделать, вот, что вы здесь и больше. Нам о главной истрашивающейся, как они и чтобы она дальше не пошла в минус. Да, и там просто так не запустилась в два, два, два, два, два, два, два, и я вот тут, то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть, что у кого-то есть,
 
-### 273. faster-whisper / large-v3
+### 319. faster-whisper / large-v3
 
 - **ID:** `2e889c9cbe66`
 - **Language:** ru
@@ -5746,7 +6713,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да. Здравствуйте. Здравствуйте, Ольга, представлюсь. Меня зовут Александр. ... То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию если что умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо... Он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да. Он уведомил по поводу трудной ситуации, которая у вас возникла. Да. Я так понимаю, вы попали в маршрутку? Да, он обычно мне сам открывал стрелки. Ага. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. Ага, я... Я понял, я понял. Да. И у меня все зависит, интернет видно, и я вот набирала, и, короче, вот это вот у меня в маршрутках произошло. Потому что он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня... Ну, короче, наверное, я еще не готова была. Сама сама. Послушайте. Я не знаю, это я делаю. Ну, это я делаю. Ну, я не знаю, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю. Ну, это я делаю.
 
-### 274. faster-whisper / large-v3
+### 320. faster-whisper / large-v3
 
 - **ID:** `a51072d396d5`
 - **Language:** ru
@@ -5766,7 +6733,7 @@
 
 > Алло. Алло, здравствуйте, я говорю с Ольгой. Да, да, да, здравствуйте. Здравствуйте, Ольга, представлюсь, меня зовут Александр. То есть он попросил присмотреть за вашей позицией. Смотрите, я в течение сегодняшнего дня еще буду наблюдать. Хотел бы сразу уточнить, вы позицию, если что, умеете самостоятельно закрывать или вам нужно будет помочь? Да, умею, умею, умею. Мне просто надо, он сказал, чтобы остаться, чтобы она вышла на ноль, чтобы не закрывать ее. Да, да, он уведомил по поводу трудной ситуации, которая у вас возникла. Я так понимаю, вы попали в баржу. Да, он обычно мне сам открывал сделки. А это он, ну, видимо, перед отпуском, он как бы мне объяснил, и я просто вместо 2.91 поставила 29.1 и открыла 29.1. А-а-а. Я понял, я понял. Да. И у меня все зависит, интернет видно. И я вот набирала, и, короче, вот это вот у меня как-то хорошо произошло. Потому что, ну, как бы он мне открывает, я умею закрывать, все, он мне говорит, насколько надо закрывать. А это он мне объяснил, первый раз я сделала хорошо, второй раз сделала хорошо, а это где-то у меня, ну, короче, наверное, я еще не готова была. Сама, сама. Послушайте. Да. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка. Я не знаю, что это за шутка.
 
-### 275. openai / large-v3
+### 321. openai / large-v3
 
 - **ID:** `5b1073646b1a`
 - **Language:** ru

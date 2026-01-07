@@ -84,19 +84,23 @@ def generate_run_id(  # noqa: PLR0913
   batch_size: int = 0,
 ) -> str:
   """Generate a unique ID based on settings."""
-  cond = "cond" if condition_on_prev else "nocond"
-  batch = f"batch{batch_size}" if batch_size > 0 else "seq"
-  parts = [
-    backend,
-    model,
-    language,
-    device,
-    f"beam{beam_size}",
-    f"temp{temperature}",
-    compute_type,
-    cond,
-    batch,
-  ]
+  # Cloud backends don't have local params (beam, temp, etc.)
+  if backend in CLOUD_BACKENDS:
+    parts = [backend, model, language]
+  else:
+    cond = "cond" if condition_on_prev else "nocond"
+    batch = f"batch{batch_size}" if batch_size > 0 else "seq"
+    parts = [
+      backend,
+      model,
+      language,
+      device,
+      f"beam{beam_size}",
+      f"temp{temperature}",
+      compute_type,
+      cond,
+      batch,
+    ]
   settings = ":".join(str(p) for p in parts)
   return hashlib.sha256(settings.encode()).hexdigest()[:12]
 
@@ -1237,13 +1241,21 @@ def run_single(  # noqa: PLR0913
 
   # Skip if we already have this run
   if find_existing_run(data, run_id):
-    print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device} - skipped (exists)")
+    if backend in CLOUD_BACKENDS:
+      print(f"\n[{run_id}] {backend} / lang={language} - skipped (exists)")
+    else:
+      print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device} - skipped (exists)")
     return
 
-  print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
-  cond_str = "" if condition_on_prev else ", no_cond_prev"
-  batch_str = f", batch={batch_size}" if batch_size > 0 else ""
-  print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}{batch_str}")
+  if backend in CLOUD_BACKENDS:
+    print(f"\n[{run_id}] {backend} / lang={language}")
+  else:
+    print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
+  # Only show local backend params (beam, temp, etc.) for non-cloud backends
+  if backend not in CLOUD_BACKENDS:
+    cond_str = "" if condition_on_prev else ", no_cond_prev"
+    batch_str = f", batch={batch_size}" if batch_size > 0 else ""
+    print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}{batch_str}")
 
   run_record = _run_transcription(
     audio,
