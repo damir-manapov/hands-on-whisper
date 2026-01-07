@@ -69,7 +69,7 @@ LOCAL_BACKEND_PARAMS = [
 CLOUD_BACKEND_PARAMS: dict[str, list[str]] = {
   "yandex": [],  # No tunable params
   "openai-api": ["temperature"],  # Supports temperature
-  "deepgram": ["temperature"],  # Supports temperature
+  "deepgram": ["temperature", "smart_format", "diarize"],  # Supports temperature and formatting
 }
 
 
@@ -274,11 +274,13 @@ def _get_audio_duration(audio_path: str) -> float:
   return float(result.stdout.strip())
 
 
-def transcribe_deepgram(
+def transcribe_deepgram(  # noqa: PLR0913
   audio_path: str,
   model: str = "nova-2",
   language: str | None = None,
   temperature: float = 0.0,
+  smart_format: bool = True,
+  diarize: bool = False,
   api_key: str | None = None,
 ) -> str:
   """Transcribe using Deepgram API."""
@@ -297,6 +299,8 @@ def transcribe_deepgram(
     "model": model,
     "punctuate": "true",
     "utterances": "false",
+    "smart_format": "true" if smart_format else "false",
+    "diarize": "true" if diarize else "false",
   }
 
   if language:

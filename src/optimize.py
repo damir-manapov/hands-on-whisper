@@ -88,6 +88,8 @@ def run_optimization_trial(  # noqa: PLR0913
   data: dict,
   json_path: Path,
   metric: str = "wer",
+  smart_format: bool = True,
+  diarize: bool = False,
   user: str | None = None,
 ) -> float:
   """Run a single optimization trial and return WER or CER score."""
@@ -113,6 +115,8 @@ def run_optimization_trial(  # noqa: PLR0913
     compute_type,
     condition_on_prev,
     batch_size,
+    smart_format,
+    diarize,
   )
   existing = find_existing_run(data, run_id)
   if existing:
@@ -135,6 +139,8 @@ def run_optimization_trial(  # noqa: PLR0913
     compute_type,
     condition_on_prev,
     batch_size,
+    smart_format,
+    diarize,
     user=user,
   )
   data["runs"].append(run_record)
@@ -264,6 +270,14 @@ def optimize_cloud(
         model = trial.suggest_categorical("model", models_val) if models_val else None
         temperature = trial.suggest_float("temperature", 0.0, 0.5)
 
+        # Deepgram-specific parameters
+        if backend_val == "deepgram":
+          smart_format = trial.suggest_categorical("smart_format", [True, False])
+          diarize = trial.suggest_categorical("diarize", [True, False])
+        else:
+          smart_format = True
+          diarize = False
+
         return run_optimization_trial(
           trial.number,
           args.n_trials,
@@ -281,6 +295,8 @@ def optimize_cloud(
           data_val,
           json_path_val,
           metric,
+          smart_format=smart_format,
+          diarize=diarize,
           user=args.user,
         )
 

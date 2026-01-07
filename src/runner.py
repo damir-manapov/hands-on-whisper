@@ -44,12 +44,18 @@ def generate_run_id(  # noqa: PLR0913
   compute_type: str,
   condition_on_prev: bool = True,
   batch_size: int = 0,
+  smart_format: bool = True,
+  diarize: bool = False,
 ) -> str:
   """Generate a unique ID based on settings."""
   if backend == "yandex":
     parts = [backend, model, language]
   elif backend == "openai-api":
     parts = [backend, model, language, f"temp{temperature}"]
+  elif backend == "deepgram":
+    sf = "smartfmt" if smart_format else "nosmartfmt"
+    dia = "diarize" if diarize else "nodiarize"
+    parts = [backend, model, language, f"temp{temperature}", sf, dia]
   else:
     cond = "cond" if condition_on_prev else "nocond"
     batch = f"batch{batch_size}" if batch_size > 0 else "seq"
@@ -113,6 +119,8 @@ def run_transcription(  # noqa: PLR0913
   compute_type: str,
   condition_on_prev: bool,
   batch_size: int = 0,
+  smart_format: bool = True,
+  diarize: bool = False,
   user: str | None = None,
 ) -> dict:
   """Run transcription and return run record with timing/memory stats."""
@@ -130,6 +138,8 @@ def run_transcription(  # noqa: PLR0913
     compute_type,
     condition_on_prev,
     batch_size,
+    smart_format,
+    diarize,
   )
 
   process = psutil.Process()
@@ -176,7 +186,7 @@ def run_transcription(  # noqa: PLR0913
     api_model = openai_model_map.get(model, "whisper-1")
     result = transcribe_openai_api(audio, api_model, language, temperature)
   elif backend == "deepgram":
-    result = transcribe_deepgram(audio, model, language, temperature)
+    result = transcribe_deepgram(audio, model, language, temperature, smart_format, diarize)
   else:
     msg = f"Unknown backend: {backend}"
     raise ValueError(msg)
