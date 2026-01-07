@@ -1,6 +1,6 @@
 """Tests for unified transcribe module."""
 
-from src.transcribe import (
+from src.backends import (
   transcribe_faster_whisper,
   transcribe_openai_whisper,
   transcribe_whispercpp,
