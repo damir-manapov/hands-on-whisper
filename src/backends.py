@@ -10,47 +10,48 @@ from pathlib import Path
 CLOUD_BACKENDS = ["yandex", "openai-api", "deepgram"]
 OPENAI_API_MODELS = ["whisper-1", "gpt-4o-transcribe", "gpt-4o-mini-transcribe"]
 DEEPGRAM_MODELS = [
-  # Latest models
+  # Latest models (Nova-3) - multilingual
   "nova-3",
   "nova-3-general",
-  "nova-3-medical",
-  # Nova-2 variants
+  # "nova-3-medical",  # English only
+  # Nova-2 general models - multilingual
   "nova-2",
   "nova-2-general",
-  "nova-2-meeting",
-  "nova-2-phonecall",
-  "nova-2-finance",
-  "nova-2-conversationalai",
-  "nova-2-voicemail",
-  "nova-2-video",
-  "nova-2-medical",
-  "nova-2-drivethru",
-  "nova-2-automotive",
-  "nova-2-atc",
-  # Whisper Cloud (hosted OpenAI Whisper)
+  # Nova-2 specialized models - English only
+  # "nova-2-meeting",
+  # "nova-2-phonecall",
+  # "nova-2-finance",
+  # "nova-2-conversationalai",
+  # "nova-2-voicemail",
+  # "nova-2-video",
+  # "nova-2-medical",
+  # "nova-2-drivethru",
+  # "nova-2-automotive",
+  # "nova-2-atc",
+  # Whisper Cloud - multilingual (hosted OpenAI Whisper)
   "whisper-tiny",
   "whisper-base",
   "whisper-small",
   "whisper-medium",
   "whisper-large",
-  # Legacy models
-  "nova",
-  "nova-general",
-  "nova-phonecall",
-  "nova-medical",
-  "enhanced",
-  "enhanced-general",
-  "enhanced-meeting",
-  "enhanced-phonecall",
-  "enhanced-finance",
-  "base",
-  "base-general",
-  "base-meeting",
-  "base-phonecall",
-  "base-finance",
-  "base-conversationalai",
-  "base-voicemail",
-  "base-video",
+  # Legacy models - require special account permissions
+  # "nova",
+  # "nova-general",
+  # "nova-phonecall",
+  # "nova-medical",
+  # "enhanced",
+  # "enhanced-general",
+  # "enhanced-meeting",
+  # "enhanced-phonecall",
+  # "enhanced-finance",
+  # "base",
+  # "base-general",
+  # "base-meeting",
+  # "base-phonecall",
+  # "base-finance",
+  # "base-conversationalai",
+  # "base-voicemail",
+  # "base-video",
 ]
 
 # Default search space for optimization
