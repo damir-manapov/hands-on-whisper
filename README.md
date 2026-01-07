@@ -352,12 +352,12 @@ Run benchmarks on cloud GPU instances using Terraform (Selectel):
 | Tesla T4 | 16GB | 4 | 32GB | 3031 | ~52 ₽ | Budget option |
 | Tesla T4 | 16GB | 8 | 32GB | 3033 | ~56 ₽ | More vCPUs |
 | Tesla T4 | 16GB | 8 | 64GB | 3034 | ? | More RAM |
-| A100 | 80GB | 12 | 128GB | ? | ~338 ₽ | High-end |
-| A100 | 160GB | 24 | 256GB | ? | ~662 ₽ | 2 GPUs |
+| A100 | 80GB | 12 | 128GB | 3042 | ~338 ₽ | High-end |
+| A100 | 160GB | 24 | 256GB | 3043 | ~662 ₽ | 2 GPUs |
 | RTX 4090 | 24GB | 4 | 16GB | 3100 | ~90 ₽ | Good price/performance |
 | RTX 4090 | 24GB | 8 | 32GB | 3101 | ~98 ₽ | ✅ Used for benchmarks |
 | RTX 4090 | 24GB | 8 | 64GB | 3102 | ~108 ₽ | More RAM |
-| RTX 4090 | 48GB | 8 | 64GB | ? | ~175 ₽ | 2 GPUs |
+| RTX 4090 | 48GB | 8 | 64GB | 3103 | ~175 ₽ | 2 GPUs |
 | RTX 4090 | 48GB | 16 | 94GB | 3104 | ~192 ₽ | 2 GPUs |
 | RTX 4090 | 96GB | 32 | 178GB | 3106 | ~368 ₽ | 4 GPUs |
 
