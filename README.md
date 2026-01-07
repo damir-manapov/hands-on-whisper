@@ -182,13 +182,16 @@ The report includes:
 
 **sherbakov_call** - Sample audio from [Sherbakov Call Prank](https://www.youtube.com/watch?v=vZQNgvIoPr0) (Russian):
 
-- [sherbakov_call_cpu.json](calls/sherbakov_call_cpu.json) - CPU benchmark data
-- [sherbakov_call_cpu.md](calls/sherbakov_call_cpu.md) - CPU report with WER/CER metrics
+- [sherbakov_call_cpu.json](calls/sherbakov_call_cpu.json) / [.md](calls/sherbakov_call_cpu.md) - CPU benchmarks with local backends
+- [sherbakov_call_gpu.json](calls/sherbakov_call_gpu.json) / [.md](calls/sherbakov_call_gpu.md) - GPU benchmarks (RTX 4090)
+- [sherbakov_call_yandex.json](calls/sherbakov_call_yandex.json) / [.md](calls/sherbakov_call_yandex.md) - Yandex SpeechKit API
 
 **finance** - Sample audio from [Russian Speech Recognition Dataset](https://huggingface.co/datasets/AxonData/russian-speech-recognition-dataset) (Russian):
 
-- [finance_cpu.json](calls/finance_cpu.json) - CPU benchmark data
-- [finance_cpu.md](calls/finance_cpu.md) - CPU report with WER/CER metrics
+- [finance_cpu.json](calls/finance_cpu.json) / [.md](calls/finance_cpu.md) - CPU benchmarks with local backends
+- [finance_gpu.json](calls/finance_gpu.json) / [.md](calls/finance_gpu.md) - GPU benchmarks (RTX 4090)
+- [finance_openai-api.json](calls/finance_openai-api.json) / [.md](calls/finance_openai-api.md) - OpenAI Whisper API optimization
+- [finance_yandex.json](calls/finance_yandex.json) / [.md](calls/finance_yandex.md) - Yandex SpeechKit API
 
 **Output file naming**: Results are auto-saved with runtime suffix:
 - CPU runs → `audio_cpu.json`, `audio_cpu.md`
