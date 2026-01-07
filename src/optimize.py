@@ -56,12 +56,21 @@ def _format_trial_header(  # noqa: PLR0913
   temperature: float,
   condition_on_prev: bool,
   batch_size: int,
+  smart_format: bool = True,
+  diarize: bool = False,
 ) -> str:
   """Format trial header based on backend type."""
   if backend == "yandex":
     return f"[Trial {trial_number + 1}/{total_trials}] {backend}/{model}"
   elif backend == "openai-api":
     return f"[Trial {trial_number + 1}/{total_trials}] {backend}/{model} | temp={temperature:.2f}"
+  elif backend == "deepgram":
+    sf = "Y" if smart_format else "N"
+    dia = "Y" if diarize else "N"
+    return (
+      f"[Trial {trial_number + 1}/{total_trials}] "
+      f"{backend}/{model} | temp={temperature:.2f} smart={sf} diarize={dia}"
+    )
   else:
     batch_str = f" batch={batch_size}" if batch_size > 0 else ""
     return (
@@ -103,6 +112,8 @@ def run_optimization_trial(  # noqa: PLR0913
     temperature,
     condition_on_prev,
     batch_size,
+    smart_format,
+    diarize,
   )
 
   run_id = generate_run_id(
