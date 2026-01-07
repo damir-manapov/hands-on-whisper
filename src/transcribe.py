@@ -24,26 +24,27 @@ ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 # Cloud backends (not included in optimization by default)
 CLOUD_BACKENDS = ["yandex", "openai-api"]
 
-# Fields shown in reports per backend type
-# Local backends show all fields by default
-LOCAL_BACKEND_FIELDS = [
+# Optional parameter fields shown in reports per backend type.
+# Base fields (model, language, device, duration, memory, timestamp) are always shown.
+# These define additional tunable parameters specific to each backend.
+LOCAL_BACKEND_PARAMS = [
   "beam_size",
   "temperature",
   "compute_type",
   "condition_on_prev",
   "batch_size",
 ]
-CLOUD_BACKEND_FIELDS: dict[str, list[str]] = {
-  "yandex": [],
-  "openai-api": ["temperature"],
+CLOUD_BACKEND_PARAMS: dict[str, list[str]] = {
+  "yandex": [],  # No tunable params
+  "openai-api": ["temperature"],  # Supports temperature
 }
 
 
-def get_backend_fields(backend: str) -> list[str]:
-  """Get the list of parameter fields to show for a backend."""
-  if backend in CLOUD_BACKEND_FIELDS:
-    return CLOUD_BACKEND_FIELDS[backend]
-  return LOCAL_BACKEND_FIELDS
+def get_backend_params(backend: str) -> list[str]:
+  """Get the list of optional parameter fields to show for a backend."""
+  if backend in CLOUD_BACKEND_PARAMS:
+    return CLOUD_BACKEND_PARAMS[backend]
+  return LOCAL_BACKEND_PARAMS
 
 
 def get_gpu_name() -> str | None:
@@ -516,16 +517,16 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     if gpu_name != "-":
       gpu_name = gpu_name.replace("NVIDIA ", "").replace("GeForce ", "")
 
-    # Use backend field config to determine which fields to show
-    fields = get_backend_fields(backend)
-    compute = run.get("compute_type") or "-" if "compute_type" in fields else "-"
-    beam = run.get("beam_size", 5) if "beam_size" in fields else "-"
-    temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in fields else "-"
+    # Use backend param config to determine which optional params to show
+    params = get_backend_params(backend)
+    compute = run.get("compute_type") or "-" if "compute_type" in params else "-"
+    beam = run.get("beam_size", 5) if "beam_size" in params else "-"
+    temp = f"{run.get('temperature', 0.0):.2f}" if "temperature" in params else "-"
     cond_prev = (
-      ("Y" if run.get("condition_on_prev", True) else "N") if "condition_on_prev" in fields else "-"
+      ("Y" if run.get("condition_on_prev", True) else "N") if "condition_on_prev" in params else "-"
     )
     batch_size = run.get("batch_size", 0)
-    batch_str = (str(batch_size) if batch_size > 0 else "-") if "batch_size" in fields else "-"
+    batch_str = (str(batch_size) if batch_size > 0 else "-") if "batch_size" in params else "-"
 
     lang = run.get("language") or "auto"
     duration = run.get("duration_seconds", 0)
@@ -582,17 +583,17 @@ def _append_detailed_results(
     lines.append(f"- **Device:** {device_str}")
     lines.append(f"- **Duration:** {duration:.2f}s")
     lines.append(f"- **Memory:** Δ {mem_delta} MB, peak {mem_peak} MB")
-    # Show params based on backend field config
-    fields = get_backend_fields(backend)
-    if "beam_size" in fields:
+    # Show optional params based on backend config
+    params = get_backend_params(backend)
+    if "beam_size" in params:
       lines.append(f"- **Beam size:** {beam_size}")
-    if "temperature" in fields:
+    if "temperature" in params:
       lines.append(f"- **Temperature:** {temperature:.2f}")
-    if "compute_type" in fields:
+    if "compute_type" in params:
       lines.append(f"- **Compute type:** {compute_type}")
-    if "condition_on_prev" in fields:
+    if "condition_on_prev" in params:
       lines.append(f"- **Condition on prev:** {condition_on_prev}")
-    if "batch_size" in fields:
+    if "batch_size" in params:
       lines.append(f"- **Batch size:** {batch_size}")
     if reference:
       wer_score, cer_score = calculate_metrics(reference, text)

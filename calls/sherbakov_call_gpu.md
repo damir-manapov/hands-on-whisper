@@ -2,7 +2,7 @@
 
 **Audio file:** `calls/sherbakov_call.wav`
 
-**Total runs:** 346
+**Total runs:** 369
 **Reference:** 3870 chars, 673 words
 
 ## Performance Summary
@@ -11,350 +11,373 @@
 |---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|------|------|
 | 1 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.08 | N | - | ru | 9.6 | 259.4 | 5270.7 | 26.68 | 15.38 |
 | 2 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.36 | Y | - | ru | 10.7 | 0.0 | 4972.8 | 29.06 | 16.99 |
-| 3 | openai | large-v3-turbo | RTX 4090 | float16 | 3 | 0.27 | Y | - | ru | 11.3 | 0.0 | 4967.6 | 31.59 | 22.52 |
-| 4 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.46 | Y | - | ru | 10.8 | 0.0 | 4972.8 | 31.59 | 17.12 |
-| 5 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.47 | Y | - | ru | 11.1 | 0.0 | 4965.7 | 32.04 | 22.24 |
-| 6 | openai | large-v3-turbo | RTX 4090 | int8 | 4 | 0.22 | Y | - | ru | 11.4 | 0.0 | 4962.0 | 32.49 | 20.56 |
-| 7 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.7 | 246.6 | 5301.8 | 32.64 | 22.76 |
-| 8 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.45 | N | - | ru | 8.8 | 46.7 | 5667.7 | 32.79 | 20.28 |
-| 9 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.27 | Y | - | ru | 11.7 | 699.9 | 5672.7 | 33.38 | 24.45 |
-| 10 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.22 | N | - | ru | 8.3 | 0.1 | 5627.2 | 35.02 | 27.17 |
-| 11 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.45 | N | - | ru | 9.6 | 251.6 | 5621.0 | 35.32 | 21.97 |
-| 12 | openai | medium | RTX 4090 | float32 | 1 | 0.03 | N | - | ru | 21.5 | 0.0 | 3359.6 | 35.62 | 21.97 |
-| 13 | openai | medium | RTX 4090 | int8 | 8 | 0.23 | N | - | ru | 26.1 | 0.0 | 2837.9 | 35.92 | 19.52 |
-| 14 | openai | medium | RTX 4090 | float32 | 4 | 0.08 | N | - | ru | 22.8 | 1.6 | 2836.4 | 36.07 | 23.52 |
-| 15 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 8.7 | 0.0 | 9006.8 | 36.81 | 26.30 |
-| 16 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.37 | Y | - | ru | 11.2 | -1028.0 | 4972.8 | 37.26 | 23.93 |
-| 17 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.03 | N | - | ru | 8.6 | -2393.8 | 2630.1 | 37.41 | 29.00 |
-| 18 | openai | medium | RTX 4090 | int8 | 10 | 0.21 | N | - | ru | 27.3 | 0.8 | 3359.6 | 37.56 | 24.53 |
-| 19 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 9.8 | 2424.9 | 5055.1 | 37.56 | 27.74 |
-| 20 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.46 | N | - | ru | 8.7 | 256.2 | 5305.0 | 37.70 | 27.80 |
-| 21 | openai | large-v3 | RTX 4090 | int8 | 5 | 0.40 | Y | - | ru | 42.2 | 0.2 | 8801.6 | 38.00 | 24.67 |
-| 22 | openai | medium | RTX 4090 | float32 | 4 | 0.45 | N | - | ru | 22.6 | 6.0 | 3358.1 | 38.90 | 25.76 |
-| 23 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.07 | N | - | ru | 12.5 | 2576.9 | 2629.7 | 39.05 | 27.44 |
-| 24 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.44 | N | - | ru | 8.7 | -1172.1 | 3530.1 | 39.05 | 29.05 |
-| 25 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.5 | 262.2 | 5317.4 | 39.34 | 30.36 |
-| 26 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.32 | Y | - | ru | 11.5 | 0.0 | 4967.6 | 39.94 | 27.53 |
-| 27 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 10.1 | 0.0 | 2630.2 | 40.09 | 28.37 |
-| 28 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.50 | N | - | ru | 9.0 | 341.0 | 5682.9 | 40.39 | 31.88 |
-| 29 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.48 | N | - | ru | 8.7 | 0.0 | 5346.1 | 40.39 | 31.69 |
-| 30 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.46 | N | - | ru | 8.4 | -274.9 | 5346.1 | 40.69 | 29.78 |
-| 31 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.46 | N | - | ru | 8.2 | -306.1 | 5346.1 | 41.13 | 32.07 |
-| 32 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.01 | Y | - | ru | 12.6 | 0.0 | 4967.6 | 41.28 | 27.77 |
-| 33 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.43 | Y | - | ru | 12.0 | 0.0 | 4972.8 | 41.73 | 30.79 |
-| 34 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.46 | N | - | ru | 8.4 | 290.5 | 5333.2 | 42.18 | 31.88 |
-| 35 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.1 | 25.0 | 5639.7 | 42.92 | 36.05 |
-| 36 | openai | large-v3-turbo | RTX 4090 | float32 | 6 | 0.09 | Y | - | ru | 12.2 | 437.8 | 5399.8 | 43.07 | 23.77 |
-| 37 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.0 | -62.6 | 4676.9 | 43.22 | 33.51 |
-| 38 | openai | small | RTX 4090 | float16 | 1 | 0.49 | Y | - | ru | 14.1 | 0.1 | 2756.1 | 43.82 | 24.29 |
-| 39 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.45 | N | - | ru | 7.9 | 249.9 | 5596.0 | 43.96 | 36.75 |
-| 40 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.09 | N | - | ru | 8.2 | 281.0 | 5627.1 | 43.96 | 34.55 |
-| 41 | openai | small | RTX 4090 | float16 | 8 | 0.01 | Y | - | ru | 15.7 | 0.2 | 2756.3 | 44.26 | 26.16 |
-| 42 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.47 | N | - | ru | 9.5 | 2400.0 | 5030.1 | 44.26 | 37.00 |
-| 43 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 8.1 | 0.0 | 5346.1 | 44.26 | 35.99 |
-| 44 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 7.9 | -265.5 | 4752.1 | 44.41 | 37.03 |
-| 45 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.45 | N | - | ru | 8.2 | 0.0 | 9006.8 | 44.56 | 36.62 |
-| 46 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 8.4 | 296.9 | 5352.0 | 44.71 | 36.16 |
-| 47 | openai | large-v3-turbo | RTX 4090 | int8 | 3 | 0.32 | Y | - | ru | 12.3 | 262.6 | 5662.5 | 44.86 | 29.68 |
-| 48 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.43 | N | - | ru | 9.9 | 0.0 | 2630.2 | 44.86 | 34.66 |
-| 49 | openai | small | RTX 4090 | float16 | 5 | 0.05 | Y | - | ru | 14.2 | 0.3 | 2755.9 | 45.16 | 28.07 |
-| 50 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 9.6 | 1762.4 | 5067.6 | 45.16 | 32.37 |
-| 51 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.45 | N | - | ru | 8.2 | 268.6 | 5614.7 | 45.16 | 35.15 |
-| 52 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.21 | N | - | ru | 7.8 | -249.9 | 5346.1 | 45.31 | 37.05 |
-| 53 | openai | large-v3-turbo | RTX 4090 | int8 | 1 | 0.08 | N | - | ru | 8.3 | 0.0 | 5346.1 | 45.31 | 35.15 |
-| 54 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.48 | N | - | ru | 7.9 | 0.0 | 9006.8 | 45.45 | 35.58 |
-| 55 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.01 | N | - | ru | 7.9 | 225.0 | 5292.5 | 45.90 | 36.05 |
-| 56 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.46 | N | - | ru | 7.7 | 103.3 | 4780.2 | 45.90 | 39.59 |
-| 57 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.03 | N | - | ru | 9.4 | 2437.4 | 5067.6 | 46.05 | 36.16 |
-| 58 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.43 | N | - | ru | 7.8 | 0.0 | 9006.8 | 46.05 | 37.44 |
-| 59 | openai | large-v3 | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 24.6 | 392.5 | 9399.3 | 46.05 | 37.11 |
-| 60 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.02 | N | - | ru | 8.0 | 237.2 | 5292.4 | 46.20 | 36.13 |
-| 61 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.48 | N | - | ru | 8.0 | 275.0 | 5342.6 | 46.50 | 36.40 |
-| 62 | openai | large-v3-turbo | RTX 4090 | float32 | 3 | 0.47 | N | - | ru | 7.8 | 1.0 | 9006.8 | 46.50 | 38.55 |
-| 63 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.44 | N | - | ru | 8.0 | 274.9 | 5621.0 | 46.65 | 37.87 |
-| 64 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.25 | Y | - | ru | 11.3 | 321.8 | 5664.3 | 46.80 | 31.69 |
-| 65 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 7 | 0.15 | N | - | ru | 5.0 | -28.3 | 1212.0 | 46.94 | 40.89 |
-| 66 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.10 | N | - | ru | 8.0 | 293.8 | 5305.1 | 46.94 | 39.86 |
-| 67 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.45 | N | - | ru | 8.1 | 318.6 | 5664.7 | 47.09 | 36.86 |
-| 68 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.49 | N | - | ru | 7.9 | 0.0 | 9006.8 | 47.09 | 38.09 |
-| 69 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 8.3 | 0.0 | 5346.1 | 47.24 | 38.47 |
-| 70 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.05 | N | - | ru | 8.0 | 253.1 | 5327.0 | 47.54 | 38.14 |
-| 71 | openai | medium | RTX 4090 | float16 | 9 | 0.49 | Y | - | ru | 28.4 | 2787.1 | 2835.4 | 47.69 | 33.08 |
-| 72 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.46 | N | - | ru | 25.1 | 580.4 | 9248.2 | 47.84 | 36.84 |
-| 73 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.24 | N | - | ru | 8.1 | -77.8 | 5546.2 | 47.84 | 37.08 |
-| 74 | openai | large-v3-turbo | RTX 4090 | float16 | 4 | 0.36 | Y | - | ru | 11.8 | 0.0 | 4972.8 | 47.99 | 34.06 |
-| 75 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 8.0 | -321.6 | 5346.1 | 47.99 | 39.40 |
-| 76 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.04 | N | - | ru | 7.8 | 271.7 | 5320.5 | 48.44 | 39.40 |
-| 77 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.43 | N | - | ru | 8.6 | 0.0 | 5346.1 | 48.58 | 38.44 |
-| 78 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.03 | N | - | ru | 9.2 | 2437.4 | 5067.5 | 48.73 | 40.29 |
-| 79 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.47 | N | - | ru | 8.4 | 0.0 | 5346.1 | 48.73 | 37.84 |
-| 80 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.26 | N | - | ru | 8.2 | 62.4 | 5608.5 | 48.73 | 40.87 |
-| 81 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.01 | N | - | ru | 7.5 | 0.0 | 9006.8 | 48.73 | 39.26 |
-| 82 | openai | small | RTX 4090 | float16 | 1 | 0.49 | Y | - | ru | 14.8 | 0.1 | 2756.1 | 48.88 | 30.47 |
-| 83 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.11 | N | - | ru | 7.6 | 0.0 | 5346.1 | 49.63 | 40.84 |
-| 84 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.22 | N | - | ru | 7.7 | 293.6 | 5639.7 | 49.78 | 43.07 |
-| 85 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.45 | N | - | ru | 7.5 | -315.6 | 4739.5 | 50.52 | 42.77 |
-| 86 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.23 | N | - | ru | 9.1 | 2443.6 | 5073.8 | 50.52 | 42.06 |
-| 87 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.18 | N | - | ru | 7.6 | 0.0 | 9006.8 | 50.52 | 40.68 |
-| 88 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.46 | N | - | ru | 8.2 | 0.0 | 5346.1 | 50.67 | 42.28 |
-| 89 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.20 | N | - | ru | 7.6 | -243.8 | 5346.1 | 50.82 | 42.31 |
-| 90 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.07 | N | - | ru | 9.2 | 2417.7 | 5048.8 | 50.97 | 41.14 |
-| 91 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.07 | N | - | ru | 9.2 | 2387.4 | 5017.6 | 50.97 | 43.48 |
-| 92 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 8.0 | 306.1 | 5652.2 | 50.97 | 41.98 |
-| 93 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.48 | N | - | ru | 7.5 | 128.0 | 4780.2 | 51.12 | 43.21 |
-| 94 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 7.7 | 0.0 | 9006.8 | 51.56 | 40.35 |
-| 95 | openai | medium | RTX 4090 | int8 | 5 | 0.48 | Y | - | ru | 24.4 | 1.5 | 2837.9 | 52.16 | 38.47 |
-| 96 | openai | large-v3-turbo | RTX 4090 | int8 | 5 | 0.14 | N | - | ru | 8.0 | 387.4 | 5353.1 | 52.46 | 45.60 |
-| 97 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.23 | N | - | ru | 7.8 | -293.6 | 5346.1 | 52.46 | 43.26 |
-| 98 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.50 | Y | - | ru | 12.4 | 0.0 | 4967.6 | 52.76 | 37.68 |
-| 99 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.45 | N | - | ru | 7.8 | 281.8 | 5033.9 | 52.76 | 44.60 |
-| 100 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.22 | N | - | ru | 7.5 | -281.1 | 5346.1 | 52.76 | 46.37 |
-| 101 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.34 | Y | - | ru | 11.2 | 328.1 | 6000.8 | 52.91 | 31.91 |
-| 102 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.12 | N | - | ru | 9.7 | 3636.8 | 4877.2 | 53.06 | 45.19 |
-| 103 | openai | large-v3 | RTX 4090 | float16 | 7 | 0.23 | N | - | ru | 22.2 | 5.3 | 9276.4 | 53.20 | 45.52 |
-| 104 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.6 | 1496.8 | 5026.9 | 53.80 | 46.80 |
-| 105 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.08 | N | - | ru | 9.6 | 2381.1 | 5011.3 | 54.10 | 46.23 |
-| 106 | openai | large-v3-turbo | RTX 4090 | float16 | 1 | 0.31 | Y | - | ru | 9.5 | 0.0 | 4967.6 | 54.55 | 44.76 |
-| 107 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.46 | N | - | ru | 7.9 | 240.6 | 5270.7 | 54.55 | 42.42 |
-| 108 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 19 | ru | 4.4 | 1298.0 | 1342.5 | 54.69 | 45.88 |
-| 109 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.40 | Y | 29 | ru | 2.8 | 27.8 | 1392.7 | 54.69 | 45.88 |
-| 110 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 29 | ru | 4.4 | 1295.3 | 1346.3 | 54.69 | 45.88 |
-| 111 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 28 | ru | 2.8 | 49.5 | 1417.6 | 54.69 | 45.88 |
-| 112 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.7 | 3.3 | 1421.0 | 54.69 | 45.88 |
-| 113 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 23 | ru | 2.7 | 3.3 | 1424.3 | 54.69 | 45.88 |
-| 114 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 29 | ru | 2.8 | 3.0 | 1427.3 | 54.69 | 45.88 |
-| 115 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.7 | 0.0 | 1427.3 | 54.69 | 45.88 |
-| 116 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 28 | ru | 2.8 | 0.1 | 1427.4 | 54.69 | 45.88 |
-| 117 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.24 | Y | 30 | ru | 2.8 | 0.0 | 1427.4 | 54.69 | 45.88 |
-| 118 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 27 | ru | 2.8 | 0.1 | 1427.4 | 54.69 | 45.88 |
-| 119 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.34 | Y | 24 | ru | 2.8 | 0.0 | 1427.5 | 54.69 | 45.88 |
-| 120 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 29 | ru | 2.8 | 0.1 | 1427.5 | 54.69 | 45.88 |
-| 121 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 27 | ru | 2.8 | 0.0 | 1427.5 | 54.69 | 45.88 |
-| 122 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.42 | Y | 30 | ru | 2.8 | 0.0 | 1427.6 | 54.69 | 45.88 |
-| 123 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.8 | 0.0 | 1427.6 | 54.69 | 45.88 |
-| 124 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 28 | ru | 2.7 | 0.0 | 1427.6 | 54.69 | 45.88 |
-| 125 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.34 | Y | 26 | ru | 2.8 | 0.0 | 1427.6 | 54.69 | 45.88 |
-| 126 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.29 | Y | 31 | ru | 2.8 | 0.0 | 1427.7 | 54.69 | 45.88 |
-| 127 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.37 | Y | 29 | ru | 2.8 | 3.0 | 1430.7 | 54.69 | 45.88 |
-| 128 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 24 | ru | 2.8 | 0.1 | 1430.7 | 54.69 | 45.88 |
-| 129 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.27 | Y | 26 | ru | 2.8 | 0.0 | 1430.7 | 54.69 | 45.88 |
-| 130 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.25 | Y | 29 | ru | 2.8 | 0.0 | 1430.7 | 54.69 | 45.88 |
-| 131 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 31 | ru | 2.8 | 0.1 | 1430.8 | 54.69 | 45.88 |
-| 132 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.36 | Y | 30 | ru | 2.8 | 0.0 | 1430.8 | 54.69 | 45.88 |
-| 133 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 28 | ru | 2.8 | 0.0 | 1430.8 | 54.69 | 45.88 |
-| 134 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.30 | Y | 28 | ru | 2.8 | 0.1 | 1430.9 | 54.69 | 45.88 |
-| 135 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 27 | ru | 2.8 | 0.0 | 1430.9 | 54.69 | 45.88 |
-| 136 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.34 | Y | 24 | ru | 2.8 | 0.0 | 1430.9 | 54.69 | 45.88 |
-| 137 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 31 | ru | 2.8 | 0.0 | 1430.9 | 54.69 | 45.88 |
-| 138 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.40 | Y | 29 | ru | 2.8 | 0.1 | 1431.0 | 54.69 | 45.88 |
-| 139 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.44 | Y | 20 | ru | 2.8 | 0.0 | 1431.2 | 54.69 | 45.88 |
-| 140 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.24 | Y | 28 | ru | 2.9 | 0.0 | 1431.2 | 54.69 | 45.88 |
-| 141 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 23 | ru | 2.8 | 0.0 | 1431.2 | 54.69 | 45.88 |
-| 142 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.30 | Y | 30 | ru | 2.8 | 0.0 | 1431.2 | 54.69 | 45.88 |
-| 143 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.23 | Y | 30 | ru | 2.8 | 1.2 | 1432.4 | 54.69 | 45.88 |
-| 144 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 32 | ru | 2.8 | 0.0 | 1432.4 | 54.69 | 45.88 |
-| 145 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.37 | Y | 27 | ru | 2.8 | 0.0 | 1432.4 | 54.69 | 45.88 |
-| 146 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.27 | Y | 31 | ru | 2.8 | 0.1 | 1432.6 | 54.69 | 45.88 |
-| 147 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 29 | ru | 2.8 | 0.0 | 1432.6 | 54.69 | 45.88 |
-| 148 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 26 | ru | 2.8 | 0.2 | 1432.8 | 54.69 | 45.88 |
-| 149 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.33 | Y | 28 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 150 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.37 | Y | 30 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 151 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 27 | ru | 2.9 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 152 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 25 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 153 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.26 | Y | 27 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 154 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.15 | Y | 29 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 155 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 30 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 156 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.47 | Y | 29 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 157 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 15 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 158 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.25 | Y | 28 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
-| 159 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.33 | Y | 24 | ru | 2.8 | 0.2 | 1433.1 | 54.69 | 45.88 |
-| 160 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.36 | Y | 27 | ru | 2.8 | 0.0 | 1433.1 | 54.69 | 45.88 |
-| 161 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 23 | ru | 2.8 | 0.0 | 1433.1 | 54.69 | 45.88 |
-| 162 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.33 | Y | 26 | ru | 2.8 | 0.0 | 1433.1 | 54.69 | 45.88 |
-| 163 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.41 | Y | 22 | ru | 3.0 | 2.0 | 1516.5 | 54.69 | 45.88 |
-| 164 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.8 | 0.0 | 1516.5 | 54.69 | 45.88 |
-| 165 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.35 | Y | 28 | ru | 2.8 | 0.2 | 1516.7 | 54.69 | 45.88 |
-| 166 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 29 | ru | 2.8 | 0.0 | 1516.7 | 54.69 | 45.88 |
-| 167 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.43 | Y | 31 | ru | 2.8 | 0.0 | 1516.7 | 54.69 | 45.88 |
-| 168 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 27 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 169 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.38 | Y | 28 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 170 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 30 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 171 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 19 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 172 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.36 | Y | 28 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 173 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.32 | Y | 27 | ru | 2.8 | 45.9 | 1516.8 | 54.69 | 45.88 |
-| 174 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 29 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 175 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.34 | Y | 27 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 176 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 30 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 177 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 26 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 178 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.27 | Y | 24 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 179 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.32 | Y | 28 | ru | 3.2 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 180 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 25 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
-| 181 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.42 | Y | 30 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 182 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.40 | Y | 31 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 183 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.33 | Y | 29 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 184 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.41 | Y | 30 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 185 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.46 | Y | 31 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 186 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 27 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 187 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 28 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 188 | faster-whisper | medium | RTX 4090 | float16 | 8 | 0.31 | Y | 32 | ru | 3.2 | 0.0 | 1518.8 | 54.69 | 45.88 |
-| 189 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.36 | Y | 29 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 190 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.28 | Y | 30 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 191 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 192 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 28 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 193 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 28 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 194 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 30 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 195 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 18 | ru | 2.8 | 45.9 | 1518.9 | 54.69 | 45.88 |
-| 196 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.41 | Y | 28 | ru | 2.7 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 197 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.22 | Y | 29 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 198 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 26 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
-| 199 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 28 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 200 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 21 | ru | 2.9 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 201 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.26 | Y | 30 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 202 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.29 | Y | 27 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 203 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.25 | Y | 19 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 204 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 29 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 205 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.28 | Y | 28 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
-| 206 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.30 | N | 31 | ru | 2.9 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 207 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.33 | Y | 26 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 208 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.32 | Y | 24 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 209 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.33 | Y | 27 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 210 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 28 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 211 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.31 | Y | 29 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 212 | faster-whisper | medium | RTX 4090 | float16 | 3 | 0.42 | Y | 27 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
-| 213 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.32 | Y | 29 | ru | 2.8 | 49.1 | 1531.5 | 54.69 | 45.88 |
-| 214 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.37 | Y | 27 | ru | 2.8 | 0.0 | 1531.5 | 54.69 | 45.88 |
-| 215 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.29 | Y | 30 | ru | 2.8 | 2.0 | 1533.5 | 54.69 | 45.88 |
-| 216 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.30 | Y | 30 | ru | 2.8 | 0.0 | 1533.5 | 54.69 | 45.88 |
-| 217 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.14 | Y | 31 | ru | 2.8 | 0.0 | 1533.5 | 54.69 | 45.88 |
-| 218 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 9 | ru | 2.8 | 0.0 | 1533.5 | 54.69 | 45.88 |
-| 219 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.27 | Y | 28 | ru | 2.8 | 0.0 | 1533.6 | 54.69 | 45.88 |
-| 220 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.19 | Y | 29 | ru | 3.2 | 0.0 | 1533.6 | 54.69 | 45.88 |
-| 221 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.40 | Y | 31 | ru | 2.8 | 45.9 | 1532.6 | 54.69 | 45.88 |
-| 222 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 29 | ru | 2.8 | 0.0 | 1533.9 | 54.69 | 45.88 |
-| 223 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 30 | ru | 2.9 | 0.0 | 1533.9 | 54.69 | 45.88 |
-| 224 | openai | large-v3-turbo | RTX 4090 | int8 | 9 | 0.21 | N | - | ru | 7.5 | 268.5 | 5614.6 | 54.69 | 43.75 |
-| 225 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.02 | Y | 22 | ru | 3.5 | 101.5 | 5000.0 | 55.29 | 49.06 |
-| 226 | faster-whisper | large-v3 | RTX 4090 | float32 | 1 | 0.35 | Y | 1 | ru | 10.7 | 78.4 | 8880.0 | 55.29 | 49.06 |
-| 227 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.34 | Y | 30 | ru | 4.2 | 1.9 | 1435.0 | 55.29 | 49.06 |
-| 228 | faster-whisper | medium | RTX 4090 | float32 | 4 | 0.30 | Y | 23 | ru | 5.1 | 30.4 | 1465.4 | 55.29 | 46.34 |
-| 229 | faster-whisper | medium | RTX 4090 | float32 | 5 | 0.30 | Y | 26 | ru | 5.2 | -45.9 | 1470.9 | 55.29 | 46.34 |
-| 230 | faster-whisper | large-v3 | RTX 4090 | float16 | 3 | 0.17 | Y | 15 | ru | 4.2 | 1.9 | 1518.8 | 55.29 | 49.06 |
-| 231 | faster-whisper | medium | RTX 4090 | float32 | 4 | 0.43 | Y | 27 | ru | 5.2 | -45.9 | 1472.9 | 55.29 | 46.34 |
-| 232 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.38 | Y | 25 | ru | 4.2 | 1.9 | 1521.0 | 55.29 | 49.06 |
-| 233 | faster-whisper | medium | RTX 4090 | float32 | 6 | 0.33 | N | 14 | ru | 5.0 | -45.9 | 1486.7 | 55.29 | 46.34 |
-| 234 | faster-whisper | medium | RTX 4090 | int8 | 3 | 0.38 | N | 32 | ru | 4.1 | 513.1 | 3351.0 | 55.44 | 46.15 |
-| 235 | faster-whisper | medium | RTX 4090 | int8 | 5 | 0.11 | N | 7 | ru | 3.6 | 0.7 | 3358.8 | 55.44 | 46.15 |
-| 236 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.00 | N | 12 | ru | 3.5 | 0.9 | 1214.1 | 55.44 | 50.23 |
-| 237 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.01 | N | 12 | ru | 3.4 | 3.1 | 1217.2 | 55.44 | 50.23 |
-| 238 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.13 | N | 10 | ru | 3.6 | 5.6 | 1222.8 | 55.44 | 50.23 |
-| 239 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.00 | N | 21 | ru | 3.5 | 0.4 | 1222.9 | 55.44 | 50.23 |
-| 240 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 4 | 0.22 | N | 8 | ru | 3.5 | -0.0 | 1222.9 | 55.44 | 50.23 |
-| 241 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.09 | N | 16 | ru | 3.5 | 0.8 | 1223.8 | 55.44 | 50.23 |
-| 242 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 4 | 0.35 | N | 17 | ru | 3.6 | -0.4 | 1223.3 | 55.44 | 50.23 |
-| 243 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.13 | N | 7 | ru | 3.8 | 0.4 | 1223.7 | 55.44 | 50.23 |
-| 244 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.26 | N | 16 | ru | 3.6 | 0.4 | 1296.9 | 55.44 | 50.23 |
-| 245 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.02 | N | 12 | ru | 3.7 | -0.4 | 1296.5 | 55.44 | 50.23 |
-| 246 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.06 | N | 7 | ru | 3.7 | 196.5 | 1493.0 | 55.44 | 50.23 |
-| 247 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 7 | 0.03 | N | 13 | ru | 3.8 | -196.5 | 1296.5 | 55.44 | 50.23 |
-| 248 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.50 | N | 21 | ru | 3.6 | 0.4 | 1296.9 | 55.44 | 50.23 |
-| 249 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.00 | N | 10 | ru | 3.9 | -0.4 | 1296.5 | 55.44 | 50.23 |
-| 250 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.17 | N | 6 | ru | 3.7 | 0.4 | 1303.4 | 55.44 | 51.02 |
-| 251 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 3 | 0.05 | N | 25 | ru | 3.8 | -0.4 | 1303.0 | 55.44 | 50.23 |
-| 252 | faster-whisper | medium | RTX 4090 | int8 | 7 | 0.34 | Y | 30 | ru | 4.0 | -38.6 | 1482.4 | 55.44 | 46.15 |
-| 253 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.04 | N | - | ru | 7.2 | 0.0 | 9006.8 | 55.44 | 47.94 |
-| 254 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.06 | N | - | ru | 7.4 | 268.6 | 5614.7 | 55.74 | 48.52 |
-| 255 | openai | small | RTX 4090 | int8 | 3 | 0.24 | N | - | ru | 15.8 | 1636.3 | 1684.6 | 55.89 | 35.56 |
-| 256 | openai | large-v3-turbo | RTX 4090 | int8 | 9 | 0.04 | N | - | ru | 7.0 | -318.6 | 5346.1 | 55.89 | 48.63 |
-| 257 | openai | small | RTX 4090 | float16 | 4 | 0.13 | N | - | ru | 14.2 | 0.0 | 2754.9 | 56.18 | 39.67 |
-| 258 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 5 | 0.08 | Y | 4 | ru | 4.2 | 1120.5 | 1165.4 | 56.18 | 51.10 |
-| 259 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.18 | Y | 13 | ru | 2.6 | 51.7 | 1240.4 | 56.18 | 51.10 |
-| 260 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 6 | 0.39 | Y | 4 | ru | 4.2 | 84.5 | 4962.0 | 56.18 | 51.10 |
-| 261 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 6 | 0.42 | N | 3 | ru | 3.8 | -11.2 | 5341.9 | 56.18 | 51.10 |
-| 262 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.45 | N | 32 | ru | 2.0 | 5.2 | 4972.8 | 56.18 | 51.10 |
-| 263 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 7 | 0.29 | N | 32 | ru | 2.3 | 5.1 | 4977.9 | 56.18 | 51.10 |
-| 264 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.05 | Y | 22 | ru | 4.2 | 1118.8 | 1167.7 | 56.18 | 51.10 |
-| 265 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.18 | Y | 25 | ru | 2.6 | 51.5 | 1239.9 | 56.18 | 51.10 |
-| 266 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.30 | Y | 30 | ru | 2.6 | -0.6 | 1239.2 | 56.18 | 51.10 |
-| 267 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 10 | 0.21 | N | 1 | ru | 5.6 | 72.8 | 1296.5 | 56.18 | 51.10 |
-| 268 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 7 | 0.11 | N | 18 | ru | 4.5 | 6.5 | 1303.0 | 56.18 | 51.10 |
-| 269 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.13 | N | - | ru | 4.5 | -0.3 | 1222.6 | 56.48 | 49.33 |
-| 270 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.49 | N | - | ru | 8.3 | 301.7 | 5369.3 | 56.63 | 49.17 |
-| 271 | faster-whisper | medium | RTX 4090 | int8 | 8 | 0.09 | Y | 6 | ru | 4.0 | 4.4 | 9268.0 | 56.93 | 47.05 |
-| 272 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.46 | N | - | ru | 8.8 | 2418.6 | 5048.8 | 56.93 | 49.61 |
-| 273 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.06 | Y | 27 | ru | 5.2 | 13.7 | 8267.3 | 58.72 | 52.79 |
-| 274 | faster-whisper | large-v3 | RTX 4090 | int8 | 10 | 0.08 | N | 18 | ru | 5.1 | 5.5 | 8801.4 | 58.72 | 52.79 |
-| 275 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.24 | N | - | ru | 7.2 | 34.2 | 5649.0 | 58.72 | 51.57 |
-| 276 | openai | large-v3 | RTX 4090 | int8 | 9 | 0.49 | N | - | ru | 22.5 | 0.0 | 8880.0 | 59.02 | 49.33 |
-| 277 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.44 | N | - | ru | 9.8 | 1549.9 | 5011.3 | 59.31 | 52.82 |
-| 278 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.23 | N | - | ru | 7.2 | 9.4 | 5624.0 | 59.61 | 51.35 |
-| 279 | openai | large-v3 | RTX 4090 | float32 | 5 | 0.48 | N | - | ru | 17.9 | 3.3 | 8883.3 | 62.15 | 53.88 |
-| 280 | faster-whisper | small | RTX 4090 | float32 | 4 | 0.13 | N | 2 | ru | 3.5 | 1028.9 | 2712.9 | 62.74 | 53.58 |
-| 281 | openai | small | RTX 4090 | float16 | 7 | 0.39 | N | - | ru | 13.8 | 0.0 | 2751.1 | 62.89 | 37.76 |
-| 282 | faster-whisper | small | RTX 4090 | float16 | 3 | 0.39 | N | 31 | ru | 1.8 | 3.4 | 2754.4 | 62.89 | 53.58 |
-| 283 | faster-whisper | small | RTX 4090 | float16 | 4 | 0.31 | Y | 26 | ru | 1.8 | 0.2 | 1431.2 | 62.89 | 53.58 |
-| 284 | faster-whisper | small | RTX 4090 | float16 | 6 | 0.30 | Y | 20 | ru | 1.6 | 0.0 | 1432.8 | 62.89 | 53.58 |
-| 285 | faster-whisper | small | RTX 4090 | float16 | 6 | 0.33 | Y | 29 | ru | 1.6 | 0.0 | 1516.8 | 62.89 | 53.58 |
-| 286 | faster-whisper | small | RTX 4090 | float16 | 6 | 0.30 | Y | 31 | ru | 1.6 | 0.0 | 1518.9 | 62.89 | 53.58 |
-| 287 | faster-whisper | small | RTX 4090 | float16 | 5 | 0.31 | Y | 22 | ru | 1.6 | 0.0 | 1532.6 | 62.89 | 53.58 |
-| 288 | faster-whisper | small | RTX 4090 | int8 | 7 | 0.26 | N | 17 | ru | 2.2 | 15.3 | 9263.6 | 63.04 | 53.77 |
-| 289 | faster-whisper | small | RTX 4090 | int8 | 2 | 0.30 | N | 15 | ru | 2.4 | 28.0 | 2751.1 | 63.04 | 53.77 |
-| 290 | faster-whisper | small | RTX 4090 | int8 | 2 | 0.37 | Y | 2 | ru | 2.8 | 0.4 | 2754.9 | 63.34 | 53.99 |
-| 291 | openai | large-v3 | RTX 4090 | float16 | 7 | 0.41 | N | - | ru | 23.0 | 4847.5 | 4897.0 | 65.13 | 61.31 |
-| 292 | openai | large-v3 | RTX 4090 | int8 | 10 | 0.41 | N | - | ru | 19.7 | 0.0 | 8883.3 | 65.28 | 58.40 |
-| 293 | openai | small | RTX 4090 | int8 | 10 | 0.21 | N | - | ru | 14.7 | 2.6 | 9270.5 | 65.87 | 38.74 |
-| 294 | openai | small | RTX 4090 | float32 | 10 | 0.14 | N | - | ru | 12.7 | 8.9 | 2722.8 | 67.81 | 44.60 |
-| 295 | openai | large-v3 | RTX 4090 | float16 | 3 | 0.04 | Y | - | ru | 47.0 | 7272.5 | 8665.2 | 68.55 | 51.32 |
-| 296 | openai | base | RTX 4090 | float32 | 5 | 0.23 | Y | - | ru | 7.0 | -2.4 | 2078.7 | 68.55 | 37.33 |
-| 297 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.08 | N | - | ru | 19.9 | 3415.9 | 9005.7 | 69.15 | 62.56 |
-| 298 | openai | base | RTX 4090 | float32 | 5 | 0.27 | Y | - | ru | 6.8 | 132.4 | 2079.0 | 69.45 | 44.02 |
-| 299 | openai | large-v3 | RTX 4090 | int8 | 2 | 0.35 | N | - | ru | 17.4 | 0.0 | 8880.0 | 69.90 | 63.49 |
-| 300 | openai | small | RTX 4090 | int8 | 6 | 0.03 | Y | - | ru | 16.5 | 0.7 | 2755.6 | 70.04 | 38.63 |
-| 301 | faster-whisper | base | RTX 4090 | float32 | 9 | 0.49 | Y | 19 | ru | 2.4 | 313.0 | 1740.2 | 70.49 | 58.54 |
-| 302 | openai | base | RTX 4090 | float16 | 8 | 0.49 | Y | - | ru | 8.7 | 137.2 | 1878.1 | 70.49 | 41.38 |
-| 303 | faster-whisper | base | RTX 4090 | float32 | 2 | 0.38 | Y | 21 | ru | 2.1 | 27.7 | 1907.3 | 70.49 | 58.54 |
-| 304 | openai | base | RTX 4090 | int8 | 10 | 0.43 | N | - | ru | 8.7 | 130.0 | 2069.7 | 71.09 | 39.37 |
-| 305 | openai | large-v3-turbo | RTX 4090 | float16 | 3 | 0.40 | Y | - | ru | 12.6 | 0.0 | 4967.6 | 71.54 | 41.27 |
-| 306 | faster-whisper | base | RTX 4090 | int8 | 3 | 0.47 | N | 32 | ru | 1.8 | 0.1 | 1907.4 | 72.73 | 60.55 |
-| 307 | faster-whisper | base | RTX 4090 | int8 | 10 | 0.35 | N | 28 | ru | 1.9 | -18.2 | 1915.0 | 72.73 | 60.55 |
-| 308 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.11 | N | 31 | ru | 1.6 | 32.3 | 1939.7 | 73.77 | 60.11 |
-| 309 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.10 | Y | 25 | ru | 1.6 | 0.7 | 1915.7 | 73.77 | 60.11 |
-| 310 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.15 | Y | 17 | ru | 1.6 | 30.9 | 1946.6 | 73.77 | 60.11 |
-| 311 | faster-whisper | base | RTX 4090 | float16 | 7 | 0.32 | Y | 28 | ru | 1.4 | 0.0 | 1432.6 | 73.77 | 60.11 |
-| 312 | faster-whisper | base | RTX 4090 | float16 | 3 | 0.29 | Y | 25 | ru | 1.5 | 49.1 | 1514.5 | 73.77 | 60.11 |
-| 313 | faster-whisper | base | RTX 4090 | float16 | 7 | 0.30 | Y | 29 | ru | 2.6 | 0.0 | 1518.8 | 73.77 | 60.11 |
-| 314 | faster-whisper | base | RTX 4090 | float16 | 5 | 0.34 | Y | 26 | ru | 1.4 | 0.0 | 1521.0 | 73.77 | 60.11 |
-| 315 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.40 | Y | 1 | ru | 1.9 | -47.3 | 1150.7 | 74.37 | 58.94 |
-| 316 | faster-whisper | tiny | RTX 4090 | int8 | 5 | 0.50 | Y | 1 | ru | 1.8 | -40.4 | 1890.1 | 74.37 | 58.94 |
-| 317 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.40 | Y | 5 | ru | 1.5 | 0.0 | 1940.9 | 77.50 | 61.29 |
-| 318 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.39 | Y | 4 | ru | 1.5 | 0.0 | 1968.1 | 77.50 | 61.31 |
-| 319 | faster-whisper | tiny | RTX 4090 | float32 | 4 | 0.42 | Y | 3 | ru | 1.6 | 2.8 | 1943.7 | 77.65 | 62.16 |
-| 320 | faster-whisper | tiny | RTX 4090 | float32 | 1 | 0.25 | Y | 26 | ru | 1.4 | 0.0 | 1968.1 | 77.65 | 62.16 |
-| 321 | faster-whisper | tiny | RTX 4090 | int8 | 6 | 0.45 | N | 20 | ru | 3.0 | 1130.8 | 1175.3 | 80.18 | 62.70 |
-| 322 | faster-whisper | tiny | RTX 4090 | int8 | 1 | 0.31 | N | 12 | ru | 1.6 | 2.4 | 1884.7 | 80.18 | 62.70 |
-| 323 | faster-whisper | tiny | RTX 4090 | int8 | 10 | 0.39 | Y | 8 | ru | 1.5 | 3.2 | 1894.8 | 80.18 | 62.70 |
-| 324 | faster-whisper | tiny | RTX 4090 | int8 | 4 | 0.28 | Y | 6 | ru | 1.5 | 46.1 | 1940.9 | 80.18 | 62.70 |
-| 325 | faster-whisper | tiny | RTX 4090 | int8 | 6 | 0.21 | Y | 11 | ru | 1.4 | 0.0 | 1940.9 | 80.18 | 62.70 |
-| 326 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.33 | Y | 10 | ru | 1.5 | 47.1 | 1968.1 | 80.18 | 62.70 |
-| 327 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.39 | Y | 3 | ru | 1.6 | 0.0 | 1968.1 | 80.18 | 62.70 |
-| 328 | openai | base | RTX 4090 | float32 | 7 | 0.00 | N | - | ru | 9.1 | 1379.6 | 1424.2 | 80.33 | 42.74 |
-| 329 | faster-whisper | tiny | RTX 4090 | float16 | 8 | 0.19 | Y | 17 | ru | 1.3 | 42.7 | 1927.4 | 83.46 | 66.92 |
-| 330 | faster-whisper | tiny | RTX 4090 | float16 | 2 | 0.02 | N | 23 | ru | 1.3 | 3.1 | 1930.5 | 83.46 | 66.92 |
-| 331 | faster-whisper | tiny | RTX 4090 | float16 | 2 | 0.12 | N | 32 | ru | 1.4 | 0.0 | 1930.5 | 83.46 | 66.92 |
-| 332 | faster-whisper | tiny | RTX 4090 | float16 | 4 | 0.20 | Y | 31 | ru | 1.3 | 0.1 | 1432.8 | 83.46 | 66.92 |
-| 333 | faster-whisper | tiny | RTX 4090 | float16 | 4 | 0.37 | Y | 32 | ru | 1.3 | 0.0 | 1516.8 | 83.46 | 66.92 |
-| 334 | faster-whisper | tiny | RTX 4090 | float16 | 5 | 0.33 | Y | 29 | ru | 1.3 | 0.0 | 1518.9 | 83.46 | 66.92 |
-| 335 | faster-whisper | tiny | RTX 4090 | float16 | 5 | 0.29 | Y | 28 | ru | 1.3 | 0.4 | 1533.8 | 83.46 | 66.92 |
-| 336 | openai | tiny | RTX 4090 | float16 | 8 | 0.43 | Y | - | ru | 6.2 | 26.7 | 1882.3 | 87.78 | 51.05 |
-| 337 | openai | base | RTX 4090 | float32 | 5 | 0.29 | Y | - | ru | 11.1 | 160.1 | 2080.8 | 90.01 | 107.73 |
-| 338 | openai | large-v3 | RTX 4090 | float16 | 8 | 0.22 | Y | - | ru | 44.2 | 528.6 | 8795.9 | 92.25 | 82.25 |
-| 339 | faster-whisper | tiny | RTX 4090 | int8 | 5 | 0.49 | Y | - | ru | 8.1 | 0.0 | 1891.6 | 98.06 | 86.90 |
-| 340 | openai | tiny | RTX 4090 | float16 | 8 | 0.04 | Y | - | ru | 3.8 | 72.4 | 1855.6 | 100.00 | 85.92 |
-| 341 | openai | tiny | RTX 4090 | int8 | 7 | 0.50 | N | - | ru | 5.7 | -22.8 | 1920.9 | 100.89 | 59.19 |
-| 342 | openai | tiny | RTX 4090 | float32 | 4 | 0.35 | Y | - | ru | 5.8 | 631.9 | 1782.5 | 146.50 | 77.32 |
-| 343 | faster-whisper | tiny | RTX 4090 | int8 | 5 | 0.48 | Y | - | ru | 7.9 | 1.5 | 1891.6 | 155.14 | 94.99 |
-| 344 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.34 | Y | - | ru | 52.4 | 0.0 | 8883.3 | 166.02 | 115.46 |
-| 345 | openai | tiny | RTX 4090 | float32 | 2 | 0.34 | Y | - | ru | 6.1 | 0.0 | 1855.6 | 167.51 | 66.38 |
-| 346 | openai | large-v3 | RTX 4090 | int8 | 6 | 0.17 | Y | - | ru | 89.6 | 3250.8 | 8252.7 | 343.82 | 273.97 |
+| 3 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.11 | N | - | ru | 8.8 | 0.0 | 9399.6 | 30.55 | 20.75 |
+| 4 | openai | large-v3-turbo | RTX 4090 | float16 | 3 | 0.27 | Y | - | ru | 11.3 | 0.0 | 4967.6 | 31.59 | 22.52 |
+| 5 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.46 | Y | - | ru | 10.8 | 0.0 | 4972.8 | 31.59 | 17.12 |
+| 6 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.47 | Y | - | ru | 11.1 | 0.0 | 4965.7 | 32.04 | 22.24 |
+| 7 | openai | large-v3-turbo | RTX 4090 | int8 | 4 | 0.22 | Y | - | ru | 11.4 | 0.0 | 4962.0 | 32.49 | 20.56 |
+| 8 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.7 | 246.6 | 5301.8 | 32.64 | 22.76 |
+| 9 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.45 | N | - | ru | 8.8 | 46.7 | 5667.7 | 32.79 | 20.28 |
+| 10 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.27 | Y | - | ru | 11.7 | 699.9 | 5672.7 | 33.38 | 24.45 |
+| 11 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.22 | N | - | ru | 8.3 | 0.1 | 5627.2 | 35.02 | 27.17 |
+| 12 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.45 | N | - | ru | 9.6 | 251.6 | 5621.0 | 35.32 | 21.97 |
+| 13 | openai | medium | RTX 4090 | float32 | 1 | 0.03 | N | - | ru | 21.5 | 0.0 | 3359.6 | 35.62 | 21.97 |
+| 14 | openai | medium | RTX 4090 | int8 | 8 | 0.23 | N | - | ru | 26.1 | 0.0 | 2837.9 | 35.92 | 19.52 |
+| 15 | openai | medium | RTX 4090 | float32 | 4 | 0.08 | N | - | ru | 22.8 | 1.6 | 2836.4 | 36.07 | 23.52 |
+| 16 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 8.7 | 0.0 | 9006.8 | 36.81 | 26.30 |
+| 17 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.37 | Y | - | ru | 11.2 | -1028.0 | 4972.8 | 37.26 | 23.93 |
+| 18 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.03 | N | - | ru | 8.6 | -2393.8 | 2630.1 | 37.41 | 29.00 |
+| 19 | openai | medium | RTX 4090 | int8 | 10 | 0.21 | N | - | ru | 27.3 | 0.8 | 3359.6 | 37.56 | 24.53 |
+| 20 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 9.8 | 2424.9 | 5055.1 | 37.56 | 27.74 |
+| 21 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.46 | N | - | ru | 8.7 | 256.2 | 5305.0 | 37.70 | 27.80 |
+| 22 | openai | large-v3 | RTX 4090 | int8 | 5 | 0.40 | Y | - | ru | 42.2 | 0.2 | 8801.6 | 38.00 | 24.67 |
+| 23 | openai | medium | RTX 4090 | float32 | 4 | 0.45 | N | - | ru | 22.6 | 6.0 | 3358.1 | 38.90 | 25.76 |
+| 24 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.07 | N | - | ru | 12.5 | 2576.9 | 2629.7 | 39.05 | 27.44 |
+| 25 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.44 | N | - | ru | 8.7 | -1172.1 | 3530.1 | 39.05 | 29.05 |
+| 26 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.5 | 262.2 | 5317.4 | 39.34 | 30.36 |
+| 27 | openai | large-v3-turbo | RTX 4090 | float16 | 7 | 0.32 | Y | - | ru | 11.5 | 0.0 | 4967.6 | 39.94 | 27.53 |
+| 28 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 10.1 | 0.0 | 2630.2 | 40.09 | 28.37 |
+| 29 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.50 | N | - | ru | 9.0 | 341.0 | 5682.9 | 40.39 | 31.88 |
+| 30 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.48 | N | - | ru | 8.7 | 0.0 | 5346.1 | 40.39 | 31.69 |
+| 31 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.46 | N | - | ru | 8.4 | -274.9 | 5346.1 | 40.69 | 29.78 |
+| 32 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.46 | N | - | ru | 8.2 | -306.1 | 5346.1 | 41.13 | 32.07 |
+| 33 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.01 | Y | - | ru | 12.6 | 0.0 | 4967.6 | 41.28 | 27.77 |
+| 34 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.43 | Y | - | ru | 12.0 | 0.0 | 4972.8 | 41.73 | 30.79 |
+| 35 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.46 | N | - | ru | 8.4 | 290.5 | 5333.2 | 42.18 | 31.88 |
+| 36 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.07 | N | - | ru | 8.0 | 0.0 | 9409.9 | 42.77 | 35.39 |
+| 37 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.1 | 25.0 | 5639.7 | 42.92 | 36.05 |
+| 38 | openai | large-v3-turbo | RTX 4090 | float32 | 6 | 0.09 | Y | - | ru | 12.2 | 437.8 | 5399.8 | 43.07 | 23.77 |
+| 39 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.0 | -62.6 | 4676.9 | 43.22 | 33.51 |
+| 40 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.09 | N | - | ru | 8.6 | 1.5 | 9409.2 | 43.37 | 35.48 |
+| 41 | openai | small | RTX 4090 | float16 | 1 | 0.49 | Y | - | ru | 14.1 | 0.1 | 2756.1 | 43.82 | 24.29 |
+| 42 | openai | large-v3-turbo | RTX 4090 | int8 | 2 | 0.44 | N | - | ru | 7.8 | 0.0 | 9409.9 | 43.82 | 35.99 |
+| 43 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.45 | N | - | ru | 7.9 | 249.9 | 5596.0 | 43.96 | 36.75 |
+| 44 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.09 | N | - | ru | 8.2 | 281.0 | 5627.1 | 43.96 | 34.55 |
+| 45 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.21 | N | - | ru | 7.8 | 0.0 | 9399.6 | 43.96 | 35.77 |
+| 46 | openai | small | RTX 4090 | float16 | 8 | 0.01 | Y | - | ru | 15.7 | 0.2 | 2756.3 | 44.26 | 26.16 |
+| 47 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.47 | N | - | ru | 9.5 | 2400.0 | 5030.1 | 44.26 | 37.00 |
+| 48 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 8.1 | 0.0 | 5346.1 | 44.26 | 35.99 |
+| 49 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 7.9 | -265.5 | 4752.1 | 44.41 | 37.03 |
+| 50 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.48 | N | - | ru | 7.8 | 0.0 | 9399.3 | 44.41 | 36.10 |
+| 51 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.45 | N | - | ru | 8.2 | 0.0 | 9006.8 | 44.56 | 36.62 |
+| 52 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 8.4 | 296.9 | 5352.0 | 44.71 | 36.16 |
+| 53 | openai | large-v3-turbo | RTX 4090 | int8 | 3 | 0.32 | Y | - | ru | 12.3 | 262.6 | 5662.5 | 44.86 | 29.68 |
+| 54 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.43 | N | - | ru | 9.9 | 0.0 | 2630.2 | 44.86 | 34.66 |
+| 55 | openai | small | RTX 4090 | float16 | 5 | 0.05 | Y | - | ru | 14.2 | 0.3 | 2755.9 | 45.16 | 28.07 |
+| 56 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 9.6 | 1762.4 | 5067.6 | 45.16 | 32.37 |
+| 57 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.45 | N | - | ru | 8.2 | 268.6 | 5614.7 | 45.16 | 35.15 |
+| 58 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.21 | N | - | ru | 7.8 | -249.9 | 5346.1 | 45.31 | 37.05 |
+| 59 | openai | large-v3-turbo | RTX 4090 | int8 | 1 | 0.08 | N | - | ru | 8.3 | 0.0 | 5346.1 | 45.31 | 35.15 |
+| 60 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.48 | N | - | ru | 7.9 | 0.0 | 9006.8 | 45.45 | 35.58 |
+| 61 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.01 | N | - | ru | 7.9 | 225.0 | 5292.5 | 45.90 | 36.05 |
+| 62 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.46 | N | - | ru | 7.7 | 103.3 | 4780.2 | 45.90 | 39.59 |
+| 63 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.03 | N | - | ru | 9.4 | 2437.4 | 5067.6 | 46.05 | 36.16 |
+| 64 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.43 | N | - | ru | 7.8 | 0.0 | 9006.8 | 46.05 | 37.44 |
+| 65 | openai | large-v3 | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 24.6 | 392.5 | 9399.3 | 46.05 | 37.11 |
+| 66 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.02 | N | - | ru | 8.0 | 237.2 | 5292.4 | 46.20 | 36.13 |
+| 67 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.48 | N | - | ru | 8.0 | 275.0 | 5342.6 | 46.50 | 36.40 |
+| 68 | openai | large-v3-turbo | RTX 4090 | float32 | 3 | 0.47 | N | - | ru | 7.8 | 1.0 | 9006.8 | 46.50 | 38.55 |
+| 69 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.44 | N | - | ru | 8.0 | 274.9 | 5621.0 | 46.65 | 37.87 |
+| 70 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.25 | Y | - | ru | 11.3 | 321.8 | 5664.3 | 46.80 | 31.69 |
+| 71 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 7 | 0.15 | N | - | ru | 5.0 | -28.3 | 1212.0 | 46.94 | 40.89 |
+| 72 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.10 | N | - | ru | 8.0 | 293.8 | 5305.1 | 46.94 | 39.86 |
+| 73 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.45 | N | - | ru | 8.1 | 318.6 | 5664.7 | 47.09 | 36.86 |
+| 74 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.49 | N | - | ru | 7.9 | 0.0 | 9006.8 | 47.09 | 38.09 |
+| 75 | openai | large-v3-turbo | RTX 4090 | float32 | 3 | 0.09 | N | - | ru | 7.6 | 0.0 | 9410.2 | 47.09 | 41.63 |
+| 76 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 8.3 | 0.0 | 5346.1 | 47.24 | 38.47 |
+| 77 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.05 | N | - | ru | 8.0 | 253.1 | 5327.0 | 47.54 | 38.14 |
+| 78 | openai | medium | RTX 4090 | float16 | 9 | 0.49 | Y | - | ru | 28.4 | 2787.1 | 2835.4 | 47.69 | 33.08 |
+| 79 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.46 | N | - | ru | 25.1 | 580.4 | 9248.2 | 47.84 | 36.84 |
+| 80 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.24 | N | - | ru | 8.1 | -77.8 | 5546.2 | 47.84 | 37.08 |
+| 81 | openai | large-v3-turbo | RTX 4090 | float16 | 4 | 0.36 | Y | - | ru | 11.8 | 0.0 | 4972.8 | 47.99 | 34.06 |
+| 82 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 8.0 | -321.6 | 5346.1 | 47.99 | 39.40 |
+| 83 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.50 | N | - | ru | 7.9 | 0.3 | 9399.6 | 48.29 | 40.05 |
+| 84 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.04 | N | - | ru | 7.8 | 271.7 | 5320.5 | 48.44 | 39.40 |
+| 85 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.45 | N | - | ru | 8.1 | 0.3 | 9409.4 | 48.44 | 39.72 |
+| 86 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.43 | N | - | ru | 8.6 | 0.0 | 5346.1 | 48.58 | 38.44 |
+| 87 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.03 | N | - | ru | 9.2 | 2437.4 | 5067.5 | 48.73 | 40.29 |
+| 88 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.47 | N | - | ru | 8.4 | 0.0 | 5346.1 | 48.73 | 37.84 |
+| 89 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.26 | N | - | ru | 8.2 | 62.4 | 5608.5 | 48.73 | 40.87 |
+| 90 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.01 | N | - | ru | 7.5 | 0.0 | 9006.8 | 48.73 | 39.26 |
+| 91 | openai | small | RTX 4090 | float16 | 1 | 0.49 | Y | - | ru | 14.8 | 0.1 | 2756.1 | 48.88 | 30.47 |
+| 92 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.11 | N | - | ru | 7.6 | 0.0 | 5346.1 | 49.63 | 40.84 |
+| 93 | openai | large-v3-turbo | RTX 4090 | float32 | 2 | 0.22 | N | - | ru | 7.7 | 293.6 | 5639.7 | 49.78 | 43.07 |
+| 94 | openai | large-v3-turbo | RTX 4090 | int8 | 1 | 0.46 | N | - | ru | 7.5 | 0.0 | 9399.3 | 50.37 | 42.72 |
+| 95 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.45 | N | - | ru | 7.5 | -315.6 | 4739.5 | 50.52 | 42.77 |
+| 96 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.23 | N | - | ru | 9.1 | 2443.6 | 5073.8 | 50.52 | 42.06 |
+| 97 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.18 | N | - | ru | 7.6 | 0.0 | 9006.8 | 50.52 | 40.68 |
+| 98 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.46 | N | - | ru | 8.2 | 0.0 | 5346.1 | 50.67 | 42.28 |
+| 99 | openai | large-v3-turbo | RTX 4090 | float32 | 8 | 0.20 | N | - | ru | 7.6 | -243.8 | 5346.1 | 50.82 | 42.31 |
+| 100 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.46 | N | - | ru | 8.0 | 0.0 | 9410.2 | 50.82 | 41.63 |
+| 101 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.07 | N | - | ru | 9.2 | 2417.7 | 5048.8 | 50.97 | 41.14 |
+| 102 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.07 | N | - | ru | 9.2 | 2387.4 | 5017.6 | 50.97 | 43.48 |
+| 103 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.44 | N | - | ru | 8.0 | 306.1 | 5652.2 | 50.97 | 41.98 |
+| 104 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.48 | N | - | ru | 7.5 | 128.0 | 4780.2 | 51.12 | 43.21 |
+| 105 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.47 | N | - | ru | 7.7 | 0.0 | 9006.8 | 51.56 | 40.35 |
+| 106 | openai | medium | RTX 4090 | int8 | 5 | 0.48 | Y | - | ru | 24.4 | 1.5 | 2837.9 | 52.16 | 38.47 |
+| 107 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.05 | N | - | ru | 7.5 | 0.3 | 9409.9 | 52.16 | 43.21 |
+| 108 | openai | large-v3-turbo | RTX 4090 | int8 | 5 | 0.14 | N | - | ru | 8.0 | 387.4 | 5353.1 | 52.46 | 45.60 |
+| 109 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.23 | N | - | ru | 7.8 | -293.6 | 5346.1 | 52.46 | 43.26 |
+| 110 | openai | large-v3-turbo | RTX 4090 | float16 | 8 | 0.50 | Y | - | ru | 12.4 | 0.0 | 4967.6 | 52.76 | 37.68 |
+| 111 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.45 | N | - | ru | 7.8 | 281.8 | 5033.9 | 52.76 | 44.60 |
+| 112 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.22 | N | - | ru | 7.5 | -281.1 | 5346.1 | 52.76 | 46.37 |
+| 113 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.25 | N | - | ru | 8.1 | 0.0 | 9409.9 | 52.76 | 42.91 |
+| 114 | openai | large-v3-turbo | RTX 4090 | float16 | 9 | 0.34 | Y | - | ru | 11.2 | 328.1 | 6000.8 | 52.91 | 31.91 |
+| 115 | openai | large-v3-turbo | RTX 4090 | float16 | 10 | 0.12 | N | - | ru | 9.7 | 3636.8 | 4877.2 | 53.06 | 45.19 |
+| 116 | openai | large-v3 | RTX 4090 | float16 | 7 | 0.23 | N | - | ru | 22.2 | 5.3 | 9276.4 | 53.20 | 45.52 |
+| 117 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.47 | N | - | ru | 8.6 | 1496.8 | 5026.9 | 53.80 | 46.80 |
+| 118 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.08 | N | - | ru | 9.6 | 2381.1 | 5011.3 | 54.10 | 46.23 |
+| 119 | openai | large-v3-turbo | RTX 4090 | float16 | 1 | 0.31 | Y | - | ru | 9.5 | 0.0 | 4967.6 | 54.55 | 44.76 |
+| 120 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.46 | N | - | ru | 7.9 | 240.6 | 5270.7 | 54.55 | 42.42 |
+| 121 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 19 | ru | 4.4 | 1298.0 | 1342.5 | 54.69 | 45.88 |
+| 122 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.40 | Y | 29 | ru | 2.8 | 27.8 | 1392.7 | 54.69 | 45.88 |
+| 123 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 29 | ru | 4.4 | 1295.3 | 1346.3 | 54.69 | 45.88 |
+| 124 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 28 | ru | 2.8 | 49.5 | 1417.6 | 54.69 | 45.88 |
+| 125 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.7 | 3.3 | 1421.0 | 54.69 | 45.88 |
+| 126 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 23 | ru | 2.7 | 3.3 | 1424.3 | 54.69 | 45.88 |
+| 127 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 29 | ru | 2.8 | 3.0 | 1427.3 | 54.69 | 45.88 |
+| 128 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.7 | 0.0 | 1427.3 | 54.69 | 45.88 |
+| 129 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 28 | ru | 2.8 | 0.1 | 1427.4 | 54.69 | 45.88 |
+| 130 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.24 | Y | 30 | ru | 2.8 | 0.0 | 1427.4 | 54.69 | 45.88 |
+| 131 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 27 | ru | 2.8 | 0.1 | 1427.4 | 54.69 | 45.88 |
+| 132 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.34 | Y | 24 | ru | 2.8 | 0.0 | 1427.5 | 54.69 | 45.88 |
+| 133 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 29 | ru | 2.8 | 0.1 | 1427.5 | 54.69 | 45.88 |
+| 134 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 27 | ru | 2.8 | 0.0 | 1427.5 | 54.69 | 45.88 |
+| 135 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.42 | Y | 30 | ru | 2.8 | 0.0 | 1427.6 | 54.69 | 45.88 |
+| 136 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.8 | 0.0 | 1427.6 | 54.69 | 45.88 |
+| 137 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 28 | ru | 2.7 | 0.0 | 1427.6 | 54.69 | 45.88 |
+| 138 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.34 | Y | 26 | ru | 2.8 | 0.0 | 1427.6 | 54.69 | 45.88 |
+| 139 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.29 | Y | 31 | ru | 2.8 | 0.0 | 1427.7 | 54.69 | 45.88 |
+| 140 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.37 | Y | 29 | ru | 2.8 | 3.0 | 1430.7 | 54.69 | 45.88 |
+| 141 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 24 | ru | 2.8 | 0.1 | 1430.7 | 54.69 | 45.88 |
+| 142 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.27 | Y | 26 | ru | 2.8 | 0.0 | 1430.7 | 54.69 | 45.88 |
+| 143 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.25 | Y | 29 | ru | 2.8 | 0.0 | 1430.7 | 54.69 | 45.88 |
+| 144 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 31 | ru | 2.8 | 0.1 | 1430.8 | 54.69 | 45.88 |
+| 145 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.36 | Y | 30 | ru | 2.8 | 0.0 | 1430.8 | 54.69 | 45.88 |
+| 146 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 28 | ru | 2.8 | 0.0 | 1430.8 | 54.69 | 45.88 |
+| 147 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.30 | Y | 28 | ru | 2.8 | 0.1 | 1430.9 | 54.69 | 45.88 |
+| 148 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 27 | ru | 2.8 | 0.0 | 1430.9 | 54.69 | 45.88 |
+| 149 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.34 | Y | 24 | ru | 2.8 | 0.0 | 1430.9 | 54.69 | 45.88 |
+| 150 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 31 | ru | 2.8 | 0.0 | 1430.9 | 54.69 | 45.88 |
+| 151 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.40 | Y | 29 | ru | 2.8 | 0.1 | 1431.0 | 54.69 | 45.88 |
+| 152 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.44 | Y | 20 | ru | 2.8 | 0.0 | 1431.2 | 54.69 | 45.88 |
+| 153 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.24 | Y | 28 | ru | 2.9 | 0.0 | 1431.2 | 54.69 | 45.88 |
+| 154 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 23 | ru | 2.8 | 0.0 | 1431.2 | 54.69 | 45.88 |
+| 155 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.30 | Y | 30 | ru | 2.8 | 0.0 | 1431.2 | 54.69 | 45.88 |
+| 156 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.23 | Y | 30 | ru | 2.8 | 1.2 | 1432.4 | 54.69 | 45.88 |
+| 157 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 32 | ru | 2.8 | 0.0 | 1432.4 | 54.69 | 45.88 |
+| 158 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.37 | Y | 27 | ru | 2.8 | 0.0 | 1432.4 | 54.69 | 45.88 |
+| 159 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.27 | Y | 31 | ru | 2.8 | 0.1 | 1432.6 | 54.69 | 45.88 |
+| 160 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 29 | ru | 2.8 | 0.0 | 1432.6 | 54.69 | 45.88 |
+| 161 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 26 | ru | 2.8 | 0.2 | 1432.8 | 54.69 | 45.88 |
+| 162 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.33 | Y | 28 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 163 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.37 | Y | 30 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 164 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 27 | ru | 2.9 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 165 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 25 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 166 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.26 | Y | 27 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 167 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.15 | Y | 29 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 168 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 30 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 169 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.47 | Y | 29 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 170 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 15 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 171 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.25 | Y | 28 | ru | 2.8 | 0.0 | 1432.8 | 54.69 | 45.88 |
+| 172 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.33 | Y | 24 | ru | 2.8 | 0.2 | 1433.1 | 54.69 | 45.88 |
+| 173 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.36 | Y | 27 | ru | 2.8 | 0.0 | 1433.1 | 54.69 | 45.88 |
+| 174 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 23 | ru | 2.8 | 0.0 | 1433.1 | 54.69 | 45.88 |
+| 175 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.33 | Y | 26 | ru | 2.8 | 0.0 | 1433.1 | 54.69 | 45.88 |
+| 176 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.41 | Y | 22 | ru | 3.0 | 2.0 | 1516.5 | 54.69 | 45.88 |
+| 177 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.8 | 0.0 | 1516.5 | 54.69 | 45.88 |
+| 178 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.35 | Y | 28 | ru | 2.8 | 0.2 | 1516.7 | 54.69 | 45.88 |
+| 179 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 29 | ru | 2.8 | 0.0 | 1516.7 | 54.69 | 45.88 |
+| 180 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.43 | Y | 31 | ru | 2.8 | 0.0 | 1516.7 | 54.69 | 45.88 |
+| 181 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 27 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 182 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.38 | Y | 28 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 183 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 30 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 184 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 19 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 185 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.36 | Y | 28 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 186 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.32 | Y | 27 | ru | 2.8 | 45.9 | 1516.8 | 54.69 | 45.88 |
+| 187 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 29 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 188 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.34 | Y | 27 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 189 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 30 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 190 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.31 | Y | 26 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 191 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.27 | Y | 24 | ru | 2.8 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 192 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.32 | Y | 28 | ru | 3.2 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 193 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 25 | ru | 2.7 | 0.0 | 1516.8 | 54.69 | 45.88 |
+| 194 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.42 | Y | 30 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 195 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.40 | Y | 31 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 196 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.33 | Y | 29 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 197 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.41 | Y | 30 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 198 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.46 | Y | 31 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 199 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 27 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 200 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 28 | ru | 2.8 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 201 | faster-whisper | medium | RTX 4090 | float16 | 8 | 0.31 | Y | 32 | ru | 3.2 | 0.0 | 1518.8 | 54.69 | 45.88 |
+| 202 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.36 | Y | 29 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 203 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.28 | Y | 30 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 204 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 29 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 205 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 28 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 206 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 28 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 207 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.33 | Y | 30 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 208 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.29 | Y | 18 | ru | 2.8 | 45.9 | 1518.9 | 54.69 | 45.88 |
+| 209 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.41 | Y | 28 | ru | 2.7 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 210 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.22 | Y | 29 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 211 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.31 | Y | 26 | ru | 2.8 | 0.0 | 1518.9 | 54.69 | 45.88 |
+| 212 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.28 | Y | 28 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 213 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 21 | ru | 2.9 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 214 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.26 | Y | 30 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 215 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.29 | Y | 27 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 216 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.25 | Y | 19 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 217 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.34 | Y | 29 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 218 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.28 | Y | 28 | ru | 2.8 | 0.0 | 1519.0 | 54.69 | 45.88 |
+| 219 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.30 | N | 31 | ru | 2.9 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 220 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.33 | Y | 26 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 221 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.32 | Y | 24 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 222 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.33 | Y | 27 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 223 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 28 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 224 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.31 | Y | 29 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 225 | faster-whisper | medium | RTX 4090 | float16 | 3 | 0.42 | Y | 27 | ru | 2.8 | 0.0 | 1521.0 | 54.69 | 45.88 |
+| 226 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.32 | Y | 29 | ru | 2.8 | 49.1 | 1531.5 | 54.69 | 45.88 |
+| 227 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.37 | Y | 27 | ru | 2.8 | 0.0 | 1531.5 | 54.69 | 45.88 |
+| 228 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.29 | Y | 30 | ru | 2.8 | 2.0 | 1533.5 | 54.69 | 45.88 |
+| 229 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.30 | Y | 30 | ru | 2.8 | 0.0 | 1533.5 | 54.69 | 45.88 |
+| 230 | faster-whisper | medium | RTX 4090 | float16 | 6 | 0.14 | Y | 31 | ru | 2.8 | 0.0 | 1533.5 | 54.69 | 45.88 |
+| 231 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.32 | Y | 9 | ru | 2.8 | 0.0 | 1533.5 | 54.69 | 45.88 |
+| 232 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.27 | Y | 28 | ru | 2.8 | 0.0 | 1533.6 | 54.69 | 45.88 |
+| 233 | faster-whisper | medium | RTX 4090 | float16 | 7 | 0.19 | Y | 29 | ru | 3.2 | 0.0 | 1533.6 | 54.69 | 45.88 |
+| 234 | faster-whisper | medium | RTX 4090 | float16 | 4 | 0.40 | Y | 31 | ru | 2.8 | 45.9 | 1532.6 | 54.69 | 45.88 |
+| 235 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.35 | Y | 29 | ru | 2.8 | 0.0 | 1533.9 | 54.69 | 45.88 |
+| 236 | faster-whisper | medium | RTX 4090 | float16 | 5 | 0.36 | Y | 30 | ru | 2.9 | 0.0 | 1533.9 | 54.69 | 45.88 |
+| 237 | openai | large-v3-turbo | RTX 4090 | int8 | 9 | 0.21 | N | - | ru | 7.5 | 268.5 | 5614.6 | 54.69 | 43.75 |
+| 238 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.02 | Y | 22 | ru | 3.5 | 101.5 | 5000.0 | 55.29 | 49.06 |
+| 239 | faster-whisper | large-v3 | RTX 4090 | float32 | 1 | 0.35 | Y | 1 | ru | 10.7 | 78.4 | 8880.0 | 55.29 | 49.06 |
+| 240 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.34 | Y | 30 | ru | 4.2 | 1.9 | 1435.0 | 55.29 | 49.06 |
+| 241 | faster-whisper | medium | RTX 4090 | float32 | 4 | 0.30 | Y | 23 | ru | 5.1 | 30.4 | 1465.4 | 55.29 | 46.34 |
+| 242 | faster-whisper | medium | RTX 4090 | float32 | 5 | 0.30 | Y | 26 | ru | 5.2 | -45.9 | 1470.9 | 55.29 | 46.34 |
+| 243 | faster-whisper | large-v3 | RTX 4090 | float16 | 3 | 0.17 | Y | 15 | ru | 4.2 | 1.9 | 1518.8 | 55.29 | 49.06 |
+| 244 | faster-whisper | medium | RTX 4090 | float32 | 4 | 0.43 | Y | 27 | ru | 5.2 | -45.9 | 1472.9 | 55.29 | 46.34 |
+| 245 | faster-whisper | large-v3 | RTX 4090 | float16 | 5 | 0.38 | Y | 25 | ru | 4.2 | 1.9 | 1521.0 | 55.29 | 49.06 |
+| 246 | faster-whisper | medium | RTX 4090 | float32 | 6 | 0.33 | N | 14 | ru | 5.0 | -45.9 | 1486.7 | 55.29 | 46.34 |
+| 247 | faster-whisper | medium | RTX 4090 | int8 | 3 | 0.38 | N | 32 | ru | 4.1 | 513.1 | 3351.0 | 55.44 | 46.15 |
+| 248 | faster-whisper | medium | RTX 4090 | int8 | 5 | 0.11 | N | 7 | ru | 3.6 | 0.7 | 3358.8 | 55.44 | 46.15 |
+| 249 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.00 | N | 12 | ru | 3.5 | 0.9 | 1214.1 | 55.44 | 50.23 |
+| 250 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.01 | N | 12 | ru | 3.4 | 3.1 | 1217.2 | 55.44 | 50.23 |
+| 251 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.13 | N | 10 | ru | 3.6 | 5.6 | 1222.8 | 55.44 | 50.23 |
+| 252 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.00 | N | 21 | ru | 3.5 | 0.4 | 1222.9 | 55.44 | 50.23 |
+| 253 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 4 | 0.22 | N | 8 | ru | 3.5 | -0.0 | 1222.9 | 55.44 | 50.23 |
+| 254 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.09 | N | 16 | ru | 3.5 | 0.8 | 1223.8 | 55.44 | 50.23 |
+| 255 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 4 | 0.35 | N | 17 | ru | 3.6 | -0.4 | 1223.3 | 55.44 | 50.23 |
+| 256 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.13 | N | 7 | ru | 3.8 | 0.4 | 1223.7 | 55.44 | 50.23 |
+| 257 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.26 | N | 16 | ru | 3.6 | 0.4 | 1296.9 | 55.44 | 50.23 |
+| 258 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.02 | N | 12 | ru | 3.7 | -0.4 | 1296.5 | 55.44 | 50.23 |
+| 259 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.06 | N | 7 | ru | 3.7 | 196.5 | 1493.0 | 55.44 | 50.23 |
+| 260 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 7 | 0.03 | N | 13 | ru | 3.8 | -196.5 | 1296.5 | 55.44 | 50.23 |
+| 261 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 9 | 0.50 | N | 21 | ru | 3.6 | 0.4 | 1296.9 | 55.44 | 50.23 |
+| 262 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 10 | 0.00 | N | 10 | ru | 3.9 | -0.4 | 1296.5 | 55.44 | 50.23 |
+| 263 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.17 | N | 6 | ru | 3.7 | 0.4 | 1303.4 | 55.44 | 51.02 |
+| 264 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 3 | 0.05 | N | 25 | ru | 3.8 | -0.4 | 1303.0 | 55.44 | 50.23 |
+| 265 | faster-whisper | medium | RTX 4090 | int8 | 7 | 0.34 | Y | 30 | ru | 4.0 | -38.6 | 1482.4 | 55.44 | 46.15 |
+| 266 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.04 | N | - | ru | 7.2 | 0.0 | 9006.8 | 55.44 | 47.94 |
+| 267 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.06 | N | - | ru | 7.4 | 268.6 | 5614.7 | 55.74 | 48.52 |
+| 268 | openai | small | RTX 4090 | int8 | 3 | 0.24 | N | - | ru | 15.8 | 1636.3 | 1684.6 | 55.89 | 35.56 |
+| 269 | openai | large-v3-turbo | RTX 4090 | int8 | 9 | 0.04 | N | - | ru | 7.0 | -318.6 | 5346.1 | 55.89 | 48.63 |
+| 270 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.08 | N | - | ru | 7.3 | 0.0 | 9399.6 | 55.89 | 48.87 |
+| 271 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.20 | N | - | ru | 7.3 | 0.3 | 9410.2 | 56.04 | 49.33 |
+| 272 | openai | small | RTX 4090 | float16 | 4 | 0.13 | N | - | ru | 14.2 | 0.0 | 2754.9 | 56.18 | 39.67 |
+| 273 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 5 | 0.08 | Y | 4 | ru | 4.2 | 1120.5 | 1165.4 | 56.18 | 51.10 |
+| 274 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 2 | 0.18 | Y | 13 | ru | 2.6 | 51.7 | 1240.4 | 56.18 | 51.10 |
+| 275 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 6 | 0.39 | Y | 4 | ru | 4.2 | 84.5 | 4962.0 | 56.18 | 51.10 |
+| 276 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 6 | 0.42 | N | 3 | ru | 3.8 | -11.2 | 5341.9 | 56.18 | 51.10 |
+| 277 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.45 | N | 32 | ru | 2.0 | 5.2 | 4972.8 | 56.18 | 51.10 |
+| 278 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 7 | 0.29 | N | 32 | ru | 2.3 | 5.1 | 4977.9 | 56.18 | 51.10 |
+| 279 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 1 | 0.05 | Y | 22 | ru | 4.2 | 1118.8 | 1167.7 | 56.18 | 51.10 |
+| 280 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.18 | Y | 25 | ru | 2.6 | 51.5 | 1239.9 | 56.18 | 51.10 |
+| 281 | faster-whisper | large-v3-turbo | RTX 4090 | float16 | 6 | 0.30 | Y | 30 | ru | 2.6 | -0.6 | 1239.2 | 56.18 | 51.10 |
+| 282 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 10 | 0.21 | N | 1 | ru | 5.6 | 72.8 | 1296.5 | 56.18 | 51.10 |
+| 283 | faster-whisper | large-v3-turbo | RTX 4090 | float32 | 7 | 0.11 | N | 18 | ru | 4.5 | 6.5 | 1303.0 | 56.18 | 51.10 |
+| 284 | faster-whisper | large-v3-turbo | RTX 4090 | int8 | 8 | 0.13 | N | - | ru | 4.5 | -0.3 | 1222.6 | 56.48 | 49.33 |
+| 285 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.49 | N | - | ru | 8.3 | 301.7 | 5369.3 | 56.63 | 49.17 |
+| 286 | faster-whisper | medium | RTX 4090 | int8 | 8 | 0.09 | Y | 6 | ru | 4.0 | 4.4 | 9268.0 | 56.93 | 47.05 |
+| 287 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.46 | N | - | ru | 8.8 | 2418.6 | 5048.8 | 56.93 | 49.61 |
+| 288 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.07 | N | - | ru | 7.4 | 0.0 | 9399.3 | 58.12 | 50.07 |
+| 289 | openai | large-v3-turbo | RTX 4090 | int8 | 8 | 0.23 | N | - | ru | 7.5 | 0.3 | 9409.7 | 58.57 | 50.91 |
+| 290 | faster-whisper | large-v3 | RTX 4090 | int8 | 4 | 0.06 | Y | 27 | ru | 5.2 | 13.7 | 8267.3 | 58.72 | 52.79 |
+| 291 | faster-whisper | large-v3 | RTX 4090 | int8 | 10 | 0.08 | N | 18 | ru | 5.1 | 5.5 | 8801.4 | 58.72 | 52.79 |
+| 292 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.24 | N | - | ru | 7.2 | 34.2 | 5649.0 | 58.72 | 51.57 |
+| 293 | openai | large-v3 | RTX 4090 | int8 | 9 | 0.49 | N | - | ru | 22.5 | 0.0 | 8880.0 | 59.02 | 49.33 |
+| 294 | openai | large-v3-turbo | RTX 4090 | float32 | 1 | 0.44 | N | - | ru | 9.8 | 1549.9 | 5011.3 | 59.31 | 52.82 |
+| 295 | openai | large-v3-turbo | RTX 4090 | float32 | 9 | 0.23 | N | - | ru | 7.2 | 9.4 | 5624.0 | 59.61 | 51.35 |
+| 296 | openai | large-v3-turbo | RTX 4090 | float32 | 10 | 0.03 | N | - | ru | 6.9 | 0.0 | 9399.6 | 59.91 | 54.59 |
+| 297 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.45 | N | - | ru | 20.8 | 134.9 | 9545.1 | 61.70 | 55.16 |
+| 298 | openai | large-v3-turbo | RTX 4090 | int8 | 10 | 0.44 | N | - | ru | 6.6 | 0.0 | 9399.6 | 62.00 | 53.80 |
+| 299 | openai | large-v3 | RTX 4090 | float32 | 5 | 0.48 | N | - | ru | 17.9 | 3.3 | 8883.3 | 62.15 | 53.88 |
+| 300 | openai | base | RTX 4090 | float32 | 9 | 0.06 | N | - | ru | 6.3 | 4.4 | 9404.6 | 62.30 | 35.37 |
+| 301 | faster-whisper | small | RTX 4090 | float32 | 4 | 0.13 | N | 2 | ru | 3.5 | 1028.9 | 2712.9 | 62.74 | 53.58 |
+| 302 | openai | small | RTX 4090 | float16 | 7 | 0.39 | N | - | ru | 13.8 | 0.0 | 2751.1 | 62.89 | 37.76 |
+| 303 | faster-whisper | small | RTX 4090 | float16 | 3 | 0.39 | N | 31 | ru | 1.8 | 3.4 | 2754.4 | 62.89 | 53.58 |
+| 304 | faster-whisper | small | RTX 4090 | float16 | 4 | 0.31 | Y | 26 | ru | 1.8 | 0.2 | 1431.2 | 62.89 | 53.58 |
+| 305 | faster-whisper | small | RTX 4090 | float16 | 6 | 0.30 | Y | 20 | ru | 1.6 | 0.0 | 1432.8 | 62.89 | 53.58 |
+| 306 | faster-whisper | small | RTX 4090 | float16 | 6 | 0.33 | Y | 29 | ru | 1.6 | 0.0 | 1516.8 | 62.89 | 53.58 |
+| 307 | faster-whisper | small | RTX 4090 | float16 | 6 | 0.30 | Y | 31 | ru | 1.6 | 0.0 | 1518.9 | 62.89 | 53.58 |
+| 308 | faster-whisper | small | RTX 4090 | float16 | 5 | 0.31 | Y | 22 | ru | 1.6 | 0.0 | 1532.6 | 62.89 | 53.58 |
+| 309 | faster-whisper | small | RTX 4090 | int8 | 7 | 0.26 | N | 17 | ru | 2.2 | 15.3 | 9263.6 | 63.04 | 53.77 |
+| 310 | faster-whisper | small | RTX 4090 | int8 | 2 | 0.30 | N | 15 | ru | 2.4 | 28.0 | 2751.1 | 63.04 | 53.77 |
+| 311 | faster-whisper | small | RTX 4090 | int8 | 2 | 0.37 | Y | 2 | ru | 2.8 | 0.4 | 2754.9 | 63.34 | 53.99 |
+| 312 | openai | large-v3 | RTX 4090 | float16 | 7 | 0.41 | N | - | ru | 23.0 | 4847.5 | 4897.0 | 65.13 | 61.31 |
+| 313 | openai | large-v3 | RTX 4090 | int8 | 10 | 0.41 | N | - | ru | 19.7 | 0.0 | 8883.3 | 65.28 | 58.40 |
+| 314 | openai | large-v3 | RTX 4090 | int8 | 1 | 0.11 | N | - | ru | 18.9 | 0.6 | 9400.2 | 65.72 | 60.55 |
+| 315 | openai | small | RTX 4090 | int8 | 10 | 0.21 | N | - | ru | 14.7 | 2.6 | 9270.5 | 65.87 | 38.74 |
+| 316 | openai | small | RTX 4090 | float32 | 10 | 0.14 | N | - | ru | 12.7 | 8.9 | 2722.8 | 67.81 | 44.60 |
+| 317 | openai | large-v3 | RTX 4090 | float16 | 3 | 0.04 | Y | - | ru | 47.0 | 7272.5 | 8665.2 | 68.55 | 51.32 |
+| 318 | openai | base | RTX 4090 | float32 | 5 | 0.23 | Y | - | ru | 7.0 | -2.4 | 2078.7 | 68.55 | 37.33 |
+| 319 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.08 | N | - | ru | 19.9 | 3415.9 | 9005.7 | 69.15 | 62.56 |
+| 320 | openai | base | RTX 4090 | float32 | 5 | 0.27 | Y | - | ru | 6.8 | 132.4 | 2079.0 | 69.45 | 44.02 |
+| 321 | openai | large-v3 | RTX 4090 | int8 | 2 | 0.35 | N | - | ru | 17.4 | 0.0 | 8880.0 | 69.90 | 63.49 |
+| 322 | openai | small | RTX 4090 | int8 | 6 | 0.03 | Y | - | ru | 16.5 | 0.7 | 2755.6 | 70.04 | 38.63 |
+| 323 | faster-whisper | base | RTX 4090 | float32 | 9 | 0.49 | Y | 19 | ru | 2.4 | 313.0 | 1740.2 | 70.49 | 58.54 |
+| 324 | openai | base | RTX 4090 | float16 | 8 | 0.49 | Y | - | ru | 8.7 | 137.2 | 1878.1 | 70.49 | 41.38 |
+| 325 | faster-whisper | base | RTX 4090 | float32 | 2 | 0.38 | Y | 21 | ru | 2.1 | 27.7 | 1907.3 | 70.49 | 58.54 |
+| 326 | openai | base | RTX 4090 | int8 | 10 | 0.43 | N | - | ru | 8.7 | 130.0 | 2069.7 | 71.09 | 39.37 |
+| 327 | openai | large-v3-turbo | RTX 4090 | float16 | 3 | 0.40 | Y | - | ru | 12.6 | 0.0 | 4967.6 | 71.54 | 41.27 |
+| 328 | faster-whisper | base | RTX 4090 | int8 | 3 | 0.47 | N | 32 | ru | 1.8 | 0.1 | 1907.4 | 72.73 | 60.55 |
+| 329 | faster-whisper | base | RTX 4090 | int8 | 10 | 0.35 | N | 28 | ru | 1.9 | -18.2 | 1915.0 | 72.73 | 60.55 |
+| 330 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.11 | N | 31 | ru | 1.6 | 32.3 | 1939.7 | 73.77 | 60.11 |
+| 331 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.10 | Y | 25 | ru | 1.6 | 0.7 | 1915.7 | 73.77 | 60.11 |
+| 332 | faster-whisper | base | RTX 4090 | float16 | 8 | 0.15 | Y | 17 | ru | 1.6 | 30.9 | 1946.6 | 73.77 | 60.11 |
+| 333 | faster-whisper | base | RTX 4090 | float16 | 7 | 0.32 | Y | 28 | ru | 1.4 | 0.0 | 1432.6 | 73.77 | 60.11 |
+| 334 | faster-whisper | base | RTX 4090 | float16 | 3 | 0.29 | Y | 25 | ru | 1.5 | 49.1 | 1514.5 | 73.77 | 60.11 |
+| 335 | faster-whisper | base | RTX 4090 | float16 | 7 | 0.30 | Y | 29 | ru | 2.6 | 0.0 | 1518.8 | 73.77 | 60.11 |
+| 336 | faster-whisper | base | RTX 4090 | float16 | 5 | 0.34 | Y | 26 | ru | 1.4 | 0.0 | 1521.0 | 73.77 | 60.11 |
+| 337 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.40 | Y | 1 | ru | 1.9 | -47.3 | 1150.7 | 74.37 | 58.94 |
+| 338 | faster-whisper | tiny | RTX 4090 | int8 | 5 | 0.50 | Y | 1 | ru | 1.8 | -40.4 | 1890.1 | 74.37 | 58.94 |
+| 339 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.40 | Y | 5 | ru | 1.5 | 0.0 | 1940.9 | 77.50 | 61.29 |
+| 340 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.39 | Y | 4 | ru | 1.5 | 0.0 | 1968.1 | 77.50 | 61.31 |
+| 341 | faster-whisper | tiny | RTX 4090 | float32 | 4 | 0.42 | Y | 3 | ru | 1.6 | 2.8 | 1943.7 | 77.65 | 62.16 |
+| 342 | faster-whisper | tiny | RTX 4090 | float32 | 1 | 0.25 | Y | 26 | ru | 1.4 | 0.0 | 1968.1 | 77.65 | 62.16 |
+| 343 | openai | tiny | RTX 4090 | float32 | 3 | 0.42 | N | - | ru | 4.8 | 0.0 | 9407.7 | 78.69 | 52.49 |
+| 344 | faster-whisper | tiny | RTX 4090 | int8 | 6 | 0.45 | N | 20 | ru | 3.0 | 1130.8 | 1175.3 | 80.18 | 62.70 |
+| 345 | faster-whisper | tiny | RTX 4090 | int8 | 1 | 0.31 | N | 12 | ru | 1.6 | 2.4 | 1884.7 | 80.18 | 62.70 |
+| 346 | faster-whisper | tiny | RTX 4090 | int8 | 10 | 0.39 | Y | 8 | ru | 1.5 | 3.2 | 1894.8 | 80.18 | 62.70 |
+| 347 | faster-whisper | tiny | RTX 4090 | int8 | 4 | 0.28 | Y | 6 | ru | 1.5 | 46.1 | 1940.9 | 80.18 | 62.70 |
+| 348 | faster-whisper | tiny | RTX 4090 | int8 | 6 | 0.21 | Y | 11 | ru | 1.4 | 0.0 | 1940.9 | 80.18 | 62.70 |
+| 349 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.33 | Y | 10 | ru | 1.5 | 47.1 | 1968.1 | 80.18 | 62.70 |
+| 350 | faster-whisper | tiny | RTX 4090 | int8 | 3 | 0.39 | Y | 3 | ru | 1.6 | 0.0 | 1968.1 | 80.18 | 62.70 |
+| 351 | openai | base | RTX 4090 | float32 | 7 | 0.00 | N | - | ru | 9.1 | 1379.6 | 1424.2 | 80.33 | 42.74 |
+| 352 | faster-whisper | tiny | RTX 4090 | float16 | 8 | 0.19 | Y | 17 | ru | 1.3 | 42.7 | 1927.4 | 83.46 | 66.92 |
+| 353 | faster-whisper | tiny | RTX 4090 | float16 | 2 | 0.02 | N | 23 | ru | 1.3 | 3.1 | 1930.5 | 83.46 | 66.92 |
+| 354 | faster-whisper | tiny | RTX 4090 | float16 | 2 | 0.12 | N | 32 | ru | 1.4 | 0.0 | 1930.5 | 83.46 | 66.92 |
+| 355 | faster-whisper | tiny | RTX 4090 | float16 | 4 | 0.20 | Y | 31 | ru | 1.3 | 0.1 | 1432.8 | 83.46 | 66.92 |
+| 356 | faster-whisper | tiny | RTX 4090 | float16 | 4 | 0.37 | Y | 32 | ru | 1.3 | 0.0 | 1516.8 | 83.46 | 66.92 |
+| 357 | faster-whisper | tiny | RTX 4090 | float16 | 5 | 0.33 | Y | 29 | ru | 1.3 | 0.0 | 1518.9 | 83.46 | 66.92 |
+| 358 | faster-whisper | tiny | RTX 4090 | float16 | 5 | 0.29 | Y | 28 | ru | 1.3 | 0.4 | 1533.8 | 83.46 | 66.92 |
+| 359 | openai | tiny | RTX 4090 | float16 | 8 | 0.43 | Y | - | ru | 6.2 | 26.7 | 1882.3 | 87.78 | 51.05 |
+| 360 | openai | base | RTX 4090 | float32 | 5 | 0.29 | Y | - | ru | 11.1 | 160.1 | 2080.8 | 90.01 | 107.73 |
+| 361 | openai | large-v3 | RTX 4090 | float16 | 8 | 0.22 | Y | - | ru | 44.2 | 528.6 | 8795.9 | 92.25 | 82.25 |
+| 362 | faster-whisper | tiny | RTX 4090 | int8 | 5 | 0.49 | Y | - | ru | 8.1 | 0.0 | 1891.6 | 98.06 | 86.90 |
+| 363 | openai | tiny | RTX 4090 | float16 | 8 | 0.04 | Y | - | ru | 3.8 | 72.4 | 1855.6 | 100.00 | 85.92 |
+| 364 | openai | tiny | RTX 4090 | int8 | 7 | 0.50 | N | - | ru | 5.7 | -22.8 | 1920.9 | 100.89 | 59.19 |
+| 365 | openai | tiny | RTX 4090 | float32 | 4 | 0.35 | Y | - | ru | 5.8 | 631.9 | 1782.5 | 146.50 | 77.32 |
+| 366 | faster-whisper | tiny | RTX 4090 | int8 | 5 | 0.48 | Y | - | ru | 7.9 | 1.5 | 1891.6 | 155.14 | 94.99 |
+| 367 | openai | large-v3 | RTX 4090 | int8 | 8 | 0.34 | Y | - | ru | 52.4 | 0.0 | 8883.3 | 166.02 | 115.46 |
+| 368 | openai | tiny | RTX 4090 | float32 | 2 | 0.34 | Y | - | ru | 6.1 | 0.0 | 1855.6 | 167.51 | 66.38 |
+| 369 | openai | large-v3 | RTX 4090 | int8 | 6 | 0.17 | Y | - | ru | 89.6 | 3250.8 | 8252.7 | 343.82 | 273.97 |
 
 ## Transcription Results
 
@@ -400,6 +423,26 @@
 
 ### 3. openai / large-v3-turbo
 
+- **ID:** `05e9596c486f`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.79s
+- **Memory:** Δ 0.0 MB, peak 9399.6 MB
+- **Beam size:** 1
+- **Temperature:** 0.11
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 30.55%
+- **CER:** 20.75%
+- **Timestamp:** 2026-01-07T15:31:09.201114+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина ну да вот тут продаем а так на дитрополе на 2 тысяч рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет по 3 поэтому просто подскажите как вам посмотреть места чтобы подвигали телом или чтобы вы посидели и потанцевали а что прям на сцене сидеть можно чтобы дитер Боулен выступал и я сидел прямо на сцене по двостаточке могу сделать вам места первый ряд бортера а еще ближе получится? нет так а дитер Боулен это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож. Лицо. А, ну лицо... Маршал Жуков. Ах, не-не. Это другой, который... Помните, у него в рекламе этот шеллорс еще снимался? Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините пожалуйста, в хендом шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, вот, сама идея искать на Дмитрия более награк вам. Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить по 60 на 100 тысяч рублей. Ну это ж кто там? Два человека придет? Не, ну почему? Гал будет полный, это будет в Крокус Сити Холл Не, ничего себе А есть еще... А вы еще на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? Не, не, не Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапа нету, и все такового Ну и правильно, это какое-то говно, честно говоря стендапы и прямо в чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечает на вопросы. Не пройдет? Это программа 28 марта в Московском дворце молодежи на ВКРУ. Очень интересно. Там по местам, хотя 2000 рублей до 12. Одинте вам паром, я сделаю, а вы планируете уже сойте, а так ждете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. Как хотите, я просто... Моя семья сейчас сделаю. Но 4 места не буду делать. Делаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это же... Это же все от Господа Бога зависит здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно... Может, вы мне просто скинете смс-сообщение? Нет, зачем? А только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Это Ефремов. У него распитание на год вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 4. openai / large-v3-turbo
+
 - **ID:** `a811c49143b0`
 - **Language:** ru
 - **Device:** cuda (NVIDIA GeForce RTX 4090)
@@ -418,7 +461,7 @@
 
 > В Крокус Сити Холле Зал таком? Так, еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, но Толланд Дандерфтен, вот он, Токио Я правильно понимаю? Все верно Акипинчайен, Вера Вера, Его Мы, организаторы, зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как на Пугачеву сейчас билеты стоят по 100, по 150 тысяч рублей Ну, Пугачеву, извините меня, какая величина? Ну да, вот уже ее продаем А так, на Дитер Боуланом места идут от 2 тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30-со Поэтому, просто подскажите, как вам посмотреть места Как что-то подвигли телом Ну или, хоть что-то, вы посидели и потанцевали А что, прям на сцене сидеть можно? Чтобы Дитер Боулан выступал и я сидел прямо на сцене Ну, по 20-соточке могу сделать вам места, первый ряд портера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну, с волосами Получается по астерикции нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо, да Маршал Жуков Ах, не-не, это другой, который помни у него в рекламе Ходдон Шолдерс еще снимался Ой, да там кто только не снимался Ну да Там и Юрий Дудь, извините пожалуйста В Ходдон Шолдерсе И муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо, знаете, Алексей Сергеевич я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот, самая идея искать на Дитер Полина как вам? Самая идея дурацкая честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А Дитя я вас отправлю на его спектакль Крися А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальное так сказать Но он будет закрывать этот спектакль И билеты будут стоить по 60, а то есть 100 тысяч рублей О, ну это ж кто это? Два человека придет? Не, ну почему? Гал будет полный, это будет круглый сити холл Ничего себе А есть еще... А вы еще, вы на все билеты? А еще какой-то стендап был в Крокос Сити Холле Такое есть у вас? Не, не, не Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу Но стендапа нету именно такового Ну и правильно, это какое-то говно, честно говоря Стендап это И Бремов есть Вот И Бремов есть Он вам по духу будет У него, кстати, вот новая программа Господин, хороший вопрос, да есть Где он там в разных, ну, то там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков И в конце даже, если будет немного под шофе, отвечает на вопросы А И пройдем, эта программа 28 марта в Мостовском дворце молодежи на Вкратинске Очень интересно Но Там по местам, кстати, 2000 рублей до 12, а А хотите вам пару мест сделаю, а вы планируете уже свои те отопнете Да вот я просто не могу планировать ничего наперед, потому что Ну, я сейчас лечусь Поэтому не знаю, когда смогу освободиться А, так хотите я просто там, все семьи, я сделаю Тогда, но 4 места не буду делать, сделаю 2 места Я буду, да, дополнительный стимул, чтобы вы побрали здоровье Да как это, что, это все от Господа Бога зависит здоровье-то Я то, от чего здесь, я то никак уже не решаю Поэтому, возможно, может вы мне просто скинете смс-сообщения? Нет, зачем А, только вам читать мои сообщения Давайте я просто пару мест сделаю хороших просто, ну это, это, это, это Ефремов У него распитание на год вперед расписано, а это новая программа, вопрос-то есть А там же надо деньги, получается Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, не, ну все что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч, я понимаю Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну тогда, я думаю, до новых встреч Да, я поясню, я тебя наберу вам, да, да Обязательно Потому что нового созвона со мной не дождались Дитер Боулан Дитер Боулан? Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан
 
-### 4. openai / large-v3-turbo
+### 5. openai / large-v3-turbo
 
 - **ID:** `18e26a6eee49`
 - **Language:** ru
@@ -438,7 +481,7 @@
 
 > Крокус Сити Холл В Крокус Сити Холле, зал знаком Так, еще разок В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да, но дом из Дандерфтен, вот он в Токинг Я правильно понимаю? Все верно А кипенчайен Веравера Юго Мы, организаторы, зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как на Пугачеву сейчас билеты стоит По 100 по 150 тысяч рублей Ну, Пугачеву, извините меня, какая величина? Ну да, вот уже ее продаем А так, на Дитер Боулану места идут от 2 тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет в 3 тысячу Поэтому, просто подскажите, как вам посмотреть места Как-то подвигли телом Ну или, чтобы вы посидели и потанцевали А что, прям на сцене сидеть, можно, чтобы Дитер Боулан выступал И я сидел, прям вот, типа, на сцене? Ну, под 20-чки могу сделать вам места первый ряд портера А еще ближе получится? Не Так А Дитер Боулан — это который из них? Ну, он с волосами Ну, вот сейчас по астерике все нормально вроде стал А волосами был... с белыми волосами? Как и Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо Маршал Жуков Ахэ, не-не-не, это другой, который, помните, у него в рекламе Head and Shoulders еще снимался? Ой, да там кто только не снимался Ну, да А так вот, да Там и Юрий Дудь, извините, пожалуйста, в Head and Shoulders И муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко, если что Ну, хорошо, знаете все... Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну, а так вот, у нас самая идея, если они на Дитер Полина, как вам подумал? Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальное, так сказать Но он будет закрывать этот спектакль И билеты будут стоить под 60, а то есть 100 тысяч рублей Ооо, ну это ж кто это? Два человека придет? Не, ну почему? Гал будет полная, это будет круглый сити холл Ничего себе А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокос сити холле, такой есть у вас? Не, не, не, не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и ничего такого Ну и правильно, это какое-то говно, честно говоря Стендапы это И Бремов есть Вот И Бремов есть Он вам по духу может У него, кстати, идет новая программа Господин, хороший вопрос-то есть Где он там в разных, ну, то там, ну, осуждает там политикам, чиновникам, артистам, друзьям, алкоголикам И в конце даже, если будет немного под шофе, отвечает на вопросы И мы пройдем, эта программа 28 марта в Мосслужском дворце молодежи на Вкрате сквист Очень интересно Там по местам, кстати, 2000 рублей до 12 А едите, вам пару, я сделаю, а вы планируете уже сойте, а так тёте Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться Как хотите, я просто, там, где семья сейчас делают тогда, но 4 места не буду делать, сделаю 2 места, и я буду, да, дополнительный стимул, чтобы вы поправили здоровье Да как это ж, это ж всё от Господа Бога зависит здоровье-то, я-то, от чего здесь, я-то никак уже не решаю Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, ну зачем, а только вам читать мои сообщения Давайте я просто пару мест делаю хороших, просто, ну это, это, это Ефремов У него распитание на год вперёд расписано, а эта новая программа, вопросы-то есть А там же надо деньги, получается, деньги платить можно? А? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно Ну, тогда, наверное, ничего не получится Ага, не, ну всё, что стоит, внимание, стоит немного денег, как в Пугачёву, где билеты стоят по 200 тысяч, сейчас я понимаю Ну, Пугачёву, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну тогда, я думаю, до новых встреч Да, я понял, если что, наберу вам, да, да, да, да Обязательно Потому что, нового созвона со мной не дождались О, дитер Боулан Дитер Боулан? Дитер Боулан? Дитер Боулан? Дитер Боулан
 
-### 5. openai / large-v3-turbo
+### 6. openai / large-v3-turbo
 
 - **ID:** `d6525108d7c3`
 - **Language:** ru
@@ -458,7 +501,7 @@
 
 > Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Но дом в Дандерфтен Лоден Токинг Все. Ямахо Ямасо. Я правильно понимаю? Все верно Акипинчан Вера Вера Юго Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как на Пугачёва сейчас билет стоит по 100 по 150 тысяч рублей Ну Пугачёв извините меня Вели какая величина Ну да А так на Дитер Боулене места идут от 2000 рублей И до 20000 уже в лучших местах портера А танцевальный портер идет по 3 листов Поэтому просто подскажите Как вам посмотреть места Как бы подвигали телом Ну или что бы вы посидели и потанцевали А чтоб прямо на сцене сидеть можно Чтобы Дитер Боулен выступал И я сидел прямо на сцене Ну по двостаточке могу сделать вам места Первый ряд портера А еще ближе получится? Не Так А Дитер Боулен это который из них? Ну с волосами Получат по астерикции нормальный вроде стал А волосами был С белыми волосами? Как Александр Маршал? Вот такой? Не не не Какой Маршал? Нет похож лицо А но лицо Маршал Жуков Ахэ Не не это Это другой который Помните у него в рекламе Ходдом Шолдерс еще снимался? Ой да там кто только не снимался Ну да Там и Юрий Дудь извините пожалуйста В ходдом Шолдерсе И муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо знаете все Алексей Сергеевич я как понимаю Я очень сильно люблю это все дело Ну а так вот у нас самая идея Сходить на Дитера Боулена как вам? Самая идея дурацкая честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль в котором он играет Я знаю да он его любит Он его 15 лет играет уже Ну да просто этим летом будет прощальное Так сказать но будет закрывать этот спектакль И билеты будут стоить 60 А то и 100 тысяч рублей О ну это ж кто там 2 человека придет? Не ну почему Голос будет полный это будет в Крокус Сити Холл Ничего себе А есть еще А вы еще на все билеты? А еще какой-то стендап был в Крокус Сити Холле Такое есть у вас? Не не не У нас есть мероприятия балет, мюзикл Там разное шоу Но стендапа нету и ничего такового Ну и правильно Это какое-то говно честно говоря Стендап это И Бремов есть Вот И Бремов есть Он вам по духу может У него кстати идет новая программа Господин хороший вопрос то есть Где он там в разных Ну то там Ну обсуждает там Политиков чиновников Артистов друзей Алкоголиков И в конце даже Если будет немного под шофе Отвечает на вопросы Не пройдем Это программа 28 марта В Москву В Москве В Москве Очень интересно Но В этом месяце Дать а двух тысяч рублей до двенадцати А хотите вам пару Я сделаю А вы планируете уже Свои эти отопнете Да вот я просто не могу планировать Ничего наперед Потому что Я сейчас лечусь Поэтому не знаю когда Смогу освободиться Как хотите я просто Там Все семьи что-то сделаю Но Четыре места не буду делать Делаю два места Я буду Дополнительный стимул Чтобы вы Побрали здоровье А это не получится Да Это же все От господа бога зависит здоровье Я то От чего здесь Я то никак уже Не решаю Поэтому возможно Может вы мне просто Скинете СМС сообщения Нет Зачем Я буду вам читать мои сообщения Давайте я просто пару мер сделаю Хороших Просто Ну это Это Это Ефремов У него Распитание На год вперед Расписано А это новая программа А там же надо Деньги Получается Деньги платить можно? Деньги А? Деньги надо заплатить же еще Да получается Ну да конечно Но тогда Наверное ничего не получится Ага Не ну все что стоит Немного Стоит немного и денег Пугачево Где билеты стоят по 200 тысяч Ну Пугачево опять таки Мы с вами уже обсуждали Это величина такая Что извините пожалуйста Ну да Ну тогда я думаю До новых встреч Да я понял Если что Я наберу вам Обязательно Потому что Нового созвона Со мной не дождались Да Наши Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры Субтитры
 
-### 6. openai / large-v3-turbo
+### 7. openai / large-v3-turbo
 
 - **ID:** `ac00d681fc87`
 - **Language:** ru
@@ -478,7 +521,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Лоден Токинг Ямахо Ямасо, я правильно понимаю? Все верно Акипинчан, вера-вера, you go Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок, не как на Пугачеву Сейчас билет стоит по 100-150 тысяч рублей Ну Пугачеву, извините меня Какая величина? Ну да, вот туда А так на Дитер Боулан Места идут от 2000 рублей И до 20000 уже в лучших местах партера А танцевальный партер идет по 30-100 Поэтому Просто подскажите, как вам посмотреть места Как чтобы вы двигали телом Ну или Чтобы вы посидели и потанцевали А что, прям на сцене сидеть можно? Чтобы Дитер Боулан выступал И я сидел прямо на сцене Ну по 20-м могу сделать вам места Первый ряд партера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну с волосами Получается по астерикции нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо Маршал Жуков Ахэ, не-не-не Это другой, который помните у него в рекламе Ходдон Шолдерс еще снимался Ой, да там кто только не снимался Ну да А так вот Там и Юрий Дудь, извините пожалуйста В Ходдон Шолдерсе И муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо, знаете все Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну а так вот у вас самая идея искать На Дитера Болина как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А Дитя я вас отправлю на его спектакль Крися А вот это не нужно? Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная И так сказать, но он будет закрывать этот спектакль И билеты будут стоить 2060, а то и 100 тысяч рублей Ооо, ну это ж кто это? Два человека придет? Не, ну почему? Гол будет полный, это будет круглый сити холл Ничего себе А есть еще... А вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле Такое есть у вас? Не, не, не, не У нас есть мероприятия Балет, мюзикл, там Разное шоу, но стендапов нету И ничего такого Ну и правильно, это какое-то говно, честно говоря Стендапы И Бремов есть Вот И Бремов есть Он вам по духу может У него, кстати, идет новая программа Господин Хороший вопрос-то есть Где он там в разных Ну то там Ну, обсуждает там политиков, чиновников Артистов, друзей, алкоголиков И в конце даже Если тебе будет немного под шофе Отвечает на вопросы А Не поройдем? Это программа 28 марта В Мостовском дворце молодежи на Вкратинской Очень интересно Но Там по металям, кстати, от 2000 рублей до 12 А хотите вам пару мест сделаю, а вы планируете уже свои отопнете? Да вот я просто не могу планировать ничего наперед Потому что Ну я сейчас лечусь Поэтому не знаю, когда смогу освободиться Ааа, так хотите я просто там Моя семья сейчас сделаю Но 4 места не буду делать Сделаю 2 места Я буду дополнительный стимул Чтобы вы Побрали здоровье А это не получится Да как это ж Это ж все от Господа Бога зависит здоровье-то Я то От чего здесь? Я то никак уже Не решаю Поэтому, возможно Может вы мне просто скинете Смс сообщение? Нет Зачем? А только вам читать мои сообщения Давайте я просто пару мест сделаю хороших Просто Ну это Это Это Ефремов У него раскидание На год вперед расписано А это Новая программа Вопрос-то есть А там же надо Деньги Получается Деньги платить можно? А? Деньги надо заплатить же еще, да? Получается мне сейчас Ну да, конечно Ну тогда Ничего не получится Ага Не, ну все что стоит внимание Стоит немного и денег Как в Пугачево Где билеты стоят по 200 тысяч Ну Пугачево опять-таки Мы с вами уже обсуждали Это величина такая Что Извините пожалуйста Ну да Ну тогда я думаю до новых встреч Да, я боюсь, что наберу вам Да Обязательно Потому что нового созвона со мной не дождались Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит Стоит
 
-### 7. openai / large-v3-turbo
+### 8. openai / large-v3-turbo
 
 - **ID:** `e75f5f5a053a`
 - **Language:** ru
@@ -498,7 +541,7 @@
 
 > Крокус Сити Холл Так ещё разок В Крокус Сити Холл? 14 марта Дитер Боулан Дитер Боулан? Да Ну Долландандер в Воден Токинг Всё Ямахо Ямасо я правильно понимаю? Окейпинчан, вера вера, you go. Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачеву сейчас билеты стоят по 100-10000 тысяч рублей. Ну, Пугачеву, извините меня, какая величина? Ну да, вот туда ее продаем. А так на Дитрополино места идут от 2000 рублей. И до 20 тысяч уже в лучших местах партера. а танцевальный портер идет по 30 дом поэтому просто подскажите как вам посмотреть места как бы подвигали телом ну или чтобы вы посидели и потанцевали а чтобы прям на сцене сидеть можно чтобы Дитер Боулан выступал и я сидел прямо на сцене ну по 20 могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулан это который из них? ну с волосами, ну вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами, как александр маршал, вот такой? не, не, не, какой маршал? нет, похож, лицо а, ну лицо, да, не, не ахэ, не, не, это другой, который помни, у него в рекламе этот шеллорд еще снимался ой, да там кто только не снимался ну да, а так вот, да Там и Юрий Дуть, извините пожалуйста в хэндом Шолдерсе и муж Заворотнюк, и кого там только не приглашают И даже Сергей Дружко, если что Ну хорошо знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ну а так вот самая идея искать, кстати, Дмитрий Дропойлин как вам? Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать. Ага. Один я его отправлю на его спектакль Кыся. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная такая новая. Будет закрывать этот спектакль и билеты будут стоить 60, а то и 100 тысяч рублей. О, ну это ж кто это? Два человека придет? а есть еще на все были это вы еще какой-то стендап был в крокус сити холли такое есть у вас но и правильно это будет говно честно говоря и прямо вот и время программа где он там в разно там но обсуждает нам политиков чиновников артистов друзья алкоголиков это программа очень интересно но да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю, когда смогу освободиться. Как хотите, я просто все семьи что-то сделаю, но четыре места не буду делать, сделаю два места, я буду дополнительный стимул, чтобы вы побрали здоровье. Да как это же? Это же все от Господа Бога зависит здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому возможно... Может вы мне просто скинете смс-сообщение? Нет, зачем? А только вам считать мои сообщения. Давай я просто пару мер сделаю хороших. Просто это Ефремов. У него расписание на год вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял. Если что, доберем. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 8. openai / large-v3-turbo
+### 9. openai / large-v3-turbo
 
 - **ID:** `e411e19fed34`
 - **Language:** ru
@@ -518,7 +561,7 @@
 
 > Крокус Сити Холл Так еще разок В Крокус Сити Холл Да 14 марта Дитер Боулан Да Долланд Сандарфтен Воден Токинг Яма-хо ямасо я правильно понимаю? все верно мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачеву сейчас билеты стоит по 100-150 тысяч рублей ну Пугачеву, извините меня какая величина? ну да вот туда продаем а так на Дитрополину места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера А танцевальный портер идет в 30 дом Поэтому просто подскажите, как вам посмотреть места Чтобы вы двигали телом, ну или чтобы вы посидели и потанцевали А чтобы прям на сцене сидеть, можно, чтобы Дитер Боулен выступал И я сидел прямо на сцене Ну, по двостаточке могу сделать вам места первый ряд портера А еще ближе получится? Нет Так, а Дитер Боулен это который из них? ну с волосами, ну вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами? как Александр Маршал? вот такой? не не не, какой Маршал? нет, похож лицо а, ну лицо да, Маршал Жуков ахэ, не не, это другой, который, помните, у него в рекламе этот шеллорс еще снимался? ой, да там кто только не снимался Там и Юрий Дуть, извините пожалуйста, в хэндом шолдерсе, и муж Заворотнюк, и кого там только не приглашают И даже Сергей Дружко, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага, ну а так вот вам самая идея искать на Дитера более награку Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Кыся? А вот это не нужно. Единственный спектакль, в котором он играет? Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная так сказать, но он будет закрывать этот спектакль, и билеты будут стоить в 60, а то и в 100 тысяч рублей. О, ну это ж кто? Там два человека придёт? Не, ну почему? Голос будет полный, это будет в Крокус Сити Холл Не, ну ничего себе А есть ещё... А так есть? А вы ещё, вы на всё билеты? А ещё какой-то стендап был в Крокус Сити Холле, такое есть у вас? Не, не, не, не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и ничего такового Ну и правильно, это какое-то говно, честно говоря. И Времов есть. Вот. И Времов есть. Он вам по духу может. У него, кстати, вот новая программа, господин, хороший вопрос ты есть. Где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если у тебя будет немного под шофе, отвечает на вопросы. очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться я сделаю четыре места не буду делать, сделаю два места, я буду добавить дополнительный стимул, чтобы вы поправили здоровье да как это ж от Господа Бога зависит здоровье-то. Я то от чего здесь? Я то никак уже не решаю поэтому возможно... Может вы мне просто скинете СМС-сообщение? не зачем или мы читать мои сообщения давайте я просто пару мер сделаю хороших просто но это это дефремов у него рассчитание на год вперед расписано а это новая программа вопрос и и а там же надо деньги получаются деньги платить деньги надо заплатить же еще до получать у меня конечно но тогда на ничего не получится Пугачёва, где билеты стоят по 200 тысяч. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, да. Ну, тогда, я думаю, до новых встреч. Да, я поясню, что наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. ДИТР БОУЛЕН
 
-### 9. openai / large-v3-turbo
+### 10. openai / large-v3-turbo
 
 - **ID:** `c442a3175283`
 - **Language:** ru
@@ -538,7 +581,7 @@
 
 > В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, но... Все, яма-хо, яма-со Я правильно понимаю? Все верно Окипичаем, вера-вера, you go Мы, организаторы, зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как на Пугачева сейчас билеты стоят по 100, по 150 тысяч рублей Ну, Пугачев, извините меня, какая величина? Ну да, вот тут ее продаем А так на Дитер Боуланом места идут от 2 тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30-стон Поэтому, просто подскажите, как вам посмотреть места Как что-то подвигали телом Ну, или, чтобы вы посидели и потанцевали А чтоб прямо на сцене сидеть можно? Чтобы Дитер Боулан выступал И я сидел вот, прямо на сцене Ну, по 20-ке могу сделать вам места Первый ряд портера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну, с волосами Получается, по астерикции нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет Какой Маршал? Нет, похож лицо А, ну лицо... да, нет, нет Маршал Жуков Ахэ, нет, нет, это другой, который в попке у него в рекламе хэддом шелдерс еще снимался Ой, да там кто только не снимался Ну да А так вот, да Там и Юрий Дуть, извините, пожалуйста в хэддом шелдерсе И муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко, если что Ну хорошо, знаете, все, Алексей Сергеевич, я как-то снимаю Я очень сильно люблю это все дело Ага Ну а так вот, вот, самая идея искать на Дитрополя, как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная, так сказать, ну, он будет закрывать этот спектакль И билеты будут стоить под 60, а то и 100 тысяч рублей О, ну это ж кто это? Два человека придет? Не, ну почему? Головой полный, это будет в Крокус Сити Холл Ничего себе А есть еще... а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Не-не-не Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и все такового Ну и правильно, это какое-то говно, честно говоря Стендапы И Времов есть Вот И Времов есть Он вам по духу будет У него, кстати, сойдет новая программа, господин, хороший вопрос-то есть Где он там в разных, ну, то там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков И в конце даже, если у тебя будет немного под шофе, отвечает на вопросы А Не поройдет, это программа 28 марта в Московском дворце молодежи на Вхронискве Очень интересно Там по местам, хотя, 2000 рублей до 12 А дите вам пару, я сделаю, а вы планируете уже сойте, отопнете? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться А, так хотите я просто там, все семьи, я сейчас делаю тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье Да как это, что, это ж все от Господа Бога зависит здоровье-то, я-то, от чего здесь? Я-то никак уже не решаю Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем? А, чтобы вам читать мои сообщения Давайте я просто пару мер сделаю хороших, просто, ну это, это, это Ефремов У него распитание на год вперед расписано, а это новая программа, вопрос-то есть А там же надо деньги, получается, деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, нет, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч, я понимаю? Ну Пугачево опять-таки мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну тогда, я думаю, до новых встреч Да, я поясню, что наберу вам, да, да Обязательно Потому что нового созвона со мной не дождались Адитер Боулан Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан Адитер Боулан
 
-### 10. openai / large-v3-turbo
+### 11. openai / large-v3-turbo
 
 - **ID:** `50b4a27402ba`
 - **Language:** ru
@@ -558,7 +601,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билет стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина ну да вот туда продаем а так на Дитропольеном места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-м поэтому просто подскажите, как вам посмотреть места чтобы поддвигали телом, ну или чтобы вы посидели и потанцевали а что бы прям на сцене сидеть можно, чтобы Дитер Боулен выступал, а я сидел вот на сцене? ну, по 20-м могу сделать вам места, первый ряд портера а еще ближе получится? нет так а Дитер Боулен это который из них? с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами, как Александр Маршал, вот такой? не-не-не, какой Маршал? нет, похож, лицо а, ну лицо, да, не-не-не ах, не-не, это другой, который, помни, у него в рекламе этот шеллорс еще снимался ой, да там кто только не снимался ну да Там и Юрий Дудь, извините пожалуйста, в хендом шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, вот сама идея искать на Дмитрия Поля, как вам? Сама идея дурацкая, честно говоря. а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто летом будет прощальная так сказать но будет закрывать спектакль и билеты будут стоить 2060 а то есть 100 тысяч рублей ну это же кто там два человека придет не ну почему гол будет полно это будет в крокус сити холл ничего себе а есть еще вы на все билеты еще какой-то стендап был в крокус сити холле такое вы есть у вас ну и правильно это честно говоря программа где он там образ осуждает нам политиков чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечает на вопросы. Не пройдем? Это программа 28 марта в Московском дворце молодежи на ВКРУ. Очень интересно. Там по местам, хотя 2000 рублей до 12. Одинте вам паром, я сделаю, а вы же планируете уже стоите, отопнете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. поэтому не знаю когда смогу освободиться чтобы вы поправить здоровье это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги деньги платить деньги надо заплатить же еще до получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулен
 
-### 11. openai / large-v3-turbo
+### 12. openai / large-v3-turbo
 
 - **ID:** `4929de96dc22`
 - **Language:** ru
@@ -578,7 +621,7 @@
 
 > В Крокус Сити Холле Салтаком? Так еще разок В Крокус Сити Холл? 14 марта, Дитер Боулан Дитер Боулан? Да В Долу в Сандарфен в Лоден Токинг Яма Хо Яма Со, я правильно понимаю? мы организаторы зал закрываем телефонов режиме и выделяем места по номиналу и бизнес так никак на пугачёва сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачёв извините меня вели какая величина ну да да вот туда продаем вот а так на дитро поляно места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный партнер идет по 3-5 поэтому просто подскажите как вам посмотреть места как-то подвигали телом ну или чтобы посидели потанцевали а что прям на сцене сидеть можно чтобы дитербаулон выступал и я сидел и прямо на сцене ну под 20 могу сделать вам места, первый ряд бордера а еще ближе получится? нет так а Дитер Бауловен это который из них? ну, с волосами ну вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами? как Александр Маршал? вот такой? не, не, не какой Маршал? нет, похож, лицо а, да лицо, да, нет, нет Ах, не, не, это другой, который помни, у него в рекламе Head & Shoulders ещё снимался. Ой, да там кто только не снимался. Ну да. А так вот, да... Там и Юрий Дуть, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, если вам Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это всё дело. Но вот сама идея сходить на Дмитрия Польена как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева, А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Кристи. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. 2 человека придет себе а есть еще вы на все билета вы еще какой-то стенд-ап был в крокус city холли такое вы есть у вас не мероприятие более какого ну и правильно это это вид говно честно говоря вот и время как вот и вот новая программа где он там у вас обсуждает нам политиков чиновников артистов друзья алкоголиков и будет немного поцарапе отвечает на вопрос пройдет эта программа в мастолском дворце молодежи на противень очень интересно но... там по металлу, хотя, 2000 рублей до 12 а хотите вам, паром я сделаю, а вы же планируете уже свои эти отопнете да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь поэтому не знаю, когда смогу освободиться ааа, так хотите, я просто Я думаю, что я сделаю 4 места, сделаю 2 места. Я буду добавить дополнительный стимул, чтобы вы поправили здоровье. Да как это ж от Господа Бога зависит. Здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, вы мне просто скинете смс-сообщение? Нет, зачем? А то я буду вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Просто, ну это, это Ефремов. У него расписание на год вперед расписано. А это новая программа, вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимания, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, я сейчас наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 12. openai / medium
+### 13. openai / medium
 
 - **ID:** `2b49fdca06b1`
 - **Language:** ru
@@ -598,7 +641,7 @@
 
 > В Крокус-Сити-Холле. Знал знаком? Так, еще разок. В Крокус-Сити-Холл? Да, 14 марта, Дитер-Баулан. Дитер-Баулан? Да, но Толл-Сандор, Лоден-Токер. или махоги масоль, я правильно понимаю? все верно а кипячаен бэра вера юго как? мы организаторы зал закрываем в телефонном режиме и выделяем места по номиналу никак на пугачеву сейчас билеты стоят по 100-160 тысяч рублей ну пугачеву извините меня, какая величина ну да вот туда а так на дитераполе места идут до 2000 рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет в 300 поэтому просто подскажите как вам посмотреть места чтобы вы двигали тело или чтобы вы посидели и танцевали а чтоб прям на сцене сидеть можно чтобы Диндербол он выступал и я сидел вот прям на сцене? ну по два таточки могу сделать вам места в первый ряд партера а еще ближе получится? нет Так, а Дитер Боулэн это который из них? Он с волосами, он сейчас по астерикте нормальный вроде стал А с белыми волосами, как Александр Маршал? Вот такой? Не, не, не, какой Маршал? Нет, похож, лицо Маршал Жуков Ах, это другой, который в Поксе, у него в рекламе Хэдден Шолдерс еще снимался. Ой, да там кто только не снимался. Ну да. А так вот... Там и Юрий Дудь, извините, пожалуйста, в Хэдден Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у вас сама идея скатиться на Дитера Полина, как вам? Сама идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать? Ага. А Дитя его отправлю на его спектакль, Крисся. А вот это он не нужно? Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но будет закрывать этот спектакль и билеты будут стоить за 60-100 тысяч рублей. Ооо, ну кто это ж, кто там, два человека придет? Не, ну почему, главной будет полный это будет Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокос-Сити-Холле, такой есть у вас? Ну есть у вас? Не-не-не, у нас есть мероприятия, балет, мюзикл, там разное шоу, но стендапов нету, такого. Ну и правильно, это какое-то говно, честно говоря. Стендапы-то есть. И времов есть. Вот, и времов есть. Головом по духу будет. У него, кстати, вот новая программа, «Тюпани, хороший вопрос ты есть», где он там в разных, ну, там, ну, обсуждает там политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже если будет немного подшапе, отвечает на вопросы. Не пройдем? Это программа 28 марта в Мастулском дворце молодежи на Продинске. Очень интересно. Там по местам, кстати, 2000 рублей на 12. А видите, вам пару мест сделаю, а вы планируете, вы уже стоите, отдохнете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. А, так ходите, я просто... Моей семье что-то делают тогда, но 4 места не буду делать, делаю 2 места, я буду дополнительной стимулой, чтобы вы поправили здоровье. Да как это, что... Это ж все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС сообщения? Нет, зачем? А то я хотел вам читать мои сообщения Давайте я вам просто пару мер сделаю хороших Просто, ну это Это Ефремов У него расписание на год вперед расписано А это новая программа Вопросы есть А там же надо деньги получается? Деньги платить нужно? Деньги надо заплатить же еще, да? Получается мне сейчас? Ну да, конечно Ага, ну все что стоит внимание стоит немного денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева опять-таки мы с вами уже обсуждали, эта величина такая что, извините пожалуйста. Ну да. Ну тогда я думаю до новых встреч. Да, я поездку заберу вам надо. Обязательно. Потому что нового созвона со мной не дождались. Детерболен Детерболен? Детерболен Детерболен? Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен
 
-### 13. openai / medium
+### 14. openai / medium
 
 - **ID:** `f68de8ae0b27`
 - **Language:** ru
@@ -618,7 +661,7 @@
 
 > В Крокус-Сити-Холле. Салзаком? Так, еще разок. В Крокус-Сити-Холл? Да, 14 марта, Дитер-Баулан. Дитер-Баулан? Да. Ну, Долл-Сандор, Лодон-Токер. или махоги масоль? я правильно понимаю? всё верно а кипячаен бэра вера юго как? мы организаторы зал закрываем в телефонном режиме и выделяем места по номиналу никак на пугачёву сейчас билеты стоят по 100-160 тысяч рублей ну пугачёву извините меня, какая величина ну да вот туда а так, на дитераполе места идут до 2000 рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет в 300 поэтому просто подскажите как вам посмотреть места чтобы вы двигали тело или вы посидели и танцевали а чтобы прям на сцене сидеть можно чтобы Диндербол он выступал и я сидел прям на сцене? по два таза могу сделать вам места первый ряд партера а еще ближе получится? нет Так, а Дитер Боулэн это который из них? Ну, он с волосами, ну он сейчас по отстирикце нормальный вроде стал. А с белыми волосами как Александр Маршал? Вот такой? Не, не, не. Какой Маршал? Нет, похож, лицо. А, да лицо он там? Маршал Жуков. Ах, это другой, который в Покте, у него в рекламе этот шелард еще снимался. Там кто только не снимался Ну да Там и Юрий Дудь, извините, пожалуйста, в Хэндан Шолдерсе И муж Заворотнюк, и кого там только не приглашают И даже Сергей Дружко, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну а так вот, у вас сама идея, что сходить на Дитераполью на Гракуам Сама идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать? Ага. А где я вас отправлю на его спектакль, Кися? А вот это мне нужно. Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная эта кать, но он будет закрывать этот спектакль, и билеты будут в той-то 60-70 рублей. Ну это ж кто там? Два человека придет? Не ну почему? Гал будет полный, это будет Krokos City Hall Ничего себе А есть еще... А вы еще... Вы на все били это? А вы еще какой-то стендап был в Krokos City Hall? Такое есть у вас? Не-не-не Не, у нас есть мероприятия, болет, мюзикл, там разное шоу Но стендапов нету и такого Ну и правильно, это какой-то говно честно говоря Стандапы? И Времов есть. Вот. И Времов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин, хорошие вопросы есть, где он там разом, ну, там, ну, осуждает нам политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если будет немного подшопе, отвечает на вопросы. Ааа. Это программа 28 марта в Мастулском дворце молодежи на Продинске Очень интересно Там по местам стоят 2000 рублей на 12 Ходите, я вам пару мест сделаю, а вы планируете урсовить и отдохните Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться Заходите, я вам просто... Мои все семьи сейчас делают. Тогда... Но 4 места не буду делать. Делаю 2 места. Я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это, что... Это ж все от Господа Бога зависит. Здоровье-то я-то... От чего здесь? Я-то никак уже не решаю. Поэтому, возможно... Может, вы мне просто скинете эээ... СМС-сообщение? Нет. Зачем? А то и по вам читать мое сообщение. Я хотел вам читать мое сообщение. Давайте я вам пару мер сделаю хороших. Просто, ну это... Это Ди Фремов. У него расписание на год вперед расписано. А это новая программа, вопросы есть. А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачева, где билеты стоят по 200 тысяч, понимаете? Ну Пугачёва опять-таки мы с вами уже обсуждали, эта величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я по вестнику заберу, вам надо. Обязательно. Потому что новые созвоны со мной не дождались. Дитер Болан Дитер Болан Дитер Болан
 
-### 14. openai / medium
+### 15. openai / medium
 
 - **ID:** `b01bad8344a1`
 - **Language:** ru
@@ -638,7 +681,7 @@
 
 > ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН ДИТЕР БАУЛЕН Я правильно понимаю? Все верно Акипинчан, Баравера, Юго Мы организаторы Зал закрываем телефоном режиме И выделяем места по номиналу и без на сценах Никак на Пугачеву сейчас билеты Стоят по 100-160 тысяч рублей Ну Пугачеву, извините меня, какая величина? Ну да, потом ее продаем А так, на Дитаро Поляны Места идут до 2000 рублей И до 20 тысяч уже в лучших местах партии а танцевальный партер идет смотреть в лицо поэтому просто подскажите как вам посмотреть в лицо чтобы вы двигали тело или вы посидели и танцевали а чтобы прямо на сцене сидеть можно? чтобы Дитер Боулен выступал и я сидел вот так вот на сцене ну по два тяточки могу сделать вам место первый ряд партера а еще ближе получится? нет так а Дитер Боулен это который из них? Ну, с волосами. Он сейчас по отстирикце нормальный вроде стал. А с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож. Лицо. А, ну лицо? Маршал Жуков. Ах, это другой, который, помните, у него в рекламе этот шеллард еще снимался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндэн Шолдерсе, и муж Заворотнюк, и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, сама идея сходить на Диндераполе на Грагову. Сама идея дурацкая, честно говоря. А если разговор начнется с Дмитрия Нагиева? А вот с этого надо было начинать? Ага. А где я вас отправлю на его спектакль Кыся? А вот это мне нужно? Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать. Но он будет закрывать этот спектакль, и билеты будут стоить за 60-100 тысяч рублей. Ооо, ну кто это ж? Два человека придет? Не, ну почему? Гал будет полный, это будет Крокос-Сити-Хол Ничего себе А есть еще... А вы еще... Вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холе? Такое есть у вас? Не-не-не Не, у нас есть мероприятия, балет, мюзикл, там разное шоу, но стендапов нету, такого Ну и правильно, это какое-то говно, честно говоря. Стендапы-то. И Времов есть. Вот. И Времов есть. Головам по духу будет. У него, кстати, вот новая программа, где у Падима хорошие вопросы есть. Где он там в разных, ну, там, ну, обсуждает нас политиком, чиновником, артистом, друзьям, алкоголиком. И в конце даже, если будет немного подшопе, отвечает на вопросы. Ааа. Это программа 28 марта в Мастулском дворце молодежи на Продинске Очень интересно Там по местам дать от 2000 рублей до 12 Ходите, я вам пару мест сделаю, а вы планируете, что сейчас будете? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться Так хотите я вам просто... Мои все семьи сейчас делают, тогда, ну, 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это, что... Это ж все от Господа Бога зависит, здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете СМС-сообщение? Нет, зачем? Ну, я могу читать мои сообщения. Давай я вам просто пару мер сделаю хороших. Просто, ну это... Это не Фремов. У него расписание на год вперед расписано. А это новая программа, вопросы есть. А там же надо деньги получается. Деньги платить можно? А? Деньги надо заплатить же еще, да? Получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачева, Ну, Пугачёв, опять-таки, мы с вами уже обсуждали. Эта величина такая, что, извините, пожалуйста. Ну, да. Ну, тогда, я думаю, до новых встреч. Да, я по вестнику наберу. Обязательно. Потому что нового созвона со мной не дождались. Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен
 
-### 15. openai / large-v3-turbo
+### 16. openai / large-v3-turbo
 
 - **ID:** `f80ee2abb483`
 - **Language:** ru
@@ -658,7 +701,7 @@
 
 > ДИТЕР БОУЛЕН В Крокус Сити Холле, зал таком... Так еще разок. В Крокус Сити Холл? Да, 14 марта Дитер Боулен Дитер Боулен? Да, но дома в Дандерфен, вот он в Токинге Всё, яма-хо и яма-со, я правильно понимаю? Всё верно. Акипинчайн вера-веро-югоп. Мы, организаторы, закрываем телефон в режиме и выделяем места по номиналу и без наценок, не как на Пугачёва сейчас билеты стоит по 100-160 тысяч рублей. Ну Пугачёва, извините меня, какая величина? Ну да, мы сон же её продаём. А так, на Dieter Ballen места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому, просто подскажите, как вам посмотреть места чтобы подвигали телом, или чтобы вы посидели и потанцевали А чтобы прямо на сцене сидеть, можно? Чтобы Dieter Ballen выступал и я сидел прямо на сцене Ну, под 20 могу сделать вам места, первый ряд портера А ещё ближе получится? Нет Так А Дитр Баулин — это который из них? Ну, с волосами Ну вот сейчас по астерикции нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо... Маршал Жуков Ахэ, не-не, это другой, который, помните, у него в рекламе хэддом шолдерсе снимался? Ой, да там кто только не снимался. Ну да. Там и Юрий Дуть, извините, пожалуйста, в хэддом шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну, хорошо, знаете, что Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. А так вот у вас самая идея из каких-то Дмитрий Полина как вам подумала? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А Диди я вас отправлю на его спектакль Кыся. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но будет закрывать этот спектакль, и билеты будут стоить под 60, а то есть 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Гал будет полный, это будет в Крокус Сити Холл. Не, ничего себе. А есть еще... А так есть? А вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? ну и правильно это как это говно честно говоря и прям вот у него программа политиков чиновников артистов друзья алкоголиков и это программа молодежь очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться так хотите я просто все семьи что-то сделаю но 4 места не буду делать сделаю 2 места, я буду добавить дополнительный стимул, чтобы вы поправили здоровье да как это что, это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете sms сообщение нет Я не могу читать мои сообщения. Давай я просто пару мер сделаю хороших. Это Ефремов. У него расписание на год вперёд расписано. А это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? Деньги надо заплатить же ещё, да, получается? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, ну всё, что стоит внимание, стоит немного денег, и денег как пугачево опять таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Субтитры создавал DITER BOWLAND
 
-### 16. openai / large-v3-turbo
+### 17. openai / large-v3-turbo
 
 - **ID:** `16bf31ef8a45`
 - **Language:** ru
@@ -678,7 +721,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да Долландандер в Лоден Токинг Ямахо ямасо я правильно понимаю? Все верно А кипячаем Вера Вера и Го Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок Не как на Пугачеву сейчас билет стоит по 100 По 150 тысяч рублей Ну Пугачеву извините меня Какая величина? Ну да А так на Дитер Боулан На Дитер Боулан И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30 сон Поэтому просто подскажите как вам посмотреть места Чтобы подвигли телом Ну или чтобы вы посидели и потанцевали А чтоб прямо на сцене сидеть можно Чтобы Дитер Боулан выступал И я сидел прямо на сцене Ну по 20 могу сделать вам места Первый ряд портера А еще ближе получится? Не А Дитер Боулан это который из них? Ну с волосами Ну вот сейчас по остерик все нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не, не, не Какой Маршал? Нет, похож лицо А, ну лицо... Маршал Жуков Ах, не, не, это... это другой А другой, который в постке У него в рекламе Хэддон Шолдерс еще снимался Ой, да там кто только не снимался Ну да Там и Юрий Дуть, извините пожалуйста В Хэддон Шолдерсе И муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо, знаете Сразу Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Самая идея из коникта Дмитрия Полина Как вам подумал? Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальное Так сказать, но он будет закрывать этот спектакль И билеты будут стоить по 60 на 100 тысяч рублей Ооо, ну это ж кто это? Два человека придет? Не, ну почему? Гол будет полный, это будет в Крокус Сити Холл Ничего себе А есть еще... А так есть? А вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле Такое есть у вас? Не-не-не У нас есть мероприятия Балет, мюзикл Разное шоу Но стендапов нету И ничего такового Ну и правильно Это какое-то говно, честно говоря Стендапов И Времов есть Вот И Времов есть Он вам по духу может У него, кстати, идет новая программа Господин Хороший вопрос-то есть Где он там в разных Ну-то там Ну, осуждает там политикам, чиновникам Артистам, друзей, алкоголикам И в конце даже Если у тебя будет немного под шофе Отвечает на вопросы Не поройдет Эта программа 28 марта В Мостолском дворце молодежи на Вкратискре Очень интересно Там пометантом Да, 2 тысячи рублей до 12 А дети вам паром я сделаю А вы же планируете уже? Сойте отопнете Да вот я просто не могу планировать ничего наперед Потому что Ну, я сейчас лечусь Поэтому не знаю, когда смогу освободиться Как хотите, я просто Там, я семья сейчас делаю Тогда Но 4 места не буду делать Сделаю 2 места Я буду, да Дополнительный стимул Чтобы вы поправили здоровье А это не получится, да Да Это ж все от Господа Бога зависит здоровье-то Я-то От чего здесь Я-то никак уже Не решаю Да Поэтому, возможно Да Может, вы мне просто скинете СМС-сообщение? Нет Зачем А только вам читать мои сообщения Давай я просто пару меня сделаю хороших Просто Ну это Это Это Ефремов У него Распитание на год вперед расписано А это новая программа Вопрос-то есть А там же надо Деньги Получается Деньги платить можно? А? Деньги надо заплатить же еще, да? Получается мне сейчас Ну да, конечно Ну тогда Наверное, ничего не получится Ага Не, ну все, что стоит внимание Стоит немного и денег Как в Пугачево Где билеты стоят по 200 тысяч Ну Пугачево опять-таки Мы с вами уже обсуждали Это величина такая Что, извините, пожалуйста Ну да Да Ну тогда я думаю До новых встреч Да, я понял Ну я сейчас его наберу вам, да Обязательно Ну да Ну, что, ну, вы со мной не дождались Адитер Боулан Адитер Боулан Адитер Боулан? Адитер Боулан? Адитер Боулан Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан? Адитер Боулан?
 
-### 17. openai / large-v3-turbo
+### 18. openai / large-v3-turbo
 
 - **ID:** `48ebc8aa5bc1`
 - **Language:** ru
@@ -698,7 +741,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как на Пугачёва сейчас билет стоит по 100-150 тысяч рублей ну Пугачёва, извините меня, какая величина? ну да вот туда а так на Дитрополье на места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера а танцевальный портер идет по 30-м поэтому просто подскажите как вам посмотреть места как что-то подвигали телом ну или чтобы вы посидели и потанцевали а что прям на сцене сидеть можно чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по 20-м могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулен это который из них? ну с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами? как Александр Маршал? вот такой? не, не, не, какой Маршал? нет, похож лицо а, ну лицо, да, не, не ах, не, не, это другой, который, помните, у него в рекламе этот шеллорс еще снимался? ой, да там кто только не снимался ну да Там и Юрий Дудь, извините пожалуйста, в хендом шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, вот, сама идея искать на Дмитрия более награк вам. Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить по 60 на 100 тысяч рублей. вы тоже кто там два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас У нас есть мероприятия, балет, мюзикл, разное шоу, но стендапов нету и такового. Ну и правильно, это какое-то говно, честно говоря. И Бремов есть. Вот, и Бремов есть. Он вам по духу мой. У него, кстати, вот новая программа, господин Хорошего просто есть. Где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение программа а там же деньги деньги платить деньги надо заплатить платить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 18. openai / medium
+### 19. openai / medium
 
 - **ID:** `253cfbad359f`
 - **Language:** ru
@@ -718,7 +761,7 @@
 
 > ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН ДИТЕР БАУЛОН Я правильно понимаю? Все верно Акипича, Баравера и Гоп Мы организаторы, зал закрываем в телефонном режиме и выделяем места по номиналу и без на сценах Никак на Пугачева сейчас билеты стоят по 100-160 тысяч рублей Ну Пугачева, извините меня, какая величина? Ну да Вот туда А так на Дитару Полину места идут по 2000 рублей И до 20 тысяч уже в лучших местах партера А танцевальный партер идет в 30 сот Поэтому просто подскажите как вам посмотреть места Чтобы вы двигали тело Ну или чтобы вы посидели и танцевали А чтоб прям на сцене сидеть можно? Чтобы Диндерболон выступал и я сидел прям на сцене? По два таточки могу сделать вам места в первый ряд партера А еще ближе получится? Нет Так а Дитер Боулэн это который из них? ну он с волосами, но сейчас по отстирику все нормально вроде стало а с белыми волосами как Александр Маршал? вот такой? не-не-не, какой Маршал? нет, похож, лицо Маршал Жуков ахе, это другой, который в рекламе в Покте снимался Там кто только не снимался Ну да Там и Юрий Дудь, извините, пожалуйста, в Хэндэн Шолдерсе И муж Заворотнюк, и кого там только не приглашают И даже Сергей Дружко, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну а так вот, сама идея с коней Трапольна, как вам? Как вам? Самая идея дурацкая, честно говоря. А если разговор бы начнется с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль, Крисся? А вот это мне нужно. Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать. Но будет закрывать этот спектакль и билеты будут стоить за 60-100 тысяч рублей Ооо, ну кто это ж? Там 2 человека придет? Не, ну почему? Гал будет полный, это будет Крокос-Сити-Холл Ничего себе А есть еще... А вы еще... Вы на все билеты? А еще какой-то стендап был в Крокос-Сити-Холле, такой есть у вас? Не-не-не Не, у нас есть мероприятия, балет, мюзикл Он там разное шоу, но стендапов нету, или такого. И время есть. И готов. И время есть. Головом по духу будет. У него, кстати, вот новая программа, где по ней хорошие вопросы есть. Где он там разным, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если будет немного патшапе, отвечает на вопросы. Не пройдем, это программа 28 марта в Мастулском дворце молодежи на Продинске Очень интересно Там по местам, кстати, а 2000 рублей на 12 Ходите, я вам пару мест сделаю, а вы планируете уже стоять и отдохнуть Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться А, так ходите, я вам просто, там, мои все семьи что-нибудь делают. Тогда, ну, четыре места не буду делать, сделаю два места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это, что это ж всё от господа бога зависит, здоровье-то, я-то, от чего здесь, я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет, зачем? А то и было читать мои сообщения. Давайте я вам просто пару мер сделаю хороших, просто, ну это, это, это Ефремов. У него рассчитание на год вперед расписано. А это новая программа, вопросы есть. А там же надо деньги получается? Нет, ворота проверя. Деньги платить нужно? А? Деньги надо заплатить же еще, да? Получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, ну все что стоит внимание стоит немного и денег как Пугачева где билеты стоят по 200 тысяч Ну Пугачева опять таки мы с вами уже обсуждали, эта величина такая что извините пожалуйста Ну да Ну тогда я думаю до новых встреч Да, я поездку заберу, вам надо Обязательно Потому что нового созвона со мной не дождались Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен Детерболен
 
-### 19. openai / large-v3-turbo
+### 20. openai / large-v3-turbo
 
 - **ID:** `399ae1a7525b`
 - **Language:** ru
@@ -738,7 +781,7 @@
 
 > в Крокус Сити Холле так еще разок в Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? да, но дом из зандерфтен в Лоден токинг все, Яма Хо Ямасо, я правильно понимаю? Окипячаем Вера Вера и Го Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок Не как на Пугачёва сейчас билет Восток от 150 тысяч рублей Ну Пугачёва извините меня Вели какая величина Ну да Вот туда А так на Дитропольон Места идут от 2000 рублей И до 20 тысяч уже в лучших местах партера а танцевальный портер идет по 30 ст поэтому просто подскажите как вам посмотреть места как подвигали телом, ну или чтобы вы посидели и потанцевали а чтоб прям на сцене сидеть можно? чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене ну под 20 могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулен это который из них? с волосами получат по стирик все нормально вроде стал а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жуков это другой который у него в рекламе Ой, да там кто-то только не снимался. Там и Юрий Дуть, извините, пожалуйста, в хенданшолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну, хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ну, а так вот сама идея искать на днидрополье, как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, нового. будем закрывать этот спектакль и билеты будут стоить 206 до 100 тысяч рублей О! Ну это ж кто? Там два человека придет? Не, ну почему? Головой полный, это будет в Крокос Сити Холл Не, ну ничего себе А так есть? А вы еще на все билеты? А еще какой-то стендап был в Крокос Сити Холле? Такое есть у вас? Не-не-не У нас есть мероприятия, балет, мюзикл, разное шоу, но стендапов нету и такового. Ну и правильно, это какое-то говно, честно говоря. И Бремов есть. Вот, и Бремов есть. Он вам по духу мой. У него, кстати, вот новая программа, господин Хороший Вопрос и есть. Где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тоже от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение программа а там же деньги получаются деньги платить деньги надо заплатить же еще до получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачёва, где билеты стоят по 200 тысяч. Ну Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 20. openai / large-v3-turbo
+### 21. openai / large-v3-turbo
 
 - **ID:** `94d4722ad976`
 - **Language:** ru
@@ -758,7 +801,7 @@
 
 > в крокус сити холле зал таком так еще разок в крокус сити холл 14 марта дитер Боулен да домы сандармсен в лотен токинг все ямахо ямасо я правильно понимаю ямахо ямахо ямахо ямахо ямахо ямахо все верно мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без на оценок не как на пугачёва сейчас билеты стоят по 100-60 тысяч рублей ну пугачёва извините меня, какая величина? ну да, вот уже ее продаем а так на дитрополино места идут от двух тысяч рублей и до 20000 уже в лучших местах партера, а танцевальный партер идет по 30, поэтому просто подскажите, как вам посмотреть места, чтобы подвигли телом, ну или чтобы вы посидели и потанцевали. А чтобы прям на сцене сидеть, можно, чтобы Дидерболл выступал, а я сидел вот прям на сцене? Ну по 20 могу сделать вам места, первый ряд партера. А еще ближе получится? Нет. так а дитр баулин это которые из них с волосами с белыми волосами как александр маршал вот такой нет похож лицо Маршал Жуков Не-не, это другой, который попки, в рекламе хэдэншолдерс ещё снимался Ой, да там кто только не снимался Ну да, а так вот... Там и Юрий Дуть, извините пожалуйста, в хэдэншолдерсе И муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко, если что Ну хорошо знаете, алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну а так вот у вас самая идея, с каких-то днепроголи наград вам? Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль, и билеты будут стоить 20-60, а то есть 100 тысяч рублей. О, ну это ж кто это? Два человека придет? Не, ну почему? Голубой полный, это будет Крокос Сити Холл. Ничего себе. А есть еще... А вы на все билеты? А еще какой-то стендап был в Крокос Сити Холле. Такое есть у вас? ну и правильно это будет говно честно говоря вот и время и программы где он там брат обсуждает нам политиков чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечаю на вопросы. Не пройдем? Это программа 28 марта в Московском дворце молодежи на Вкратискве. Очень интересно. Но... Дай 2 тысяч рублей до 12. Одинте вам пару, а вы планируете уже сойте, а так ждете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь это никак уже не решаю поэтому возможно может вы мне просто скиньте смс-сообщение а там же деньги платить деньги надо заплатить же еще до получается мне сейчас, ну да конечно, но тогда наверно ничего не получится, а не, ну всё что стоит внимание стоит немного и денег как в Пугачёву где билеты стоят по 200 тысяч, ну Пугачёва опять таки мы с вами уже обсуждали, это величина такая что извините пожалуйста, ну да, ну тогда я думаю до новых встреч, да, я поверю, если что заберу вам, да, обязательно, потому что нового созвона со мной не дождались, Дитер Боулан
 
-### 21. openai / large-v3
+### 22. openai / large-v3
 
 - **ID:** `11755fa4fc52`
 - **Language:** ru
@@ -778,7 +821,7 @@
 
 > В Крокус Сити Холле, зал знаком? Так, еще разок. В Крокус Сити Холл? Да, 14 марта, Дитер Боулен. Дитер Боулен? Да, но Доллэнд Стандарт, Лоттен Токинг. Все, Ямахо Ямасо, я правильно понимаю? Все верно. Акипича, Вера, Вера, Юго. Мы, организаторы, зал закрываем телефонным режимом и выделяем места по номиналу и без наценок. Не как на Пугачево, сейчас билеты стоят по 100, по 50 тысяч рублей. Ну, Пугачево, извините меня, какая величина? Ну да. Вот туда. А так, на Дитер Боулене места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера. А танцевальный партер идет. По 30 тысяч. Поэтому, просто подскажите, как вам посмотреть места. Так. Чтобы подвигали телом, ну или чтобы вы посидели и потанцевали. А чтобы прямо на сцене сидеть можно, чтобы Дитер Боулен выступал, и я сидел прямо типа на сцене? Ну, по 20-ке могу сделать вам места, первый ряд партера. А еще ближе получится? Нет. Так. А Дитер Боулен, это который из них? Ну, классный. С белыми волосами. Ну, вот сейчас по астерикции нормальный вроде стал. А волосами был, с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож лицо. А, ну лицо. Маршал Жуков. Не-не-не. Ах, не-не-не. Это другой, который в ПОКе, у него в рекламе Head & Shoulders еще был снимался. Ой, да там кто только не снимался. Ну да. А так вот, да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо знаете все, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея сходить за Дитера Боулена, как вам? Сама идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева, понятно. А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль, Кристиан? А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль. И билеты будут стоить по 160, а то и 100 тысяч рублей. Оо, ну это ж, кто это, два человека придет? Не, ну почему? Гал будет полный, это будет круглый сетихол. Хе-хе. Ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити холле, такой есть у вас? Не-не-не. Не, у нас есть мероприятия, балет, мюзикл, там, разные шоу, но стендапов нету и такого. Ну и правильно, это какая-то говно, честно говоря, стендапы. И Времов есть. Вот. И Времов есть. Он вам по духу может. У него, кстати, вот новая программа, господин, хороший вопрос. Там есть, где он там в разных, ну, там, ну, осуждает там, политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если у тебя будет немного под шопе, отвечает на вопросы. Ааа. И пройдем, это программа 28 марта, в Московском дворце молодежи, на Крымской. Очень интересно. Но, но... Там по местам, кстати, от 2000 рублей до 12. Ходите вам паром, я сделаю. А вы планируете уже свой, тебя догнете? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда я смогу освободиться. Ааа. Так ходите вам просто. Там, все семьи что-нибудь сделают. Тогда, ну, четыре места не буду делать. Сделаю два места, я буду. Да, дополнительный стимул, чтобы вы поправили здоровье. А это не получится. Да как это ж, это ж все от Господа Бога зависит, здоровье-то. Я то от чего здесь? Я то никак. Я то никак уже не решаю. Поэтому возможно, может вы мне просто скинете СМС-сообщение? Нет, зачем? А то я буду вам читать мои сообщения. Да, хотя я просто пару мест сделаю хороших, просто, ну это, это, это Ефремов. У него расписание на год вперед расписано. А это новая программа, вопросы есть. А там же надо деньги, получается. Нет, два раза в ручье. Деньги платить нужно? Да вроде. Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч, сами понимаете. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я поясню, что наберу, вам надо. Обязательно. Потому что нового созвона со мной не дождались. Спасибо. До встречи. До встречи. Увидимся. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока. Пока.
 
-### 22. openai / medium
+### 23. openai / medium
 
 - **ID:** `bb8d21fbc57d`
 - **Language:** ru
@@ -798,7 +841,7 @@
 
 > ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН ДИТТЕР БАУЛЕН Смассовая, правильно понимаю? Все верно Акипеча, Баравера и Гоб Мы организаторы Зал закрываем телефон в режиме И выделяем места по номиналу и безнадсценок Не как на Пугачева сейчас, билеты стоят по 100, по 160 тысяч рублей Ну Пугачева извините меня, какая величина? Ну да, потом ее продаем А так на Дитерополе На места 2 тысяч рублей 2 тысяч рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет, смотри, 500 поэтому просто подскажите, как вам посмотреть места чтобы подвигали тело, ну или чтобы вы посидели и потанцевали а чтоб прямо на сцене сидеть можно, чтобы Динтер Боллан выступал и я сидел вот типа на сцене? ну по два таточки могу сделать вам места, первый ряд портера а еще ближе получится? Нет Так А Дитер Баулен это который из них? Ну он с волосами Ну он сейчас по отстирикце нормальный вроде стал А с белыми волосами? Как Александр Маршал вот такой? Не-не-не Какой Маршал? Нет похож, лицо Ааа да лицо? Маршал Жуков Ахе, не-не это другое Которое в Покте у него в рекламе в Хайден Шолдерсе еще вон снимался Ой, да там кто только не снимался Ну да, а так вот... Там и Юрий Дудь, извините пожалуйста, в Хайден Шолдерсе и муж Заворотнюк, и кого там только не приглашаю И даже Сергей Дружко если что Ну хорошо, знаете, Алексей Сергеевич я понимаю Я очень сильно люблю это все дело Ну а так вот вам сама идея скатиться на Дитераполье на Гракуам самая идея дурацкая честно говоря а если разговор бы начался с Дмитрия Нагиева а вот с этого надо было начинать ага, а дидео я вас отправлю на его спектакль Кыся а вот это не нужно единственный спектакль в котором он играет я знаю, да, он его любит, он его 15 лет играет уже ну да, просто этим летом будет прощальная, так сказать но он будет закрывать этот спектакль и билеты будут стоить за 60 на 100 тысяч рублей ну почему, гол будет полный, это будет Crocus City Hall да, ничего себе а есть еще... а вы на все билеты? а еще какой-то стендап был в Crocus City Hall есть у вас? не, не, не у нас есть мероприятия Балет, мюзикл, разное шоу Стендапа нету такого Ну и правильно, это какая то говна честно говоря Стендап это И время есть Вот И время есть Головам по духу будет У него кстати новая программа По ней хорошие вопросы есть Где он там в разных... Ну то там... Ну осуждает там политиков, чиновников Артистов, друзей, алкоголиков И в конце даже Если будет немного патшапе Отвечается вопрос Ааа Не пора идем? Это программа 28 марта в Мастулском дворце молодёжи на Продезоге Очень интересно Там по местам дать от 2 тысячи рублей до 12 Адите вам пару минут сделаю, а вы планируете уже что-нибудь Да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться А, так хотите я вам просто, там, мои все семьи что-нибудь делают, тогда, но 4 места не буду делать, делаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это шо, это шо от господа бога зависит здоровье-то. Я то, от чего здесь? Я то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете, эээ, СМС сообщение? нет, зачем? я хотел вам читать мои сообщения давайте я вам пару мер сделаю хороших это Ди Фремов у него рассчитание на год вперед расписано, а это новая программа вопросы есть а там же надо деньги деньги платить можно? деньги надо заплатить же получается мне сейчас? ну да конечно тогда ничего не получится стоить немного денег, как Пугачёва, где билеты стоят по 200 тысяч. Ну Пугачёва опять таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда я думаю до новых встреч. Да, я поездку заберу вам надо. Обязательно. Потому что нового созвона со мной не дождались. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла. Деда Болла.
 
-### 23. openai / large-v3-turbo
+### 24. openai / large-v3-turbo
 
 - **ID:** `1bac029e89bb`
 - **Language:** ru
@@ -818,7 +861,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по двадцатке могу сделать вам места, первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашаю и даже и и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто будет прощальная так сказать но будет закрывать но вы тоже кто-то два человека придет себе а есть еще вы на все билета вы еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря вот и время у него подходит новая программа где он там обратно осуждает нам политиков чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечает на вопросы. Не пройдем? Это программа 28 марта в Московском дворце молодежи на ВКРУ. Очень интересно. Там по местам, хотя 2000 рублей до 12. Одинте вам паром, я сделаю, а вы планируете уже сойте, а так ждете? Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Как хотите, я просто, там, все семьи сейчас делают, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье. Да как это, что это всё от Господа Бога зависит здоровье-то, я-то от чего здесь? Я-то никак уже не решаю. поэтому возможно может вы мне просто скиньте смс сообщение нет зачем? а только вам читать мои сообщения давайте я просто пару мер сделаю хороших просто ну это Ефремов у него расписание на год вперед расписано а это новая программа вопрос да есть а там же надо деньги получается? деньги платить можно? а? деньги надо заплатить же еще да получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну всё, что стоит внимание, стоит немного и денег, как в Пугачёву, где билеты стоят по 200 тысяч. Ну Пугачёву, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, то наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 24. openai / large-v3-turbo
+### 25. openai / large-v3-turbo
 
 - **ID:** `ef6925786775`
 - **Language:** ru
@@ -838,7 +881,7 @@
 
 > В Крокус Сити Холле Сал таком? Так, еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, но дом из Дандерфтен Воден Токио Все, яма-хо, яма-со, я правильно понимаю? мы организаторы зала закрываем телефонов режиме и выделяем места по номиналу и без на оценок никак на пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина ну да вот он же продаем вот а так на дитрополе на места идут от 2000 рублей а танцевальный партер идет по три пиццу поэтому просто подскажите как вам посмотреть это так что ты летела или чтобы посидели потанцевали а что прям на сцене сидеть можно чтобы динтерпол он выступал и я сиделась прямо типа на сцене а еще ближе получится так 1 тирбова это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо Маршал Жуков Ах, не-не, это другой, который, помни, у него в рекламе «Head on Shoulders» ещё снимался Ой, да там кто только не снимался Ну да А так вот, да Там и Юрий Дудь, извините, пожалуйста, в «Head on Shoulders» и муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко, если что Ну хорошо, знаете, сразу Алексей Сергеевич, я понимаю Я очень сильно люблю это все делать. Ага. Ну а так вот у вас самая идея с каких-то Дмитрия Полина как вам подумал? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Кристи? А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. это два человека придет себе а есть еще на все пиле то вы еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря стендап и приемов и вот и время у него подходит новая программа где он там убрать обсуждает нам политиков чиновников артистов другие алкоголиков и если будет немного пустот отвечает на вопросы а это программа очень интересно но планируете вот я просто не могу планировать ничего наперед потому потому что я сейчас лечусь, поэтому не знаю когда смогу освободиться. Как хотите я просто все семья сейчас делаю, но четыре места не буду делать, сделаю два места, я буду добавить дополнительный стимул, чтобы вы поправили здоровье. Да как это же, что от Господа Бога зависит здоровье-то? Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем? Я только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Это Ефремов. У него расписание на год вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага. Не, ну все, что стоит внимание, стоит немного и денег, как с Пугачева, где билеты стоят по 200 тысяч. Ну Пугачевы, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, то беру вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 25. openai / large-v3-turbo
+### 26. openai / large-v3-turbo
 
 - **ID:** `377c5602e8c2`
 - **Language:** ru
@@ -858,7 +901,7 @@
 
 > В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? 14 марта Дитер Боулан Да Но дома в дандартен в Лоден Токинг Все, яма-хо-ямасо Я правильно понимаю? все верно Акипичаем, вера-вера, you go Мы, организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачеву, сейчас билет стоит там по 100, по 150 тысяч рублей Ну, Пугачеву, извините меня, какая величина? Ну, да Вот туда Вот туда Вот туда А так, на Дитропольеном места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по три пиццу поэтому просто подскажите как вам посмотреть места так чтобы подъигали телом ну или чтобы вы посидели и потанцевали а чтобы прям на сцене сидеть можно чтобы Дитер Боулан выступал а я сидел прямо на сцене ну по двостаточке могу сделать вам места первый ряд портера а еще ближе получится? не так а Дитер Боулан это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами, как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож. Лицо. А, ну лицо... Маршалл Жуков. Ах, не-не-не. Это другой, который помню, у него в рекламе как-то шеллорс еще снимался. Ой, да там кто только не снимался. Ну да. там и Юрий Дуть, извините пожалуйста в хендом шолдерсе и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко если что ну хорошо знаете все, Алексей Сергеевич я как понимаю я очень сильно люблю это все дело ну а так вот вот сама идея искать на Дмитрия более награк вам сама идея дурацкая честно говоря А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю. Он его любит, он его 15 лет играет уже. Ну да. Просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 206 на сто тысяч рублей. Ну кто, там два человека придет? Не, ну почему? Голубой полный это будет в Крокус Сити Холл Не, ничего себе А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? Не-не-не, у нас есть мероприятие, балет, мюзикл, там, разное шоу, но стендапов нету и ничего такового Ну и правильно, это какое-то говно, честно говоря программа политикам чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечай на вопросы. Не пройдем, это программа 28 марта в Московском дворце молодежи на ВКРУ. Очень интересно. Там по местам, хотя 2000 рублей до 12. Одините вам паром, я сделаю, а вы планируете уже сойти, а так дойдете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. Да как это? Это ж всё от Господа Бога зависит здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда то на ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно Детер Боулен
 
-### 26. openai / large-v3-turbo
+### 27. openai / large-v3-turbo
 
 - **ID:** `61f0b72d52a3`
 - **Language:** ru
@@ -878,7 +921,7 @@
 
 > ДИТЕР БОУЛАН Все верно Мы, организаторы, закрываем в телефоновом режиме и выделяем места по номиналу и без наценок Не как на Пугачева сейчас билет стоит по 100 по 150 тысяч рублей Ну Пугачева, извините меня, какая величина? Ну да, вот туда Продаем, вот А так на Дитрополином места идут от 2 тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30-100 Поэтому просто подскажите, как вам посмотреть места Как чтобы вы двигали телом, ну или чтобы вы посидели и потанцевали А чтоб прямо на сцене сидеть можно, чтобы Дитер Боулан выступал и я сидел прямо на сцене Ну под 20-чки могу сделать вам места, первый ряд портера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну с волосами Ну вот сейчас по астерикции нормально вроде стал А волосами был, с белыми волосами? Как Александр Маршал? Вот такой? Не, не, не Какой Маршал? Нет, похож лицо А, но лицо Маршал Жуков А, нет, нет, нет Ах, нет, нет, это другой, который помните, у него в рекламе Ходд Шолдерс еще снимался? Ой, да там кто только не снимался Ну да А так вот... Там и Юрий Дуть, извините пожалуйста, в Ходд Шолдерсе и муж Заворотнюк и кого там только не приглашают И даже и Сергей Дружков, если что Ну хорошо знаете все, Алексей Сергеевич я понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея исходить на Дмитрия Болина как вам? Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль И билеты будут стоить по 60 на 100 тысяч рублей О, ну это ж кто? Там два человека придет? Не, ну почему? Головой полный это будет в Крокус Сити Холл Ничего себе А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле? Такое есть у вас? Не-не-не, не, у нас есть мероприятия, балет, мюзикл, там разное шоу Но стендапа нету именно такового Ну и правильно, это какое-то говно, честно говоря Стендап это И Бремов есть Вот И Бремов есть У него, кстати, у него, кстати, у него, кстати, у него, кстати, у него есть У него, кстати, у него, хороший вопрос, да есть И где он там, ну, раз, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков И в конце даже, если у него будет немного под шофе, отвечает на вопросы Не поройдет? Это программа 28 марта в Мостовском дворце молодежи на Вкратинске Очень интересно Но Ну вот Кстати, от 2000 рублей до 12, а Сходите, вам пару, я сделаю, а вы планируете, уже стоите, отопнете Да, вот я просто не могу планировать ничего наперед, потому что Ну, я сейчас лечусь Поэтому не знаю, когда смогу освободиться Как хотите, я просто там, все семьи, я сделаю, тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы побрали здоровье Да как, это ж, это ж всё от господа бога зависит здоровье-то, я-то, от чего здесь, я-то никак уже не решаю Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения Давайте я просто пару мер сделаю хороших, просто, ну, это, это, это Ефремов У него распитание на год вперёд расписано, а это новая программа, вопрос-то есть А там же надо деньги, получается, деньги платить можно? А? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, не, ну всё, что стоит внимание, стоит немного и денег, как в Пугачёво, где билеты стоят по 200 тысяч, сами понимаете? Ну Пугачёво, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну тогда, я думаю, до новых встреч Да, я поясню, я ещё подоберу вам, да, да, да Обязательно Потому что, да, вы со мной не дождались Дитер Боулан Дитер Боулан Дитер Боулан? Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан
 
-### 27. openai / large-v3-turbo
+### 28. openai / large-v3-turbo
 
 - **ID:** `ec3e521b72d3`
 - **Language:** ru
@@ -898,7 +941,7 @@
 
 > В Крокус Сити Холле Зал таком? Так еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулен Дитер Боулен? Да, но дом из Дандерфтен, Вот он, Токио Все, ямао-ямасо, я правильно понимаю? организаторы телефоновом режиме и выделяем места по номиналу и без на оценок и как-то пугачёва сейчас билеты стоит там по 100-160 тысяч рублей ну пугачёва извините меня вели какая величина ну да вот туда продаем вот а так на дитропольную места идут от 2000 рублей и до 20 тысяч уже в лучших местах а что прям на сцене сидеть можно чтобы дитер-баулен выступал я сиделась прям вот типа на сцене а еще ближе получится так а дитр бол и на которой из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея, скажите, Дмитрия более награкла. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, билеты будут стоить 2060, а то есть 100000 рублей О, ну это ж кто это? Два человека придет? Не, ну почему? Головой полный, это будет Крокусти Холл Ничего себе... А есть ещё... А вы ещё... вы на всё были ли это? А ещё какой-то стендап был в Крокус Сити Холли. Такое есть у вас? Не-не-не... Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и такового. Ну и правильно, это какое-то говно, честно говоря. Стендапы... И Времов есть. Вот. И Времов есть. Он вам по духу мой. У него, кстати, вот новая программа, господин, хороший вопрос, где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков, и в конце даже, если будет немного под шофе, отвечает на вопрос. И поройдем, это программа 28 марта в Московском дворце молодежи на Вкратискве. Очень интересно. да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю, когда смогу освободиться. Как хотите, я просто... Я себе что-то сделаю, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это ж, это ж все от Господа Бога зависит, здоровье-то, я-то от чего здесь? Я-то никак уже не решаю. Поэтому возможно... Может вы мне просто скинете смс-сообщение? нет зачем? а только вам читать мои сообщения давайте я просто пару мер сделаю хороших просто, ну это это Ефремов у него раскидание на год вперед расписано, а это новая программа вопрос-то есть а там же надо деньги, получается деньги платить можно? деньги надо заплатить же еще, да? получается мне сейчас? ну да, конечно ну тогда, наверное, ничего не получится ага, не, ну все, что стоит внимания стоит немного и денег как у пугачёва где билеты стоят по 200 тысяч. Пугачёва опять-таки мы с вами уже обсуждали это величина такая, что извините пожалуйста. Ну тогда я думаю до новых встреч. Обязательно. Потому что нового созвона со мной не дождались. Танцовый бомбард
 
-### 28. openai / large-v3-turbo
+### 29. openai / large-v3-turbo
 
 - **ID:** `03e866d5a979`
 - **Language:** ru
@@ -918,7 +961,7 @@
 
 > так еще разок в кругу сити холл дитер болен все время хо гемасо я правильно понимаю все верно Okypichain, Vera Vera, you go мы организаторы зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачева сейчас билеты стоит по 100-150 тысяч рублей ну Пугачева извините меня какая величина ну да а так на Дитрополино места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах портера а танцевальный партер идёт по 3 пиццу поэтому просто подскажите как вам посмотреть места чтобы подъехали телом или по-другому посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитерболан выступала я сидел прямо на сцене а еще ближе получится так а дитер болуны это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал это другой, который в рекламе у него в хэйдон шоудерсе снимался ой, да там кто только не снимался ну да а так вот там и Юрий Дуть, извините пожалуйста в хэйдон шоудерсе и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко, если что он хорошо, знаете, что Алексей Сергеевич, я понимаю я очень сильно люблю это все дело Ага. Ну а так вот, вот самая идея с конечкой Дмитрия Полина, как вам подумал? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Кристи? А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2600, а то есть 100 тысяч рублей. О, ну это ж кто там, два человека придет? Не, ну почему? Гал будет полный, это будет в Крокус-Сити-Холл. Не, ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус-Сити-Холле, такое есть у вас? ну и правильно это будет говно честно говоря и прям вот вот очень интересно Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю когда смогу освободиться. Ну, я вам просто, там, все семья ещё сделаю, тогда четыре места не буду делать, сделаю два места. Я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это ж? Это ж всё от Господа Бога зависит здоровье. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем? А то, по-моему, читать мои сообщения. Да, хотя я просто пару мер сделаю хороших просто. Ну, это, это, это Ефремов. У него расчетание на год вперед расписано. А это новая программа «Вопрос-то есть». А там же надо деньги, получается? Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял. Если что, то наберу вам надо. Обязательно. но с азона за мы не дождались Ответы
 
-### 29. openai / large-v3-turbo
+### 30. openai / large-v3-turbo
 
 - **ID:** `7d75e99ae48e`
 - **Language:** ru
@@ -938,7 +981,7 @@
 
 > Крокус Сити Холл Далеко Крокус Сити Холл 14 марта Дитер Боулен Дитер Боулен Дома Сантерн Воден Токхинг Ямахо, ямасо Я правильно понимаю? Ямахо Ямахо Ямахо Ямахо я правильно понимаю организаторы выделяем места по номиналу и без наценок, не как на Пугачёва сейчас билеты стоят по 150 тысяч рублей ну Пугачёва, извините меня, какая величина? ну да, вот тут же её продаём а так на Дитрополья на места идут от двух тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет в 30 суток Поэтому просто подскажите как вам посмотреть места Чтобы подвигли телом или чтобы вы посидели и потанцевали А что прямо на сцене сидеть можно? Чтобы дитербоула не выступала, а я сидел прямо на сцене Ну под 20 могу сделать вам места первый ряд портера А еще ближе получится? Не так а дитер болен это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк и кого-то только не приглашаю и в даже и сергей дружко если что Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея, с каких-то Дмитрия боле награк вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 206, а то и 100 тысяч рублей О, ну это ж кто это, два человека придет? Не, ну почему, голубой полный, это будет круглый сити холл а есть еще вы на все были то еще какой-то стендап был в крокус сити холли такой есть у вас но и правильно это это будет говно честно говоря и прямо в очень интересно тысяч рублей до 12 да вот я просто не могу планировать ничего на период потому что я сейчас лечусь поэтому не знаю когда смогу освободиться То есть, я просто... Я себе что-то сделаю, но 4 места не буду делать, сделаю 2 места. Я буду давать дополнительный стимул, чтобы вы поправили здоровье. Да как это ж... Это ж всё от Господа Бога зависит, здоровье-то! От чего здесь? Я-то никак уже не решаю. Поэтому, возможно... Может, вы мне просто скинете смс-сообщение? Нет, зачем? Я могу вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Это Ефремов. У него распространение на год вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Но тогда, наверное, ничего не получится. Не, ну все, что стоит внимание, стоит немного денег, как в Пугачёва, где билеты стоят по 200 тысяч. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулен
 
-### 30. openai / large-v3-turbo
+### 31. openai / large-v3-turbo
 
 - **ID:** `5bc7bde55312`
 - **Language:** ru
@@ -958,7 +1001,7 @@
 
 > В Крокус Сити Холле зал знаком так еще разок в Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? да дом из Дандерфтен, вот он в Токинге Яма-хо Ямасо я правильно понимаю? Окипичаем Вера Вера и Го портер идет поэтому просто скажите как посмотреть до того что они летела вы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер выступало я сиделась и прямо типа на сцене а еще ближе получится так а дитер баулы на то которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко здесь это другой который у него прикладивший ой да там кто только не снимался ну да там и Юрий Дудь, извините пожалуйста в hand on shoulders и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко если что ну хорошо, знаете все Алексей Сергеевич, я понимаю я очень сильно люблю это все дело ну а так вот сама идея искать на Днепрополя как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Кристи. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060 на 100 тысяч рублей Ну кто это, два человека придет? Не, ну почему? Головой полный это будет в Крокос Сити Холл Ничего себе А есть еще? Вы на все билеты? Вы еще какой-то стендап был в Крокос Сити Холле? Такое есть у вас? Не, не, не, не, у нас есть мероприятия, балет, мюзикл, там разные шоу стендапа нету именно такового. Ну и правильно, это какое-то говно, честно говоря. Стендапы. И Времов есть. Вот. И Времов есть. Он вам по духу мой. У него, кстати, вот новая программа, господин Хороший вопрос есть, где он там в разных, ну, что там, ну, осуждает там политиков, чиновников, артистов, друзья, алкоголиков, и в конце даже, если тебе будет немного под шофе, отвечает на вопрос, и пройдем. это программа 20 марта оба московском дворце молодежи на против очень интересно но да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться я сделаю, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье, а это не получится. Да как это же, это же от господа бога зависит здоровье-то, от чего здесь, я то никак уже не решаю, поэтому возможно, может вы мне просто скинете sms сообщение? Нет, зачем, а сколько вам читать мои сообщения. Я просто пару мер сделаю хороших. Это Ефремов. У него расписание на год вперед расписано. А это новая программа, вопросы есть. А там же надо деньги, получается? Нет, два раза в другие. Деньги платить можно? Деньги надо заплатить же еще, да, получается? Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва, опять таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулен
 
-### 31. openai / large-v3-turbo
+### 32. openai / large-v3-turbo
 
 - **ID:** `357d464e1fb8`
 - **Language:** ru
@@ -976,9 +1019,9 @@
 
 **Text:**
 
-> ДИТЕР БОУЛАН ДИТЕР БОУЛАН ДИТЕР БОУЛАН В Крокус Сити Холле, зал знаком? Так, еще разок. В Крокус Сити Холл? Да, 14 марта, Дитер Боулан. Дитер Боулан? Да, но дома в Дандерфен, вот он в Токинг. Все, Яма-Хо, Яма-Со, я правильно понимаю? все верно мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как то, Пугачева сейчас билет стоит там по 100-150 тысяч рублей ну Пугачева, извините меня, какая величина? ну да вот туда продаем а так на Дитрополье места идут от 2000 рублей и до 20000 уже в лучших местах партера а танцевальный портер идет на 30-100 поэтому просто подскажите, как вам посмотреть места чтобы подвигали телом, ну или чтобы вы посидели и потанцевали а чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по двостаточке могу сделать вам места, первый ряд портера а еще ближе получится? нет так, а Дитер Боулен это который из них? ну с волосами, но вот сейчас по астерике все нормально вроде стал а волосами был... с белыми волосами, как Александр Маршалл, вот такой? не-не-не, какой Маршалл? нет, похож лицо а, ну лицо... Маршалл Жуков ах, нет-нет, это другой, который у него в рекламе этот шелл раз еще снимался ой, да там кто только не снимался ну да Там и Юрий Дудь, извините пожалуйста, в «Хэндон Шолдерсе», и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот вам сама идея искать, что Дмитрия более награк вам? Сама идея дурацкая, честно говоря. А если разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Один я вас отправлю на его спектакль Крися. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, он будет закрывать этот спектакль и билеты будут стоить Ну это же кто это, два человека придет? Не, ну почему, голубой полный, это будет в Krocos City Hall Ничего себе. А есть еще...А так есть? А вы еще, вы на все билеты? А еще какой-то стендап был в Krocos City Hall, такое есть у вас? Не, не, не. Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапа нету такого. ну и правильно это какой-то говно честно говоря стендап это и время вот у него кстати вот новая программа где он там в разных ну что там ну осуждает там политикам чиновникам артистов друзья алкоголиков и и в конце даже если будет немного под шофе отвечает на вопросы очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье это от чего здесь я то никак не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги получаются деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
+> ДИТЕР БОУЛАН ДИТЕР БОУЛАН ДИТЕР БОУЛАН В Крокус Сити Холле, зал знаком? Так, еще разок. В Крокус Сити Холл? Да, 14 марта, Дитер Боулан. Дитер Боулан? Да, но дома в Дандерфен, вот он в Токинг. Все, Яма-Хо, Яма-Со, я правильно понимаю? все верно мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как то, Пугачева сейчас билет стоит там по 100-150 тысяч рублей ну Пугачева, извините меня, какая величина? ну да вот туда продаем а так на Дитрополье места идут от 2000 рублей и до 20000 уже в лучших местах партера а танцевальный портер идет на 30-100 поэтому просто подскажите, как вам посмотреть места чтобы подвигали телом, ну или чтобы вы посидели и потанцевали а чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по двостаточке могу сделать вам места, первый ряд портера а еще ближе получится? нет так, а Дитер Боулен это который из них? ну с волосами, но вот сейчас по астерике все нормально вроде стал а волосами был... с белыми волосами, как Александр Маршалл, вот такой? не-не-не, какой Маршалл? нет, похож лицо а, ну лицо... Маршалл Жуков ах, нет-нет, это другой, который у него в рекламе этот шелл раз еще снимался ой, да там кто только не снимался ну да Там и Юрий Дудь, извините пожалуйста, в «Хэндон Шолдерсе», и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот вам сама идея искать, что Дмитрия более награк вам? Сама идея дурацкая, честно говорянь сильно люблю это все дело. Ага. Ну а так вот вам сама идея искать, что Дмитрия более награк вам? Сама идея дурацкая, честно говоря. А если разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Один я вас отправлю на его спектакль Крися. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, он будет закрывать этот спектакль и билеты будут стоить Ну это же кто это, два человека придет? Не, ну почему, голубой полный, это будет в Krocos City Hall Ничего себе. А есть еще...А так есть? А вы еще, вы на все билеты? А еще какой-то стендап был в Krocos City Hall, такое есть у вас? Не, не, не. Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапа нету такого. ну и правильно это какой-то говно честно говоря стендап это и время вот у него кстати вот новая программа где он там в разных ну что там ну осуждает там политикам чиновникам артистов друзья алкоголиков и и в конце даже если будет немного под шофе отвечает на вопросы очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье это от чего здесь я то никак не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги получаются деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 32. openai / large-v3-turbo
+### 33. openai / large-v3-turbo
 
 - **ID:** `1549034a48db`
 - **Language:** ru
@@ -998,7 +1041,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? Все верно Акипинчан, вера вера и го Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок Не как на Пугачеву сейчас билет стоит По 150 тысяч рублей Ну Пугачеву извините меня Какая величина? Ну да А так на Дитер Боулан Места идут от 2 тысяч рублей И до 20 тысяч уже в лучших местах партера А танцевальный партер идет Смотритель стол Поэтому просто подскажите Как вам посмотреть места Чтобы подвигли телом Ну или чтобы вы посидели и потанцевали А что прям на сцене сидеть можно? Чтобы Дитер Боулан выступал Какой лицо Сделалось прямо на сцене? Ну по 20 могу сделать вам места Первый ряд партера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну с волосами Получается по астерикции нормально вроде стал А волосами был... С белыми волосами? Как Александр Маршал? Такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо... Маршал Зуков Ахэ... Не-не-не Это другой, который Помните, у него в рекламе Хэддом Шолдерс еще по снимался? Ой, да там кто только не снимался Ну да А так вот... Там и Юрий Дуть, извините пожалуйста В Хэддом Шолдерсе И муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо, знаете все Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну а так вот у вас самая идея Сказать на Дитера более награк вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага Один я вас отправлю на его спектакль Кыся А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит Он его 15 лет играет уже Ну да, просто этим летом будет прощальная И так сказать, но он будет закрывать этот спектакль И билеты будут стоить по 60 на 100 тысяч рублей О, ну это ж кто это? Два человека придет? Не, ну почему? Гол будет полный, это будет круглый сити холл Ничего себе А есть еще... А вы еще... Вы на все билеты? А еще какой-то стендап был в Крокос Сити Холле Такое есть у вас? Не-не-не Не, у нас есть мероприятия Балет, мюзикл, там разное шоу Но стендапов нету и все такового Ну и правильно Это какое-то говно, честно говоря Стендапы И Бремов есть Вот И Бремов есть Он вам по духу может У него, кстати, идет новая программа Господин, хороший вопрос-то есть Где он там в разных... ну, там... ну, осуждает там политиков, чиновникам, артистам, друзей, алкоголикам И в конце даже, если у тебя будет немного под шофе, отвечает на вопросы Не пройдет? Это программа 28 марта в Мостовском дворце молодежи на Вкратинске Очень интересно Но... Там по местам, хотя, 2000 рублей до 12 А дети вам паром я сделаю, а вы планируете уже сойте, отопнете? Да вот я просто не могу планировать ничего наперед, потому что... ну, я сейчас лечусь Поэтому не знаю, когда смогу освободиться Ааа... так хотите я просто... там... все семьи что-то сделаю Тогда... но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье А это не получится, да Это же все от Господа Бога зависит здоровье-то, я-то... от чего здесь? Я-то никак уже не решаю Не решаю Поэтому, возможно... ааа... может вы мне просто скинете смс-сообщение? Нет, зачем? А только вам читать мои сообщения Давайте я просто пару мер сделаю хороших просто... ну, это... это... это... это Ефремов У него распитание на год вперед расписано, а это новая программа вопрос-то есть А там же надо деньги, получается... Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, не, ну все что стоит внимание стоит немного и денег, как Пугачева, где билеты стоят по 200 тысяч, я понимаю? Ну Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну да Ну тогда, я думаю, до новых встреч Да, я понял, я еще подоберу вам, да, да Обязательно Потому что, ну, вы со мной не дождались А Дитер Боулан? А Дитер Боулан? А Дитер Боулан Дитер Боулан? А Дитер Боулан? А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан А Дитер Боулан
 
-### 33. openai / large-v3-turbo
+### 34. openai / large-v3-turbo
 
 - **ID:** `9658313c87aa`
 - **Language:** ru
@@ -1018,7 +1061,7 @@
 
 > В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Но дом из Дандерфтен Воден Токинг Ямахо, ямасо Я правильно понимаю? Все верно Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наоценок Не как на Пугачеву Сейчас билет стоит по 100-150 тысяч рублей Ну Пугачеву извините меня Какая величина? Ну да Вот туда А так на Дитер Боулана Места идут от 2000 рублей И до 20000 уже в лучших местах партера А танцевальный портер идет по 30-100 Поэтому просто подскажите Как вам посмотреть места Так Чтобы подвигали телом Ну или Чтобы вы посидели и потанцевали А чтобы прямо на сцене сидеть Можно? Чтобы Дитер Боулан выступал Я сидел прямо на сцене Ну под 20-100 могу сделать вам места Первый ряд партера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну с волосами Получается По астерикции нормально вроде стал А волосами был С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет Похож Лицо Маршал Зуков Ахэ Не-не Это другой Который В рекламе Ходдом Шолдерс Снимался Ой да там кто только не снимался Ну да А так вот Там и Юрий Дуть Извините пожалуйста В ходдом Шолдерсе И муж Заворотнюк И кого там только не приглашают И даже И Сергей Дружко Если что Ну хорошо Знаете Алексей Сергеевич Я понимаю Я очень сильно люблю Это все дело Ага Ну а так вот Сама идея Сказать на Дитер Более на брак Сама идея Дурацкая Честно говоря А если разговор бы начался С Дмитрия Нагиева А вот с этого Надо было начинать Ага Один я вас отправлю На его спектакль Кыся А вот это не нужно Единственный спектакль Которым он играет Я знаю Да Он его любит Он его 15 лет играет уже Ну да Просто этим летом Будет прощальное Так сказать Но Будет закрывать этот спектакль И билеты будут стоить В 20-60 На то есть В 100 тысяч рублей Оооо Ну это ж кто Там два человека придет Не ну почему Галл будет полный Это будет Крокос Сити Холл Ничего себе А есть еще А вы еще Вы на все Или это А еще какой-то Стендап был В Крокос Сити Холле Такое Есть у вас Не Не У нас есть мероприятия Балет Мюзикл Разное шоу Но стендапов нет И такового Ну и правильно Это какая-то говно Честно говоря Стендапы И приман И приман Есть Вот И приман Есть Очень интересно Но Что Паром я сделаю А вы Планируете Свои А так Да вот Я просто Не могу Планировать Ничего Наперед Потому Что Я сейчас Лечусь Поэтому Не знаю Когда Смогу Освободиться Так Хотите Я просто Моя семья Что-то Делаю Но Четыре места Не буду Делаю Два места Я буду Дополнительный Стимул Чтобы Вы Побрали Здоровье Да как Это Это От Господа Бога Зависит Здоровье От Чего Здесь Я Никак Не Решаю Поэтому Возможно Может Вы мне Просто Скинете Смс Сообщение Нет Зачем А только Вам Читать Мои Сообщение Давайте Я просто Пару Мер Сделаю Хороших Просто Ну Это Это Ефремов У него Распитание На год Вперед Расписано А это Новая Программа Вопрос Да есть А там Деньги Получается Деньги Платить Можно Деньги Надо Заплатить Еще Получается Мне Ну Да Конечно Ну Тогда Наверное Ничего Не Получится Но Все Что Стоит Немного Деньги Как Пугачева Где Билеты Стоят По 200 Тысяч Ну Пугачева Опять Таким Мы С вами Обсуждали Это Величина Такая Что Извините Пожалуйста Ну Ну Тогда Я думаю До Новых Встреч Обязательно Потому Нового Созвона Со мной не дождались Это Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Дитер Дитер Дитер Боулан Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер Дитер
 
-### 34. openai / large-v3-turbo
+### 35. openai / large-v3-turbo
 
 - **ID:** `eed8b81c161b`
 - **Language:** ru
@@ -1038,7 +1081,27 @@
 
 > В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долг Сандерфтен, Лоден Токинг Все, Яма Хо Яма Сой Я правильно понимаю? все верно Акипичайен Веравера и Гол мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок, не как на Пугачеву сейчас билет стоит по 100, по 150 тысяч рублей ну Пугачеву, извините меня какая величина? ну да, вот туда вот туда а так на Титрополином места идут от 2000 рублей и до 20000 уже в лучших местах партера А танцевальный портер идет по 30-100 Поэтому просто подскажите как вам посмотреть места Как что-то подвигли телом, ну или что бы вы посидели и потанцевали А чтобы прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел на сцене? Ну по 20-м могу сделать вам места первый ряд портера А еще ближе получится? Не Так А Дитер Боулен это который из них? ну вот с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами? как Александр Маршал? вот такой? не, не, не. какой Маршал? нет, похож. лицо а, да лицо... Маршал Жуков ахэ, не, не. это другой, который, помните, у него в рекламе этот шеллор с чемпион с темпом снимался ой, да там кто только не снимался Ну да. А так вот, да. Там и Юрий Дуть, извините, пожалуйста, в «Head and shoulders», и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все. Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, вот, сама идея, искать на Дидрополье, как вам? Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот этот не нужно. Единственный спектакль в котором он играет. Я знаю, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать. Он будет закрывать этот спектакль и билеты будут стоить за 60, а то и 100 тысяч рублей о, ну это ж кто, там два человека придет? не, ну почему, гол будет полный, это будет в Крокус Сити Холл не, ну ничего себе а есть еще, а вы еще, вы на все билеты? а еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? не, не, не, у нас есть мероприятия, балет, мюзикл, там разное шоу, но стендапа нету, и ничего такого Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Бремов есть. Вот. И Бремов есть. Он вам по духу может. У него, кстати, вот новая программа, господин, хороший вопрос-то есть. Где он там в разных, ну, то там, ну, осуждает там политикам, чиновникам, артистам, друзей, алкоголикам. И в конце даже, если будет немного под шофе, отвечает на вопросы. очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться здоровье это все от господа бога зависит здоровье то это от чего здесь я это никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 35. openai / large-v3-turbo
+### 36. openai / large-v3-turbo
+
+- **ID:** `78eb5555dee7`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.04s
+- **Memory:** Δ 0.0 MB, peak 9409.9 MB
+- **Beam size:** 9
+- **Temperature:** 0.07
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 42.77%
+- **CER:** 35.39%
+- **Timestamp:** 2026-01-07T15:33:06.575627+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долландандорфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как на Пугачёва сейчас билет стоит по 100-150 тысяч рублей ну Пугачёва, извините меня, какая величина? ну да вот туда продаем а так на Дитрополье на места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера а танцевальный портер идет по 30-м поэтому просто подскажите как вам посмотреть места как-то подвигали телом ну или чтобы вы посидели и потанцевали а что прям на сцене сидеть можно чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по 20-м могу сделать вам места первый ряд портера а еще ближе получится? нет так это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея с каких-то Дмитрия более награк вам Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все были это вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться А, то хотите я просто, там, все семьи сейчас делают, тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье. Да как это ж, это ж все от Господа Бога зависит здоровье-то, я-то от чего здесь, я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших, просто, ну это Ефремов. У него расписание на год вперед расписано, а это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулен
+
+### 37. openai / large-v3-turbo
 
 - **ID:** `1bdb315707df`
 - **Language:** ru
@@ -1058,7 +1121,7 @@
 
 > В Крокус Сити Холле Так, еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, но дом из Дандерфтен, вот он, в Токхинг Я правильно понимаю? Все верно Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок Не как на Пугачеву сейчас билеты стоят по 100 По 150 тысяч рублей Ну Пугачеву, извините меня, какая величина? Ну да Вот туда А так на Дитропольную Места идут от 2000 рублей И до 20 тысяч уже в лучших местах портера. А танцевальный портер идет в адресица. Поэтому просто подскажите, как вам посмотреть места. Как будто бы подвигали телом, или вы посидели и потанцевали. А что, прям на сцене сидеть можно? Чтобы Dieter Boelen выступал, я сидел прямо на сцене. По два статочки могу сделать вам места первый ряд портера. А еще ближе получится? Нет. Так. а дитер болин это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал лекарь и это другой который у него прикладка шелдерс снимался юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич я понимаю. Я очень сильно люблю это все дело. Ага, ну а так вот у нас самая идея с каких-то Дмитрием более награком? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот это не нужно. я знаю давно любит она 15 лет играет уже кто это в 2 человека придет а есть еще вы на все пиле там еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря стендап и прямо в очень интересно Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Как хотите, я просто в семье что-то сделаю, но 4 места не буду делать, сделаю 2 места, я буду добавить дополнительный стимул, чтобы вы поправили здоровье. Да как, это ж все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? нет зачем а то есть просто пару мер сделаю хороших просто это Ефремов у него расписание на год вперед расписано а это новая программа а там же надо деньги платить можно? деньги надо заплатить же еще получается мне сейчас ну да конечно но тогда ничего не получится ааа все что стоит внимание, стоит немного и денег Как в Пугачёво, где билеты стоят 200 тысяч. Ну, Пугачёво, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я боюсь, что наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Детер Боулан
 
-### 36. openai / large-v3-turbo
+### 38. openai / large-v3-turbo
 
 - **ID:** `56fe92807dd9`
 - **Language:** ru
@@ -1078,7 +1141,7 @@
 
 > В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да, но Долланд Дандерфтен Вот он в Токинге Ямахо Ямасо я правильно понимаю? Все верно Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок, не как на Пугачеву Сейчас билет стоит по 100 по 150 тысяч рублей Ну Пугачеву извините меня Какая величина? Ну да, вот туда А так на Дитер Боулан Дитер Боулан Двух тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30 сон Поэтому Просто подскажите как вам посмотреть места Как что-то подвигли телом Ну или Чтобы вы посидели и потанцевали А что прям на сцене сидеть можно? Чтобы Дитер Боулан выступал Я сидел прямо на сцене Ну по 20 могу сделать вам места Первый ряд портера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну с волосами Получат по астерикции нормальный вроде стал А волосами был С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо Маршал Жуков Ахэ, не-не-не Это другой Который В рекламе Ходжерс Еще снимался Ой, да там кто только не снимался Ну да Там и Юрий Дудь Извините пожалуйста В ходжерсе И муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо знаете все Алексей Сергеевич Я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот Самая идея Сказать на Дмитрия Полина Как вам? Самая идея Дурацкая честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль Который он играет Я знаю Да, он его любит Он его 15 лет играет уже Ну да Просто этим летом будет прощальная Так сказать Но он будет закрывать этот спектакль И билеты будут стоить По 60 на 100 тысяч рублей Ооо Ну это ж кто это? Два человека придет? Не, ну почему? Головой полный Это будет Крокус Сити Холл А есть еще А есть еще А вы еще Вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле Такое есть у вас? Не, не, не Не, у нас есть мероприятия Балет, мюзикл Там разное шоу Но стендапа нету И ни такового Ну и правильно Это какое-то говно Честно говоря Стендапы И Бремов есть Вот И Бремов есть Он вам по духу может У него кстати вот новая программа Генпадин Хороший вопрос то есть Где он там в разных Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Ну там Отвечай на вопросы А И поройдем Это программа 28 марта В Мостовском дворце молодежи на Вкратинской Очень интересно Но Там по местам Дать от 2000 рублей до 12 А дите вам пару Я сделаю А вы планируете уже сойти А такнете Да вот я просто не могу планировать ничего наперед Потому что Ну я сейчас лечусь Поэтому не знаю когда смогу освободиться А Как хотите я просто Там Моя семья Что сделаю Тогда Но 4 места не буду делать Делаю 2 места Я буду дополнительный стимул Чтобы вы Побрали здоровье А это не получится Да Это ж все От господа бога зависит здоровье Это я то От чего здесь Я то никак уже Не решаю Поэтому возможно Ааа Может вы мне просто скинете Смс сообщение Нет Зачем А только Вам читать мои сообщения Давайте я просто пару мер сделаю хороших Просто Ну это Это Это Это Ефремов У него Распитание на год вперед расписано А это Новая программа Вопросы есть А там же надо Деньги получается Деньги платить можно? А? Деньги надо заплатить же еще да получается мне сейчас? Ну да конечно Ну тогда Наверное ничего не получится Ага Не Ну все что стоит внимание Стоит немного и денег Как в Пугачево Где билеты стоят по 200 тысяч Ну Пугачево опять таки Мы с вами уже обсуждали Это величина такая Что извините пожалуйста Ну да Ну тогда я думаю до новых встреч Да Я понял Если что наберу вам Да да да Обязательно Потому что нового созвона со мной не дождались Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю Я не знаю
 
-### 37. openai / large-v3-turbo
+### 39. openai / large-v3-turbo
 
 - **ID:** `c16aa83a84bc`
 - **Language:** ru
@@ -1098,7 +1161,27 @@
 
 > В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Дитер Боулен? Да Долланд Сандарфен, Лотан, Токинг Ямахо и Ямасо Я правильно понимаю? Важно, все верно. Акипичаен, Вера Вера, you go. Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачеву, сейчас билет стоит по 150 тысяч рублей. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. А так на Дитропольную места идут от 2000 рублей и до 20000 уже в лучших местах портера. а танцевальный портер идет в 30-100 поэтому просто подскажите как вам посмотреть места как чтобы подвигали телом, ну или чтобы вы посидели и потанцевали а что б прям на сцене сидеть можно? чтобы Дитер Боулен выступал и я сидел вот на сцене ну по 20-е могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулен это который из них? Не, не, не. Какой Маршал? Нет, похож лицо. А, ну лицо? Маршал Жуков. Ахэ, не, не. Это другой, который, помните? У него в рекламе этот шеллер сочинался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дуть, извините пожалуйста в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ну а так вот, вот сама идея искать на Дмитрия более награк вам. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Кристи. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать. Он будет закрывать этот спектакль, и билеты будут стоить 2060, а то и 100 тысяч рублей. но вы тоже кто там два человека придет а есть еще вы на все были это вы еще какой-то стендап был в крокус city холли такое вы есть у вас мероприятия балет и узел там раз да жона стендапа нет такого ну и правильно это честно говоря стендап и приму и вот и время подокупать и у него зайдет новая программа где он там в разном а потом ну обсуждает там политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопрос это программа очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться как хотите я просто, я себе что-то делаю, но 4 места не буду делать, сделаю 2 места и я буду дополнительный стимул, чтобы вы пообравить здоровье да как это, что... это все от господа бога зависит здоровье то, я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а также деньги платить деньги надо заплатить женщину получается но тогда ничего не получится опять таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно ну что мы не дождались Дитер Боулен
 
-### 38. openai / small
+### 40. openai / large-v3-turbo
+
+- **ID:** `71df23e95518`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.63s
+- **Memory:** Δ 1.5 MB, peak 9409.2 MB
+- **Beam size:** 9
+- **Temperature:** 0.09
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 43.37%
+- **CER:** 35.48%
+- **Timestamp:** 2026-01-07T15:32:15.938616+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а чтоб подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер боулен выступал и я сидел прямо на сцене а еще ближе получится так а дитер болу это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко это другой который у него в рекламе ходом снимался юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот у вас самая идея с каких-то Дмитрия более награк вам Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися А вот это не нужно я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все были это вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно до 12. Ходите вам пару метров, а вы планируете уже стоите, отогнете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ходите, я вам просто все семью, я сделаю, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы побрали здоровье. Ну как это ж от Господа Бога зависит, здоровье-то. От чего здесь? Я это никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем? А только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Это Ефремов. У него раскидание на год вперед расписано. А это новая программа, вопросы-то есть. А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам надо. Обязательно. что нового созвона со мной не дождались Дитер Боулан Дитер Боулан Продолжение следует...
+
+### 41. openai / small
 
 - **ID:** `25704c725b2d`
 - **Language:** ru
@@ -1118,7 +1201,27 @@
 
 > В Крокусе-Николе сал таком. Так, еще разок. В Крокус-Сити-Холл? Да, 14 марта, Диттер-Боулен. Диттер-Боулен? Да, но Долу-Сандер-Втанлоден-Докинг. Все. Ремахо-Емасо. Да, правильно? Да. А Кипинчаа-Инбера-Вера-Иго. Организаторы, закрывай в телефонном режиме и выделяй места по номиналу и без нацена. Никак-то Пугачеву сейчас в билетах стоит там по 100, по 60 тысяч рублей. Ну, Пугачеву извините меня, вели какая величина. Ну да, продаем в ход. А так на Диттер-Боулене я в место иду за 2000 рублей, и до 20 тысяч уже в лучших местах порции. А танцевальный портрет идет в 3-5 суток. Поэтому, просто покажите, как вам посмотреть места, чтоб поднимали телом, стоили, чтобы и посидели и потанцевали. А что, прямо на сцене сидеть можно, чтобы Диттер-Боулен выступал и я сидел прямо на сцене? Ну, по данным я могу сделать вам место первое ряд портера. А еще ближе получится? Нет. Так... А Диттер-Боулен это который из них? Он с волосами, но сейчас по астерикции нормально вырастал. А волосами с белыми волосами, как Александр Маршал? Вот такой? Нет-нет-нет. Какой Маршал? Нет, похож лицо. А, да лицо? Маршал зуб. А это другой, который после него в рекламе, когда шел и расчеховался. Ой, да там кто только не снимался. Ну, да. А так вот... Там и Юрия идут, извините, пожалуйста, в Ханан-Солндерсе, и муж заворотнюк и кого-то только не приглашаю. И даже и Сергей Дружко, если что. Ну, хорошо, знаете, Сергеечек, понимаешь... Я очень сильно люблю это всё дело. Ага. Ну, а так у нас сама идея, если они на Диттер-Боулен играть. Сама идея дурацкая, честно говоря. А если разговор бы начнется с Дмитрия Ногиева... А вот с этого надо было начинать? Ага, а где дело-то отправлено на его спектакль Кысья? А вот это не нужно. Единственный спектакль, по которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну, да, просто этим летом будет прощальная этакка, но он будет закрывать этот спектакль и билеты будут за 60-ти, а на той-то по-быщей. О, ну это ж... кто это? Два человека придёт? Нет, ну почему? Голубой полный, это будет, крокостить холл. Ну, я не знаю себе. А есть ещё... А вы ещё на всё билеты? А вы ещё какой-то стендап был в крокостить холли? Такое есть у вас? Нет, нет, нет, нет, нет. У нас есть мероприятие? Полет, музыкал, там... Разное шоу, но стендапа нету. И такового. Ну, и правильно. Это какое-то говно, честно говоря. Стендап это. И Премов есть. И готов. И Премов есть. Комлом по духу. У него, кстати, новая программа, и в ней хорошая вопрос. Где он там, в раз, ну, там, ну, асуждают нам политиков, чиновников, артистов, русских, алкоголиков. И в конце даже, если будет немного под шафе, отвечает на вопрос. А, а. А. Это программа 28 марта в Масулском дворстве молодежи напротив. Очень интересно. Но... Я помню. А ты о 2000 рублей до 12? Адите вам пару минут сделаю, а вы спланируете урлотить одному? Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь. Поэтому не знаю, когда я смогу освободиться. Так, адите вам просто что, то что, я такое не буду делать, я буду заполнить институт, чтобы вы попрали здоровье. Да как это, что, это всё от Господа Бога зависит, здоровье. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинуть СМС сообщение? Нет, зачем? А я по-моему считаю, да, а я просто пару минут сделаю, хороших просто, но это это не фремов. У него рассчитание на год вперёд, раскисленное. А это новая программа, вопрос есть. А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же ещё, да, получается, мне сейчас? Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, нет, ну всё, что стоит, внимание, стоит немного денег, как Пугачёва, где билеты стоит по 200 тысяч. Но, Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я по-эффективному наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Детер Боулен. Детер Боулен. Детер Боулен. Детер Боулен. Детер Боулен. Детер Боулен. Детер Боулен.
 
-### 39. openai / large-v3-turbo
+### 42. openai / large-v3-turbo
+
+- **ID:** `136d2410dd56`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.83s
+- **Memory:** Δ 0.0 MB, peak 9409.9 MB
+- **Beam size:** 2
+- **Temperature:** 0.44
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 43.82%
+- **CER:** 35.99%
+- **Timestamp:** 2026-01-07T15:33:16.696976+00:00
+
+**Text:**
+
+> Крокус Сити Холли Дал таком? Так еще разок В Крокус Сити Холл 14 марта Дитер Боуллин Да Долу сандармсен в Лоден Токио Все Ямахо Ямасо Я правильно понимаю? Супер Ямахо Ямасо Я правильно понимаю я правильно понимаю акипича организаторы закрываем телефонов режиме и выделяем места по номиналу и без наценок не как на пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина ну да вот тут же её продаём а так то на Титрополино места идут от 2000 рублей и до 20000 уже в лучших местах портера а танцевальный портер идет в 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом или чтобы посидели и потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула не выступала я сидел прямо на сцене по 20-ке могу сделать вам места первый ряд портера а еще ближе получится? нет так а дитер баулы это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе ходу ой да там только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю И даже Сергей Дружков, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага, ну а так у вас самая идея искать, да не тропали, как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага, а где я вас отправлю на его а вот я не нужно я знаю давно любит она 15 лет играет уже ну это же кто-то два человека придет а есть еще на все пиле там еще какой-то стендап был в крокус city холли такое есть у вас ну и правильно это будет говно честно говоря и в римах у него программа политиков чиновников артистов друзья алкоголиков и это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я то никак уже не решаю поэтому Возможно. Может вы мне просто скинете смс-сообщение? Нет, зачем? А то есть, по-моему, читать мои сообщения. Я просто пару мер сделаю хороших. Это Ефремов. У него распределение на год вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? А? Деньги надо заплатить же еще, да, получается? Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево опять-таки мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
+
+### 43. openai / large-v3-turbo
 
 - **ID:** `2ca6dfbf4361`
 - **Language:** ru
@@ -1138,7 +1241,7 @@
 
 > в Крокус Сити Холле в Крокус Сити Холле так еще разок в Крокус Сити Холл 14 марта Дитер Боулон Дитер Боулон? все ямахо ямасо я правильно понимаю гонок организаторы закрываем телефоном режиме и выделяем по номиналу и без наценок не как-то пугачёву сейчас билет стоит там по 100 по 150 тысяч рублей ну пугачёв извините меня, какая величина? ну да, вот уже её продаём а так на Дитропольенове места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера а танцевальный портер идет по 3 стол поэтому просто подскажите как вам посмотреть места чтобы подвигали телом ну или чтобы вы посидели и потанцевали А чтоб прям на сцене сидеть можно? чтобы Дитер Боулен выступал и я сидел на сцене ну по двостаточке могу сделать вам места первый ряд портера а еще ближе получится? не так а Дитер Боулен это который из них? Ну с волосами. Но вот сейчас по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож лицо. А, ну лицо... Маршал Жуков. Ах, не-не. Это другой, который... Помните, у него в рекламе этот шеллорс еще снимался? Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста. в хайном шолдерсе и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружков, если что ну хорошо, знаете, что, Алексей Сергеевич, я понимаю я очень сильно люблю это все дело ага, ну а так вот вам сама идея искать на Дмитрия Поля на граку сама идея дурацкая, честно говоря а если бы разговор начался с Дмитрия Нагиева а вот с этого надо было начинать а вот это не нужно я знаю давно любит а на 15 лет играет уже но вы тоже кто-то два человека придет а есть еще на все билет а вы еще какой-то стендап был в крокус сити холли такой есть у вас но и правильно это будет говно честно говоря и прям вот и время у него программа политиков чиновников артистов друзья алкоголиков и это программа очень интересно но я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться господа бога зависит здоровье то я то от чего здесь я то никак уже решают поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги получаются деньги платить деньги надо заплатить же еще до получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну всё, что стоит внимание, стоит немного и денег, как Пугачёва, где билеты стоят по 200 тысяч. Ну Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 40. openai / large-v3-turbo
+### 44. openai / large-v3-turbo
 
 - **ID:** `ca393bc08d9b`
 - **Language:** ru
@@ -1158,7 +1261,27 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Сандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигали телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрбоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом ой да там кто только не снимался там юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашают и даже и И Сергей Дружков, если что. Ну хорошо, знаете, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, у нас самая идея, с каких-то днедер более награк вам. Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Так хотите я просто, там, все семьи, я сделаю, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье. Да как это, что, это же все от Господа Бога зависит, здоровье-то, я-то, от чего здесь, я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших, просто, ну, это, это, это Ефремов. У него расписание на год вперед расписано, а это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит, внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва опять-таки мы с вами уже обсуждали, это величина такая, что извините пожалуйста. Ну тогда я думаю до новых встреч. Обязательно. Дитер Боулан
 
-### 41. openai / small
+### 45. openai / large-v3-turbo
+
+- **ID:** `78f90d1a28b3`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.75s
+- **Memory:** Δ 0.0 MB, peak 9399.6 MB
+- **Beam size:** 9
+- **Temperature:** 0.21
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 43.96%
+- **CER:** 35.77%
+- **Timestamp:** 2026-01-07T15:30:49.255130+00:00
+
+**Text:**
+
+> в Крокус Сити Холле в зал таком так еще разок в Крокус Сити Холл 14 марта Дитер Боулен Дитер Боулен? да, но дома в Дандерфен вот он в Токинге я правильно понимаю акипича организаторы в телефоновом режиме и выделяем по номиналу и без на оценок не как на пугачёва сейчас билеты стоят по 100 по 150 тысяч рублей ну пугачёва извините меня какая величина ну да вот туда а так на Титрополье и до 20 тысяч уже в лучших местах портера, а танцевальный портер идет по 30-100. Поэтому просто подскажите, как вам посмотреть места. Чтобы подвигли телом, ну или чтобы вы посидели и потанцевали? А чтоб прямо на сцене сидеть можно, чтобы Дидер Боулон выступал, а я сидел на сцене? Ну по 20-м могу сделать вам места, первый ряд портера. А еще ближе получится? Нет. так а дитер боулин это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе ой да там кто только не снимался там и юрий дуть извините пожалуйста в хэндом шолдерсе и муж заворотнюк и кого там только не приглашают И даже и Сергей Дружков, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага, ну а так вот сама идея искать на Дмитрия Полина как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага, один я вас отправлю на его спектакль Кыся. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему, гол будет полный, это будет круглый сити-холл. а есть еще вы на все билеты в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и время у него идет новая программа где он там образов а ну а туда это политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного пустот отвечает на вопрос это программа 20 марта в московском дворце молодежь на противень очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда на ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно но с озором они дождались Дитер Боулан
+
+### 46. openai / small
 
 - **ID:** `3313313d8da9`
 - **Language:** ru
@@ -1178,7 +1301,7 @@
 
 > В Крокусе Нехоля. В Крокусе Нехоля. Сделал таком. Так, еще разок. В Крокусе Нехол. Да, 14 марта. Дитер Боулен. Дитер Боулен? Да. Ну, Долу сандр в Блоден-Токе. Все. Аккупенчайн Бэра Вера Юго. Аккупенчайн Бэра Вера Юго. Аккупенчайн Бэра Вера Юго. Мы организаторы. Закрываем телефон в режиме. И выделяем места по номиналу и без нацена. Никак на Пугачеву сейчас. Белет длился там по 100, по 60 тысяч рублей. Ну, Пугачеву извините меня. Вели какая величина. Ну да. Вот сюда. Вот сюда продаем. А так на Дитер Боулене. Вместо идут за 2000 рублей. И до 2000 уже в лучших местах. А танцевальный партер идет. Смотрите. Поэтому, просто подскажите. Как вам посмотреть места? Так. Чтобы подвигали телом? Или больше вы посидели и потанцевали? А что, прямо на сцене сидеть можно? Чтобы Дитер Боулен выступал. И я сидел прямо на сцене. Ну, по завтра то, чем могу сделать. Вместо первой ряд партера. А еще ближе получится? Нет. Так. А Дитер Боулен, это который из них? Он с волосами. Он сейчас по астерикции нормально разъяснил. А волосами был с белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож лицо. А, да лицо... Маршал звуком. Ах, да. Нет, нет, это... Это другое, которое после у него в рекламе, когда шел и разъщупывалось, снимался. Да там кто только не снимался. Ну да. А так вот... Там и Юрий Дудь, извините, пожалуйста, в Ханан Сролдерсе, и муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, это Алексей Сергеевич, понимаешь? Я очень сильно люблю это все дело. Ага. Ну а так вот он сам, Дитер Боулен, самая идея дурацкая, честно говоря. А этот разговор, мы начнем с Дмитрия Нагиева. А вот с этого надо было начинать. Ага. А где дело сопролено его спектакль Кыйся? А вот это не нужно. Единственный спектакль, по которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная такая дно. Будет закрывать этот спектакль, и билеты будут стоить по 16 лет, а на той, в том числе, в шерпе. О, ну это ж, кто это? Два человека придет? Нет, ну почему? Голвой полный, это будет крокостихол. Мы ничего себе... А есть еще... А вы еще... Вы на все билеты? А вы еще какой-то стендап был в крокостихоле? Такое есть у вас? Нет, нет, нет. Нет, ну есть мероприятия, полет, музыкал там, раз за шоу, но стендапов нету, и такового. Ну и правильно, это какая-то говна, честно говоря. Стендапы-то? И в Римовхи. Вот. И в Римовхи. В Голлом-Падукумоль. У него, кстати, вот новая программа, и в поднег хорошего вопроса есть. Где он там, в раз, ну, вот это там, ну, осуждает там маленьков, чиновников, артистов, взросле, алкоголиков, и в конце даже, если будет немного пустофе, отвечает на вопрос C. Ааа. Не пройдет. Это программа 28 марта в Маслоском дворце молодежи на противник. Очень интересно. Но... Там пометка, кстати, от 2000 рублей до 12. А видите, вам пару мест сделаю, а вот планируйте, уже стоите однажды. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так, алиния, просто, там, я семьяча сделаю, тогда, ну, 4 места не буду делать, сделаю 2 места, я буду дополнить мне стимул, чтобы вы попрали здоровье. Да как это, что... Это ж все от Господа Бога зависит, здоровье-то, от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинуть СМС-сообщение? Нет, зачем? Я не могу читать мои сообщения. Давайте, а просто пару мест сделаю хорошие, просто, это не фремов, у него рассчитание на год вперед раскистено, а это новая программа, вопрос, да есть. А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас. Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, нет, ну все, что стоит, внимание, стоит немного, Пугачева где билет стоит 200 тысяч, 25 тысяч. Пугачева опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я поиск, что наберу вам, да. Обязательно. Потому что нового созвана со мной не дождались. А это Болан. Дитер Болан. Дитер Болан. Дитер Болан. Дитер Болан. Дитер Болан. Дитер Болан. Дитер Болан. Дитер Болан. Дитер Болан.
 
-### 42. openai / large-v3-turbo
+### 47. openai / large-v3-turbo
 
 - **ID:** `0a34b87423c6`
 - **Language:** ru
@@ -1198,7 +1321,7 @@
 
 > В Крокус Сити Холле Салтаком Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да, но дома в Сандерфен Воден Токио Все, Яма-Хо Яма-Со Я правильно понимаю? все верно Акипичайон Вера Вера Его Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачёва сейчас билет стоит там по 100, по 150 тысяч рублей ну и Пугачёва извините меня, какая величина? ну да вот туда вот туда а так на Дитрополино места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах портера А танцевальный портер идет под 30-цом. Поэтому просто подскажите, как вам посмотреть места. Чтобы подъигли телом, ну или чтобы вы посидели и потанцевали. А чтобы прям на сцене сидеть, можно, чтобы Дитер Боулен выступал и я сиделся прям вот, типа, на сцене? Ну, по двостаточке могу сделать вам места первый ряд портера. А еще ближе получится? Нет. Так. А Дитер Боулен, это который из них? ну с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами? как Александр Маршал? вот такой не-не-не, какой Маршал? нет, похож, лицо а, но лицо... Маршал Зуков ахэ, не-не, это другой, который, помните? у него в рекламе этот шелурс еще снимался ой, да там кто только не снимался ну да, а так вот, да там и Юрий Дудь, извините пожалуйста, в Head & Shoulders и муж Заворотнюк, и кого там только не приглашают и даже и Сергей Дружко, если что ну хорошо, знаете, Алексей Сергеевич, я понимаю я очень сильно люблю это все дело ага, ну а так вот, вот, сама идея, сходить на Дмитрий Поля, как вам? сама идея дурацкая, честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да будет прощается это 5 нового будет закрывать это кто-то два человека придет себе а есть еще вы еще на все билета в еще какой-то стендап был в крокус city такой есть у вас ну и правильно это программа где он там образ но осуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шопе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего на перед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это ж от господа бога зависит здоровье то я-то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете sms сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится как в Пугачево, где билеты стоят по 200 тысяч. Ну, Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, да. Ну, тогда, я думаю, до новых встреч. Да, я поясню, что наберу вам, да. Обязательно. Потому что, ну, вы созвольны со мной не дождались. Адитер Баулан
 
-### 43. openai / large-v3-turbo
+### 48. openai / large-v3-turbo
 
 - **ID:** `1781f1cd3be3`
 - **Language:** ru
@@ -1218,7 +1341,7 @@
 
 > В Крокус City Hall В Крокус City Hall 14 марта, дитер Боулан Дитер Боулан? Да, дом из Дандерфтен, вот он в Токио Все! Ямахо и Ямасо, я правильно понимаю? Все верно! Акипинчайен, вера вера, иго! Мы, организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без надпенденок. Не как на Пугачёва сейчас билеты стоят по 100-160 тысяч рублей. Ну, Пугачёва, извините меня, какая величина? Ну да. Вот туда. продаем а так на дитропоуле на 2 тысяч рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет на 30 дом поэтому просто подскажите как посмотреть до этого а чтоб прямо на сцене сидеть можно чтобы дитер болон выступал я сидел с и прямо на сцене а еще ближе получится так а дитер болон это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там я только не снимался там и юрий дуть извините пожалуйста в этом в шолдерсе и муж за воротнюк и кого там только не приглашают и даже и Сергей Дружко если что Ну хорошо знаете все, но Алексей Сергеевич я как-то понимаю Я очень сильно люблю это все дело Ага, ну а так вот вот сама идея искать на Дмитра более награку Сама идея дурацкая честно говоря А если бы разговор начался с Дмитрия Нагиева с этого надо было начинать а вот я не нужно я знаю да он его любит он его 15 лет играет уже уже два человека придет себе а есть еще на все билета вы еще какой-то стендап был в круга сити холли такое вы есть у вас ну и правильно это это будет говно честно говоря программа чиновников артистов вруси алкоголиков и будет немного под шапе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего на период потому что Я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Как хотите, я просто все семьи что-то сделаю. Но четыре места не буду делать, сделаю два места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это, что от Господа Бога зависит здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем? А только вам читать мои сообщения. Давай я просто пару мер сделаю хороших. Просто, ну это Ефремов. У него раскидание на год вперед расписано. А это новая программа, вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачева, где билеты стоят под 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял. Если что, то беру вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 44. openai / large-v3-turbo
+### 49. openai / large-v3-turbo
 
 - **ID:** `c2027488e579`
 - **Language:** ru
@@ -1238,7 +1361,27 @@
 
 > Субтитры делал DimaTorzok все верно акипичаен, вера вера и го мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок, не как на Пугачеву сейчас билет стоит там по 100, по 150 тысяч рублей ну Пугачев, извините меня какая величина? ну да, вот туда продаем, вот а так на Дитрополеное место идут от 2000 рублей и до 20 тысяч уже в лучших местах портера, а танцевальный портер идет по 3 поэтому просто подскажите как вам а что прям на сцене сидеть можно чтобы дитер баллон выступала я сиделась прямо на сцене а еще ближе получится так а дитер Боуллин это которые из них? Ну с волосами. Ну вот сейчас по астерикции нормально вроде стал. А волосами был... с белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож. Лицо. А, ну лицо. Маршалл Жуков. Ах, нет-не-не. Это другой, который помните, у него в рекламе этот шоу разыщел бы снимался. Ой, да там кто только не снимался. ну да, а так вот да там и Юрий Дуть, извините пожалуйста в хендамшолдерсе, и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко если что ну хорошо знаете, что Алексей Сергеевич я как понимаю я очень сильно люблю это все дело ага ну а так вот у вас самая идея сходить на Днепрополя, как вам? самая идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже но будет 2 человека придет себе а есть еще на все пиле то вы еще какой-то стендап был в крокус сити холле такое есть у вас ну и правильно это будет говно честно говоря стендап и в римах и у него оттуда это политиков чиновников артистов в разделах о поликам и если будет немного под шофе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщения нет, зачем? а только вам читать мои сообщения давайте я просто пару мер сделаю хороших просто это Ефремов у него расписание на год вперед расписано а это новая программа вопрос да есть а там же надо деньги получается деньги платить можно? а? деньги надо заплатить же еще получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, то беру вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулен
 
-### 45. openai / large-v3-turbo
+### 50. openai / large-v3-turbo
+
+- **ID:** `a09e580a6273`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.85s
+- **Memory:** Δ 0.0 MB, peak 9399.3 MB
+- **Beam size:** 10
+- **Temperature:** 0.48
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 44.41%
+- **CER:** 36.10%
+- **Timestamp:** 2026-01-07T15:30:29.062575+00:00
+
+**Text:**
+
+> ДИТЕР БОУЛАН все верно А Кипичайен, Вера Вера, Юго мы организаторы зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачева, сейчас билеты стоят по 100, по 150 тысяч рублей ну Пугачева, извините меня, какая величина? ну да, вот туда вот мы ее продаем а так, на Дитрополино места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-м дом поэтому просто подскажите как вам посмотреть места чтобы подвигали телом, ну или чтобы посидели и потанцевали а что бы прям на сцене сидеть можно, чтобы Дитер Боулан выступал и я сидел на сцене ну по двостаточке могу сделать вам места, первый ряд портера а еще ближе получится? нет так а Дитер Боулан это который из них? с волосами а волосами был с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк ли кого там только не приглашают и в даже и сергей дружко если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с каких-то Дмитрием более награкла. Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Кристи. А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в 2 человека придет а есть еще вы еще вы на все при лето вы еще какой-то стендап был в крокосити холли такое вы есть у вас ну и правильно это это говно честно говоря стандартные приема вот и время кодов будет новая программа где он там угроза ну обсуждает нам политиков чиновников артистов другие алкоголиков и будет немного под шопе отвечает на вопросы очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Моя семья сейчас сделает, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это, что это все от Господа Бога зависит, здоровье-то, я-то от чего здесь, я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем? А сколько вам читать мои сообщения? А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну что вы опять-таки мы с вами уже обсуждали, это величина такая, что извините пожалуйста. Ну да. Ну тогда я думаю до новых встреч. Да, я поиск, что наберу вам. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
+
+### 51. openai / large-v3-turbo
 
 - **ID:** `e6aca68888c2`
 - **Language:** ru
@@ -1258,7 +1401,7 @@
 
 > Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? Да 14 марта Дитер Боуланд Дитер Боуланд? Да Ну, дом Александр в Воден Токинг Все, Ямао Ямао, я правильно понимаю? организаторы выделяем места по номиналу и без на оценок, не как на Пугачёву. Сейчас билет стоит по 100-150 тысяч рублей. Ну, Пугачёв, извините меня, какая величина? Ну да, вот туда продаём. А так на Дитрополья на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера, а танцевальный портер идёт в отрицательство. Поэтому просто подскажите, как вам посмотреть места. А чтоб подвигали телом, ну или чтобы вы посидели и потанцевали А чтоб прямо на сцене сидеть можно, чтобы Дитер Боулен выступал, и я сидел прямо на сцене? Ну по двадцатке могу сделать вам места, первый ряд бордера А еще ближе получится? Нет Так, а Дитер Боулен это который из них? Ну, он с волосами, ну вот сейчас по астерикции нормально вроде стал А волосами был, с белыми волосами, как Александр Маршалл, вот такой? Не-не-не, какой Маршалл? Нет, похож лицо. А, ну лицо... Маршалл Жуков. Ах, не-не, это другой, который, помните, у него в рекламе Ходдом Шолдерс еще снимался? Ой, да там кто только не снимался. Ну да. Там и Юрий Дуть, извините, пожалуйста, в Ходдом Шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Я очень сильно люблю это все дело. Сама идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А вот этот не нужно? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, он будет закрывать этот спектакль и билеты будут стоить 20,60, а то есть 100 тысяч рублей. О, ну это же кто это? Два человека придет? Не, ну почему? Голос будет полный, это будет в кругу сити холл. А, а так есть? А вы на всем билеты? А еще какой-то стендап был в Крокус Сити Холли. Такое есть у вас? Не-не-не, у нас есть мероприятия, балет, мюзикл, разное шоу, но стендапов нету и ничего такого. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Бремов есть. Вот. И Бремов есть. Он вам по духу мой. а не будет немного под шофе отвечает на вопрос это программа 28 марта очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это же все от господа бога зависит здоровье то я тогда чего здесь я то никак уже решаю поэтому возможно может вы мне просто скиньте sms сообщение это программа а там же деньги деньги платить деньги надо заплатить же сюда получается ничего но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Шанового созвона со мной не дождались Дитер Боулан Дитер Боулан? Дитер Боулан Дитер Боулан? Продолжение следует...
 
-### 46. openai / large-v3-turbo
+### 52. openai / large-v3-turbo
 
 - **ID:** `14ac5b3fa74b`
 - **Language:** ru
@@ -1278,7 +1421,7 @@
 
 > Крокус Сити Холл Салта Ком? Так, ещё разок В Крокус Сити Холл Да, 14 марта Дитер Боулан Да Но Долан Дандерфтен Воден Токи Всё Ямахо Ямасо Я правильно понимаю Ямахо Ямасо Ямахо Ямахо Я правильно понимаю? все верно акипичаем вера вера и го мы организаторы зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачево сейчас билеты стоит там по 100 по 150 тысяч рублей ну Пугачево извините меня, какая величина? ну да вот туда продаем а так на Дитрополино места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах партера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места так чтобы подъигали телом ну или что бы вы посидели и потанцевали а что прям на сцене сидеть можно чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по двостаточке могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулен это который из них? с волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и в даже и сергей дружков если что Ну хорошо, знаете все, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все делать. Ну а так вот вот самая идея с каких-то Дмитрия более награк вам. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А Дим я вас отправлю на его спектакль Крися. А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и примок и вот и время у него будут войдет новая программа где он там обратно осуждает нам политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шапе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю куда смогу освободиться да как это все от господа бога зависит здоровье то я тогда от чего здесь я это никак уже не решаю. Поэтому, возможно, вы мне просто скинете смс сообщение? Не, зачем? А то только читать мои сообщения. Давай я пару у меня сделаю хороших. Это Ефремов. У него расписание на год вперёд расписано. А это новая программа. а там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного денег, как в Пугачево, где билеты стоят по 200 тысяч, сами понимаете. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, если что, то мы берем, да. Обязательно. Потому что нового созвона со мной не дождались. А Дитер Боулан? Дитер Боулан? А Дитер Боулан? Дитер Боулан
 
-### 47. openai / large-v3-turbo
+### 53. openai / large-v3-turbo
 
 - **ID:** `d99c164b89e0`
 - **Language:** ru
@@ -1298,7 +1441,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так, еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, дома в Тандерфен, Лотен, Токинг Ямахо, Ямасо, я правильно понимаю? Все верно Окипинчаем, Вера Вера, Юго Мы, организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачёва сейчас билет стоит там по 100 по 150 тысяч рублей Ну, Пугачёв, извините меня, какая величина? Ну, да, вот тут ее продаем А так, на Дитер Боулану места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет на 30 сон поэтому просто подскажите, как вам посмотреть места как чтобы подвигли телом, ну или чтобы вы посидели и потанцевали А что прямо на сцене сидеть можно, чтобы Дитер Боулан выступал? а я сидел прямо на сцене Ну, по 20 могу сделать вам места первый ряд портера А еще ближе получится? Нет так А Дитер Боулан это который из них? Ну, с волосами ну, сейчас по астерикции нормально вроде стал А волосами был... с белыми волосами? как Александр Маршал? Вот такой? Не, не, не, какой Маршал? ты похож лицо А, ну лицо... Маршал Жуков Ахэ, не, не, это другой, который помнил у него в рекламе Хэдд Шолдерс еще по-аннимался Ой, да там кто-то не снимался ну да там Юрий Дудь, извините пожалуйста в Хэдд Шолдерсе и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко, если что Ну хорошо, знаете, все, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот, сама идея искать на Дитера более награк вам сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага Один я вас отправлю на его спектакль Кыся А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль и билеты будут стоить по 60, а то и 100 тысяч рублей О, ну это ж кто это, два человека придет? Не, ну почему, гол будет полный, это будет в Крокус сити холл Не, ну ничего себе А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус сити холле, такое есть у вас? Не, не, не, не, у нас есть мероприятия, балет, мюзикл, там разное шоу, но стендапов нету и такового Ну и правильно, это какое-то говно, честно говоря Стендапы это И Бремов есть Он вам по духу может У него, кстати, новая программа, господин хороший вопрос, да есть Где он там в разных, ну, то там, ну, обсуждает там политиков, чиновникам, артистам, друзьям, алкоголикам И в конце даже, если тебе будет немного под шофе, отвечает на вопросы Не пройдет, это программа 28 марта в Мостовском дворце молодежи на Вкратинске Очень интересно Там по местам, хотя 2000 рублей до 12 А дите вам пару, я сделаю, а вы планируете уже сойте, отогнете Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться Так хотите, я просто, там, все семьи, я сделаю тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье Да как это же, это же все от Господа Бога зависит здоровье-то, я-то, от чего здесь, я-то никак уже не решаю Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения Давайте я просто пару мне сделаю хороших, просто, ну это, это, это Ефремов У него раскидание на год вперед расписано, а это новая программа вопрос-то есть А там же надо деньги, получается, деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, не, ну все, что стоит, внимание, стоит немного денег, как в Пугачево, где билеты стоят по 200 тысяч, я понимаю? Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну да Ну тогда, я думаю, до новых встреч Да, я поезд, я поезд вам наберу, да Обязательно Потому что нового созвона со мной не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Да, я поезд вам не дождались Дитер Боулан Да, я Дитер Боулан Дитер Боулан Дитер Боулан
 
-### 48. openai / large-v3-turbo
+### 54. openai / large-v3-turbo
 
 - **ID:** `52320beef7bd`
 - **Language:** ru
@@ -1318,7 +1461,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл Да, 14 марта. Дитер Боулон Дитер Боулон? Да, ну, Долланд Дандерфен, Лоден, Токинг Все, Ямахо Ямасо, я правильно понимаю? мы организаторы закрываем телефонов режиме и выделяем места по номиналу и без на оценок не как-то пугачёва сейчас билет стоит там по 100 по 150 тысяч рублей ну пугачёва извините меня велико какая величина а так на дитро полинами 2 тысяч рублей и до 20 тысяч уже лучше а танцевальный партнер идет по 3 5 поэтому просто скажите как вам посмотри делом а чтобы прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо типа на сцене а еще ближе получится так 1 тропала на которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там только не снимался там и юрий дуть извините пожалуйста в этом шолдерсе и муж за воротнюк и кого там только не приглашаю и даже и сергей дружков если что хорошо знаете я очень сильно люблю это сделал сама идея дурацкая честно говоря А если бы разговор начался со Дмитрия Нагиева... А вот с этого надо было начинать? Ага, а нет я вас отправлю на его спектакль Кыся? А вот этот не нужно. Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить А за 60, а то и 100 тысяч рублей О, ну это ж кто? Там два человека придет? Не, ну почему? Голос будет полный, это будет в Крокус Сити Холл Не, ну ничего себе А так и... А вы еще на все билеты? А еще какой-то стендап был в Крокус Сити Холле? Такое есть у вас? Не, не, не У нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапа нету и ничего такого Ну и правильно, это как-то говно, честно говоря. Стендап это. И Примов есть. Вот. И Примов есть. Он вам по духу будет. У него, кстати, сойдет новая программа, господин, хороший вопрос-то есть, где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если будет немного под шофе, отвечает на вопросы. А. это программа 28 марта в московском дворце молодежь на противень очень интересно но да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги платить деньги надо заплатить же еще да получается нечего Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, заберу вам надо. Обязательно. Потому что нового созвона со мной не дождались. Субтитры сделал DimaTorzok
 
-### 49. openai / small
+### 55. openai / small
 
 - **ID:** `031d2d300de9`
 - **Language:** ru
@@ -1338,7 +1481,7 @@
 
 > В Крокусе Нехоля. В Крокусе Нехоля. Сделал таком. Так, еще разок. В Крокусе Нехол. Да, 14 марта. Дитер Боулен. Дитер Боулен? Да. Ну, Долу сандров сан Лоден Боулен. Все. Аккупенчайн Бэра Вера Юго. Аккупенчайн Бэра Вера Юго. Аккупенчайн Бэра Вера Юго. Мы организаторы. Закрываем телефон в режиме. И выделяем места по номиналу и без нацена. Никак на Пугачеву сейчас. Белет достоит 100, 100, 60 тысяч рублей. Ну, Пугачеву извините меня. Вели какая величина. Ну да. Вот сюда. Вот сюда продаем. А так на Дитер Боулене. Вместо идут 2000 рублей. И до 2000 уже в лучших местах. А танцевальный партер идет. Смотрите. Поэтому, просто подскажите. Как вам посмотреть места? Так. Чтобы подвигали телом. Стоили. Чтобы вы посидели и танцевали. А что, прямо на сцене сидеть можно? Чтобы Дитер Боулен выступал. И я сидел прямо на сцене. Ну, вот. Ну, вот. Ну, вот. А то, о чем могу сделать вам. Первый ряд партера. А еще ближе получится? Нет. Так. А Дитер Боулен, это готово. А Дитер Боулен, это который из них? Ну, он с волосами. Но он сейчас по отцереху все нормально разъястал. А волосами был с белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож лицо. А, да лицо? Маршал звуком. А, да. Нет, нет. Это другое, которое после у него в рекламе, когда шел и разъщупал, снимался. Ой, да там кто только не снимался. Ну да. А так вот... Там и Юрий Дути, извините, пожалуйста, в Ханан Солдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, с Алексей Сергеевичем, понимаешь? Я очень сильно люблю это все дело. Ага. Ну а так вот он самой Дитер Боулен на граку. Самой Дитер Боулен, дурацкая, честно говоря. А этот разговор бы начнется с Дмитрия Нагиева. А вот с этого надо было начинать. Ага. А где дело сопролено его спектакль Кыся? А вот этого не нужно. Единственный спектакль, которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная этакка, но будет закрывать этот спектакль, и билеты будут стоить по 60, а на стоимости 100 тысяч рублей. О, ну это ж, кто это? Два человека придет? Нет, ну почему? Голвой полный, это будет крокостихол. Ааа. А есть еще, а вы еще на все билеты? А вы еще какой-то стендап был в крокостихоле? Такое есть у вас? Нет, нет, нет. У нас есть мероприятие, полет, мюзикол, там разношел, но стендапов нету, и такового. Ну и правильно, это как бы говно, честно говоря, стендап. И прямов есть. И прямов есть. У него, кстати, новая программа, и в подне хорошего вопроса есть, где он там уградывает, ну, асуждает нам полиньков-чиновников, артистов, русских, алкоголиков, и в конце даже, если будет немного под шафе, отвечает на вопрос C. Не пройдет? У нас есть программа 28 марта в Маслулском дворстве молодежи, напротив, в Крызе. Очень интересно. Но... Там поместится, кстати, 2 тысячи рублей до 12. А видите, вам пару минут сделаю, а вы планируете разводить одному кедрю? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Так хотите, я просто... Я не буду делать 4 места, я буду заполнить себе стимул, чтобы вы попрали здоровье. Да как это, что... Это же все от Господа Бога зависит здоровье, от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинуть СМС-сообщение? Нет, зачем? А вы, по-моему, считать, давайте я просто пару минут сделаю, просто это не фремов. У него рассчитание на год вперед, раскидываю на год, а это новая программа, а там же надо деньги, получается. Нет, просто деньги. Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, нет, ну все, что стоит, не стоит, не стоит, не много денег, так и мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я поиск, что наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитор Боулен. Дитор Боулен. Дитор Боулен. Дитор Боулен. Дитор Боулен. Дитор Боулен.
 
-### 50. openai / large-v3-turbo
+### 56. openai / large-v3-turbo
 
 - **ID:** `0b30cd86c57a`
 - **Language:** ru
@@ -1358,7 +1501,7 @@
 
 > Крокус Сити Холл Крокус Сити Холл В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да. Ясно, ясно, ясно ассо я правильно понимаю акипич а вера вера и угот организаторы закрываем телефонов режиме и выделяем места по номиналу и без на оценок не как на пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня какая величина ну да продаем а так на дитропольеном до двух тысяч рублей а танцевальный портер идет по 3 5 поэтому просто подскажите как вы посмотри киста а что прямо на сцене сидеть можно чтобы динтер болон выступала я сидел прямо типа на сцене а еще ближе получится так 1 turbo лын это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко это только не снимался и юрий дуть извините пожалуйста в этом солдарсе и и муж за воротнюк, и кого там только не приглашают и даже Сергей Дружков, если что Ну хорошо, знаете, а Алексей Сергеевич я как-то понимаю Я очень сильно люблю это всё дело Ну а так вот, сама идея искать на дидера более награку Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто этим летом будет прощай так сказать но будет закрывать это спектакль билеты будут стоить по 60 на 100 тысяч рублей но вы тоже кто это два человека придет не ну почему гол будет полный это будет крокус сити холл ничего себе а есть еще а вы еще на все билеты а вы еще какой-то стендап был в крокус сити холле такое есть у вас у нас есть мероприятие балет, мюзикл, разное шоу, но стендапов нету и такового ну и правильно, это какое-то говно честно говоря и Бремов есть вот, и Бремов есть у него кстати вот новая программа «Геспанин хороший вопрос» есть где он там в разных, ну там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков и в конце даже если будет немного под шофе, отвечает на вопрос. Не поройдет эта программа 28 марта в Московском дворце молодежи на ВКРУ. Очень интересно. Там по местам, хотя, 2000 рублей до 12. Одинте вам пару, а я сделаю, а вы планируете уже сойки, а так ждете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это не фремов у него на вот период расписано а это новая программа вопрос а там же деньги получают деньги платить деньги надо заплатить женщину получается мне сейчас конечно но тогда на ничего не получится все что стоит внимание стоит немного и денег как пугачёва где билеты стоят по 200 тысяч ну пугачёва опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 51. openai / large-v3-turbo
+### 57. openai / large-v3-turbo
 
 - **ID:** `33e6ece25ee2`
 - **Language:** ru
@@ -1378,7 +1521,7 @@
 
 > Крокус Сити Холле Еще разок Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Дома Сандарпсен, Лоден Токинг Все. Яма-хо-ямасо правильно понимаю акипича организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок никак на Пугачёва сейчас билет стоит по 100-150 тысяч рублей ну Пугачёва, извините меня, какая величина? ну да, вот туда продаем, вот, а так на Дитропольную места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет по 30-100 поэтому просто подскажите как вам посмотреть места как бы вы двигали телом, ну или чтобы вы посидели и потанцевали а что бы прямо на сцене сидеть, можно чтобы дитербаулен выступал и я сидел на сцене? ну по двостаточке могу сделать вам места первый ряд партера а еще ближе получится? нет так а дитербаулен это который из них? Ну, он с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож. Лицо. А, ну лицо... Маршалл Жуков. Ах, не-не. Это другой, который помни у него в рекламе как-то шеллор с чумом снимался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините. пожалуйста в хайном шолдерсе и муж за воротнюк никого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот этим не нужно я знаю да он его любит она 15 лет играет уже ну да просто будет прощайся и так сказать но будет закрывать и билеты будут 2060 а то есть 100 000 рублей а есть еще вы на все билеты еще какой-то стендап был в крокус сити холли такое есть у вас но и правильно это будет говно честно говоря стандапы и прим вот и время программы очень интересно но Я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Как хотите, я просто, там, в семье, я сделаю, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье. это же все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это ефремов у него на вот вперед расписано а это новая программа вопрос да и а там Там же надо деньги, получается? Нет, ворота вручья. Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали, эта величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберем, да, да. Обязательно. потому что новый созвон со мной не дождались а дитер болон Дитер Баулан
 
-### 52. openai / large-v3-turbo
+### 58. openai / large-v3-turbo
 
 - **ID:** `39a376a8bdcc`
 - **Language:** ru
@@ -1398,7 +1541,7 @@
 
 > В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? 14 марта Дитер Боулан Дитер Боулан? Да, но Долландандер Вот он в Токио Ямахо, Ямасо я правильно понимаю? все верно Акипичайен, вера вера, you go мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок, не как на Пугачеву сейчас билет стоит по 100, по 150 тысяч рублей ну Пугачеву, извините меня какая величина? ну да, вот туда продаем, вот а так на Дитрополино места идут от 2000 рублей и до 20000 уже в лучших местах портера, а танцевальный портер придет по 3-й дом поэтому просто подскажите как вам посмотреть места так вот их летелом ну или вы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер боулин выступала я сиделась прямо типа на сцене ну под остаточки могу сделать вам места первый ряд бордера а еще ближе получится не так а дитер боулин это который из них с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами, как Александр Маршал, вот такой? не, не, не, какой Маршал? нет, похож, лицо а, ну лицо, да, не, не ах, не, не, это другой, который, помните, у него в рекламе Ходдом Шолдерс еще снимался? ой, да там кто только не снимался ну да, а так вот там и Юрий Дуть, извините, пожалуйста, в Ходдом Шолдерсе и муж за воротнюк и кого там только не приглашают и даже и Сергей Дружко, если что ну хорошо, знаете, что Алексей Сергеевич, я понимаю я очень сильно люблю это все дело ага, ну а так вот у вас самая идея сходить на Дмитрия более награком самая идея дурацкая, честно говоря а если разговор бы начался с Дмитрия Нагиева а вот с этого надо было начинать Ага. Один я вас отправлю на его спектакль Кыся. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить по 60, а то и 100 тысяч рублей. О, ну это ж кто это? Два человека придет? Не, ну почему? Гол будет полный, это будет круглый сити-холл. а есть еще вы на все билеты еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это как это говно честно говоря и прямо в очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 53. openai / large-v3-turbo
+### 59. openai / large-v3-turbo
 
 - **ID:** `01bf1b4ed064`
 - **Language:** ru
@@ -1418,7 +1561,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а чтоб подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер боулен выступал я сидел и прямо типа на сцене а еще ближе получится так а дитер Боуллин это который из них? Ну, с волосами. Получается по астерикции нормально вроде стал. А волосами с белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож лицо. А, ну лицо... Маршалл Жуков. Ах, не-не. Это другой, который помните у него в рекламе как шеллорс еще снимался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините пожалуйста, в хендом шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, у вас сама идея сходить на Дмитрия более награком? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить по 60 на 100 тысяч рублей. но вы тоже кто там два человека придет не ну почему голубой полный это будет в Крокус Сити Холл не, ничего себе а есть еще, а вы еще, вы на все билеты? а еще какой-то стендап был в Крокус Сити Холле такое есть у вас? не, не, не не, у нас есть мероприятия балет, мюзикл, там, разное шоу но стендапа нету и ничего такового ну и правильно, это какое-то говно, честно говоря программа где он там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там ну а то там очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 54. openai / large-v3-turbo
+### 60. openai / large-v3-turbo
 
 - **ID:** `2a8742684685`
 - **Language:** ru
@@ -1438,7 +1581,7 @@
 
 > ДИТЕР БОУЛАН окей петра вера и организаторы зала в телефоновом режиме и выделяем места по номиналу и без наценок не как-то пугачеву сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачеву извините меня вели какая величина ну да вот она продаем а так на дитроболино а танцевальный портер идет по 3 5 поэтому просто подскажите как а что прям на сцене сидеть можно чтобы дедр болон выступала я сидел прямо на сцене а еще ближе получится так 1 баулин это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко если что ну хорошо знаете все, Алексей Сергеевич я их понимаю я очень сильно люблю это все дело а так вот сама идея исходить на Дмитрия более на как вам? сама идея дурацкая честно говоря а если бы разговор начался с Дмитрия Нагиева а вот с этого надо было начинать Ага, один я вас отправлю на его спектакль Кыся. А вот этот не нужно? Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить 2060 на 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Голл будет полный, это будет круглый сити холл. Ничего себе. А есть еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холли, такое есть у вас? Не, не, не. У нас есть мероприятия, балет, мюзикл, там разное шоу, но стендапов нету и ничего такого. Ну и правильно, это какое-то говно, честно говоря. программа политиков чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечать на вопросы. Не пройдет? Это программа 28 марта в Мостолском дворце молодежи на ВКРУ. Очень интересно! Там по местам, хотя, 2000 рублей до 12. Одинте вам пару, я сделаю, а вы планируете уже сойте, а так ждете? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю когда смогу освободиться здоровье это все от господа бога зависит здоровье то я то от чего здесь я это никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А почему вам читать мои сообщения? Давайте я просто пару мер сделаю хороших. Это Ефремов. У него распитание на вот вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обижать но сазов на самом деле дождались Дитер Боулан
 
-### 55. openai / large-v3-turbo
+### 61. openai / large-v3-turbo
 
 - **ID:** `a7124596f0e1`
 - **Language:** ru
@@ -1458,7 +1601,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружков если что Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с конечной Дмитрием Поллиной как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим билетом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Гол будет полный, это будет Крокус Сити Холл. Не, ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? ну и правильно это будет говно честно говоря и прямо вот и время у него программа где он там раз осуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шофе отвечает на вопрос это программа марта молодежь очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 56. openai / large-v3-turbo
+### 62. openai / large-v3-turbo
 
 - **ID:** `c37441f5b0b7`
 - **Language:** ru
@@ -1478,7 +1621,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холл 14 марта, Дитер Боулен Да, дом из Дандерфен, вот он в Токио Все, ямахо-ямасо, я правильно понимаю? Все верно. Акипинчайен, вера-вера-юго. Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачеву сейчас билеты стоит по 100, по 160 тысяч рублей. Ну, Пугачеву, извините меня, какая величина? Ну да, вот туда. А так на Титрополином места идут от 2000 рублей. И до 20000 уже в лучших местах портера А танцевальный портер идет по 30 стол Поэтому просто подскажите, как вам посмотреть места Чтобы подвигли телом, ну или чтобы вы посидели и потанцевали А что, прямо на сцене сидеть? Можно, чтобы дидербол он выступал И я сидел прямо на сцене? Ну, под 20-е могу сделать вам места, первый ряд портера А еще ближе получится? Нет так а дитер болин это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо лицо а маршал и не ага это другой который у него в рекламе ходом снимался ой да там кто только не снимался там юрий дуть извините пожалуйста в ходом солдарсе и муж заворотнюк никого там только не приглашают и даже и сергей И Дружко, если что. Ну, хорошо, знаете, что Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ну, а так вот, вот, сама идея, сходить на Дмитрия Полина как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже ну это кто там два человека придет а есть еще что вы на все были там еще какой-то stand up был в крокус сити холли такое есть у вас но и правильно это как бы это говно честно говоря это программа очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то это от чего здесь я это никак уже не решаю поэтому возможно может вы мне просто скинете sms сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 57. openai / large-v3-turbo
+### 63. openai / large-v3-turbo
 
 - **ID:** `aaad84003f8a`
 - **Language:** ru
@@ -1498,7 +1641,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрбоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружков если что Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с конечной Дмитрием Поллиной как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим билетом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Гол будет полный, это будет Крокус Сити Холл. Не, ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? ну и правильно это будет говно честно говоря и прямо вот и время у него программа где он там раз осуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шофе отвечает на вопрос это программа марта молодежь очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 58. openai / large-v3-turbo
+### 64. openai / large-v3-turbo
 
 - **ID:** `1357dd0fd547`
 - **Language:** ru
@@ -1518,7 +1661,7 @@
 
 > в Крокус Сити Холле так еще разок в Крокус Сити Холл 14 марта, Дитер Боулан да, но дома в Тандерфтен в Лоден Токио я правильно понимаю? все верно окейпинчайон веравера юго мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без надценок не как на Пугачеву сейчас билет стоит по 100 по 150 тысяч рублей ну Пугачеву извините меня какая величина? ну да а так на Дитро Полину места идут от 2 тысяч рублей а что прям на сцене сидеть можно чтобы один баллон выступала я сидел а еще ближе получится так а дитер болен это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо а это другой который у него в рекламе ходом ой да там кто только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого-то только не приглашают и даже и сергей дружко если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага, ну а так вот у нас самая идея, с каких-то Дмитрием более награком Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага, а где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, которым он играет я знаю давно любит она 15 лет играет уже ну да просто этим летом будет прощальная так сказать но будет закрывать этот спектакль билеты будут стоить 2060 а то есть 100000 рублей но это ж кто там два человека придет не ну почему гол будет полный это будет в крокус сити холл ничего себе а есть еще... а вы еще на все билеты? еще какой-то стендап был в крокус сити холле, такое есть у вас? не-не-не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и такового ну и правильно, это какая-то говно честно говоря и Времов есть! вот, и Времов есть он вам по духу может у него, кстати, вот новая программа, господин, хороший вопрос-то есть где он там раз обсуждает нам политиков чиновников артистов другие алкоголиков и если будет немного под шофе отвечает на вопрос это программа очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги платить деньги надо заплатить же еще до получается мне сейчас. Но тогда, наверное, ничего не получится. Ну, что стоит внимание, стоит немного денег, как в Пугачёво, где билеты стоят по 200 тысяч, ну, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 59. openai / large-v3
+### 65. openai / large-v3
 
 - **ID:** `d30e6e7d8f59`
 - **Language:** ru
@@ -1538,7 +1681,7 @@
 
 > в крокус сити холл дитер болан все и махой и массой я правильно понимаю организация зал скрываем телефоном режиме и выделяем места по номиналу и на оценок не как на Пугачёву сейчас билеты стоят по 100-150 тысяч рублей ну Пугачёву извините меня ввели какая величина ну да мы вот тоже её продаём вот а так на Дитрополиной места идут от 2000 рублей и до 20000 уже в лучших местах партера а танцевальный партер идёт по 300 поэтому просто подскажите как вам посмотреть места Так... Чтобы подвигли телом, ну или чтобы посидели и потанцевали. А чтобы прям на сцене сидеть можно, чтобы Дитер Боулен выступал, а я сидел прямо типа на сцене? Ну, по двантаточке могу сделать вам места, первый ряд бардера. А еще ближе получится? Нет. Так... А Дитер Боулен — это который из них? Ну, он с волосами. Получается, по астерикусу нормальный вроде стал. А волосами был, с белыми волосами, как Александр Маршал, вот такой? Не-не-не. Какой Маршал? Нет, похож, лицо. А, ну лицо, да. Маршал Зуков. Ага, не-не, это другой, который в ПОСКе у него в рекламе Хэдден Шолдерс еще было снимался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэдден Шолдерсе, и муж Заворотнюк, и кого там только не приглашают. и даже и сергей дружко если что хорошо знаете я очень сильно люблю это все дело сама идея дурацкая честно говоря а вот с этого надо было начинать а вот и не нужно я знаю давно вы любит она 15 лет играет уже ну вы тоже кто там два человека придет себе а есть еще вы на все билета вы еще какой-то стендап был в крокус сити холли такой есть у вас но и правильно это говно честно говоря и приемов и очень интересно но а вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться как они делают тогда на 4 места не буду делать сделаю два я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это ж, это ж всё от Господа, от Бога зависит здоровье-то, я-то от чего здесь. Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс сообщение? Не, зачем? А что, я должен был вам читать мои сообщения? Да, хотя я просто пару мест сделаю хороших, просто, ну это, это, это Ефремов. У него расписание на год вперед расписано, а это новая программа, вопрос есть. А там же надо деньги, получается? Деньги платить нужно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч, сами понимаете. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда я думаю до новых встреч Да, я поебем по номеру Обязательно Потому что нового созвона со мной не дождались Дитер Боулен
 
-### 60. openai / large-v3-turbo
+### 66. openai / large-v3-turbo
 
 - **ID:** `6941b3f65967`
 - **Language:** ru
@@ -1558,7 +1701,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрбоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружков если что Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с конечной Дмитрием Поллиной как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим билетом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Гол будет полный, это будет Крокус Сити Холл. Не, ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? ну и правильно это будет говно честно говоря и прямо вот и время у него программа где он там раз осуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шопе отвечает на вопрос это программа марта молодежь очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 61. openai / large-v3-turbo
+### 67. openai / large-v3-turbo
 
 - **ID:** `bba675884582`
 - **Language:** ru
@@ -1578,7 +1721,7 @@
 
 > В Крокус Сити Холле в Крокус Сити Холл Всё, яма-хо, яма-со, я правильно понимаю? Всё верно. Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачёва сейчас билет стоит по 100-60 тысяч рублей. Ну Пугачёва, извините меня, какая величина? Ну да, вот тут её продаём. а так на детерпоуленные места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подъехали телом или чтобы посидели и потанцевали а чтоб прямо на сцене сидеть можно чтобы детерпоулен выступал и я сидел прямо на сцене а еще ближе получится так а дитер болон это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо ой да там кто только не снимался там и юрий дуть извините пожалуйста в хидом шолдерсе и муж заворотнюк никого там только не приглашают и даже и сергей дружко если что Я очень сильно люблю это все дело. Ага, ну а так вот вам самая идея с каких-то Дмитрием более награком? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага, а где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже но это что-то два человека придет а есть еще на все пиле то вы еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это это будет говно честно говоря стендап и приемов и вот и время у него подходит новая программа поди хорошего пробить где он там обратно осуждает нам политиков чиновников артистов друзья алкоголиков и будет немного пустофе отвечает на вопросы а это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да, но четыре места не буду делать, сделаю два места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье, а это не получится. Да как это же, это же всё от Господа Бога зависит, здоровье-то, я-то, от чего здесь, я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс сообщение? Нет, зачем, я могу вам читать мои сообщения. Давайте я пару мер сделаю хороший. Это Ефремов. У него распространение на год вперед расписано. А это новая программа, вопрос-то есть. Там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же еще, получается мне сейчас? Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, не, ну все, что стоит, внимание, стоит немного и денег. Как Пугачево, где билеты стоят по 200 тысяч. пугачева опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 62. openai / large-v3-turbo
+### 68. openai / large-v3-turbo
 
 - **ID:** `3aac2ccb1685`
 - **Language:** ru
@@ -1598,7 +1741,7 @@
 
 > ДИТЕР БОУЛЛАН все верно Акипичайон, вера вера, you go Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок Не как на Пугачево сейчас билет стоит там по 100-150 тысяч рублей Ну Пугачево, извините меня, какая величина? Ну да, вот туда Продаем, вот А так на Дитрополино места идут от 2000 рублей И до 20000 уже в лучших местах портера а танцевальный портер идет по 30 сон поэтому просто подскажите как вам посмотреть места так что вы двигали телом ну или что вы посидели и потанцевали а что прям на сцене сидеть можно чтобы дитербаулен выступал и я сидел прям вот типа на сцене ну по 20 могу сделать вам места первый ряд портера а еще ближе получится? нет так а дитербаулен это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож. Лицо. А, ну лицо... Маршалл Жуков. Ах, не-не. Это другой, который... Помните, у него в рекламе этот шеллый раз еще снимался? Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь. Извините, пожалуйста. в хайном шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете все, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот сама идея искать на Дмитрий Дружко. Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. а вот я не нужно я знаю давно любит она 15 лет играет уже ну вы тоже кто-то два человека придет а есть еще вы на все пиле там еще какой-то стендап был в крокус city холли такое есть у вас ну и правильно это как это говно честно говоря программы чиновников артистов в друзья алкоголиков и очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю куда смогу освободиться ему да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс-сообщение давайте я просто пару мер сделаю хороших просто, ну это Ефремов у него распределяно на год вперед расписано, а это новая программа вопрос да есть а там же надо деньги получается, деньги платить можно? а? деньги надо заплатить же еще да получается мне сейчас? ну да конечно ну тогда наверно ничего не получится Ну, Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Да, я понял. Если что, то наберем. Обязательно. Потому что нового созвона со мной не дождались. Диттер Боулан
 
-### 63. openai / large-v3-turbo
+### 69. openai / large-v3-turbo
 
 - **ID:** `872ce51fe82b`
 - **Language:** ru
@@ -1618,7 +1761,7 @@
 
 > в Крокус Сити Холле зал таком так еще разок в Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? да Долланд Дандертен, Лотен, Токинг все, ямахо ямасо, я правильно понимаю? организаторы выделяет по номиналу и как то пугачева извините меня вели какая величина а так на дитро болин и 2 тысячи рублей и до 20 тысяч уже лучше поэтому а что прям на сцене сидеть можно чтобы динобол выступала я сиделась прямо на подносценить а еще ближе получится так один терпал это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко да там кто-то не снимался там и юрий дуть извините пожалуйста в этом шелдерсе и И муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у вас сама идея искать, Дмитрий Трополя, на как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль. Кыся. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать. Он будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это? Два человека придет? Не, ну почему? Гол будет полный, это будет в Крокус Тихол. а есть еще вы на все билеты вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это это как это говно честно говоря что она была и время у него подуху будет у него идет новая программа где он там в раз осуждает на политиков чиновников артистов друзья алкоголиков и в конце даже если будет это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю куда смогу освободиться как хотите я просто все семьи я делаю, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул чтобы вы поправили здоровье да как это же все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это новая программа а там же деньги деньги платить деньги надо заплатить платить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимания, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч, я понимаю. Ну Пугачево опять-таки мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял. Если что, наберу вам, да. Обязательно. Потому что, ну, вы со звона со мной не дождались. Дитер Боулен
 
-### 64. openai / large-v3-turbo
+### 70. openai / large-v3-turbo
 
 - **ID:** `f8ead895a837`
 - **Language:** ru
@@ -1638,7 +1781,7 @@
 
 > Крокус Сити Холл В Крокус Сити Холл В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан Да Долан Сандарфен, Лоден Токинг Емахо, Емасо Я правильно понимаю 14 марта Дитер Боулан Да Долан Сандарфен, Лоден Токинг Ямахо, ямасо, я правильно понимаю? Все верно Окипичаем, вера вера, юго Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок, не как на Пугачево Сейчас билет стоит по 100 по 150 тысяч рублей Ну Пугачево, извините меня Какая величина Ну да, вот туда Продаем, вот А так на Дитер Боулан Двух тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30 сон Поэтому Просто подскажите, как вам посмотреть места Как что-то поддвигли телом Ну или Чтобы вы посидели и потанцевали А что, прям на сцене сидеть можно, чтобы Дитер Боулан выступал И я сидел прямо на сцене Ну по 20 могу сделать вам места Первый ряд портера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну с волосами Получат по астерикции нормальный вроде стал А волосами был С белыми волосами? Как Александр Маршал? Вот такой? Не, не, не Какой Маршал? Нет, похож лицо А, ну лицо Маршал Жуков Ахэ, не, не Это другой, который помни И у него в рекламе Ходжерс еще снимался Ой, да там кто только не снимался Ну да А так вот Там и Юрий Дуть, извините пожалуйста В Ходжерсе И муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружко Если что Ну хорошо, знаете все Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага, ну а так вот он самая идея И Дмитрий Дмитриев, как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальное И так сказать, ну, он будет закрывать этот спектакль И билеты будут стоить 20-60, а то и 100 тысяч рублей О, ну это ж кто там, два человека придет? Не, ну почему? Головой полный, это будет в Крокус Сити Холл Ничего себе А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле Такое есть у вас? Не-не-не-не Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу Но стендапа нету именно такового Ну и правильно, это какое-то говно, честно говоря Стендапы И прямов есть Вот И прямов есть Он вам по духу будет У него, кстати, новая программа Господин, хороший вопрос, ты есть? Где он там в разных, ну, там, ну, обсуждает там политиков, чиновникам, артистам, друзьям, алкоголикам И в конце даже, если у него будет немного под шофе, отвечает на вопросы Не пройдет? Это программа 28 марта в Мостовском дворце молодежи на Вкратинске Очень интересно Там по местам, хотя, 2000 рублей до 12 А дети вам паром, я сделаю, а вы планируете уже стоите, отопнете? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться Так хотите, я просто, там, все семьи, я сделаю, тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье Да как это, что, это все от Господа Бога зависит здоровье-то, я-то, от чего здесь, я-то никак уже не решаю Да Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения Давайте я просто пару мер сделаю хороших, просто, ну, это, это, это Ефремов У него распространение на год вперед расписано А это новая программа, вопрос-то есть А там же надо деньги, получается, деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, не, ну все, что стоит внимание, стоит немного денег, как в Пугачево, где билеты стоят по 200 тысяч, я понимаю Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну тогда, я думаю, до новых встреч Да, я поясню, что наберу вам, да, да Обязательно Потому что нового созвона со мной не дождались В этом году, я думаю, что это не только что, но и не дождались А это не только что, но и не дождались А это не только что, но и не дождались А это не только что, но и не дождались А это не только что, но и не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались А это не дождались
 
-### 65. faster-whisper / large-v3-turbo
+### 71. faster-whisper / large-v3-turbo
 
 - **ID:** `981d9c8838ad`
 - **Language:** ru
@@ -1658,7 +1801,7 @@
 
 > Крокус Сити Холле Залтаком Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долан Дандерфтен Воден Токер Все Ямахо Ямасо Я правильно понимаю Ямахо Ямасо Ямахо Ямахо Я правильно понимаю? все верно мы организаторы закрываем телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачеву сейчас билеты стоит по 10000 ну Пугачеву извините меня какая величина ну да вот туда а так на Дитропольене места идут от 2000 рублей и до 20000 уже в лучших местах а танцевальный портер идет по 3-й стол поэтому просто подскажите как вам посмотреть места, чтобы подъехали телом, ну или чтобы вы посидели и потанцевали а чтоб прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по двостаточке могу сделать вам места первый ряд портера а еще ближе получится? нет так, а Дитер Боулен это который из них? а волосами был с белыми волосами как александр маршал вот такой нет похож лицо ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея, с каких-то Дмитрием более награком? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это вид говно честно говоря стендап и прямо и вот и время подходит новая программа где он там в раз осуждает нам политиков чиновников артистов друзья алкоголиков и очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 66. openai / large-v3-turbo
+### 72. openai / large-v3-turbo
 
 - **ID:** `6574e364ce94`
 - **Language:** ru
@@ -1678,7 +1821,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер боулен выступал и я сидел прямо на сцене а еще ближе получится так а дитер это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея с каких-то Дмитрием более награком. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить по 60, а то есть 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Голос будет полный, это будет круглый сити холл. Ничего себе. А есть еще, а вы еще, вы на все билеты? еще какой-то стендап был в крокус сити холли такой вы есть у вас ну и правильно это это будет говно честно говоря и прямо в программу очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 67. openai / large-v3-turbo
+### 73. openai / large-v3-turbo
 
 - **ID:** `de60ae6bca13`
 - **Language:** ru
@@ -1698,7 +1841,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долун, Дандерфен, Лотен, Токен Ямахо, Ямасо, я правильно понимаю? Веравера и Гол. И вот на данный партер идет под 3-й стол Поэтому просто подскажите как вам посмотреть места Чтобы поддигали телом или чтобы вы посидели и потанцевали А что прямо на сцене сидеть можно, чтобы дитербаулен выступал и я сидел на сцене? Ну под 20-й могу сделать вам места, первый ряд партера А еще ближе получится? Нет А дитербаулен это который из них? Ну, с волосами, но вот сейчас по астирикте нормально вроде стал. А волосами был, с белыми волосами, как Александр Маршалл, вот такой? Не-не-не, какой Маршалл? Нет, похож лицо. А, ну лицо, да, не-не-не. Маршалл Жуков. Ах, не-не, это другой, который, помни, у него в рекламе Хэттэшелл разочувствовал, снимался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините пожалуйста, в хендан шолдерсе и муж Заворотнюк и кого там только не приглашают И даже Сергей Дружко, если что Ну хорошо, знаете, все, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага, ну а так вот у вас самая идея искать на Дмитрия более награк вам Сама идея дурацкая, честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто это будет прощальная так сказать но будет закрывать теперь это будет 2060 но вы тоже кто там два человека придет а есть еще а вы еще на всем билета в еще какой-то стендап был в крокус city холли такой вы есть у вас ну и правильно это как это говно честно говоря стендапы и прямо в ней вот и время у него под ухо будет у него придет новая программа какие хорошие вопросы где он там убрал ну а вот там ну обсуждает нам политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопрос это программа очень интересно но да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я отчего здесь я это никак не решаю поэтому возможно может вы мне просто скинете смс сообщение нет зачем? а только вам читать мои сообщения давайте я пару мне сделаю хороших просто это Ефремов у него распитание на год вперед расписано а это новая программа вопрос да есть а там же надо деньги получается? деньги платить можно? а? деньги надо заплатить же еще да получается мне сейчас? ну да конечно тогда, наверно, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят под 200 тысяч, сами понимаете. Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Баулан
 
-### 68. openai / large-v3-turbo
+### 74. openai / large-v3-turbo
 
 - **ID:** `ca35d458ebca`
 - **Language:** ru
@@ -1718,7 +1861,27 @@
 
 > Хрюкз В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токи Ямахо ямасо а кипяча организаторы закрываем телефонов режиме и выделяем места по номиналу и без наценок не как на Пугачёва сейчас билет стоит там по 100, по 150 тысяч рублей ну Пугачёва, извините меня, какая величина? ну да вот туда продаем, вот а так на Дитропольенове места идут от 2000 рублей и до 20000 уже в лучших местах а танцевальный портер идет в 3-5 поэтому просто подскажите как вам посмотреть места чтобы поддвигали телом, ну или что бы и посидели и потанцевали а чтобы прямо на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел на сцене под 20-е могу сделать вам место, первый ряд портера а еще ближе получится? нет Так, а Дитер Бауллин это который из них? Ну, с волосами, ну вот сейчас по астерикции нормально вроде стал А волосами был, с белыми волосами, как Александр Маршал, вот такой? Не-не-не, какой Маршал? Нет, похож, лицо А, да лицо, да, не-не-не Ах, не-не, это другой, который, помни, у него в рекламе этот шел, разочепался ой, да там кто только не снимался ну да там и Юрий Дудь, извините пожалуйста в Head & Shoulders и муж Заворотнюк, и кого там только не приглашают и даже Сергей Дружко если что ну хорошо знаете сразу, Алексей Сергеевич я понимаю я очень сильно люблю это все дело ага ну а так вот, самая идея, искать на Днепрополье как вам? сама идея дурацкая, честно говоря говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет ну да просто этим летом будет прощайся и так сказать но будет закрывать спектакль и билеты будут стоить по 60 на то есть 100 тысяч рублей кто это два человека придет а есть еще а вы еще на все билетов еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря программа очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться то хочется делать 4 места не буду делать сделаю 2 места я буду дополнительный стимул чтобы вы поправили здоровье да как это же это же все от господа бога зависит здоровье-то я-то от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение не, зачем но это это это эфремов у него а это новая программа а там же деньги получается деньги платить деньги надо заплатить женщина получается меньше но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извинить пожалуйста тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 69. openai / large-v3-turbo
+### 75. openai / large-v3-turbo
+
+- **ID:** `e041cdb831cb`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.62s
+- **Memory:** Δ 0.0 MB, peak 9410.2 MB
+- **Beam size:** 3
+- **Temperature:** 0.09
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 47.09%
+- **CER:** 41.63%
+- **Timestamp:** 2026-01-07T15:33:36.302103+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на 2 тысяч рублей и до 20 тысяч уже лучше поэтому а что прям на сцене сидеть можно чтобы дитрбоула выступала я сиделась и прямо типа на сцене а еще ближе получится так а дитер болу это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе ходом шелдерс снимался там юрий дуть извините пожалуйста в ходом шелдерсе и муж заворотнюк и кого там только не приглашают И даже Сергей Дружков, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага, ну а так вот сама идея искать на Дмитрия Полина как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага. Один я вас отправлю на его спектакль Кыся. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это? Два человека придет? Не, ну почему? Голос будет полный, это будет круглый сити холл. а есть еще вы на все билеты вы еще какой-то стендап был в крокус сити холли такой вы есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
+
+### 76. openai / large-v3-turbo
 
 - **ID:** `392ae418460d`
 - **Language:** ru
@@ -1738,7 +1901,7 @@
 
 > Крокус Сити Холл Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да, но в Толланд Сандерфтон Вот он Токио я правильно понимаю акипича организаторы закрываем телефонов в режиме и выделяем места по номиналу и без надценок не как на пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня какая величина ну да вот туда а так на Дитропольеве места идут от 2000 рублей и до 20 тысяч уже в лучших местах А чтобы прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел на сцене? А еще ближе получится? А Дитер Боулен это который из них? а волосами с белыми волосами как александр маршал вот такой нет похож лицо а это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк и кого там только не приглашаю и даже и сергей дружко если что Ну, хорошо, знаете, все, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея, с каких-то Дмитрием более награком. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Кристи. А вот этот не нужно. Единственный спектакль, в котором он играет. я знаю давно любит она в 15 лет играет уже будет прощальная так сказать но он будет закрывать этот спектакль и билеты будут стоить 2060 а то и 100 тысяч рублей ну это же кто это два человека придет не ну почему гол будет полный это будет в крокус сити холл ничего себе а есть еще вы на все билеты еще какой то стендап был в круга сити холли такой вы есть у вас ну и правильно это честно говоря стандапы и прямо в год и время по духу будет у него идет новая программа герой вопрос где он там образов но обсуждает нам политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопросы это программа 28 марта молодежь на против очень интересно но пометану это 2 рублей до 12 да вот я просто не могу планировать ничего на период потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я там от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда тогда ничего не получится. Ага, ну все, что стоит внимание, стоит немного и денег, как Пугачёва, где билеты стоят по 200 тысяч. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну, да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да, да. Обязательно. Потому что нового созвона со мной не дождались. Время, которое я не знаю, не знаю, не знаю.
 
-### 70. openai / large-v3-turbo
+### 77. openai / large-v3-turbo
 
 - **ID:** `ced92da5ac6b`
 - **Language:** ru
@@ -1758,7 +1921,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а чтоб подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер боулен выступал я сиделась прямо типа на сцене а еще ближе получится так а дитер болу это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко не это другой который у него в рекламе как шел разъема там кто только не снимался ну да там и Юрий Дуть извините пожалуйста в Head on Shoulders и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружко если что он хорошо знаете все Алексей Сергеевич я как-то снимаю я очень сильно люблю это все дело ага ну а так вот сама идея Моя идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль Крися. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060 на 100 тысяч рублей О, ну это ж кто это? Два человека придет? Не, ну почему? Головой полный это будет в Крокус Сити Холл Не, ну ничего себе А так есть? А вы еще на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? Не, не, не Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и такового. Ну и правильно, это какое-то говно, честно говоря. Стендапы. И Бремов есть. Вот. И Бремов есть. Он вам по духу мой. У него, кстати, вот новая программа, геопатин Хороший вопрос-то есть. Где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзья, алкоголиков. очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 71. openai / medium
+### 78. openai / medium
 
 - **ID:** `5f6300d014e6`
 - **Language:** ru
@@ -1778,7 +1941,7 @@
 
 > Игрок в Крокус-Сити-Холле Дал знаком? Так, еще разок В Крокус-Сити-Холл? Да, 14 марта, Дитер-Боулан Дитер-Боулан? Да, но Толл-Сандор, Лоден-Токер Все, Лемахо, Емасо Я правильно понимаю? Да И Дитер-Боулан Да, но Толл-Сандор, Лоден-Токер Емасо, я правильно понимаю? Все верно Акипиджаин, Беравера, Юго Мы, организаторы Зал закрываем телефоном режим И выделяем места по номиналу и без наценок Никак на Пугачева сейчас билеты Стоят там по 100, по 60 тысяч рублей Ну Пугачева, извините меня Какая величина? Ну да, потом продаем А так, на Дитер-Боулан Вместо идут 2000 рублей Вот 20000 уже в лучших местах портера А танцевальный портер Идет в 300 Поэтому просто подскажите Как вам посмотреть места Чтобы вы поддвигали тело Ну или чтобы вы посидели и потанцевали А чтоб прям на сцене сидеть можно? Чтобы Дитер-Боулан выступал А я сидел вот, типа на сцене Ну по два таточки Могу сделать вам места Первый ряд портера А еще ближе получится? Так А Дитер-Боулан это который из них? Ну с волосами Он сейчас по ассириксе Нормально вроде стал А с белыми волосами Как Александр Маршал Не-не-не Какой Маршал? Нет, похож, лицо Маршал Жуков Ахе, это другой, который в рекламе Ходж Шоллард Кого снимался? Ну да А так вот А так вот ЗВОНОК И даже Сергей Дружко Если что Ну хорошо, знаете, что А Алексей Сергеевич я понимаю Я очень сильно люблю это все дело А так вот Самая идея, скатить на Дитер-Боулан А эта идея дурацкая А если разговор Начнется с Дмитрия Нагиева А вот с этого надо было начинать Ага А Дитя его отправили на И его спектакль Кыся А вот это не нужно Единственный спектакль в котором он играет Я знаю, да, он его любит Он его 15 лет играет уже Ну да, просто этим летом будет Прощальная, так сказать Но он будет закрывать этот спектакль Я буду в 16-16-й вечер Ооо Ну это же кто там? 2 человека придет? Не, ну почему Гал будет полный, это будет Крокос-Сити-Хол Ничего себе А есть еще А вы еще Вы на всё или это? А еще какой-то стендап был в Крокос-Сити-Холе Такое есть у вас? Не, не, не У нас есть мероприятия Балет, мюзикл, разное шоу Нету такого Ну и правильно, это говно И прямов есть И прямов есть У него кстати Новая программа Хорошие вопросы есть Он разом Отсуждает Политиков, чиновников, артистов, друзей Алкоголиков И в конце даже Если будет немного под шапе Отвечается вопрос У нас есть программа 28 марта В Мастулском дворце молодежи На Продинске Очень интересно Там по местам Два тысячи рублей за двенадцать А видите, я вам пару мест сделаю А вы планируете что ищете? Да вот я просто не могу планировать Ничего наперед, потому что Я сейчас лечусь Поэтому не знаю Когда смогу освободиться Так, пойдите Ну, что? Мои все семьи сейчас делают Но четыре места не буду делать Делаю два места Я буду дополнительный стимул Чтобы вы поправили здоровье Как это? Это ж все от Бога зависит От чего я здесь? Я это никак не решаю Поэтому возможно Может вы мне просто скинете СМС сообщение? Нет, зачем? Давайте я вам пару мест сделаю хороших Просто Это Дифремов У него расписание на год вперед А это новая программа Вопросы есть А там же надо деньги Платить можно? Деньги надо заплатить еще Да, конечно Тогда ничего не получится Все что стоит внимание Стоит немного денег Как Пугачева, где билеты стоят по 200 000 Пугачева опять таки мы с вами уже обсуждали Это величина такая, что... Извините, пожалуйста Ну да Тогда я думаю до новых встреч Да, я поездить по номеру Обязательно Потому что нового созвона со мной не дождались Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен Дитор Боулен
 
-### 72. openai / large-v3
+### 79. openai / large-v3
 
 - **ID:** `015101db2d39`
 - **Language:** ru
@@ -1798,7 +1961,7 @@
 
 > так еще разок в крокус city hall дитор болан все ли я хо яма соль а правильно понимали организация ну богачу извините меня вели какая величина а что прям на сцене сидеть можно чтобы выступал я сидел прямо на сцене а еще ближе получится так 1 turbo ул это который из них волосами с белыми волосами как александр маршал такой нет похож лицо не снимался извините пожалуйста в консультации и муж заворотнюк никого там только не приглашают И даже Сергей Дружко, если что. Ну, хорошо знаете все, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так, у вас самая идея исходить на Днепрополе, ну как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один день я отправлю на его спектакль Кристиан. А вот это не нужно? Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 60, а то и 100 тысяч рублей. Ооо, ну это ж кто там, два человека придет? Не, ну почему, гал будет полный, это будет круглый сетихол. вы на все билеты а вы еще какой-то стендап в крокус сити холли такое вы есть у вас ну и правильно это как это честно говоря и приемов и вот и время и в риме задет новая программа один хороший вопрос где он там раз осуждает нам политиком чиновникам артистам друзья алкоголиков и будет немного подшопе отвечает на вопросы а программа 28 марта В московском дворце молодежи напротив здесь. Очень интересно. Там по местам от 2000 рублей до 12000. Ходите вам паром, я сделаю, а вы планируете, уже стоите, отдохнете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. Заходите, я просто... все семьи что-нибудь сделают, тогда. Но четыре места не буду делать, сделаю два места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это ж? Это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете SMS-сообщение? Нет, зачем? А только вам читать мои сообщения. Да, хотя я просто пару мер сделаю хороших, просто, ну это, это Ефремов, у него расписание на год вперед расписано, а это новая программа, вопрос есть. А там же надо деньги, получается, деньги платить нужно? А? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Бугачево, где билеты стоят по 200 тысяч, я понимаю. Пугачёва опять-таки мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я поездим по номеру. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 73. openai / large-v3-turbo
+### 80. openai / large-v3-turbo
 
 - **ID:** `2c9ff6e202fa`
 - **Language:** ru
@@ -1818,7 +1981,7 @@
 
 > Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Сандартен в Лотен Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а что прям на сцене сидеть можно чтобы дитербоула выступала я сиделась и прямо типа на сцене а еще ближе получится так один терпал это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк и кого там только не приглашают и даже и сергей дружко если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот эти не нужно я знаю давно любит она 15 лет играет уже но будет кто-то два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такой есть у у вас? Не-не-не. У нас есть мероприятия, балет, мюзикл, разное шоу, но стендапов нету именно такового. Ну и правильно. Это какое-то говно, честно говоря. Стендапы. И Времов есть. Вот. И Времов есть. Он вам по духу будет. У него, кстати, идет новая программа, господин, хороший вопрос-то есть, где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, взрослых и в конце будет немного под шофе, отвечает на вопросы. Не пройдем? Это программа 28 марта в Московском дворце молодежи на Вкратинске. Очень интересно. Там по местам, хотя 2000 рублей до 12. Одинте вам паром, я сделаю, а вы планируете уже сойте, отопнете? Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Как хотите, я просто... ...все семейки я сделаю, но четыре места не буду делать, сделаю два места, и я буду давать дополнительный стимул, чтобы вы поправили здоровье. Да как это ж... Это ж всё от Господа Бога зависит здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс сообщение? Нет, зачем? Я только могу вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Просто, ну это Ефремов. У него расписание на год вперед расписано. А это новая программа вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну все, что стоит внимание, стоит немного и денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулен
 
-### 74. openai / large-v3-turbo
+### 81. openai / large-v3-turbo
 
 - **ID:** `ee035cc35700`
 - **Language:** ru
@@ -1838,7 +2001,7 @@
 
 > Крокус Сити Холл В Крокус Сити Холле. Зал таком? Так еще разок. В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, но Долланд, Андерл, Воден, Токер Все, Яма-Хо Яма-Со. Я правильно понимаю? Все верно. Акипинчан, Вера Вера, Юго. Мы, организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачёва. Сейчас билет стоит по 100-150 тысяч рублей. Ну, Пугачёва, извините меня, какая величина? Ну да. Вот туда. Вот туда. А так на Дитер Боуланом места идут от 2 тысяч рублей и до 20000 уже в лучших местах портера. А танцевальный портер идет по 30-100. Поэтому просто подскажите, как вам посмотреть места. Чтобы подвигли телом, ну или чтобы вы посидели и потанцевали. А чтобы прямо на сцене сидеть можно? Чтобы Дитер Боулан выступал и я сидел прямо на сцене. Ну, под 20-е могу сделать вам места. Первый ряд портера. А еще ближе получится? Нет. Так. А Дитер Боулан это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож. Лицо. А, ну лицо... Маршал Жуков. А, ну лицо... Маршал Жуков. Ах, нет, нет. Это другой, который в попке у него в рекламе Ход Шолдерс еще снимался. Ой, да там кто только не снимался. Ну да. А так вот... Там и Юрий Дуть, извините пожалуйста, в Ход Шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружков, если что. Ну хорошо, знаете все, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, у нас самая идея с коникой Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать? Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но... Будут закрывать этот спектакль, и билеты будут стоить по 60, а то и 100 тысяч рублей. О, ну это ж кто? Там два человека придет? Не, ну почему? Гал будет полный, это будет Крокус Сити Холл. Ну, ничего себе. А есть еще... А вы еще... Вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? Не-не-не... Не, у нас есть мероприятия, балет, мюзикл, там... Разное шоу, но стендапа нету именно такового. Ну и правильно, это какое-то говно, честно говоря. Стендапы... И Времов есть. Вот. И Времов есть. И Времов есть. У него, кстати, есть новая программа, господин, хороший вопрос есть. Где он там в разных, ну, там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если будет немного под шофе, отвечает на вопросы. Аааа. И мы пройдем, это программа 28 марта в Мостовском дворце молодежи на Вкратинске. Очень интересно. Но... Там по местам, кстати, от 2000 рублей до 12, а? Адите вам пару мест делаю, а вы планируете уже стоите, отопнете. Да вот я просто не могу планировать ничего наперед, потому что... Ну, я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. Ааа, так хотите, я просто там... Моя семья чего сделаю, тогда... Но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы побрали здоровье. А это не получится, да. Да как это ж... Это ж все от Господа Бога зависит здоровье-то. Я-то... От чего здесь? Я-то никак уже не решаю. Поэтому, возможно... Может, вы мне просто скинете смс-сообщение? Нет, зачем. А, только вам читать мои сообщения. Давайте я просто пару мест делаю хороших, просто... Ну это... Это... Это Ефремов. У него распространение на год вперед расписано. А это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Эта величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да, да. Обязательно. Потому что нового созвона со мной не дождались. Это было очень интересно. Это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Я не знаю, что это было очень интересно. Это Дитер Боулан.
 
-### 75. openai / large-v3-turbo
+### 82. openai / large-v3-turbo
 
 - **ID:** `e880bcaad136`
 - **Language:** ru
@@ -1858,7 +2021,27 @@
 
 > В Крокус Сити Холле Так, еще разок В Крокус Сити Холл? 14 марта, Диттер Боулен Диттер Боулен? Да, но... Долланд Дандерфтен, Лоден Токинг Все, Ямахо Ямасо, я правильно понимаю? все верно мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачеву сейчас билеты стоят по 100-150 тысяч рублей ну Пугачеву, извините меня, какая величина? ну да вот туда продаем а так на Дитрополья на места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места как чтобы подвигали телом? ну или чтобы вы посидели и потанцевали? а чтобы прям на сцене сидеть можно? чтобы Дитер Боулан выступал и я сидел прямо на сцене ну под двостаточки могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулан это который из них? ну с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был, с белыми волосами, как Александр Маршал, вот такой? не-не-не, какой Маршал? нет, похож лицо а, ну лицо, да, не-не-не ахе, не-не, это другой, который, помни, у него в рекламе этот шеллер сочинался ой, да там кто только не снимался ну да, а так вот Там и Юрий Дудь, извините пожалуйста, в хендом шолдерсе, и муж Заворотнюк и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете все, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ну а так вот вот сама идея искать на дидера более награком. Сама идея дурацкая, честно говоря. а вот с этого надо было начинать а вот и не нужно я знаю давно любит она 15 лет играет но это два человека придет себе а есть еще вы еще на всем билетов еще какой-то стендап был в круга сети холли такое вы есть у вас мероприятия полет ну и правильно это это какой-то говно, честно говоря. Стендап это. И Бремов есть. Вот. И Бремов есть. Он вам под ухом будет. У него, кстати, вот новая программа, господин, хороший вопрос-то есть. Где он там в разных, ну-то там, ну, осуждает там политиков, чиновников, артистов, друзей, алкоголиков. И в конце даже, если будет немного под шофе, отвечает на вопросы. Ааа. И пройдёмся. очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь я то никак не решаю поэтому может вы мне просто скиньте sms сообщение а там же деньги платить деньги надо заплатить же еще до получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитор Боулен Дитор Боулен
 
-### 76. openai / large-v3-turbo
+### 83. openai / large-v3-turbo
+
+- **ID:** `9a18e9d61569`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.92s
+- **Memory:** Δ 0.3 MB, peak 9399.6 MB
+- **Beam size:** 2
+- **Temperature:** 0.50
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 48.29%
+- **CER:** 40.05%
+- **Timestamp:** 2026-01-07T15:30:39.201186+00:00
+
+**Text:**
+
+> Крокус Сити Холл Крокус Сити Холл Крокус Сити Холл Крокус Сити Холл Крокус Сити Холл Крокус Сити Холл Крокус Сити Холл Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да, но Долан Дандерфтен Вот он, Токио Ямахо, ямасо. Я правильно понимаю? все верно окейпинчаем вера вера и го мы организаторы зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок, не как на Пугачеву сейчас билеты стоит по 100 по 150 тысяч рублей ну Пугачеву извините меня какая величина ну да вот туда а так на Дитропольную места идут от двух тысяч рублей и до 20 тысяч уже в лучших местах а танцевальный портер идет по 30-м дом. Поэтому просто подскажите, как вам посмотреть места. Чтобы поддвигли телом или чтобы вы посидели и потанцевали. А чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулан выступала, а я сидела прямо на сцене? Ну, по 20-м могу сделать вам места, первый ряд портера. А еще ближе получится? Нет. а дитр баулин это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо Это другой, который в рекламе подшелдерс снимался. Там кто только не снимался. Там и Юрий Дудь, извините пожалуйста, в Head on Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружков, если что. Ну хорошо знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея с каких-то Дмитрия более награк вам Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить по 60 на 100 тысяч рублей. О, ну это ж кто? Два человека придет? Не, ну почему? Голубой, полный это будет в Крокос-Сити-Холл. Ничего себе. А есть еще... А вы еще на все билеты? А еще какой-то стендап был в Крокос-Сити-Холле? Такое есть у вас? Ну и правильно, это как это говно честно говоря. там очень интересно но двенадцать да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободить это все господа бога зависит здоровья это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинуть смс сообщение это программа там же деньги получаются деньги платить деньги надо заплатить женщину до получается мне что-то конечно но тогда ничего не получится что-то снимали стоит немного и денег как пугачёва опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулен
+
+### 84. openai / large-v3-turbo
 
 - **ID:** `3e378fe845b5`
 - **Language:** ru
@@ -1878,7 +2061,27 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрбоула выступала я сидел прямо на сцене. Ну, по двадцатке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? нет похож лицо маршал зубов это другой который у него в рекламе ходом шелдерс снимался там юрий дуть извините пожалуйста в этом шелдерсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто будет прощально и так как нового будет закрывать но вы тоже кто-то два человека придет а есть еще вы на все билетов еще какой-то стендап был в крокос сити холли такой вы есть у вас мероприятия балет шоу но стендапа нету и такового ну и правильно это говно честно говоря и времов есть у него кстати вот новая программа господин хороший вопрос да есть где он там в разных ну там осуждает там политиков чиновников очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 77. openai / large-v3-turbo
+### 85. openai / large-v3-turbo
+
+- **ID:** `af75e53be0f7`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.05s
+- **Memory:** Δ 0.3 MB, peak 9409.4 MB
+- **Beam size:** 10
+- **Temperature:** 0.45
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 48.44%
+- **CER:** 39.72%
+- **Timestamp:** 2026-01-07T15:32:26.348620+00:00
+
+**Text:**
+
+> В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? Да, 14 марта Дитер Боулан Дитер Боулан? Да Долланд Дандармсен, Лотен Токинг Все, Яма Хо Ямасо, я правильно понимаю? организации выделяем по номиналу и без наценок не как-то пугачёва сейчас билет стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина ну да вот продаем а так на тетрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера. А танцевальный портер идет по 3-й стол. Поэтому просто подскажите, как вам посмотреть места. Чтобы поддвигли телом, ну или чтобы вы посидели, потанцевали. А чтобы прям на сцене сидеть, можно? Чтобы Дидерболан выступала, я сидел прямо на сцене. Ну по двенадцатке могу сделать вам места, первый ряд портера. А еще ближе получится? Нет. так один turbo ул это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо он не снимался там и юрий дуть извините пожалуйста в одном шелдерсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это сама идея дурацкая честно говоря а вот с этого надо было начинать а вот я не нужно я знаю давно любит она 15 лет играет уже этим летом будет прощальная, так сказать, но будет закрывать этот спектакль, и билеты будут стоить 20-60, а то и 100 тысяч рублей Ооо, ну это ж кто это? Два человека придет? Не, ну почему? Гоу будет полный, это будет в Крокус-сити-холл Ничего себе А так есть? А вы еще, вы на все билеты? А еще какой-то стендап был в Крокус-сити-холле, такое есть у вас? Не, не, не У нас есть мероприятия, балет, мюзикл, разное шоу, но стендапа нету. Ну и правильно. Это какая-то говно, честно говоря. И Бремов есть. Вот. И Бремов есть. Он вам по духу может. У него, кстати, вот новая программа «Господин Хороший вопрос». Где он там в разных... Ну, то там... Ну, осуждает там политикам, чиновникам, артистам, друзей, алкоголикам... это программа очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже решаю поэтому возможно может вы мне просто скинете смс сообщение это новая программа а там же деньги деньги платить деньги надо заплатить Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Адитер Боулен? Адитер Боулен? Адитер Боулен?
+
+### 86. openai / large-v3-turbo
 
 - **ID:** `c73ac48cdaa0`
 - **Language:** ru
@@ -1898,7 +2101,7 @@
 
 > В Крокус Сити Холле Дал таком? Так ещё разок В Крокус Сити Холл? 14 марта, Дитер Боулан Дитер Боулан? Да, но дом в зандерфтен в Лоден Токио Всё, ямахо-ямасо, я правильно понимаю? окей печально организаторы закрываем телефонов в режиме и выделяем номиналу и 10 не как то пугачёва сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина ну да вот она продаем вот а так на дитро полинами зайдут от двух тысяч рублей и до 20 тысяч уже в лучших местах а что прям на сцене сидеть можно чтобы дитер боулин выступал я сидел с прямо на сцене а еще ближе получится так а дитер боулин это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Хорошо, знаете, все, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, у нас самая идея с каких-то Дмитрия более награк вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль, Кристиан. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить по 60, а то и по 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Зал будет полный, это будет Крокосити Холл. Ничего себе. А есть еще... А вы еще, вы на все билеты? в еще какой-то стендап был в крокус сити холли такой вы есть у вас ну и правильно это это вид говно честно говоря стендапы и примут но и время под углом подойдет новая программа где он там образов а вот там а ну обсуждает нам политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного пустот отвечает на вопрос это программа 20 марта очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться здоровье это все господа бога зависит здоровье то я то от чего здесь я то не никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А потом получу вам читать мои сообщения. Давайте я просто пару мер сделаю хороших, просто, ну, это это Ефремов. У него распитание на год вперед расписано. А это новая программа. А там же надо деньги получается? Деньги платить можно? деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно но за злорозом и не дождались а дитр болон дитр болон дитр болон Продолжение следует...
 
-### 78. openai / large-v3-turbo
+### 87. openai / large-v3-turbo
 
 - **ID:** `46fee4acef1f`
 - **Language:** ru
@@ -1918,7 +2121,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места что-то подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрбоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружков если что Я очень сильно люблю это все дело. Ну а так вот у вас самая идея с конечной Дмитрием Поллиной как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим билетом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Гол будет полный, это будет Крокус Сити Холл. Не, ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 79. openai / large-v3-turbo
+### 88. openai / large-v3-turbo
 
 - **ID:** `982898b43805`
 - **Language:** ru
@@ -1938,7 +2141,7 @@
 
 > в крокус сити холле так еще разок в крокус сити холл Дитер Болан Дитер Болан? Да, но Долан Сандерфтен, вот он, токинг Всё, Яма-Хо, Яма-Со, я правильно понимаю? Всё верно А Кипичайен, Вера-Вера, Его Мы, организаторы, зал закрываем телефоновом режиме и выделяем места по номиналу и без наценок Не как там Пугачёва, сейчас билеты стоят по 100-60 тысяч рублей Ну Пугачёва, извините меня, какая величина? Ну да, мы уже её продаём а так на дитра поля на места идут 2000 рублей и до 20000 уже в лучших местах портера а танцевальный партнер идет по три пиццу поэтому просто подскажите как вам пора и китая делать или что вы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрпола на выступала я сидел из прям на сцене а еще ближе получится так а дитр болон это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе хэдэншолдерсе снимался там юрий дуть извините пожалуйста в хэдэншолдерсе и муж за воротнюк и кого там только не приглашают И даже Сергей Дружков, если что. Ну, хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага, а я вас отправлю на его спектакль к Исте. А вот это не нужно? Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему, зал будет полный, это будет круглый стихол. а вы на все билеты, а еще какой-то стендап был в крокос сити холли, такое есть у вас? не, у нас есть мероприятия балет, мюзикл, там разное шоу, но стендапов нету и ничего такого ну и правильно, это какой-то говно честно говоря и Времов есть вот, и Времов есть очень интересно я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться я просто все семья что сделаю но 4 места не буду делать сделаю 2 места я буду дополнительный стимул чтобы вы поправили здоровье да как это же это же все от господа бога зависит здоровье-то я-то от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги получается деньги платить деньги надо заплатить же еще да получается мне но тогда ничего не получится а не только пугачёва опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно но санкоррса мы не дождались Идитор Боулен
 
-### 80. openai / large-v3-turbo
+### 89. openai / large-v3-turbo
 
 - **ID:** `6d4ba341df6c`
 - **Language:** ru
@@ -1958,7 +2161,7 @@
 
 > Крокус Сити Холл В Крокус Сити Холл В Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан Да Долланд Сандармсен Воден Токинг Все Ямахо Ямасо Я правильно понимаю Ямахо Ямасо Ямахо Ямахо я правильно понимаю акипича организаторы телефонов режиме и выделяем номинал и без наценок не как на пугачёва по 100 по 150 тысяч рублей ну пугачёва извините меня какая величина ну да вот туда а так то на Титропольёв а танцевальный партер идет по 3 5 поэтому просто подскажите как вам посмотреть это делом или вы посидели потанцевали а что прям на сцене сидеть можно чтобы динтер болон выступала я сиделось и прямо типа на сцене Ну, по двадцатке могу сделать вам места, первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Бауллин, это который из них? Ну, с волосами. Ну, вот сейчас по астерикции нормально вроде стал. А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож лицо. А, ну лицо... Маршал Жуков. это другой который у него в рекламе ходом еще снимался там и юрий дуть извините пожалуйста в ходом солдарсе и муж заворотнюк и кого-то только не приглашают и в даже и сергей дружко если что Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея с каких-то Дмитрием более награком. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это какого-то честно говоря программа где он там образ обсуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шопе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну все, что стоит внимание, стоит немного и денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, то беру вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 81. openai / large-v3-turbo
+### 90. openai / large-v3-turbo
 
 - **ID:** `5f8ce7d3fdd1`
 - **Language:** ru
@@ -1978,7 +2181,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по двадцатке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? нет похож лицо маршал зубов это другой который у него в рекламе ходом шелдерс снимался там юрий дуть извините пожалуйста в этом шелдерсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто будет прощально и так как нового будет закрывать но вы тоже кто-то два человека придет а есть еще вы на все билетов еще какой-то стендап был в крокос сити холли такой вы есть у вас мероприятия балет шоу но стендапа нету и такового ну и правильно это говно честно говоря и времов есть он вам по духу может у него кстати вот новая программа господин хороший вопрос то есть где он там в разных ну то там ну осуждает там политиков чиновников очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну, Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 82. openai / small
+### 91. openai / small
 
 - **ID:** `f755fd2df213`
 - **Language:** ru
@@ -1998,7 +2201,7 @@
 
 > В Крокусе, Нехоля, с Далтаком. Так, ещё разок. В Крокусе, Нехол? Да, 14 марта, Дитер Боулен. Дитер Боулен? Да. Ну, Долу, Сан-Лодден, Боулен, Боулен. Всё, Емахо, Емасо. Всё верно. А Кипенчай, Бэровера, Его. Мы организаторы, залз, закрываем в телефонном режиме и выделяем места по номиналу и без наценок. Никак на Пугачеву, сейчас, билет, стоит там по 100, по 60 тысяч рублей. Ну, Пугачеву, извините меня, ввели какая величина. Ну, да. Вот сюда продаем вот. А Даку на Дитер Боулене, в местах идут 2000 рублей и до 20 тысяч уже лучше в местах портера. А танцевальный портрер идёт по 300, поэтому просто подскажите, как вам посмотреть места. Так. Чтобы подъехали телом, стоили, чтобы вы посидели и танцевали. А чтоб прямо на сцене сидеть, можно, чтобы Дитер Боулен выступал и я сидел здесь прямо вот, типа, на сцене? Ну, вот. Ну, по-настоящему могу сделать вам место первый ряд портера. А ещё ближе получится? Не. Так. А Дитер Боулене, это который из них? Ну, он с волосами. Но он сейчас по астерикции нормально раздавал. А волосами был с белыми волосами, как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож лицо. А, да лицо... Маршал звуком. Ах, нет, нет, это, это другой, который после у него в рекламе, как у Шолы раздевался. Ой, да там кто только не снимался. Ну да. А так вот... Там и Юрий идут, извините, пожалуйста, в Ханан Шолдерсе, и муж заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Но хорошо знаете, что Алиси Сергеевич, понимаешь... Я очень сильно люблю это всё дело. Ага. Но, так вот, он самая есть, как Дитер Боулен на Грагову. Самая идея дурацкая, честно говоря. А если разговор бы начнется с Дмитрия Нагиева? А вот с этого надо было начинать. Ага, а где дело с отправлено на его спектакль Кыстья? А вот это не нужно. Единственный спектакль, по которому он играет? Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощально и так сказать, но будет закрывать этот спектакль, и билеты будут стоить за 6 десятилетов на той платформке еще. О, ну это ж, кто это? Два человека придет? Нет, ну почему? Голбой полный, это будет крокостихол. Ничего себе. А есть еще... Вы на всё билеты? А вы еще какой-то стендап был в крокостихоле? Такое есть у вас? Нет, нет, нет, нет. Нет, у нас есть мероприятие по лет-мюзикол, раз за шоу, но стендапов нету из-за такого. Ну и правильно, это говно, честно говоря, стендап. И Примов есть. И Примов есть. И Примов есть. У него, кстати, новая программа, поди, хорошие вопросы есть. Где он в раз, ну, асуждает полинько чиновников, артистов, взрослых, алкоголиков. И в конце, даже если будет немного по шафе, отвечает за вопросы. А-а. Очень интересно. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Там просто, там, я не имею чай, сделаю тогда, но не четыре места не буду делать, сделаю два места, я буду дополнительной стимул, чтобы вы попрали здоровье. Да как это, что, это все от Господа Бога зависит здоровье-то, от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщения? Нет, зачем? А может, полночитать мои сообщения? Да, я просто по руме сделаю хороших, просто это не фремов. У него рассчитание на год вперед, раскисленное, а это новая программа, у меня просто есть. А там же надо деньги получается? Деньги платить нужно? А? Деньги надо заплатить же еще, да? Получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну все что стоит внимания, стоит немного денег, как Пугачёва, где билеты стоит 200 тысяч, 5000... И Пугачёва опять-таки, мы с вами уже обсуждали. Это величина такая, что извините, пожалуйста. Ну да. Да, ну тогда я думаю до новых встреч. Да, я помню, если что, наберу вам, да, да. Обязательно. Потому что, нового созвона со мной не дождались. А, да, да, да. Тебе не надо, да, не надо, да, да, да, да, да, да, да, да, да, да, да, да. Тебе не надо, да, да, да, да, да, да, да, да, да, да, да, да, да. Адитар Бауэллен. Адитар Бауэллен. Адитар Бауэллен. Адитар Бауэллен. Адитар Бауэллен. Адитар Бауэллен. Адитар Бауэллен. Адитар Бауэллен.
 
-### 83. openai / large-v3-turbo
+### 92. openai / large-v3-turbo
 
 - **ID:** `c15ea9eab6f3`
 - **Language:** ru
@@ -2018,7 +2221,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а чтоб подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер боулен выступал и я сидел прямо на сцене ну по двостаточке могу сделать вам места, первый ряд бортера а еще ближе получится? нет так а дитер боулен это который из них? ну с волосами ну вот сейчас по астерикции нормально вроде стал а волосами был... с белыми волосами? как Александр Маршал? вот такой? не не не нет похож лицо маршал зубов это другой который у него в рекламе ходом шелдерс снимался ой да там кто только не снимался там и юрий дуть извините пожалуйста в ходом шелдерсе и муж заворотнюк и кого там только не приглашают И даже Сергей Дружко, если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, у вас самая идея искать, что Дмитрий Дружко более награк вам. Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? а вот это не нужно я знаю давно любит она 15 лет играет уже ну это же кто-то два человека придет а есть еще вы на все пиле то вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него программа где он там раз осуждает нам политиков чиновников артистов другие алкоголиков и будет немного под шофе отвечает на вопрос это программа марта молодежь очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 84. openai / large-v3-turbo
+### 93. openai / large-v3-turbo
 
 - **ID:** `ef6f51d60f90`
 - **Language:** ru
@@ -2038,7 +2241,27 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долан Сандерфтен в Лотен Токер Ямахо ямасо я правильно понимаю? Окипичаем, вера-вера, и го. Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачёва сейчас билет стоит по 100-150 тысяч рублей. Ну, Пугачёва, извините меня, какая величина? Ну да. Вот туда. Продаем. А так на Дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах партера. а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места как что-то подвигали телом, ну или что бы вы посидели и потанцевали а чтоб прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене ну по двостаточке могу сделать вам места первый ряд портера а еще ближе получится? нет так а Дитер Боулен это который из них? ну с волосами, но вот сейчас по астерикции нормально вроде стал а волосами был... с белыми волосами? как Александр Маршал? вот такой? не-не-не, какой Маршал? нет, похож лицо а, ну лицо... Маршал Жуков ах, не-не, это другой, который, помните, у него в рекламе этот шеллор сочинался? ой, да там кто только не снимался ну да, а так вот... Там и Юрий Дудь, извините пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете, все, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ну а так вот сама идея искать на Дмитрия более награком. Сама идея дурацкая, честно говоря. а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто будет прощально и так как нового будет закрывать но вы тоже кто-то два человека придет а есть еще вы на все билета вы еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря и прям вот и время очень интересно рублей до 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги платить деньги надо заплатить же еще до получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 85. openai / large-v3-turbo
+### 94. openai / large-v3-turbo
+
+- **ID:** `f460817b561b`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.46s
+- **Memory:** Δ 0.0 MB, peak 9399.3 MB
+- **Beam size:** 1
+- **Temperature:** 0.46
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 50.37%
+- **CER:** 42.72%
+- **Timestamp:** 2026-01-07T15:30:18.912100+00:00
+
+**Text:**
+
+> ДИТР БОУЛАН В Крокус Сити Холле. Дал таком? Так еще разок. В Крокус Сити Холл? 14 марта. Дитер Боулан. Дитер Боулан? Да, но Долландандорфтен, вот он токинг. все верно мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу не как на Пугачево сейчас билеты стоит по 1,5,5 тысяч рублей ну Пугачево, извините меня какая величина ну да, вот туда мы продаем а так на Титропольенове места идут от 2 тысяч рублей и до 20 тысяч уже в лучших местах портера, а танцевальный портер идет в 30-100, поэтому просто подскажите, как вам посмотреть места, чтобы подвигли телом или чтобы вы посидели и потанцевали? А что, прям на сцене сидеть можно? Чтобы дитербаулон выступал, а я сидел прямо на сцене? Ну по 20-ке могу сделать вам места, первый ряд портера. А еще ближе получится? Не... так а дитер болен это который из них с волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаем И даже Сергей Дружков, если что. Ну хорошо, знаете, Алексей Сергеевич, я как-то понимаю. Я очень сильно люблю это все дело. Ну а так вот сама идея искать на Дмитрия Поляна как вам подумал? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. а вот это не нужно я знаю давно любит она 15 лет играет уже кто-то в два человека придет себе а есть еще вы на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас но и правильно это это будет говно честно говоря и время вот и время у него подходит новая программа где он там в разных ну вот там ну осуждает нам политиков чиновников артистов друзья алкоголиков и если будет немного под шофе отвечать на вопросы это программа 28 марта в московском дворце молодежи на вкройник очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это новая программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста вот тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 95. openai / large-v3-turbo
 
 - **ID:** `d6ebbbe1d5d4`
 - **Language:** ru
@@ -2058,7 +2281,7 @@
 
 > в крокус сити холле так еще разок в крокус сити холл Дитер Боулан? Да, ну Толан, Сандерсон, вот он, Токи. Все. Ямахо, ямасо. Я правильно понимаю? Все верно. Мы организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачево сейчас билеты стоят по 100-60 тысяч рублей. Ну, Пугачево, извините меня, какая величина? Ну да. Вот туда. Мы продаем. а так на дитерболе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30 тонн поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прямо на сцене сидеть можно чтобы дитербоула не выступала я сидел прямо на сцене а еще ближе получится так один turbo ловят на которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другое, у него в рекламе Ходдом Шолдерс еще снимался там и Юрий Дудь извините пожалуйста в Ходдом Шолдерсе и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружков если что Ну хорошо знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея, с каких-то Дмитрием более награк вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Один я вас отправлю на его спектакль, Крися. А вот этот не нужно. я знаю давно любит она в 15 лет играет уже кто-то два человека придет себе а есть еще вы еще на все пиле это вы еще какой-то стендап был в крокус city hall и такой вы его есть у вас ну и правильно это это будет говно честно говоря стендап это и прямо в киеве на программу обсуждает на политиков чиновников артистов друзья алкоголиков и если будет немного под шопе отвечает на вопросы это программа 28 марта в московском дворце молодежи на против очень интересно но до 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то и это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс-сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда на ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно что нового созвольна со мной не дождались Дитер Боулен
 
-### 86. openai / large-v3-turbo
+### 96. openai / large-v3-turbo
 
 - **ID:** `b2512b8dfeb1`
 - **Language:** ru
@@ -2078,7 +2301,7 @@
 
 > В Крокус Сити Холле Так еще разок в Крокус Сити Холл 14 марта Дитер Боулан Дитер Боулан? Да, но Долланд Сандерфтен, Лотен Токинг Я правильно понимаю? Всё верно Акипинчайен веравера и го Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок Не как на Пугачёва сейчас билет стоит по 100 По 150 тысяч рублей Ну и Пугачёва, извините меня, какая величина? Ну да Вот туда А так на Дитрополино места идут От двух тысяч рублей и до 20000 уже в лучших местах портера. А танцевальный портер идет по 30-100. Поэтому просто подскажите, как вам посмотреть места. Чтобы подвигли телом, ну или чтобы вы посидели и потанцевали? А чтобы прямо на сцене сидеть, можно, чтобы Дидерболан выступал, а я сидел прямо на сцене? Ну по 20-м могу сделать вам места, первый ряд портера. А еще ближе получится? Нет. так а дитер болен это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея с каких-то Дмитрия более награк вам. Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все были это вы еще какой-то стендап был в крокус сити холли такой есть у вас ну и правильно это будет говно честно говоря стандартный приемов и вот и время вот у него идет новая программа где он там раз осуждает нам политиков чиновников артистов друзья алкоголиков и если будет немного под шапе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение программа а там же деньги получаются деньги платить деньги надо заплатить же еще до получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 87. openai / large-v3-turbo
+### 97. openai / large-v3-turbo
 
 - **ID:** `54b2256087ee`
 - **Language:** ru
@@ -2098,7 +2321,7 @@
 
 > Крокус Сити Холл Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токер Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а что прям на сцене сидеть можно чтобы диндер болон выступала я сиделась и прямо типа на сцене а еще ближе получится так один turbo ул это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея с каких-то Дмитрием более награк вам Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися А вот это не нужно я знаю давно любит она 15 лет играет уже ну это ж кто там два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такой есть у вас ну и правильно это как это говно честно говоря программа чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечает на вопросы. Не пройдет эта программа 28 марта в Мостулском дворце молодежи на ВКРУ. Очень интересно. Там по местам, хотя 2000 рублей до 12. Одинте вам паром, я сделаю, а вы планируете уже сойти, а так ждете. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. поэтому не знаю когда смогу освободиться как хотите я просто все семьи что сделаю тогда 4 места не буду делать, сделаю 2 места я буду дополнительный стимул, чтобы вы поправили здоровье да как это ж... это ж всё от господа бога зависит здоровье-то, я то от чего здесь я то никак уже не решаю поэтому возможно Может вы мне просто скинете смс-сообщение? Нет, зачем? А только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Просто это Ефремов. У него расписание на год вперед расписано. А это новая программа, вопрос-то есть. А там же надо деньги, получается? Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно но с озором мы не дождались Дитер Боулан
 
-### 88. openai / large-v3-turbo
+### 98. openai / large-v3-turbo
 
 - **ID:** `6a361693b5ce`
 - **Language:** ru
@@ -2118,7 +2341,7 @@
 
 > ДИТЕР БОУЛАН В Крокус Сити Холле. Зал знаком? Так, еще разок. В Крокус Сити Холл? Да, 14 марта, Дитер Боулан. Дитер Боулан? Да, но дом из данных в Лотен Токин. Я правильно понимаю? Всё верно Акипинчайен, Вера Вера, Его Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок, не как на Пугачёва Сейчас билеты стоят по 100, по 150 тысяч рублей Ну Пугачёва, извините меня Какая величина? Ну да А так на Дитрополе На места идут От 2000 рублей и до 20 тысяч уже в лучших местах портера. А танцевальный портер идет в 30 тонн. Поэтому просто подскажите, как вам посмотреть места. Чтобы подвигли телом, ну или чтобы вы посидели и потанцевали. А чтобы прямо на сцене сидеть можно, чтобы Дидерболан выступал, а я сидел прямо на сцене? Ну, по 20-ке могу сделать вам места, первый ряд портера. А еще ближе получится? Нет. Так. один тербоулин это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо ой да только не снимался там юрий дуть извините пожалуйста в этом солдарсе и и муж Заворотнюк и кого там только не приглашают и даже и Сергей Дружков, если что Ну хорошо знаете сразу Алексей Сергеевич, я как-то понимаю Я очень сильно люблю это все дело Ага Ну а так вот у вас самая идея искать, на Дмитрия, более награком Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже но это 2 человека придет Ничего себе А есть еще... А вы на все или это? А еще какой-то стендап был в Crocos City Hall Такое есть у вас? Не-не-не У нас есть мероприятие Балет, мюзикл, там Разное шоу, но стендапов нету И все такового Ну и правильно, это какое-то говно, честно говоря Стендап это... И Бремов есть Вот, и Бремов есть Он вам по духу мой программы и где он там у брата ну а то там осуждает на политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопрос очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю куда смогу освободиться это же все от господа бога зависит здоровье то я тогда от чего здесь я то никак уже решает поэтому возможно может вы мне просто скиньте смс сообщение это новая программа там же деньги деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 89. openai / large-v3-turbo
+### 99. openai / large-v3-turbo
 
 - **ID:** `f15e6a20cc58`
 - **Language:** ru
@@ -2138,7 +2361,27 @@
 
 > В Крокус Сити Холле Дал таком? Так, еще разок В Крокус Сити Холл? 14 марта, Дитер Боулан Дитер Боулан? Да, но Долланд Дандерфтен, Лоден Токинг Ямахо, Ямасо, я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на 2 тысяч рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет по 30-100 поэтому просто подскажите как вам посмотреть места а что прям на сцене сидеть можно чтобы дитрбоула выступала я сидел и прямо типа на сцене а еще ближе получится так один turbo луна-то который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея с каких-то Дмитрия более награк вам Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися А вот это не нужно Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 20-60, а то и 100 тысяч рублей О, ну это ж кто это, два человека придет? Не, ну почему? Голубой полный, это будет круглый сити холл А есть еще... Вы на все билеты? А еще какой-то стендап был в Крокус Сити Холли. Такое есть у вас? Не-не-не. У нас есть мероприятия. Балет, мюзикл, там, разное шоу, но стендапов нету. И все такового. Ну и правильно. Это какое-то говно, честно говоря. И Времов есть. Вот. Он вам по духу мой. У него, кстати, вот новая программа. политиков чиновников артистов друзья алкоголиков и это программа очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то я то от чего здесь я то никак не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 90. openai / large-v3-turbo
+### 100. openai / large-v3-turbo
+
+- **ID:** `733f3ecbf51c`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.96s
+- **Memory:** Δ 0.0 MB, peak 9410.2 MB
+- **Beam size:** 1
+- **Temperature:** 0.46
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 50.82%
+- **CER:** 41.63%
+- **Timestamp:** 2026-01-07T15:33:46.559393+00:00
+
+**Text:**
+
+> Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл Да, 14 марта Дитер Боулен Да Но дома в Дандерфен Лоден Токер Всё Яма-хо-ямасо Я правильно понимаю? Всё. Ямахо и Ямасо. Я правильно понимаю? Всё верно. Акипинчайон Вера Вера Юго. Мы, организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок. Не как на Пугачёва сейчас билеты стоят по сто, по 160 тысяч рублей. Ну, Пугачёвы, извините меня, какая величина? ну да вот он продаем а так на дитрополе на 20000 рублей а танцевальный партнер идет по три поэтому просто подскажите как вот смотрите на что прям на сцене сидеть можно чтобы дитр баула выступала я сидел и прямо типа на сцене а еще ближе получится так а дитр болон это который из них а волосами с белыми волосами как александр маршал вот Такой? Не-не-не. Какой Маршал? Нет, похож. Лицо. А, ну лицо… Маршал Жуков. Не-не. Ах, не-не. Это другой, который, помни, у него в рекламе Хэттон Шолдерс еще по-аннимался. Ой, да там кто-то не снимался. Ну да. А так вот… Там и Юрий Дуть, извините, пожалуйста, в Хэттон Шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Друшко, если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот вам сама идея искать на Дмитрия Полина как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. Я отправлю на его спектакль к Исте. А вот это не нужно? Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Голос будет полный, это будет круглоситихол. а есть еще вы на все билеты в еще какой-то стендап был в крокус сити холли такой есть вас ну и правильно это как это говно честно говоря вот и время вот и программа и в общем у вас есть это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться 2 место я буду дополнить ему чтобы вы поправить здоровье да как это что это все от господа бога зависит здоровье то я это от чего здесь я это никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги получаются деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно вы не дождались Дитер Боулен
+
+### 101. openai / large-v3-turbo
 
 - **ID:** `714d672f233d`
 - **Language:** ru
@@ -2158,7 +2401,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а что прям на сцене сидеть можно чтобы динамбол выступала я сиделась и прямо на сцене а еще ближе получится так а дитр болу это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея с каких-то Дмитрия более награк вам. Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это как это говно честно говоря стендапы и прямо в и время у него под ухом будет у него идет новая программа где он там в разных ну а там ну осуждает нам политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопросы очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться все семьи что сделаю, но 4 места не буду делать, сделаю 2 места, я буду дополнительный стимул, чтобы вы поправили здоровье да как это ж, это ж все от господа бога зависит здоровье, от чего здесь, я то никак уже не решаю поэтому возможно, может вы мне просто скинете смс сообщение? нет, зачем, а только вам читать мои сообщения Давайте я просто пару мер сделаю хороших, просто, ну, это, это, это Ефремов. У него расписание на год вперед расписано, а это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит, внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва опять-таки мы с вами уже обсуждали, это величина такая, что извините пожалуйста. Ну тогда я думаю до новых встреч. Обязательно. Дитер Боулен
 
-### 91. openai / large-v3-turbo
+### 102. openai / large-v3-turbo
 
 - **ID:** `8fe4e081cb1c`
 - **Language:** ru
@@ -2178,7 +2421,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Сандарфен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а что прям на сцене сидеть можно чтобы динтер болон выступала я сиделась и прямо типа на сцене а еще ближе получится так один turbo на то которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея с каких-то Дмитрия более награк вам Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все были это вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться А, то хотите я просто, там, все семьи сейчас делают, тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье. Да как это ж, это ж все от Господа Бога зависит здоровье-то, я-то от чего здесь, я-то никак уже не решаю. Поэтому, возможно, может вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших, просто, ну, это, это, это Ефремов. У него расписание на год вперед расписано, а это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит, внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, то наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 92. openai / large-v3-turbo
+### 103. openai / large-v3-turbo
 
 - **ID:** `34b8a9894373`
 - **Language:** ru
@@ -2198,7 +2441,7 @@
 
 > в крокус ситихолле зал таком так еще разок в крокус сити холл 14 марта, Дитер Боулан Дитер Боулан? Да, но Долан Сандерсон, Лоден Токер Все, Ямахо, Ямасо, я правильно понимаю? Все верно Акипинчан, Вера Вера, Юго Мы, организаторы, зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как на Пугачеву, сейчас билеты стоят по 100, по 150 тысяч рублей Ну Пугачеву, извините меня, какая величина? а так на дитроболе на 2 тысяч рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет по 30-100 поэтому просто подскажите как вам посмотреть места а что прям на сцене сидеть можно чтобы дитрбоула выступала я сиделась прямо типа на сцене а еще ближе получится так 1 turbo на то которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе ходом ой да там кто только не снимался там юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что Ага. Ну а так вот сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль, Крися? А вот этот не нужно. Я знаю, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, он будет закрывать этот спектакль и билеты будут в 20-60, а то и в 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Головой полный, это будет в Крокус-Сити Холл. Ничего себе. А вы на все билеты? Еще какой-то стендап был в Крокос Сити Холле, такой есть у вас? Не, не, не. У нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапов нету и ни одного такового. Ну и правильно, это какое-то говно, честно говоря. И Времов есть. Вот, и Времов есть. Он вам под ухом будет. у него кстати вот новая программа господин хороший вопрос где он там у брата осуждает нам политикам чиновников артистов друзья алкоголиков и это будет немного под шапе отвечает на вопрос это программа очень интересно ну вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это же от господа бога зависит здоровье то я от чего здесь я это никак уже не решают поэтому возможно может вы мне просто скинете смс сообщение это новая программа а там же деньги деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно что-то не дождались Дитер Боулен
 
-### 93. openai / large-v3-turbo
+### 104. openai / large-v3-turbo
 
 - **ID:** `785004c729b0`
 - **Language:** ru
@@ -2218,7 +2461,7 @@
 
 > В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? Да, 14 марта Дитер Боулон Дитер Боулон? Да, но Долланд Андерсон, в Лоден Токинг Все, немахо-емасо я правильно понимаю? мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина ну да вот она продаем вот а так на титра поляна и сайт у двух тысяч рублей и до 20 тысяч уже в лучших местах портера. А танцевальный портер идет по 3500. Поэтому просто подскажите, как вам посмотреть места. Чтобы поддвигли телом или чтобы вы посидели и потанцевали. А чтоб прямо на сцене сидеть можно? Чтобы Дидерболан выступал, а я сидел на сцене. Ну, по 20 могу сделать вам места, первый ряд портера. А еще ближе получится? Не. так а дитер болон это который из них о волосами с белыми волосами как александр маршал на такой нет похож лицо ой да только не снимался там юрий дуть извините пожалуйста в этом солдарсе и И муж Заворотнюк и кого там только не приглашаю. И даже и Сергей Дружко, если что. Ну хорошо знаете все, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ну а так вот сама идея искать на Дмитрия Болина как вам? Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. а вот эти не нужно я знаю давно любит она 15 лет играет уже ну вы тоже кто то в два человека придет а есть еще вы на все пиле то вы еще какой-то стендап был в крокус сити холли такой вы есть у вас но и правильно это будет говно честно говоря программа чиновников артистов друзья алкоголиков и будет немного пустошек отвечает на вопросы очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю куда смогу освободиться тогда на 4 место не буду делать сделаю два места я буду добавить его чтобы вы поправить здоровье это все о господа бога зависит здоровье то это от чего здесь это никак не решаю поэтому возможно может вы мне просто скинете смс-сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда на ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно но у нас азбуна за мы не дождались Дитер Боулен
 
-### 94. openai / large-v3-turbo
+### 105. openai / large-v3-turbo
 
 - **ID:** `1bd0ab760b41`
 - **Language:** ru
@@ -2238,7 +2481,7 @@
 
 > в Крокус Сити Холле так еще разок в Крокус Сити Холл 14 марта Дитер Боулен да всё ямахо ямасо а кипячаем вера вера и гонка организаторы зал закрываем телефоном режиме и выделяет по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 50 тысяч рублей ну пугачёву извините меня вели какая величина ну да вот он продаем а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места как подвигли телом а что прям на сцене сидеть можно чтобы дитер болон выступала я сиделась прямо на сцене а еще ближе получится так а дитер болон это который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал и дуги это другой который у него прикладах ой да там я только не снимался там и юрий дудь извините пожалуйста в этом солдарсе и муж за воротнюк никого там только не приглашаю и в даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ну а так вот у нас самая идея с каких-то Дмитрием более награком. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета вы еще какой-то стендап был в круга сити холли такой вы есть у вас но и правильно это будет говно честно говоря и прям а программа где он там угроза обсуждает нам политиков чиновников артистов друзья алкоголиков и и это будет немного пузов и отвечает на вопрос это программа очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться я просто все семьи что-то сделаю, но 4 места не буду делать, сделаю 2 места я буду дополнительный стимул чтобы вы поправили здоровье да как это ж от господа бога зависит здоровье то я то от чего здесь? я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение нет зачем я просто пару мер сделаю хороших просто но это это это ефремов у него расчетания на вот вперед расписано а это новая программа вопрос да и а также нет деньги получается деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять таки мы с вами уже обсуждали то величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно Титер Боулан
 
-### 95. openai / medium
+### 106. openai / medium
 
 - **ID:** `326f7b6acde9`
 - **Language:** ru
@@ -2258,7 +2501,27 @@
 
 > Звук бомбового бомба Мол, это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига Это не фига 20 000 уже в лучших местах портера А танцевальный портер идет в 30 000 Поэтому просто подскажите как вам смотреть места Так, чтобы вы подвигали тело Ну или чтобы вы посидели и потанцевали А чтоб прям на сцене сидеть можно? Чтобы Диндербол он выступал И я сидел вот прямо вот, типа на сцене Ну по два таточки могу сделать вам места Первый ряд портера А еще ближе получится? Нет Так А Дитер Боулэн это который из них? Ну с волосами Ну он сейчас по астирикции нормальный вроде стал А с белыми волосами? Как Александр Маршал? Вот такой? Не, не, не Какой Маршал? Нет, похож. Лицо Маршал Жуков А хе Не, не, это другой который в Покте У него в рекламе Хедуселлорс Да там кто только не снимался Там и Юрий Дудь Извините пожалуйста в Хедом Солдерсе И муж Заворотнюк и кого там только не приглашаю И даже Сергей Дружко Если что Ну хорошо знаете, а Алексей Сергеевич я понимаю Я очень сильно люблю это все дело Ну а так вот у вас сама идея сходить на Дитер Боулэна? Как вам? А у меня идея дурацкая честно говоря А если разговор начнется с Дмитрия Нагиева А вот с этого надо было начинать А где я вас отправлю на его спектакль Кыся? А вот это мне нужно Единственный спектакль в котором он играет Я знаю, да, он его любит Он его 15 лет играет уже Ну да, просто этим летом будет прощальная Но будет закрывать этот спектакль А я буду в той 60-е сходить с детьми Ну почему? Гал будет полный, это будет Крокос-Сити-Хол А вы еще на все были? А еще какой-то стендап был В Крокос-Сити-Холе Есть у вас? Не, у нас есть мероприятия Балет, мюзикл, разное шоу У нас нет такого И прямов есть У него, кстати, новая программа По день хороший вопрос и есть Где он разом Откуда он оттуда А, очень интересно Да вот я просто не могу планировать Потому что я сейчас Лечусь Поэтому не знаю, когда Смогу освободиться Да как это, шо От господа бога зависит здоровье От чего здесь? Я это никак Не решаю Поэтому, возможно Может вы мне просто скинете Смс сообщение? Нет, зачем А может вам читать мое сообщение? Давайте я вам просто пару мер сделаю хороших Просто, ну это Это не фремов У него расписание на год Вперед расписано, а это новая программа Вопросы есть А там же надо деньги Платить можно? Деньги надо заплатить же еще, да? Ну да, конечно Ну тогда, наверное ничего не получится Ага, не ну все что стоит Внимание стоит немного и денег Как Пугачева, где билеты стоят по 200 тысяч Ну Пугачева опять таки Мы с вами уже обсуждали, эта величина такая Что извините, пожалуйста Ну да Ну тогда я думаю, до новых встреч Да, если что заберу Обязательно Ну что нового созвона со мной не дождались С вами был Пугачев И мы тоже Добрый вечер Удачи Будьте здоровы И всем пока
 
-### 96. openai / large-v3-turbo
+### 107. openai / large-v3-turbo
+
+- **ID:** `79dd257cfb6f`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.45s
+- **Memory:** Δ 0.3 MB, peak 9409.9 MB
+- **Beam size:** 10
+- **Temperature:** 0.05
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 52.16%
+- **CER:** 43.21%
+- **Timestamp:** 2026-01-07T15:32:45.912036+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитрбоула выступала я сидел прямо на сцене. Ну, по двадцатке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашаю и даже и и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто будет прощально и так как нового будет закрывать но вы тоже кто-то два человека придет себе а есть еще вы еще на все билета в еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря программа где он там в разных политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопросы это программа 28 марта в московском дворце молодежи на очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 108. openai / large-v3-turbo
 
 - **ID:** `1c46bee80669`
 - **Language:** ru
@@ -2278,7 +2541,7 @@
 
 > В Крокус Сити Холле Зал таком? Так еще разок В Крокус Сити Холл? 14 марта, Дитер Боулан Дитер Боулан? Да, но Долланд Дандерфтен, Лоден Токинг Ямахо, Ямасо, я правильно понимаю? организаторы и выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёв извините меня вели какая величина а так на дитрополе на 2 тысяч рублей и до 20 тысяч уже лучше поэтому а что прям на сцене сидеть можно чтобы дитербоула выступала я сиделась прямо вот типа на сцене а еще ближе получится так а дитр болон это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там только не снимался там юрий дуть извините пожалуйста в этом солдарсе и и муж Заворотнюк, и кого там только не приглашают и даже Сергей Дружков, если что Ну хорошо, знаете, что Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ну а так вот у вас самая идея искать на Дмитрия Полья на как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать а вот я не нужно я знаю давно любит она 15 лет играет уже но это два человека придет а есть еще вы на все были там еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это как это говно честно говоря стендап и прямо в его и время у него подходит новая программа где он там обратно обсуждает нам политиков чиновников артистов друзья алкоголиков и очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение программа а там же деньги получаются деньги платить деньги надо заплатить же еще до получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного денег, как Пугачева, где билеты стоят по 200 тысяч. Ну, Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 97. openai / large-v3-turbo
+### 109. openai / large-v3-turbo
 
 - **ID:** `615ac2ee20f0`
 - **Language:** ru
@@ -2298,7 +2561,7 @@
 
 > в Крокус Сити Холле в зал таком так еще разок в Крокус Сити Холл 14 марта Дитер Боулан да все ямахо ямасо я правильно понимаю ямахо ямасо ямахо ямахо ямахо ямахо ямахо ямахо ямахо я правильно понимаю акипича организаторы телефонов режиме и выделяем номинал и без наценок не как на пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня какая величина ну да вот туда а танцевальный портер идет по 3 5 поэтому просто подскажите как вам посмотреть на что прям на сцене сидеть можно чтобы диндер пола выступала я сидел прямо типа на сцене а еще ближе получится так а дитр болон это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк и кого там только не приглашают и даже и сергей дружко если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже будет прощально и так но будет закрывать Ну это же кто? 2 человека придет? Не, ну почему? Головой полный это будет в Крокус Сити Холл Ничего себе! А вы на все билеты? А еще какой-то стендап был в Крокус Сити Холле? Такое есть у вас? Не-не-не, у нас есть мероприятия, балет, мюзикл, разное шоу, но стендапа нету и все такового Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Времов есть. Вот. И Времов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин, хороший вопрос-то есть. Где он там в разных... Ну, то там... Ну, осуждает там политикам, чиновникам, артистам, друзей, алкоголикам. И в конце даже, если будет немного под шофе, отвечает на вопросы. А-а. очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете sms сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как Пугачева, где билеты стоят по 200 тысяч. Ну Пугачева, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, наберу вам, да. Обязательно. Потому что, ну, вы со злором со мной не дождались. Дитер Боулан
 
-### 98. openai / large-v3-turbo
+### 110. openai / large-v3-turbo
 
 - **ID:** `42d11069be18`
 - **Language:** ru
@@ -2318,7 +2581,7 @@
 
 > В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта, Дитер Боулан Дитер Боулан? Да, но дом из зандарфа в Лоден Токио Все, ямахо, ямахо. Я правильно понимаю? Все верно Акипинчайен, вера вера и го Мы организаторы, зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как на Пугачеву, сейчас билет висует там по 100, по 160 тысяч рублей Ну Пугачеву, извините меня, какая величина? Ну да, мы уже ее продаем А так на Дитер Боулан Места идут от 2000 рублей И до 20000 уже в лучших местах портера А танцевальный портер идет по 30 ст Поэтому просто подскажите, как вам посмотреть места Так Чтобы вы двигали телом, ну или чтобы вы посидели и потанцевали А чтобы прямо на сцене сидеть можно? Чтобы Дитер Боулан выступал и я сидел прямо на сцене Ну, по 20 могу сделать вам места, первый ряд портера А еще ближе получится? Нет Так А Дитер Боулан это который из них? Ну, с волосами Но вот сейчас по астерикции нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршалл, вот такой? Не, не, не Какой Маршалл? Нет, похож лицо А, ну лицо... Маршалл Жуков Ахэ, не, не Это другой, который... Ну, в рекламе Ходжерс еще снимался Ой, да там кто только не снимался Ну, его... Ну, его... А так вот... Там и Юрий Дуть, извините пожалуйста, в Ходжерс и муж Заворотнюк и кого там только не приглашают И даже и Сергей Дружко, если что Ну, хорошо, знаете все, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну, а так вот он самая идея, а не Титрополя, как вам? Не, сама идея дурацкая, честно говоря А если разговор начинаться с Дмитрия Нагиева... А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная, так сказать, но... Будут закрывать этот спектакль и билеты будут в той, кеме, подошли Два, до 60, а то и 100 тысяч рублей Ооо, ну это же кто? Там два человека придет? Не, ну почему? Голубой полный это будет в Крокурс Сити Холл Ничего себе А есть еще... А так есть? А вы еще на все билеты? А еще какой-то стендап был в Крокурс Сити Холл Есть у вас? Не, не, не... Не, у нас есть мероприятие, балет, мюзикл, там... Разное шоу, но стендапов нету и все такового Ну и правильно, это какое-то говно, честно говоря Стендап это И Времов есть Вот И Времов есть Он вам по духу будет У него, кстати, идет новая программа Господин Хороший, вопрос-то есть Где он там в разных... ну, то там... ну, обсуждает там политикам, чиновникам, артистам, друзьям, алкоголикам И в конце даже, если будет немного под шофе, отвечает на вопросы А Не порайдем... Это программа 28 марта в Мостовском дворце молодежи на Францисклей Очень интересно Там по местам, хотя, двух тысяч рублей до двенадцати Да Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер Одиндер
 
-### 99. openai / large-v3-turbo
+### 111. openai / large-v3-turbo
 
 - **ID:** `5cbb6333a8fe`
 - **Language:** ru
@@ -2338,7 +2601,7 @@
 
 > В Крокус Сити Холле Дал таком? Так, еще разок В Крокус Сити Холл? Да, 14 марта, дитер Боулан Дитер Боулан? Да, но дома в Дандерфтен, вот он в Токио Все, Ямахо Ямасо, я правильно понимаю? организации меня великолепно да а что прям на сцене сидеть можно чтобы дитер баулан выступала я сиделся прямо типа на сцене а еще ближе получится так 1 turbo на то который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе ходу ой да там кто только не снимался там юрий дуть извините пожалуйста в этом шолдерсе и муж заворотнюк и кого там только не приглашают и в даже и сергей дружков если что Ну хорошо, знаете, что Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот сама идея с каких-то Дмитрия более награгов. Сама идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева. А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Кристия? А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут в той 60, а то и в той 100 тысячи рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Голубой полный, это будет круглый сити холл. Ничего себе. А есть еще, а вы еще на все билеты? а вы еще какой-то стендап был в крокус сити холли, такое есть у вас? не-не-не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапа нету и ни такового ну и правильно, это какое-то говно, честно говоря, стендап это и Времов есть, не горсно, он вам по духу может у него, кстати, вот новая программа, господин, хороший вопрос, ты есть где он там обратно осуждает на политиков чиновников артистов в разделе алкоголиков и в конце даже если будет немного под шапе отвечает на вопрос это программа 20 марта в московском дворце молодежь на противень очень интересно но да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение это программа а там же на деньги получаются деньги платить деньги надо заплатить же еще получается ну тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 100. openai / large-v3-turbo
+### 112. openai / large-v3-turbo
 
 - **ID:** `33347a63faa0`
 - **Language:** ru
@@ -2358,7 +2621,27 @@
 
 > В Крокус Сити Холле Салтаком Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долландандерфтен Воден Токинг Ямахо ямасо я правильно понимаю? выделяем ну бы хочу вы извините меня вели какая величина а так на дитрополе на 2 тысяч рублей и до 20000 уже в лучших местах партера а танцевальный партер идет по 30-100 поэтому просто подскажите как вам посмотреть места а чтоб подвигли телом или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер болон выступала я сиделась прямо типа на сцене а еще ближе получится так а дитер болон это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашаю И даже и Сергей Дружко, если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю Я очень сильно люблю это все дело Ага, ну а так вот сама идея искать на Дмитрия Полина как вам? Сама идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага. Один я вас отправлю на его спектакль Крися. А вот этот не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль и билеты будут стоить 2060, а то и 100 тысяч рублей. О, ну это ж кто это? Два человека придет? Не, ну почему? Голос будет полный, это будет круглый сити холл. а есть еще на все билета в еще какой-то стендап был в крокус сити холли такой вы есть у вас ну и правильно это это будет говно честно говоря и прямо вот и время очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это же все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно но сазал на самом деле дождались Дитер Боулан
 
-### 101. openai / large-v3-turbo
+### 113. openai / large-v3-turbo
+
+- **ID:** `4f493b62bde6`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 8.06s
+- **Memory:** Δ 0.0 MB, peak 9409.9 MB
+- **Beam size:** 9
+- **Temperature:** 0.25
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 52.76%
+- **CER:** 42.91%
+- **Timestamp:** 2026-01-07T15:32:56.257455+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем номиналу и как-то пугачёву извините меня вели какая величина величина а так на дитро поле на 2 тысяч рублей и до 20 тысяч уже лучше поэтому а что прям на сцене сидеть можно чтобы дитр полон выступала я сиделась прямо вот типа на сцене. Ну, по 20-чке могу сделать вам места, первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боулин это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож лицо. маршал жуков это другой который у него в рекламе ходом снимался это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашает и даже и сергей дружков если что Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с каких-то днепрогов, как вам подумал? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить 20-60, а то есть 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему? Голос будет полный, это будет в Крокус-Сити-Холл. Не, ничего себе. А есть еще, а вы еще, вы на все билеты? А еще какой-то стендап был в Крокус-Сити-Холле, такой есть у вас? У нас есть мероприятия, балет, мюзикл, разное шоу, но стендапов нету и ничего такового. Ну и правильно, это какое-то говно, честно говоря. И Бремов есть. Вот, и Бремов есть. Он вам по духу может. У него, кстати, вот новая программа, «Господин Хороший вопрос» есть. Где он там в разных, ну, там, ну, осуждает там политикам, чиновникам, артистам, в друзьях, алкоголикам. очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я тогда от чего здесь я то никак не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги деньги платить деньги надо заплатить же еще до получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 114. openai / large-v3-turbo
 
 - **ID:** `7409df3ef62c`
 - **Language:** ru
@@ -2378,7 +2661,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле В Крокус Сити Холл 14 марта Дитер Боулен Да, но Долланд Сандартен Воден Токинг Ямахо Ямасо, я правильно понимаю? Все верно Акипинчан, Вера Вера, Его Мы, организаторы, зал закрываем в телефоновом режиме и выделяем места по номиналу и без наценок Не как на Пугачёва, сейчас билет стоит по 100, по 150 тысяч рублей Ну, Пугачёва, извините меня, какая величина? Ну да, вот тут же ее продаем А так, на Дитер Боулене места идут от 2 тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30 тонн Поэтому, просто подскажите, как вам посмотреть места Как что-то подвигали телом, ну или, чтобы вы посидели и потанцевали А что, прямо на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене? Ну, под 20-е могу сделать вам места, первый ряд портера А еще ближе получится? Нет Так А Дитер Боулен это который из них? Ну, с волосами Получается, по астерикции нормально вроде стал А волосами был... с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож лицо А, ну лицо... Маршал Жуков? Ах, нет, нет Ах, нет, нет, это другой, который попки, у него в рекламе Head & Shoulders еще снимался Ой, да там кто только не снимался Ну да А так вот... Там и Юрий Дуть, извините, пожалуйста, в Head & Shoulders И муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко, если что Ну, хорошо, знаете, сразу Алексей Сергеевич, я как-то понимаю Я очень сильно люблю это все дело Ага Ну а так вот самая идея искать на Дмитрия Полина как вам подумал? Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Кыся? А вот это не нужно Единственный спектакль, в котором он играет Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальное так сказать, но он будет закрывать этот спектакль и билеты будут стоить в 20-60, а то есть в 100 тысяч рублей О, ну это ж кто это? 2 человека придет? Не, ну почему? Гал будет полный, это будет в Крокус Сити Холл Ничего себе А так есть? А вы еще, вы на все билеты? А еще какой-то стендап был в Крокус Сити Холл Такое есть у вас? Не-не-не Не, у нас есть мероприятия, балет, мюзикл, там, разное шоу, но стендапа нету и все такового Ну и правильно, это какое-то говно, честно говоря И Времов есть Вот И Времов есть Он вам по духу мой У него, кстати, вот новая программа, господин, хороший вопрос-то есть Где он там в разных, ну, то там, ну, осуждает там политиков, чиновникам, артистам, друзей, алкоголикам И в конце даже, если будет немного под шофе, отвечает на вопросы И пройдем, эта программа 28 марта в Мостовском дворце молодежи на Вкратинске Очень интересно Но Там по местам, кстати, от 2000 рублей до 12, а? Здравствуйте Ходите вам пару минут сделаю, а вы с планировать уже свои отопнете Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь Поэтому не знаю, когда смогу освободиться А, так хотите, я просто, там, все семьи что-то сделаю Тогда, но 4 места не буду делать, сделаю 2 места, я буду, да, дополнительный стимул, чтобы вы поправили здоровье А это не получится, да Да как, это ж, это ж все от Господа Бога зависит здоровье-то, я-то от чего здесь Я-то никак уже не решаю Поэтому, возможно, а, может вы мне просто скинете смс-сообщение? Нет, зачем, а только вам читать мои сообщения Давайте я просто пару минут сделаю хороших просто, ну это, это, это Ефремов У него распространение на год вперед расписано, а это новая программа вопрос-то есть А там же надо деньги, получается Деньги платить можно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно Ну тогда, наверное, ничего не получится Ага, нет, ну все, что стоит внимание, стоит немного и денег Как в Пугачево, где билеты стоят по 200 тысяч, сами понимаете? Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста Ну да Ну тогда, я думаю, до новых встреч Да, я понял, если что, то беру вам, да Обязательно Потому что нового созвона со мной не дождались А Дитер Боулан Ну да, я думаю, что это не так, что вы видите, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю, это не так, что я не знаю,
 
-### 102. openai / large-v3-turbo
+### 115. openai / large-v3-turbo
 
 - **ID:** `328ff912a193`
 - **Language:** ru
@@ -2398,7 +2681,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Сандарфен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а что прям на сцене сидеть можно чтобы диндер полон выступал я сиделась и прямо типа на сцене а еще ближе получится так один turbo на то которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все дело Ага Ну а так вот у нас самая идея с каких-то Дмитрием более награком Самая идея дурацкая, честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися А вот это не нужно я знаю давно любит она 15 лет играет уже ну это же кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Так хотите, я просто... Моя семья сейчас сделаю. Но 4 места не буду делать, сделаю 2 места. Я буду дать дополнительный стимул, чтобы вы поправили здоровье. Да как это ж... Это ж всё от Господа Бога зависит здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно... Может, вы мне просто скинете смс-сообщение? Нет, зачем? А только вам читать мои сообщения. Давайте я просто пару мер сделаю хороших. Просто, ну, это... Это Ефремов. У него расписание на год вперед расписано. А это новая программа, вопрос-то есть. А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Пугачёва опять-таки мы с вами уже обсуждали, это величина такая, что извините пожалуйста. Ну тогда я думаю до новых встреч. Обязательно. Дитер Боулен
 
-### 103. openai / large-v3
+### 116. openai / large-v3
 
 - **ID:** `5e5b1bb10a87`
 - **Language:** ru
@@ -2418,7 +2701,7 @@
 
 > так еще разок в крокус city hall дитер болан все и махо яма соль а правильно понимаем организация зал закрываем телефоном в режиме и выделяем места по номиналу и без наценок. Не как на Пугачёву сейчас билеты стоят по 100-50 тысяч рублей. Ну, Пугачёву, извините меня, какая величина? Ну да. Вот туда. Продаем. А так на Дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера. А танцевальный портер идёт по 300. Поэтому просто подскажите, как вам посмотреть места. А чтобы подвигали телом, ну или чтобы посидели и потанцевали? А чтобы прямо на сцене сидеть можно, чтобы Дитер Боулан выступал, и я сидел прямо типа на сцене? Ну, по 20-ке могу сделать вам места, первый ряд бардера. А еще ближе получится? Нет. Так. А Дитер Боулан это который из них? Ну, он с волосами. Получается, по астриксе нормально вроде стал. А волосами был... с белыми волосами, как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож лицо. А, ну лицо, да. Маршалл Жуков. Ах, не-не, это другой, который в Попке у него в рекламе Хэддон Шолдерс еще снимался. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэддон Шолдерсе, и муж Заворотнюк, и кого там только не приглашают. и даже и сергей дружко если что я очень сильно люблю это все дело самая дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно вы любит она 15 лет играет уже ну это же кто там два человека придет себе а есть еще а вы еще вы на все билета в еще какой-то стендап был в крокус сити холи такой вы есть у вас мероприятия балет ну и правильно это говно честно говоря вот очень интересно но я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться. Да ходите, я просто в моей семье что-нибудь делаю, но четыре места не буду делать, сделаю два места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это, что это же все от Господа Бога зависит, здоровье-то, я-то от чего здесь, я-то никак уже не решаю. Поэтому возможно, может вы мне просто скинете смс-сообщение? деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно не дождались Продолжение следует...
 
-### 104. openai / large-v3-turbo
+### 117. openai / large-v3-turbo
 
 - **ID:** `d2550227bcd0`
 - **Language:** ru
@@ -2438,7 +2721,7 @@
 
 > в крокус сити холле так еще разок в крокус сити холл 14 марта, Дитер Боулан Дитер Боулан? Да, ну... Доланс Андерсон, Лотен Токер Все, ямахо, ямасо, я правильно понимаю? Все верно Акипичаен, вера-вера, юго Мы организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу И без наценок, не как на Пугачеву Сейчас билеты стоит по 100, по 60 тысяч рублей Ну Пугачеву, извините меня Какая величина? а что прям на сцене сидеть можно чтобы динтер болен выступала я сидел и прямо на сцене а еще ближе получится так а дитер болон это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо а это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это все дело сама идея дурацкая честно говоря а вот с этого надо было начинать а вот и не нужно я знаю давно любит она 15 лет играет уже ну да будет прощальное так как нового будет закрывать а если что-то 2 человека придет себе а вы еще на всем билетов еще какой-то стендап был в крокус city холли такое есть у вас ну и правильно это это будет говно честно говоря программа где он там раз осуждает нам политикам чиновникам артистам друзья алкоголиков и будет немного под шопе отвечать на вопрос это программа очень интересно но я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться 4 места не буду делать сделать два места и будет дополнительный стимул чтобы вы поправить здоровье это же все от господа бога зависит здоровье то я от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс-сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, нет, ну всё, что стоит внимание, стоит немного денег, как Пугачёва, где билеты стоят по 200 тысяч, понимаете? Ну Пугачёва, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, заберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
 
-### 105. openai / large-v3-turbo
+### 118. openai / large-v3-turbo
 
 - **ID:** `29d3bdaaa51e`
 - **Language:** ru
@@ -2458,7 +2741,27 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а что прям на сцене сидеть можно чтобы дитербоула выступала я сиделась и прямо типа на сцене а еще ближе получится так а дитр болу это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это другой который у него в рекламе хэддон шолдерс снимался там и юрий дуть извините пожалуйста в хэддон шолдерс и муж заворотнюк и кого там только не И даже Сергей Дружко, если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея искать на Дмитрия Поля, но как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага, а не я вас отправлю на его спектакль Кыся. А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль, и билеты будут стоить 20-60, а то и 100 тысяч рублей. О, ну это ж кто это, два человека придет? Не, ну почему, зал будет полный, это будет круглый сити холл. Ничего себе А есть ещё... А вы ещё на всё билеты? А ещё какой-то стендап был в Крокус Сити Холле Такое есть у вас? Не-не-не Не, у нас есть мероприятия Балет, мюзикл, там Разное шоу, но стендапов нету И ничего такового Ну и правильно, это какое-то говно, честно говоря Стендап это... И Времов есть Вот, и Времов есть Он вам по духу мой очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 106. openai / large-v3-turbo
+### 119. openai / large-v3-turbo
+
+- **ID:** `093f1d9709cf`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.47s
+- **Memory:** Δ 0.3 MB, peak 9545.4 MB
+- **Beam size:** 10
+- **Temperature:** 0.02
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 54.25%
+- **CER:** 44.73%
+- **Timestamp:** 2026-01-07T15:34:19.554309+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружку если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже но будет кто-то два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у у вас ну и правильно это будет говно честно говоря и прям вот и время у него под уху будет у него зайдет новая программа где он там обратно обсуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шофе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 120. openai / large-v3-turbo
 
 - **ID:** `8c181d861e25`
 - **Language:** ru
@@ -2478,7 +2781,7 @@
 
 > так еще разок в крокус city hall все ямахо ямасо я правильно понимаю организаторы зал закрываем телефонов режиме и выделяем места по номиналу и без наценок не как-то пугачёва сейчас билеты стоят по 100 ну бы хочу извините меня вели какая величина вот так на дитер поле на 2 тысяч рублей и до 20 тысяч уже лучше а танцевальный партнер идет по 3 500 поэтому просто подскажите как вам посмотреть места а чтоб подвигали телом ну или чтобы посидели и потанцевали а чтоб прямо на сцене сидеть можно чтобы дитер пола выступала я сидел и прям вот типа на сцене ну под вонсадочке могу сделать вам места первый ряд бордера а еще ближе получится нет так а дитер полы это который из них волосами получат по стирик все нормально а волосами был с белыми волосами как александр маршал вот такой не не не нет похож лицо маршал жидко это другой который у него в рекламе ходу раз еще снимался ну да а так вот да там и юрий дуть извините пожалуйста в хендан шолдерсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что ну хорошо знаете что алексей сергеевич я понимаю я очень сильно люблю это все дело но сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто летом будет прощально и так сказать нового будет закрывать этот спектакль и билеты будут 2060 а то есть 100 тысяч рублей но это кто это два человека придет а есть еще на все были это вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это это вид говно честно говоря стендапы и приемов есть вот и время у вас под ухом будет у него кстати вот новая программа где он там в разных ну то там ну осуждает там политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопросы это программа марта молодежь на против очень интересно но ну вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться как хотите я просто там все семьи я сделаю тогда но четыре места не буду делать сделаю два места я буду дополнительный стимул чтобы вы поправить здоровье да как это шоу это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете эсэмэс сообщение нет зачем алина алина алина это это эфремов а это новая программа а там же деньги платить деньги надо заплатить же еще до получается ну да конечно но тогда ничего не получится а не ну все что стоит внимание стоит немного и денег как в Пугачево где билеты стоят по 200 тысяч ну Пугачево опять таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну да да ну тогда я думаю до новых встреч да я понял если что наберу вам да обязательно что нового созвона со мной не дождались а Дитер Боулан Дитер Боулан? а Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан Дитер Боулан
 
-### 107. openai / large-v3-turbo
+### 121. openai / large-v3-turbo
 
 - **ID:** `e043926224d9`
 - **Language:** ru
@@ -2498,7 +2801,7 @@
 
 > ТРЕВОЖНАЯ МУЗЫКА Крокус Сити Холле... Зал таком? Так, ещё разок. В Крокус Сити Холл? Да. 14 марта, Диттер Боулон. Диттер Боулон? Да. Но Долланд Сандарфтен, Лоден Токинг. Всё. Ямахо, ямасо. Я правильно понимаю? мы организаторы зал закрываем телефонов режиме и выделяем места по номиналу и без на оценок не как на пугачёв сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачёв извините меня вели какая величина а танцевальный партнер идет по 3 поэтому а чтоб прям на сцене сидеть можно чтобы динтер болен выступала я сидел и прямо типа на сцене а еще ближе получится так один терпал это которые из них волосами с белыми волосами как александр маршал вот такой нет похож лицо может быть и там только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк никого там только не приглашают и даже и сергей дружко если что хорошо знаете я очень сильно люблю это сделал сама идея дурацкая честно говоря А если бы разговор начался с Дмитрия Нагиева, А вот с этого надо было начинать. Ага, а где я вас отправлю на его спектакль Крися. А вот это не нужно? Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будут закрывать этот спектакль и билеты будут стоить Ну это ж кто это? Два человека придет? Не, ну почему? Головой полный это будет в Крокос Сити Холл. Не, ну ничего себе. А есть еще... А так есть? А вы на все билеты? А еще какой-то стендап был в Крокос Сити Холле. Такое есть у вас? Не, не, не. Не, у нас есть мероприятия. Балет, мюзикл, там, разное шоу. Но стендапов нету. И ни такого. ну и правильно это это вид говно честно говоря стендапы и прямо в вот и время под уходом у него крутят новая программа очень хорошая правда где он там правда обсуждает на политикам чиновникам артистам друзья алкоголиков и будет немного пусто п отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего на перед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я-то от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится а не все что стоит внимание стоит немного денег как пугачево где билеты стоят по 200 тысяч ну пугачево опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно нового созвона со мной не дождались Дитер Боулан
 
-### 108. faster-whisper / medium
+### 122. faster-whisper / medium
 
 - **ID:** `8526a792d8fc`
 - **Language:** ru
@@ -2518,7 +2821,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 109. faster-whisper / medium
+### 123. faster-whisper / medium
 
 - **ID:** `32191ca9765f`
 - **Language:** ru
@@ -2538,7 +2841,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 110. faster-whisper / medium
+### 124. faster-whisper / medium
 
 - **ID:** `829c85227610`
 - **Language:** ru
@@ -2558,7 +2861,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 111. faster-whisper / medium
+### 125. faster-whisper / medium
 
 - **ID:** `8f426abcc4a3`
 - **Language:** ru
@@ -2578,7 +2881,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 112. faster-whisper / medium
+### 126. faster-whisper / medium
 
 - **ID:** `a8531a3da24a`
 - **Language:** ru
@@ -2598,7 +2901,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 113. faster-whisper / medium
+### 127. faster-whisper / medium
 
 - **ID:** `12de2d798b62`
 - **Language:** ru
@@ -2618,7 +2921,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 114. faster-whisper / medium
+### 128. faster-whisper / medium
 
 - **ID:** `9690c4de9368`
 - **Language:** ru
@@ -2638,7 +2941,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 115. faster-whisper / medium
+### 129. faster-whisper / medium
 
 - **ID:** `e06eca6d9dec`
 - **Language:** ru
@@ -2658,7 +2961,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 116. faster-whisper / medium
+### 130. faster-whisper / medium
 
 - **ID:** `0d24a28007b5`
 - **Language:** ru
@@ -2678,7 +2981,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 117. faster-whisper / medium
+### 131. faster-whisper / medium
 
 - **ID:** `ddc40f018a5e`
 - **Language:** ru
@@ -2698,7 +3001,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 118. faster-whisper / medium
+### 132. faster-whisper / medium
 
 - **ID:** `c7cc71a4c248`
 - **Language:** ru
@@ -2718,7 +3021,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 119. faster-whisper / medium
+### 133. faster-whisper / medium
 
 - **ID:** `de07dcab548b`
 - **Language:** ru
@@ -2738,7 +3041,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 120. faster-whisper / medium
+### 134. faster-whisper / medium
 
 - **ID:** `9bfb34f9f833`
 - **Language:** ru
@@ -2758,7 +3061,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 121. faster-whisper / medium
+### 135. faster-whisper / medium
 
 - **ID:** `be9087a7db47`
 - **Language:** ru
@@ -2778,7 +3081,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 122. faster-whisper / medium
+### 136. faster-whisper / medium
 
 - **ID:** `00fe1797fada`
 - **Language:** ru
@@ -2798,7 +3101,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 123. faster-whisper / medium
+### 137. faster-whisper / medium
 
 - **ID:** `b1379d63f7c8`
 - **Language:** ru
@@ -2818,7 +3121,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 124. faster-whisper / medium
+### 138. faster-whisper / medium
 
 - **ID:** `4193ec97191a`
 - **Language:** ru
@@ -2838,7 +3141,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 125. faster-whisper / medium
+### 139. faster-whisper / medium
 
 - **ID:** `18238c21167b`
 - **Language:** ru
@@ -2858,7 +3161,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 126. faster-whisper / medium
+### 140. faster-whisper / medium
 
 - **ID:** `bf7d6707d33c`
 - **Language:** ru
@@ -2878,7 +3181,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 127. faster-whisper / medium
+### 141. faster-whisper / medium
 
 - **ID:** `81628291f9de`
 - **Language:** ru
@@ -2898,7 +3201,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 128. faster-whisper / medium
+### 142. faster-whisper / medium
 
 - **ID:** `165fc826bf33`
 - **Language:** ru
@@ -2918,7 +3221,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 129. faster-whisper / medium
+### 143. faster-whisper / medium
 
 - **ID:** `3a3bb6cdd0d0`
 - **Language:** ru
@@ -2938,7 +3241,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 130. faster-whisper / medium
+### 144. faster-whisper / medium
 
 - **ID:** `2a5b62704b6c`
 - **Language:** ru
@@ -2958,7 +3261,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 131. faster-whisper / medium
+### 145. faster-whisper / medium
 
 - **ID:** `5896a380eade`
 - **Language:** ru
@@ -2978,7 +3281,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 132. faster-whisper / medium
+### 146. faster-whisper / medium
 
 - **ID:** `a573fe03cd57`
 - **Language:** ru
@@ -2998,7 +3301,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 133. faster-whisper / medium
+### 147. faster-whisper / medium
 
 - **ID:** `68e78024ee0e`
 - **Language:** ru
@@ -3018,7 +3321,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 134. faster-whisper / medium
+### 148. faster-whisper / medium
 
 - **ID:** `f9eb7400a097`
 - **Language:** ru
@@ -3038,7 +3341,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 135. faster-whisper / medium
+### 149. faster-whisper / medium
 
 - **ID:** `d82bcc80d966`
 - **Language:** ru
@@ -3058,7 +3361,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 136. faster-whisper / medium
+### 150. faster-whisper / medium
 
 - **ID:** `f44396c24792`
 - **Language:** ru
@@ -3078,7 +3381,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 137. faster-whisper / medium
+### 151. faster-whisper / medium
 
 - **ID:** `459119905a97`
 - **Language:** ru
@@ -3098,7 +3401,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 138. faster-whisper / medium
+### 152. faster-whisper / medium
 
 - **ID:** `ebc627e9198d`
 - **Language:** ru
@@ -3118,7 +3421,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 139. faster-whisper / medium
+### 153. faster-whisper / medium
 
 - **ID:** `b37e0f07da2a`
 - **Language:** ru
@@ -3138,7 +3441,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 140. faster-whisper / medium
+### 154. faster-whisper / medium
 
 - **ID:** `b9a0684e15fe`
 - **Language:** ru
@@ -3158,7 +3461,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 141. faster-whisper / medium
+### 155. faster-whisper / medium
 
 - **ID:** `e4747432c0f3`
 - **Language:** ru
@@ -3178,7 +3481,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 142. faster-whisper / medium
+### 156. faster-whisper / medium
 
 - **ID:** `73d03de07528`
 - **Language:** ru
@@ -3198,7 +3501,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 143. faster-whisper / medium
+### 157. faster-whisper / medium
 
 - **ID:** `fed353fe5d6c`
 - **Language:** ru
@@ -3218,7 +3521,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 144. faster-whisper / medium
+### 158. faster-whisper / medium
 
 - **ID:** `d69c89b11097`
 - **Language:** ru
@@ -3238,7 +3541,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 145. faster-whisper / medium
+### 159. faster-whisper / medium
 
 - **ID:** `f9b6b54d45fe`
 - **Language:** ru
@@ -3258,7 +3561,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 146. faster-whisper / medium
+### 160. faster-whisper / medium
 
 - **ID:** `27d6d0a80eaf`
 - **Language:** ru
@@ -3278,7 +3581,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 147. faster-whisper / medium
+### 161. faster-whisper / medium
 
 - **ID:** `95fe6ed51e63`
 - **Language:** ru
@@ -3298,7 +3601,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 148. faster-whisper / medium
+### 162. faster-whisper / medium
 
 - **ID:** `38cfdf55a3dc`
 - **Language:** ru
@@ -3318,7 +3621,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 149. faster-whisper / medium
+### 163. faster-whisper / medium
 
 - **ID:** `e7b3f9c63862`
 - **Language:** ru
@@ -3338,7 +3641,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 150. faster-whisper / medium
+### 164. faster-whisper / medium
 
 - **ID:** `b56a1a618e05`
 - **Language:** ru
@@ -3358,7 +3661,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 151. faster-whisper / medium
+### 165. faster-whisper / medium
 
 - **ID:** `969732a6d8d7`
 - **Language:** ru
@@ -3378,7 +3681,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 152. faster-whisper / medium
+### 166. faster-whisper / medium
 
 - **ID:** `904f599a2954`
 - **Language:** ru
@@ -3398,7 +3701,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 153. faster-whisper / medium
+### 167. faster-whisper / medium
 
 - **ID:** `31d04491bfe0`
 - **Language:** ru
@@ -3418,7 +3721,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 154. faster-whisper / medium
+### 168. faster-whisper / medium
 
 - **ID:** `970055c829dd`
 - **Language:** ru
@@ -3438,7 +3741,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 155. faster-whisper / medium
+### 169. faster-whisper / medium
 
 - **ID:** `c99789357c10`
 - **Language:** ru
@@ -3458,7 +3761,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 156. faster-whisper / medium
+### 170. faster-whisper / medium
 
 - **ID:** `f284f08ba7da`
 - **Language:** ru
@@ -3478,7 +3781,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 157. faster-whisper / medium
+### 171. faster-whisper / medium
 
 - **ID:** `4efe53318896`
 - **Language:** ru
@@ -3498,7 +3801,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 158. faster-whisper / medium
+### 172. faster-whisper / medium
 
 - **ID:** `0be0a51a0c9f`
 - **Language:** ru
@@ -3518,7 +3821,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 159. faster-whisper / medium
+### 173. faster-whisper / medium
 
 - **ID:** `b037e1cf8662`
 - **Language:** ru
@@ -3538,7 +3841,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 160. faster-whisper / medium
+### 174. faster-whisper / medium
 
 - **ID:** `b82c3622a848`
 - **Language:** ru
@@ -3558,7 +3861,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 161. faster-whisper / medium
+### 175. faster-whisper / medium
 
 - **ID:** `dd8bb68807f2`
 - **Language:** ru
@@ -3578,7 +3881,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 162. faster-whisper / medium
+### 176. faster-whisper / medium
 
 - **ID:** `3c939f1b0a45`
 - **Language:** ru
@@ -3598,7 +3901,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 163. faster-whisper / medium
+### 177. faster-whisper / medium
 
 - **ID:** `b2913c2b9421`
 - **Language:** ru
@@ -3618,7 +3921,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 164. faster-whisper / medium
+### 178. faster-whisper / medium
 
 - **ID:** `9074ceaa0d89`
 - **Language:** ru
@@ -3638,7 +3941,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 165. faster-whisper / medium
+### 179. faster-whisper / medium
 
 - **ID:** `5e32c74994f4`
 - **Language:** ru
@@ -3658,7 +3961,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 166. faster-whisper / medium
+### 180. faster-whisper / medium
 
 - **ID:** `f0d55208786e`
 - **Language:** ru
@@ -3678,7 +3981,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 167. faster-whisper / medium
+### 181. faster-whisper / medium
 
 - **ID:** `602f4c99513c`
 - **Language:** ru
@@ -3698,7 +4001,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 168. faster-whisper / medium
+### 182. faster-whisper / medium
 
 - **ID:** `9f8c32c21a22`
 - **Language:** ru
@@ -3718,7 +4021,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 169. faster-whisper / medium
+### 183. faster-whisper / medium
 
 - **ID:** `c560863f30d7`
 - **Language:** ru
@@ -3738,7 +4041,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 170. faster-whisper / medium
+### 184. faster-whisper / medium
 
 - **ID:** `19a6d0488204`
 - **Language:** ru
@@ -3758,7 +4061,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 171. faster-whisper / medium
+### 185. faster-whisper / medium
 
 - **ID:** `a4ba17e2b3bc`
 - **Language:** ru
@@ -3778,7 +4081,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 172. faster-whisper / medium
+### 186. faster-whisper / medium
 
 - **ID:** `e22a1c2eb8a4`
 - **Language:** ru
@@ -3798,7 +4101,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 173. faster-whisper / medium
+### 187. faster-whisper / medium
 
 - **ID:** `385af9d2529a`
 - **Language:** ru
@@ -3818,7 +4121,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 174. faster-whisper / medium
+### 188. faster-whisper / medium
 
 - **ID:** `db9d8cee60d7`
 - **Language:** ru
@@ -3838,7 +4141,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 175. faster-whisper / medium
+### 189. faster-whisper / medium
 
 - **ID:** `2f4acef4e655`
 - **Language:** ru
@@ -3858,7 +4161,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 176. faster-whisper / medium
+### 190. faster-whisper / medium
 
 - **ID:** `57b90d956a1e`
 - **Language:** ru
@@ -3878,7 +4181,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 177. faster-whisper / medium
+### 191. faster-whisper / medium
 
 - **ID:** `b5a78448eb16`
 - **Language:** ru
@@ -3898,7 +4201,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 178. faster-whisper / medium
+### 192. faster-whisper / medium
 
 - **ID:** `a4b66768b265`
 - **Language:** ru
@@ -3918,7 +4221,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 179. faster-whisper / medium
+### 193. faster-whisper / medium
 
 - **ID:** `f1f782d6a111`
 - **Language:** ru
@@ -3938,7 +4241,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 180. faster-whisper / medium
+### 194. faster-whisper / medium
 
 - **ID:** `6b5ae5551f1a`
 - **Language:** ru
@@ -3958,7 +4261,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 181. faster-whisper / medium
+### 195. faster-whisper / medium
 
 - **ID:** `4206bb239b3b`
 - **Language:** ru
@@ -3978,7 +4281,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 182. faster-whisper / medium
+### 196. faster-whisper / medium
 
 - **ID:** `fdbfa58ae0da`
 - **Language:** ru
@@ -3998,7 +4301,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 183. faster-whisper / medium
+### 197. faster-whisper / medium
 
 - **ID:** `62687fe0c9af`
 - **Language:** ru
@@ -4018,7 +4321,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 184. faster-whisper / medium
+### 198. faster-whisper / medium
 
 - **ID:** `74d40b4239b1`
 - **Language:** ru
@@ -4038,7 +4341,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 185. faster-whisper / medium
+### 199. faster-whisper / medium
 
 - **ID:** `1cb233ad7179`
 - **Language:** ru
@@ -4058,7 +4361,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 186. faster-whisper / medium
+### 200. faster-whisper / medium
 
 - **ID:** `b6a43b1b0ad3`
 - **Language:** ru
@@ -4078,7 +4381,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 187. faster-whisper / medium
+### 201. faster-whisper / medium
 
 - **ID:** `88dfc0e5972e`
 - **Language:** ru
@@ -4098,7 +4401,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 188. faster-whisper / medium
+### 202. faster-whisper / medium
 
 - **ID:** `6db712fa08d0`
 - **Language:** ru
@@ -4118,7 +4421,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 189. faster-whisper / medium
+### 203. faster-whisper / medium
 
 - **ID:** `f07bd368b1cf`
 - **Language:** ru
@@ -4138,7 +4441,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 190. faster-whisper / medium
+### 204. faster-whisper / medium
 
 - **ID:** `57007844dac5`
 - **Language:** ru
@@ -4158,7 +4461,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 191. faster-whisper / medium
+### 205. faster-whisper / medium
 
 - **ID:** `bc6e77fe4635`
 - **Language:** ru
@@ -4178,7 +4481,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 192. faster-whisper / medium
+### 206. faster-whisper / medium
 
 - **ID:** `8887ea49f67a`
 - **Language:** ru
@@ -4198,7 +4501,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 193. faster-whisper / medium
+### 207. faster-whisper / medium
 
 - **ID:** `62d48dbe3e13`
 - **Language:** ru
@@ -4218,7 +4521,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 194. faster-whisper / medium
+### 208. faster-whisper / medium
 
 - **ID:** `17730cdb0097`
 - **Language:** ru
@@ -4238,7 +4541,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 195. faster-whisper / medium
+### 209. faster-whisper / medium
 
 - **ID:** `ada5fad0d3a7`
 - **Language:** ru
@@ -4258,7 +4561,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 196. faster-whisper / medium
+### 210. faster-whisper / medium
 
 - **ID:** `3fa7e18a261b`
 - **Language:** ru
@@ -4278,7 +4581,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 197. faster-whisper / medium
+### 211. faster-whisper / medium
 
 - **ID:** `4c1f783d03bb`
 - **Language:** ru
@@ -4298,7 +4601,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 198. faster-whisper / medium
+### 212. faster-whisper / medium
 
 - **ID:** `ba2647c5dc2b`
 - **Language:** ru
@@ -4318,7 +4621,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 199. faster-whisper / medium
+### 213. faster-whisper / medium
 
 - **ID:** `71452d1617aa`
 - **Language:** ru
@@ -4338,7 +4641,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 200. faster-whisper / medium
+### 214. faster-whisper / medium
 
 - **ID:** `4b918ef6a79f`
 - **Language:** ru
@@ -4358,7 +4661,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 201. faster-whisper / medium
+### 215. faster-whisper / medium
 
 - **ID:** `46dfd7be63a2`
 - **Language:** ru
@@ -4378,7 +4681,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 202. faster-whisper / medium
+### 216. faster-whisper / medium
 
 - **ID:** `abd2d64adcf1`
 - **Language:** ru
@@ -4398,7 +4701,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 203. faster-whisper / medium
+### 217. faster-whisper / medium
 
 - **ID:** `68b04f652c19`
 - **Language:** ru
@@ -4418,7 +4721,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 204. faster-whisper / medium
+### 218. faster-whisper / medium
 
 - **ID:** `4e0c2ea447b5`
 - **Language:** ru
@@ -4438,7 +4741,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 205. faster-whisper / medium
+### 219. faster-whisper / medium
 
 - **ID:** `a8ee7633e52a`
 - **Language:** ru
@@ -4458,7 +4761,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 206. faster-whisper / medium
+### 220. faster-whisper / medium
 
 - **ID:** `958294c1c32b`
 - **Language:** ru
@@ -4478,7 +4781,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 207. faster-whisper / medium
+### 221. faster-whisper / medium
 
 - **ID:** `ad9e612c8654`
 - **Language:** ru
@@ -4498,7 +4801,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 208. faster-whisper / medium
+### 222. faster-whisper / medium
 
 - **ID:** `cfc23b576eb0`
 - **Language:** ru
@@ -4518,7 +4821,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 209. faster-whisper / medium
+### 223. faster-whisper / medium
 
 - **ID:** `c64ef102dca1`
 - **Language:** ru
@@ -4538,7 +4841,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 210. faster-whisper / medium
+### 224. faster-whisper / medium
 
 - **ID:** `2f13ea9c7966`
 - **Language:** ru
@@ -4558,7 +4861,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 211. faster-whisper / medium
+### 225. faster-whisper / medium
 
 - **ID:** `a8cf941a09c4`
 - **Language:** ru
@@ -4578,7 +4881,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 212. faster-whisper / medium
+### 226. faster-whisper / medium
 
 - **ID:** `cec706f1c6f5`
 - **Language:** ru
@@ -4598,7 +4901,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 213. faster-whisper / medium
+### 227. faster-whisper / medium
 
 - **ID:** `1baf6d5d8284`
 - **Language:** ru
@@ -4618,7 +4921,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 214. faster-whisper / medium
+### 228. faster-whisper / medium
 
 - **ID:** `e2dc5efa99fa`
 - **Language:** ru
@@ -4638,7 +4941,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 215. faster-whisper / medium
+### 229. faster-whisper / medium
 
 - **ID:** `ab18f91077d3`
 - **Language:** ru
@@ -4658,7 +4961,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 216. faster-whisper / medium
+### 230. faster-whisper / medium
 
 - **ID:** `0570530d5ff6`
 - **Language:** ru
@@ -4678,7 +4981,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 217. faster-whisper / medium
+### 231. faster-whisper / medium
 
 - **ID:** `06295cb80a5a`
 - **Language:** ru
@@ -4698,7 +5001,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 218. faster-whisper / medium
+### 232. faster-whisper / medium
 
 - **ID:** `0e5056f2163d`
 - **Language:** ru
@@ -4718,7 +5021,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 219. faster-whisper / medium
+### 233. faster-whisper / medium
 
 - **ID:** `c92385131892`
 - **Language:** ru
@@ -4738,7 +5041,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 220. faster-whisper / medium
+### 234. faster-whisper / medium
 
 - **ID:** `0d35bc2f400e`
 - **Language:** ru
@@ -4758,7 +5061,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 221. faster-whisper / medium
+### 235. faster-whisper / medium
 
 - **ID:** `17c5e5557c9b`
 - **Language:** ru
@@ -4778,7 +5081,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 222. faster-whisper / medium
+### 236. faster-whisper / medium
 
 - **ID:** `8aab490c068a`
 - **Language:** ru
@@ -4798,7 +5101,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 223. faster-whisper / medium
+### 237. faster-whisper / medium
 
 - **ID:** `02de4c7b818e`
 - **Language:** ru
@@ -4818,7 +5121,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 224. openai / large-v3-turbo
+### 238. openai / large-v3-turbo
 
 - **ID:** `161ab251428f`
 - **Language:** ru
@@ -4838,7 +5141,27 @@
 
 > В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? 14 марта, Дитер Боулан Дитер Боулан? Да, но дом из Дандерфтен, вот он в Токинг Ямахо-Ямасо, я правильно понимаю? организаторы закрываем телефонов режиме и выделяем места по номиналу и без на оценок не как-то пугачёва сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20000 уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а что прям на сцене сидеть можно чтобы дитрбоула выступала я сидел и прямо на сцене а еще ближе получится так а дитр болон это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружко если что Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея с каких-то Дмитрием более награком. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще вы на все пиле то вы еще какой-то стендап был в крокус сити холли такое вы есть у вас не у нас есть мероприятия балет мюзикл там раз на шоу но стендапа нету и такового ну и правильно это это будет говно честно говоря и в римах программа где он там в разном а вот там а ну а вот это политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопрос это программа молодежь очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться так хотите я просто все семьи сейчас делаю тогда, но 4 места не буду делать, сделаю 2 места я буду дополнительный стимул, чтобы вы поправили здоровье да как это ж, это ж все от господа бога зависит здоровье-то я-то от чего здесь, я-то никак уже не решаю поэтому возможно, может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно но с озором они дождались Дитер Боулан
 
-### 225. faster-whisper / large-v3
+### 239. faster-whisper / medium
+
+- **ID:** `471c3080bc10`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 4.41s
+- **Memory:** Δ 1295.3 MB, peak 1348.1 MB
+- **Beam size:** 5
+- **Temperature:** 0.34
+- **Compute type:** float16
+- **Condition on prev:** True
+- **Batch size:** 29
+- **WER:** 54.69%
+- **CER:** 45.88%
+- **Timestamp:** 2026-01-07T15:34:39.880516+00:00
+
+**Text:**
+
+> Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Доходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
+
+### 240. faster-whisper / large-v3
 
 - **ID:** `bf59b6b6b096`
 - **Language:** ru
@@ -4858,7 +5181,7 @@
 
 > Так, еще разок. В Крокус Сити Холл? Дитер Боулан? Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. А чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулан выступал, и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был, с белыми волосами, как Александр Маршал? Вот такой? Не-не-не. Нет, похож, лицо. А, ну лицо, да. Маршал Зуков. Который, помните, у него в рекламе Head & Shoulders еще повсяк. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все, или это, еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть, где он там в разных нуждают нам политиков, тистов, друзей, алкоголь, т.п. Отвечает на вопросы. Не пройдем? Очень интересно. Там по местам, кстати, от двух тысяч рублей до двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 226. faster-whisper / large-v3
+### 241. faster-whisper / large-v3
 
 - **ID:** `53979045c525`
 - **Language:** ru
@@ -4878,7 +5201,7 @@
 
 > Так, еще разок. В Крокус Сити Холл. Дитер Боулан. Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. А чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулан выступал, и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был, с белыми волосами, как Александр Маршал? Вот такой? Не-не-не. Нет, похож, лицо. А, ну лицо, да. Маршал Зуков. Который, помните, у него в рекламе Head & Shoulders еще повсяк. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все, или это, еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть, где он там в разных нуждают нам политиков, тистов, друзей, алкоголь, т.п. Отвечает на вопросы. Не пройдем? Очень интересно. Там по местам, кстати, от двух тысяч рублей до двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 227. faster-whisper / large-v3
+### 242. faster-whisper / large-v3
 
 - **ID:** `8968f304e183`
 - **Language:** ru
@@ -4898,7 +5221,7 @@
 
 > Так, еще разок. В Крокус Сити Холл? Дитер Боулан? Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. А чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулан выступал, и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был, с белыми волосами, как Александр Маршал? Вот такой? Не-не-не. Нет, похож, лицо. А, ну лицо, да. Маршал Зуков. Который, помните, у него в рекламе Head & Shoulders еще повсяк. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все, или это, еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть, где он там в разных нуждают нам политиков, тистов, друзей, алкоголь, т.п. Отвечает на вопросы. Не пройдем? Очень интересно. Там по местам, кстати, от двух тысяч рублей до двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 228. faster-whisper / medium
+### 243. faster-whisper / medium
 
 - **ID:** `e73ca438c103`
 - **Language:** ru
@@ -4918,7 +5241,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 229. faster-whisper / medium
+### 244. faster-whisper / medium
 
 - **ID:** `f542eb15df95`
 - **Language:** ru
@@ -4938,7 +5261,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 230. faster-whisper / large-v3
+### 245. faster-whisper / large-v3
 
 - **ID:** `09a7f29c9f51`
 - **Language:** ru
@@ -4958,7 +5281,7 @@
 
 > Так, еще разок. В Крокус Сити Холл? Дитер Боулан? Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. А чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулан выступал, и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был, с белыми волосами, как Александр Маршал? Вот такой? Не-не-не. Нет, похож, лицо. А, ну лицо, да. Маршал Зуков. Который, помните, у него в рекламе Head & Shoulders еще повсяк. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все, или это, еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть, где он там в разных нуждают нам политиков, тистов, друзей, алкоголь, т.п. Отвечает на вопросы. Не пройдем? Очень интересно. Там по местам, кстати, от двух тысяч рублей до двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 231. faster-whisper / medium
+### 246. faster-whisper / medium
 
 - **ID:** `3a103032732c`
 - **Language:** ru
@@ -4978,7 +5301,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 232. faster-whisper / large-v3
+### 247. faster-whisper / large-v3
 
 - **ID:** `3096dad23c59`
 - **Language:** ru
@@ -4998,7 +5321,7 @@
 
 > Так, еще разок. В Крокус Сити Холл? Дитер Боулан? Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. А чтобы прямо на сцене сидеть, можно, чтобы Дитер Боулан выступал, и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был, с белыми волосами, как Александр Маршал? Вот такой? Не-не-не. Нет, похож, лицо. А, ну лицо, да. Маршал Зуков. Который, помните, у него в рекламе Head & Shoulders еще повсяк. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все, или это, еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть, где он там в разных нуждают нам политиков, тистов, друзей, алкоголь, т.п. Отвечает на вопросы. Не пройдем? Очень интересно. Там по местам, кстати, от двух тысяч рублей до двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 233. faster-whisper / medium
+### 248. faster-whisper / medium
 
 - **ID:** `872bcec72b24`
 - **Language:** ru
@@ -5018,7 +5341,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно? Чтобы Дитер-Баулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулэн, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Который, помните, у него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот, самая идея с Катей Тераполина, как вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но будет закрывать спектакль. Ооо, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет. Ну и правильно. Это какое-то говно, честно говоря. Стендап это... И Времов есть. Вот. И Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, задает нам полицию артистов, взрослые, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцати. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что... Извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы новые созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 234. faster-whisper / medium
+### 249. faster-whisper / medium
 
 - **ID:** `865fa2087681`
 - **Language:** ru
@@ -5038,7 +5361,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Окипинчаин, Беравера, Юго. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно, чтобы Дитер-Баулан выступал, а я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Баула, это который из них? А с белыми волосами, как Александр Маршал? Вот такой? Нет, нет, нет. Нет, похож. Лицо. Маршал Жуков. У него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея с Катей Терополина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль, черпей. О, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле, такой есть у вас? Нет, ньюти-холл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Времов есть. Вот, и Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, ждает нам полиции, артистов, сруси, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается. Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Шановы, созвоны за мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 235. faster-whisper / medium
+### 250. faster-whisper / medium
 
 - **ID:** `3f46450dd70d`
 - **Language:** ru
@@ -5058,7 +5381,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Окипинчаин, Беравера, Юго. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно, чтобы Дитер-Баулан выступал, а я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Баула, это который из них? А с белыми волосами, как Александр Маршал? Вот такой? Нет, нет, нет. Нет, похож. Лицо. Маршал Жуков. У него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея с Катей Терополина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль, черпей. О, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле, такой есть у вас? Нет, ньюти-холл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Времов есть. Вот, и Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, ждает нам полиции, артистов, сруси, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается. Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Шановы, созвоны за мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 236. faster-whisper / large-v3-turbo
+### 251. faster-whisper / large-v3-turbo
 
 - **ID:** `a65c9447ca04`
 - **Language:** ru
@@ -5078,7 +5401,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 237. faster-whisper / large-v3-turbo
+### 252. faster-whisper / large-v3-turbo
 
 - **ID:** `2a8845ed9e83`
 - **Language:** ru
@@ -5098,7 +5421,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 238. faster-whisper / large-v3-turbo
+### 253. faster-whisper / large-v3-turbo
 
 - **ID:** `a85fa8081015`
 - **Language:** ru
@@ -5118,7 +5441,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 239. faster-whisper / large-v3-turbo
+### 254. faster-whisper / large-v3-turbo
 
 - **ID:** `0a036d41bd1b`
 - **Language:** ru
@@ -5138,7 +5461,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 240. faster-whisper / large-v3-turbo
+### 255. faster-whisper / large-v3-turbo
 
 - **ID:** `b61d1288af8b`
 - **Language:** ru
@@ -5158,7 +5481,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 241. faster-whisper / large-v3-turbo
+### 256. faster-whisper / large-v3-turbo
 
 - **ID:** `4299a8f83417`
 - **Language:** ru
@@ -5178,7 +5501,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 242. faster-whisper / large-v3-turbo
+### 257. faster-whisper / large-v3-turbo
 
 - **ID:** `2677832e6dd5`
 - **Language:** ru
@@ -5198,7 +5521,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 243. faster-whisper / large-v3-turbo
+### 258. faster-whisper / large-v3-turbo
 
 - **ID:** `df4904984a4c`
 - **Language:** ru
@@ -5218,7 +5541,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 244. faster-whisper / large-v3-turbo
+### 259. faster-whisper / large-v3-turbo
 
 - **ID:** `82abd5726f59`
 - **Language:** ru
@@ -5238,7 +5561,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 245. faster-whisper / large-v3-turbo
+### 260. faster-whisper / large-v3-turbo
 
 - **ID:** `df9d9278e8df`
 - **Language:** ru
@@ -5258,7 +5581,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 246. faster-whisper / large-v3-turbo
+### 261. faster-whisper / large-v3-turbo
 
 - **ID:** `a7d6bde3f95b`
 - **Language:** ru
@@ -5278,7 +5601,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 247. faster-whisper / large-v3-turbo
+### 262. faster-whisper / large-v3-turbo
 
 - **ID:** `4c719a9e314a`
 - **Language:** ru
@@ -5298,7 +5621,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 248. faster-whisper / large-v3-turbo
+### 263. faster-whisper / large-v3-turbo
 
 - **ID:** `a966443da1b8`
 - **Language:** ru
@@ -5318,7 +5641,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 249. faster-whisper / large-v3-turbo
+### 264. faster-whisper / large-v3-turbo
 
 - **ID:** `776747f0e6fc`
 - **Language:** ru
@@ -5338,7 +5661,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 250. faster-whisper / large-v3-turbo
+### 265. faster-whisper / large-v3-turbo
 
 - **ID:** `32fa24140868`
 - **Language:** ru
@@ -5358,7 +5681,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Акипинчайон, вера-вера, юго. Ну, богачо, извините меня. Какая величина? Ну да. Вот туда. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, а я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе, и муж Заворотнюк, и кого там только не приглашают. И даже и Сергей Дружко, если что. Ну, хорошо, знаете, да, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у вас самая идея сходить на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все или это, а еще какой-то стендап был в Крокус Сити Холле, такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это ж от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги платить деньги надо заплатить же еще да получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 251. faster-whisper / large-v3-turbo
+### 266. faster-whisper / large-v3-turbo
 
 - **ID:** `d9f615138bcf`
 - **Language:** ru
@@ -5378,7 +5701,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Боулин это который из них? А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Нет, похож. Лицо. Маршал Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у нас самая идея, сходить на Дмитрия Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, но он будет закрывать этот спектакль. О, ну это ж кто там, два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот, и в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться Да как, это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить же ещё, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 252. faster-whisper / medium
+### 267. faster-whisper / medium
 
 - **ID:** `db82a61a0305`
 - **Language:** ru
@@ -5398,7 +5721,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Окипинчаин, Беравера, Юго. Ну, Пугачо, вы извините меня. Какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно, чтобы Дитер-Баулан выступал, а я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Баула, это который из них? А с белыми волосами, как Александр Маршал? Вот такой? Нет, нет, нет. Нет, похож. Лицо. Маршал Жуков. У него в рекламе Хэндон Шолдерс еще был. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндон Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея с Катей Терополина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать спектакль, черпей. О, ну это ж кто там, два человека придет? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть еще, а вы еще, вы на все били это? А еще какой-то стендап был в Крокос-Сити-Холле, такой есть у вас? Нет, ньюти-холл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Времов есть. Вот, и Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, ждает нам полиции, артистов, сруси, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а двух тысяч рублей на двенадцать. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете СМС-сообщение? Нет. Зачем? А там же надо деньги, получается. Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Шановы, созвоны за мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 253. openai / large-v3-turbo
+### 268. openai / large-v3-turbo
 
 - **ID:** `3c5b8302d333`
 - **Language:** ru
@@ -5418,7 +5741,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а что прям на сцене сидеть можно чтобы дитрбоула выступала я сиделась прямо на сцене а еще ближе получится так а дитр болон это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко не снимался и муж заворотнюк и кого там только не приглашаю и даже и сергей дружко Если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея, с каких-то дидер более награк вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это как это говно честно говоря программа где он там в разных политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного под шофе отвечает на вопросы это программа 28 марта в московском дворце молодежи на очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 254. openai / large-v3-turbo
+### 269. openai / large-v3-turbo
 
 - **ID:** `181d62fad59f`
 - **Language:** ru
@@ -5438,7 +5761,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Сандарфен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигали телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружку если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот эти не нужно я знаю давно любит она 15 лет играет уже но будет кто-то два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у у вас ну и правильно это будет говно честно говоря и прям вот и время очень интересно рублей до 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 255. openai / small
+### 270. openai / small
 
 - **ID:** `5e1bc0a2a4b6`
 - **Language:** ru
@@ -5458,7 +5781,7 @@
 
 > В Крокусе Нехоле сал таком? Так, еще разок. В Крокусе Нехол? Да, 14 марта Диттер Боулан. Диттер Боулан? Да, но Долу Сандармсен Лоден Боулен. А кипенчайн, Бэра, Вера и Егор. Мы организаторы, закрываем телефон в режиме и выделяем места по номиналу и бизнам сцена. Никак на Пугачеву сейчас билет достоит 100, 100, 60 тысяч рублей. Ну Пугачеву извините меня, вели какая величина. Ну да, вот тогда. Вот так продаем. А так на Дитаре Болиным сцена идут 2 тысячи рублей. И до 20 тысяч уже в лучших местах Партера. А танцевальный Партер идёт смотреть из солнца. Поэтому, просто подскажите, как вам посмотреть места. Так. Так, чтобы они глядела, стоили. Пусть, чтобы вы посидели и потанцевали. А что, прям на сцене сидеть можно, чтобы Дитя Болла науступала, я сиделась прямо вот, типа, на сцене. Ну, вот. Ну, вот, а то, чем могу сделать вам место 1-й ряд Партера. А ещё ближе получится? Нет. Так, а Дитер Баул, это который из них? Он с волосами, но сейчас по отстерикке нормально разъехал. А с белыми волосами, как Александр Маршал? Нет, нет, нет. Какой Маршал? Нет, похож лицо. А, да лицо? Маршал звуком. А это другой, который после него в рекламе, когда шел и разъехал, снимал все. Да там кто только не снимался. Ну да. Там и Юрий идут, извините пожалуйста, в Ханан-Солндерси. И муж заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, с Алексеем Сергеевичем, понимаешь? Я очень сильно люблю это все дело. Ага. Ну а так у нас сама идея, если они дадят рапуле на Грагу. Сама идея дурацкая, честно говоря. А если разговор начнется с Дмитрия Нагиева? А вот с этого надо было начинать. А где делался Пролюна и его спектакль Кыся? А вот это не нужно. Единственный спектакль, по которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная этакка, но будет закрывать этот спектакль. И билеты будут стоить по 6 лет, а на той он в 100 000 рублей. О, ну это ж кто это? Два человека придет? Нет, ну почему? Голвой полный, это будет крокостичь и холл. Мы ничего себе... А есть еще... А вы еще... Вы на все билеты? А вы еще какой-то стендап был в крокостичь и холл? Такое... Есть у вас? Нет, нет, нет. Нет, ну есть мероприятия, полет, мюйсикл, там... Разное шоу, но стендапов нету из такового. Ну и правильно, это как бы говно, честно говоря. Стандартный. И в Римовке. У него, кстати, новая программа. У них хорошие вопросы. Где он там в раз, а он там, ну, осуждает, там, политиков, чиновников, артистов, русси, алкоголиков. И в конце, даже если будет немного под шафе, отвечает на вопросы. Аааа. Это программа 28 марта Молодец, что на противник. Очень интересно. Но... Я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю когда смогу освободиться. А, так, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Но тогда, наверное, ничего не получится. Ага, они все, что стоят внимание, стоят немного и денег, как Пугачево, где билеты стоят по 200 тысяч Непугачёв, опять-таки, мы с вами уже обсуждали. Это величина такая, что... Извините, пожалуйста. Ну да. Ну тогда я думаю до новых встреч. Да, я поиск не наберу вам. Обязательно. Потому что нового созвона со мной не дождались. Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан
 
-### 256. openai / large-v3-turbo
+### 271. openai / large-v3-turbo
 
 - **ID:** `70d9674bc5a7`
 - **Language:** ru
@@ -5478,7 +5801,47 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож. лицо маршал жуков это другой который у него в рекламе ходом снимался ой да там кто только не снимался там и юрий дуть извините пожалуйста в хендом шолдерсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружку если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот эти не нужно я знаю давно любит она 15 лет играет уже но будет кто-то два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у у вас ну и правильно это будет говно честно говоря и прям вот и время очень интересно рублей до 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 257. openai / small
+### 272. openai / large-v3-turbo
+
+- **ID:** `c2772ff21d34`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.28s
+- **Memory:** Δ 0.0 MB, peak 9399.6 MB
+- **Beam size:** 9
+- **Temperature:** 0.08
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 55.89%
+- **CER:** 48.87%
+- **Timestamp:** 2026-01-07T15:31:18.800299+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места чтобы подвигли телом ну или чтобы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитербоула выступала я сидел прямо на сцене. Ну, по 20-ке могу сделать вам места. Первый ряд бортера. А еще ближе получится? Нет. Так. А Дитер Боуллин, это который из них? Ну, с волосами. Получается, по астерикции нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? нет похож лицо маршал и это другой который у него в рекламе ходу разнимался это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот эти не нужно я знаю давно любит она 15 лет играет уже но будет кто-то два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у у вас ну и правильно это будет говно честно говоря и прям вот и время очень интересно рублей до 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 273. openai / large-v3-turbo
+
+- **ID:** `cbe6eab039d2`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.29s
+- **Memory:** Δ 0.3 MB, peak 9410.2 MB
+- **Beam size:** 10
+- **Temperature:** 0.20
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 56.04%
+- **CER:** 49.33%
+- **Timestamp:** 2026-01-07T15:33:26.352008+00:00
+
+**Text:**
+
+> в Крокус Сити Холле в зал таком так еще разок в Крокус Сити Холл 14 марта Дитер Боулан да но Долланд Дандерфтен в Лотен Токинг все я правильно понимаю я правильно понимаю я правильно понимаю я правильно понимаю я правильно понимаю акипича организаторы и выделяем места по номиналу и как на пугачёва по 150 тысяч рублей ну пугачёва извините меня какая величина а так то на дитропольян а танцевальный портер идет по 3 5 поэтому просто подскажите как вам посмотреть это так и гляделом или вы посидели потанцевали а чтоб прям на сцене сидеть можно чтобы дитер болон выступал я сидел и прямо типа на сцене а еще ближе получится так один терпал это который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо Маршал Жуков Ах, не-не, это другой, который в постке у него в рекламе Head & Shoulders снимался Ой, да там кто только не снимался Ну да, а так вот... Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders, и муж Заворотнюк, и кого там только не приглашают И даже и Сергей Дружко, если что Ну хорошо, знаете, все, Алексей Сергеевич, я как-то снимаю Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с конечной Дмитрия Полина как вам подумал? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. но будет 2 человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это это будет говно честно говоря и прям вот и время очень интересно рублей до 12 вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 274. openai / small
 
 - **ID:** `3e4e9f7054c3`
 - **Language:** ru
@@ -5498,7 +5861,7 @@
 
 > В Крокусе Нехоля. В Крокусе Нехоля. Сделал таком. Так, еще разок. В Крокусе Нехол. Да, 14 марта. Дитер Боулен. Дитер Боулен? Да. Ну, Долу сандер в Бенлоден-Доке. Все. Аккупенчайн Бэро Вера и Егор. Мы организаторы, залз, закрываем телефон в режиме и выделяем места по номиналу и без нацена. Никак на Пугачеву сейчас в билетах стоит там по 100, по 60 тысяч рублей. Ну Пугачеву извините меня, вели какая величина. Ну да, вот сюда. Вот сюда продаем. А так на Дитаре Болиным в местах идут 2000 рублей и до Партера уже в лучших местах. А танцевальный партер идёт смотреть на сон. Поэтому, просто подскажите, как вам посмотреть на сон. Так. Чтобы подвигали телом, стоили, чтобы вы посидели и танцевали. А что, прямо на сцене сидеть можно, чтобы Дитер Боулу наступал, и я сидел прямо вот, типа, на сцене? Ну, вот. Ну, вот. Ну, вот. А то, о чем могу сделать вам, первый ряд партера. А ещё ближе получится? Не. Так. Так, а Дитер Баул, это который из них? Он с волосами, но сейчас по астерикции нормально разъехал. А волосами был с белыми волосами, как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож лицо. А, да лицо... Маршал звуком. Ах, да, не-не, это другой, который после него в рекламе А вот там кто только не снимался? Ну да. Там и Юрий идут, извините пожалуйста, в Ханан-Солнторсе и муж заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, с Алексеем Сергеевичем, понимаешь? Я очень сильно люблю это всё дело. Ну а так вот он самодиес кондиционитры поля на Грагуану. Сама идея дурацкая, честно говоря. А эти разговоры начнут с Дмитрия Нагиева. А вот с этого надо было начинать. А где дело сопролено его спектакль Кыся? А вот это не нужно. Единственный спектакль, по которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная этакка, но он будет закрывать этот спектакль Так, и билеты будут в той... ...послаше, где она стоит, в том числе. О, ну это ж... Кто это? Два человека придет? Нет, ну почему? Голубой полный, это будет крокостихол. Билет, ничего себе. А есть еще... А вы еще... Вы на все билеты? А вы еще какой-то стендап был в крокостихоле? Такое... Есть у вас? Нет, нет, нет. Нет, у нас есть мероприятие. Полет, музыкал, там... Разное шоу, но стендапов нет. и такового. Ну и правильно, это какой-то говно, честно говоря, стендапы. И в Римов есть. Вот. И в Римов есть. У него, кстати, новая программа, по ним хорошие вопросы есть. Где он там убрал, а вот он там, ну, осуждает там политиков, чиновников, артистов, взрослых, алкоголиков. И в конце даже, если будет немного под шафе, отвечает вопрос. Ааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа Я не буду делать 4 места, я буду заполнить стимул, чтобы вы попрали здоровье. Это же от Господа Бога зависит здоровье. От чего здесь? Я это никак не решаю. Может вы мне просто скинуть СМС сообщение? Нет, зачем? А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, а не, ну все что стоит внимание, стоит немного и денег, как в Лугочево, где билеты, стоит по 200 тысяч. Ну, да, конечно. Ну, тогда, наверное, ничего не получится. Ага, а не, ну все что стоит внимание, стоит немного Пугачёва, как Пугачёв, где билеты стоят по 200 тысяч. Пугачёва опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда я думаю до новых встреч. Да, я поиск, что наберу вам надо. Обязательно. Потому что нового созвона со мной не дождались. Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен! Дитор Боулен!
 
-### 258. faster-whisper / large-v3-turbo
+### 275. faster-whisper / large-v3-turbo
 
 - **ID:** `bd0200d2dbfc`
 - **Language:** ru
@@ -5518,7 +5881,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот, у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 259. faster-whisper / large-v3-turbo
+### 276. faster-whisper / large-v3-turbo
 
 - **ID:** `fb629cdd0dca`
 - **Language:** ru
@@ -5538,7 +5901,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 260. faster-whisper / large-v3-turbo
+### 277. faster-whisper / large-v3-turbo
 
 - **ID:** `b8b2b240ab30`
 - **Language:** ru
@@ -5558,7 +5921,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 261. faster-whisper / large-v3-turbo
+### 278. faster-whisper / large-v3-turbo
 
 - **ID:** `b3b54db29756`
 - **Language:** ru
@@ -5578,7 +5941,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 262. faster-whisper / large-v3-turbo
+### 279. faster-whisper / large-v3-turbo
 
 - **ID:** `79171657b57b`
 - **Language:** ru
@@ -5598,7 +5961,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 263. faster-whisper / large-v3-turbo
+### 280. faster-whisper / large-v3-turbo
 
 - **ID:** `f23f8c970f94`
 - **Language:** ru
@@ -5618,7 +5981,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 264. faster-whisper / large-v3-turbo
+### 281. faster-whisper / large-v3-turbo
 
 - **ID:** `c72528c04758`
 - **Language:** ru
@@ -5638,7 +6001,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 265. faster-whisper / large-v3-turbo
+### 282. faster-whisper / large-v3-turbo
 
 - **ID:** `11bf3f8079cb`
 - **Language:** ru
@@ -5658,7 +6021,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 266. faster-whisper / large-v3-turbo
+### 283. faster-whisper / large-v3-turbo
 
 - **ID:** `4c5c40bc8a50`
 - **Language:** ru
@@ -5678,7 +6041,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 267. faster-whisper / large-v3-turbo
+### 284. faster-whisper / large-v3-turbo
 
 - **ID:** `fdafc04754a0`
 - **Language:** ru
@@ -5698,7 +6061,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 268. faster-whisper / large-v3-turbo
+### 285. faster-whisper / large-v3-turbo
 
 - **ID:** `b8784f8526e4`
 - **Language:** ru
@@ -5718,7 +6081,7 @@
 
 > Так, еще разок. В Крокус Сити Холл Дитер Боулан. Все. Яма-хо, яма-со. Я правильно понимаю? Все верно. Ну, богачо, извините меня. Какая величина? Ну да. А чтобы прямо на сцене сидеть, можно? Чтобы Дитер Боулан выступал, я сидел прямо на сцене. А еще ближе получится? Так. А Дитер Баулин это который из них? А волосами был... С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Хэндом Шолдерсе. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну, хорошо, знаете, да, но Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас самая идея искать на Дмитрия Полина как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А где я вас отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальное, так сказать, нового. Будет закрывать этот спектакль. О, ну это ж кто там? Два человека придет? Это будет в Крокус Сити Холл. Ничего себе. А есть еще... А так есть? А вы еще на все или это? А еще какой-то стендап был в Крокус Сити Холле. Такое есть у вас? Это мюзикл. Ну и правильно. Это какое-то говно, честно говоря. Стендап это. И в Римов есть. Вот. И в Римов есть. Он вам под ухом будет. очень интересно да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это что это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение а там же деньги получается деньги платить деньги надо заплатить же еще до получается Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Боулан? Да, Дитер Боулан. Дитер Боулан?
 
-### 269. faster-whisper / large-v3-turbo
+### 286. faster-whisper / large-v3-turbo
 
 - **ID:** `0034ee89e2bb`
 - **Language:** ru
@@ -5738,7 +6101,7 @@
 
 > В Крокус Сити Холле В Крокус Сити Холле Так, еще разок В Крокус Сити Холл? 14 марта, Дитер Боулан Дитер Боулан? Да, но Долланд Дандерфен, Лоден Токинг Ямахо, Ямасо, я правильно понимаю? все верно а кипячаем, вера вера и го мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наценок не как на Пугачёва сейчас билеты стоят по 100 по 150 тысяч рублей ну Пугачёва извините меня какая величина ну да а так на Дитрополе на места идут до 2000 рублей и до 20000 уже в лучших местах портера а что прям на сцене сидеть можно чтобы дитер боула выступала я сиделась прямо на сцене а еще ближе получится так а дитер боула это который из них Ну, с волосами. Ну, вот сейчас по астерике все нормально вроде стал. А волосами был... С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож. Лицо. А, ну лицо... Маршал Жуков. Ах, не-не. Это другой, который... Помните, у него в рекламе Ходжерс еще снимался? Ой, да там кто только не снимался. Ну да. А так вот... Там и Юрий Дудь, извините, пожалуйста, в хайном шолдерсе и муж за воротнюк и кого там только не приглашают и даже и сергей дружков если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже но вы тоже кто-то два человека придет а есть еще вы на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря программа где он там раз обсуждает нам политиков чиновников артистов друзья алкоголиков и будет немного под шопе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда на ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 270. openai / large-v3-turbo
+### 287. openai / large-v3-turbo
 
 - **ID:** `b68baa7a82ce`
 - **Language:** ru
@@ -5758,7 +6121,7 @@
 
 > крокус сити холл так еще разок в крокус сити холл 14 марта дитер болон дитер болон все яма хо яма со я правильно понимаю я правильно понимаю окей печально вера вера и угол организаторы зал закрываем в телефоновом режиме и выделять по номиналу и без наценок никак на пугачева сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачева извините меня вели какая величина ну да вот он продаем а так на те тропольную места идут от двух тысяч рублей И до 20 тысяч уже в лучших местах портера А танцевальный портер идет по 30 стол Поэтому просто подскажите, как вам посмотреть места Чтобы подвигли телом, ну или чтобы вы посидели и потанцевали А чтобы прямо на сцене сидеть, можно? Чтобы Дидер Боулон выступал, а я сидел прямо на сцене Ну по 20 могу сделать вам места, первый ряд портера А еще ближе получится? Нет так а дитер баллон это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо а маршал дедуги это другой который у него прикладки снимался это только не снимался это мой юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк и кого там только не приглашаю и в даже и И Сергей Дружко, если что. Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея искать, Дмитрий Дружко более награк вам. Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже два человека придет а есть еще на все билета вы еще какой-то стендап был в крокус city холли такой есть у вас ну и правильно это как бы это говно честно говоря программа где он там политиков чиновников артистов другие алкоголиков и в конце даже если будет немного под шофе отвечает на вопросы это программа 18 марта московском дворце молодежи на противень очень интересно но да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скиньте sms сообщение это программа а там же деньги платить деньги надо заплатить же еще до получается мне что но тогда на ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно но вы созданы дождались Единственное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судебное судеб
 
-### 271. faster-whisper / medium
+### 288. faster-whisper / medium
 
 - **ID:** `3f9ac3d57024`
 - **Language:** ru
@@ -5778,7 +6141,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл? Дитер-Баулан? Все. Ямахо, Ямасо. Я правильно понимаю? Все верно. Акипичаен, Беравера, Юго. Ну, Пугачо, вы извините меня, какая величина. Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно, чтобы Дитер-Баулан выступал, а я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Баула, это который из них? А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож, лицо. Маршал Жуков. Да там кто только не снимался. Там и Юрий Дудь, извините, пожалуйста, и муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете сразу, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот он самая идея из Катитера Полина, как вам? Самая идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. А Диньева отправлю на его... А вот это не нужно. Единственный спектакль, в котором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. Ооо, ну это ж кто там, два человека придёт? Ну это будет в Крокос-Сити-Холл. Ничего себе. А есть ещё, а вы ещё, вы на всё били это? А ещё какой-то стендап был в Крокос-Сити-Холле. Такое есть у вас? Нет, нюсикл. Ну и правильно, это какое-то говно, честно говоря. Стендап это. И Времов есть. Вот, и Времов есть. Вам по духу будет. У него, кстати, вот новая программа и по ней хорошие вопросы есть. Где он там, в разном, ждает нам полиции, артистов, дружи, алкоголь, кафе, отвечает на вопросы. Не пора идем? Очень интересно. Там по местам, кстати, а 2000 рублей на 12. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Заходите, я просто... Это же всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет. Зачем? А там же надо деньги, получается? Деньги платить можно? Деньги надо заплатить ещё, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачева, где билеты? Ну Пугачева, опять-таки, мы с вами уже обсуждали. Эта величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Шановы, созвоны со мной не дождались. Дитер Баулан? Дитер Баулан. Дитер Баулан?
 
-### 272. openai / large-v3-turbo
+### 289. openai / large-v3-turbo
 
 - **ID:** `07df1cf75639`
 - **Language:** ru
@@ -5798,7 +6161,47 @@
 
 > в Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитр Боулан Да Долландандер, Донгланд, Токинг я правильно понимаю? все верно Акипинчайен, Вера, Вера, Юго мы организаторы закрываем в телефоновом режиме и выделяем места по номиналу и без наоценок, не как на Пугачёва сейчас билеты стоят по 100 по 150 тысяч рублей ну Пугачёва, извините меня какая величина? ну да, вот туда продаем, а так на Дитропольную места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера, а танцевальный портер идет в 30 дом. Поэтому просто подскажите, как вам посмотреть места. Чтобы подвигли телом, то или чтобы вы посидели и потанцевали. А чтобы прямо на сцене сидеть, можно, чтобы Дитерболан выступал, а я сидел прямо на сцене? По 20 могу сделать вам места, первый ряд портера. А еще ближе получится? Нет. так а дитр болу это которые из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался и муж заворотнюк и кого-то только не приглашаю и даже и сергей дружко если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот я не нужно я знаю давно любит она 15 лет играет уже но будет два человека придет а есть еще на все билета в еще какой-то stand up был в крокос сити холли такой есть у вас ну и правильно это скачать стендап и прим афи вот и гримов под ухом будет у него кидает новая программа какие-то рот и где он там образно но осуждает на политиков чиновников артистов друзья алкоголиков и контакт это будет немного под шаппе отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это же все от господа бога зависит здоровье то и это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете это сообщение а там же деньги деньги платить деньги надо заплатить женщин да получается но тогда ничего не получится опять таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 273. faster-whisper / large-v3
+### 290. openai / large-v3-turbo
+
+- **ID:** `1fffcd3d0379`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.41s
+- **Memory:** Δ 0.0 MB, peak 9399.3 MB
+- **Beam size:** 9
+- **Temperature:** 0.07
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 58.12%
+- **CER:** 50.07%
+- **Timestamp:** 2026-01-07T15:30:09.175279+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёву сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёву извините меня вели какая величина а так на дитрополе на 2 тысяч рублей и до 20 тысяч уже в лучших местах партера а танцевальный партер идет по 30-100 поэтому просто подскажите как вам посмотреть места а что прям на сцене сидеть можно чтобы дитербоула выступала я сиделась прямо на сцене а еще ближе получится так а дитр болу это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у нас самая идея с каких-то Дмитрием более награк вам. Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него программа политиков чиновников артистов друзья алкоголиков и это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 291. openai / large-v3-turbo
+
+- **ID:** `fa7468ba8dca`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 7.46s
+- **Memory:** Δ 0.3 MB, peak 9409.7 MB
+- **Beam size:** 8
+- **Temperature:** 0.23
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 58.57%
+- **CER:** 50.91%
+- **Timestamp:** 2026-01-07T15:32:36.132310+00:00
+
+**Text:**
+
+> В Крокус Сити Холле Дал таком? Так еще разок В Крокус Сити Холл? 14 марта Дитер Боулен Дитер Боулен? Да Но дом из Дандерфтен, вот он в Токинге Все, ямахо ямасо, я правильно понимаю? организаторы выделяем номинал и как-то пугачёв меня вели какая величина что прям на сцене сидеть можно чтобы дитер болон выступал я сиделась прямо на сцене а еще ближе получится так один терпел это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот у вас самая идея с каких-то Дмитрием более награком? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева... А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то в два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такой вы есть у вас ну и правильно это как это говно честно говоря вот и время у него программа где он там в раз осуждает нам политиков чиновников артистов друзья алкоголиков и очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну всё, что стоит внимание, стоит немного и денег, как в Пугачёву, где билеты стоят по 200 тысяч. Ну, Пугачёву, опять-таки, мы с вами уже обсуждали, эта величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я понял, если что, то беру вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боулан
+
+### 292. faster-whisper / large-v3
 
 - **ID:** `1abb8e0b27bd`
 - **Language:** ru
@@ -5818,7 +6221,7 @@
 
 > Так, еще разок. В Крокус Сити Холл? Дитер Боулан? Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно, чтобы Дитер Боулан выступал, и я сидел прямо типа на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А с белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все были, а еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть. Где он там в разных нуждают нам политики, артистов, друзья, алкоголь. Отвечает на вопросы. А, очень интересно. Но... Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 274. faster-whisper / large-v3
+### 293. faster-whisper / large-v3
 
 - **ID:** `4700ec78e51a`
 - **Language:** ru
@@ -5838,7 +6241,7 @@
 
 > Так, еще разок. В Крокус Сити Холл? Дитер Боулан? Все. Я правильно понимаю? Все верно. Ну, Пугачев, извините меня, какая величина? Ну да. Вот туда. Так. А чтобы прямо на сцене сидеть можно, чтобы Дитер Боулан выступал, и я сидел прямо типа на сцене? А еще ближе получится? Так. А Дитер Боулин это который из них? А с белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Нет, похож. Лицо. Маршалл Зуков. Ой, да там кто только не снимался. Ну да. Там и Юрий Дудь, извините, пожалуйста, в Head & Shoulders. И муж Заворотнюк, и кого там только не приглашают. И даже Сергей Дружко, если что. Я очень сильно люблю это все дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная, так сказать, но будет закрывать этот спектакль. О, ну это ж, кто там, два человека придет? Это будет Крокус Сити Холл. Ничего себе. А есть еще, а вы еще, вы на все были, а еще какой-то стендап был в Крокус Сити Холле, такой есть у вас? Это мюзикл. Ну и правильно, это какое-то говно, честно говоря, стендап это. И в Римов есть. Вот, и в Римов есть. Он вам по духу будет. У него, кстати, вот новая программа, господин Хороший, вопросы есть. Где он там в разных нуждают нам политики, артистов, друзья, алкоголь. Отвечает на вопросы. А, очень интересно. Но... Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь. Поэтому не знаю, когда смогу освободиться. Да как это? Это же все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? Нет, зачем? А там же надо деньги, получается? Деньги платить нужно? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну тогда, я думаю, до новых встреч. Обязательно. Чтобы нового созвона со мной не дождались. Дитер Баулан. Дитер Баулан. Дитер Баулан.
 
-### 275. openai / large-v3-turbo
+### 294. openai / large-v3-turbo
 
 - **ID:** `e323b01d0b1e`
 - **Language:** ru
@@ -5858,7 +6261,7 @@
 
 > В Крокус Сити Холле Салтаком Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долланд Дандерфтен Воден Токи Ямахо ямасо я правильно понимаю? организаторы и выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а что прям на сцене сидеть можно чтобы дитер болон выступал я сиделась и прямо типа на сцене а еще ближе получится так один терпал на который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жеку и это другой которая у него прикладка шелдерс снимался ой да там я только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж за воротнюк никого там только не приглашаю и даже и сергей дружков если что Ну хорошо знаете, Алексей Сергеевич, я как понимаю Я очень сильно люблю это все делать Ага Ну а так вот у вас самая идея с каких-то Дмитрием более награк вам Самая идея дурацкая, честно говоря А если разговор бы начался с Дмитрия Нагиева А вот с этого надо было начинать Ага А где я вас отправлю на его спектакль Крися А вот это не нужно я знаю давно любит она 15 лет играет уже но вы тоже кто-то в два человека придет а есть еще на все пиле то вы еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него под очень интересно 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться так хотите я просто все семьи что сделаю тогда на 4 места не буду делать сделаю 2 места я буду дополнительный стимул чтобы вы побрали здоровье да как это же это же от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение а там же деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулен
 
-### 276. openai / large-v3
+### 295. openai / large-v3
 
 - **ID:** `f53ab5a502a9`
 - **Language:** ru
@@ -5878,7 +6281,7 @@
 
 > ДИТЕР БОУЛЕН а дитер болон все и нахуй массой я правильно понимаю и в режиме и выделяем по номиналу и без наценок никак то пугачева ну богачева извините меня вели какая величина да-да-да а так на дитро поле на и сайт рублей и до 20 тысяч уже лучших местах паркера а танцевали партнеры идет по 30 поэтому просто подскажите как вы смотрите да и велел а чтобы посидели потанцевали а что прям на сцене сидеть можно чтобы деда повода выступала я сидел прямо на сцене Ну, по двостаточке могу сделать вам места, первый ряд бардера. А еще ближе получится? Нет. Так. А Дитер Баулин, это который из них? Ну, он с волосами. Но вот сейчас по астерикце нормально вроде стал. А волосами был? С белыми волосами? Как Александр Маршалл? Вот такой? Не-не-не. Какой Маршалл? Нет, похож. Лицо. А, ну лицом, да. Маршалл Зуков. это только не снимался извините пожалуйста в ходят шолдерсе и муж заворотнюк или кого там только не приглашаю и даже и сергей дружков если что я очень сильно люблю это сидела сама идея дурацкая честно говоря а вот с этого надо было начинать А вот это не нужно? Я знаю, да, он его любит, он его 15 лет играет уже. О, ну это ж, кто это, два человека придет? А есть еще... Вы на все билеты, а еще какой-то стендап был в Крокус-Сити холле. Такое есть у вас? Не-не-не. У нас есть мероприятия, балет, мюзикл, там разные шоу, но стендапа нету и без такового. Ну и правильно, это какая-то говна, честно говоря. и время вот его подухал у него кстати от новой программы они хорошего просто где он там образа осуждать нам политиков чиновников артистов друзья алкоголиков и в конце даже если будет а немного под шофер отвечает на вопросы очень интересно но да вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то я-то на нашего здесь я-то никак уже не решают поэтому возможно может вы мне просто скинете смс сообщение деньги платить деньги надо заплатить же еще до получается мне ну тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно не дождались Дитер Боулен
 
-### 277. openai / large-v3-turbo
+### 296. openai / large-v3-turbo
 
 - **ID:** `77ac54340ed6`
 - **Language:** ru
@@ -5898,7 +6301,7 @@
 
 > В Крокус Сити Холле В зал таком? Так еще разок В Крокус Сити Холл? Да, 14 марта, Дитер Боулан Дитер Боулан? Да, но дома в Land Rover Vodan Token Ямахо ямасо, я правильно понимаю? организаторы и выделяем на пугачёву меня величина а так на дитер поля на 2 тысяч рублей и до 20 тысяч уже лучше поэтому а что прям на сцене сидеть можно чтобы дитер болон выступала я сидел из прямо типа на сцене а еще ближе получится так а дитр болл это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там кто-то не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк никого там только не приглашаю и даже и сергей дружко если что хорошо знаете я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже но это два человека придет себе а есть еще вы еще на всем билета в еще какой-то стендап был в крокус сити холле такой есть у вас не мероприятие балет ну и правильно это это будет говно честно вот и время вот у него сойдет программа где он там у брата политиков чиновников артистов друзья алкоголиков и и в конце даже если будет немного под шофе, отвечать на вопросы. Не пройдем, эта программа 28 марта в Московском дворце молодежи на Вкрадинске. Очень интересно. По местам, хотя, 2000 рублей до 12. Одинте вам пару, я сделаю, а вы планируете уже стоите, а так ждете. я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то это от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги платить деньги надо заплатить же еще да получается мне но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста но тогда я думаю до новых встреч обязательно но вас озвалась а мы не дождались Адитар Боулан Адитар Боулан Адитар Боулан Адитар Боулан Продолжение следует...
 
-### 278. openai / large-v3-turbo
+### 297. openai / large-v3-turbo
 
 - **ID:** `08ccf99d2742`
 - **Language:** ru
@@ -5918,7 +6321,67 @@
 
 > в крокус сити холле зал таком так еще разок в крокус сити холл 14 марта дитер боулен дитер боулен да, ну, дом из дандерфтен в лотен токинг все, яма-хо яма-со, я правильно понимаю? организаторы закрываем телефонов режиме и выделяем места по номиналу и без наценок не как-то пугачёва сейчас билеты стоит там по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина что прям на сцене сидеть можно чтобы динтер болон выступала я сиделась и прямо типа на сцене а еще ближе получится так а дитер болу это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашаю и даже и сергей дружков если что Ну хорошо, знаете, Алексей Сергеевич, я как понимаю. Я очень сильно люблю это все дело. Ага. Ну а так вот самая идея из каких-то Дмитрия более награк вам? Самая идея дурацкая, честно говоря. А если бы разговор начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где я вас отправлю на его спектакль Крися? А вот это не нужно. я знаю давно любит она 15 лет играет уже кто-то два человека придет а есть еще вы на все были это вы еще какой-то стендап был в крокус сити холли такое есть у вас ну и правильно это будет говно честно говоря и прямо вот и время у него программа политиков чиновников артистов друзья алкоголиков и это будет немного пузов и отвечает на вопрос это программа очень интересно но вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я это от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится пугачёва опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
 
-### 279. openai / large-v3
+### 298. openai / large-v3-turbo
+
+- **ID:** `1263c94455bc`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 6.91s
+- **Memory:** Δ 0.0 MB, peak 9399.6 MB
+- **Beam size:** 10
+- **Temperature:** 0.03
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 59.91%
+- **CER:** 54.59%
+- **Timestamp:** 2026-01-07T15:31:28.023604+00:00
+
+**Text:**
+
+> В Крокус Сити Холле В Крокус Сити Холле Так еще разок В Крокус Сити Холл 14 марта Дитер Боулен Да Долланд Дандерфтен Воден Токинг Ямахо Ямасо я правильно понимаю? организаторы выделяем по номиналу и без наценок не как-то пугачёва сейчас билеты стоит по 100 по 150 тысяч рублей ну пугачёва извините меня вели какая величина а так на дитрополе на места идут от 2000 рублей и до 20 тысяч уже в лучших местах портера а танцевальный портер идет по 30-100 поэтому просто подскажите как вам посмотреть места а что прям на сцене сидеть можно чтобы дитер боулен выступал я сидел и прямо типа на сцене а еще ближе получится так а дитер боулен это который из них а волосами с белыми волосами как александр маршал вот такой нет похож лицо маршал жидко ой да там только не снимался там и юрий дуть извините пожалуйста в этом солдарсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже но будет 2 человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такое вы есть у вас ну и правильно это будет говно честно говоря и прям вот и время очень интересно рублей до 12 да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скиньте смс сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить же еще да получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно Дитер Боулан
+
+### 299. openai / large-v3
+
+- **ID:** `9cb9ca618976`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 20.81s
+- **Memory:** Δ 134.9 MB, peak 9545.1 MB
+- **Beam size:** 8
+- **Temperature:** 0.45
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 61.70%
+- **CER:** 55.16%
+- **Timestamp:** 2026-01-07T15:34:09.743532+00:00
+
+**Text:**
+
+> Так еще разок в Крокус Сити Холл дитер болен все на хо яма ссоря правильно понимаем организация ну богач о вы видите меня вели какая величина что прям на сцене сидеть можно чтобы выступала я сидел прямо на сцене а еще ближе получится так агитар болына то который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и идуть извините пожалуйста в хэнд-нэнд-шолдерс и и муж заворотнюк и кого там только не приглашаю и даже и сергей дружко если что я очень сильно люблю это сама идея дурацкая честно говоря а вот этого надо было начинать а вот это не нужно я знаю да он его любит она 15 лет играет уже ну это два человека придет себе а есть еще на все билета в еще какой-то стендап был в крокус сити холли такой есть у ну и правильно это говно честно говоря и время у него идет новая программа очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то я-то от чего здесь я-то никак уже не решаю поэтому Возможно. Может вы мне просто скинете смс сообщение? Нет, зачем? А то я буду вам читать мои сообщения. Да, хотя я просто пару мест делаю хороших, просто, ну это, это, это Ефремов. У него расписание на год вперед расписано, а это новая программа, вопрос есть. А там же надо деньги, получается, деньги платить нужно? А? Деньги надо заплатить же еще, да, получается, мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Ну тогда, я думаю, до новых встреч. Да, я поясню, что наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Продолжение следует.
+
+### 300. openai / large-v3-turbo
+
+- **ID:** `83da3facee26`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 6.60s
+- **Memory:** Δ 0.0 MB, peak 9399.6 MB
+- **Beam size:** 10
+- **Temperature:** 0.44
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 62.00%
+- **CER:** 53.80%
+- **Timestamp:** 2026-01-07T15:30:58.153383+00:00
+
+**Text:**
+
+> так еще разок в крокус city hall 14 марта, Дитер Боулен Дитер Боулен? Да, ну, Долан, Сандер, Воден, Токи Все, Ямахо, Ямасо, я правильно понимаю? Все верно Акипинчайен, Вера Вера, Юго Мы, организаторы, зал закрываем в телефоновом режиме И выделяем места по номиналу и без наценок Не как-то Пугачеву сейчас билеты стоят по 100, по 60 тысяч рублей Ну, Пугачеву, извините меня, какая величина? а так на дитерполе на 2 тысяч рублей и до 20 тысяч уже лучше а танцевальный партнер идет по 30-100 поэтому просто подскажите как посмотреть а что прям на сцене сидеть можно чтобы дитерполе выступала я сиделась прямо а еще ближе получится так а дитр болу это который из них а волосами с белыми волосами как александр маршал на такой нет похож лицо маршал снимался да там кто только не снимался там и юрий дуть извините пожалуйста в этом шолдерсе и муж заворотнюк и кого там только не приглашает и даже и сергей дружков если что хорошо знаете это речь я очень сильно люблю это сделал сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю давно любит она 15 лет играет уже ну да просто будет прощально и так сказать но будет закрывать ну вы тоже кто там два человека придет себе а есть еще вы еще на все пиле то вы еще какой-то стендап был в крокус city holy такой вы есть у вас ну и правильно это это будет говно честно говоря стендапы программа будет очень интересно но я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться да как это ж от господа бога зависит здоровье то я то от чего здесь я то никак не решаю поэтому возможно может вы мне просто скиньте sms сообщение это программа а там же деньги получаются деньги платить деньги надо заплатить женщину получается но тогда ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно Ваши патрульные Дитер Боулен
+
+### 301. openai / large-v3
 
 - **ID:** `9c4766ea8989`
 - **Language:** ru
@@ -5938,7 +6401,27 @@
 
 > так еще разок в крокус city hall дитер болан все и я хо яма соль я правильно понимаю организацию ну богача вы извините меня вели какая величина а чтобы прям на сцене сидеть можно чтобы динбол он выступал я сидела прямо типа на сцене а еще ближе получится так один turbo улыбка который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо снимался там и идуть извините пожалуйста в ходом салдерсе и муж заворотнюк и кого там только не приглашают И даже Сергей Дружко, если что. Ну, хорошо знаете, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ага. Ну, а так вот у вас сама идея сходить на Дмитрия Полина, как вам? Сама идея дурацкая, честно говоря. А если разговор бы начался с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. 1 день я отправлю на его спектакль Кристиан а вот это не нужно? единственное спектакль в котором он играет я знаю да он его любит, он его 15 лет играет уже ну да просто этим летом будет прощальная, так сказать, но он будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей ооо, ну это ж кто это, два человека придет? не ну почему, зал будет полный, это будет круглый сити холл а есть еще а вы еще вы на все билеты в еще какой-то стендап был в кроукост-сити холли такое вы есть у вас мероприятия балет и тикал там разношу стендапа но и правильная это говно честно говоря и примут и вот у него идет новая программа очень интересно но я просто не могу планировать ничего наперёд потому что я сейчас лечу поэтому не знаю когда смогу освободиться да как это все это все господа бога зависит здоровье то я-то от чего здесь я-то никак уже не решают поэтому возможно может вы мне просто скинете sms сообщение деньги платить деньги надо заплатить женщина получается конечно но тогда на ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно создали Дитер Боулен
 
-### 280. faster-whisper / small
+### 302. openai / base
+
+- **ID:** `f19e57bcf670`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 6.29s
+- **Memory:** Δ 4.4 MB, peak 9404.6 MB
+- **Beam size:** 9
+- **Temperature:** 0.06
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 62.30%
+- **CER:** 35.37%
+- **Timestamp:** 2026-01-07T15:31:57.830495+00:00
+
+**Text:**
+
+> ВЫСТРЕЛЫ ТЕЛЕФОННЫЙ ЗВОНОК Кровь позиним, Оля. Салтаком? Так, еще разок. В Крокус, City Hall? Да, Викторон, Демарта, Дитер Боллон. Дитер Боллон? Да. Ну, Долон, Дандр, Лодон Бокер. Веняхо, яма, соль, правильно понимаю? Да, я понимаю. Взверно. Акипича и паровера, игол. Ага. Мы организация, заноскрома в телефонов режиме, выделяем метап, по номиналу, и, значит, на книгах-то, покачу сейчас в биленды, союзом, по стол, по 50 тысяч рублей. Ну, покачу, извините меня, вели какая величина. Ну да. Вот он. Продаем под. А так-то на недорополенном, с дайдут, а... 2 тысяч рублей, и до 20 тысяч уже в лучших местах Партера. Адонсовальный Партер идет по 30 сом. Поэтому просто подскажите как он подпадает в 100. Что? Что? Игретелом, то ли, что вы присидели в адонсовале. А что, прямо на сцене сидеть можно, чтобы Диндрболон маступал, и я сидел прямо вот в титле на сцене. Ну, ну, адонсов, что могу сделать, адонсов, первые от Партера. А еще ближе, получится? Нет. Так, а Дитр Боллана, это которые из них? Ну, с глазами, ну, сейчас под дирекцию нормально розетал. А в глазами был... с белыми глазами, как Александр Маршелл, вот такой? Нет, нет, нет. Какой Маршелл? Нет, похож лицо. А, ну лицо... Маршелл, нет. А, нет, нет, это... это другой, который после у него в рекламе кассу, с соль, ручку, не мало. Там кто-то конец снимался. Ну да. Там и Юрий Идульт, извините, пожалуйста, в ходе на Нсволдерси. И муж заворотнюк и кого там только не приглашает. И даже Сергей Дружко. Если что. Ну хорошо, знаете, это у Алексей Сергеевича. Я очень сильно люблю это все дело. Ага, так у нас там один, они-то не то более на врагу. Самая идея дурацкая, честно говоря. А это разговор у нас не треноги его. А вот с этого надо было начинать. Ага, а где его сопролено, ее спектакль 50. А вот эти они нужны. И единственный спектакль, которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна и так сказать. Но бой закрывает отец в сексак, и билетов будут в твое сочетие, но то есть в твое. О, ну вы это что, два человека придет? Да нет, но почему, но а бойов полно это в твое скрокос, тихол. Нет, не шову себе. А есть еще... А вы на все билета? А вы еще какой-то стендап был в твое сите холли? Такой вы есть у вас? Нет, нет, нет, нет. Здесь мероприятие, полет, не уйти, колонт, раз дешёнул, стандапат, нет такого. Ну и правильно, это как бы это говно, честно говоря, стандапат. И прямо в Ки. Вот, и в Римове. У нас подухом. У него садёт новое программу, к испанин хорошего, просто и... У него там уграться, вот это, ну, отсуждает там полинька в чиновникам, артистов, срусел, как Оликом. И в конце даже если будет немного пуску шапе, отвечает на вопросы. Не пройдем в этом программу, да, оттойкуать манта, а в мостол, кандвар, ты молодёжен, а пройдёжный. Очень интересно. Но... А ты отец, ты уже румли на 12. А едем пару метров, а вы планируете, что идете на княтия? Да, я просто не могу планировать ничего на период, потому что я сейчас лечусь. Поэтому я не знаю, когда я смогу освободиться. А ты кандидия, а просто к Семича, а не делаю? Тогда, но четыре места не буду делать, делаю два метра, я буду дополнить, ведь не может, чтобы вы попрали здоровья. Как это шоу? Да. Это все от Господу Богу зависит здоровья. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому разможно. Может вы мне просто с кинец СМС сообщения? Нет. Зачем? Или? Или у меня? Да, а я просто по-руме сделаю хорошо. Ну это... это... это динфремов. У него расттения на год перего транслизии. А это новая программа просто не... Там же надо деньги платить. Деньги надо заплатить еще, да, получается мне еще. Ну, тогда ничего не получится. Нет, ну все, что с ним айствовать. Но в единиках с плачевок, где пилет, по вели ты, ты не видишься. Погачевые опять, и мы с вами уже обсуждали. Ты велищина такая, что вы извините, пожалуйста. Ну тогда я думаю, до новых встреч. Я по-моему не то наберу вам надо. Обязательно. Что, на лосозвол на самом деле дождались? Одни трополон. Диторболон? Одни трополон. Дитор Боллон!
+
+### 303. faster-whisper / small
 
 - **ID:** `8ec905e2c579`
 - **Language:** ru
@@ -5958,7 +6441,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть? Можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холле, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 281. openai / small
+### 304. openai / small
 
 - **ID:** `f9c4e96a3970`
 - **Language:** ru
@@ -5978,7 +6461,7 @@
 
 > а Крокус Сити Холл? Да, 14 марта Диттер Боулен. Диттер Боулен? Да, но долу сандарм санлоден с Боуленом. Всё! Емахо-Емасо! Да, правильно понимаю? Всё верно! А кипичае? Да, да, да. А кипичае? Да, да, да. А кипичае? Да, да, да. А кипятчайн, Бэра, Вера и Егор. Ну, Пугачев, извините меня, вели какая величина. Ну да, вот сюда. Больно. Смотрите, Сон. Поэтому, просто подскажите, как вам посмотреть. Да. Так. Так, чтобы под не гляделом, то или больше вы посидели и потунцевали. А что, прямо на сцене сидеть можно, чтобы Дитер Баула наступало, я сидел прямо, типа, на сцене. Ну, вот... Ну, вот так и что могу сделать, вам, если да, первый ряд пардера. А еще ближе получится? Не. Так. А Дитер Баула, это который из них? А волосами с белыми волосами? Как Александр Маршал? Нет, нет, нет. Какой Маршал? Нет, похож лицо. Маршал с звуком. Это другой, который после него в рекламе, когда шел, Счё, что он снимался? Да там кто только не снимался. Ну да. А так он... Там и Юрий идут, извините, пожалуйста, в Ханан-Солндерсе, и муж заворотнюк и кого-то там только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете, Андрей Сергеевич, понимаешь? Я очень сильно люблю это всё дело. Ну так, у нас сама идея кондиционитра поля на Грагову. Сама идея дурацкая, честно говоря. А если разговор начнется с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где дело сопролено его спектакль Кыстья? А вот этого не нужно. Единственный спектакль, по которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная этакка, но он будет закрывать этот спектакль, Билеты будут стоить по 60 на 100 000. Ооооо, ну это ж... Кто это? Два человека придет? Нет, ну почему? Голубой полный, это будет крокостихол. Ничего себе. А есть еще... А вы еще... Вы на всё билеты? А вы еще какой-то стендап был в крокостихоле? Такое есть у вас? Нет, нет, нет. Нет, ну есть мероприятие? Полет, музыкал там. Разношёл, но стендапов нет. Такового. Ну и правильно. Это какая-то говно, честно говоря. Стендап это. И Примов есть. И готов. И Примов есть. У него, кстати, новая программа, по ним хорошая вопрос. Где он там убрал, вот это там... Ну, осуждает нам политиков, чиновников, артистов, врусей, алкоголиков. И в конце, даже если будет немного под шафе, отвечает вопрос. Не пройдет. Это программа 28 марта в Маслолском дворстве молодежи напротив. Очень интересно, но... Там помета встает, а 2 тысяч рублей до 12. Адите вам пару минут сделаю, а вот планируйте выживайте. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю когда смогу освободиться. А, так, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а я просто пару месяцев сделаю хорошие. Это не время. У него рассветания на год вперед, раскидываю. А это новая программа. А там же деньги, получается. Деньги платить нужно? Деньги надо заплатить же, да, получается мне сейчас. Ну да, конечно. Но тогда, наверное, ничего не получится. А не, ну всё что стоит, не мало. Стойте новые деньги, как Пугачёва, где билеты. Стойте по 200 тысяч. И мы опять-таки уже обсуждали, это величина такая, что извините, пожалуйста. Ну да. Ну тогда я думаю до новых встреч. Да, я поиск не наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан
 
-### 282. faster-whisper / small
+### 305. faster-whisper / small
 
 - **ID:** `ddc03c5d6666`
 - **Language:** ru
@@ -5998,7 +6481,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене. А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холли, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 283. faster-whisper / small
+### 306. faster-whisper / small
 
 - **ID:** `bf6e3eaa47ba`
 - **Language:** ru
@@ -6018,7 +6501,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене. А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холли, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 284. faster-whisper / small
+### 307. faster-whisper / small
 
 - **ID:** `e153e9dcdb44`
 - **Language:** ru
@@ -6038,7 +6521,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене. А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холли, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 285. faster-whisper / small
+### 308. faster-whisper / small
 
 - **ID:** `a0538fa9565d`
 - **Language:** ru
@@ -6058,7 +6541,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене. А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холли, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 286. faster-whisper / small
+### 309. faster-whisper / small
 
 - **ID:** `1e815dcd808c`
 - **Language:** ru
@@ -6078,7 +6561,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене. А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холли, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 287. faster-whisper / small
+### 310. faster-whisper / small
 
 - **ID:** `8fefa6889ccc`
 - **Language:** ru
@@ -6098,7 +6581,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ямахо, ямасоль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да, да. А что, прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене. А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет-нет-нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дульти, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а этим летом будет прощальная и так сказать, но будет закрывать аспектакт с черпой. О, ну это же кто там, два человека придет? Ну это будет крокостить холл. Ничего себе. А есть еще, а вы еще, вы на все билеты, а вы еще какой-то стендап был в крокостить холли, такое, есть у вас? Нет, не уйти колонс. Ну и правильно, это какая-то говно, честно говоря, стендап это. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа. По ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Ааа, очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Ааа, так один вопрос там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну, тогда, я думаю, до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен.
 
-### 288. faster-whisper / small
+### 311. faster-whisper / small
 
 - **ID:** `6e10f8e0712b`
 - **Language:** ru
@@ -6118,7 +6601,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ема-хо, Ема-со. Да правильно понимаю? Да. Все верно. А Кипенчаин, Вера, Вера, Юго. Ну пугачо, вы извините меня, вели какая величина? Да, да. Вот туда. Так. А что прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене? А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дуль, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря А вот с этого надо было начинать А вот это не нужно Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная этакка, но будет закрывать аспектакт с черпой. О, ну это ж кто там, два человека придет? Ну это будет крокосити-хол. Ничего себе. А есть еще, а вы еще, вы на все билеты? А вы еще какой-то стендап был в крокосити-холе? Такое, есть у вас? Нет, не уйти-хол. Ну и правильно, это какой-то говно, честно говоря, стендап этот. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа, по ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Не пройдёт? Очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Так, один вопрос, там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинуть смс сообщения нет зачем а там же надо деньги получается деньги платить можно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва опять-таки мы с вами уже обсуждали. Это величина такая, что извините, пожалуйста. Ну, тогда я думаю до новых встреч. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боуэллан. Дитер Боуэллан. Дитер Боуэллан.
 
-### 289. faster-whisper / small
+### 312. faster-whisper / small
 
 - **ID:** `080262d9d08e`
 - **Language:** ru
@@ -6138,7 +6621,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ема-хо, Ема-со. Да правильно понимаю? Да. Все верно. А Кипенчаин, Вера, Вера, Юго. Ну пугачо, вы извините меня, вели какая величина? Да, да. Вот туда. Так. А что прям на сцене сидеть можно, чтобы Дитер Боулен выступал и я сидел прямо вот типа на сцене? А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дуль, извините, пожалуйста, в Хайном Шолдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря А вот с этого надо было начинать А вот это не нужно Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная этакка, но будет закрывать аспектакт с черпой. О, ну это ж кто там, два человека придет? Ну это будет крокосити-хол. Ничего себе. А есть еще, а вы еще, вы на все билеты? А вы еще какой-то стендап был в крокосити-холе? Такое, есть у вас? Нет, не уйти-хол. Ну и правильно, это какой-то говно, честно говоря, стендап этот. И в римов есть. Вот, и в римов есть. У него, кстати, новая программа, по ним хорошего вопроса есть. Где он там, в разах, ждает нам политистов, взрослый алкоголь АП, отвечает на вопрос С. Не пройдёт? Очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Так, один вопрос, там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинуть смс сообщения нет зачем а там же надо деньги получается деньги платить можно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Но тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну, Пугачёва опять-таки мы с вами уже обсуждали. Это величина такая, что извините, пожалуйста. Ну, тогда я думаю до новых встреч. Обязательно. Потому что нового созвона со мной не дождались. Дитер Боуэллан. Дитер Боуэллан. Дитер Боуэллан.
 
-### 290. faster-whisper / small
+### 313. faster-whisper / small
 
 - **ID:** `668d93a91afb`
 - **Language:** ru
@@ -6158,7 +6641,7 @@
 
 > Так, еще разок. В Крокус-Сити-Холл. Дитер Боулен. Все. Ема-хо, Ема-соль. А правильно понимаю? Все верно. А Кипенчайон, Вера, Вера, Юго. Ну, пугачо, вы извините меня. Какая величина? Да-да. А что, прям на сцене сидеть? Можно, чтобы Дитер Боулен выступал и я сидел прямо на сцене? А еще ближе получится? Так. А Дитер Баул, это который из них. А с белыми волосами, как Александр Маршал, вот такой? Нет, нет, нет. Нет, похож лицо. Маршал Зуков. Ой, да там кто только не снимался. Там и Юрий Дуть, извините, пожалуйста, в Хайном Шолдерсе, и муж Заворотнюк, и кого там только не приглашаю. И даже Сергей Дружко, если что. Сама идея дурацкая, честно говоря А вот с этого надо было начинать А вот это не нужно Я знаю, да, он его любит, он его 15 лет играет уже Ну да, просто этим летом будет прощальная этакка, но будет закрывать аспектакт с черпой. О, ну это же кто там? Два человека придет? Ну это будет крокосити-хол. Ничего себе. А есть еще... А вы еще... Вы на все билеты? А вы еще какой-то стендап был в крокосити-холе? Такое есть у вас? Нет, не уйти-хол. Ну и правильно. Это какая-то говно, честно говоря. Стендап это. И в римов есть. Вот. И в римов есть. У него, кстати, новая программа, по ним хорошего вопроса есть. Где он там, в разах, ждает там политиста, взрослый алкоголь АП, отвечает на вопрос С. Не пройдёт? Очень интересно. Ну, ой. Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Так, один вопрос, там. да как это что это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинуть смс сообщения нет зачем а там же надо деньги получается деньги платить нужно деньги надо заплатить же еще да получается мне сейчас Ну да, конечно. Ну тогда, наверное, ничего не получится. Пугачёва, где билеты чуть-чуть. Ну Пугачёва, опять-таки, мы с вами уже обсуждали. Это величина такая, что извините, пожалуйста. Ну тогда я думаю до новых встреч. Обязательно. Потому что нового созвана со мной не дождались. Дитер Боулен. Дитер Боулен. Дитер Боулен.
 
-### 291. openai / large-v3
+### 314. openai / large-v3
 
 - **ID:** `3127b69b561b`
 - **Language:** ru
@@ -6178,7 +6661,7 @@
 
 > в крокус сити холл все я правильно понимаю ну извините меня вели какая величина а что прямо на сцене сидеть можно чтобы деда полон выступала я сидела прямо типа на сцене а еще ближе получится так а дитер бауэлл это который из них волосами с белыми волосами как александр маршал такой нет нет нет похож лицо это только не снимался там и юрий дуть извините пожалуйста в хэднессолдерсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружков если что я очень сильно люблю это сама идея дурацкая честно говоря а вот с этого надо было начинать а вот я не нужно я знаю да он его любит она 15 лет играет уже ну это кто там два человека придет себе а есть еще а вы еще на все билеты в еще какой-то стендап был в крокус сити холли такой вы есть у вас ну и правильно это говно честно говоря вот программа очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то я-то от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете сообщение деньги платить деньги надо заплатить же еще до получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч, я понимаю. Ну Пугачево, опять-таки, мы с вами уже обсуждали, это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я поясню, что наберу вам, да. Обязательно. Ну, что, нового созвона со мной не дождались? Продолжение следует...
 
-### 292. openai / large-v3
+### 315. openai / large-v3
 
 - **ID:** `089fcd612840`
 - **Language:** ru
@@ -6198,7 +6681,27 @@
 
 > так еще разок в крокус city hall все для хо яма соль а правильно понимаю ну извините меня вели какая величина а что прям на сцене сидеть можно чтобы выступала я сидел прямо на сцене а еще ближе получится так один turbo улыбка который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и дуть извините пожалуйста в кондон салда и муж заворотнюк и кого там только не приглашаю И даже и Сергей Дружко, если что. Ну, хорошо знаете все, Алексей Сергеевич, я понимаю. Я очень сильно люблю это все дело. Ну а так, у вас сама идея исходить на Днепрополе, ну как вам? Сама идея дурацкая, честно говоря. А если разговор бы начался с Дмитрием Нагиевым? А вот с этого надо было начинать. а вот это не нужно я знаю давно вы любит она 15 лет играет уже ну это кто-то два человека придет а есть еще а вы еще вы на все билеты вы еще какой-то стендап был в крокус сити холле такое вы есть вас мероприятия балет musical там раздашь он у стендапа нет такого ну и правильно это говно честно говоря вот у него пойдет новая программа очень интересно но вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться. Так хотите я просто в моей семье что-нибудь сделаю тогда, но четыре места не буду делать сделаю два места, я буду дополнительный стимул, чтобы Вы поправили здоровье. Да как это ж это ж всё от Господа Бога зависит здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому возможно может Вы мне просто скинете сообщение деньги платить деньги надо заплатить же еще до получается ну тогда она ничего не получится опять-таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно создали Продолжение следует...
 
-### 293. openai / small
+### 316. openai / large-v3
+
+- **ID:** `f72268853933`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 18.86s
+- **Memory:** Δ 0.6 MB, peak 9400.2 MB
+- **Beam size:** 1
+- **Temperature:** 0.11
+- **Compute type:** int8
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 65.72%
+- **CER:** 60.55%
+- **Timestamp:** 2026-01-07T15:31:49.206929+00:00
+
+**Text:**
+
+> так еще разок в крокус city hall дитер болан все для хо яма соль а правильно понимаю организация ну богачу извините меня вели какая величина а что прям на сцене сидеть можно чтобы деда болан выступала я сидел прямо на сцене а еще ближе получится так один turbo улыбка который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо не снимался извините пожалуйста и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что я очень сильно люблю это сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю да он его любит она 15 лет играет уже ну это что это два человека придет себе а есть еще а вы еще вы на все билета в еще какой-то стендап был в крокус сити холли такой вы есть у вас мероприятия балет ну и правильно это говно честно говоря вот очень интересно а вот я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться это все господа бога зависит здоровье то я-то от чего здесь я-то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение деньги платить деньги надо заплатить платить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, не, ну все, что стоит внимание, стоит немного и денег, как в Пугачево, где билеты стоят по 200 тысяч. Ну Пугачево, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда, я думаю, до новых встреч. Да, я поясню, что наберу вам, да. Обязательно. Потому что нового созвона со мной не дождались. Продолжение следует...
+
+### 317. openai / small
 
 - **ID:** `1db5d7fe0cfc`
 - **Language:** ru
@@ -6218,7 +6721,7 @@
 
 > В Крокусе Нехоле сал таком? Так, еще разок, в Крокус-сити-хол? Да, 14 марта, Дитер-Боулен. Дитер-Боулен? Да, но Долу сандер в Блоден-Доке. Все, Емахо, Емасо, правильно понимаю? Да, все. Все, Ема-Хо, Ема-Со, правильно понимаю? Все верно. А Кипенчаин, Бэра, Вера, Юго. Мы организаторы, сголовая телефон в режиме и выделяем места по номиналу и без нацена. Никак на Пугачеву сейчас, в Ленду стоит там 100, 160 000 рублей. Ну, Пугачеву извините меня, вели какая величина. Ну да. Вот туда. Вот так продаем. А так на Дитаре Болиным сойдут на 2000 рублей И до 20 000 уже в лучших местах партера. А танцевальный партер идет смотреть из солнца. Поэтому, просто подскажите, как вам посмотреть места. Так. Чтобы они глядела стоили, чтобы вы посидели и танцевали. А что, прям на сцене сидеть можно, чтобы Дитя Боулу наступала, я сидела прямо вот, типа на сцене. Ну, вот. Ну, вот так, чем могу сделать вам место первого ряд партера. А еще ближе получится? Не. Так. А Дитер Баул, это который из них? Он с волосами. Он сейчас по астерикции нормально разъяснил. А волосами с белыми волосами? Как Александр Маршал? Вот такой? Не-не-не. Какой Маршал? Нет, похож лицо. А, да лицо... Маршал звуком. А, да. Не-не. Это другой, который после него в рекламе А ты в рекламе, когда Солдар еще не снимался? Да там кто только не снимался. Ну да. А так вот... Там и Юрий идут, извините, пожалуйста, в Ханан Солдарсе. И муж заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, с Алексеем Сергеевичем, понимаешь? Я очень сильно люблю это все дело. Ага. Ну а так вот он сам однеться, они садятся на грагу. Самая идея дурацкая, честно говоря. А если разговор бы начнется с Дмитрия Нагиева? А вот с этого надо было начинать. Ага. А где дело с отправлено его спектакль Кыстья? А вот это не нужно. Единственный спектакль, по которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная этакать, Но будет закрывать этот фиктакль и билеты будут в той... ...после 60, а на той, в том числе, в шерпе. О, ну вы это ж... Кто это? Два человека придет? Нет, ну почему? Голубой полный, это будет крокостихол. Билет, ну ничего себе. А есть еще... А вы еще... Вы на все билеты? А вы еще какой-то стендап был в крокостихоле? Такое... Есть у вас? Нет, нет, нет. Нет, ну есть мероприятия, палет, музыкал там... раз зашел, но стендапов нет такого ну и правильно, это какая-то говно, честно говоря стендапов и прямов есть вот и прямов есть в новом по духу у него, кстати, вот новая программа по ним хорошие вопросы есть где он там раз он там, ну, осуждает там политиков, чиновников, артистов в руке алкоголиков и в конце даже, если будет немного под шафе отвечает на вопрос C А! Не пройдём, это программа 28 марта в Масулском дворстве молодёжи напротив скрыть. Очень интересно. Но... Та поместа у тебя 2000 рублей до 12. Адите вам пару минут сделаю, а вы спланируете, вы же садите на крылья. Да вот я просто не могу планировать ничего на перед, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. А, так, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а, а А там же надо деньги, получается. Деньги платить нужно? Деньги надо заплатить же еще, да, получается? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, а не, ну все, что стоит внимание, стоит немного и денег, как Пугачёва, где билеты стоит по 200 тысяч. Ну, Пугачёва опять же, да. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Пугачёв, опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда я думаю, до новых встреч. Да, я поиск, что наберу вам надо. Обязательно. Потому что нового созвана со мной не дождались. Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан
 
-### 294. openai / small
+### 318. openai / small
 
 - **ID:** `ed18c0cb2b2d`
 - **Language:** ru
@@ -6238,7 +6741,7 @@
 
 > В Крокусе Нехоля дал такому. Так, еще разок. В Крокусе Нехол? Да, 14 марта Диттер Боулен. Диттер Боулен? Да, но Долу Сандармдерлден Лоден Токер. и махоги масой, правильно понимаю? все верно а кипенчайн, бэра, вера и угол как? мы организаторы закрываем телефон в режиме и выделяем места по номиналу и бизнам сцены никак на пугачу у нас билет достоит 100, 100, 60 000 рублей ну пугачу, извините меня, вели какая величина ну да, вот туда продаем вот а так на Дитаре Болиным сцены идут Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. Бум. А ещё ближе получится? Не Так А Дитер Бауловны, то, которые из них? Он со волосами Он сейчас по астерикции нормально выросал А волосами с белыми волосами, как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет, похож, лицо А, да лицо? Маршал Жуков А, да, не-не Это другой, который после него в рекламе, когда Солдар сочубово снимался. Да там кто только не снимался. Ну да. А так вот... Там и Юрий идут, извините, пожалуйста, в Ханан Солдарсе. И муж заворотнюк и кого-то только не приглашают. И даже Сергей Дружко, если что. Ну хорошо, знаете, а то Алексей Сергеевич, понимаешь. Я очень сильно люблю это всё дело. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. А вот с этого надо было начинать. будет прощальная этакать, но будет закрывать от спектакля и билеты будут в той-то, в той-то, в той-то, в той-то, в той-то, в червей. О, ну это же, кто это? Два человека придет? Нет, ну почему угол будет? В полу это будет крокосити-хол. А есть еще, а вы на все билеты? А вы еще какой-то стендап был в Крокуси и Тихоле? Такое есть у вас? Нет, нет, нет, нет, нет. У нас есть мероприятие, полет, Ньюсиклс, Расслешон, но стендапов нету из-за такого. Ну и правильно, это какая-то говна, честно говоря. И прямов есть. Вот, и прямов есть. У него, кстати, новая программа, в которой он там враз осуждает полиньков-чиновников, артистов, взрослых, алкоголиков и в конце даже, если будет немного под шафе, отвечает вопрос C. будет немного под шафе, отвечает на вопрос C. Аааа. Не пораден. Это программа 28 марта в Масулском дворстве молодежи напротив сквей. Очень интересно. Но... Тампометка от 2 тысяч рублей до 12. Адите вам пару минут сделаю, а вы с планируете выживайте однокрете? Да вот я просто не могу планировать ничего наперед, потому что я сейчас лечусь, поэтому не знаю, когда Я смогу освободиться. Аааа, так, ходите, я просто... Там, все семейчат делают, тогда, но не 4 места не буду делать. Делаю два места, я буду заполнить мне стимул, чтобы вы попрали здоровье. Да как это, что... Да. Это же все от Господа Бога зависит здоровье-то. От чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинетесь... СМС-сообщение? Нет, зачем? А вы полом читать мои сообщения? Давайте я просто пару мест сделаю хороших, просто это не фремов. У него рассчитание на год вперед раскистено, а это новая программа, у вас просто есть. А там же надо деньги, получается. Деньги платить нужно? А? Деньги надо заплатить же еще, да, получается мне сейчас? Ну да, конечно. Ну тогда, наверное, ничего не получится. Ага, а не, ну все что стоит внимание, стоит немного денег, как Пугачево, где билеты стоит 200 000. И Пугачево опять-таки, мы с вами уже обсуждали. Это величина такая, что извините, пожалуйста. Ну да. Да. Ну тогда я думаю до новых встреч. Да, я поездить надо беру вам. Да, да. Обязательно. Потому что нового созвона со мной не дождались. Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан Дитор Болан
 
-### 295. openai / large-v3
+### 319. openai / large-v3
 
 - **ID:** `3e62d168ca0b`
 - **Language:** ru
@@ -6258,7 +6761,7 @@
 
 > так еще разок в крокус city hall дитер болан все для хо яма соль а правильно понимаю организация ну богачева извините меня вели какая величина ну да да а что прям на сцене сидеть можно чтобы дитер болан выступала я сидел прямо на сцене а еще ближе получится так а дитер болан это который из них волосами с белыми волосами как александр маршал вот такой нет нет нет похож лицо маршал джеков это другой который в рекламе снимался там и юрий дуть извините пожалуйста в хэдденшолдерсе и муж заворотнюк и кого там только не приглашают их даже и сергей дружко если что хорошо знаете я очень сильно люблю это все дело а вот с этого надо было начинать а вот это не нужно единственный спектакль которому наградит я знаю да он его любит она 15 лет играет уже ну да просто этим летом будет 15 лет играет уже ну да просто этим летом будет прощальная так сказать но будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей ооо ну это ж кто там два человека придет не ну почему гал будет полный это будет крокус сити холл ничего себе а есть еще а вы еще вы на все билеты а вы еще какой-то стендап был в крокус сити холле такой есть у вас? не не не у нас есть мероприятия балет мюзикл там разное шоу но стендапа нету и такового ну и правильно это какое-то говно честно говоря стендап это и времов есть вот и времов есть он вам по духу может у него кстати вот новая программа господин хороший вопрос есть где он там в разных ну там ну осуждает там политиков чиновников артистов друзья алкоголиков и в конце даже если будет немного подшопе отвечает на вопросы ааа и пройдем это программа 28 марта в московском дворце молодежи на фронте сквиста очень интересно но там по местам кстати от 2000 рублей до 12 ходите вам пару мест сделаю а вы планируете уже стоить отогнете да вот я просто не могу планировать ничего наперед потому что я сейчас лечусь поэтому не знаю когда смогу освободиться ааа так хотите я просто там все семьи что-нибудь сделаю тогда но 4 места не буду делать сделаю 2 места я буду да дополнительный стимул чтобы вы поправили здоровье да как это ж это ж все от господа бога зависит здоровье то я то от чего здесь я то никак уже не решаю поэтому возможно может вы мне просто скинете смс сообщение нет зачем а вы по вам читать мои сообщения да хотя я просто пару мест сделаю хороших просто ну это это это ефремов у него расписание на год вперед расписано а это новая программа вопросы есть а там же надо деньги получается нет 2 раза больше деньги платить нужно а? деньги надо заплатить же еще да получается мне сейчас ну да конечно ну тогда наверное ничего не получится ага не ну все что стоит внимания стоит немного и денег ага не ну все что стоит внимания стоит немного и денег ну как в пугачево где билеты стоят по 200 тысяч ну пугачево опять таки мы с вами уже обсуждали это величина такая что извините пожалуйста ну да да ну тогда я думаю до новых встреч да я поясню что наберу вам надо обязательно потому что нового созвона со мной не дождались а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу а я думаю что я буду делать все что могу
 
-### 296. openai / base
+### 320. openai / base
 
 - **ID:** `640e802b8754`
 - **Language:** ru
@@ -6278,7 +6781,7 @@
 
 > ВЫСТРЕЛЫ Кровь позиним, Оля. Так, еще разок. В Крокуси Тихол. Да, че границ, Марта, Дитер Болл. Дитер Болл. Да, ну, Долл, Дандр, Лодон Бокер. Веняхо Емасоль. Правильно понимаю? Да, верно. Акипича и Беравера и Голм. Мы организация, за науклевки лькона в режиме выделяем метап. Под номиналой, на книгах там, покачу сейчас в веленную суюсую сомпасу. Попустите от тысячи рублей. Ну, покачу, извини, сменяю, вели какая величина. Ну да, просто продаем под. А так-то на дитераполюны, удают вот 2 тысячи рублей. И до 20 тысяч уже в лучших из нас партера. Адонсовальный партер идет по 3500. Поэтому просто подскажите как он по 3500. Так. Так. Игретелом, то или, чтобы вы приседили в мою тумсоварию. А что, прямо на стене сидеть можно, чтобы Дитер Болл, он маступал, и я сидел из прямо типа на стене. Ну, а он татчик, я могу сделать, а вот это, первый ряд партера. А еще ближе получится? Нет. Так. Адитер Болл, это которые из них? Ну, с голосами, получат спаст, дирекция, нормально, разистал. А в волосами был... с белыми волосами. Как Александр Маршел? Вот такой? Нет, нет, нет, какой Маршел? Нет, похож лицо. А, ну лицо... Маршел, не... А, нет, нет, это... это другой, который после у него, вы пламяка с Солнечкой, не молся. Ой, да там кто-то конец снимался. Ну да. Там и Юрий Дульти, извините, пожалуйста, в Коннан Солнце, и муж заворотнюк, и кого там только не приглашает. И даже Сергей Дружко, если что-то. Ну, хорошо, знаете, это, а то Алексей Сергеевич, и тема, я очень сильно люблю это, сидела. А, Бан, так у нас там один, они татеньерополен на тракуал. Сама идея дурацкая, честно говоря. А это разговор у нас, нетрена гива. А вот с этого надо было начинать. Ага, а где его сопролено, ее спектакль 50? А вот эти они нужны. И единственный спектакль, который он играет. Я знаю, да, он его любит, он его 15-ти лет играет уже. Ну да, просто, а тема летом будет прощать на это, и то есть, как, но, бульфой закрывает спектакль, и белется, будет, то есть, у нас за 6-ти я на той, что-то. Ну, кто это, два человека придет? Да нет, ну, почему, а бульфой, полная, два скрока, сихол. Я не шел себе. А есть еще, а вы на все белета? А еще какой-то стендап был в Крока с Титихолю? Такой вы есть у вас? Нет, нет. А есть в мире приятнее, полет, не уйти, то там раз дешево, но стендап от нет такого. Ну и правильно, это как бы это говно, честно говоря, стендап от. И прямо в Ки. Вот, и в Римовке. У нас подухом. У него идет новая программа, господин хорошего, против. У него там уграться, а вот это, ну, обсуждает там полинков-чиновникам, артистов, сроздело, как оликому. И в конце даже, если будет немного под шапе, отвечает на вопросы. Не в радио, в этом программе дласть, в этом манто, в мото, в мото, в манто, в манто, в манто. Ты молодежь на пронезгой. Очень интересно. Да, по местку. А ты отдал, ухишь, румли, на 12. А едем, в пару месяцев сделаю, а вы планируете, уйти отдал, на княтия. Да, а я просто не могу планировать ничего на период, потому что я сейчас лечусь. Поэтому, не знаю, когда я смогу освободиться. А в теканине я просто... Я с семьей, чем делаю, тогда, но четыре места не буду делать, дело два места, я буду, да, заполнить, ведь не может, чтобы вы попрали здоровья. Да, как это шоу? Да. Это все от Господобога зависит здоровья. Я-то, а от чего здесь? Я-то никак уже не решаю. Поэтому, разможно, может вы мне просто с кинеть СМС сообщение? Нет, зачем? Я пойду, что он считать, Майст Амсене. Да, а я просто порву изделаю хорошо. Просто, ну это, это, это, на день фремов. У него расттоня на год, теперь вот растет, да? А это новая программа вопроса, да не... А там же надо, деньг, получается? Да, да, получается. Деньги платить, точно? Деньги надо заплатить же еще, да, получается мне сейчас. Ну, тогда, ну, ничего не получится. Ага, нет, ну все, что с тобой отнимание стоит. Ну, в единиках с улачевых, где билет, ты, по-вельте, ты видишься? Ну, а погодчо, в опять-таки мы с вами уже обсуждали. Ты уличена такая, что вы извините, пожалуйста. Ну, да. Ну, тогда я думаю, да, новых встреч. Да, я поесть, что заберу вам, да, да. Обязательно. Потому что на волосе звони на самом деле дождались. И вот, вот, да. И вот, да, да, да, да. И вот, да, да, да. И вот, да, да, да. И вот, да, да, да. И вот, да, да, да. И вот, да, да, да. Дитр болон. Дитр болон. Дитр болон. Дитр болон.
 
-### 297. openai / large-v3
+### 321. openai / large-v3
 
 - **ID:** `a5bb77cb13d9`
 - **Language:** ru
@@ -6298,7 +6801,7 @@
 
 > так еще разок в крокус city hall дитер болан все и махо и массой я правильно понимаю организация ну богачу извините меня вели какая величина а что прям на сцене сидеть можно чтобы деда полон выступала я сидел прямо на сцене а еще ближе получится так один turbo улыбка который из них волосами с белыми волосами как александр маршал вот такой нет похож лицо это только не снимался там и идуть извините пожалуйста в кондон салдерсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что я очень сильно люблю это сама идея дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю да он его любит она 15 лет играет уже ну это что там два человека придет себе а есть еще а вы еще вы на все билета в еще какой-то стендап был в крокус сити холли такой вы есть у вас мероприятия балет ну и правильно это говно честно говоря вот очень интересно но я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться. Так хотите, я просто в моей семье что-нибудь сделаю, тогда, но четыре места не буду делать, сделаю два места, я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это ж? Это ж всё от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? деньги платить деньги надо заплатить же еще до получается но тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста ну тогда я думаю до новых встреч обязательно создали Продолжение следует...
 
-### 298. openai / base
+### 322. openai / base
 
 - **ID:** `7d1ef22c00eb`
 - **Language:** ru
@@ -6318,7 +6821,7 @@
 
 > ВЫСТРЕЛЫ ТЕЛЕФОННЫЙ ЗВОНОК Кровь посиди, молят. Нал таком? Так, еще разок. В Крокусите холл? Так, в Гронсдемарта нетерпола. Дитерболл? Да, ну, долом дандр в Лодном Боке. Все, лимахо, ямасоль. Правильно понимаю? Да, верно. Акипичай, бэровэра и гом. Мы организация, что он в телефоне в режиме выделяем металл и не знал, как не как-то, покачу, сейчас в виленду, и сам поцелу по 50 тысяч рублей. Ну, покачу, извините меня, вели какая величина? Ну да, продаем, продаем. А так-то, на нейтрополенную металлю, а вот 2 тысяч рублей, и до 20 тысяч уже в лучших местах партера, а танцевальный партер идет по 3 тысячу. Поэтому, просто подскажите как, подритин, да? Так, и гляделом, то или, чтобы вы посидели на танцевали. А что, прямо на сцене сидеть можно, чтобы динерболл он выступал, и я сидел прямо вот в титро на сцене. Ну, вот он, татчик, ему будет делать, а первая ряд партера. А еще ближе, получится? Нет. Так. А дитерболл, это которые из них? Ну, с улацами, получат спать дикты, нормально вырветал. А в улацами был... с белыми улацами, как Александр Маршелл, вот такой? Нет, нет, нет, какой Маршелл? Нет, похож лицо. А, за лицо Маршелл, нет. А, нет, нет, это, это другой, который, по сути, у него вырвали, как с улацами, с чего он не молитв? Ой, это там кто-то конец не снимался. Ну да. А так вот так. Там, и Юрий и Дульти, извините, пожалуйста, входим с Улдерсией, и можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что. Ну, хорошо, знаете, это, а то Алексей Сергеевич, я очень сильно люблю это все дело. А, бон, ну так вот, там один, кстати, это более накраковано. Самая идея дурацкая, честно говоря. А эти разговоры в нашем, междуенагиво. А вот с этого надо было начинать. Ага, один дело сопролено, ее спектакль 50. А вот эти не нужно. Единство спектакль, то он играет. Я знаю, да, он его любит, он его 15-ти лет играет уже. Ну да, просто, а тем летом будет прощальна. Так как, но, або будет закрывать спектакль, и перец будет, то есть, послушаю, что она, то есть, то есть. Ну, ну, вы то что, это два человека придет. А, нет, ну почему, а вот, полно это, восьхро, кухол. Нет, не шоу, а есть еще, а вы еще, вы на все, билета. А еще какой-то стендап был в Крокосите Холли? А такое вы есть у вас? Нет, нет, нет. Нет, но здесь, в мире приятня, полет, не уйти, колонтам, раз, дешеволен, стендап, от нету, и такого. Ну и правильно, это как бы это говно, а честно говоря, стендап, это. И прямо в Ки. Вот, и в Римовке. У нас по духу бой. Понем к задену новой программы, в горушевом вопрос, ты, где он там в городах, то там, ну, обсуждает там поленько в Чиновникам, артистов, сроздело как Оликом, и в конце даже, если будет немного пусшафе, отвечает на вопросы, не в радион, за этот программ, и до отдачь, мовом манта, а в мосту, в Малодерс, на пронезке. Очень интересно, но... Да, дядя, ты уже изюмли на 12 дня, а едем в пару минут сделаю, а вы планируете, уйти оттуда, как идете. Давайте я просто не могу планировать ничего на вперед, ну, я сейчас лечусь, поэтому не знаю, когда я смогу освободиться. А, в таканине я просто... В кессимича я делаю, тогда, но, четыре места никуда делаю, сделаю два места, я буду, да, дополнить, ведь не может, чтобы вы попрали здоровье. Да, как это, что... Да. Это все от господа Богу зависит, здоровье, это я, это от чего здесь, я-то никак уже не решаю. Поэтому разможно, может, вы мне просто с кинемцей СМС сообщения? Нет, зачем? Или... Пойпой, читать мои сообщения. Да, хотя просто по-руме сделаю хорошо, просто, ну, это, это, это динфремов. У него расхода на год, теперь вот расходится. А это новая программа, просто динь. А там же надо, динь, получается. Динь, и платить тоже? Да, нет. Динь, и надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, ничего не получится. Ага, нет, ну все, что с поднимание стоит. Но в единиках с полочевок, где билет, то это поверь, то видите все, что... А в пугачевой опять, и ким мы с вами уже обсуждали, то личина такая, что вы извините, пожалуйста. Ну да. Да. Ну тогда я думаю, да, новых встреч. Да, я поеду, я не знаю, что заберу вам надо. Обязательно. Ужиного, созвала на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались. Идем на самонидаждались.
 
-### 299. openai / large-v3
+### 323. openai / large-v3
 
 - **ID:** `6dfdd294ea4a`
 - **Language:** ru
@@ -6338,7 +6841,7 @@
 
 > так еще разок в крокус сити холл все и маха яма соль а правильно понимаю но пока что вы видите меня вели какая величина а что прям на сцене сидеть можно чтобы динбол он выступал я сидел прямо на сцене а еще ближе получится так а дитер бауэлл это который из них а волосами был с белыми волосами как александр маршал вот такой нет похож лицо не снимался извините пожалуйста в консоль дарси и муж заворотнюк и кого там только не приглашают и даже и сергей дружков если что я очень сильно люблю это самая дурацкая честно говоря а вот с этого надо было начинать а вот это не нужно я знаю да он его любит она 15 лет играет уже ну это кто-то два человека придет себе а есть еще вы на все билеты в еще какой-то стендап был в крокус сити холли такой вы есть у вас мероприятие балет ну и правильно это говно честно говоря вот очень интересно но я просто не могу планировать ничего наперёд потому что я сейчас лечусь поэтому не знаю когда смогу освободиться. Заходите. Я просто в моей семье что-то делаю. Но четыре места не буду делать. Делаю два места, и я буду дополнительный стимул, чтобы вы поправили здоровье. Да как это ж? Это ж все от Господа Бога зависит, здоровье-то. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинете смс-сообщение? деньги платить деньги надо заплатить же еще до получается ну тогда ничего не получится опять-таки мы с вами уже обсуждали то величина такая что извините пожалуйста тогда я думаю до новых встреч обязательно не дождались Продолжение следует...
 
-### 300. openai / small
+### 324. openai / small
 
 - **ID:** `35df3e44899b`
 - **Language:** ru
@@ -6358,7 +6861,7 @@
 
 > В Крокусе Нехоля. В Крокусе Нехоля. Сделал таком. Так, еще разок. В Крокусе Нехол. Да, 14 марта. Дитер Боулен. Дитер Боулен? Да. Ну, Долу сандр в Блоден-Токе. Все. Аккупенчайн Бэра Вера Юго. Аккупенчайн Бэра Вера Юго. Аккупенчайн Бэра Вера Юго. Мы организаторы. Закрываем телефон в режиме. И выделяем места по номиналу и без нацена. Никак на Пугачеву сейчас. Белет длился там по 100, по 60 тысяч рублей. Ну, Пугачеву извините меня. Вели какая величина. Ну да. Вот сюда. Вот сюда продаем. А так на Дитер Боулене. Вместо идут за 2000 рублей. И до 2000 уже в лучших местах. А танцевальный партер идет. Смотрите. Поэтому, просто подскажите. Как вам посмотреть места? Так. Чтобы подвигали телом. Стоили. Чтобы вы посидели и танцевали. А что, прямо на сцене сидеть можно? Чтобы Дитер Боулен выступал. И я сидел прямо на сцене. Ну, по завтра то, чем могу сделать. Вместо первого ряд партера. А еще ближе получится? Нет. Так. А Дитер Боулен это который из них? Он с волосами. Он сейчас по астерикции нормально разъяснил. А волосами с белыми волосами? Как Александр Маршал? Вот такой? Нет, нет, нет. Какой Маршал? Нет, похож лицо. А, да лицо. Маршал звуком. Ах, да. Нет, нет. Это другое, которое после у него в рекламе. Когда он сшел и разъщупал и снимался. Да там кто только не снимался. Ну да. Там и Юрий Дудь, извините пожалуйста, в Ханан Сролдерсе. И муж Заворотнюк и кого там только не приглашаю. И даже Сергей Дружко, если что. Ну хорошо, знаете, с Алексей Сергеевичем, понимаешь. Я очень сильно люблю это все дело. Ну а так у него самая идея, если они с Дитер Боулен на Гракуану. Самая идея дурацкая, честно говоря. А если разговор бы начнется с Дмитрия Нагиева. А вот с этого надо было начинать. Ага. А где дело сопролено его спектакль Кыся? А вот этого не нужно. Единственный спектакль, которому он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто этим летом будет прощальная этакка, но будет закрывать этот спектакль. И билеты будут стоить по 60, а на стоимости 100 тысяч рублей. О, ну это же, кто это? Два человека придет? Нет, ну почему? Голвой полный, это будет крокостихол. Ааа, ничего себе. А есть еще, а вы еще, вы на все билеты? А вы еще какой-то стендап был в крокостихоле? Такое есть у вас? Нет, нет, нет. Нет, ну есть мероприятия, полет, музыкал, там раз за шоу, но стендапов нету, и такового. Ну и правильно, это как бы говно, честно говоря, стендап. И прямов есть. Вот, и прямов есть. У него, кстати, новая программа, и в подне хорошего вопроса есть. Где он там уградут, ну, асуждает нам полиньков-чиновников, артистов, русских, алкоголиков. И в конце даже, если будет немного под шафе, отвечает на вопрос C. Ага. Это программа 28 марта в Масулском дворстве молодежи напротив скрис. Очень интересно. Но... Там поместится, кстати, 2000 рублей до 12. Адите вам пару минут сделаю, а вы планируете расслабить одноклёдие? Да вот я просто не могу планировать ничего наперёд, потому что я сейчас лечусь, поэтому не знаю, когда смогу освободиться. Так, адите вам просто... Я не буду делать 4 места, я буду заполнить себе стимул, чтобы вы попрали здоровье. Да как это, что... Это же всё от Господа Бога зависит здоровье, от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может, вы мне просто скинуть СМС сообщение? Нет, зачем? А вы полночитать мои сообщения. Давайте я просто пару мест сделаю, хороших, просто... Это не фремов. У него рассчитание на год вперёд раскистено. А это новая программа, у меня просто есть. А там же надо деньги, получается. Нет, просто деньги. Деньги платить можно? Да. А? Деньги надо заплатить же ещё, да, получается, мне сейчас? Ну да, конечно. Но тогда, наверное, ничего не получится. А, нет, ну всё, что стоит внимание, стоит немного денег, как Пугачёва, где билеты стоит 200 тысяч, 100 тысяч, что-то не будет. Пугачёва опять-таки, мы с вами уже обсуждали. Это величина такая, что, извините, пожалуйста. Ну да. Да. Ну тогда я думаю, до новых встреч. Да, я поездить надо беру вам, да. Обязательно. Потому что нового созвана со мной не дождались. А, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да,
 
-### 301. faster-whisper / base
+### 325. faster-whisper / base
 
 - **ID:** `47f59aa1796e`
 - **Language:** ru
@@ -6378,7 +6881,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступала, я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Ну да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашают. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-так-чурой. О, ну вы это ж... Кто там, два человека придет? Это вы сгроковый, тихолл. Не-не, ничего вы себе. А есть еще... А вы еще... Вы на все пиле, да? А вы еще какой-то стендап был в крокосите Холлио? Такой... Вы есть у вас? Нет, не уйти, голубь. Ну и правильно, это, как бы, это говно, честно говоря. Стендапа. И прямов есть. Вот. И прямов есть. У нас по духу Холли. Пойдем к задеду новой программы, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да. Не пройдём? Очень интересно. Но... Да, да, да, да, да. Ух ты из рюбления 12. Да, да. Да, вот я просто не могу планировать ничего на период, потому что я сейчас лечусь, поэтому не знаю, когда я смогу освободиться. Выходите, опробуйте. Семеча. Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 302. openai / base
+### 326. openai / base
 
 - **ID:** `8f816523772d`
 - **Language:** ru
@@ -6398,7 +6901,7 @@
 
 > ТРЕВОЖНАЯ МУЗЫКА ТЕЛЕФОННЫЙ ЗВОНОК КРОХ ПОЗИНИМОЛЕ Салтаком? Так, еще разок. КРОХ СИТИХОЛ? ДИТРБОЛОН ДИТРБОЛОН? Да. Ну, дулам, донтор, лодом, покинь. Все, леняхой ямасоль. Правильно понимаю? Все верно. Акипича и Бэра, игом. У меня! А организация заозгромная в телефонов режиме выделяем это по номиналу, и, значит, на книгах-то покачал сейчас виленду с той самого отцом. Пусть от тысячи рублей. Ну, покачал, и сменить имени, а вели какая величина? Ну да, просто продаем под. А так, на дитра поленную, мы сда идут от двух тысяч рублей и до двадцать тысяч уже в лучших местах портера. А танцовальный партер идет в отцом. Поэтому просто подскажите, как подритиста. Так. Так, игретелом. То есть, что вы бензидели в отцом, а что прямо на сцене сидеть можно, чтобы дитра поленную, и я сидел прямо в отцом, на сцене. Ну, донтор, если могу сделать, то, первые ряд партерашних. А еще ближе, получится? Нет. Так. А дитра поленна, то, которое из них? Ну, он с голосами. Ну, вот сейчас под вирикси нормальный розетал. А в волосами был... Сбелыми в волосами, как Александр Маршал, вот такой? Нет, нет, нет. Какой Маршал? Нет, похож лицо. А, ну лицо? Маршал вирилл? А ну, нет, нет, это другой, которая пофти у него, вы рекламе, как, с mention, не мало. Ой, это там кто-то конец не снимался. Ну да, да. Там, Юрий Дульти, извините, пожалуйста, в канонс Ролдерсе. И, муж заворотнюк, и кого там, только не приглашает. И даже Сергей Дружко, если что. Хорошо, знаете, они с Алексей Сергеевичем понимаю. Я очень сильно люблю это сидело. Ну, так уж, там, один из канонитра поленна в раку, самая идея дурацкая, честно говоря. А это разговор у нашем сматчене, на гиево. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да. Он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощально это сказать, но он будет закрывать отец пектакль, и перецы будут постричить. А то есть по пищам. Ну, ну вы то, кто там, два человека придет. Да, ну почему? А вот полная, два скрой круга сихол. Бер, не, ничего себе. А есть еще... А вы еще... Вы на все пилета? А вы еще какой-то стендап был в круг с Ти-Холи? А это такое вы есть у вас? Не-не. Не, но здесь в мире приятнее, полет не уйти, там раз дешевле стендап от нету, и такого. Ну и правильно. Это как бы это говно, честно говоря, стендап отец. И прямо в Ки. Вот, и в Римовке. Он у нас подобный бой. У него задел с новой программы в господин хорошего вопроса, и у него там уграться, вот там, ну, а обсуждает там полинька в чиновникам артистов, в зеросе алкоголиком. И в конце даже... Если будет немного пустофе, отвечает на вопрос. Не пораден в этом программе, да, ты хватит моего манта в мотор-таммаладерственной пронедской. Очень интересно. Но... Да, дядя, ты уже жумленно 12. А я едем в пару миллионов сделаю, а вы планируете врунцевый день на Ки. Да, а я просто не могу планировать ничего на период, потому что я сейчас лечусь, поэтому не знаю, я с вами могу освободиться. А доходите, я просто... А я из мича не делаю, тогда на четыре места никуда дела сделаю, а мне будет да, да, дополнить ментимул, чтобы вы попрали здоровье. Да, это все от господобогу зависит здоровье, это я от чего здесь? Я то никак уже не решаю. Поэтому разможно. Может вы мне просто с кинец, СМС сообщение? Нет, зачем? А теперь можно было начинать. Да, хотя бы просто по-руме сделаю хороший. Просто, ну это... это Динфремов. У него растута на год в период расходящийся. Да, это новая программа вопроса Диньи. А там же надо Диньи получать? Диньи платить тоже? Диньи надо заплатить еще, да, получается мне еще. Ну да, конечно. Ну тогда... Ничего не получится. Ага, нет, все что с этим они стать. Но в идиниках с плачевой, где пилет по-вельсу ты не видишься? А в идинике мы с вами уже обсуждали. Это были чена такая, что вы извинить, пожалуйста. Ну тогда я думаю, до новых встреч. Да, я по-вейсу-то заберу вам надо. Обязательно. Пришла, у нас с золотой на самом деле дождались. Крошу, я не хочу, я не хочу. Я не хочу. Я не хочу, я не хочу. Я не хочу, я не хочу. Я не хочу, я не хочу. Я не хочу, я не хочу. Это все. Я не хочу, я не хочу. Я не хочу, я не хочу, я не хочу. Я не хочу, я не хочу. Я не хочу, я не хочу.
 
-### 303. faster-whisper / base
+### 327. faster-whisper / base
 
 - **ID:** `de0bc45444c8`
 - **Language:** ru
@@ -6418,7 +6921,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступала, я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Ну да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашают. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-так-чурой. О, ну вы это ж... Кто там, два человека придет? Это вы сгроковый, тихолл. Не-не, ничего вы себе. А есть еще... А вы еще... Вы на все пиле, да? А вы еще какой-то стендап был в крокосите Холлио? Такой... Вы есть у вас? Нет, не уйти, голубь. Ну и правильно, это, как бы, это говно, честно говоря. Стендапа. И прямов есть. Вот. И прямов есть. У нас по духу Холли. Пойдем к задеду новой программы, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да. Не пройдём? Очень интересно. Но... Да, да, да, да, да. Ух ты из рюбления 12. Да, да. Да, вот я просто не могу планировать ничего на период, потому что я сейчас лечусь, поэтому не знаю, когда я смогу освободиться. Выходите, опробуйте. Семеча. Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 304. openai / base
+### 328. openai / base
 
 - **ID:** `f055e4bca767`
 - **Language:** ru
@@ -6438,7 +6941,7 @@
 
 > ВЫСТРЕЛЫ ЗВОНОК В ДВЕРЬ Кровь посидим, молитв, дал такому. Так, еще разок. В Крокус, Сити Холл? Да, Вечерин Демарта, Дитр Болл. Дитр Болл? Да, ну, Толл, Тандар, Лодон Бухи. Все! Леня Хой и Масоль, правильно понимаю? Все верно. Акипича и Нью-Пера, Вера и Голубки. Мы организация разноскровавки ликоновые режиме и выделяем местам по номиналу, и, значит, на книках-то покачу сейчас веленду союсом по отцову. Попишите от тысячи рублей. Ну, покачу, извини, с именя, велика какая величина. Ну да. Вот она. А так то, на недорополенную месту, И до 20 тысяч уже в лучших местах Фартера. А темптавальный Партер идет по 3500. Поэтому просто подкажите как вам по 3500. Так. Играть делом? То есть вы посидели в мотонистовале. А что прям на сцене сидеть можно, чтобы Диндр Болон вступало? Я сидел из прям вот типа на сцене. Ну, вон татчик, я могу сделать, а вот это. Да, первый ряд Партера. А еще ближе получится? Нет. Так. А где Трболуны? Это которые из них? Ну, с лосами, но сейчас подделекция нормально раздетал. А в лосами был в белме в лосами? Как Александр маршал? Вот такой? Нет, нет, нет. Какой маршал? Нет, похож лицо. А, ну лицо маршал веде? это это другой, который пофиг у него, он приклонен к отусула, он скидал. О, это там кто-то конец снимался. Ну да. Там и Юрий Дульти, извините, пожалуйста, в Канинс Ролдерсии и муж за воротнюк, и кого там только не приглашает. И даже Сергей Дружко, если что. Ну хорошо, знаете, с этой свечек, я очень сильно люблю это все дело. Сама, так у нас в том один сходится, а нет раполина на кроку. Сама идея дурацкая, честно говоря. А эти разговора на счастье, не тряна гива. А вот с этого надо было начинать. Ага, а где его сопролина, его стектак, питья? А вот это не нужно. Единственная с пиктатором он играет. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальная, так сказать, но он будет закрывать этот пиктак, а если билетом будут то и с подсошить, то и с подсошить, то и с подсошить. Ну, вытаж, кто, этого, два человека придет. Нет, ну почему, а вытаживай, полно это, восьпрога, с кихол. Я не ущула себе. А есть ещё... А вы ещё на всё пиле, да? А ещё какой-то стендап был в крокосите Холли? А такое вы есть у вас? Нет, нет. Нет, но здесь в мире приятнее, а полет, не уйти, там раз дешёнул стендап от не до такого. Ну и правильно, это как бы это говно, а честно говоря, стендап от... И прямо в течение. Вот, и в ремах мы... У нас подухоль, у него садёт новое программу, и с по-динграджего про ты, у него там уграться, А тут там обсуждает там полинка в чиновникам, артистов с Русселом, а Голиком и в конце даже если будет немного пусков пэ, отвечает на вопросы, не породен, в этом программу доготать муманта, а в мостовском дворце молодёжи напротивки. Очень интересно. Да, по месту, хотя ты уже дурлей на 12, да. А идем пару мест, делаю, а ульф планируете, ульф соединок, идите. Да, вот я просто не могу планировать ничего на период, потому что... ... есть сейчас лечусь. Поэтому, не знаю, когда с могу освободиться. А ты ходите, я просто... ... кейсимича сделаю, тогда, но четыре места никуда делаю, сделаю два мест, Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это новая программа вопроса. А там же надо... Деньги, получай. Деньги платить тоже? Деньги надо заплатить еще, да, получается мне еще. Ну да, конечно. Ну тогда... Ничего не получится. Ни, ну все, что сцепь не манец, тень много денег, как с плачковой, где билет, то это по вейте ты. Ну, по-гачованной пятики мы с вами уже обсуждали. Ты в личине а такая, что вы извините, пожалуйста. Ну да. Ну тогда я думаю, да новых встреч. Да я по-экнему не могу наберем, да, да? Обязательно. Потому что на волос азовое самое не дождались? Дитер Боллон. Дитер-боллен. Дитер-боллен. Дитер-боллен.
 
-### 305. openai / large-v3-turbo
+### 329. openai / large-v3-turbo
 
 - **ID:** `a8f0104a5148`
 - **Language:** ru
@@ -6458,7 +6961,7 @@
 
 > Крокус Сити Холл В Крокус Сити Холл Так еще разок В Крокус Сити Холл 14 марта Дитер Боулан Да Долан Сандерфтен, Лоден Токи Все, Яма Хо Яма Со Все верно Акипичайм, Веравера, Югон Мы Организаторы Зал закрываем в телефоновом режиме И выделяем места по номиналу Не как на Пугачеву сейчас Билет стоит по 100, по 150 тысяч рублей Ну Пугачеву, извините меня Какая величина Ну да А так На Дитер Боулан До двух тысяч рублей И до 20 тысяч уже в лучших местах партера А танцевальный партер идет по 30-100 Поэтому Просто подскажите, как вам посмотреть места Как-то поддвигли телом Ну или Чтобы вы посидели и потанцевали А что прям на сцене сидеть можно Чтобы Дитер Боулан выступал И я сиделся прям вот типа на сцене Ну Ну под 20-100 могу сделать вам места Первый ряд партера А еще ближе получится Нет Так А Дитер Боулан это который из них? Ну с волосами Но вот сейчас по астерикции Нормально вроде стал А волосами был С белыми волосами? Как Александр Маршал? Вот такой? Не-не-не Какой Маршал? Нет Похож лицо А Ну лицо Маршал Жуков Ахэ Не-не-не Это другой Который У него в рекламе Хэддомшолдерс еще снимался Ой да там кто только не снимался Ну да А так вот Там и Юрий Дуть Извините пожалуйста В Хэддомшолдерсе И Муж Заворотнюк И кого там только не приглашают И даже и Сергей Дружков Если что Ну хорошо знаете все Алексей Сергеевич я понимаю Я очень сильно люблю это все дело Ага Ну а так вот Вон сама идея исходить на Дмитра Болина как вам? Сама идея дурацкая честно говоря А если бы разговор начался с Дмитрия Нагиева А вот с этого надо было начинать Ага Один я вас отправлю на его спектакль Кыся А вот это не нужно Единственный спектакль в котором он играет Я знаю да он его любит Он его 15 лет играет уже Ну да просто этим летом будет прощальное И так сказать Но он будет закрывать этот спектакль И билеты будут стоить 20,60 А то и 100,000 рублей Ооо ну это ж кто это? Два человека придет? Не ну почему? Гол будет полный Это будет кругу сити холл А так есть А вы еще на все билеты? А еще какой-то стендап был в Крокос Сити холле Такое есть у вас? Не, не, не У нас есть мероприятия балет Мюзикл Там разное шоу Но стендапов нет Ну и правильно Это какое-то говно честно говоря Стендап это И Бремов есть Вот И Бремов есть Он вам по духу У него как-то идет новая программа Господин хороший вопрос И есть Где он там в разных Ну там Ну там Ну обсуждает там политиков Чиновников Артистов друзей Алкоголиков И в конце даже Если будет немного под шофе Отвечает на вопросы А Не пройдем Это программа 28 марта В Мостовском дворце Молодежь На Крокосе Очень интересно Но Там по металлу Дать от 2000 рублей до 12 А Ходите вам пару Я сделаю А вы планируете Уже сойте Да вот я просто не могу Планировать ничего наперед Потому что Ну я сейчас лечусь Поэтому не знаю Когда смогу освободиться Как хотите я просто Там Все семьи Что сделаю Тогда Но 4 места не буду делать Делаю 2 места Я буду дополнительный стимул Чтобы вы Побрали здоровье Да как это ж Это ж От господа бога зависит здоровье Я то От чего здесь Я то никак уже Не решаю Поэтому Да Может вы мне просто скинете Смс сообщения Нет Зачем Смс сообщение Давай я просто пару мер сделаю Хороших Ну это Это Это Это Ефремов У него Распитание На год вперед А это Новая программа А там же надо Деньги Получается Деньги платить можно? А? Деньги надо заплатить же еще Да получается мне сейчас? Ну да конечно Ну тогда Наверное Ничего не получится Ага Не ну все что стоит Внимание Стоит немного и денег Как в Пугачево По 200 тысяч Ну Пугачево опять таки Мы с вами уже обсуждали Эта величина такая Что извините пожалуйста Ну да Ну тогда я думаю До новых встреч Да я поясню Если что наберем Обязательно Потому что нового созвона Со мной не дождались Ну а с вами уже Ну а с вами уже Не дождались Ну а с вами уже Ну а с вами уже Не дождались Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже С вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже Ну а с вами уже
 
-### 306. faster-whisper / base
+### 330. faster-whisper / base
 
 - **ID:** `e74f08e24ab9`
 - **Language:** ru
@@ -6478,7 +6981,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Всё. Венеохо, яма-соль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, ягол. Ну, пугачу, извините меня, вели какая величина. Да-да. А что, прямо на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Дитер-Болл, это которые из них? А волосами был с белыми волосами, как Александр Маршел, вот такой? Нет, нет, нет. Нет, похож лицо. Маршел, нет, нет. Ой, это там кто-то конец не снимался? Ну да. Там и Юрий и Дульти, извините, пожалуйста, входим с Ролдерсией и можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко, если что. Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощально, так сказать, но будет закрывать этот пик-так-черк. О, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Нет, ничего себе. А есть еще... А вы еще, вы на все пиле? Да, вы еще какой-то стендап был в крокосите Холли? Такое, вы есть у вас? Нет, не уйти, гол. Ну и правильно, это, как бы, договно, отчисто говоря. Стендапа. И прямо в честь. Вот. И в ремонте. И в ремонте. У нас воду Холли. Пойдем к зайдет новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полито, здесь там взрослел какой АП, отвечает на вопрос, да. Не пройдём? Очень интересно, но... Да, дать, отдай, отдай, отдай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай. Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо деньги. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 307. faster-whisper / base
+### 331. faster-whisper / base
 
 - **ID:** `9bfe747394b4`
 - **Language:** ru
@@ -6498,7 +7001,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Всё. Венеохо, яма-соль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, ягол. Ну, пугачу, извините меня, вели какая величина. Да-да. А что, прямо на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Дитер-Болл, это которые из них? А волосами был с белыми волосами, как Александр Маршел, вот такой? Нет, нет, нет. Нет, похож лицо. Маршел, нет, нет. Ой, это там кто-то конец не снимался? Ну да. Там и Юрий и Дульти, извините, пожалуйста, входим с Ролдерсией и можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко, если что. Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощально, так сказать, но будет закрывать этот пик-так-черк. О, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Нет, ничего себе. А есть еще... А вы еще, вы на все пиле? Да, вы еще какой-то стендап был в крокосите Холли? Такое, вы есть у вас? Нет, не уйти, гол. Ну и правильно, это, как бы, договно, отчисто говоря. Стендапа. И прямо в честь. Вот. И в ремонте. И в ремонте. У нас воду Холли. Пойдем к зайдет новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полито, здесь там взрослел какой АП, отвечает на вопрос, да. Не пройдём? Очень интересно, но... Да, дать, отдай, отдай, отдай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай, дай. Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо деньги. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 308. faster-whisper / base
+### 332. faster-whisper / base
 
 - **ID:** `220590a88be7`
 - **Language:** ru
@@ -6518,7 +7021,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 309. faster-whisper / base
+### 333. faster-whisper / base
 
 - **ID:** `15153952a0f5`
 - **Language:** ru
@@ -6538,7 +7041,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 310. faster-whisper / base
+### 334. faster-whisper / base
 
 - **ID:** `74b62a00c707`
 - **Language:** ru
@@ -6558,7 +7061,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 311. faster-whisper / base
+### 335. faster-whisper / base
 
 - **ID:** `c1bd59fcb0c6`
 - **Language:** ru
@@ -6578,7 +7081,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 312. faster-whisper / base
+### 336. faster-whisper / base
 
 - **ID:** `19a2e55ba555`
 - **Language:** ru
@@ -6598,7 +7101,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 313. faster-whisper / base
+### 337. faster-whisper / base
 
 - **ID:** `d9b2458a31c2`
 - **Language:** ru
@@ -6618,7 +7121,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 314. faster-whisper / base
+### 338. faster-whisper / base
 
 - **ID:** `e864e9cd8fa0`
 - **Language:** ru
@@ -6638,7 +7141,7 @@
 
 > Так, еще разок. В крокус и тихол. Диторболон. Все. Венеохо, ямасоль. Правильно понимаю? Да, верно. Акипенчай, веро, веро, юго. Ну, пугачу, извините меня, вели какая величина. Да-да. А что прям на стене сидеть можно, чтобы Диторболон выступал, и я сидел из прям вот типа на стене. А еще ближе получится. Так. А Диттер Боуловна, это которые из них? А волосами был... с белыми волосами? Как Александр Маршелл? Вот такой? Нет, нет, нет. Нет, похож лицо. Маршелл, нет, нет. Это там кто-то конец не снимался? Да. Там и Юрий Дульти, извините, пожалуйста, входим с Ролдерсией. И можешь заворотнюк, и кого там только не приглашает. И даже Сергей Дружко. Если что... Я очень сильно люблю это всё дело. Самая идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот это не нужно. Я знаю, да, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощальна, и так сказать, но будет закрывать этот пик-тахчерк. Ооо, ну вы это что-то, два человека придет. Это вы сгроковый тихол. Не-не, ничего вы себе. А есть еще... А вы еще, вы на все пиле, да? А вы еще какой-то стендап был в кроку с Итихолю? Такой вы есть у вас? Нет, не уйти, голый. Ну и правильно, это, как бы, это говно, честно говоря, стендапа. И прямо в честь. Вот. И в ремонт. И в ремонт. Пойдем к задеду новая программа, господин хороший вопрос, да и в нём там уграться. Уздают там полинь, здесь там взрослел какой АП, отвечает на вопрос, да? Не пройдём? Очень интересно, но... Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да Это все от господобога зависит, здоровья, я-то от чего здесь? Я-то никак уже не решаю. Поэтому, возможно, может вы мне просто с кинец СМС сообщение? Нет, зачем? А там же надо. Деньги надо заплатить же еще, да, получается мне сейчас. Ну да, конечно. Ну тогда, наверное, ничего не получится. Ну тогда я думаю, до новых встреч. Обязательно. Дитор Болон.
 
-### 315. faster-whisper / tiny
+### 339. faster-whisper / tiny
 
 - **ID:** `ff5d3e64ed00`
 - **Language:** ru
@@ -6658,7 +7161,7 @@
 
 > Так, еще разок. В крокус Сити Холл дитр Боллин. Все, для неохоги массой, направлено, понимаете? Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр Болан, это который из них. А Воласами был с белым Воласами. Как Алих Садор Маршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Вот это там что только не снимался. Там ее рейдульте, извините, пожалуйста, в Хэннан Солдерсии. И муж заворотнюк и кого-то только не приглашает. И в даже Сергей Дружку. Если что-то. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его питается или играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Благодарю. Благодарю. А я сейчас... А вы еще на все биле, да? Вы еще какой-то стандап был в крокостейте холе, такое, вы есть у вас? Это не уйти голуб. Ну и правильно, это как бы договно, а честно говоря, стандапы. И прямо в воду. И верим в воду. Пойдем, когда идёт на программах, поднимя хорошего пробды, и где он там уградывает, да, это политика. Здесь довольно дело, как у 옆ы, отвиняет на вопрос, да? Не пройдёт. Очень интересно. Да, поместу. Да, да, да, да, да, да, да. Давайте я просто не могу планировать, ничего не вперед, потому что, я сейчас лечусь, поэтому не знаю, когда освободится. Так, падение, он просто, там, мальк, и лечен. Да как это же все от господа бога зависит здоровья, это от чего здесь. Я-то никак уже не решаю. Поэтому, раз можно, может вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо... Деньги платить. Деньги надо заплатить еще, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, на такая, что я извините, пожалуйста. Ну тогда я думаю, до новых встреч. Обязательно. Недождались. Дитерболлин. Дитерболлин.
 
-### 316. faster-whisper / tiny
+### 340. faster-whisper / tiny
 
 - **ID:** `02b459530a30`
 - **Language:** ru
@@ -6678,7 +7181,7 @@
 
 > Так, еще разок. В крокус Сити Холл дитр Боллин. Все, для неохоги массой, направлено, понимаете? Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр Болан, это который из них. А Воласами был с белым Воласами. Как Алих Садор Маршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Вот это там что только не снимался. Там ее рейдульте, извините, пожалуйста, в Хэннан Солдерсии. И муж заворотнюк и кого-то только не приглашает. И в даже Сергей Дружку. Если что-то. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его питается или играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Благодарю. Благодарю. А я сейчас... А вы еще на все биле, да? Вы еще какой-то стандап был в крокостейте холе, такое, вы есть у вас? Это не уйти голуб. Ну и правильно, это как бы договно, а честно говоря, стандапы. И прямо в воду. И верим в воду. Пойдем, когда идёт на программах, поднимя хорошего пробды, и где он там уградывает, да, это политика. Здесь довольно дело, как у 옆ы, отвиняет на вопрос, да? Не пройдёт. Очень интересно. Да, поместу. Да, да, да, да, да, да, да. Давайте я просто не могу планировать, ничего не вперед, потому что, я сейчас лечусь, поэтому не знаю, когда освободится. Так, падение, он просто, там, мальк, и лечен. Да как это же все от господа бога зависит здоровья, это от чего здесь. Я-то никак уже не решаю. Поэтому, раз можно, может вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо... Деньги платить. Деньги надо заплатить еще, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, на такая, что я извините, пожалуйста. Ну тогда я думаю, до новых встреч. Обязательно. Недождались. Дитерболлин. Дитерболлин.
 
-### 317. faster-whisper / tiny
+### 341. faster-whisper / tiny
 
 - **ID:** `3d2199495e44`
 - **Language:** ru
@@ -6698,7 +7201,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои. Направильно понимай. Думерно. А кинпича Вера, Вера, Юготинк. Ну, пугачу, вы извините меня, верили, какая величина? Да. Вот он. А что, прям на стене сидеть? Можно, чтобы дитр Боллин выступал, и я сидел, прям вот на стене. А еще ближе получится? Так. А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 318. faster-whisper / tiny
+### 342. faster-whisper / tiny
 
 - **ID:** `467ff30b8901`
 - **Language:** ru
@@ -6718,7 +7221,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои. Направильно понимай. Думерно. А кинпича Вера, Вера, Юготинк. Ну, пугачу, вы извините меня, верили, какая величина? Да. Вот он. А что, прям на стене сидеть? Можно, чтобы дитр Боллин выступал, и я сидел, прям вот на стене. А еще ближе получится? Так. А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, там маленький лечен. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 319. faster-whisper / tiny
+### 343. faster-whisper / tiny
 
 - **ID:** `1cc193bf723c`
 - **Language:** ru
@@ -6738,7 +7241,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Все, для яхоги массой, направлено, понимаете? Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, вер А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Поптюня убреклам, как сон. Вот это там, что только не снимался. Там ее рейдульте, извините, пожалуйста, в хранном шолдерсе. И муж заворотнюк и кого-то только не приглашает. И в даже Сергей дружку. Если что-то. Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Благодарю. Благодарю. А я сейчас... А вы еще на все биле, да? Вы еще какой-то стандап был в крокостите холе, такое вы есть у вас? Нет, не уйти голову. Ну и правильно, это это как бы договно, а честно говоря, стандапы. И прямо в воду. В воду. И верим в воду. Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик, здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт? Очень интересно. Да, а то у меня есть рублей на двенад, да? Да, вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь, поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто, да, Марик, я лечусь. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 320. faster-whisper / tiny
+### 344. faster-whisper / tiny
 
 - **ID:** `2e40b0d11f6d`
 - **Language:** ru
@@ -6758,7 +7261,27 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Все, для яхоги массой, направлено, понимаете? Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, вер А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Поптюня убреклам, как сон. Вот это там, что только не снимался. Там ее рейдульте, извините, пожалуйста, в хранном шолдерсе. И муж заворотнюк и кого-то только не приглашает. И в даже Сергей дружку. Если что-то. Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Благодарю. Благодарю. А я сейчас... А вы еще на все биле, да? Вы еще какой-то стандап был в крокостите холе, такое вы есть у вас? Нет, не уйти голову. Ну и правильно, это это как бы договно, а честно говоря, стандапы. И прямо в воду. В воду. И верим в воду. Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик, здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт? Очень интересно. Да, а то у меня есть рублей на двенад, да? Да, вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь, поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто, да, Марик, я лечусь. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 321. faster-whisper / tiny
+### 345. openai / tiny
+
+- **ID:** `9f41a2910a39`
+- **Language:** ru
+- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Duration:** 4.82s
+- **Memory:** Δ 0.0 MB, peak 9407.7 MB
+- **Beam size:** 3
+- **Temperature:** 0.42
+- **Compute type:** float32
+- **Condition on prev:** False
+- **Batch size:** 0
+- **WER:** 78.69%
+- **CER:** 52.49%
+- **Timestamp:** 2026-01-07T15:32:05.037956+00:00
+
+**Text:**
+
+> Удал И все, что есть? Так еще раз окно, в крокус сите Холл. Да, он дамарта, нет рпол. Дитерболл? Да, ну, домов, домов, домов, домов, домов... Я ходю массой, я правильно понимаю. Да, верно. А теперь я не знаю. Вера, верно, верно. Мы организатором, Время в телефоне в режиме выделяем Это по номиналой, Идината, на книгах-то, Пугачил сейчас, Передhood, То есть там в оттопе Ита тысяч рублей. Ну, пугачил вы извини, Верили какая веречена? Ну да. В оттопе Породайом. А так, Натит раполенными дай туда В оттопе Держися, что вы делаете? А что при обносцени сидеть? Можно, чтобы динерболом выступал, я сидел из премотки. Ну, ну, а когда ты не могу сделать, он не да первый ряд мартера. А еще ближе получится? Нет. А еще один раз меня не удастся. А еще один раз меня не удастся. А еще ближе получится. А еще один раз меня не удастся. А еще ближе получится. Так, а дитрбол, она эта которая из них. Снова сами спал. Получит под перецдин нормальный результат. А Волосами был с белыми волосами. Как Алекса Дормаршел? Нет, нет. Кому не варшел. Нет, похож, лицо. А, за летцом? Нашел, нет, нет. А это другой, который пустю не увол, прикладен как соль рухон, демол. Ой, да там что-то вниз не мало. Да. Да. Там у ее рейдульте, звенивайте пожалуйста, в кэннан сольдерсе. И муж заворотнюк и кого там только не принадлажает. И в даже Сергея Дружковь. Если что-нибудь. Ну хорошо, знаете, да, но Алексей Дричик, не мое. Я очень сильно люблю это, все дела. По-моему, там они не трополены на прогулу. Сама идея – дурацкая, честно говоря. А это первое говорю в вонах. А вот все-то вонах было начинать. Ага, один ел-то проленаю, пиктак, пинтер. А вот петер не нужно. Иди, все спиктак, ртопорбу награил. Я знаю, да, он его любит, он его петнациктелит играет уже. Но да, просто, а летом будет прощать, а это как, но, в любом случае, играть из пекса, а это будет в наносить, и вон с тёмно-то и в чём-то. Ну, это в два человека придет. Да, не, ну почему, да, вольт полная, это васть рукой, не тихол. Я тебя не ею, у тебя у себя. А ещё она всё били. А ещё какой-то стандап был в крокоситете-холе? А такое вы есть у вас? Нет, нет. Мне на ней мероприятия полетню и дегал там раз на шоу. Моу, стандап от не только. Ну и правильно. Это это как разговор на час на Горь. Стандап. И прям в Горь. И в Горь. И в Горь. И в Горь. Воню взойдет Новая программа, к испаниговору, что вопрос 10. В нём уградцы. Ну а, ну а, ну, да, это политиков чиновникам. А здесь, там вроде алкоголиков, и, конечно, даже, если будет немного подсапэ, смотричать на вопрос 10. Не пройдем? Для нас программа до оттень ваньте, мовым, а, да. В А, ма, оттолт, мовым, в арте, молодежь, на пронят. Очень интересно. Но... Двадцать пилот, то у нас есть рульной двенадки. Они делом пару метров. Они разделали. Они разделали на такте. Давайте просто не могу планировать. Ничего не вперед. Потому что я сейчас лечусь. Поэтому не знаю, когда я с вами могу освободиться. А вот только о деньге, а просто... Я не вечее отделаю. Когда, на 4 месяц-то не было дело, то о моменте я будет на плане. Ведь ему, чтобы вы попрали второе. Деньги, плотикой? Деньги надо заплатить же еще, получается мне сейчас. Ну тогда, наверное ничего не получится. Ага, не потому что что-то так не мало стать, но введение как у нас чего вы где-то, то это поверь, то меньше еще. Я ничего в опять-таки, мы с вами уже обсуждали, то вы лично такая, что вы извините, пожалуйста. Ну да. Ну тогда я думаю, до новых встреч. Да, я поезд и фоангер Ломда, да? Обязательно. Что там у вас озвольну сомнений? Дождались? А дитрполн. Дитрполн. А дитрполн. Дитерболен
+
+### 346. faster-whisper / tiny
 
 - **ID:** `8f2a9c0ea74b`
 - **Language:** ru
@@ -6778,7 +7301,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 322. faster-whisper / tiny
+### 347. faster-whisper / tiny
 
 - **ID:** `da55f9f381a0`
 - **Language:** ru
@@ -6798,7 +7321,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 323. faster-whisper / tiny
+### 348. faster-whisper / tiny
 
 - **ID:** `389b3d80670f`
 - **Language:** ru
@@ -6818,7 +7341,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 324. faster-whisper / tiny
+### 349. faster-whisper / tiny
 
 - **ID:** `6216ef3e7e24`
 - **Language:** ru
@@ -6838,7 +7361,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, на такая, что я извините, пожалуйста. Ну тогда я думаю, до новых встреч. Обязательно. Недождались. Дитерболлин. Дитерболлин.
 
-### 325. faster-whisper / tiny
+### 350. faster-whisper / tiny
 
 - **ID:** `cb8e5eaa3ddb`
 - **Language:** ru
@@ -6858,7 +7381,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 326. faster-whisper / tiny
+### 351. faster-whisper / tiny
 
 - **ID:** `1a6836113da2`
 - **Language:** ru
@@ -6878,7 +7401,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитр Боллин. Дитр Боллин.
 
-### 327. faster-whisper / tiny
+### 352. faster-whisper / tiny
 
 - **ID:** `c65d3cb1826f`
 - **Language:** ru
@@ -6898,7 +7421,7 @@
 
 > Так еще раз окно в крокус Сити Холл дитр Боллин. Все. Леня Хои Масои, направлено, понимай. Да, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитр был, это который из них. А волосами был с белыми волосами. Как Аликса Дормаршел? Вот такой? Нет, нет. Нет, похоже лицо. Дормаршел? Нет, нет. Дормаршел? Нет, нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Дормаршел? Нет. Я очень сильно люблю это сделать. Сама идея дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это что-то, два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да У него кто идет новая программа, по ней хорошего пробды. И где он там уградов? Да, это политика. Здесь довольно дело, как у япле. Отвенять этого пробды. Не пройдет. Очень интересно. Да, по-моему, я тебя тут и люблю на двенадцать. Да, вот я просто не могу планировать. Ничего на берет, потому что я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Такой падения, а просто, по-моему, я не лечу. Да как это же все от Господа бога зависит здоровья, это от чего здесь. Я это никак уже не решаю. Поэтому раз можно, может, вы мне просто с кемиции для СМС сообщения? Нет, зачем? А там же надо? Деньги платить. Деньги надо заплатить женщину, да? Получается мне сейчас. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, на такая, что я извините, пожалуйста. Ну тогда я думаю, до новых встреч. Обязательно. Недождались. Дитерболлин. Дитерболлин.
 
-### 328. openai / base
+### 353. openai / base
 
 - **ID:** `b4353c1bdf95`
 - **Language:** ru
@@ -6918,7 +7441,7 @@
 
 > ВЫСТРЕЛЫ Кровь посиден более дал такому. Так, еще разок. В Крокус и Тихол. Так, в Гронс-Дэмарта дитер Боллон. Дитер Боллон? Да, ну, Толлон, Тандар, Лодон Бокис. Веняхо, ямасоль, правильно понимаю? Да, верно. Акипича и паровера, игол. Организаторы, сграная в телефоном режиме, выделяем метап, по номиналу, и, значит, на книгах-то, покачел сейчас в биленду, и сам по стол, по 50 тысяч рублей. Ну, покачел, извините меня, вели какая величина. Ну да, просто продаем под. А так-то на недорополенном, дайдут 2 тысяч рублей И до 20 тысяч уже в лучших местах партера. Адонсуальный партер идет по 3500. Поэтому просто подскажите как он по 3500. Так. Игретелом то ли вы присидели в эту инсуальный партер? А что прям на стене сидеть можно, чтобы Диндр Боллон муступал, и я сидел прямо в этой стене. Ну, а он так, что я могу сделать, а первые ряд партера. А еще ближе получится? Нет. Так, а Дитр Боллана, это которые из них? Ну, с улацами, но сейчас поддерекция нормально разистал. А в улацами был... с белыми улацами, как Александр Маршелл, вот такой? Нет, нет, нет. Какой Маршелл? Нет, похож лицо. А, ну лицо... Маршелл, нет. А, нет, нет, это... это другой, которая после у него в рекламе, Кламика с шеллор в чём, не мало. Ой, да там кто-то конец не снимался. Ну да. Там и Юрий Дульти, извините, пожалуйста, в конец Ролдерсии. И муж заворотнюк, и кого там только не приглашает. И даже Сергей Дружко, если что-то. Ну хорошо, знаете, ну а то Алексей Сергеевич, понимаю. Я очень сильно люблю это всё дело. Ааааа, так у нас там один, они-то не то более натраку. Самая идея дурацкая, честно говоря. А это разговор у нас не треноги его. А вот с этого надо было начинать. А где его сопролено, его с пиктакой 50. А вот это не нужно. И единственный пиктакой, который он играет. Я знаю, он его любит, он его 15 лет играет уже. Ну да, просто, а тем летом будет прощать на этот раз. Я не знаю, что будет закрывать от спектакль и билетов будут встать. А ну, кто это? Кто это? Два человека придет? Да нет, но почему, а вот полная эта васть, Крока, сихол. Нет, я ничего о себе. А есть еще... А вы еще в на все билета? А еще какой-то стендап был в Крока с Итихолю? Такой вы есть у вас? Нет, нет. Нет, но есть мероприятие. Я тебя полет, не уйти, колоссом раз дешевле, стандапат, нет такого. Ну и правильно, это как бы это говно отчисного ряда. И прямо в деть. Вот, и в деть. У нас подухом. У него к задел новое программу, к испанних хорошего, просто и у него там уграться. У нас уедает там полинька, в чиновникам, артистов, в серусе алкоголиком. И в конце даже если будет немного под шафе, отвечает на вопросы. Не порадем в этом программу, да, оттойкуать манта, а в мостол, кандвар, ты молодёжен, а пронезли. Очень интересно. Но... А я не могу планировать ничего на период, потому что я сейчас лечусь, поэтому я не знаю, когда я смогу освободиться. А так они не обрабатывали. Я себе ничего не делаю. Тогда на четыре места не буду делать. Дело на два места. Да, да, да, да, по-моему, чтобы вы попрали здоровье. Да, как это шоу? Да. Это все от Господобога зависит здоровье. Я-то от чего здесь? Я-то никак уже не решаю. Поэтому разможно. Может вы мне просто с кинец СМС сообщение? Нет, зачем? Я не могу сказать, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не то, что это не Ну, погод, что вы опять-таки мы с вами уже обсуждали? Ты в личину а такая, что вы извините, пожалуйста. Ну да, да. Ну тогда я думаю, до новых встреч. Да, я поездный, пооберл вам надо. Обязательно. Потому что на его сазла на сомнений дождались. Дитр Болон!
 
-### 329. faster-whisper / tiny
+### 354. faster-whisper / tiny
 
 - **ID:** `7f5dde613bea`
 - **Language:** ru
@@ -6938,7 +7461,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 330. faster-whisper / tiny
+### 355. faster-whisper / tiny
 
 - **ID:** `a5c13d3ff067`
 - **Language:** ru
@@ -6958,7 +7481,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 331. faster-whisper / tiny
+### 356. faster-whisper / tiny
 
 - **ID:** `a72cf5eb4e8a`
 - **Language:** ru
@@ -6978,7 +7501,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 332. faster-whisper / tiny
+### 357. faster-whisper / tiny
 
 - **ID:** `629e844b5ac9`
 - **Language:** ru
@@ -6998,7 +7521,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 333. faster-whisper / tiny
+### 358. faster-whisper / tiny
 
 - **ID:** `c98a7254a18e`
 - **Language:** ru
@@ -7018,7 +7541,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 334. faster-whisper / tiny
+### 359. faster-whisper / tiny
 
 - **ID:** `f9a88d85bfd4`
 - **Language:** ru
@@ -7038,7 +7561,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 335. faster-whisper / tiny
+### 360. faster-whisper / tiny
 
 - **ID:** `5fb87d3e9103`
 - **Language:** ru
@@ -7058,7 +7581,7 @@
 
 > Так, еще разок. В крокус Сити Холл. Дьютер Боллен. Всё, для яхоги массой, направлено, понимаете? Да, верно. А кинпичай, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, верно, А дитрбол, это который из них. А волосами был с белыми волосами. Как Алих с Адармаршел? Вот такой? Нет, нет. Нет, похоже, лицо. Маршел? Нет, нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адармаршел? Нет. Адар Я очень сильно люблю это сделать. Сама идея, дурацкая, честно говоря. А вот с этого надо было начинать. А вот я тебе не нужно. Я знаю, да, он его любит, он его 15 или это играет уже. Ну да, просто летом будет прощать, но будет закрывать этот п騙. О, ну вот это, кто это? В два человека придет. Да, это будет кругленький пол. Да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, да, Понял, когда идёт новая программа, тиспания хорошего пробды, где он там уградывает, да, это политик. Здесь довольно дело, как у 옆а, а ты не это вопрос, да? Не пройдёт. Очень интересно. Но... Да вот я просто не могу планировать, ничего не вперед, потому что... я сейчас лечусь. Поэтому не знаю, когда я с вами даже смогу особо диться. Так, падение, а просто... Малький лечен. Деньги надо заплатить женщину, да? Получается. Но тогда, наверное, ничего не получится. Я ничего в опять-таки, мы с вами уже обсуждали. Товарищи, ну, такая, что я извините, пожалуйста. Ну, тогда я думаю, до новых встреч. Обязательно. Недождались. Дитер Боллин. Дитер Боллин.
 
-### 336. openai / tiny
+### 361. openai / tiny
 
 - **ID:** `37f7fad667e5`
 - **Language:** ru
@@ -7078,7 +7601,7 @@
 
 > СТУК В ДВЕРЬ СТУК В ДВЕРЬ Движения Так еще разок В кроку сети хол Да, утром демарт, а не терпол Детер Боллин Да, ну, а то мы в данном году Всё, для яходи массор, я правильно понимаю Доверда А кинпичай, веро и вон Мы организажно, когда в КОНахере живи, выделяем это Паниминал и витинад, а на книгах, на пугачу, сейчас встал В оттопите, а еще в блин Ну, пугачу вырезали меня, верили какая веречена Ну да В оттопа Продайем А так, значит, располенными, так вот Ну, и еще в роли И даже здесь еще же в ушах Исторг Порпера А танцовальный партер идет с волнивитинцом Поэтому просто подкажите как он Парить Инстар Кто-то? Не гляделам Да у меня, по-же, вы в бенеделии потом вцоваре А что, премно стени сидеть? Можно, чтобы динер Боллин в выступало Я сидел из премот Тятото, на сцене Ну, ну, а на даде я и самому сделать он А еще ближе получится Нет Так, а дитер Боллин, это который из них Ну, а сами в сбелке волосами Как Алих Садор Маршел, вот такой Нет, нет, какой не Маршел Нет, похож, лицо А, ну лицо Маршел, нет А на это, это другой, который пустил него Прикладен, как селор в бенедемал Ой, до того, что только не снимался Да, да, да Там мы ее рейдульте извини, теплажался Вкань на стрелдерсе И муж заворать неук, и кого там только не древажает И в даже Сергея дружку Если же что-то Ну хорошо, он знает, это Алих Судричек Я очень сильно люблю это все дело Но там был его сама, не детер по Леногрогу Сама идея Дурацкая, честно говоря А это, первый раз в Говору в Нашенствах В Гитере Нагива А вот все-то в Анатубу начинать Ага, Алих, он подправлен на ее Пиктак и Киндер А вот Петер не нужно Петер, все, Пиктак, как на тормонеграил Я знаю, да, он его любит, он его 15 или это играет уже Ну да, просто, а именно будет прощать И так, как на ОБО будет закрывать А только и где-то было бы только на тормонегра ОБО, ну вот это, что это, два человека придет И ну почему? А вот полная, это будет Хророгу А я у тебя А я сейчас еще, а вы на все были, да А вы еще какой-то стандап был в Хророгу Ситихоли А такое вы есть у вас Не, не, не на здесь, мероприятия Полет не уйдет голова Раз за шону, донтап от не отойди Такого Ну и правильно, это как бы это главное, а честно говоря Стандапы И прям его в гору И верим в гору И верим в гору Воню взадил целый программ в киспании Русс, что вопрос Ты где он там уград был, там у нас Ну, у нас, ждает на палинков чиновникам А артисто, вроде я у кого-ликом И, что-то даже если будет, и много пудшафе А ты чай на вопросы Не пройдет На программу, до отойть, вон, это моего млада А в мостку, вон, это молодежь на пронескей Очень интересно Но Та у меня тут А я думаю, если же вы были на две надпеди А я тебя вам пару милых делаю А вы не ручиваются на тридцать Да, я просто не могу планировать Ничего не вперед, потому что Я сейчас лечусь Поэтому, не знаю, когда я согласу в однице А ты, по-дине, правда Да, я не вечее отделаю Тогда на 4 мл, ты не only делаю На мостку, я буду да, напалить Ведь ему, чтобы вы попрали в дороге Так как это ж? Да Это ж все, господобоку зависит Здоровее, это я тогда, что здесь Я-то не как уже Не решаю Поэтому, раз можно Может, вы мне просто скимите Для самая сообщения? Нет Ну, зачем? Что я прочитать, мая сообщение? Да, я в курсе порву я сделаю хорошую Просто это динхрем У него распятание Нового деперства А это новое программу Программа вопрос Да, там же надо Динхе, получается Динги платить, правильно? Динги надо заплатить Живи, что, да? Конечно Ну, тогда, наверное, ничего не получится Ага, нет, ну что, что-то Зтоять не магия, стоять не много идений Как в мое чего вы где перед этот мовильный Не пустя, что вы опять-таки мы с вами уже обсуждали Товарища, ну а такая, что вы извинись в параллстве Ну да Ну так, да, я думаю, до новых встреч Да, я поезд и подоберу вам надо Обязательно Лишь, ну а у вас озвестно не дождались Да, ну, а у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть А у вас есть
 
-### 337. openai / base
+### 362. openai / base
 
 - **ID:** `c2f939fc9dc2`
 - **Language:** ru
@@ -7098,7 +7621,7 @@
 
 > ТРЕВОЖНАЯ МУЗЫКА ТЕЛЕФОННЫЙ ЗВОНОК КРОХОТОРА Так, еще разок. КРОХОТОРА ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК ТЕЛЕФОННЫЙ ЗВОНОК Организатора, зону с кремом телефоном режиме и выделяем метаппаноменалой и, значит, на книгах-то покачу сейчас в Белестную ССМП-10 от тысячи рублей. Ну, покачу, извините меня, вели какая величина. Ну, да. Ну, да, продаем, продаем. А так-то на недорополенном двух тысяч рублей и до 20 тысяч уже в лучших местах Партера. Адонсуальный Партер идет по-тритинцам. Поэтому, просто подскажите как вам подритинц, да? Так. Игреть дело, то ли, чтобы вы посидели в моторцовале. А что, прямо на сцене сидеть можно, чтобы Диндрболон маступал, и я сидел прямо вот, типа, на сцене. Ну, а он, татчик, ему можно сделать, а первой ряд Партера. А еще ближе получится. Нет. Так. Адонсуальный Партер, а адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, Адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, Адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, Адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, Адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, адонсуальный Партер, Деньги платить? Деньги надо заплатить еще, да, получается мне еще. Ну да, конечно. Ну тогда, ничё не получится. Аааа, нет, ну все, что с татьнимание стоит. Но в единиках с полочевок, где билет, то в единиках с полочевок, где билет, то в единиках с полочевок, то в единиках с полочевок, где билет, то в единиках с полочевок, где билет, то в единиках с полочевок, где билет, то в единиках с полочевок, Ну да, ну тогда я думаю, до новых встреч. Да, я по единиках наберу вам надо. Обязательно. Потому что на его сазала на самонидождались. Дитр болон! Дитр болон! Дитр болон! Дитр болон!
 
-### 338. openai / large-v3
+### 363. openai / large-v3
 
 - **ID:** `2577b0479959`
 - **Language:** ru
@@ -7118,7 +7641,7 @@
 
 > так еще разок в крокус city hall дитер болан все и махай масой я правильно понимаю ну богачу извините меня вели какая величина ну да да а что прям на сцене сидеть можно чтобы дитер болан выступала я сидел прямо на сцене а еще ближе получится так а дитер болан это который из них а волосами был с белыми волосами как александр маршал вот такой нет нет нет похож лицо маршал декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре декабре д дитер боулен
 
-### 339. faster-whisper / tiny
+### 364. faster-whisper / tiny
 
 - **ID:** `617f06d9e557`
 - **Language:** ru
@@ -7138,7 +7661,7 @@
 
 > Аккуратная Вкрока с идти холл Да, и грунт дамарта, и не трполл Детер Болл Да, ну, а дома, дам, там там, а там в городе Всё, для меня холе массой, я правильно понимаю Доверда Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная Аккуратная
 
-### 340. openai / tiny
+### 365. openai / tiny
 
 - **ID:** `3b1066520a0e`
 - **Language:** ru
@@ -7158,7 +7681,7 @@
 
 > Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау! Вау!
 
-### 341. openai / tiny
+### 366. openai / tiny
 
 - **ID:** `d2f4ddf518dd`
 - **Language:** ru
@@ -7178,7 +7701,7 @@
 
 > ДИНАМИЧНАЯ МУЗЫКА Руба, лидиумоля. Нал, так он? Так еще раз в крокус и тихол. Да, тихорумда, марта, нет рпол. Дитерболлин. Да, ну, долла, долла. Да, ну один другим. Всё, для яхоги массой. Прямо, понимаете. Сто верно. А кто-то и чай, вера и убор. Ну и организация, с этим комнаты в режиме и выделяем это парниналой и дитам, так как-то пугачивающая смелинная, что и сам в оттопах, в них еще прийти. Ну пугачуов, извините меня, верил какая веричена. Ну да, в оттопах продаю. А так-то на титропольное метод, да, да. Ну, а еще ближе получится? Нет, я не знаю. Я не знаю. Да, я не знаю. Готово, да. Да. Да. Да. Да. Ну, а ты, я не знаю. Да. Мне не знаю. Да. Ну, что-то. Да. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Я не знаю. Нет! Так. А дитр Болана, это который из них? Ну а сами сейчас подфиг за нормальный результат. А Воласами был в сбелке в Воласами. Какалий с Адр Маршел? Вот такой? Нет... нет, нет... Какого не Маршел? Нет, похоже лицо. Маршел не нет. Ага... Это другое, которое опустил него в рекламка с сомерских, он немал. Вот это там что-то не снимался. Да, да. Там ее рейдульте, извините, пожалуйста, в Кэннан-Солдерсе и муж заворотнюк и кого-то только не древнажают. И в даже Сергей Дружку, если же ты? Ну хорошо, он найдет, а в алкогий речек. Я очень сильно люблю это всё дело. Что там я там? там они, конечно, траполе на прогол. Сама идёт. Дуратская, честно говоря. А это первый разговор в Ванашин, что Соединянея Ногиева. А вот цвета ванаты было начинать. Ага, один его подправлен на ее пикта к пиндиарь. А вот петер не нужно. Иди, сейчас пикта, как это, аторбун играет. Я знаю, да, он его любит, он его петнации, петелет играет уже. Ну да, просто, аентимлюет он будет в прощаль. будет прощать, но мой бой закрывать этот писак, а теперь это был в той мотой, сейчас геоносой, а ну вот это в два человека придет? Ни, ну почему? Будь полна этого хрупа, кихол. Ди, а у тебя себе. А вы ещё на всё, или да? Вы ещё какой-то стандап был в крокосить и холе, такое вы есть у вас? Не, не на ней, мероприятия, полетнюю тебе голова. Раз за шоуну, бдендапа от неотовью. Такого. Ну, и правильно, это, как это головная, честно говоря, стендапа. И прям в горе, не в горе. И верим в горе. Вон, по-другому. Вон, он взадет на лекро-граммах и спонин на Русжном rope 1. Вон, он там уградывает, там у нас, ждает напалить ко в ченоникам артистов, Я не в какуаликому и, как-то, даже если будет немного пудшафт, а сейчас у меня это вопрос. Не проходил? Для нас программа до 20-мого марта, а в мотот, вон, вон, вон, вон, там молодежь на пронески. Очень интересно. Но... Я не хочу, я буду это виновать. Я, я не делал пару миллов, а вы не ручу, а вон я так не делал. Давайте просто не могу планировать. Ничего не период, потому что я сейчас лечусь. Поэтому не знаю, когда я с тобой с могла собрать. А, так и от меня оправдно... Какие-личы они делают? Когда они нанесли, они будут делать, они хотят, они хотят. Они хотят, они хотят. Они хотят, они хотят. Они хотят, они хотят. Да как это же все. Да. Это же все от Господобока зависит здоровья, это я, это, это, это, это, это чего здесь? Я это никак же. Держи. Я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю, что я не знаю Ну тогда, да, наверное ничего не получится. Ага, не было, что что-то с тема и стать новой денег, как в вашего где-то, это мовеньям и честь. Я чего вообще опять-таки мы с вами уже обсуждали, то или честно, такая что-то извините, пожалуйста. Ну да, ну тогда я думаю, до новых встреч. Да, я по headphones, надо первым надо. Обязательно. В общем, до новых созвода, с вами не дождались. Рассказывает, что у меня есть письмо, но не подожди. Дитерболом, Дитерболом.
 
-### 342. openai / tiny
+### 367. openai / tiny
 
 - **ID:** `bc6dc27f2b06`
 - **Language:** ru
@@ -7198,7 +7721,7 @@
 
 > Вау, а я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду. Я не буду.
 
-### 343. faster-whisper / tiny
+### 368. faster-whisper / tiny
 
 - **ID:** `1b526d2293c3`
 - **Language:** ru
@@ -7218,7 +7741,7 @@
 
 > Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС. Вперед в СИС.
 
-### 344. openai / large-v3
+### 369. openai / large-v3
 
 - **ID:** `fc40fdcf8fab`
 - **Language:** ru
@@ -7238,7 +7761,7 @@
 
 > так еще разок в крокус city hall дитер болан все для хо яма соль а правильно понимаем ну богачу извините меня вели какая величина ну ну а что прям на сцене сидеть можно чтобы дитер болан выступал я сидел прямо на сцене а еще ближе получится так один тропа ул это который из них а волосами с белыми волосами как александр маршал такой нет похож лицо маршалу кове это другой который после у него в рекламе хоттон шолдерс снимался ой да там кто только не снимался ну да там и юрий дудь извините пожалуйста в хоттон шолдерс и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что ну хорошо знаете сразу алексей сергеевич я вас понимаю я очень сильно люблю это все дело ага у нас все хорошо все хорошо все хорошо все хорошо ну а так вот у вас сама идея сходить на дитера болина как вам сама идея дурацкая честно говоря а если разговор бы начался с дмитрием нагиевым а вот с этого надо было начинать ага ходить я вас отправлю на его спектакль кристиан а вот это не нужно единственный спектакль в котором он играет я знаю да он его любит он его 15 лет играет уже ну да просто этим летом будет прощальное так сказать но будет закрывать этот спектакль и билеты будут стоить от 60 до 100000 рублей ооо ну это ж кто там два человека придет не ну почему гал будет полный это будет крокус сити холл ничего себе а есть еще а вы еще вы на все билеты а еще какой-то стендап был в крокус сити холле такой есть у вас не не не у нас есть мероприятия балет мюзикл там разные шоу но мы не будем петь это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет шоу это будет
 
-### 345. openai / tiny
+### 370. openai / tiny
 
 - **ID:** `b6ede429f97f`
 - **Language:** ru
@@ -7258,7 +7781,7 @@
 
 > Рык, а где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? А где я? Ну, будуча, вы извините меня, верили какая веречена. Ну да, ну да, да, я продаю. А так-то на ней доработаем, да и туда. Ну, и еще вели не до 20000 уже, вовсе есть на фарбера. А танцовальный фартер идет с фарбитинцом. Поэтому просто подкажите как вам, парень, да. А что? А ты гляделам, да у меня, по-же вы понедели потом сомнят. А что, при обностении сидеть, можно, чтобы диндерболен в муступану, я сидел из прям вот эти татасты. Ну, ну, а когда он кад, и где мы мы сделали он? Да, первый ряд фартера. А еще ближе получится? Нет. Так, а дитерболен, это который из них? Ну а сами, получается, подтик, это нормальный разумал. А Воласами был в сбелке в Воласами, как Алихса Дормаршил, вот такой? Нет, нет, какой у него? Нет, похоже лицо. А, за лицо? Маршил? Нет, нет. А это... Это другой, который опустил него, в рекламе, как у Сорвки. Вот это там, что-то не снимался. Ну да. А, да. Там, и юридульте, звоните, пожалуйста, в Кэннан Солдерсии, и муж заворотнюк и кого-то только не древнажает. И в даже Сергей Дружку. Если же что-то. Ну хорошо, на эти, да, в Алихе Дориме Дориме Дориме Дорима. Я очень сильно люблю это всё дело. А, вот так, он там, там они, конечно, полно на проголу. Сама идея Дурацкая, честно говоря. А это, разговору бы начнется, что это не древнагива. А вот все-то в Анатболу начинать. Ага, один я его подправляю на юридок кгитер. А вот, я тебе не нужно. Идея все спектакры, которого награивает. Я знаю, да, он его любит, он его 15 или это граид уже. Ну да, просто, а эмлетом будет в прощай, а это как, но он будет закрывать этот п騙сак, или это будет в день, в день, в день, в день, в день, в день. Ну вот, это, в два человека придет. Это не, ну почему бы, а вот, полная, этого и хрупа не кихол. Дево, я не ухожу себе. А еще, она все били, да, вы еще какой-то стендап был в Крока Ситихоле, такое, вы есть у вас? Нет, нет, нет, нет, нет, мероприятия, полет не уйти кгол, а у нас раз до шону, дандапа от не отой, такого. Ну и правильно, это как и договно, а честно говоря, стендапа. И прям, и вовтор. И верим. И в нём подумаем. Понём, зайдёт, ну, и программах и спать и хорошего крутить. И в нём уградцы. Ну, да, там, ну, вот, ждает, напаленька в чиновникам. А здесь, там, вроде, алкоголиком. И, и, как-то, даже, если будет, и много, плюс шапы, а, замечает, на вопросе, не пройдёт. Для напрограма, до отой, квань, прямого млада, а, в мантофону артемолодежным, напрыводёт. Очень интересно. Ну, а, допомедут, а, да, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и и, и и, и, и, и, и, и и, и, и и, и и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и и, и и, и, и и, и и, и, и и, и, и и, и и и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и, и, и, и, и, и, и, и, и, и, и и, и, и и и, и, и, и и и и и и, и и и и и, и и и и и, и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и и
 
-### 346. openai / large-v3
+### 371. openai / large-v3
 
 - **ID:** `cc1756f2fd08`
 - **Language:** ru
@@ -7277,4 +7800,4 @@
 **Text:**
 
 > так еще разок в крокус city hall дитер болан все и махо и массой я правильно понимаю организация ну богачу извините меня вели какая величина ну да да а что прям на сцене сидеть можно чтобы дитер болан выступала я сидел прямо на сцене а еще ближе получится так а дитер болан это который из них волосами с белыми волосами как александр маршал такой нет похож лицо маршалу зукову ахаха это другой который в фокке у него в рекламе хэдд энд шолдерс еще было снимался ой да там кто только не снимался ну да там и юрий дудь извините пожалуйста в хэдд энд шолдерсе и муж заворотнюк и кого там только не приглашают и даже и сергей дружко если что ну хорошо знаете сразу алексей сергеевич я вас понимаю я очень сильно люблю это все дело ага ну а так вот у вас сама идея сходить на дитера болина как вам сама идея дурацкая честно говоря а если разговор бы начался с дмитрием нагиевым а вот с этого надо было начинать ага а где я вас отправлю на его спектакль кристиан а вот это не нужно единственный спектакль в котором он играет я знаю да он его любит он его 15 лет играет уже ну да просто этим летом будет прощальная так сказать но ну да просто этим летом будет прощальная так сказать но будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей будет закрывать этот спектакль и билеты будут стоить от 60 до 100 тысяч рублей ооо ну это ж кто там два человека придет ооо ну это ж кто там два человека придет не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл
-�и холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл
+�ти холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл не ну почему гал будет полный это будет крокус сити холл
