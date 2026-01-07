@@ -153,7 +153,7 @@ Examples:
     "--backend",
     "-b",
     nargs="+",
-    choices=["faster-whisper", "openai", "whispercpp", "yandex", "openai-api"],
+    choices=["faster-whisper", "openai", "whispercpp", "yandex", "openai-api", "deepgram"],
     default=["faster-whisper"],
     help="Transcription backend(s) (default: faster-whisper)",
   )
@@ -263,7 +263,7 @@ Examples:
     "-b",
     nargs="+",
     default=None,
-    choices=["faster-whisper", "openai", "whispercpp", "yandex", "openai-api"],
+    choices=["faster-whisper", "openai", "whispercpp", "yandex", "openai-api", "deepgram"],
     help="Backends to search (default: all local backends)",
   )
   optim_parser.add_argument(

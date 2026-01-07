@@ -12,6 +12,7 @@ from typing import Any
 from backends import (
   CLOUD_BACKENDS,
   resolve_whispercpp_model_path,
+  transcribe_deepgram,
   transcribe_faster_whisper,
   transcribe_openai_api,
   transcribe_openai_whisper,
@@ -174,6 +175,8 @@ def run_transcription(  # noqa: PLR0913
     }
     api_model = openai_model_map.get(model, "whisper-1")
     result = transcribe_openai_api(audio, api_model, language, temperature)
+  elif backend == "deepgram":
+    result = transcribe_deepgram(audio, model, language, temperature)
   else:
     msg = f"Unknown backend: {backend}"
     raise ValueError(msg)

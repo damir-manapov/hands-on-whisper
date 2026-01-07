@@ -7,22 +7,21 @@
 
 ## Performance Summary
 
-| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
-|---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|------|------|
-| 1 | yandex | general | - | - | - | - | - | - | ru | 77.0 | 27.7 | 48.6 | 87.93 | 70.08 |
+| # | Backend | Model | Temp | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
+|---|---------|-------|------|------|--------|------|------|------|------|
+| 1 | yandex | base | - | ru-RU | 96.6 | 27.3 | 46.9 | 87.93 | 70.08 |
 
 ## Transcription Results
 
-### 1. yandex / general
+### 1. yandex / base
 
-- **ID:** `87e0f498c92a`
-- **Language:** ru
-- **Runtime:** cpu
-- **Duration:** 76.96s
-- **Memory:** Δ 27.7 MB, peak 48.6 MB
+- **ID:** `dd964679d708`
+- **Language:** ru-RU
+- **Duration:** 96.59s
+- **Memory:** Δ 27.3 MB, peak 46.9 MB
 - **WER:** 87.93%
 - **CER:** 70.08%
-- **Timestamp:** 2026-01-07T15:15:55.518413+00:00
+- **Timestamp:** 2026-01-07T21:14:58.820155+00:00
 
 **Text:**
 

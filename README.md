@@ -1,6 +1,6 @@
 # hands-on-whisper
 
-Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), [whisper.cpp](https://github.com/ggml-org/whisper.cpp), [OpenAI API](https://platform.openai.com/docs/guides/speech-to-text), and [Yandex SpeechKit](https://cloud.yandex.com/services/speechkit).
+Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), [whisper.cpp](https://github.com/ggml-org/whisper.cpp), [OpenAI API](https://platform.openai.com/docs/guides/speech-to-text), [Yandex SpeechKit](https://cloud.yandex.com/services/speechkit), and [Deepgram](https://deepgram.com/).
 
 ## Prerequisites
 
@@ -112,6 +112,27 @@ uv run python src/transcribe.py transcribe audio.wav --backend faster-whisper ya
 
 The tool automatically uses async recognition for audio > 30 seconds (Yandex sync API limit).
 
+#### Deepgram
+
+For comparing with Deepgram cloud API:
+
+```bash
+# Set API key
+export DEEPGRAM_API_KEY="your-api-key"
+
+# Transcribe with Deepgram
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -l en
+
+# Try different models
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-2 -l en
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m whisper-large -l en
+
+# Adjust temperature (0-1, higher = more random)
+uv run python src/transcribe.py transcribe audio.wav --backend deepgram -m nova-2 --temperature 0.2 -l en
+
+# Available models: nova-2, whisper-large, whisper-medium, whisper-base
+```
+
 ## Usage
 
 ```bash
@@ -196,7 +217,7 @@ The report includes:
 **Output file naming**: Results are auto-saved with runtime suffix:
 - CPU runs → `audio_cpu.json`, `audio_cpu.md`
 - GPU runs → `audio_gpu.json`, `audio_gpu.md`
-- Cloud backends → `audio_openai-api.json`, `audio_yandex.json`
+- Cloud backends → `audio_openai-api.json`, `audio_yandex.json`, `audio_deepgram.json`
 
 ### Metrics
 

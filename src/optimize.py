@@ -12,6 +12,7 @@ from backends import (
   ALL_COMPUTE_TYPES,
   ALL_MODELS,
   CLOUD_BACKENDS,
+  DEEPGRAM_MODELS,
   LOCAL_BACKENDS,
   OPENAI_API_MODELS,
 )
@@ -233,61 +234,84 @@ def optimize_cloud(
   """Run cloud backend optimization."""
   import optuna
 
-  backend = "openai-api"
-  models = args.models if args.models else OPENAI_API_MODELS
-  json_path, data = _load_results_json(audio_path, f"_{backend}")
+  backends = args.backends if args.backends else ["openai-api"]
 
-  print(f"Cloud optimization: backend={backend}, models={models}")
-  print(f"Optimizing: {metric.upper()}")
+  for backend in backends:
+    # Determine models based on backend
+    if backend == "openai-api":
+      models = args.models if args.models else OPENAI_API_MODELS
+    elif backend == "deepgram":
+      models = args.models if args.models else DEEPGRAM_MODELS
+    elif backend == "yandex":
+      models = args.models if args.models else ["general"]
+    else:
+      models = args.models if args.models else []
 
-  def objective(trial: optuna.Trial) -> float:
-    model = trial.suggest_categorical("model", models)
-    temperature = trial.suggest_float("temperature", 0.0, 0.5)
+    json_path, data = _load_results_json(audio_path, f"_{backend}")
 
-    return run_optimization_trial(
-      trial.number,
-      args.n_trials,
-      backend,
-      model,
-      "auto",
-      5,
-      temperature,
-      True,
-      0,
-      args.audio,
-      args.language,
-      "cloud",
-      reference,
-      data,
-      json_path,
-      metric,
-      user=args.user,
-    )
+    print(f"\nCloud optimization: backend={backend}, models={models}")
+    print(f"Optimizing: {metric.upper()}")
 
-  study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
+    def _make_objective(
+      backend_val: str,
+      models_val: list[str],
+      data_val: dict,
+      json_path_val: Path,
+    ) -> callable:
+      """Create objective function with bound variables."""
 
-  for run in data.get("runs", []):
-    if run.get("backend") != backend or run.get("model") not in models:
-      continue
-    text = run.get("text", "")
-    wer_score, cer_score = calculate_metrics(reference, text)
-    score = wer_score if metric == "wer" else cer_score
-    study.add_trial(
-      optuna.trial.create_trial(
-        params={"model": run.get("model"), "temperature": run.get("temperature", 0.0)},
-        distributions={
-          "model": optuna.distributions.CategoricalDistribution(models),
-          "temperature": optuna.distributions.FloatDistribution(0.0, 0.5),
-        },
-        values=[score],
+      def obj_func(trial: optuna.Trial) -> float:
+        model = trial.suggest_categorical("model", models_val) if models_val else None
+        temperature = trial.suggest_float("temperature", 0.0, 0.5)
+
+        return run_optimization_trial(
+          trial.number,
+          args.n_trials,
+          backend_val,
+          model if model else "general",
+          "auto",
+          5,
+          temperature,
+          True,
+          0,
+          args.audio,
+          args.language,
+          "cloud",
+          reference,
+          data_val,
+          json_path_val,
+          metric,
+          user=args.user,
+        )
+
+      return obj_func
+
+    objective = _make_objective(backend, models, data, json_path)
+
+    study = optuna.create_study(direction="minimize", sampler=optuna.samplers.TPESampler())
+
+    for run in data.get("runs", []):
+      if run.get("backend") != backend or run.get("model") not in models:
+        continue
+      text = run.get("text", "")
+      wer_score, cer_score = calculate_metrics(reference, text)
+      score = wer_score if metric == "wer" else cer_score
+      study.add_trial(
+        optuna.trial.create_trial(
+          params={"model": run.get("model"), "temperature": run.get("temperature", 0.0)},
+          distributions={
+            "model": optuna.distributions.CategoricalDistribution(models),
+            "temperature": optuna.distributions.FloatDistribution(0.0, 0.5),
+          },
+          values=[score],
+        )
       )
-    )
 
-  if len(study.trials) > 0:
-    print(f"Loaded {len(study.trials)} previous trials")
+    if len(study.trials) > 0:
+      print(f"Loaded {len(study.trials)} previous trials")
 
-  study.optimize(objective, n_trials=args.n_trials)
-  _print_results(study, metric)
+    study.optimize(objective, n_trials=args.n_trials)
+    _print_results(study, metric)
 
 
 def optimize_local(

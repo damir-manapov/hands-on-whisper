@@ -7,8 +7,9 @@ import time
 from pathlib import Path
 
 # Cloud backends and their models
-CLOUD_BACKENDS = ["yandex", "openai-api"]
+CLOUD_BACKENDS = ["yandex", "openai-api", "deepgram"]
 OPENAI_API_MODELS = ["whisper-1", "gpt-4o-transcribe", "gpt-4o-mini-transcribe"]
+DEEPGRAM_MODELS = ["nova-2", "whisper-large", "whisper-medium", "whisper-base"]
 
 # Default search space for optimization
 LOCAL_BACKENDS = ["faster-whisper", "openai", "whispercpp"]
@@ -26,6 +27,7 @@ LOCAL_BACKEND_PARAMS = [
 CLOUD_BACKEND_PARAMS: dict[str, list[str]] = {
   "yandex": [],  # No tunable params
   "openai-api": ["temperature"],  # Supports temperature
+  "deepgram": ["temperature"],  # Supports temperature
 }
 
 
@@ -228,6 +230,59 @@ def _get_audio_duration(audio_path: str) -> float:
     check=True,
   )
   return float(result.stdout.strip())
+
+
+def transcribe_deepgram(
+  audio_path: str,
+  model: str = "nova-2",
+  language: str | None = None,
+  temperature: float = 0.0,
+  api_key: str | None = None,
+) -> str:
+  """Transcribe using Deepgram API."""
+  import os
+
+  import requests
+
+  api_key = api_key or os.environ.get("DEEPGRAM_API_KEY")
+  if not api_key:
+    raise ValueError("DEEPGRAM_API_KEY environment variable required")
+
+  url = "https://api.deepgram.com/v1/listen"
+  headers = {"Authorization": f"Token {api_key}"}
+
+  params = {
+    "model": model,
+    "punctuate": "true",
+    "utterances": "false",
+  }
+
+  if language:
+    params["language"] = language.split("-")[0] if "-" in language else language
+
+  if temperature > 0:
+    params["temperature"] = str(temperature)
+
+  with Path(audio_path).open("rb") as f:
+    response = requests.post(
+      url,
+      headers=headers,
+      params=params,
+      data=f,
+      timeout=300,
+    )
+
+  if not response.ok:
+    raise ValueError(f"Deepgram API error {response.status_code}: {response.text}")
+
+  result = response.json()
+  transcript = (
+    result.get("results", {})
+    .get("channels", [{}])[0]
+    .get("alternatives", [{}])[0]
+    .get("transcript", "")
+  )
+  return transcript.strip()
 
 
 def _yandex_sync_recognize(
