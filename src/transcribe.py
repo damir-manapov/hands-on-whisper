@@ -66,12 +66,23 @@ def generate_run_id(  # noqa: PLR0913
   temperature: float,
   compute_type: str,
   condition_on_prev: bool = True,
+  batched: bool = False,
 ) -> str:
   """Generate a unique ID based on settings."""
   cond = "cond" if condition_on_prev else "nocond"
-  settings = (
-    f"{backend}:{model}:{language}:{device}:beam{beam_size}:temp{temperature}:{compute_type}:{cond}"
-  )
+  batch = "batched" if batched else "seq"
+  parts = [
+    backend,
+    model,
+    language,
+    device,
+    f"beam{beam_size}",
+    f"temp{temperature}",
+    compute_type,
+    cond,
+    batch,
+  ]
+  settings = ":".join(str(p) for p in parts)
   return hashlib.sha256(settings.encode()).hexdigest()[:12]
 
 
@@ -104,6 +115,7 @@ def transcribe_faster_whisper(  # noqa: PLR0913
   temperature: float,
   compute_type: str,
   condition_on_prev: bool = True,
+  batched: bool = False,
 ) -> str:
   """Transcribe using faster-whisper."""
   from faster_whisper import WhisperModel
@@ -121,13 +133,24 @@ def transcribe_faster_whisper(  # noqa: PLR0913
     ct = compute_type  # Allow raw values like int8_float16
 
   model = WhisperModel(model_size, device=device, compute_type=ct)
-  segments, _info = model.transcribe(
-    audio_path,
-    beam_size=beam_size,
-    language=language,
-    temperature=temperature,
-    condition_on_previous_text=condition_on_prev,
-  )
+
+  if batched:
+    from faster_whisper import BatchedInferencePipeline
+
+    batched_model = BatchedInferencePipeline(model)
+    segments, _info = batched_model.transcribe(
+      audio_path,
+      batch_size=16,
+      language=language,
+    )
+  else:
+    segments, _info = model.transcribe(
+      audio_path,
+      beam_size=beam_size,
+      language=language,
+      temperature=temperature,
+      condition_on_previous_text=condition_on_prev,
+    )
   return " ".join(segment.text.strip() for segment in segments)
 
 
@@ -214,8 +237,12 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
   # Summary table
   lines.append("## Performance Summary")
   lines.append("")
-  hdr = "| # | Backend | Model | Compute | Beam | Temp | Cond | Lang | Dur(s) | MemΔ | Peak |"
-  sep = "|---|---------|-------|---------|------|------|------|------|--------|------|------|"
+  hdr = (
+    "| # | Backend | Model | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak |"
+  )
+  sep = (
+    "|---|---------|-------|---------|------|------|------|-------|------|--------|------|------|"
+  )
   if reference:
     lines.append(f"{hdr} WER% | CER% |")
     lines.append(f"{sep}------|------|")
@@ -230,13 +257,14 @@ def generate_report(data: dict[str, Any], reference: str | None = None) -> str:
     beam = run.get("beam_size", 5)
     temp = run.get("temperature", 0.0)
     cond_prev = "Y" if run.get("condition_on_prev", True) else "N"
+    batched = "Y" if run.get("batched", False) else "N"
     lang = run.get("language") or "auto"
     duration = run.get("duration_seconds", 0)
     mem_delta = run.get("memory_delta_mb", 0)
     mem_peak = run.get("memory_peak_mb", 0)
     row = (
       f"| {i} | {backend} | {model} | {compute} | {beam} | {temp:.2f} "
-      f"| {cond_prev} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
+      f"| {cond_prev} | {batched} | {lang} | {duration:.1f} | {mem_delta} | {mem_peak} |"
     )
     if reference:
       wer_score, cer_score = calculate_metrics(reference, run.get("text", ""))
@@ -272,6 +300,7 @@ def _append_detailed_results(
     temperature = run.get("temperature", 0.0)
     compute_type = run.get("compute_type", "auto")
     condition_on_prev = run.get("condition_on_prev", True)
+    batched = run.get("batched", False)
     timestamp = run.get("timestamp", "?")
     text = run.get("text", "")
 
@@ -286,6 +315,7 @@ def _append_detailed_results(
     lines.append(f"- **Temperature:** {temperature:.2f}")
     lines.append(f"- **Compute type:** {compute_type}")
     lines.append(f"- **Condition on prev:** {condition_on_prev}")
+    lines.append(f"- **Batched:** {batched}")
     if reference:
       wer_score, cer_score = calculate_metrics(reference, text)
       lines.append(f"- **WER:** {wer_score:.1f}%")
@@ -349,6 +379,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
           args.temperature,
           args.compute_type,
           condition_on_prev,
+          args.batched if backend == "faster-whisper" else False,
           data,
         )
         save_results(data, json_path)
@@ -371,6 +402,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
         args.temperature,
         args.compute_type,
         condition_on_prev,
+        args.batched if backend == "faster-whisper" else False,
         data,
       )
       save_results(data, json_path)
@@ -410,12 +442,21 @@ def _run_transcription(  # noqa: PLR0913
   temperature: float,
   compute_type: str,
   condition_on_prev: bool,
+  batched: bool = False,
 ) -> dict:
   """Run transcription and return run record with timing/memory stats."""
   import psutil
 
   run_id = generate_run_id(
-    backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    backend,
+    model,
+    language,
+    device,
+    beam_size,
+    temperature,
+    compute_type,
+    condition_on_prev,
+    batched,
   )
 
   process = psutil.Process()
@@ -424,7 +465,15 @@ def _run_transcription(  # noqa: PLR0913
 
   if backend == "faster-whisper":
     result = transcribe_faster_whisper(
-      audio, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+      audio,
+      model,
+      language,
+      device,
+      beam_size,
+      temperature,
+      compute_type,
+      condition_on_prev,
+      batched,
     )
   elif backend == "openai":
     result = transcribe_openai_whisper(
@@ -462,6 +511,7 @@ def _run_transcription(  # noqa: PLR0913
     "temperature": temperature,
     "compute_type": compute_type,
     "condition_on_prev": condition_on_prev,
+    "batched": batched,
     "text": result,
   }
 
@@ -475,6 +525,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   beam_size: int,
   temperature: float,
   condition_on_prev: bool,
+  batched: bool,
   audio: str,
   language: str | None,
   device: str,
@@ -485,15 +536,24 @@ def _run_optimization_trial(  # noqa: PLR0913
 ) -> float:
   """Run a single optimization trial and return WER or CER score."""
   # Format trial header
+  batch_str = " batched" if batched else ""
   trial_header = (
     f"[Trial {trial_number + 1}/{total_trials}] "
     f"{backend}/{model} | {compute_type} | beam={beam_size} temp={temperature:.2f} "
-    f"cond={condition_on_prev}"
+    f"cond={condition_on_prev}{batch_str}"
   )
 
   # Check if already exists (use cached result)
   run_id = generate_run_id(
-    backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    backend,
+    model,
+    language,
+    device,
+    beam_size,
+    temperature,
+    compute_type,
+    condition_on_prev,
+    batched,
   )
   existing = find_existing_run(data, run_id)
   if existing:
@@ -506,7 +566,16 @@ def _run_optimization_trial(  # noqa: PLR0913
   print(f"\n{trial_header}")
 
   run_record = _run_transcription(
-    audio, backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    audio,
+    backend,
+    model,
+    language,
+    device,
+    beam_size,
+    temperature,
+    compute_type,
+    condition_on_prev,
+    batched,
   )
   data["runs"].append(run_record)
   save_results(data, json_path)
@@ -559,6 +628,8 @@ def _init_study_with_history(  # noqa: PLR0913
     }
     if run_backend != "whispercpp":
       params["condition_on_prev"] = run.get("condition_on_prev", True)
+    if run_backend == "faster-whisper":
+      params["batched"] = run.get("batched", False)
 
     study.add_trial(
       opt.trial.create_trial(
@@ -572,6 +643,11 @@ def _init_study_with_history(  # noqa: PLR0913
           **(
             {"condition_on_prev": opt.distributions.CategoricalDistribution([True, False])}
             if run_backend != "whispercpp"
+            else {}
+          ),
+          **(
+            {"batched": opt.distributions.CategoricalDistribution([True, False])}
+            if run_backend == "faster-whisper"
             else {}
           ),
         },
@@ -592,6 +668,20 @@ def _print_optimization_results(study: optuna.Study, metric: str) -> None:
   print("Best parameters:")
   for key, value in study.best_params.items():
     print(f"  {key}: {value}")
+
+
+def _prepare_optimize_search_space(
+  args: argparse.Namespace,
+) -> tuple[list[str], list[str], list[str]]:
+  """Prepare search space for optimization, filtering unavailable options."""
+  backends = args.backends if args.backends else ALL_BACKENDS
+  # whispercpp doesn't support GPU (pywhispercpp is CPU-only)
+  if args.device == "cuda" and "whispercpp" in backends:
+    backends = [b for b in backends if b != "whispercpp"]
+    print("Note: whispercpp excluded (no GPU support in pywhispercpp)")
+  models = args.models if args.models else ALL_MODELS
+  compute_types = args.compute_types if args.compute_types else ALL_COMPUTE_TYPES
+  return backends, models, compute_types
 
 
 def cmd_optimize(args: argparse.Namespace) -> None:
@@ -619,15 +709,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   else:
     data = {"audio": str(audio_path), "runs": []}
 
-  # Parse search space from args (defaults to all options)
-  backends = args.backends if args.backends else ALL_BACKENDS
-  # whispercpp doesn't support GPU (pywhispercpp is CPU-only)
-  if args.device == "cuda" and "whispercpp" in backends:
-    backends = [b for b in backends if b != "whispercpp"]
-    print("Note: whispercpp excluded (no GPU support in pywhispercpp)")
-  models = args.models if args.models else ALL_MODELS
-  compute_types = args.compute_types if args.compute_types else ALL_COMPUTE_TYPES
-
+  backends, models, compute_types = _prepare_optimize_search_space(args)
   metric = args.metric
   print(f"Search space: backends={backends}, models={models}, compute_types={compute_types}")
   print(f"Optimizing: {metric.upper()}")
@@ -645,6 +727,12 @@ def cmd_optimize(args: argparse.Namespace) -> None:
     else:
       condition_on_prev = trial.suggest_categorical("condition_on_prev", [True, False])
 
+    # batched inference only for faster-whisper
+    if backend == "faster-whisper":
+      batched = trial.suggest_categorical("batched", [True, False])
+    else:
+      batched = False
+
     # Skip invalid combinations (faster-whisper doesn't support float16 on CPU)
     if backend == "faster-whisper" and compute_type == "float16" and args.device == "cpu":
       raise optuna.TrialPruned("faster-whisper float16 not supported on CPU")
@@ -658,6 +746,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
       beam_size,
       temperature,
       condition_on_prev,
+      batched,
       args.audio,
       args.language,
       args.device,
@@ -767,6 +856,11 @@ Examples:
     action="store_true",
     help="Don't condition on previous text (helps reduce repetitive hallucinations)",
   )
+  trans_parser.add_argument(
+    "--batched",
+    action="store_true",
+    help="Use batched inference for faster-whisper (parallel segment processing, 2-4x speedup)",
+  )
   trans_parser.set_defaults(func=cmd_transcribe)
 
   # Report command
@@ -864,11 +958,20 @@ def run_single(  # noqa: PLR0913
   temperature: float,
   compute_type: str,
   condition_on_prev: bool,
+  batched: bool,
   data: dict,
 ) -> None:
   """Run a single transcription and update data."""
   run_id = generate_run_id(
-    backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    backend,
+    model,
+    language,
+    device,
+    beam_size,
+    temperature,
+    compute_type,
+    condition_on_prev,
+    batched,
   )
 
   # Skip if we already have this run
@@ -878,10 +981,20 @@ def run_single(  # noqa: PLR0913
 
   print(f"\n[{run_id}] {backend} / {model} / lang={language} / {device}")
   cond_str = "" if condition_on_prev else ", no_cond_prev"
-  print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}")
+  batched_str = ", batched" if batched else ""
+  print(f"  beam={beam_size}, temp={temperature}, compute={compute_type}{cond_str}{batched_str}")
 
   run_record = _run_transcription(
-    audio, backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
+    audio,
+    backend,
+    model,
+    language,
+    device,
+    beam_size,
+    temperature,
+    compute_type,
+    condition_on_prev,
+    batched,
   )
   data["runs"].append(run_record)
 
