@@ -78,7 +78,7 @@ After SSH'ing into the VM:
 cd /root/hands-on-whisper
 
 # Quick test (will download the model on first run)
-uv run python src/transcribe.py transcribe calls/sherbakov_call.wav -l ru --device cuda
+uv run python src/transcribe.py transcribe calls/sherbakov_call.wav -l ru --runtime cuda
 
 # Full optimization (50 trials)
 uv run python src/transcribe.py optimize calls/sherbakov_call.wav -l ru --n-trials 50

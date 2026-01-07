@@ -664,7 +664,7 @@
 
 - **ID:** `935fc604e3ff`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.56s
 - **Memory:** Δ 259.4 MB, peak 5270.7 MB
 - **Beam size:** 9
@@ -684,7 +684,7 @@
 
 - **ID:** `ffa18f907fd7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.96s
 - **Memory:** Δ 3.1 MB, peak 5088.0 MB
 - **Beam size:** 9
@@ -704,7 +704,7 @@
 
 - **ID:** `cc05af7f53bf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.91s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -724,7 +724,7 @@
 
 - **ID:** `16324305b590`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 10.72s
 - **Memory:** Δ 0.0 MB, peak 4972.8 MB
 - **Beam size:** 10
@@ -744,7 +744,7 @@
 
 - **ID:** `a9193e8bd27d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.86s
 - **Memory:** Δ 59.4 MB, peak 5072.4 MB
 - **Beam size:** 8
@@ -764,7 +764,7 @@
 
 - **ID:** `31b636b3fe42`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.82s
 - **Memory:** Δ 3.1 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -784,7 +784,7 @@
 
 - **ID:** `0320c6a17de3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.85s
 - **Memory:** Δ 0.0 MB, peak 5060.5 MB
 - **Beam size:** 8
@@ -804,7 +804,7 @@
 
 - **ID:** `8336bfbbba52`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.87s
 - **Memory:** Δ 12.5 MB, peak 4725.1 MB
 - **Beam size:** 10
@@ -824,7 +824,7 @@
 
 - **ID:** `05e9596c486f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.79s
 - **Memory:** Δ 0.0 MB, peak 9399.6 MB
 - **Beam size:** 1
@@ -844,7 +844,7 @@
 
 - **ID:** `19c64796070e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.67s
 - **Memory:** Δ -84.2 MB, peak 5013.1 MB
 - **Beam size:** 8
@@ -864,7 +864,7 @@
 
 - **ID:** `c783572304f1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.79s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -884,7 +884,7 @@
 
 - **ID:** `a811c49143b0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.30s
 - **Memory:** Δ 0.0 MB, peak 4967.6 MB
 - **Beam size:** 3
@@ -904,7 +904,7 @@
 
 - **ID:** `18e26a6eee49`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 10.76s
 - **Memory:** Δ 0.0 MB, peak 4972.8 MB
 - **Beam size:** 10
@@ -924,7 +924,7 @@
 
 - **ID:** `30ff98f23d53`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.72s
 - **Memory:** Δ 99.9 MB, peak 5006.5 MB
 - **Beam size:** 9
@@ -944,7 +944,7 @@
 
 - **ID:** `d6525108d7c3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.13s
 - **Memory:** Δ 0.0 MB, peak 4965.7 MB
 - **Beam size:** 8
@@ -964,7 +964,7 @@
 
 - **ID:** `ac00d681fc87`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.43s
 - **Memory:** Δ 0.0 MB, peak 4962.0 MB
 - **Beam size:** 4
@@ -984,7 +984,7 @@
 
 - **ID:** `e75f5f5a053a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.65s
 - **Memory:** Δ 246.6 MB, peak 5301.8 MB
 - **Beam size:** 1
@@ -1004,7 +1004,7 @@
 
 - **ID:** `e411e19fed34`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.76s
 - **Memory:** Δ 46.7 MB, peak 5667.7 MB
 - **Beam size:** 9
@@ -1024,7 +1024,7 @@
 
 - **ID:** `5ce4b4837e6c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.88s
 - **Memory:** Δ -87.4 MB, peak 4906.6 MB
 - **Beam size:** 9
@@ -1044,7 +1044,7 @@
 
 - **ID:** `c442a3175283`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.65s
 - **Memory:** Δ 699.9 MB, peak 5672.7 MB
 - **Beam size:** 10
@@ -1064,7 +1064,7 @@
 
 - **ID:** `4b3f66b6779c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.69s
 - **Memory:** Δ 181.1 MB, peak 4995.7 MB
 - **Beam size:** 8
@@ -1084,7 +1084,7 @@
 
 - **ID:** `fe9d00317592`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.55s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -1104,7 +1104,7 @@
 
 - **ID:** `91fcecda3051`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.58s
 - **Memory:** Δ 1811.0 MB, peak 4451.8 MB
 - **Beam size:** 10
@@ -1124,7 +1124,7 @@
 
 - **ID:** `dbcbc29f27df`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.88s
 - **Memory:** Δ -0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -1144,7 +1144,7 @@
 
 - **ID:** `50b4a27402ba`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.26s
 - **Memory:** Δ 0.1 MB, peak 5627.2 MB
 - **Beam size:** 9
@@ -1164,7 +1164,7 @@
 
 - **ID:** `4929de96dc22`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.61s
 - **Memory:** Δ 251.6 MB, peak 5621.0 MB
 - **Beam size:** 8
@@ -1184,7 +1184,7 @@
 
 - **ID:** `2b49fdca06b1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 21.48s
 - **Memory:** Δ 0.0 MB, peak 3359.6 MB
 - **Beam size:** 1
@@ -1204,7 +1204,7 @@
 
 - **ID:** `f68de8ae0b27`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 26.14s
 - **Memory:** Δ 0.0 MB, peak 2837.9 MB
 - **Beam size:** 8
@@ -1224,7 +1224,7 @@
 
 - **ID:** `b01bad8344a1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 22.81s
 - **Memory:** Δ 1.6 MB, peak 2836.4 MB
 - **Beam size:** 4
@@ -1244,7 +1244,7 @@
 
 - **ID:** `f80ee2abb483`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.65s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 9
@@ -1264,7 +1264,7 @@
 
 - **ID:** `6f53a67bd2ed`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.45s
 - **Memory:** Δ 206.0 MB, peak 5020.6 MB
 - **Beam size:** 8
@@ -1284,7 +1284,7 @@
 
 - **ID:** `f1fd723bc7dc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.67s
 - **Memory:** Δ 37.5 MB, peak 5074.7 MB
 - **Beam size:** 8
@@ -1304,7 +1304,7 @@
 
 - **ID:** `68c0b54be92e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.95s
 - **Memory:** Δ 1781.1 MB, peak 4421.9 MB
 - **Beam size:** 9
@@ -1324,7 +1324,7 @@
 
 - **ID:** `16bf31ef8a45`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.18s
 - **Memory:** Δ -1028.0 MB, peak 4972.8 MB
 - **Beam size:** 9
@@ -1344,7 +1344,7 @@
 
 - **ID:** `71bbe07d8e5b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.39s
 - **Memory:** Δ 74.9 MB, peak 5087.9 MB
 - **Beam size:** 8
@@ -1364,7 +1364,7 @@
 
 - **ID:** `48ebc8aa5bc1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.61s
 - **Memory:** Δ -2393.8 MB, peak 2630.1 MB
 - **Beam size:** 10
@@ -1384,7 +1384,7 @@
 
 - **ID:** `253cfbad359f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 27.31s
 - **Memory:** Δ 0.8 MB, peak 3359.6 MB
 - **Beam size:** 10
@@ -1404,7 +1404,7 @@
 
 - **ID:** `399ae1a7525b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.85s
 - **Memory:** Δ 2424.9 MB, peak 5055.1 MB
 - **Beam size:** 10
@@ -1424,7 +1424,7 @@
 
 - **ID:** `94d4722ad976`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.65s
 - **Memory:** Δ 256.2 MB, peak 5305.0 MB
 - **Beam size:** 9
@@ -1444,7 +1444,7 @@
 
 - **ID:** `fde8b30cf2f8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.87s
 - **Memory:** Δ 9.4 MB, peak 5109.9 MB
 - **Beam size:** 8
@@ -1464,7 +1464,7 @@
 
 - **ID:** `11755fa4fc52`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 42.20s
 - **Memory:** Δ 0.2 MB, peak 8801.6 MB
 - **Beam size:** 5
@@ -1484,7 +1484,7 @@
 
 - **ID:** `0dd1f6465d6a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.35s
 - **Memory:** Δ -100.0 MB, peak 4906.6 MB
 - **Beam size:** 9
@@ -1504,7 +1504,7 @@
 
 - **ID:** `d4a1991b4c51`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.11s
 - **Memory:** Δ 0.0 MB, peak 4409.6 MB
 - **Beam size:** 10
@@ -1524,7 +1524,7 @@
 
 - **ID:** `bb8d21fbc57d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 22.55s
 - **Memory:** Δ 6.0 MB, peak 3358.1 MB
 - **Beam size:** 4
@@ -1544,7 +1544,7 @@
 
 - **ID:** `1bac029e89bb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.46s
 - **Memory:** Δ 2576.9 MB, peak 2629.7 MB
 - **Beam size:** 9
@@ -1564,7 +1564,7 @@
 
 - **ID:** `ef6925786775`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.66s
 - **Memory:** Δ -1172.1 MB, peak 3530.1 MB
 - **Beam size:** 1
@@ -1584,7 +1584,7 @@
 
 - **ID:** `377c5602e8c2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.51s
 - **Memory:** Δ 262.2 MB, peak 5317.4 MB
 - **Beam size:** 1
@@ -1604,7 +1604,7 @@
 
 - **ID:** `61f0b72d52a3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.54s
 - **Memory:** Δ 0.0 MB, peak 4967.6 MB
 - **Beam size:** 7
@@ -1624,7 +1624,7 @@
 
 - **ID:** `ec3e521b72d3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 10.09s
 - **Memory:** Δ 0.0 MB, peak 2630.2 MB
 - **Beam size:** 10
@@ -1644,7 +1644,7 @@
 
 - **ID:** `47c15d059dc5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.53s
 - **Memory:** Δ 84.1 MB, peak 5097.2 MB
 - **Beam size:** 8
@@ -1664,7 +1664,7 @@
 
 - **ID:** `03e866d5a979`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.02s
 - **Memory:** Δ 341.0 MB, peak 5682.9 MB
 - **Beam size:** 9
@@ -1684,7 +1684,7 @@
 
 - **ID:** `7d75e99ae48e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.71s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 2
@@ -1704,7 +1704,7 @@
 
 - **ID:** `b36163fe2fd3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.78s
 - **Memory:** Δ 90.5 MB, peak 5103.6 MB
 - **Beam size:** 8
@@ -1724,7 +1724,7 @@
 
 - **ID:** `5bc7bde55312`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.43s
 - **Memory:** Δ -274.9 MB, peak 5346.1 MB
 - **Beam size:** 10
@@ -1744,7 +1744,7 @@
 
 - **ID:** `5b5b55c6ba34`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.02s
 - **Memory:** Δ 0.1 MB, peak 5014.5 MB
 - **Beam size:** 8
@@ -1764,7 +1764,7 @@
 
 - **ID:** `f43b6166831e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.13s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 8
@@ -1784,7 +1784,7 @@
 
 - **ID:** `5e067f8054d3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.05s
 - **Memory:** Δ 96.8 MB, peak 5006.6 MB
 - **Beam size:** 10
@@ -1804,7 +1804,7 @@
 
 - **ID:** `3a716ae40ca2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.29s
 - **Memory:** Δ -90.6 MB, peak 5013.1 MB
 - **Beam size:** 1
@@ -1824,7 +1824,7 @@
 
 - **ID:** `d01f8f41cce5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.36s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -1844,7 +1844,7 @@
 
 - **ID:** `8e30ab149f24`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.22s
 - **Memory:** Δ 12.5 MB, peak 4995.7 MB
 - **Beam size:** 8
@@ -1864,7 +1864,7 @@
 
 - **ID:** `357d464e1fb8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.23s
 - **Memory:** Δ -306.1 MB, peak 5346.1 MB
 - **Beam size:** 10
@@ -1884,7 +1884,7 @@
 
 - **ID:** `1549034a48db`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.62s
 - **Memory:** Δ 0.0 MB, peak 4967.6 MB
 - **Beam size:** 8
@@ -1904,7 +1904,7 @@
 
 - **ID:** `ae6b9a5f1d68`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.39s
 - **Memory:** Δ -24.9 MB, peak 4998.1 MB
 - **Beam size:** 8
@@ -1924,7 +1924,7 @@
 
 - **ID:** `9658313c87aa`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.01s
 - **Memory:** Δ 0.0 MB, peak 4972.8 MB
 - **Beam size:** 10
@@ -1944,7 +1944,7 @@
 
 - **ID:** `eed8b81c161b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.38s
 - **Memory:** Δ 290.5 MB, peak 5333.2 MB
 - **Beam size:** 8
@@ -1964,7 +1964,7 @@
 
 - **ID:** `8e7eaeb2fac1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.09s
 - **Memory:** Δ 71.8 MB, peak 5084.8 MB
 - **Beam size:** 8
@@ -1984,7 +1984,7 @@
 
 - **ID:** `101db58dbac1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.15s
 - **Memory:** Δ 96.8 MB, peak 5109.8 MB
 - **Beam size:** 8
@@ -2004,7 +2004,7 @@
 
 - **ID:** `78eb5555dee7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.04s
 - **Memory:** Δ 0.0 MB, peak 9409.9 MB
 - **Beam size:** 9
@@ -2024,7 +2024,7 @@
 
 - **ID:** `7158ee061bd0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.16s
 - **Memory:** Δ 75.6 MB, peak 5087.9 MB
 - **Beam size:** 8
@@ -2044,7 +2044,7 @@
 
 - **ID:** `cbf671e321cc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.20s
 - **Memory:** Δ 6.3 MB, peak 5103.6 MB
 - **Beam size:** 8
@@ -2064,7 +2064,7 @@
 
 - **ID:** `97873cf5fc11`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.16s
 - **Memory:** Δ 0.0 MB, peak 5103.6 MB
 - **Beam size:** 8
@@ -2084,7 +2084,7 @@
 
 - **ID:** `1bdb315707df`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.14s
 - **Memory:** Δ 25.0 MB, peak 5639.7 MB
 - **Beam size:** 1
@@ -2104,7 +2104,7 @@
 
 - **ID:** `42a98b1e98ae`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.36s
 - **Memory:** Δ 59.4 MB, peak 4961.6 MB
 - **Beam size:** 9
@@ -2124,7 +2124,7 @@
 
 - **ID:** `4b5f7d2ae9dc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.38s
 - **Memory:** Δ 0.0 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -2144,7 +2144,7 @@
 
 - **ID:** `56fe92807dd9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.22s
 - **Memory:** Δ 437.8 MB, peak 5399.8 MB
 - **Beam size:** 6
@@ -2164,7 +2164,7 @@
 
 - **ID:** `7d05c644f553`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.78s
 - **Memory:** Δ 25.0 MB, peak 5125.5 MB
 - **Beam size:** 9
@@ -2184,7 +2184,7 @@
 
 - **ID:** `c16aa83a84bc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.02s
 - **Memory:** Δ -62.6 MB, peak 4676.9 MB
 - **Beam size:** 1
@@ -2204,7 +2204,7 @@
 
 - **ID:** `71df23e95518`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.63s
 - **Memory:** Δ 1.5 MB, peak 9409.2 MB
 - **Beam size:** 9
@@ -2224,7 +2224,7 @@
 
 - **ID:** `7b24375f0303`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.82s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 10
@@ -2244,7 +2244,7 @@
 
 - **ID:** `f617c6708303`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.04s
 - **Memory:** Δ 18.8 MB, peak 5119.3 MB
 - **Beam size:** 9
@@ -2264,7 +2264,7 @@
 
 - **ID:** `10a740f4051e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.05s
 - **Memory:** Δ 228.0 MB, peak 5017.6 MB
 - **Beam size:** 9
@@ -2284,7 +2284,7 @@
 
 - **ID:** `01dcd2f0dbba`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.16s
 - **Memory:** Δ 0.0 MB, peak 5060.5 MB
 - **Beam size:** 1
@@ -2304,7 +2304,7 @@
 
 - **ID:** `25704c725b2d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 14.12s
 - **Memory:** Δ 0.1 MB, peak 2756.1 MB
 - **Beam size:** 1
@@ -2324,7 +2324,7 @@
 
 - **ID:** `136d2410dd56`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.83s
 - **Memory:** Δ 0.0 MB, peak 9409.9 MB
 - **Beam size:** 2
@@ -2344,7 +2344,7 @@
 
 - **ID:** `2ca6dfbf4361`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.93s
 - **Memory:** Δ 249.9 MB, peak 5596.0 MB
 - **Beam size:** 8
@@ -2364,7 +2364,7 @@
 
 - **ID:** `ca393bc08d9b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.24s
 - **Memory:** Δ 281.0 MB, peak 5627.1 MB
 - **Beam size:** 10
@@ -2384,7 +2384,7 @@
 
 - **ID:** `78f90d1a28b3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.75s
 - **Memory:** Δ 0.0 MB, peak 9399.6 MB
 - **Beam size:** 9
@@ -2404,7 +2404,7 @@
 
 - **ID:** `793ee66671c8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.56s
 - **Memory:** Δ 159.3 MB, peak 4973.9 MB
 - **Beam size:** 9
@@ -2424,7 +2424,7 @@
 
 - **ID:** `8a47cd9935c6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.55s
 - **Memory:** Δ 28.1 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -2444,7 +2444,7 @@
 
 - **ID:** `d45a6be73ab7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.50s
 - **Memory:** Δ -37.4 MB, peak 5063.1 MB
 - **Beam size:** 9
@@ -2464,7 +2464,7 @@
 
 - **ID:** `3313313d8da9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 15.70s
 - **Memory:** Δ 0.2 MB, peak 2756.3 MB
 - **Beam size:** 8
@@ -2484,7 +2484,7 @@
 
 - **ID:** `0a34b87423c6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.52s
 - **Memory:** Δ 2400.0 MB, peak 5030.1 MB
 - **Beam size:** 10
@@ -2504,7 +2504,7 @@
 
 - **ID:** `1781f1cd3be3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.13s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 9
@@ -2524,7 +2524,7 @@
 
 - **ID:** `c04775653ec5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.17s
 - **Memory:** Δ 65.5 MB, peak 5097.3 MB
 - **Beam size:** 8
@@ -2544,7 +2544,7 @@
 
 - **ID:** `3a086f97af2c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.76s
 - **Memory:** Δ 12.5 MB, peak 5100.5 MB
 - **Beam size:** 9
@@ -2564,7 +2564,7 @@
 
 - **ID:** `c2027488e579`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.87s
 - **Memory:** Δ -265.5 MB, peak 4752.1 MB
 - **Beam size:** 10
@@ -2584,7 +2584,7 @@
 
 - **ID:** `a09e580a6273`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.85s
 - **Memory:** Δ 0.0 MB, peak 9399.3 MB
 - **Beam size:** 10
@@ -2604,7 +2604,7 @@
 
 - **ID:** `52d8f32c7b8a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.91s
 - **Memory:** Δ -234.3 MB, peak 4823.1 MB
 - **Beam size:** 8
@@ -2624,7 +2624,7 @@
 
 - **ID:** `7686fff8301b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.10s
 - **Memory:** Δ 24.9 MB, peak 5037.2 MB
 - **Beam size:** 8
@@ -2644,7 +2644,7 @@
 
 - **ID:** `5356acb7d9cd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.41s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 9
@@ -2664,7 +2664,7 @@
 
 - **ID:** `e6aca68888c2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.23s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 9
@@ -2684,7 +2684,7 @@
 
 - **ID:** `14ac5b3fa74b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.41s
 - **Memory:** Δ 296.9 MB, peak 5352.0 MB
 - **Beam size:** 10
@@ -2704,7 +2704,7 @@
 
 - **ID:** `5fc44343e876`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.05s
 - **Memory:** Δ -202.9 MB, peak 4814.7 MB
 - **Beam size:** 8
@@ -2724,7 +2724,7 @@
 
 - **ID:** `d99c164b89e0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.31s
 - **Memory:** Δ 262.6 MB, peak 5662.5 MB
 - **Beam size:** 3
@@ -2744,7 +2744,7 @@
 
 - **ID:** `52320beef7bd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.91s
 - **Memory:** Δ 0.0 MB, peak 2630.2 MB
 - **Beam size:** 10
@@ -2764,7 +2764,7 @@
 
 - **ID:** `901905b0318d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.86s
 - **Memory:** Δ -206.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -2784,7 +2784,7 @@
 
 - **ID:** `09bab5903780`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.85s
 - **Memory:** Δ 0.0 MB, peak 5060.5 MB
 - **Beam size:** 2
@@ -2804,7 +2804,7 @@
 
 - **ID:** `031d2d300de9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 14.23s
 - **Memory:** Δ 0.3 MB, peak 2755.9 MB
 - **Beam size:** 5
@@ -2824,7 +2824,7 @@
 
 - **ID:** `0b30cd86c57a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.58s
 - **Memory:** Δ 1762.4 MB, peak 5067.6 MB
 - **Beam size:** 9
@@ -2844,7 +2844,7 @@
 
 - **ID:** `33e6ece25ee2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.24s
 - **Memory:** Δ 268.6 MB, peak 5614.7 MB
 - **Beam size:** 1
@@ -2864,7 +2864,7 @@
 
 - **ID:** `69893420bbf2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.56s
 - **Memory:** Δ 0.0 MB, peak 5013.1 MB
 - **Beam size:** 3
@@ -2884,7 +2884,7 @@
 
 - **ID:** `39a376a8bdcc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.83s
 - **Memory:** Δ -249.9 MB, peak 5346.1 MB
 - **Beam size:** 9
@@ -2904,7 +2904,7 @@
 
 - **ID:** `01bf1b4ed064`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.35s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 1
@@ -2924,7 +2924,7 @@
 
 - **ID:** `2a8742684685`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.93s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 9
@@ -2944,7 +2944,7 @@
 
 - **ID:** `286a9db80cab`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.86s
 - **Memory:** Δ 225.1 MB, peak 4909.9 MB
 - **Beam size:** 10
@@ -2964,7 +2964,7 @@
 
 - **ID:** `820ccbacecd9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.53s
 - **Memory:** Δ -224.9 MB, peak 4823.1 MB
 - **Beam size:** 8
@@ -2984,7 +2984,7 @@
 
 - **ID:** `0803b8636289`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.03s
 - **Memory:** Δ 96.8 MB, peak 5109.8 MB
 - **Beam size:** 2
@@ -3004,7 +3004,7 @@
 
 - **ID:** `acd13c0cc1b7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.71s
 - **Memory:** Δ 87.4 MB, peak 4997.2 MB
 - **Beam size:** 10
@@ -3024,7 +3024,7 @@
 
 - **ID:** `1ae2fe2dbf78`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.67s
 - **Memory:** Δ 74.9 MB, peak 4977.1 MB
 - **Beam size:** 10
@@ -3044,7 +3044,7 @@
 
 - **ID:** `5744b587b438`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.98s
 - **Memory:** Δ 162.4 MB, peak 4977.0 MB
 - **Beam size:** 8
@@ -3064,7 +3064,7 @@
 
 - **ID:** `a7124596f0e1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.93s
 - **Memory:** Δ 225.0 MB, peak 5292.5 MB
 - **Beam size:** 10
@@ -3084,7 +3084,7 @@
 
 - **ID:** `c37441f5b0b7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.74s
 - **Memory:** Δ 103.3 MB, peak 4780.2 MB
 - **Beam size:** 1
@@ -3104,7 +3104,7 @@
 
 - **ID:** `9420671c1c21`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.06s
 - **Memory:** Δ 156.1 MB, peak 4970.7 MB
 - **Beam size:** 8
@@ -3124,7 +3124,7 @@
 
 - **ID:** `ffddfbe47d86`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.92s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 8
@@ -3144,7 +3144,7 @@
 
 - **ID:** `aaad84003f8a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.43s
 - **Memory:** Δ 2437.4 MB, peak 5067.6 MB
 - **Beam size:** 9
@@ -3164,7 +3164,7 @@
 
 - **ID:** `1357dd0fd547`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.76s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 10
@@ -3184,7 +3184,7 @@
 
 - **ID:** `d30e6e7d8f59`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 24.57s
 - **Memory:** Δ 392.5 MB, peak 9399.3 MB
 - **Beam size:** 10
@@ -3204,7 +3204,7 @@
 
 - **ID:** `5dffd4cbf93e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.52s
 - **Memory:** Δ 265.6 MB, peak 4675.2 MB
 - **Beam size:** 10
@@ -3224,7 +3224,7 @@
 
 - **ID:** `c2ae63c13e9b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.98s
 - **Memory:** Δ 253.1 MB, peak 4712.6 MB
 - **Beam size:** 9
@@ -3244,7 +3244,7 @@
 
 - **ID:** `eb67fe953af6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.95s
 - **Memory:** Δ 112.5 MB, peak 5023.2 MB
 - **Beam size:** 2
@@ -3264,7 +3264,7 @@
 
 - **ID:** `a2850cfca3fc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.85s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 1
@@ -3284,7 +3284,7 @@
 
 - **ID:** `6941b3f65967`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.99s
 - **Memory:** Δ 237.2 MB, peak 5292.4 MB
 - **Beam size:** 9
@@ -3304,7 +3304,7 @@
 
 - **ID:** `282c71bd352d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.07s
 - **Memory:** Δ 1484.3 MB, peak 4443.8 MB
 - **Beam size:** 9
@@ -3324,7 +3324,7 @@
 
 - **ID:** `332b4753e83c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.90s
 - **Memory:** Δ 0.0 MB, peak 4994.0 MB
 - **Beam size:** 8
@@ -3344,7 +3344,7 @@
 
 - **ID:** `7511baa0d686`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.00s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 9
@@ -3364,7 +3364,7 @@
 
 - **ID:** `3a4f6363d7de`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.99s
 - **Memory:** Δ -62.2 MB, peak 4662.8 MB
 - **Beam size:** 10
@@ -3384,7 +3384,7 @@
 
 - **ID:** `244336c9a10b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.83s
 - **Memory:** Δ 224.9 MB, peak 5048.0 MB
 - **Beam size:** 8
@@ -3404,7 +3404,7 @@
 
 - **ID:** `bba675884582`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.97s
 - **Memory:** Δ 275.0 MB, peak 5342.6 MB
 - **Beam size:** 2
@@ -3424,7 +3424,7 @@
 
 - **ID:** `3aac2ccb1685`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.79s
 - **Memory:** Δ 1.0 MB, peak 9006.8 MB
 - **Beam size:** 3
@@ -3444,7 +3444,7 @@
 
 - **ID:** `a78bf4de28d0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.25s
 - **Memory:** Δ 303.0 MB, peak 4712.6 MB
 - **Beam size:** 10
@@ -3464,7 +3464,7 @@
 
 - **ID:** `649b94471215`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.41s
 - **Memory:** Δ 0.0 MB, peak 4823.1 MB
 - **Beam size:** 1
@@ -3484,7 +3484,7 @@
 
 - **ID:** `4baff12d6ca8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 13.00s
 - **Memory:** Δ 0.0 MB, peak 5012.3 MB
 - **Beam size:** 8
@@ -3504,7 +3504,7 @@
 
 - **ID:** `f15cd20cf88c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.34s
 - **Memory:** Δ 0.0 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -3524,7 +3524,7 @@
 
 - **ID:** `872ce51fe82b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.97s
 - **Memory:** Δ 274.9 MB, peak 5621.0 MB
 - **Beam size:** 9
@@ -3544,7 +3544,7 @@
 
 - **ID:** `c0d2dfba30d3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.16s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 1
@@ -3564,7 +3564,7 @@
 
 - **ID:** `f8ead895a837`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.34s
 - **Memory:** Δ 321.8 MB, peak 5664.3 MB
 - **Beam size:** 8
@@ -3584,7 +3584,7 @@
 
 - **ID:** `981d9c8838ad`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.97s
 - **Memory:** Δ -28.3 MB, peak 1212.0 MB
 - **Beam size:** 7
@@ -3604,7 +3604,7 @@
 
 - **ID:** `6574e364ce94`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.99s
 - **Memory:** Δ 293.8 MB, peak 5305.1 MB
 - **Beam size:** 9
@@ -3624,7 +3624,7 @@
 
 - **ID:** `9bc5de709ae0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.89s
 - **Memory:** Δ 137.3 MB, peak 5048.0 MB
 - **Beam size:** 8
@@ -3644,7 +3644,7 @@
 
 - **ID:** `de60ae6bca13`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.08s
 - **Memory:** Δ 318.6 MB, peak 5664.7 MB
 - **Beam size:** 8
@@ -3664,7 +3664,7 @@
 
 - **ID:** `ca35d458ebca`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.87s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 9
@@ -3684,7 +3684,7 @@
 
 - **ID:** `e041cdb831cb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.62s
 - **Memory:** Δ 0.0 MB, peak 9410.2 MB
 - **Beam size:** 3
@@ -3704,7 +3704,7 @@
 
 - **ID:** `6410744d117c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.01s
 - **Memory:** Δ 84.2 MB, peak 4986.5 MB
 - **Beam size:** 9
@@ -3724,7 +3724,7 @@
 
 - **ID:** `c7775ff8884e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.03s
 - **Memory:** Δ 199.8 MB, peak 5014.4 MB
 - **Beam size:** 8
@@ -3744,7 +3744,7 @@
 
 - **ID:** `392ae418460d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.27s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 10
@@ -3764,7 +3764,7 @@
 
 - **ID:** `c5b5f84894cd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.66s
 - **Memory:** Δ 0.1 MB, peak 5097.3 MB
 - **Beam size:** 8
@@ -3784,7 +3784,7 @@
 
 - **ID:** `b0cc838b6f47`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.93s
 - **Memory:** Δ 290.5 MB, peak 4700.1 MB
 - **Beam size:** 9
@@ -3804,7 +3804,7 @@
 
 - **ID:** `ced92da5ac6b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.02s
 - **Memory:** Δ 253.1 MB, peak 5327.0 MB
 - **Beam size:** 10
@@ -3824,7 +3824,7 @@
 
 - **ID:** `5f6300d014e6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 28.38s
 - **Memory:** Δ 2787.1 MB, peak 2835.4 MB
 - **Beam size:** 9
@@ -3844,7 +3844,7 @@
 
 - **ID:** `b4dcf2bec663`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.91s
 - **Memory:** Δ 12.5 MB, peak 5019.0 MB
 - **Beam size:** 9
@@ -3864,7 +3864,7 @@
 
 - **ID:** `de88e50fcabb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.16s
 - **Memory:** Δ 74.9 MB, peak 5087.9 MB
 - **Beam size:** 8
@@ -3884,7 +3884,7 @@
 
 - **ID:** `015101db2d39`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 25.13s
 - **Memory:** Δ 580.4 MB, peak 9248.2 MB
 - **Beam size:** 8
@@ -3904,7 +3904,7 @@
 
 - **ID:** `2c9ff6e202fa`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.05s
 - **Memory:** Δ -77.8 MB, peak 5546.2 MB
 - **Beam size:** 1
@@ -3924,7 +3924,7 @@
 
 - **ID:** `b994670e366c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.74s
 - **Memory:** Δ 0.0 MB, peak 5023.0 MB
 - **Beam size:** 8
@@ -3944,7 +3944,7 @@
 
 - **ID:** `ec05abb828ce`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.54s
 - **Memory:** Δ -34.4 MB, peak 5084.8 MB
 - **Beam size:** 10
@@ -3964,7 +3964,7 @@
 
 - **ID:** `ee035cc35700`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.77s
 - **Memory:** Δ 0.0 MB, peak 4972.8 MB
 - **Beam size:** 4
@@ -3984,7 +3984,7 @@
 
 - **ID:** `e880bcaad136`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.95s
 - **Memory:** Δ -321.6 MB, peak 5346.1 MB
 - **Beam size:** 10
@@ -4004,7 +4004,7 @@
 
 - **ID:** `dd6577a733c7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.14s
 - **Memory:** Δ 1793.6 MB, peak 4434.4 MB
 - **Beam size:** 9
@@ -4024,7 +4024,7 @@
 
 - **ID:** `969203c61348`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.46s
 - **Memory:** Δ 62.4 MB, peak 5060.5 MB
 - **Beam size:** 8
@@ -4044,7 +4044,7 @@
 
 - **ID:** `8df6283cbced`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.06s
 - **Memory:** Δ -2034.4 MB, peak 2640.8 MB
 - **Beam size:** 1
@@ -4064,7 +4064,7 @@
 
 - **ID:** `a7942fa72438`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.39s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 9
@@ -4084,7 +4084,7 @@
 
 - **ID:** `9a18e9d61569`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.92s
 - **Memory:** Δ 0.3 MB, peak 9399.6 MB
 - **Beam size:** 2
@@ -4104,7 +4104,7 @@
 
 - **ID:** `f1e1bc1d680c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.90s
 - **Memory:** Δ 9.4 MB, peak 5057.4 MB
 - **Beam size:** 1
@@ -4124,7 +4124,7 @@
 
 - **ID:** `3e378fe845b5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.85s
 - **Memory:** Δ 271.7 MB, peak 5320.5 MB
 - **Beam size:** 9
@@ -4144,7 +4144,7 @@
 
 - **ID:** `af75e53be0f7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.05s
 - **Memory:** Δ 0.3 MB, peak 9409.4 MB
 - **Beam size:** 10
@@ -4164,7 +4164,7 @@
 
 - **ID:** `5b59cebf9661`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.81s
 - **Memory:** Δ 1818.6 MB, peak 4459.4 MB
 - **Beam size:** 10
@@ -4184,7 +4184,7 @@
 
 - **ID:** `1d94703bf6ac`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.84s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -4204,7 +4204,7 @@
 
 - **ID:** `c73ac48cdaa0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.61s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 1
@@ -4224,7 +4224,7 @@
 
 - **ID:** `efbb93e635c6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.99s
 - **Memory:** Δ 265.6 MB, peak 4700.1 MB
 - **Beam size:** 10
@@ -4244,7 +4244,7 @@
 
 - **ID:** `46fee4acef1f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.25s
 - **Memory:** Δ 2437.4 MB, peak 5067.5 MB
 - **Beam size:** 10
@@ -4264,7 +4264,7 @@
 
 - **ID:** `982898b43805`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.41s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 10
@@ -4284,7 +4284,7 @@
 
 - **ID:** `6d4ba341df6c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.17s
 - **Memory:** Δ 62.4 MB, peak 5608.5 MB
 - **Beam size:** 9
@@ -4304,7 +4304,7 @@
 
 - **ID:** `5f8ce7d3fdd1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.55s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 10
@@ -4324,7 +4324,7 @@
 
 - **ID:** `f755fd2df213`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 14.83s
 - **Memory:** Δ 0.1 MB, peak 2756.1 MB
 - **Beam size:** 1
@@ -4344,7 +4344,7 @@
 
 - **ID:** `86c76ec0584c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.75s
 - **Memory:** Δ 62.4 MB, peak 5094.2 MB
 - **Beam size:** 8
@@ -4364,7 +4364,7 @@
 
 - **ID:** `e491195a38ec`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.93s
 - **Memory:** Δ 103.0 MB, peak 4715.8 MB
 - **Beam size:** 10
@@ -4384,7 +4384,7 @@
 
 - **ID:** `2f67a1b7a4d2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.28s
 - **Memory:** Δ 0.0 MB, peak 5119.3 MB
 - **Beam size:** 9
@@ -4404,7 +4404,7 @@
 
 - **ID:** `b80f63a1e3ff`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.15s
 - **Memory:** Δ 1781.3 MB, peak 4434.4 MB
 - **Beam size:** 10
@@ -4424,7 +4424,7 @@
 
 - **ID:** `415b2ee0613d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.71s
 - **Memory:** Δ 303.0 MB, peak 4712.6 MB
 - **Beam size:** 10
@@ -4444,7 +4444,7 @@
 
 - **ID:** `c8d35323e628`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.82s
 - **Memory:** Δ -1792.0 MB, peak 2659.8 MB
 - **Beam size:** 10
@@ -4464,7 +4464,7 @@
 
 - **ID:** `cdfc90b375a5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.89s
 - **Memory:** Δ 74.9 MB, peak 5087.9 MB
 - **Beam size:** 9
@@ -4484,7 +4484,7 @@
 
 - **ID:** `f6a9a5419bb3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.67s
 - **Memory:** Δ 0.0 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -4504,7 +4504,7 @@
 
 - **ID:** `c15ea9eab6f3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.63s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 8
@@ -4524,7 +4524,7 @@
 
 - **ID:** `3b99e0661ef5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.78s
 - **Memory:** Δ 290.5 MB, peak 4700.1 MB
 - **Beam size:** 10
@@ -4544,7 +4544,7 @@
 
 - **ID:** `0c8e3df9d58d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.54s
 - **Memory:** Δ 134.4 MB, peak 4949.0 MB
 - **Beam size:** 9
@@ -4564,7 +4564,7 @@
 
 - **ID:** `ef6f51d60f90`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.71s
 - **Memory:** Δ 293.6 MB, peak 5639.7 MB
 - **Beam size:** 2
@@ -4584,7 +4584,7 @@
 
 - **ID:** `5e3b78a90cd9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.87s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -4604,7 +4604,7 @@
 
 - **ID:** `61095dcc0ee5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.24s
 - **Memory:** Δ 0.0 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -4624,7 +4624,7 @@
 
 - **ID:** `9ed0636bd2b7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.16s
 - **Memory:** Δ -49.9 MB, peak 5063.1 MB
 - **Beam size:** 9
@@ -4644,7 +4644,7 @@
 
 - **ID:** `3fa10e561eab`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.71s
 - **Memory:** Δ 0.0 MB, peak 5119.3 MB
 - **Beam size:** 9
@@ -4664,7 +4664,7 @@
 
 - **ID:** `f460817b561b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.46s
 - **Memory:** Δ 0.0 MB, peak 9399.3 MB
 - **Beam size:** 1
@@ -4684,7 +4684,7 @@
 
 - **ID:** `da3e1be9aa52`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.60s
 - **Memory:** Δ 153.0 MB, peak 4967.7 MB
 - **Beam size:** 10
@@ -4704,7 +4704,7 @@
 
 - **ID:** `1910a30a7135`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.53s
 - **Memory:** Δ 24.9 MB, peak 4995.6 MB
 - **Beam size:** 8
@@ -4724,7 +4724,7 @@
 
 - **ID:** `b3786adf818b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.02s
 - **Memory:** Δ 37.4 MB, peak 5100.5 MB
 - **Beam size:** 8
@@ -4744,7 +4744,7 @@
 
 - **ID:** `d6ebbbe1d5d4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.49s
 - **Memory:** Δ -315.6 MB, peak 4739.5 MB
 - **Beam size:** 1
@@ -4764,7 +4764,7 @@
 
 - **ID:** `b2512b8dfeb1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.06s
 - **Memory:** Δ 2443.6 MB, peak 5073.8 MB
 - **Beam size:** 9
@@ -4784,7 +4784,7 @@
 
 - **ID:** `54b2256087ee`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.62s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 9
@@ -4804,7 +4804,7 @@
 
 - **ID:** `6a361693b5ce`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.19s
 - **Memory:** Δ 0.0 MB, peak 5346.1 MB
 - **Beam size:** 9
@@ -4824,7 +4824,7 @@
 
 - **ID:** `f15e6a20cc58`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.64s
 - **Memory:** Δ -243.8 MB, peak 5346.1 MB
 - **Beam size:** 8
@@ -4844,7 +4844,7 @@
 
 - **ID:** `733f3ecbf51c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.96s
 - **Memory:** Δ 0.0 MB, peak 9410.2 MB
 - **Beam size:** 1
@@ -4864,7 +4864,7 @@
 
 - **ID:** `334f3188bdfe`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.77s
 - **Memory:** Δ 74.9 MB, peak 5106.7 MB
 - **Beam size:** 2
@@ -4884,7 +4884,7 @@
 
 - **ID:** `3574d02bfd7a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.53s
 - **Memory:** Δ 37.4 MB, peak 5100.5 MB
 - **Beam size:** 1
@@ -4904,7 +4904,7 @@
 
 - **ID:** `6019c9926873`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.62s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 10
@@ -4924,7 +4924,7 @@
 
 - **ID:** `714d672f233d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.23s
 - **Memory:** Δ 2417.7 MB, peak 5048.8 MB
 - **Beam size:** 10
@@ -4944,7 +4944,7 @@
 
 - **ID:** `8fe4e081cb1c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.25s
 - **Memory:** Δ 2387.4 MB, peak 5017.6 MB
 - **Beam size:** 10
@@ -4964,7 +4964,7 @@
 
 - **ID:** `34b8a9894373`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.95s
 - **Memory:** Δ 306.1 MB, peak 5652.2 MB
 - **Beam size:** 10
@@ -4984,7 +4984,7 @@
 
 - **ID:** `49bd0e2c79c9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.47s
 - **Memory:** Δ 74.9 MB, peak 5106.7 MB
 - **Beam size:** 8
@@ -5004,7 +5004,7 @@
 
 - **ID:** `785004c729b0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.53s
 - **Memory:** Δ 128.0 MB, peak 4780.2 MB
 - **Beam size:** 1
@@ -5024,7 +5024,7 @@
 
 - **ID:** `b7e75f6e5b04`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.55s
 - **Memory:** Δ 24.7 MB, peak 5087.8 MB
 - **Beam size:** 9
@@ -5044,7 +5044,7 @@
 
 - **ID:** `1bd0ab760b41`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.68s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 9
@@ -5064,7 +5064,7 @@
 
 - **ID:** `8c0c7274d75a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.61s
 - **Memory:** Δ -37.4 MB, peak 5063.1 MB
 - **Beam size:** 8
@@ -5084,7 +5084,7 @@
 
 - **ID:** `b5fd4e1be1d4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.62s
 - **Memory:** Δ 290.6 MB, peak 4712.6 MB
 - **Beam size:** 9
@@ -5104,7 +5104,7 @@
 
 - **ID:** `5909b4d6ff5a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.37s
 - **Memory:** Δ 21.8 MB, peak 5084.8 MB
 - **Beam size:** 10
@@ -5124,7 +5124,7 @@
 
 - **ID:** `326f7b6acde9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 24.37s
 - **Memory:** Δ 1.5 MB, peak 2837.9 MB
 - **Beam size:** 5
@@ -5144,7 +5144,7 @@
 
 - **ID:** `79dd257cfb6f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.45s
 - **Memory:** Δ 0.3 MB, peak 9409.9 MB
 - **Beam size:** 10
@@ -5164,7 +5164,7 @@
 
 - **ID:** `78732cab9847`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.24s
 - **Memory:** Δ 0.0 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -5184,7 +5184,7 @@
 
 - **ID:** `1c46bee80669`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.97s
 - **Memory:** Δ 387.4 MB, peak 5353.1 MB
 - **Beam size:** 5
@@ -5204,7 +5204,7 @@
 
 - **ID:** `615ac2ee20f0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.81s
 - **Memory:** Δ -293.6 MB, peak 5346.1 MB
 - **Beam size:** 8
@@ -5224,7 +5224,7 @@
 
 - **ID:** `2a16ea8c7ab4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.56s
 - **Memory:** Δ 15.6 MB, peak 4459.4 MB
 - **Beam size:** 9
@@ -5244,7 +5244,7 @@
 
 - **ID:** `fb81ff5b4be1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.65s
 - **Memory:** Δ 37.4 MB, peak 5100.5 MB
 - **Beam size:** 10
@@ -5264,7 +5264,7 @@
 
 - **ID:** `9b459699e984`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.64s
 - **Memory:** Δ -25.0 MB, peak 4637.8 MB
 - **Beam size:** 10
@@ -5284,7 +5284,7 @@
 
 - **ID:** `42d11069be18`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.44s
 - **Memory:** Δ 0.0 MB, peak 4967.6 MB
 - **Beam size:** 8
@@ -5304,7 +5304,7 @@
 
 - **ID:** `5cbb6333a8fe`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.84s
 - **Memory:** Δ 281.8 MB, peak 5033.9 MB
 - **Beam size:** 9
@@ -5324,7 +5324,7 @@
 
 - **ID:** `33347a63faa0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.46s
 - **Memory:** Δ -281.1 MB, peak 5346.1 MB
 - **Beam size:** 9
@@ -5344,7 +5344,7 @@
 
 - **ID:** `4f493b62bde6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.06s
 - **Memory:** Δ 0.0 MB, peak 9409.9 MB
 - **Beam size:** 9
@@ -5364,7 +5364,7 @@
 
 - **ID:** `637140dfd6b3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.49s
 - **Memory:** Δ 0.0 MB, peak 5060.5 MB
 - **Beam size:** 8
@@ -5384,7 +5384,7 @@
 
 - **ID:** `7409df3ef62c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.15s
 - **Memory:** Δ 328.1 MB, peak 6000.8 MB
 - **Beam size:** 9
@@ -5404,7 +5404,7 @@
 
 - **ID:** `3a9156e6c1b0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.42s
 - **Memory:** Δ -229.4 MB, peak 4789.6 MB
 - **Beam size:** 9
@@ -5424,7 +5424,7 @@
 
 - **ID:** `dba8f1f19fe1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.58s
 - **Memory:** Δ 237.4 MB, peak 5060.5 MB
 - **Beam size:** 8
@@ -5444,7 +5444,7 @@
 
 - **ID:** `afee0b601d3c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.11s
 - **Memory:** Δ 0.0 MB, peak 5119.3 MB
 - **Beam size:** 10
@@ -5464,7 +5464,7 @@
 
 - **ID:** `328ff912a193`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.74s
 - **Memory:** Δ 3636.8 MB, peak 4877.2 MB
 - **Beam size:** 10
@@ -5484,7 +5484,7 @@
 
 - **ID:** `eb5e14e81cb0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.51s
 - **Memory:** Δ 49.9 MB, peak 4687.7 MB
 - **Beam size:** 10
@@ -5504,7 +5504,7 @@
 
 - **ID:** `ff269ca03832`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.58s
 - **Memory:** Δ 87.4 MB, peak 4994.0 MB
 - **Beam size:** 10
@@ -5524,7 +5524,7 @@
 
 - **ID:** `5e5b1bb10a87`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 22.19s
 - **Memory:** Δ 5.3 MB, peak 9276.4 MB
 - **Beam size:** 7
@@ -5544,7 +5544,7 @@
 
 - **ID:** `f1e9870502a3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.78s
 - **Memory:** Δ 165.5 MB, peak 4980.1 MB
 - **Beam size:** 10
@@ -5564,7 +5564,7 @@
 
 - **ID:** `1014be24b594`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 13.55s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 9
@@ -5584,7 +5584,7 @@
 
 - **ID:** `257f417b016a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.65s
 - **Memory:** Δ -49.9 MB, peak 4409.6 MB
 - **Beam size:** 10
@@ -5604,7 +5604,7 @@
 
 - **ID:** `5934e4dd8f5a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.65s
 - **Memory:** Δ -24.9 MB, peak 4409.6 MB
 - **Beam size:** 9
@@ -5624,7 +5624,7 @@
 
 - **ID:** `21f85288b385`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.42s
 - **Memory:** Δ 0.0 MB, peak 5031.8 MB
 - **Beam size:** 9
@@ -5644,7 +5644,7 @@
 
 - **ID:** `d2550227bcd0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.61s
 - **Memory:** Δ 1496.8 MB, peak 5026.9 MB
 - **Beam size:** 1
@@ -5664,7 +5664,7 @@
 
 - **ID:** `29d3bdaaa51e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.56s
 - **Memory:** Δ 2381.1 MB, peak 5011.3 MB
 - **Beam size:** 9
@@ -5684,7 +5684,7 @@
 
 - **ID:** `52a1fe703c09`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.49s
 - **Memory:** Δ -231.1 MB, peak 4823.1 MB
 - **Beam size:** 8
@@ -5704,7 +5704,7 @@
 
 - **ID:** `093f1d9709cf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.47s
 - **Memory:** Δ 0.3 MB, peak 9545.4 MB
 - **Beam size:** 10
@@ -5724,7 +5724,7 @@
 
 - **ID:** `1d65b8c80ef0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.30s
 - **Memory:** Δ 2598.3 MB, peak 2652.8 MB
 - **Beam size:** 1
@@ -5744,7 +5744,7 @@
 
 - **ID:** `d335703c0272`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.32s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 9
@@ -5764,7 +5764,7 @@
 
 - **ID:** `8c181d861e25`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.48s
 - **Memory:** Δ 0.0 MB, peak 4967.6 MB
 - **Beam size:** 1
@@ -5784,7 +5784,7 @@
 
 - **ID:** `e043926224d9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.86s
 - **Memory:** Δ 240.6 MB, peak 5270.7 MB
 - **Beam size:** 10
@@ -5804,7 +5804,7 @@
 
 - **ID:** `3bf5c6a0d0d5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.59s
 - **Memory:** Δ 84.1 MB, peak 5097.2 MB
 - **Beam size:** 8
@@ -5824,7 +5824,7 @@
 
 - **ID:** `8526a792d8fc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.37s
 - **Memory:** Δ 1298.0 MB, peak 1342.5 MB
 - **Beam size:** 6
@@ -5844,7 +5844,7 @@
 
 - **ID:** `32191ca9765f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 27.8 MB, peak 1392.7 MB
 - **Beam size:** 4
@@ -5864,7 +5864,7 @@
 
 - **ID:** `829c85227610`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.44s
 - **Memory:** Δ 1295.3 MB, peak 1346.3 MB
 - **Beam size:** 5
@@ -5884,7 +5884,7 @@
 
 - **ID:** `8f426abcc4a3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 49.5 MB, peak 1417.6 MB
 - **Beam size:** 5
@@ -5904,7 +5904,7 @@
 
 - **ID:** `a8531a3da24a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 3.3 MB, peak 1421.0 MB
 - **Beam size:** 5
@@ -5924,7 +5924,7 @@
 
 - **ID:** `12de2d798b62`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 3.3 MB, peak 1424.3 MB
 - **Beam size:** 5
@@ -5944,7 +5944,7 @@
 
 - **ID:** `9690c4de9368`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 3.0 MB, peak 1427.3 MB
 - **Beam size:** 5
@@ -5964,7 +5964,7 @@
 
 - **ID:** `e06eca6d9dec`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1427.3 MB
 - **Beam size:** 5
@@ -5984,7 +5984,7 @@
 
 - **ID:** `0d24a28007b5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.1 MB, peak 1427.4 MB
 - **Beam size:** 5
@@ -6004,7 +6004,7 @@
 
 - **ID:** `ddc40f018a5e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1427.4 MB
 - **Beam size:** 6
@@ -6024,7 +6024,7 @@
 
 - **ID:** `c7cc71a4c248`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.1 MB, peak 1427.4 MB
 - **Beam size:** 5
@@ -6044,7 +6044,7 @@
 
 - **ID:** `de07dcab548b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1427.5 MB
 - **Beam size:** 4
@@ -6064,7 +6064,7 @@
 
 - **ID:** `9bfb34f9f833`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.1 MB, peak 1427.5 MB
 - **Beam size:** 5
@@ -6084,7 +6084,7 @@
 
 - **ID:** `be9087a7db47`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1427.5 MB
 - **Beam size:** 6
@@ -6104,7 +6104,7 @@
 
 - **ID:** `00fe1797fada`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1427.6 MB
 - **Beam size:** 7
@@ -6124,7 +6124,7 @@
 
 - **ID:** `b1379d63f7c8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1427.6 MB
 - **Beam size:** 5
@@ -6144,7 +6144,7 @@
 
 - **ID:** `4193ec97191a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1427.6 MB
 - **Beam size:** 5
@@ -6164,7 +6164,7 @@
 
 - **ID:** `18238c21167b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1427.6 MB
 - **Beam size:** 4
@@ -6184,7 +6184,7 @@
 
 - **ID:** `bf7d6707d33c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1427.7 MB
 - **Beam size:** 6
@@ -6204,7 +6204,7 @@
 
 - **ID:** `81628291f9de`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 3.0 MB, peak 1430.7 MB
 - **Beam size:** 5
@@ -6224,7 +6224,7 @@
 
 - **ID:** `165fc826bf33`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.1 MB, peak 1430.7 MB
 - **Beam size:** 5
@@ -6244,7 +6244,7 @@
 
 - **ID:** `3a3bb6cdd0d0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1430.7 MB
 - **Beam size:** 6
@@ -6264,7 +6264,7 @@
 
 - **ID:** `2a5b62704b6c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1430.7 MB
 - **Beam size:** 4
@@ -6284,7 +6284,7 @@
 
 - **ID:** `5896a380eade`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.1 MB, peak 1430.8 MB
 - **Beam size:** 5
@@ -6304,7 +6304,7 @@
 
 - **ID:** `a573fe03cd57`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1430.8 MB
 - **Beam size:** 4
@@ -6324,7 +6324,7 @@
 
 - **ID:** `68e78024ee0e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1430.8 MB
 - **Beam size:** 5
@@ -6344,7 +6344,7 @@
 
 - **ID:** `f9eb7400a097`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.1 MB, peak 1430.9 MB
 - **Beam size:** 6
@@ -6364,7 +6364,7 @@
 
 - **ID:** `d82bcc80d966`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1430.9 MB
 - **Beam size:** 5
@@ -6384,7 +6384,7 @@
 
 - **ID:** `f44396c24792`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1430.9 MB
 - **Beam size:** 6
@@ -6404,7 +6404,7 @@
 
 - **ID:** `459119905a97`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1430.9 MB
 - **Beam size:** 5
@@ -6424,7 +6424,7 @@
 
 - **ID:** `ebc627e9198d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.1 MB, peak 1431.0 MB
 - **Beam size:** 7
@@ -6444,7 +6444,7 @@
 
 - **ID:** `b37e0f07da2a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1431.2 MB
 - **Beam size:** 5
@@ -6464,7 +6464,7 @@
 
 - **ID:** `b9a0684e15fe`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.89s
 - **Memory:** Δ 0.0 MB, peak 1431.2 MB
 - **Beam size:** 6
@@ -6484,7 +6484,7 @@
 
 - **ID:** `e4747432c0f3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1431.2 MB
 - **Beam size:** 5
@@ -6504,7 +6504,7 @@
 
 - **ID:** `73d03de07528`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1431.2 MB
 - **Beam size:** 6
@@ -6524,7 +6524,7 @@
 
 - **ID:** `fed353fe5d6c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 1.2 MB, peak 1432.4 MB
 - **Beam size:** 6
@@ -6544,7 +6544,7 @@
 
 - **ID:** `d69c89b11097`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1432.4 MB
 - **Beam size:** 5
@@ -6564,7 +6564,7 @@
 
 - **ID:** `f9b6b54d45fe`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1432.4 MB
 - **Beam size:** 4
@@ -6584,7 +6584,7 @@
 
 - **ID:** `27d6d0a80eaf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.1 MB, peak 1432.6 MB
 - **Beam size:** 6
@@ -6604,7 +6604,7 @@
 
 - **ID:** `95fe6ed51e63`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1432.6 MB
 - **Beam size:** 5
@@ -6624,7 +6624,7 @@
 
 - **ID:** `38cfdf55a3dc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.2 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6644,7 +6644,7 @@
 
 - **ID:** `e7b3f9c63862`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 6
@@ -6664,7 +6664,7 @@
 
 - **ID:** `b56a1a618e05`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6684,7 +6684,7 @@
 
 - **ID:** `969732a6d8d7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6704,7 +6704,7 @@
 
 - **ID:** `904f599a2954`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6724,7 +6724,7 @@
 
 - **ID:** `31d04491bfe0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 4
@@ -6744,7 +6744,7 @@
 
 - **ID:** `970055c829dd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6764,7 +6764,7 @@
 
 - **ID:** `c99789357c10`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6784,7 +6784,7 @@
 
 - **ID:** `f284f08ba7da`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 6
@@ -6804,7 +6804,7 @@
 
 - **ID:** `4efe53318896`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 5
@@ -6824,7 +6824,7 @@
 
 - **ID:** `0be0a51a0c9f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 4
@@ -6844,7 +6844,7 @@
 
 - **ID:** `b037e1cf8662`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.2 MB, peak 1433.1 MB
 - **Beam size:** 4
@@ -6864,7 +6864,7 @@
 
 - **ID:** `b82c3622a848`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1433.1 MB
 - **Beam size:** 4
@@ -6884,7 +6884,7 @@
 
 - **ID:** `dd8bb68807f2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1433.1 MB
 - **Beam size:** 5
@@ -6904,7 +6904,7 @@
 
 - **ID:** `3c939f1b0a45`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1433.1 MB
 - **Beam size:** 7
@@ -6924,7 +6924,7 @@
 
 - **ID:** `b2913c2b9421`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.97s
 - **Memory:** Δ 2.0 MB, peak 1516.5 MB
 - **Beam size:** 5
@@ -6944,7 +6944,7 @@
 
 - **ID:** `9074ceaa0d89`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1516.5 MB
 - **Beam size:** 5
@@ -6964,7 +6964,7 @@
 
 - **ID:** `5e32c74994f4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.2 MB, peak 1516.7 MB
 - **Beam size:** 6
@@ -6984,7 +6984,7 @@
 
 - **ID:** `f0d55208786e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1516.7 MB
 - **Beam size:** 5
@@ -7004,7 +7004,7 @@
 
 - **ID:** `602f4c99513c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1516.7 MB
 - **Beam size:** 5
@@ -7024,7 +7024,7 @@
 
 - **ID:** `9f8c32c21a22`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 5
@@ -7044,7 +7044,7 @@
 
 - **ID:** `c560863f30d7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 4
@@ -7064,7 +7064,7 @@
 
 - **ID:** `19a6d0488204`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 5
@@ -7084,7 +7084,7 @@
 
 - **ID:** `a4ba17e2b3bc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 5
@@ -7104,7 +7104,7 @@
 
 - **ID:** `e22a1c2eb8a4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 6
@@ -7124,7 +7124,7 @@
 
 - **ID:** `385af9d2529a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 45.9 MB, peak 1516.8 MB
 - **Beam size:** 6
@@ -7144,7 +7144,7 @@
 
 - **ID:** `db9d8cee60d7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 6
@@ -7164,7 +7164,7 @@
 
 - **ID:** `2f4acef4e655`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 7
@@ -7184,7 +7184,7 @@
 
 - **ID:** `57b90d956a1e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 5
@@ -7204,7 +7204,7 @@
 
 - **ID:** `b5a78448eb16`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 6
@@ -7224,7 +7224,7 @@
 
 - **ID:** `a4b66768b265`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 5
@@ -7244,7 +7244,7 @@
 
 - **ID:** `f1f782d6a111`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.20s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 6
@@ -7264,7 +7264,7 @@
 
 - **ID:** `6b5ae5551f1a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 5
@@ -7284,7 +7284,7 @@
 
 - **ID:** `4206bb239b3b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 7
@@ -7304,7 +7304,7 @@
 
 - **ID:** `fdbfa58ae0da`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 7
@@ -7324,7 +7324,7 @@
 
 - **ID:** `62687fe0c9af`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 7
@@ -7344,7 +7344,7 @@
 
 - **ID:** `74d40b4239b1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 5
@@ -7364,7 +7364,7 @@
 
 - **ID:** `1cb233ad7179`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 6
@@ -7384,7 +7384,7 @@
 
 - **ID:** `b6a43b1b0ad3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 5
@@ -7404,7 +7404,7 @@
 
 - **ID:** `88dfc0e5972e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 5
@@ -7424,7 +7424,7 @@
 
 - **ID:** `6db712fa08d0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.20s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 8
@@ -7444,7 +7444,7 @@
 
 - **ID:** `f07bd368b1cf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 6
@@ -7464,7 +7464,7 @@
 
 - **ID:** `57007844dac5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 4
@@ -7484,7 +7484,7 @@
 
 - **ID:** `bc6e77fe4635`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7504,7 +7504,7 @@
 
 - **ID:** `8887ea49f67a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7524,7 +7524,7 @@
 
 - **ID:** `62d48dbe3e13`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7544,7 +7544,7 @@
 
 - **ID:** `17730cdb0097`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7564,7 +7564,7 @@
 
 - **ID:** `ada5fad0d3a7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.83s
 - **Memory:** Δ 45.9 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7584,7 +7584,7 @@
 
 - **ID:** `3fa7e18a261b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 7
@@ -7604,7 +7604,7 @@
 
 - **ID:** `4c1f783d03bb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7624,7 +7624,7 @@
 
 - **ID:** `ba2647c5dc2b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -7644,7 +7644,7 @@
 
 - **ID:** `71452d1617aa`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 5
@@ -7664,7 +7664,7 @@
 
 - **ID:** `4b918ef6a79f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 5
@@ -7684,7 +7684,7 @@
 
 - **ID:** `46dfd7be63a2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 5
@@ -7704,7 +7704,7 @@
 
 - **ID:** `abd2d64adcf1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 6
@@ -7724,7 +7724,7 @@
 
 - **ID:** `68b04f652c19`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 4
@@ -7744,7 +7744,7 @@
 
 - **ID:** `4e0c2ea447b5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 5
@@ -7764,7 +7764,7 @@
 
 - **ID:** `a8ee7633e52a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1519.0 MB
 - **Beam size:** 6
@@ -7784,7 +7784,7 @@
 
 - **ID:** `958294c1c32b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.87s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 4
@@ -7804,7 +7804,7 @@
 
 - **ID:** `ad9e612c8654`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 4
@@ -7824,7 +7824,7 @@
 
 - **ID:** `cfc23b576eb0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 4
@@ -7844,7 +7844,7 @@
 
 - **ID:** `c64ef102dca1`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 4
@@ -7864,7 +7864,7 @@
 
 - **ID:** `2f13ea9c7966`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 5
@@ -7884,7 +7884,7 @@
 
 - **ID:** `a8cf941a09c4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 4
@@ -7904,7 +7904,7 @@
 
 - **ID:** `cec706f1c6f5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 3
@@ -7924,7 +7924,7 @@
 
 - **ID:** `1baf6d5d8284`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 49.1 MB, peak 1531.5 MB
 - **Beam size:** 6
@@ -7944,7 +7944,7 @@
 
 - **ID:** `e2dc5efa99fa`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1531.5 MB
 - **Beam size:** 5
@@ -7964,7 +7964,7 @@
 
 - **ID:** `ab18f91077d3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 2.0 MB, peak 1533.5 MB
 - **Beam size:** 6
@@ -7984,7 +7984,7 @@
 
 - **ID:** `0570530d5ff6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1533.5 MB
 - **Beam size:** 6
@@ -8004,7 +8004,7 @@
 
 - **ID:** `06295cb80a5a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1533.5 MB
 - **Beam size:** 6
@@ -8024,7 +8024,7 @@
 
 - **ID:** `0e5056f2163d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1533.5 MB
 - **Beam size:** 5
@@ -8044,7 +8044,7 @@
 
 - **ID:** `c92385131892`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.77s
 - **Memory:** Δ 0.0 MB, peak 1533.6 MB
 - **Beam size:** 5
@@ -8064,7 +8064,7 @@
 
 - **ID:** `0d35bc2f400e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.18s
 - **Memory:** Δ 0.0 MB, peak 1533.6 MB
 - **Beam size:** 7
@@ -8084,7 +8084,7 @@
 
 - **ID:** `17c5e5557c9b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 45.9 MB, peak 1532.6 MB
 - **Beam size:** 4
@@ -8104,7 +8104,7 @@
 
 - **ID:** `8aab490c068a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1533.9 MB
 - **Beam size:** 5
@@ -8124,7 +8124,7 @@
 
 - **ID:** `02de4c7b818e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.90s
 - **Memory:** Δ 0.0 MB, peak 1533.9 MB
 - **Beam size:** 5
@@ -8144,7 +8144,7 @@
 
 - **ID:** `161ab251428f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.45s
 - **Memory:** Δ 268.5 MB, peak 5614.6 MB
 - **Beam size:** 9
@@ -8164,7 +8164,7 @@
 
 - **ID:** `471c3080bc10`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.41s
 - **Memory:** Δ 1295.3 MB, peak 1348.1 MB
 - **Beam size:** 5
@@ -8184,7 +8184,7 @@
 
 - **ID:** `f1733a3ab869`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.86s
 - **Memory:** Δ 49.4 MB, peak 1419.3 MB
 - **Beam size:** 5
@@ -8204,7 +8204,7 @@
 
 - **ID:** `cd5cfa938e52`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.40s
 - **Memory:** Δ 3.0 MB, peak 1422.4 MB
 - **Beam size:** 6
@@ -8224,7 +8224,7 @@
 
 - **ID:** `d07827330e25`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.83s
 - **Memory:** Δ 3.3 MB, peak 1425.8 MB
 - **Beam size:** 5
@@ -8244,7 +8244,7 @@
 
 - **ID:** `fbc245343d76`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.29s
 - **Memory:** Δ 3.2 MB, peak 1429.0 MB
 - **Beam size:** 4
@@ -8264,7 +8264,7 @@
 
 - **ID:** `8e6be0203691`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.34s
 - **Memory:** Δ 48.4 MB, peak 1444.5 MB
 - **Beam size:** 6
@@ -8284,7 +8284,7 @@
 
 - **ID:** `d78f6ddae93b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.20s
 - **Memory:** Δ 2.4 MB, peak 1446.9 MB
 - **Beam size:** 7
@@ -8304,7 +8304,7 @@
 
 - **ID:** `edce4bb8145c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.88s
 - **Memory:** Δ 0.0 MB, peak 1446.9 MB
 - **Beam size:** 5
@@ -8324,7 +8324,7 @@
 
 - **ID:** `fb2311168a73`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1447.0 MB
 - **Beam size:** 5
@@ -8344,7 +8344,7 @@
 
 - **ID:** `332fa35930c3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.19s
 - **Memory:** Δ 0.0 MB, peak 1447.0 MB
 - **Beam size:** 5
@@ -8364,7 +8364,7 @@
 
 - **ID:** `ece2f821a624`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.17s
 - **Memory:** Δ 0.0 MB, peak 1447.0 MB
 - **Beam size:** 5
@@ -8384,7 +8384,7 @@
 
 - **ID:** `f19accd485f2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 0.0 MB, peak 1447.0 MB
 - **Beam size:** 5
@@ -8404,7 +8404,7 @@
 
 - **ID:** `e3ce070770f7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.17s
 - **Memory:** Δ 0.0 MB, peak 1448.9 MB
 - **Beam size:** 4
@@ -8424,7 +8424,7 @@
 
 - **ID:** `1988329c35a9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 5
@@ -8444,7 +8444,7 @@
 
 - **ID:** `b78a7d433b6e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 6
@@ -8464,7 +8464,7 @@
 
 - **ID:** `4a0615c5a0ab`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.80s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 6
@@ -8484,7 +8484,7 @@
 
 - **ID:** `dcd5c0572d76`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.87s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 6
@@ -8504,7 +8504,7 @@
 
 - **ID:** `b2a82ad10f2d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.02s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 5
@@ -8524,7 +8524,7 @@
 
 - **ID:** `074b69cf85cc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.81s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 7
@@ -8544,7 +8544,7 @@
 
 - **ID:** `1abfec4c452a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.84s
 - **Memory:** Δ 0.0 MB, peak 1450.9 MB
 - **Beam size:** 6
@@ -8564,7 +8564,7 @@
 
 - **ID:** `bc52c0ac3385`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.84s
 - **Memory:** Δ 0.0 MB, peak 1451.0 MB
 - **Beam size:** 5
@@ -8584,7 +8584,7 @@
 
 - **ID:** `dc7eda2c4e35`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.81s
 - **Memory:** Δ 45.9 MB, peak 1451.1 MB
 - **Beam size:** 5
@@ -8604,7 +8604,7 @@
 
 - **ID:** `dc3ff680b411`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.36s
 - **Memory:** Δ 49.1 MB, peak 1532.0 MB
 - **Beam size:** 4
@@ -8624,7 +8624,7 @@
 
 - **ID:** `58f322df6338`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1532.0 MB
 - **Beam size:** 4
@@ -8644,7 +8644,7 @@
 
 - **ID:** `3d78d842840f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1532.0 MB
 - **Beam size:** 4
@@ -8664,7 +8664,7 @@
 
 - **ID:** `8def1772a78c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.86s
 - **Memory:** Δ 2.2 MB, peak 1534.2 MB
 - **Beam size:** 5
@@ -8684,7 +8684,7 @@
 
 - **ID:** `278d4ec35900`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1534.2 MB
 - **Beam size:** 3
@@ -8704,7 +8704,7 @@
 
 - **ID:** `913bb50bbd74`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1534.1 MB
 - **Beam size:** 4
@@ -8724,7 +8724,7 @@
 
 - **ID:** `007172e4d43c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.04s
 - **Memory:** Δ 0.1 MB, peak 1534.3 MB
 - **Beam size:** 5
@@ -8744,7 +8744,7 @@
 
 - **ID:** `90bb2954efdd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 0.0 MB, peak 1534.3 MB
 - **Beam size:** 6
@@ -8764,7 +8764,7 @@
 
 - **ID:** `1765dac4ae2f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1534.3 MB
 - **Beam size:** 5
@@ -8784,7 +8784,7 @@
 
 - **ID:** `89b3cbaab391`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1534.3 MB
 - **Beam size:** 5
@@ -8804,7 +8804,7 @@
 
 - **ID:** `c234a37e9bd9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1534.3 MB
 - **Beam size:** 5
@@ -8824,7 +8824,7 @@
 
 - **ID:** `65b8c3d22232`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1534.4 MB
 - **Beam size:** 5
@@ -8844,7 +8844,7 @@
 
 - **ID:** `5642516ec45b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 0.0 MB, peak 1534.4 MB
 - **Beam size:** 5
@@ -8864,7 +8864,7 @@
 
 - **ID:** `bd1e6d9ccc20`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1534.4 MB
 - **Beam size:** 5
@@ -8884,7 +8884,7 @@
 
 - **ID:** `5a30537ddf84`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.2 MB, peak 1534.6 MB
 - **Beam size:** 4
@@ -8904,7 +8904,7 @@
 
 - **ID:** `0dd2db7e1be7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1534.8 MB
 - **Beam size:** 8
@@ -8924,7 +8924,7 @@
 
 - **ID:** `9fda01478c78`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.83s
 - **Memory:** Δ 0.0 MB, peak 1534.8 MB
 - **Beam size:** 7
@@ -8944,7 +8944,7 @@
 
 - **ID:** `cc6b2927f98a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 24.3 MB, peak 1513.2 MB
 - **Beam size:** 4
@@ -8964,7 +8964,7 @@
 
 - **ID:** `a2b2335cdacb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 21.7 MB, peak 1534.9 MB
 - **Beam size:** 6
@@ -8984,7 +8984,7 @@
 
 - **ID:** `8915a9f6ba38`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.86s
 - **Memory:** Δ 0.0 MB, peak 1534.9 MB
 - **Beam size:** 5
@@ -9004,7 +9004,7 @@
 
 - **ID:** `c6b0ea6be6c6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.08s
 - **Memory:** Δ 0.0 MB, peak 1536.7 MB
 - **Beam size:** 6
@@ -9024,7 +9024,7 @@
 
 - **ID:** `f8d2f4b079ba`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 3.2 MB, peak 1544.8 MB
 - **Beam size:** 5
@@ -9044,7 +9044,7 @@
 
 - **ID:** `f2b9eda86f7e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.91s
 - **Memory:** Δ 0.2 MB, peak 1545.0 MB
 - **Beam size:** 4
@@ -9064,7 +9064,7 @@
 
 - **ID:** `f9ec79948fde`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.74s
 - **Memory:** Δ 0.0 MB, peak 1547.0 MB
 - **Beam size:** 7
@@ -9084,7 +9084,7 @@
 
 - **ID:** `55a2f24356a5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.88s
 - **Memory:** Δ 45.9 MB, peak 1547.1 MB
 - **Beam size:** 5
@@ -9104,7 +9104,7 @@
 
 - **ID:** `2e1af0ea84d2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 6
@@ -9124,7 +9124,7 @@
 
 - **ID:** `c3a678455328`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 5
@@ -9144,7 +9144,7 @@
 
 - **ID:** `8429e9c9e56f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 5
@@ -9164,7 +9164,7 @@
 
 - **ID:** `a1a634881892`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 6
@@ -9184,7 +9184,7 @@
 
 - **ID:** `e7a3f29117bf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1547.0 MB
 - **Beam size:** 4
@@ -9204,7 +9204,7 @@
 
 - **ID:** `357680077737`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 6
@@ -9224,7 +9224,7 @@
 
 - **ID:** `8e17107a288b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 5
@@ -9244,7 +9244,7 @@
 
 - **ID:** `f8bebbb6203d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 7
@@ -9264,7 +9264,7 @@
 
 - **ID:** `998e713f8de0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.83s
 - **Memory:** Δ 45.9 MB, peak 1547.5 MB
 - **Beam size:** 5
@@ -9284,7 +9284,7 @@
 
 - **ID:** `c83b19d6224f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 0.0 MB, peak 1547.5 MB
 - **Beam size:** 5
@@ -9304,7 +9304,7 @@
 
 - **ID:** `6f24e2a5df93`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.81s
 - **Memory:** Δ 46.3 MB, peak 1549.2 MB
 - **Beam size:** 5
@@ -9324,7 +9324,7 @@
 
 - **ID:** `1af1d5c578da`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1549.2 MB
 - **Beam size:** 6
@@ -9344,7 +9344,7 @@
 
 - **ID:** `f144d741abb2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1549.2 MB
 - **Beam size:** 4
@@ -9364,7 +9364,7 @@
 
 - **ID:** `ecdfc9410c05`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.90s
 - **Memory:** Δ 45.9 MB, peak 1549.2 MB
 - **Beam size:** 4
@@ -9384,7 +9384,7 @@
 
 - **ID:** `25c2b6cbaed5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.89s
 - **Memory:** Δ 0.0 MB, peak 1551.1 MB
 - **Beam size:** 6
@@ -9404,7 +9404,7 @@
 
 - **ID:** `70c6ac25ca27`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.76s
 - **Memory:** Δ 0.0 MB, peak 1551.1 MB
 - **Beam size:** 5
@@ -9424,7 +9424,7 @@
 
 - **ID:** `01c9ddb9811c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 45.9 MB, peak 1551.2 MB
 - **Beam size:** 6
@@ -9444,7 +9444,7 @@
 
 - **ID:** `7eaff084a801`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.78s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 5
@@ -9464,7 +9464,7 @@
 
 - **ID:** `29a7f6a9c227`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 4
@@ -9484,7 +9484,7 @@
 
 - **ID:** `beceb7c3a698`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 133.04s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 6
@@ -9504,7 +9504,7 @@
 
 - **ID:** `dd3866a82cb2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 5
@@ -9524,7 +9524,7 @@
 
 - **ID:** `9a27ccf86579`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.84s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 5
@@ -9544,7 +9544,7 @@
 
 - **ID:** `f8254db17c8a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.85s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 4
@@ -9564,7 +9564,7 @@
 
 - **ID:** `9e2a6d09fab6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.82s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 7
@@ -9584,7 +9584,7 @@
 
 - **ID:** `c9cf016ee2fa`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.91s
 - **Memory:** Δ 24.3 MB, peak 1529.6 MB
 - **Beam size:** 5
@@ -9604,7 +9604,7 @@
 
 - **ID:** `683b8be9f9e0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.23s
 - **Memory:** Δ 21.7 MB, peak 1551.3 MB
 - **Beam size:** 3
@@ -9624,7 +9624,7 @@
 
 - **ID:** `0b79dda36571`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 134.01s
 - **Memory:** Δ 0.0 MB, peak 1551.3 MB
 - **Beam size:** 9
@@ -9644,7 +9644,7 @@
 
 - **ID:** `79975ecca2c4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.16s
 - **Memory:** Δ 0.0 MB, peak 1551.3 MB
 - **Beam size:** 5
@@ -9664,7 +9664,7 @@
 
 - **ID:** `6dcb55d96601`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.06s
 - **Memory:** Δ 45.9 MB, peak 1551.4 MB
 - **Beam size:** 6
@@ -9684,7 +9684,7 @@
 
 - **ID:** `b5732103444b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.84s
 - **Memory:** Δ 0.0 MB, peak 1551.4 MB
 - **Beam size:** 5
@@ -9704,7 +9704,7 @@
 
 - **ID:** `12aaafe0fdbb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.80s
 - **Memory:** Δ 0.0 MB, peak 1551.4 MB
 - **Beam size:** 5
@@ -9724,7 +9724,7 @@
 
 - **ID:** `64e88ad96b5d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.79s
 - **Memory:** Δ 0.0 MB, peak 1551.5 MB
 - **Beam size:** 6
@@ -9744,7 +9744,7 @@
 
 - **ID:** `3e141ae3309e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.02s
 - **Memory:** Δ 0.0 MB, peak 1551.5 MB
 - **Beam size:** 5
@@ -9764,7 +9764,7 @@
 
 - **ID:** `9315dd716077`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.88s
 - **Memory:** Δ 0.0 MB, peak 1551.5 MB
 - **Beam size:** 4
@@ -9784,7 +9784,7 @@
 
 - **ID:** `9aa7a6a2d3df`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.83s
 - **Memory:** Δ 45.9 MB, peak 1551.5 MB
 - **Beam size:** 4
@@ -9804,7 +9804,7 @@
 
 - **ID:** `29a3f2150f45`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.87s
 - **Memory:** Δ 0.0 MB, peak 1551.4 MB
 - **Beam size:** 5
@@ -9824,7 +9824,7 @@
 
 - **ID:** `e30a3db489e7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.30s
 - **Memory:** Δ -24.9 MB, peak 4684.8 MB
 - **Beam size:** 10
@@ -9844,7 +9844,7 @@
 
 - **ID:** `bf59b6b6b096`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.50s
 - **Memory:** Δ 101.5 MB, peak 5000.0 MB
 - **Beam size:** 5
@@ -9864,7 +9864,7 @@
 
 - **ID:** `53979045c525`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 10.72s
 - **Memory:** Δ 78.4 MB, peak 8880.0 MB
 - **Beam size:** 1
@@ -9884,7 +9884,7 @@
 
 - **ID:** `8968f304e183`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.25s
 - **Memory:** Δ 1.9 MB, peak 1435.0 MB
 - **Beam size:** 5
@@ -9904,7 +9904,7 @@
 
 - **ID:** `e73ca438c103`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.07s
 - **Memory:** Δ 30.4 MB, peak 1465.4 MB
 - **Beam size:** 4
@@ -9924,7 +9924,7 @@
 
 - **ID:** `f542eb15df95`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.17s
 - **Memory:** Δ -45.9 MB, peak 1470.9 MB
 - **Beam size:** 5
@@ -9944,7 +9944,7 @@
 
 - **ID:** `09a7f29c9f51`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.22s
 - **Memory:** Δ 1.9 MB, peak 1518.8 MB
 - **Beam size:** 3
@@ -9964,7 +9964,7 @@
 
 - **ID:** `3a103032732c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.17s
 - **Memory:** Δ -45.9 MB, peak 1472.9 MB
 - **Beam size:** 4
@@ -9984,7 +9984,7 @@
 
 - **ID:** `3096dad23c59`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.24s
 - **Memory:** Δ 1.9 MB, peak 1521.0 MB
 - **Beam size:** 5
@@ -10004,7 +10004,7 @@
 
 - **ID:** `872bcec72b24`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.97s
 - **Memory:** Δ -45.9 MB, peak 1486.7 MB
 - **Beam size:** 6
@@ -10024,7 +10024,7 @@
 
 - **ID:** `7cd5244b4f21`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.91s
 - **Memory:** Δ 2.0 MB, peak 1448.9 MB
 - **Beam size:** 5
@@ -10044,7 +10044,7 @@
 
 - **ID:** `e1f19aa8b16d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.19s
 - **Memory:** Δ 31.7 MB, peak 1482.8 MB
 - **Beam size:** 6
@@ -10064,7 +10064,7 @@
 
 - **ID:** `bc43b85c6051`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.43s
 - **Memory:** Δ 1.7 MB, peak 1536.6 MB
 - **Beam size:** 5
@@ -10084,7 +10084,7 @@
 
 - **ID:** `fa06becb20ff`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.99s
 - **Memory:** Δ -45.9 MB, peak 1499.1 MB
 - **Beam size:** 6
@@ -10104,7 +10104,7 @@
 
 - **ID:** `dacd533bca0f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.98s
 - **Memory:** Δ -45.9 MB, peak 1503.2 MB
 - **Beam size:** 5
@@ -10124,7 +10124,7 @@
 
 - **ID:** `d210fc7d0f26`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.29s
 - **Memory:** Δ 1.9 MB, peak 1551.1 MB
 - **Beam size:** 5
@@ -10144,7 +10144,7 @@
 
 - **ID:** `865fa2087681`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.11s
 - **Memory:** Δ 513.1 MB, peak 3351.0 MB
 - **Beam size:** 3
@@ -10164,7 +10164,7 @@
 
 - **ID:** `3f46450dd70d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.60s
 - **Memory:** Δ 0.7 MB, peak 3358.8 MB
 - **Beam size:** 5
@@ -10184,7 +10184,7 @@
 
 - **ID:** `a65c9447ca04`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.51s
 - **Memory:** Δ 0.9 MB, peak 1214.1 MB
 - **Beam size:** 10
@@ -10204,7 +10204,7 @@
 
 - **ID:** `2a8845ed9e83`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.44s
 - **Memory:** Δ 3.1 MB, peak 1217.2 MB
 - **Beam size:** 10
@@ -10224,7 +10224,7 @@
 
 - **ID:** `a85fa8081015`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.58s
 - **Memory:** Δ 5.6 MB, peak 1222.8 MB
 - **Beam size:** 10
@@ -10244,7 +10244,7 @@
 
 - **ID:** `0a036d41bd1b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.50s
 - **Memory:** Δ 0.4 MB, peak 1222.9 MB
 - **Beam size:** 8
@@ -10264,7 +10264,7 @@
 
 - **ID:** `b61d1288af8b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.53s
 - **Memory:** Δ -0.0 MB, peak 1222.9 MB
 - **Beam size:** 4
@@ -10284,7 +10284,7 @@
 
 - **ID:** `4299a8f83417`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.49s
 - **Memory:** Δ 0.8 MB, peak 1223.8 MB
 - **Beam size:** 9
@@ -10304,7 +10304,7 @@
 
 - **ID:** `2677832e6dd5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.59s
 - **Memory:** Δ -0.4 MB, peak 1223.3 MB
 - **Beam size:** 4
@@ -10324,7 +10324,7 @@
 
 - **ID:** `df4904984a4c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.75s
 - **Memory:** Δ 0.4 MB, peak 1223.7 MB
 - **Beam size:** 8
@@ -10344,7 +10344,7 @@
 
 - **ID:** `82abd5726f59`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.63s
 - **Memory:** Δ 0.4 MB, peak 1296.9 MB
 - **Beam size:** 9
@@ -10364,7 +10364,7 @@
 
 - **ID:** `df9d9278e8df`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.67s
 - **Memory:** Δ -0.4 MB, peak 1296.5 MB
 - **Beam size:** 10
@@ -10384,7 +10384,7 @@
 
 - **ID:** `a7d6bde3f95b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.73s
 - **Memory:** Δ 196.5 MB, peak 1493.0 MB
 - **Beam size:** 9
@@ -10404,7 +10404,7 @@
 
 - **ID:** `4c719a9e314a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.79s
 - **Memory:** Δ -196.5 MB, peak 1296.5 MB
 - **Beam size:** 7
@@ -10424,7 +10424,7 @@
 
 - **ID:** `a966443da1b8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.62s
 - **Memory:** Δ 0.4 MB, peak 1296.9 MB
 - **Beam size:** 9
@@ -10444,7 +10444,7 @@
 
 - **ID:** `776747f0e6fc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.85s
 - **Memory:** Δ -0.4 MB, peak 1296.5 MB
 - **Beam size:** 10
@@ -10464,7 +10464,7 @@
 
 - **ID:** `32fa24140868`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.73s
 - **Memory:** Δ 0.4 MB, peak 1303.4 MB
 - **Beam size:** 8
@@ -10484,7 +10484,7 @@
 
 - **ID:** `d9f615138bcf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.84s
 - **Memory:** Δ -0.4 MB, peak 1303.0 MB
 - **Beam size:** 3
@@ -10504,7 +10504,7 @@
 
 - **ID:** `db82a61a0305`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.03s
 - **Memory:** Δ -38.6 MB, peak 1482.4 MB
 - **Beam size:** 7
@@ -10524,7 +10524,7 @@
 
 - **ID:** `3c5b8302d333`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.20s
 - **Memory:** Δ 0.0 MB, peak 9006.8 MB
 - **Beam size:** 1
@@ -10544,7 +10544,7 @@
 
 - **ID:** `5d22583bc9ee`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.88s
 - **Memory:** Δ -45.9 MB, peak 1405.1 MB
 - **Beam size:** 4
@@ -10564,7 +10564,7 @@
 
 - **ID:** `6d85e3bd42e5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.02s
 - **Memory:** Δ -45.9 MB, peak 1488.9 MB
 - **Beam size:** 5
@@ -10584,7 +10584,7 @@
 
 - **ID:** `e3638aebf4b0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.86s
 - **Memory:** Δ -45.9 MB, peak 1501.1 MB
 - **Beam size:** 4
@@ -10604,7 +10604,7 @@
 
 - **ID:** `7c4da5f60745`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.57s
 - **Memory:** Δ -45.6 MB, peak 1501.5 MB
 - **Beam size:** 4
@@ -10624,7 +10624,7 @@
 
 - **ID:** `0a68e3ca0326`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.01s
 - **Memory:** Δ -45.9 MB, peak 1505.2 MB
 - **Beam size:** 5
@@ -10644,7 +10644,7 @@
 
 - **ID:** `97819abc1cc7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.46s
 - **Memory:** Δ -45.9 MB, peak 1505.4 MB
 - **Beam size:** 6
@@ -10664,7 +10664,7 @@
 
 - **ID:** `24efebe4d31a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.54s
 - **Memory:** Δ 2049.9 MB, peak 4709.7 MB
 - **Beam size:** 8
@@ -10684,7 +10684,7 @@
 
 - **ID:** `181d62fad59f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.37s
 - **Memory:** Δ 268.6 MB, peak 5614.7 MB
 - **Beam size:** 9
@@ -10704,7 +10704,7 @@
 
 - **ID:** `37fafba59f3a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.35s
 - **Memory:** Δ 168.6 MB, peak 4983.2 MB
 - **Beam size:** 8
@@ -10724,7 +10724,7 @@
 
 - **ID:** `5e1bc0a2a4b6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 15.83s
 - **Memory:** Δ 1636.3 MB, peak 1684.6 MB
 - **Beam size:** 3
@@ -10744,7 +10744,7 @@
 
 - **ID:** `70d9674bc5a7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.03s
 - **Memory:** Δ -318.6 MB, peak 5346.1 MB
 - **Beam size:** 9
@@ -10764,7 +10764,7 @@
 
 - **ID:** `c2772ff21d34`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.28s
 - **Memory:** Δ 0.0 MB, peak 9399.6 MB
 - **Beam size:** 9
@@ -10784,7 +10784,7 @@
 
 - **ID:** `cbe6eab039d2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.29s
 - **Memory:** Δ 0.3 MB, peak 9410.2 MB
 - **Beam size:** 10
@@ -10804,7 +10804,7 @@
 
 - **ID:** `3e4e9f7054c3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 14.24s
 - **Memory:** Δ 0.0 MB, peak 2754.9 MB
 - **Beam size:** 4
@@ -10824,7 +10824,7 @@
 
 - **ID:** `bd0200d2dbfc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.19s
 - **Memory:** Δ 1120.5 MB, peak 1165.4 MB
 - **Beam size:** 5
@@ -10844,7 +10844,7 @@
 
 - **ID:** `fb629cdd0dca`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.56s
 - **Memory:** Δ 51.7 MB, peak 1240.4 MB
 - **Beam size:** 2
@@ -10864,7 +10864,7 @@
 
 - **ID:** `b8b2b240ab30`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.25s
 - **Memory:** Δ 84.5 MB, peak 4962.0 MB
 - **Beam size:** 6
@@ -10884,7 +10884,7 @@
 
 - **ID:** `b3b54db29756`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.77s
 - **Memory:** Δ -11.2 MB, peak 5341.9 MB
 - **Beam size:** 6
@@ -10904,7 +10904,7 @@
 
 - **ID:** `79171657b57b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.04s
 - **Memory:** Δ 5.2 MB, peak 4972.8 MB
 - **Beam size:** 1
@@ -10924,7 +10924,7 @@
 
 - **ID:** `f23f8c970f94`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.31s
 - **Memory:** Δ 5.1 MB, peak 4977.9 MB
 - **Beam size:** 7
@@ -10944,7 +10944,7 @@
 
 - **ID:** `c72528c04758`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.16s
 - **Memory:** Δ 1118.8 MB, peak 1167.7 MB
 - **Beam size:** 1
@@ -10964,7 +10964,7 @@
 
 - **ID:** `11bf3f8079cb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.57s
 - **Memory:** Δ 51.5 MB, peak 1239.9 MB
 - **Beam size:** 6
@@ -10984,7 +10984,7 @@
 
 - **ID:** `4c5c40bc8a50`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.57s
 - **Memory:** Δ -0.6 MB, peak 1239.2 MB
 - **Beam size:** 6
@@ -11004,7 +11004,7 @@
 
 - **ID:** `fdafc04754a0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.57s
 - **Memory:** Δ 72.8 MB, peak 1296.5 MB
 - **Beam size:** 10
@@ -11024,7 +11024,7 @@
 
 - **ID:** `b8784f8526e4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.50s
 - **Memory:** Δ 6.5 MB, peak 1303.0 MB
 - **Beam size:** 7
@@ -11044,7 +11044,7 @@
 
 - **ID:** `484ffea6492d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.83s
 - **Memory:** Δ 1.9 MB, peak 1450.9 MB
 - **Beam size:** 5
@@ -11064,7 +11064,7 @@
 
 - **ID:** `4a5ef0795335`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.57s
 - **Memory:** Δ 0.2 MB, peak 1534.8 MB
 - **Beam size:** 6
@@ -11084,7 +11084,7 @@
 
 - **ID:** `c39d0fb110d5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.63s
 - **Memory:** Δ 47.9 MB, peak 1546.9 MB
 - **Beam size:** 5
@@ -11104,7 +11104,7 @@
 
 - **ID:** `d15f07d68c2c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.58s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 7
@@ -11124,7 +11124,7 @@
 
 - **ID:** `1c4a958c26aa`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.12s
 - **Memory:** Δ -45.9 MB, peak 1505.5 MB
 - **Beam size:** 4
@@ -11144,7 +11144,7 @@
 
 - **ID:** `b7198b540a3d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.26s
 - **Memory:** Δ 12.5 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -11164,7 +11164,7 @@
 
 - **ID:** `0034ee89e2bb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.49s
 - **Memory:** Δ -0.3 MB, peak 1222.6 MB
 - **Beam size:** 8
@@ -11184,7 +11184,7 @@
 
 - **ID:** `70f684eaabac`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.35s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 1
@@ -11204,7 +11204,7 @@
 
 - **ID:** `b68baa7a82ce`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.34s
 - **Memory:** Δ 301.7 MB, peak 5369.3 MB
 - **Beam size:** 10
@@ -11224,7 +11224,7 @@
 
 - **ID:** `dd735bb0c3ab`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.93s
 - **Memory:** Δ 0.0 MB, peak 4909.9 MB
 - **Beam size:** 9
@@ -11244,7 +11244,7 @@
 
 - **ID:** `3f9ac3d57024`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.03s
 - **Memory:** Δ 4.4 MB, peak 9268.0 MB
 - **Beam size:** 8
@@ -11264,7 +11264,7 @@
 
 - **ID:** `07df1cf75639`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.80s
 - **Memory:** Δ 2418.6 MB, peak 5048.8 MB
 - **Beam size:** 9
@@ -11284,7 +11284,7 @@
 
 - **ID:** `f0df8364ad4e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.12s
 - **Memory:** Δ -32.9 MB, peak 1396.1 MB
 - **Beam size:** 5
@@ -11304,7 +11304,7 @@
 
 - **ID:** `b4ce7a9faf9f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.99s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 8
@@ -11324,7 +11324,7 @@
 
 - **ID:** `d926e2bb393a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.72s
 - **Memory:** Δ 0.1 MB, peak 4958.4 MB
 - **Beam size:** 9
@@ -11344,7 +11344,7 @@
 
 - **ID:** `2b2a30167255`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.99s
 - **Memory:** Δ 14.2 MB, peak 5074.7 MB
 - **Beam size:** 8
@@ -11364,7 +11364,7 @@
 
 - **ID:** `1fffcd3d0379`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.41s
 - **Memory:** Δ 0.0 MB, peak 9399.3 MB
 - **Beam size:** 9
@@ -11384,7 +11384,7 @@
 
 - **ID:** `85ed67372928`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.27s
 - **Memory:** Δ 0.0 MB, peak 5103.6 MB
 - **Beam size:** 8
@@ -11404,7 +11404,7 @@
 
 - **ID:** `fa7468ba8dca`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.46s
 - **Memory:** Δ 0.3 MB, peak 9409.7 MB
 - **Beam size:** 8
@@ -11424,7 +11424,7 @@
 
 - **ID:** `1abb8e0b27bd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.19s
 - **Memory:** Δ 13.7 MB, peak 8267.3 MB
 - **Beam size:** 4
@@ -11444,7 +11444,7 @@
 
 - **ID:** `4700ec78e51a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.11s
 - **Memory:** Δ 5.5 MB, peak 8801.4 MB
 - **Beam size:** 10
@@ -11464,7 +11464,7 @@
 
 - **ID:** `e323b01d0b1e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.25s
 - **Memory:** Δ 34.2 MB, peak 5649.0 MB
 - **Beam size:** 10
@@ -11484,7 +11484,7 @@
 
 - **ID:** `d8398234ec35`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.43s
 - **Memory:** Δ -46.0 MB, peak 1505.5 MB
 - **Beam size:** 7
@@ -11504,7 +11504,7 @@
 
 - **ID:** `2333e1e7620c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.34s
 - **Memory:** Δ -162.4 MB, peak 4814.6 MB
 - **Beam size:** 8
@@ -11524,7 +11524,7 @@
 
 - **ID:** `f53ab5a502a9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 22.54s
 - **Memory:** Δ 0.0 MB, peak 8880.0 MB
 - **Beam size:** 9
@@ -11544,7 +11544,7 @@
 
 - **ID:** `4ac35bf28706`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.26s
 - **Memory:** Δ 0.0 MB, peak 5113.0 MB
 - **Beam size:** 9
@@ -11564,7 +11564,7 @@
 
 - **ID:** `77ac54340ed6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.82s
 - **Memory:** Δ 1549.9 MB, peak 5011.3 MB
 - **Beam size:** 1
@@ -11584,7 +11584,7 @@
 
 - **ID:** `6977eb5b73d2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.09s
 - **Memory:** Δ 231.1 MB, peak 5054.3 MB
 - **Beam size:** 8
@@ -11604,7 +11604,7 @@
 
 - **ID:** `4db1bbc42aaf`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.23s
 - **Memory:** Δ 90.5 MB, peak 5103.6 MB
 - **Beam size:** 8
@@ -11624,7 +11624,7 @@
 
 - **ID:** `08ccf99d2742`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.17s
 - **Memory:** Δ 9.4 MB, peak 5624.0 MB
 - **Beam size:** 9
@@ -11644,7 +11644,7 @@
 
 - **ID:** `ae415121c458`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.24s
 - **Memory:** Δ 84.2 MB, peak 5097.3 MB
 - **Beam size:** 10
@@ -11664,7 +11664,7 @@
 
 - **ID:** `1263c94455bc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.91s
 - **Memory:** Δ 0.0 MB, peak 9399.6 MB
 - **Beam size:** 10
@@ -11684,7 +11684,7 @@
 
 - **ID:** `33364f512070`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.30s
 - **Memory:** Δ 0.0 MB, peak 5060.5 MB
 - **Beam size:** 8
@@ -11704,7 +11704,7 @@
 
 - **ID:** `0c70304d5e8a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.18s
 - **Memory:** Δ 143.6 MB, peak 4958.3 MB
 - **Beam size:** 10
@@ -11724,7 +11724,7 @@
 
 - **ID:** `9c6e6d644284`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.19s
 - **Memory:** Δ 37.4 MB, peak 5100.5 MB
 - **Beam size:** 9
@@ -11744,7 +11744,7 @@
 
 - **ID:** `9cb9ca618976`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 20.81s
 - **Memory:** Δ 134.9 MB, peak 9545.1 MB
 - **Beam size:** 8
@@ -11764,7 +11764,7 @@
 
 - **ID:** `6246618b2bea`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.80s
 - **Memory:** Δ 12.4 MB, peak 5008.1 MB
 - **Beam size:** 8
@@ -11784,7 +11784,7 @@
 
 - **ID:** `658616bc2928`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.10s
 - **Memory:** Δ 37.4 MB, peak 5100.5 MB
 - **Beam size:** 10
@@ -11804,7 +11804,7 @@
 
 - **ID:** `83da3facee26`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.60s
 - **Memory:** Δ 0.0 MB, peak 9399.6 MB
 - **Beam size:** 10
@@ -11824,7 +11824,7 @@
 
 - **ID:** `9c4766ea8989`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 17.86s
 - **Memory:** Δ 3.3 MB, peak 8883.3 MB
 - **Beam size:** 5
@@ -11844,7 +11844,7 @@
 
 - **ID:** `f19e57bcf670`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.29s
 - **Memory:** Δ 4.4 MB, peak 9404.6 MB
 - **Beam size:** 9
@@ -11864,7 +11864,7 @@
 
 - **ID:** `f550379ddc78`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.28s
 - **Memory:** Δ 21.9 MB, peak 5125.5 MB
 - **Beam size:** 9
@@ -11884,7 +11884,7 @@
 
 - **ID:** `8ec905e2c579`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.45s
 - **Memory:** Δ 1028.9 MB, peak 2712.9 MB
 - **Beam size:** 4
@@ -11904,7 +11904,7 @@
 
 - **ID:** `f9c4e96a3970`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 13.80s
 - **Memory:** Δ 0.0 MB, peak 2751.1 MB
 - **Beam size:** 7
@@ -11924,7 +11924,7 @@
 
 - **ID:** `ddc03c5d6666`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.76s
 - **Memory:** Δ 3.4 MB, peak 2754.4 MB
 - **Beam size:** 3
@@ -11944,7 +11944,7 @@
 
 - **ID:** `bf6e3eaa47ba`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.75s
 - **Memory:** Δ 0.2 MB, peak 1431.2 MB
 - **Beam size:** 4
@@ -11964,7 +11964,7 @@
 
 - **ID:** `e153e9dcdb44`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.62s
 - **Memory:** Δ 0.0 MB, peak 1432.8 MB
 - **Beam size:** 6
@@ -11984,7 +11984,7 @@
 
 - **ID:** `a0538fa9565d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.62s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 6
@@ -12004,7 +12004,7 @@
 
 - **ID:** `1e815dcd808c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.64s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 6
@@ -12024,7 +12024,7 @@
 
 - **ID:** `8fefa6889ccc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.65s
 - **Memory:** Δ 0.0 MB, peak 1532.6 MB
 - **Beam size:** 5
@@ -12044,7 +12044,7 @@
 
 - **ID:** `f6e32f5ce5ce`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.97s
 - **Memory:** Δ 0.0 MB, peak 1534.1 MB
 - **Beam size:** 5
@@ -12064,7 +12064,7 @@
 
 - **ID:** `079dd6bcc0ab`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.67s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 5
@@ -12084,7 +12084,7 @@
 
 - **ID:** `734fb088bd34`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.67s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 5
@@ -12104,7 +12104,7 @@
 
 - **ID:** `21804841a31f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.17s
 - **Memory:** Δ 0.0 MB, peak 5119.3 MB
 - **Beam size:** 7
@@ -12124,7 +12124,7 @@
 
 - **ID:** `6e10f8e0712b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.17s
 - **Memory:** Δ 15.3 MB, peak 9263.6 MB
 - **Beam size:** 7
@@ -12144,7 +12144,7 @@
 
 - **ID:** `080262d9d08e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.37s
 - **Memory:** Δ 28.0 MB, peak 2751.1 MB
 - **Beam size:** 2
@@ -12164,7 +12164,7 @@
 
 - **ID:** `668d93a91afb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.75s
 - **Memory:** Δ 0.4 MB, peak 2754.9 MB
 - **Beam size:** 2
@@ -12184,7 +12184,7 @@
 
 - **ID:** `75e662a0bf4a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.24s
 - **Memory:** Δ 0.0 MB, peak 5013.1 MB
 - **Beam size:** 9
@@ -12204,7 +12204,7 @@
 
 - **ID:** `d8c982f7f2d8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.89s
 - **Memory:** Δ 62.4 MB, peak 5075.4 MB
 - **Beam size:** 8
@@ -12224,7 +12224,7 @@
 
 - **ID:** `3127b69b561b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 23.04s
 - **Memory:** Δ 4847.5 MB, peak 4897.0 MB
 - **Beam size:** 7
@@ -12244,7 +12244,7 @@
 
 - **ID:** `036c039f2d8b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.72s
 - **Memory:** Δ 0.0 MB, peak 5060.5 MB
 - **Beam size:** 8
@@ -12264,7 +12264,7 @@
 
 - **ID:** `089fcd612840`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 19.71s
 - **Memory:** Δ 0.0 MB, peak 8883.3 MB
 - **Beam size:** 10
@@ -12284,7 +12284,7 @@
 
 - **ID:** `f72268853933`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 18.86s
 - **Memory:** Δ 0.6 MB, peak 9400.2 MB
 - **Beam size:** 1
@@ -12304,7 +12304,7 @@
 
 - **ID:** `1db5d7fe0cfc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 14.68s
 - **Memory:** Δ 2.6 MB, peak 9270.5 MB
 - **Beam size:** 10
@@ -12324,7 +12324,7 @@
 
 - **ID:** `ed18c0cb2b2d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.73s
 - **Memory:** Δ 8.9 MB, peak 2722.8 MB
 - **Beam size:** 10
@@ -12344,7 +12344,7 @@
 
 - **ID:** `3e62d168ca0b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 46.96s
 - **Memory:** Δ 7272.5 MB, peak 8665.2 MB
 - **Beam size:** 3
@@ -12364,7 +12364,7 @@
 
 - **ID:** `640e802b8754`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.96s
 - **Memory:** Δ -2.4 MB, peak 2078.7 MB
 - **Beam size:** 5
@@ -12384,7 +12384,7 @@
 
 - **ID:** `a5bb77cb13d9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 19.87s
 - **Memory:** Δ 3415.9 MB, peak 9005.7 MB
 - **Beam size:** 8
@@ -12404,7 +12404,7 @@
 
 - **ID:** `7d1ef22c00eb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.83s
 - **Memory:** Δ 132.4 MB, peak 2079.0 MB
 - **Beam size:** 5
@@ -12424,7 +12424,7 @@
 
 - **ID:** `6dfdd294ea4a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 17.37s
 - **Memory:** Δ 0.0 MB, peak 8880.0 MB
 - **Beam size:** 2
@@ -12444,7 +12444,7 @@
 
 - **ID:** `35df3e44899b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 16.49s
 - **Memory:** Δ 0.7 MB, peak 2755.6 MB
 - **Beam size:** 6
@@ -12464,7 +12464,7 @@
 
 - **ID:** `47f59aa1796e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.41s
 - **Memory:** Δ 313.0 MB, peak 1740.2 MB
 - **Beam size:** 9
@@ -12484,7 +12484,7 @@
 
 - **ID:** `8f816523772d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.65s
 - **Memory:** Δ 137.2 MB, peak 1878.1 MB
 - **Beam size:** 8
@@ -12504,7 +12504,7 @@
 
 - **ID:** `de0bc45444c8`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.06s
 - **Memory:** Δ 27.7 MB, peak 1907.3 MB
 - **Beam size:** 2
@@ -12524,7 +12524,7 @@
 
 - **ID:** `f055e4bca767`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.67s
 - **Memory:** Δ 130.0 MB, peak 2069.7 MB
 - **Beam size:** 10
@@ -12544,7 +12544,7 @@
 
 - **ID:** `a8f0104a5148`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 12.57s
 - **Memory:** Δ 0.0 MB, peak 4967.6 MB
 - **Beam size:** 3
@@ -12564,7 +12564,7 @@
 
 - **ID:** `e74f08e24ab9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.84s
 - **Memory:** Δ 0.1 MB, peak 1907.4 MB
 - **Beam size:** 3
@@ -12584,7 +12584,7 @@
 
 - **ID:** `9bfe747394b4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.88s
 - **Memory:** Δ -18.2 MB, peak 1915.0 MB
 - **Beam size:** 10
@@ -12604,7 +12604,7 @@
 
 - **ID:** `24b125a11b96`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.73s
 - **Memory:** Δ 5.0 MB, peak 1541.6 MB
 - **Beam size:** 5
@@ -12624,7 +12624,7 @@
 
 - **ID:** `220590a88be7`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.62s
 - **Memory:** Δ 32.3 MB, peak 1939.7 MB
 - **Beam size:** 8
@@ -12644,7 +12644,7 @@
 
 - **ID:** `15153952a0f5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.61s
 - **Memory:** Δ 0.7 MB, peak 1915.7 MB
 - **Beam size:** 8
@@ -12664,7 +12664,7 @@
 
 - **ID:** `74b62a00c707`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.59s
 - **Memory:** Δ 30.9 MB, peak 1946.6 MB
 - **Beam size:** 8
@@ -12684,7 +12684,7 @@
 
 - **ID:** `c1bd59fcb0c6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.37s
 - **Memory:** Δ 0.0 MB, peak 1432.6 MB
 - **Beam size:** 7
@@ -12704,7 +12704,7 @@
 
 - **ID:** `19a2e55ba555`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.46s
 - **Memory:** Δ 49.1 MB, peak 1514.5 MB
 - **Beam size:** 3
@@ -12724,7 +12724,7 @@
 
 - **ID:** `d9b2458a31c2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 2.57s
 - **Memory:** Δ 0.0 MB, peak 1518.8 MB
 - **Beam size:** 7
@@ -12744,7 +12744,7 @@
 
 - **ID:** `e864e9cd8fa0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.37s
 - **Memory:** Δ 0.0 MB, peak 1521.0 MB
 - **Beam size:** 5
@@ -12764,7 +12764,7 @@
 
 - **ID:** `01b696c353dc`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.74s
 - **Memory:** Δ 0.0 MB, peak 1449.0 MB
 - **Beam size:** 6
@@ -12784,7 +12784,7 @@
 
 - **ID:** `ca2fe29ec419`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.41s
 - **Memory:** Δ 0.0 MB, peak 1551.1 MB
 - **Beam size:** 8
@@ -12804,7 +12804,7 @@
 
 - **ID:** `f264faef3347`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.66s
 - **Memory:** Δ 0.0 MB, peak 1551.5 MB
 - **Beam size:** 2
@@ -12824,7 +12824,7 @@
 
 - **ID:** `ff5d3e64ed00`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.85s
 - **Memory:** Δ -47.3 MB, peak 1150.7 MB
 - **Beam size:** 3
@@ -12844,7 +12844,7 @@
 
 - **ID:** `02b459530a30`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.81s
 - **Memory:** Δ -40.4 MB, peak 1890.1 MB
 - **Beam size:** 5
@@ -12864,7 +12864,7 @@
 
 - **ID:** `69ea71532f67`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.41s
 - **Memory:** Δ 4.8 MB, peak 5019.3 MB
 - **Beam size:** 8
@@ -12884,7 +12884,7 @@
 
 - **ID:** `3d2199495e44`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.47s
 - **Memory:** Δ 0.0 MB, peak 1940.9 MB
 - **Beam size:** 3
@@ -12904,7 +12904,7 @@
 
 - **ID:** `467ff30b8901`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.54s
 - **Memory:** Δ 0.0 MB, peak 1968.1 MB
 - **Beam size:** 3
@@ -12924,7 +12924,7 @@
 
 - **ID:** `1cc193bf723c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.55s
 - **Memory:** Δ 2.8 MB, peak 1943.7 MB
 - **Beam size:** 4
@@ -12944,7 +12944,7 @@
 
 - **ID:** `2e40b0d11f6d`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.37s
 - **Memory:** Δ 0.0 MB, peak 1968.1 MB
 - **Beam size:** 1
@@ -12964,7 +12964,7 @@
 
 - **ID:** `9f41a2910a39`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.82s
 - **Memory:** Δ 0.0 MB, peak 9407.7 MB
 - **Beam size:** 3
@@ -12984,7 +12984,7 @@
 
 - **ID:** `8f2a9c0ea74b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.00s
 - **Memory:** Δ 1130.8 MB, peak 1175.3 MB
 - **Beam size:** 6
@@ -13004,7 +13004,7 @@
 
 - **ID:** `da55f9f381a0`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.60s
 - **Memory:** Δ 2.4 MB, peak 1884.7 MB
 - **Beam size:** 1
@@ -13024,7 +13024,7 @@
 
 - **ID:** `389b3d80670f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.47s
 - **Memory:** Δ 3.2 MB, peak 1894.8 MB
 - **Beam size:** 10
@@ -13044,7 +13044,7 @@
 
 - **ID:** `6216ef3e7e24`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.47s
 - **Memory:** Δ 46.1 MB, peak 1940.9 MB
 - **Beam size:** 4
@@ -13064,7 +13064,7 @@
 
 - **ID:** `cb8e5eaa3ddb`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.40s
 - **Memory:** Δ 0.0 MB, peak 1940.9 MB
 - **Beam size:** 6
@@ -13084,7 +13084,7 @@
 
 - **ID:** `1a6836113da2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.47s
 - **Memory:** Δ 47.1 MB, peak 1968.1 MB
 - **Beam size:** 3
@@ -13104,7 +13104,7 @@
 
 - **ID:** `c65d3cb1826f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.65s
 - **Memory:** Δ 0.0 MB, peak 1968.1 MB
 - **Beam size:** 3
@@ -13124,7 +13124,7 @@
 
 - **ID:** `b4353c1bdf95`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 9.14s
 - **Memory:** Δ 1379.6 MB, peak 1424.2 MB
 - **Beam size:** 7
@@ -13144,7 +13144,7 @@
 
 - **ID:** `7f5dde613bea`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.33s
 - **Memory:** Δ 42.7 MB, peak 1927.4 MB
 - **Beam size:** 8
@@ -13164,7 +13164,7 @@
 
 - **ID:** `a5c13d3ff067`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.30s
 - **Memory:** Δ 3.1 MB, peak 1930.5 MB
 - **Beam size:** 2
@@ -13184,7 +13184,7 @@
 
 - **ID:** `a72cf5eb4e8a`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.35s
 - **Memory:** Δ 0.0 MB, peak 1930.5 MB
 - **Beam size:** 2
@@ -13204,7 +13204,7 @@
 
 - **ID:** `629e844b5ac9`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.27s
 - **Memory:** Δ 0.1 MB, peak 1432.8 MB
 - **Beam size:** 4
@@ -13224,7 +13224,7 @@
 
 - **ID:** `c98a7254a18e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.28s
 - **Memory:** Δ 0.0 MB, peak 1516.8 MB
 - **Beam size:** 4
@@ -13244,7 +13244,7 @@
 
 - **ID:** `f9a88d85bfd4`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.31s
 - **Memory:** Δ 0.0 MB, peak 1518.9 MB
 - **Beam size:** 5
@@ -13264,7 +13264,7 @@
 
 - **ID:** `5fb87d3e9103`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.28s
 - **Memory:** Δ 0.4 MB, peak 1533.8 MB
 - **Beam size:** 5
@@ -13284,7 +13284,7 @@
 
 - **ID:** `a3a073c78f6b`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.48s
 - **Memory:** Δ 0.1 MB, peak 1534.4 MB
 - **Beam size:** 5
@@ -13304,7 +13304,7 @@
 
 - **ID:** `98f4b8fc122f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.35s
 - **Memory:** Δ 0.0 MB, peak 1547.1 MB
 - **Beam size:** 5
@@ -13324,7 +13324,7 @@
 
 - **ID:** `bb849f88a016`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 1.44s
 - **Memory:** Δ 0.0 MB, peak 1551.2 MB
 - **Beam size:** 5
@@ -13344,7 +13344,7 @@
 
 - **ID:** `37f7fad667e5`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.15s
 - **Memory:** Δ 26.7 MB, peak 1882.3 MB
 - **Beam size:** 8
@@ -13364,7 +13364,7 @@
 
 - **ID:** `c2f939fc9dc2`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 11.06s
 - **Memory:** Δ 160.1 MB, peak 2080.8 MB
 - **Beam size:** 5
@@ -13384,7 +13384,7 @@
 
 - **ID:** `2577b0479959`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 44.19s
 - **Memory:** Δ 528.6 MB, peak 8795.9 MB
 - **Beam size:** 8
@@ -13404,7 +13404,7 @@
 
 - **ID:** `abe4b1f01e3c`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.09s
 - **Memory:** Δ 0.0 MB, peak 5012.3 MB
 - **Beam size:** 8
@@ -13424,7 +13424,7 @@
 
 - **ID:** `617f06d9e557`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 8.05s
 - **Memory:** Δ 0.0 MB, peak 1891.6 MB
 - **Beam size:** 5
@@ -13444,7 +13444,7 @@
 
 - **ID:** `7778d86acb8f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 13.42s
 - **Memory:** Δ -44.6 MB, peak 1502.9 MB
 - **Beam size:** 3
@@ -13464,7 +13464,7 @@
 
 - **ID:** `3b1066520a0e`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 3.80s
 - **Memory:** Δ 72.4 MB, peak 1855.6 MB
 - **Beam size:** 8
@@ -13484,7 +13484,7 @@
 
 - **ID:** `d2f4ddf518dd`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.71s
 - **Memory:** Δ -22.8 MB, peak 1920.9 MB
 - **Beam size:** 7
@@ -13504,7 +13504,7 @@
 
 - **ID:** `efe0eddf8fb6`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 4.62s
 - **Memory:** Δ 0.0 MB, peak 5100.5 MB
 - **Beam size:** 10
@@ -13524,7 +13524,7 @@
 
 - **ID:** `bc6dc27f2b06`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 5.75s
 - **Memory:** Δ 631.9 MB, peak 1782.5 MB
 - **Beam size:** 4
@@ -13544,7 +13544,7 @@
 
 - **ID:** `1b526d2293c3`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 7.88s
 - **Memory:** Δ 1.5 MB, peak 1891.6 MB
 - **Beam size:** 5
@@ -13564,7 +13564,7 @@
 
 - **ID:** `fc40fdcf8fab`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 52.42s
 - **Memory:** Δ 0.0 MB, peak 8883.3 MB
 - **Beam size:** 8
@@ -13584,7 +13584,7 @@
 
 - **ID:** `b6ede429f97f`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 6.06s
 - **Memory:** Δ 0.0 MB, peak 1855.6 MB
 - **Beam size:** 2
@@ -13604,7 +13604,7 @@
 
 - **ID:** `cc1756f2fd08`
 - **Language:** ru
-- **Device:** cuda (NVIDIA GeForce RTX 4090)
+- **Runtime:** cuda (NVIDIA GeForce RTX 4090)
 - **Duration:** 89.56s
 - **Memory:** Δ 3250.8 MB, peak 8252.7 MB
 - **Beam size:** 6

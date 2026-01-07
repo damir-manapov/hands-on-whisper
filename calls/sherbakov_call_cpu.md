@@ -7,96 +7,96 @@
 
 ## Performance Summary
 
-| # | Backend | Model | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
-|---|---------|-------|---------|------|------|------|-------|------|--------|------|------|------|------|
-| 1 | whispercpp | large-v3-turbo | float16 | 4 | 0.25 | N | N | ru | 255.1 | 0.0 | 3436.6 | 24.4 | 12.9 |
-| 2 | whispercpp | large-v3-turbo | float16 | 3 | 0.25 | N | N | ru | 254.5 | 0.0 | 3485.1 | 24.4 | 12.9 |
-| 3 | whispercpp | large-v3-turbo | float16 | 2 | 0.45 | N | N | ru | 269.4 | 0.0 | 3485.1 | 24.6 | 12.8 |
-| 4 | whispercpp | large-v3-turbo | float16 | 3 | 0.45 | N | N | ru | 270.4 | 0.0 | 5329.1 | 24.6 | 12.8 |
-| 5 | whispercpp | large-v3-turbo | float16 | 1 | 0.37 | N | N | ru | 299.0 | 60.3 | 111.1 | 24.7 | 14.3 |
-| 6 | whispercpp | large-v3-turbo | float16 | 3 | 0.44 | N | N | ru | 270.4 | 0.0 | 5329.1 | 24.7 | 14.0 |
-| 7 | whispercpp | large-v3-turbo | float16 | 2 | 0.46 | N | N | ru | 286.4 | 0.0 | 3485.1 | 24.9 | 14.8 |
-| 8 | whispercpp | large-v3-turbo | float16 | 4 | 0.26 | N | N | ru | 285.3 | 0.0 | 3436.4 | 25.0 | 13.4 |
-| 9 | whispercpp | large-v3-turbo | float16 | 3 | 0.26 | N | N | ru | 254.5 | 0.0 | 3436.6 | 25.0 | 13.4 |
-| 10 | whispercpp | large-v3-turbo | float16 | 1 | 0.26 | N | N | ru | 255.3 | 0.0 | 3485.1 | 25.0 | 13.4 |
-| 11 | whispercpp | large-v3-turbo | float16 | 1 | 0.25 | Y | N | ru | 287.0 | 76.9 | 97.3 | 25.6 | 14.6 |
-| 12 | whispercpp | large-v3-turbo | float16 | 1 | 0.25 | N | N | ru | 288.5 | 77.1 | 97.5 | 25.6 | 14.6 |
-| 13 | whispercpp | large-v3-turbo | float16 | 3 | 0.32 | N | N | ru | 253.0 | 0.0 | 3436.6 | 26.1 | 14.3 |
-| 14 | whispercpp | large-v3-turbo | float16 | 4 | 0.23 | N | N | ru | 269.7 | 0.0 | 3485.1 | 26.1 | 14.8 |
-| 15 | whispercpp | large-v3-turbo | float16 | 2 | 0.46 | N | N | ru | 273.0 | 0.0 | 3485.1 | 26.1 | 13.8 |
-| 16 | whispercpp | large-v3-turbo | float16 | 2 | 0.31 | N | N | ru | 330.4 | 45.8 | 230.6 | 26.2 | 14.6 |
-| 17 | whispercpp | large-v3-turbo | float16 | 2 | 0.31 | N | N | ru | 332.1 | -30.0 | 719.0 | 26.2 | 14.6 |
-| 18 | whispercpp | large-v3-turbo | float16 | 4 | 0.21 | N | N | ru | 256.0 | 0.0 | 3436.6 | 26.4 | 14.5 |
-| 19 | whispercpp | large-v3-turbo | float16 | 3 | 0.29 | N | N | ru | 271.5 | 0.0 | 3436.6 | 27.0 | 14.3 |
-| 20 | whispercpp | large-v3-turbo | float16 | 2 | 0.44 | N | N | ru | 285.1 | 0.0 | 3485.1 | 27.1 | 14.5 |
-| 21 | whispercpp | large-v3-turbo | float16 | 4 | 0.36 | N | N | ru | 285.1 | 0.0 | 3436.6 | 27.3 | 14.2 |
-| 22 | whispercpp | large-v3-turbo | float16 | 1 | 0.22 | N | N | ru | 317.5 | 0.0 | 3485.1 | 27.3 | 15.1 |
-| 23 | whispercpp | large-v3-turbo | float16 | 4 | 0.43 | N | N | ru | 286.0 | 0.0 | 5329.1 | 27.3 | 15.3 |
-| 24 | whispercpp | large-v3-turbo | float32 | 3 | 0.50 | N | N | ru | 318.1 | 0.0 | 3485.1 | 27.4 | 15.7 |
-| 25 | whispercpp | ggml-large-v3-turbo | float16 | 3 | 0.37 | Y | N | ru | 299.4 | 76.8 | 97.2 | 28.2 | 17.8 |
-| 26 | whispercpp | large-v3-turbo | float16 | 6 | 0.38 | N | N | ru | 285.7 | 0.0 | 3436.4 | 28.3 | 18.5 |
-| 27 | whispercpp | large-v3-turbo | int8 | 1 | 0.09 | N | N | ru | 309.2 | 30.4 | 749.0 | 28.9 | 20.0 |
-| 28 | whispercpp | large-v3-turbo | float16 | 2 | 0.30 | N | N | ru | 348.5 | 0.0 | 719.1 | 29.4 | 16.3 |
-| 29 | whispercpp | large-v3-turbo | float16 | 2 | 0.08 | N | N | ru | 360.0 | 30.0 | 146.4 | 30.1 | 19.8 |
-| 30 | whispercpp | large-v3-turbo | float16 | 5 | 0.26 | N | N | ru | 301.7 | 0.0 | 3436.6 | 30.1 | 16.1 |
-| 31 | whispercpp | large-v3-turbo | float16 | 1 | 0.40 | N | N | ru | 293.2 | 77.0 | 97.4 | 30.6 | 21.7 |
-| 32 | whispercpp | large-v3-turbo | float16 | 2 | 0.47 | N | N | ru | 335.0 | 0.0 | 5329.1 | 30.6 | 16.8 |
-| 33 | faster-whisper | large-v3-turbo | auto | 5 | 0.00 | N | N | ru | 74.6 | 1454.3 | 1473.9 | 30.7 | 26.2 |
-| 34 | whispercpp | large-v3-turbo | float16 | 3 | 0.45 | N | N | ru | 303.6 | 0.0 | 5329.1 | 31.9 | 19.1 |
-| 35 | whispercpp | medium | float16 | 3 | 0.46 | N | N | ru | 233.2 | 0.0 | 5329.1 | 32.9 | 17.7 |
-| 36 | whispercpp | large-v3-turbo | float16 | 1 | 0.32 | N | N | ru | 314.7 | 60.4 | 111.0 | 33.1 | 20.7 |
-| 37 | whispercpp | large-v3-turbo | float16 | 2 | 0.32 | N | N | ru | 301.8 | 0.1 | 3426.6 | 33.1 | 20.7 |
-| 38 | whispercpp | large-v3-turbo | float16 | 1 | 0.33 | N | N | ru | 403.1 | 32.1 | 144.3 | 34.0 | 22.7 |
-| 39 | whispercpp | large-v3-turbo | float16 | 3 | 0.34 | N | N | ru | 319.5 | 0.0 | 3426.6 | 34.7 | 24.7 |
-| 40 | whispercpp | ggml-large-v3-turbo | auto | 5 | 0.00 | N | N | ru | 432.4 | 5.1 | 1479.0 | 35.0 | 21.8 |
-| 41 | whispercpp | medium | float16 | 2 | 0.41 | N | N | ru | 263.5 | 37.4 | 223.1 | 35.6 | 21.1 |
-| 42 | openai | large-v3-turbo | int8 | 1 | 0.20 | Y | N | ru | 150.3 | 3060.6 | 3157.3 | 35.6 | 23.8 |
-| 43 | whispercpp | medium | float16 | 1 | 0.43 | N | N | ru | 241.1 | 50.4 | 101.2 | 35.9 | 19.5 |
-| 44 | whispercpp | large-v3-turbo | float16 | 2 | 0.50 | N | N | ru | 420.1 | -45.1 | 185.6 | 35.9 | 23.3 |
-| 45 | whispercpp | large-v3-turbo | float16 | 1 | 0.26 | N | N | ru | 275.9 | 0.0 | 3485.1 | 38.5 | 25.8 |
-| 46 | openai | large-v3-turbo | float16 | 2 | 0.41 | N | N | ru | 136.9 | 1881.4 | 5366.4 | 38.5 | 28.3 |
-| 47 | whispercpp | large-v3-turbo | float16 | 1 | 0.28 | N | N | ru | 333.3 | 0.0 | 3485.1 | 38.6 | 28.2 |
-| 48 | whispercpp | large-v3-turbo | float16 | 4 | 0.28 | N | N | ru | 338.2 | -30.0 | 116.5 | 41.9 | 26.4 |
-| 49 | whispercpp | large-v3-turbo | float16 | 7 | 0.23 | N | N | ru | 336.5 | 1.7 | 116.3 | 44.1 | 28.3 |
-| 50 | whispercpp | small | int8 | 10 | 0.18 | N | N | ru | 82.0 | 3.4 | 5152.2 | 44.7 | 27.2 |
-| 51 | whispercpp | large-v3-turbo | float16 | 4 | 0.26 | N | N | ru | 314.8 | 0.0 | 3485.1 | 44.9 | 27.7 |
-| 52 | openai | small | float16 | 5 | 0.13 | Y | N | ru | 96.1 | 854.9 | 900.8 | 45.8 | 26.0 |
-| 53 | whispercpp | large-v3-turbo | float16 | 1 | 0.30 | N | N | ru | 355.1 | 0.0 | 3426.6 | 45.8 | 30.8 |
-| 54 | whispercpp | large-v3-turbo | float16 | 1 | 0.35 | N | N | ru | 337.3 | 77.2 | 97.7 | 46.2 | 28.1 |
-| 55 | faster-whisper | small | int8 | 3 | 0.42 | Y | N | ru | 50.4 | -37.3 | 5329.1 | 46.3 | 30.2 |
-| 56 | whispercpp | large-v3-turbo | float16 | 2 | 0.15 | N | N | ru | 361.5 | 0.0 | 3426.6 | 47.1 | 31.9 |
-| 57 | openai | large-v3-turbo | float16 | 5 | 0.25 | N | N | ru | 366.4 | 4306.5 | 5055.1 | 47.4 | 37.6 |
-| 58 | faster-whisper | large-v3-turbo | float32 | 10 | 0.37 | N | N | ru | 142.5 | 1392.5 | 2296.1 | 48.1 | 41.2 |
-| 59 | whispercpp | medium | float16 | 4 | 0.25 | N | N | ru | 189.6 | 0.0 | 3436.4 | 49.8 | 36.3 |
-| 60 | openai | small | int8 | 2 | 0.37 | N | N | ru | 72.8 | 4.7 | 3164.2 | 51.1 | 31.9 |
-| 61 | faster-whisper | large-v3-turbo | float32 | 6 | 0.28 | N | N | ru | 122.7 | 260.8 | 3426.0 | 53.2 | 46.3 |
-| 62 | openai | small | float16 | 1 | 0.20 | N | N | ru | 66.7 | 0.1 | 3436.6 | 53.9 | 35.4 |
-| 63 | whispercpp | large-v3-turbo | float16 | 3 | 0.33 | N | N | ru | 319.1 | 0.0 | 3485.1 | 54.7 | 36.2 |
-| 64 | whispercpp | large-v3 | float16 | 3 | 0.27 | N | N | ru | 443.4 | 72.9 | 189.4 | 57.5 | 45.9 |
-| 65 | faster-whisper | large-v3 | auto | 5 | 0.00 | N | N | ru | 102.7 | 2248.5 | 2268.0 | 59.8 | 54.5 |
-| 66 | whispercpp | base | float16 | 4 | 0.48 | N | N | ru | 27.5 | 0.0 | 3485.1 | 62.6 | 35.1 |
-| 67 | whispercpp | base | float16 | 3 | 0.35 | N | N | ru | 29.7 | 42.9 | 94.6 | 62.7 | 34.2 |
-| 68 | whispercpp | large-v3 | float16 | 3 | 0.23 | N | N | ru | 483.3 | 0.0 | 3436.6 | 66.3 | 51.0 |
-| 69 | whispercpp | base | float32 | 3 | 0.30 | N | N | ru | 27.6 | 43.2 | 94.8 | 69.0 | 45.3 |
-| 70 | whispercpp | large-v3 | float16 | 3 | 0.38 | N | N | ru | 434.9 | 82.2 | 184.6 | 69.4 | 53.7 |
-| 71 | openai | large-v3 | auto | 5 | 0.00 | N | N | ru | 287.8 | 7023.5 | 9291.6 | 70.3 | 65.4 |
-| 72 | openai | tiny | float32 | 3 | 0.28 | Y | N | ru | 22.6 | 92.3 | 5147.8 | 74.5 | 43.3 |
-| 73 | whispercpp | tiny | float16 | 9 | 0.25 | N | N | ru | 16.5 | 2.4 | 3159.5 | 75.6 | 46.8 |
-| 74 | openai | tiny | float32 | 6 | 0.48 | N | N | ru | 17.5 | 0.1 | 5153.3 | 75.9 | 52.2 |
-| 75 | openai | base | float16 | 1 | 0.00 | Y | N | ru | 29.5 | 9.8 | 3436.4 | 75.9 | 40.6 |
-| 76 | openai | base | int8 | 5 | 0.14 | Y | N | ru | 39.1 | 0.1 | 5148.7 | 79.3 | 44.8 |
-| 77 | whispercpp | tiny | float16 | 2 | 0.48 | N | N | ru | 15.6 | 0.0 | 3485.1 | 80.0 | 46.2 |
-| 78 | whispercpp | large-v3 | float16 | 7 | 0.40 | N | N | ru | 403.5 | 0.0 | 3485.1 | 83.6 | 65.2 |
-| 79 | whispercpp | tiny | float32 | 5 | 0.18 | N | N | ru | 21.7 | 0.0 | 3436.4 | 88.4 | 69.1 |
-| 80 | faster-whisper | base | float32 | 3 | 0.17 | N | N | ru | 29.6 | -21.5 | 748.6 | 91.5 | 51.2 |
-| 81 | whispercpp | small | float16 | 2 | 0.22 | N | N | ru | 95.0 | -54.2 | 135.3 | 98.7 | 77.6 |
-| 82 | faster-whisper | medium | int8 | 5 | 0.12 | Y | N | ru | 165.6 | 48.5 | 3485.1 | 99.4 | 74.3 |
-| 83 | faster-whisper | tiny | int8 | 8 | 0.16 | Y | N | ru | 18.0 | 642.4 | 688.2 | 100.1 | 75.8 |
-| 84 | faster-whisper | tiny | int8 | 8 | 0.19 | N | N | ru | 12.3 | 582.4 | 717.7 | 104.5 | 60.8 |
-| 85 | whispercpp | ggml-large-v3 | auto | 5 | 0.00 | N | N | ru | 538.1 | 3.3 | 9294.9 | 117.4 | 85.5 |
-| 86 | whispercpp | medium | float32 | 4 | 0.45 | N | N | ru | 304.6 | 0.0 | 135.3 | 227.0 | 122.3 |
-| 87 | whispercpp | large-v3 | float16 | 4 | 0.22 | N | N | ru | 974.0 | 61.7 | 112.8 | 266.0 | 205.9 |
-| 88 | faster-whisper | base | int8 | 10 | 0.02 | Y | N | ru | 31.0 | 78.1 | 769.8 | 271.4 | 131.4 |
+| # | Backend | Model | GPU | Compute | Beam | Temp | Cond | Batch | Lang | Dur(s) | MemΔ | Peak | WER% | CER% |
+|---|---------|-------|-----|---------|------|------|------|-------|------|--------|------|------|------|------|
+| 1 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.25 | N | - | ru | 255.1 | 0.0 | 3436.6 | 24.44 | 12.88 |
+| 2 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.25 | N | - | ru | 254.5 | 0.0 | 3485.1 | 24.44 | 12.88 |
+| 3 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.45 | N | - | ru | 269.4 | 0.0 | 3485.1 | 24.59 | 12.82 |
+| 4 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.45 | N | - | ru | 270.4 | 0.0 | 5329.1 | 24.59 | 12.82 |
+| 5 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.37 | N | - | ru | 299.0 | 60.3 | 111.1 | 24.74 | 14.27 |
+| 6 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.44 | N | - | ru | 270.4 | 0.0 | 5329.1 | 24.74 | 13.99 |
+| 7 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.46 | N | - | ru | 286.4 | 0.0 | 3485.1 | 24.89 | 14.78 |
+| 8 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.26 | N | - | ru | 285.3 | 0.0 | 3436.4 | 25.04 | 13.45 |
+| 9 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.26 | N | - | ru | 254.5 | 0.0 | 3436.6 | 25.04 | 13.45 |
+| 10 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.26 | N | - | ru | 255.3 | 0.0 | 3485.1 | 25.04 | 13.45 |
+| 11 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.25 | Y | - | ru | 287.0 | 76.9 | 97.3 | 25.63 | 14.65 |
+| 12 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.25 | N | - | ru | 288.5 | 77.1 | 97.5 | 25.63 | 14.65 |
+| 13 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.32 | N | - | ru | 253.0 | 0.0 | 3436.6 | 26.08 | 14.29 |
+| 14 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.23 | N | - | ru | 269.7 | 0.0 | 3485.1 | 26.08 | 14.81 |
+| 15 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.46 | N | - | ru | 273.0 | 0.0 | 3485.1 | 26.08 | 13.78 |
+| 16 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.31 | N | - | ru | 330.4 | 45.8 | 230.6 | 26.23 | 14.57 |
+| 17 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.31 | N | - | ru | 332.1 | -30.0 | 719.0 | 26.23 | 14.57 |
+| 18 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.21 | N | - | ru | 256.0 | 0.0 | 3436.6 | 26.38 | 14.48 |
+| 19 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.29 | N | - | ru | 271.5 | 0.0 | 3436.6 | 26.97 | 14.35 |
+| 20 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.44 | N | - | ru | 285.1 | 0.0 | 3485.1 | 27.12 | 14.46 |
+| 21 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.36 | N | - | ru | 285.1 | 0.0 | 3436.6 | 27.27 | 14.24 |
+| 22 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.22 | N | - | ru | 317.5 | 0.0 | 3485.1 | 27.27 | 15.08 |
+| 23 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.43 | N | - | ru | 286.0 | 0.0 | 5329.1 | 27.27 | 15.33 |
+| 24 | whispercpp | large-v3-turbo | - | float32 | 3 | 0.50 | N | - | ru | 318.1 | 0.0 | 3485.1 | 27.42 | 15.68 |
+| 25 | whispercpp | ggml-large-v3-turbo | - | float16 | 3 | 0.37 | Y | - | ru | 299.4 | 76.8 | 97.2 | 28.17 | 17.83 |
+| 26 | whispercpp | large-v3-turbo | - | float16 | 6 | 0.38 | N | - | ru | 285.7 | 0.0 | 3436.4 | 28.32 | 18.46 |
+| 27 | whispercpp | large-v3-turbo | - | int8 | 1 | 0.09 | N | - | ru | 309.2 | 30.4 | 749.0 | 28.91 | 19.96 |
+| 28 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.30 | N | - | ru | 348.5 | 0.0 | 719.1 | 29.36 | 16.28 |
+| 29 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.08 | N | - | ru | 360.0 | 30.0 | 146.4 | 30.10 | 19.79 |
+| 30 | whispercpp | large-v3-turbo | - | float16 | 5 | 0.26 | N | - | ru | 301.7 | 0.0 | 3436.6 | 30.10 | 16.09 |
+| 31 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.40 | N | - | ru | 293.2 | 77.0 | 97.4 | 30.55 | 21.67 |
+| 32 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.47 | N | - | ru | 335.0 | 0.0 | 5329.1 | 30.55 | 16.77 |
+| 33 | faster-whisper | large-v3-turbo | - | auto | 5 | 0.00 | N | - | ru | 74.6 | 1454.3 | 1473.9 | 30.70 | 26.25 |
+| 34 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.45 | N | - | ru | 303.6 | 0.0 | 5329.1 | 31.89 | 19.06 |
+| 35 | whispercpp | medium | - | float16 | 3 | 0.46 | N | - | ru | 233.2 | 0.0 | 5329.1 | 32.94 | 17.72 |
+| 36 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.32 | N | - | ru | 314.7 | 60.4 | 111.0 | 33.08 | 20.72 |
+| 37 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.32 | N | - | ru | 301.8 | 0.1 | 3426.6 | 33.08 | 20.72 |
+| 38 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.33 | N | - | ru | 403.1 | 32.1 | 144.3 | 33.98 | 22.65 |
+| 39 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.34 | N | - | ru | 319.5 | 0.0 | 3426.6 | 34.72 | 24.72 |
+| 40 | whispercpp | ggml-large-v3-turbo | - | auto | 5 | 0.00 | N | - | ru | 432.4 | 5.1 | 1479.0 | 35.02 | 21.84 |
+| 41 | whispercpp | medium | - | float16 | 2 | 0.41 | N | - | ru | 263.5 | 37.4 | 223.1 | 35.62 | 21.07 |
+| 42 | openai | large-v3-turbo | - | int8 | 1 | 0.20 | Y | - | ru | 150.3 | 3060.6 | 3157.3 | 35.62 | 23.85 |
+| 43 | whispercpp | medium | - | float16 | 1 | 0.43 | N | - | ru | 241.1 | 50.4 | 101.2 | 35.92 | 19.47 |
+| 44 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.50 | N | - | ru | 420.1 | -45.1 | 185.6 | 35.92 | 23.25 |
+| 45 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.26 | N | - | ru | 275.9 | 0.0 | 3485.1 | 38.45 | 25.78 |
+| 46 | openai | large-v3-turbo | - | float16 | 2 | 0.41 | N | - | ru | 136.9 | 1881.4 | 5366.4 | 38.45 | 28.34 |
+| 47 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.28 | N | - | ru | 333.3 | 0.0 | 3485.1 | 38.60 | 28.21 |
+| 48 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.28 | N | - | ru | 338.2 | -30.0 | 116.5 | 41.88 | 26.35 |
+| 49 | whispercpp | large-v3-turbo | - | float16 | 7 | 0.23 | N | - | ru | 336.5 | 1.7 | 116.3 | 44.11 | 28.31 |
+| 50 | whispercpp | small | - | int8 | 10 | 0.18 | N | - | ru | 82.0 | 3.4 | 5152.2 | 44.71 | 27.20 |
+| 51 | whispercpp | large-v3-turbo | - | float16 | 4 | 0.26 | N | - | ru | 314.8 | 0.0 | 3485.1 | 44.86 | 27.66 |
+| 52 | openai | small | - | float16 | 5 | 0.13 | Y | - | ru | 96.1 | 854.9 | 900.8 | 45.75 | 25.97 |
+| 53 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.30 | N | - | ru | 355.1 | 0.0 | 3426.6 | 45.75 | 30.82 |
+| 54 | whispercpp | large-v3-turbo | - | float16 | 1 | 0.35 | N | - | ru | 337.3 | 77.2 | 97.7 | 46.20 | 28.10 |
+| 55 | faster-whisper | small | - | int8 | 3 | 0.42 | Y | - | ru | 50.4 | -37.3 | 5329.1 | 46.35 | 30.22 |
+| 56 | whispercpp | large-v3-turbo | - | float16 | 2 | 0.15 | N | - | ru | 361.5 | 0.0 | 3426.6 | 47.09 | 31.94 |
+| 57 | openai | large-v3-turbo | - | float16 | 5 | 0.25 | N | - | ru | 366.4 | 4306.5 | 5055.1 | 47.39 | 37.63 |
+| 58 | faster-whisper | large-v3-turbo | - | float32 | 10 | 0.37 | N | - | ru | 142.5 | 1392.5 | 2296.1 | 48.14 | 41.17 |
+| 59 | whispercpp | medium | - | float16 | 4 | 0.25 | N | - | ru | 189.6 | 0.0 | 3436.4 | 49.78 | 36.26 |
+| 60 | openai | small | - | int8 | 2 | 0.37 | N | - | ru | 72.8 | 4.7 | 3164.2 | 51.12 | 31.88 |
+| 61 | faster-whisper | large-v3-turbo | - | float32 | 6 | 0.28 | N | - | ru | 122.7 | 260.8 | 3426.0 | 53.20 | 46.34 |
+| 62 | openai | small | - | float16 | 1 | 0.20 | N | - | ru | 66.7 | 0.1 | 3436.6 | 53.95 | 35.39 |
+| 63 | whispercpp | large-v3-turbo | - | float16 | 3 | 0.33 | N | - | ru | 319.1 | 0.0 | 3485.1 | 54.69 | 36.16 |
+| 64 | whispercpp | large-v3 | - | float16 | 3 | 0.27 | N | - | ru | 443.4 | 72.9 | 189.4 | 57.53 | 45.90 |
+| 65 | faster-whisper | large-v3 | - | auto | 5 | 0.00 | N | - | ru | 102.7 | 2248.5 | 2268.0 | 59.76 | 54.45 |
+| 66 | whispercpp | base | - | float16 | 4 | 0.48 | N | - | ru | 27.5 | 0.0 | 3485.1 | 62.59 | 35.07 |
+| 67 | whispercpp | base | - | float16 | 3 | 0.35 | N | - | ru | 29.7 | 42.9 | 94.6 | 62.74 | 34.20 |
+| 68 | whispercpp | large-v3 | - | float16 | 3 | 0.23 | N | - | ru | 483.3 | 0.0 | 3436.6 | 66.32 | 50.97 |
+| 69 | whispercpp | base | - | float32 | 3 | 0.30 | N | - | ru | 27.6 | 43.2 | 94.8 | 69.00 | 45.33 |
+| 70 | whispercpp | large-v3 | - | float16 | 3 | 0.38 | N | - | ru | 434.9 | 82.2 | 184.6 | 69.45 | 53.74 |
+| 71 | openai | large-v3 | - | auto | 5 | 0.00 | N | - | ru | 287.8 | 7023.5 | 9291.6 | 70.34 | 65.40 |
+| 72 | openai | tiny | - | float32 | 3 | 0.28 | Y | - | ru | 22.6 | 92.3 | 5147.8 | 74.52 | 43.26 |
+| 73 | whispercpp | tiny | - | float16 | 9 | 0.25 | N | - | ru | 16.5 | 2.4 | 3159.5 | 75.56 | 46.80 |
+| 74 | openai | tiny | - | float32 | 6 | 0.48 | N | - | ru | 17.5 | 0.1 | 5153.3 | 75.86 | 52.19 |
+| 75 | openai | base | - | float16 | 1 | 0.00 | Y | - | ru | 29.5 | 9.8 | 3436.4 | 75.86 | 40.65 |
+| 76 | openai | base | - | int8 | 5 | 0.14 | Y | - | ru | 39.1 | 0.1 | 5148.7 | 79.28 | 44.76 |
+| 77 | whispercpp | tiny | - | float16 | 2 | 0.48 | N | - | ru | 15.6 | 0.0 | 3485.1 | 80.03 | 46.23 |
+| 78 | whispercpp | large-v3 | - | float16 | 7 | 0.40 | N | - | ru | 403.5 | 0.0 | 3485.1 | 83.61 | 65.15 |
+| 79 | whispercpp | tiny | - | float32 | 5 | 0.18 | N | - | ru | 21.7 | 0.0 | 3436.4 | 88.38 | 69.13 |
+| 80 | faster-whisper | base | - | float32 | 3 | 0.17 | N | - | ru | 29.6 | -21.5 | 748.6 | 91.51 | 51.24 |
+| 81 | whispercpp | small | - | float16 | 2 | 0.22 | N | - | ru | 95.0 | -54.2 | 135.3 | 98.66 | 77.65 |
+| 82 | faster-whisper | medium | - | int8 | 5 | 0.12 | Y | - | ru | 165.6 | 48.5 | 3485.1 | 99.40 | 74.27 |
+| 83 | faster-whisper | tiny | - | int8 | 8 | 0.16 | Y | - | ru | 18.0 | 642.4 | 688.2 | 100.15 | 75.82 |
+| 84 | faster-whisper | tiny | - | int8 | 8 | 0.19 | N | - | ru | 12.3 | 582.4 | 717.7 | 104.47 | 60.85 |
+| 85 | whispercpp | ggml-large-v3 | - | auto | 5 | 0.00 | N | - | ru | 538.1 | 3.3 | 9294.9 | 117.44 | 85.54 |
+| 86 | whispercpp | medium | - | float32 | 4 | 0.45 | N | - | ru | 304.6 | 0.0 | 135.3 | 226.97 | 122.30 |
+| 87 | whispercpp | large-v3 | - | float16 | 4 | 0.22 | N | - | ru | 974.0 | 61.7 | 112.8 | 266.02 | 205.94 |
+| 88 | faster-whisper | base | - | int8 | 10 | 0.02 | Y | - | ru | 31.0 | 78.1 | 769.8 | 271.39 | 131.42 |
 
 ## Transcription Results
 
@@ -104,16 +104,16 @@
 
 - **ID:** `0674a6dd3510`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 255.10s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 4
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.4%
-- **CER:** 12.9%
+- **Batch size:** 0
+- **WER:** 24.44%
+- **CER:** 12.88%
 - **Timestamp:** 2026-01-06T06:13:10.576173+00:00
 
 **Text:**
@@ -124,16 +124,16 @@
 
 - **ID:** `ea31b8bda353`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 254.48s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.4%
-- **CER:** 12.9%
+- **Batch size:** 0
+- **WER:** 24.44%
+- **CER:** 12.88%
 - **Timestamp:** 2026-01-06T06:51:51.159058+00:00
 
 **Text:**
@@ -144,16 +144,16 @@
 
 - **ID:** `5129b014aef9`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 269.43s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.45
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.6%
-- **CER:** 12.8%
+- **Batch size:** 0
+- **WER:** 24.59%
+- **CER:** 12.82%
 - **Timestamp:** 2026-01-06T07:26:06.948405+00:00
 
 **Text:**
@@ -164,16 +164,16 @@
 
 - **ID:** `5607a1290c55`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 270.35s
 - **Memory:** Δ 0.0 MB, peak 5329.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.45
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.6%
-- **CER:** 12.8%
+- **Batch size:** 0
+- **WER:** 24.59%
+- **CER:** 12.82%
 - **Timestamp:** 2026-01-06T07:43:55.767319+00:00
 
 **Text:**
@@ -184,16 +184,16 @@
 
 - **ID:** `456ea1a821f0`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 298.96s
 - **Memory:** Δ 60.3 MB, peak 111.1 MB
 - **Beam size:** 1
 - **Temperature:** 0.37
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.7%
-- **CER:** 14.3%
+- **Batch size:** 0
+- **WER:** 24.74%
+- **CER:** 14.27%
 - **Timestamp:** 2026-01-06T01:47:08.565011+00:00
 
 **Text:**
@@ -204,16 +204,16 @@
 
 - **ID:** `ede691becc3f`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 270.45s
 - **Memory:** Δ 0.0 MB, peak 5329.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.44
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.7%
-- **CER:** 14.0%
+- **Batch size:** 0
+- **WER:** 24.74%
+- **CER:** 13.99%
 - **Timestamp:** 2026-01-06T07:57:07.400652+00:00
 
 **Text:**
@@ -224,16 +224,16 @@
 
 - **ID:** `e9a45efaa97f`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 286.41s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.46
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 24.9%
-- **CER:** 14.8%
+- **Batch size:** 0
+- **WER:** 24.89%
+- **CER:** 14.78%
 - **Timestamp:** 2026-01-06T06:56:38.089829+00:00
 
 **Text:**
@@ -244,16 +244,16 @@
 
 - **ID:** `6033604eabb1`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 285.26s
 - **Memory:** Δ 0.0 MB, peak 3436.4 MB
 - **Beam size:** 4
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 25.0%
-- **CER:** 13.4%
+- **Batch size:** 0
+- **WER:** 25.04%
+- **CER:** 13.45%
 - **Timestamp:** 2026-01-06T05:28:37.903508+00:00
 
 **Text:**
@@ -264,16 +264,16 @@
 
 - **ID:** `8c204cadb9b0`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 254.47s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 25.0%
-- **CER:** 13.4%
+- **Batch size:** 0
+- **WER:** 25.04%
+- **CER:** 13.45%
 - **Timestamp:** 2026-01-06T05:51:17.149683+00:00
 
 **Text:**
@@ -284,16 +284,16 @@
 
 - **ID:** `83c911e96ea9`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 255.32s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 1
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 25.0%
-- **CER:** 13.4%
+- **Batch size:** 0
+- **WER:** 25.04%
+- **CER:** 13.45%
 - **Timestamp:** 2026-01-06T07:11:42.386917+00:00
 
 **Text:**
@@ -304,16 +304,16 @@
 
 - **ID:** `bc215451fc1f`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 287.03s
 - **Memory:** Δ 76.9 MB, peak 97.3 MB
 - **Beam size:** 1
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 25.6%
-- **CER:** 14.6%
+- **Batch size:** 0
+- **WER:** 25.63%
+- **CER:** 14.65%
 - **Timestamp:** 2026-01-06T02:41:53.091232+00:00
 
 **Text:**
@@ -324,16 +324,16 @@
 
 - **ID:** `ad15b5fb5d33`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 288.50s
 - **Memory:** Δ 77.1 MB, peak 97.5 MB
 - **Beam size:** 1
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 25.6%
-- **CER:** 14.6%
+- **Batch size:** 0
+- **WER:** 25.63%
+- **CER:** 14.65%
 - **Timestamp:** 2026-01-06T02:52:45.348310+00:00
 
 **Text:**
@@ -344,16 +344,16 @@
 
 - **ID:** `55f080d50eef`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 253.00s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.32
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 26.1%
-- **CER:** 14.3%
+- **Batch size:** 0
+- **WER:** 26.08%
+- **CER:** 14.29%
 - **Timestamp:** 2026-01-06T05:42:16.675156+00:00
 
 **Text:**
@@ -364,16 +364,16 @@
 
 - **ID:** `877ebe329198`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 269.72s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 4
 - **Temperature:** 0.23
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 26.1%
-- **CER:** 14.8%
+- **Batch size:** 0
+- **WER:** 26.08%
+- **CER:** 14.81%
 - **Timestamp:** 2026-01-06T06:35:18.274865+00:00
 
 **Text:**
@@ -384,16 +384,16 @@
 
 - **ID:** `e7f3ada02bf3`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 273.04s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.46
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 26.1%
-- **CER:** 13.8%
+- **Batch size:** 0
+- **WER:** 26.08%
+- **CER:** 13.78%
 - **Timestamp:** 2026-01-06T07:30:40.573174+00:00
 
 **Text:**
@@ -404,16 +404,16 @@
 
 - **ID:** `e88039427727`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 330.37s
 - **Memory:** Δ 45.8 MB, peak 230.6 MB
 - **Beam size:** 2
 - **Temperature:** 0.31
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 26.2%
-- **CER:** 14.6%
+- **Batch size:** 0
+- **WER:** 26.23%
+- **CER:** 14.57%
 - **Timestamp:** 2026-01-06T02:04:21.802219+00:00
 
 **Text:**
@@ -424,16 +424,16 @@
 
 - **ID:** `003e255018c4`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 332.15s
 - **Memory:** Δ -30.0 MB, peak 719.0 MB
 - **Beam size:** 2
 - **Temperature:** 0.31
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 26.2%
-- **CER:** 14.6%
+- **Batch size:** 0
+- **WER:** 26.23%
+- **CER:** 14.57%
 - **Timestamp:** 2026-01-06T04:03:58.681787+00:00
 
 **Text:**
@@ -444,16 +444,16 @@
 
 - **ID:** `dfc4318c5b59`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 255.97s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 4
 - **Temperature:** 0.21
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 26.4%
-- **CER:** 14.5%
+- **Batch size:** 0
+- **WER:** 26.38%
+- **CER:** 14.48%
 - **Timestamp:** 2026-01-06T06:17:27.013937+00:00
 
 **Text:**
@@ -464,16 +464,16 @@
 
 - **ID:** `bfad104fa567`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 271.52s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.29
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 27.0%
-- **CER:** 14.3%
+- **Batch size:** 0
+- **WER:** 26.97%
+- **CER:** 14.35%
 - **Timestamp:** 2026-01-06T06:08:55.023044+00:00
 
 **Text:**
@@ -484,16 +484,16 @@
 
 - **ID:** `6b18bb2e3115`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 285.09s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.44
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 27.1%
-- **CER:** 14.5%
+- **Batch size:** 0
+- **WER:** 27.12%
+- **CER:** 14.46%
 - **Timestamp:** 2026-01-06T07:01:23.687712+00:00
 
 **Text:**
@@ -504,16 +504,16 @@
 
 - **ID:** `6277f2123ef8`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 285.15s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 4
 - **Temperature:** 0.36
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 27.3%
-- **CER:** 14.2%
+- **Batch size:** 0
+- **WER:** 27.27%
+- **CER:** 14.24%
 - **Timestamp:** 2026-01-06T05:47:02.242873+00:00
 
 **Text:**
@@ -524,16 +524,16 @@
 
 - **ID:** `d655db415d16`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 317.48s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 1
 - **Temperature:** 0.22
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 27.3%
-- **CER:** 15.1%
+- **Batch size:** 0
+- **WER:** 27.27%
+- **CER:** 15.08%
 - **Timestamp:** 2026-01-06T07:21:36.962600+00:00
 
 **Text:**
@@ -544,16 +544,16 @@
 
 - **ID:** `8df52c5ee146`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 286.01s
 - **Memory:** Δ 0.0 MB, peak 5329.1 MB
 - **Beam size:** 4
 - **Temperature:** 0.43
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 27.3%
-- **CER:** 15.3%
+- **Batch size:** 0
+- **WER:** 27.27%
+- **CER:** 15.33%
 - **Timestamp:** 2026-01-06T07:52:36.346714+00:00
 
 **Text:**
@@ -564,16 +564,16 @@
 
 - **ID:** `5bdcddbb17c5`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 318.05s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.50
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 27.4%
-- **CER:** 15.7%
+- **Batch size:** 0
+- **WER:** 27.42%
+- **CER:** 15.68%
 - **Timestamp:** 2026-01-06T07:06:42.332877+00:00
 
 **Text:**
@@ -584,16 +584,16 @@
 
 - **ID:** `4db61468c62f`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 299.43s
 - **Memory:** Δ 76.8 MB, peak 97.2 MB
 - **Beam size:** 3
 - **Temperature:** 0.37
 - **Compute type:** float16
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 28.2%
-- **CER:** 17.8%
+- **Batch size:** 0
+- **WER:** 28.17%
+- **CER:** 17.83%
 - **Timestamp:** 2026-01-06T02:31:02.230646+00:00
 
 **Text:**
@@ -604,16 +604,16 @@
 
 - **ID:** `98dd05e7bfbd`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 285.74s
 - **Memory:** Δ 0.0 MB, peak 3436.4 MB
 - **Beam size:** 6
 - **Temperature:** 0.38
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 28.3%
-- **CER:** 18.5%
+- **Batch size:** 0
+- **WER:** 28.32%
+- **CER:** 18.46%
 - **Timestamp:** 2026-01-06T05:36:56.085082+00:00
 
 **Text:**
@@ -624,16 +624,16 @@
 
 - **ID:** `079397e9ccf5`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 309.20s
 - **Memory:** Δ 30.4 MB, peak 749.0 MB
 - **Beam size:** 1
 - **Temperature:** 0.09
 - **Compute type:** int8
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 28.9%
-- **CER:** 20.0%
+- **Batch size:** 0
+- **WER:** 28.91%
+- **CER:** 19.96%
 - **Timestamp:** 2026-01-06T03:58:26.277234+00:00
 
 **Text:**
@@ -644,16 +644,16 @@
 
 - **ID:** `45f7c5404f91`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 348.46s
 - **Memory:** Δ 0.0 MB, peak 719.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.30
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 29.4%
-- **CER:** 16.3%
+- **Batch size:** 0
+- **WER:** 29.36%
+- **CER:** 16.28%
 - **Timestamp:** 2026-01-06T04:23:44.162673+00:00
 
 **Text:**
@@ -664,16 +664,16 @@
 
 - **ID:** `21057e161c2d`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 359.97s
 - **Memory:** Δ 30.0 MB, peak 146.4 MB
 - **Beam size:** 2
 - **Temperature:** 0.08
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 30.1%
-- **CER:** 19.8%
+- **Batch size:** 0
+- **WER:** 30.10%
+- **CER:** 19.79%
 - **Timestamp:** 2026-01-06T03:33:22.002245+00:00
 
 **Text:**
@@ -684,16 +684,16 @@
 
 - **ID:** `a3b64ca82a78`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 301.67s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 5
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 30.1%
-- **CER:** 16.1%
+- **Batch size:** 0
+- **WER:** 30.10%
+- **CER:** 16.09%
 - **Timestamp:** 2026-01-06T06:04:23.051900+00:00
 
 **Text:**
@@ -704,16 +704,16 @@
 
 - **ID:** `8e15372c44ad`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 293.19s
 - **Memory:** Δ 77.0 MB, peak 97.4 MB
 - **Beam size:** 1
 - **Temperature:** 0.40
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 30.6%
-- **CER:** 21.7%
+- **Batch size:** 0
+- **WER:** 30.55%
+- **CER:** 21.67%
 - **Timestamp:** 2026-01-06T02:58:29.146503+00:00
 
 **Text:**
@@ -724,16 +724,16 @@
 
 - **ID:** `0509d5ec0530`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 334.98s
 - **Memory:** Δ 0.0 MB, peak 5329.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.47
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 30.6%
-- **CER:** 16.8%
+- **Batch size:** 0
+- **WER:** 30.55%
+- **CER:** 16.77%
 - **Timestamp:** 2026-01-06T07:39:24.813072+00:00
 
 **Text:**
@@ -744,16 +744,16 @@
 
 - **ID:** `76a914da7c10`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 74.61s
 - **Memory:** Δ 1454.3 MB, peak 1473.9 MB
 - **Beam size:** 5
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 30.7%
-- **CER:** 26.2%
+- **Batch size:** 0
+- **WER:** 30.70%
+- **CER:** 26.25%
 - **Timestamp:** 2026-01-05T23:09:00.979084+00:00
 
 **Text:**
@@ -764,16 +764,16 @@
 
 - **ID:** `c6105c64055a`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 303.65s
 - **Memory:** Δ 0.0 MB, peak 5329.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.45
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 31.9%
-- **CER:** 19.1%
+- **Batch size:** 0
+- **WER:** 31.89%
+- **CER:** 19.06%
 - **Timestamp:** 2026-01-06T08:02:11.689802+00:00
 
 **Text:**
@@ -784,16 +784,16 @@
 
 - **ID:** `3044cf0a3700`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 233.20s
 - **Memory:** Δ 0.0 MB, peak 5329.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.46
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 32.9%
-- **CER:** 17.7%
+- **Batch size:** 0
+- **WER:** 32.94%
+- **CER:** 17.72%
 - **Timestamp:** 2026-01-06T07:47:49.563870+00:00
 
 **Text:**
@@ -804,16 +804,16 @@
 
 - **ID:** `3852f8b35413`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 314.74s
 - **Memory:** Δ 60.4 MB, peak 111.0 MB
 - **Beam size:** 1
 - **Temperature:** 0.32
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 33.1%
-- **CER:** 20.7%
+- **Batch size:** 0
+- **WER:** 33.08%
+- **CER:** 20.72%
 - **Timestamp:** 2026-01-06T01:29:05.324740+00:00
 
 **Text:**
@@ -824,16 +824,16 @@
 
 - **ID:** `fcad46ea7a61`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 301.82s
 - **Memory:** Δ 0.1 MB, peak 3426.6 MB
 - **Beam size:** 2
 - **Temperature:** 0.32
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 33.1%
-- **CER:** 20.7%
+- **Batch size:** 0
+- **WER:** 33.08%
+- **CER:** 20.72%
 - **Timestamp:** 2026-01-06T05:06:05.175872+00:00
 
 **Text:**
@@ -844,16 +844,16 @@
 
 - **ID:** `1873e37e4733`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 403.12s
 - **Memory:** Δ 32.1 MB, peak 144.3 MB
 - **Beam size:** 1
 - **Temperature:** 0.33
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 34.0%
-- **CER:** 22.7%
+- **Batch size:** 0
+- **WER:** 33.98%
+- **CER:** 22.65%
 - **Timestamp:** 2026-01-06T01:35:48.549295+00:00
 
 **Text:**
@@ -864,16 +864,16 @@
 
 - **ID:** `1bb958bcfe9b`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 319.46s
 - **Memory:** Δ 0.0 MB, peak 3426.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.34
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 34.7%
-- **CER:** 24.7%
+- **Batch size:** 0
+- **WER:** 34.72%
+- **CER:** 24.72%
 - **Timestamp:** 2026-01-06T05:17:20.479737+00:00
 
 **Text:**
@@ -884,16 +884,16 @@
 
 - **ID:** `8a6946ef49b7`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 432.42s
 - **Memory:** Δ 5.1 MB, peak 1479.0 MB
 - **Beam size:** 5
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 35.0%
-- **CER:** 21.8%
+- **Batch size:** 0
+- **WER:** 35.02%
+- **CER:** 21.84%
 - **Timestamp:** 2026-01-05T23:16:13.404406+00:00
 
 **Text:**
@@ -904,16 +904,16 @@
 
 - **ID:** `a9374b5a0056`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 263.54s
 - **Memory:** Δ 37.4 MB, peak 223.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.41
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 35.6%
-- **CER:** 21.1%
+- **Batch size:** 0
+- **WER:** 35.62%
+- **CER:** 21.07%
 - **Timestamp:** 2026-01-06T02:15:45.791092+00:00
 
 **Text:**
@@ -924,16 +924,16 @@
 
 - **ID:** `811748cf8524`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 150.33s
 - **Memory:** Δ 3060.6 MB, peak 3157.3 MB
 - **Beam size:** 1
 - **Temperature:** 0.20
 - **Compute type:** int8
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 35.6%
-- **CER:** 23.8%
+- **Batch size:** 0
+- **WER:** 35.62%
+- **CER:** 23.85%
 - **Timestamp:** 2026-01-06T04:57:29.924622+00:00
 
 **Text:**
@@ -944,16 +944,16 @@
 
 - **ID:** `322c39bff291`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 241.13s
 - **Memory:** Δ 50.4 MB, peak 101.2 MB
 - **Beam size:** 1
 - **Temperature:** 0.43
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 35.9%
-- **CER:** 19.5%
+- **Batch size:** 0
+- **WER:** 35.92%
+- **CER:** 19.47%
 - **Timestamp:** 2026-01-06T01:51:36.188289+00:00
 
 **Text:**
@@ -964,16 +964,16 @@
 
 - **ID:** `e87bf6115d48`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 420.13s
 - **Memory:** Δ -45.1 MB, peak 185.6 MB
 - **Beam size:** 2
 - **Temperature:** 0.50
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 35.9%
-- **CER:** 23.3%
+- **Batch size:** 0
+- **WER:** 35.92%
+- **CER:** 23.25%
 - **Timestamp:** 2026-01-06T02:11:22.086282+00:00
 
 **Text:**
@@ -984,16 +984,16 @@
 
 - **ID:** `d1bac54be202`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 275.89s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 1
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 38.5%
-- **CER:** 25.8%
+- **Batch size:** 0
+- **WER:** 38.45%
+- **CER:** 25.78%
 - **Timestamp:** 2026-01-06T07:16:18.906780+00:00
 
 **Text:**
@@ -1004,16 +1004,16 @@
 
 - **ID:** `b0ec9ee3bfad`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 136.94s
 - **Memory:** Δ 1881.4 MB, peak 5366.4 MB
 - **Beam size:** 2
 - **Temperature:** 0.41
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 38.5%
-- **CER:** 28.3%
+- **Batch size:** 0
+- **WER:** 38.45%
+- **CER:** 28.34%
 - **Timestamp:** 2026-01-06T07:32:58.179803+00:00
 
 **Text:**
@@ -1024,16 +1024,16 @@
 
 - **ID:** `e1c82275e5fc`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 333.33s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 1
 - **Temperature:** 0.28
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 38.6%
-- **CER:** 28.2%
+- **Batch size:** 0
+- **WER:** 38.60%
+- **CER:** 28.21%
 - **Timestamp:** 2026-01-06T06:40:52.085493+00:00
 
 **Text:**
@@ -1044,16 +1044,16 @@
 
 - **ID:** `a6edcbcbcbbe`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 338.18s
 - **Memory:** Δ -30.0 MB, peak 116.5 MB
 - **Beam size:** 4
 - **Temperature:** 0.28
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 41.9%
-- **CER:** 26.4%
+- **Batch size:** 0
+- **WER:** 41.88%
+- **CER:** 26.35%
 - **Timestamp:** 2026-01-06T03:39:00.407749+00:00
 
 **Text:**
@@ -1064,16 +1064,16 @@
 
 - **ID:** `5f26bee55b6b`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 336.50s
 - **Memory:** Δ 1.7 MB, peak 116.3 MB
 - **Beam size:** 7
 - **Temperature:** 0.23
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 44.1%
-- **CER:** 28.3%
+- **Batch size:** 0
+- **WER:** 44.11%
+- **CER:** 28.31%
 - **Timestamp:** 2026-01-06T03:27:21.809742+00:00
 
 **Text:**
@@ -1084,16 +1084,16 @@
 
 - **ID:** `d0c1675954c8`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 82.03s
 - **Memory:** Δ 3.4 MB, peak 5152.2 MB
 - **Beam size:** 10
 - **Temperature:** 0.18
 - **Compute type:** int8
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 44.7%
-- **CER:** 27.2%
+- **Batch size:** 0
+- **WER:** 44.71%
+- **CER:** 27.20%
 - **Timestamp:** 2026-01-06T01:16:05.006022+00:00
 
 **Text:**
@@ -1104,16 +1104,16 @@
 
 - **ID:** `14d419ed1044`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 314.76s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 4
 - **Temperature:** 0.26
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 44.9%
-- **CER:** 27.7%
+- **Batch size:** 0
+- **WER:** 44.86%
+- **CER:** 27.66%
 - **Timestamp:** 2026-01-06T06:25:28.413550+00:00
 
 **Text:**
@@ -1124,16 +1124,16 @@
 
 - **ID:** `ea605418dbd6`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 96.10s
 - **Memory:** Δ 854.9 MB, peak 900.8 MB
 - **Beam size:** 5
 - **Temperature:** 0.13
 - **Compute type:** float16
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 45.8%
-- **CER:** 26.0%
+- **Batch size:** 0
+- **WER:** 45.75%
+- **CER:** 25.97%
 - **Timestamp:** 2026-01-06T01:19:35.469776+00:00
 
 **Text:**
@@ -1144,16 +1144,16 @@
 
 - **ID:** `1a28ac18c9f2`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 355.12s
 - **Memory:** Δ 0.0 MB, peak 3426.6 MB
 - **Beam size:** 1
 - **Temperature:** 0.30
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 45.8%
-- **CER:** 30.8%
+- **Batch size:** 0
+- **WER:** 45.75%
+- **CER:** 30.82%
 - **Timestamp:** 2026-01-06T05:12:00.673202+00:00
 
 **Text:**
@@ -1164,16 +1164,16 @@
 
 - **ID:** `5a4907d524f1`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 337.33s
 - **Memory:** Δ 77.2 MB, peak 97.7 MB
 - **Beam size:** 1
 - **Temperature:** 0.35
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 46.2%
-- **CER:** 28.1%
+- **Batch size:** 0
+- **WER:** 46.20%
+- **CER:** 28.10%
 - **Timestamp:** 2026-01-06T03:04:35.163508+00:00
 
 **Text:**
@@ -1184,16 +1184,16 @@
 
 - **ID:** `75849808042b`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 50.42s
 - **Memory:** Δ -37.3 MB, peak 5329.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.42
 - **Compute type:** int8
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 46.3%
-- **CER:** 30.2%
+- **Batch size:** 0
+- **WER:** 46.35%
+- **CER:** 30.22%
 - **Timestamp:** 2026-01-06T07:33:49.183010+00:00
 
 **Text:**
@@ -1204,16 +1204,16 @@
 
 - **ID:** `a55bbd08ce82`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 361.47s
 - **Memory:** Δ 0.0 MB, peak 3426.6 MB
 - **Beam size:** 2
 - **Temperature:** 0.15
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 47.1%
-- **CER:** 31.9%
+- **Batch size:** 0
+- **WER:** 47.09%
+- **CER:** 31.94%
 - **Timestamp:** 2026-01-06T05:23:22.314340+00:00
 
 **Text:**
@@ -1224,16 +1224,16 @@
 
 - **ID:** `a83fd4fb3ef5`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 366.44s
 - **Memory:** Δ 4306.5 MB, peak 5055.1 MB
 - **Beam size:** 5
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 47.4%
-- **CER:** 37.6%
+- **Batch size:** 0
+- **WER:** 47.39%
+- **CER:** 37.63%
 - **Timestamp:** 2026-01-06T01:13:41.218839+00:00
 
 **Text:**
@@ -1244,16 +1244,16 @@
 
 - **ID:** `c06f2ff75268`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 142.51s
 - **Memory:** Δ 1392.5 MB, peak 2296.1 MB
 - **Beam size:** 10
 - **Temperature:** 0.37
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 48.1%
-- **CER:** 41.2%
+- **Batch size:** 0
+- **WER:** 48.14%
+- **CER:** 41.17%
 - **Timestamp:** 2026-01-06T01:21:58.063066+00:00
 
 **Text:**
@@ -1264,16 +1264,16 @@
 
 - **ID:** `edf23cd453aa`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 189.55s
 - **Memory:** Δ 0.0 MB, peak 3436.4 MB
 - **Beam size:** 4
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 49.8%
-- **CER:** 36.3%
+- **Batch size:** 0
+- **WER:** 49.78%
+- **CER:** 36.26%
 - **Timestamp:** 2026-01-06T05:31:47.852766+00:00
 
 **Text:**
@@ -1284,16 +1284,16 @@
 
 - **ID:** `5e6c7571d964`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 72.76s
 - **Memory:** Δ 4.7 MB, peak 3164.2 MB
 - **Beam size:** 2
 - **Temperature:** 0.37
 - **Compute type:** int8
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 51.1%
-- **CER:** 31.9%
+- **Batch size:** 0
+- **WER:** 51.12%
+- **CER:** 31.88%
 - **Timestamp:** 2026-01-06T04:58:59.993985+00:00
 
 **Text:**
@@ -1304,16 +1304,16 @@
 
 - **ID:** `a28b7c867a1e`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 122.68s
 - **Memory:** Δ 260.8 MB, peak 3426.0 MB
 - **Beam size:** 6
 - **Temperature:** 0.28
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 53.2%
-- **CER:** 46.3%
+- **Batch size:** 0
+- **WER:** 53.20%
+- **CER:** 46.34%
 - **Timestamp:** 2026-01-06T05:01:03.009916+00:00
 
 **Text:**
@@ -1324,16 +1324,16 @@
 
 - **ID:** `7b1f23dcf7ef`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 66.70s
 - **Memory:** Δ 0.1 MB, peak 3436.6 MB
 - **Beam size:** 1
 - **Temperature:** 0.20
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 53.9%
-- **CER:** 35.4%
+- **Batch size:** 0
+- **WER:** 53.95%
+- **CER:** 35.39%
 - **Timestamp:** 2026-01-06T05:38:03.276166+00:00
 
 **Text:**
@@ -1344,16 +1344,16 @@
 
 - **ID:** `25db650f8d29`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 319.15s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 3
 - **Temperature:** 0.33
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 54.7%
-- **CER:** 36.2%
+- **Batch size:** 0
+- **WER:** 54.69%
+- **CER:** 36.16%
 - **Timestamp:** 2026-01-06T06:30:48.061762+00:00
 
 **Text:**
@@ -1364,16 +1364,16 @@
 
 - **ID:** `50a72c964a6d`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 443.40s
 - **Memory:** Δ 72.9 MB, peak 189.4 MB
 - **Beam size:** 3
 - **Temperature:** 0.27
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 57.5%
-- **CER:** 45.9%
+- **Batch size:** 0
+- **WER:** 57.53%
+- **CER:** 45.90%
 - **Timestamp:** 2026-01-06T03:46:24.041253+00:00
 
 **Text:**
@@ -1384,16 +1384,16 @@
 
 - **ID:** `ef96238e58e0`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 102.69s
 - **Memory:** Δ 2248.5 MB, peak 2268.0 MB
 - **Beam size:** 5
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 59.8%
-- **CER:** 54.5%
+- **Batch size:** 0
+- **WER:** 59.76%
+- **CER:** 54.45%
 - **Timestamp:** 2026-01-05T22:51:29.075677+00:00
 
 **Text:**
@@ -1404,16 +1404,16 @@
 
 - **ID:** `3d3061aa4bce`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 27.47s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 4
 - **Temperature:** 0.48
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 62.6%
-- **CER:** 35.1%
+- **Batch size:** 0
+- **WER:** 62.59%
+- **CER:** 35.07%
 - **Timestamp:** 2026-01-06T07:07:10.326545+00:00
 
 **Text:**
@@ -1424,16 +1424,16 @@
 
 - **ID:** `1489a798fd20`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 29.71s
 - **Memory:** Δ 42.9 MB, peak 94.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.35
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 62.7%
-- **CER:** 34.2%
+- **Batch size:** 0
+- **WER:** 62.74%
+- **CER:** 34.20%
 - **Timestamp:** 2026-01-06T04:54:05.619643+00:00
 
 **Text:**
@@ -1444,16 +1444,16 @@
 
 - **ID:** `80351aba8cd8`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 483.27s
 - **Memory:** Δ 0.0 MB, peak 3436.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.23
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 66.3%
-- **CER:** 51.0%
+- **Batch size:** 0
+- **WER:** 66.32%
+- **CER:** 50.97%
 - **Timestamp:** 2026-01-06T05:59:20.919119+00:00
 
 **Text:**
@@ -1464,16 +1464,16 @@
 
 - **ID:** `6999952e95e8`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 27.57s
 - **Memory:** Δ 43.2 MB, peak 94.8 MB
 - **Beam size:** 3
 - **Temperature:** 0.30
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 69.0%
-- **CER:** 45.3%
+- **Batch size:** 0
+- **WER:** 69.00%
+- **CER:** 45.33%
 - **Timestamp:** 2026-01-06T04:54:58.032887+00:00
 
 **Text:**
@@ -1484,16 +1484,16 @@
 
 - **ID:** `32663562bbce`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 434.90s
 - **Memory:** Δ 82.2 MB, peak 184.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.38
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 69.4%
-- **CER:** 53.7%
+- **Batch size:** 0
+- **WER:** 69.45%
+- **CER:** 53.74%
 - **Timestamp:** 2026-01-06T01:58:51.245985+00:00
 
 **Text:**
@@ -1504,16 +1504,16 @@
 
 - **ID:** `da7eded243b4`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 287.76s
 - **Memory:** Δ 7023.5 MB, peak 9291.6 MB
 - **Beam size:** 5
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 70.3%
-- **CER:** 65.4%
+- **Batch size:** 0
+- **WER:** 70.34%
+- **CER:** 65.40%
 - **Timestamp:** 2026-01-05T22:56:16.834844+00:00
 
 **Text:**
@@ -1524,16 +1524,16 @@
 
 - **ID:** `744ea4ef8aa5`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 22.59s
 - **Memory:** Δ 92.3 MB, peak 5147.8 MB
 - **Beam size:** 3
 - **Temperature:** 0.28
 - **Compute type:** float32
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 74.5%
-- **CER:** 43.3%
+- **Batch size:** 0
+- **WER:** 74.52%
+- **CER:** 43.26%
 - **Timestamp:** 2026-01-06T01:14:03.839914+00:00
 
 **Text:**
@@ -1544,16 +1544,16 @@
 
 - **ID:** `8d22b3385a3f`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 16.52s
 - **Memory:** Δ 2.4 MB, peak 3159.5 MB
 - **Beam size:** 9
 - **Temperature:** 0.25
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 75.6%
-- **CER:** 46.8%
+- **Batch size:** 0
+- **WER:** 75.56%
+- **CER:** 46.80%
 - **Timestamp:** 2026-01-06T04:57:46.890495+00:00
 
 **Text:**
@@ -1564,16 +1564,16 @@
 
 - **ID:** `3db1da1098f7`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 17.47s
 - **Memory:** Δ 0.1 MB, peak 5153.3 MB
 - **Beam size:** 6
 - **Temperature:** 0.48
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 75.9%
-- **CER:** 52.2%
+- **Batch size:** 0
+- **WER:** 75.86%
+- **CER:** 52.19%
 - **Timestamp:** 2026-01-06T01:16:22.505576+00:00
 
 **Text:**
@@ -1584,16 +1584,16 @@
 
 - **ID:** `19426753f178`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 29.53s
 - **Memory:** Δ 9.8 MB, peak 3436.4 MB
 - **Beam size:** 1
 - **Temperature:** 0.00
 - **Compute type:** float16
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 75.9%
-- **CER:** 40.6%
+- **Batch size:** 0
+- **WER:** 75.86%
+- **CER:** 40.65%
 - **Timestamp:** 2026-01-06T05:23:52.288095+00:00
 
 **Text:**
@@ -1604,16 +1604,16 @@
 
 - **ID:** `0640a707bd7f`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 39.06s
 - **Memory:** Δ 0.1 MB, peak 5148.7 MB
 - **Beam size:** 5
 - **Temperature:** 0.14
 - **Compute type:** int8
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 79.3%
-- **CER:** 44.8%
+- **Batch size:** 0
+- **WER:** 79.28%
+- **CER:** 44.76%
 - **Timestamp:** 2026-01-06T01:14:42.938758+00:00
 
 **Text:**
@@ -1624,16 +1624,16 @@
 
 - **ID:** `0183d08838c7`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 15.64s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 2
 - **Temperature:** 0.48
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 80.0%
-- **CER:** 46.2%
+- **Batch size:** 0
+- **WER:** 80.03%
+- **CER:** 46.23%
 - **Timestamp:** 2026-01-06T07:07:26.521804+00:00
 
 **Text:**
@@ -1644,16 +1644,16 @@
 
 - **ID:** `f0806194393e`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 403.51s
 - **Memory:** Δ 0.0 MB, peak 3485.1 MB
 - **Beam size:** 7
 - **Temperature:** 0.40
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 83.6%
-- **CER:** 65.2%
+- **Batch size:** 0
+- **WER:** 83.61%
+- **CER:** 65.15%
 - **Timestamp:** 2026-01-06T06:47:36.162434+00:00
 
 **Text:**
@@ -1664,16 +1664,16 @@
 
 - **ID:** `a8b6f8f36640`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 21.68s
 - **Memory:** Δ 0.0 MB, peak 3436.4 MB
 - **Beam size:** 5
 - **Temperature:** 0.18
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 88.4%
-- **CER:** 69.1%
+- **Batch size:** 0
+- **WER:** 88.38%
+- **CER:** 69.13%
 - **Timestamp:** 2026-01-06T05:32:09.936224+00:00
 
 **Text:**
@@ -1684,16 +1684,16 @@
 
 - **ID:** `cfd3a7ddab46`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 29.57s
 - **Memory:** Δ -21.5 MB, peak 748.6 MB
 - **Beam size:** 3
 - **Temperature:** 0.17
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 91.5%
-- **CER:** 51.2%
+- **Batch size:** 0
+- **WER:** 91.51%
+- **CER:** 51.24%
 - **Timestamp:** 2026-01-06T01:07:34.756634+00:00
 
 **Text:**
@@ -1704,16 +1704,16 @@
 
 - **ID:** `d22daa964082`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 95.04s
 - **Memory:** Δ -54.2 MB, peak 135.3 MB
 - **Beam size:** 2
 - **Temperature:** 0.22
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 98.7%
-- **CER:** 77.6%
+- **Batch size:** 0
+- **WER:** 98.66%
+- **CER:** 77.65%
 - **Timestamp:** 2026-01-06T03:47:59.309599+00:00
 
 **Text:**
@@ -1724,16 +1724,16 @@
 
 - **ID:** `b4c491a656bf`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 165.57s
 - **Memory:** Δ 48.5 MB, peak 3485.1 MB
 - **Beam size:** 5
 - **Temperature:** 0.12
 - **Compute type:** int8
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 99.4%
-- **CER:** 74.3%
+- **Batch size:** 0
+- **WER:** 99.40%
+- **CER:** 74.27%
 - **Timestamp:** 2026-01-06T06:20:13.120664+00:00
 
 **Text:**
@@ -1744,16 +1744,16 @@
 
 - **ID:** `bc2bfc62dce7`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 17.97s
 - **Memory:** Δ 642.4 MB, peak 688.2 MB
 - **Beam size:** 8
 - **Temperature:** 0.16
 - **Compute type:** int8
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 100.1%
-- **CER:** 75.8%
+- **Batch size:** 0
+- **WER:** 100.15%
+- **CER:** 75.82%
 - **Timestamp:** 2026-01-06T01:06:34.159719+00:00
 
 **Text:**
@@ -1764,16 +1764,16 @@
 
 - **ID:** `6426a20dec29`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 12.31s
 - **Memory:** Δ 582.4 MB, peak 717.7 MB
 - **Beam size:** 8
 - **Temperature:** 0.19
 - **Compute type:** int8
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 104.5%
-- **CER:** 60.8%
+- **Batch size:** 0
+- **WER:** 104.47%
+- **CER:** 60.85%
 - **Timestamp:** 2026-01-06T03:53:16.797606+00:00
 
 **Text:**
@@ -1784,16 +1784,16 @@
 
 - **ID:** `f7ba0913b4dc`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 538.15s
 - **Memory:** Δ 3.3 MB, peak 9294.9 MB
 - **Beam size:** 5
 - **Temperature:** 0.00
 - **Compute type:** auto
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 117.4%
-- **CER:** 85.5%
+- **Batch size:** 0
+- **WER:** 117.44%
+- **CER:** 85.54%
 - **Timestamp:** 2026-01-05T23:05:14.980888+00:00
 
 **Text:**
@@ -1804,16 +1804,16 @@
 
 - **ID:** `d09651017989`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 304.63s
 - **Memory:** Δ 0.0 MB, peak 135.3 MB
 - **Beam size:** 4
 - **Temperature:** 0.45
 - **Compute type:** float32
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 227.0%
-- **CER:** 122.3%
+- **Batch size:** 0
+- **WER:** 226.97%
+- **CER:** 122.30%
 - **Timestamp:** 2026-01-06T03:53:04.209058+00:00
 
 **Text:**
@@ -1824,16 +1824,16 @@
 
 - **ID:** `5c920d49ac59`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 974.04s
 - **Memory:** Δ 61.7 MB, peak 112.8 MB
 - **Beam size:** 4
 - **Temperature:** 0.22
 - **Compute type:** float16
 - **Condition on prev:** False
-- **Batched:** False
-- **WER:** 266.0%
-- **CER:** 205.9%
+- **Batch size:** 0
+- **WER:** 266.02%
+- **CER:** 205.94%
 - **Timestamp:** 2026-01-06T03:21:45.097185+00:00
 
 **Text:**
@@ -1844,16 +1844,16 @@
 
 - **ID:** `1525d6ce9a8e`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 30.97s
 - **Memory:** Δ 78.1 MB, peak 769.8 MB
 - **Beam size:** 10
 - **Temperature:** 0.02
 - **Compute type:** int8
 - **Condition on prev:** True
-- **Batched:** False
-- **WER:** 271.4%
-- **CER:** 131.4%
+- **Batch size:** 0
+- **WER:** 271.39%
+- **CER:** 131.42%
 - **Timestamp:** 2026-01-06T01:07:05.154575+00:00
 
 **Text:**

@@ -205,7 +205,7 @@ calls/
   sherbakov_call.txt      # Manual reference transcription
   sherbakov_call_cpu.json # CPU results
   sherbakov_call_cpu.md   # CPU report with WER/CER
-  sherbakov_call_gpu.json # GPU results (if run with --device cuda)
+  sherbakov_call_gpu.json # GPU results (if run with --runtime cuda)
   sherbakov_call_gpu.md   # GPU report
 ```
 
@@ -318,7 +318,7 @@ Results are automatically saved to a JSON file named after the audio file (e.g.,
 - `memory_peak_mb`: Peak memory usage during run
 - `gpu_name`: GPU model name when running on CUDA (null for CPU)
 
-Each run has a unique ID based on settings (backend, model, language, device). Re-running with the same settings skips existing runs (use this to resume interrupted comparison runs).
+Each run has a unique ID based on settings (backend, model, language, runtime). Re-running with the same settings skips existing runs (use this to resume interrupted comparison runs).
 
 ## Benchmarks
 

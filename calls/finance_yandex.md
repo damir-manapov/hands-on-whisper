@@ -17,7 +17,7 @@
 
 - **ID:** `87e0f498c92a`
 - **Language:** ru
-- **Device:** cpu
+- **Runtime:** cpu
 - **Duration:** 45.10s
 - **Memory:** Δ 16.1 MB, peak 37.1 MB
 - **WER:** 129.59%
