@@ -451,6 +451,7 @@ def _run_transcription(  # noqa: PLR0913
 
 def _run_optimization_trial(  # noqa: PLR0913
   trial_number: int,
+  total_trials: int,
   backend: str,
   model: str,
   compute_type: str,
@@ -466,22 +467,26 @@ def _run_optimization_trial(  # noqa: PLR0913
   metric: str = "wer",
 ) -> float:
   """Run a single optimization trial and return WER or CER score."""
+  # Format trial header
+  trial_header = (
+    f"[Trial {trial_number + 1}/{total_trials}] "
+    f"{backend}/{model} | {compute_type} | beam={beam_size} temp={temperature:.2f} "
+    f"cond={condition_on_prev}"
+  )
+
   # Check if already exists (use cached result)
   run_id = generate_run_id(
     backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
   )
   existing = next((r for r in data["runs"] if r.get("id") == run_id), None)
   if existing:
-    print(f"\n[Trial {trial_number}] {run_id} - using cached result")
+    print(f"\n{trial_header} [cached]")
     wer_score, cer_score = calculate_metrics(reference, existing.get("text", ""))
     score = wer_score if metric == "wer" else cer_score
-    print(f"  {metric.upper()}: {score:.1f}%")
+    print(f"  → {metric.upper()}: {score:.1f}%")
     return score / 100
 
-  print(
-    f"\n[Trial {trial_number}] {backend}/{model} compute={compute_type} "
-    f"beam={beam_size} temp={temperature:.2f} cond={condition_on_prev}"
-  )
+  print(f"\n{trial_header}")
 
   run_record = _run_transcription(
     audio, backend, model, language, device, beam_size, temperature, compute_type, condition_on_prev
@@ -493,7 +498,7 @@ def _run_optimization_trial(  # noqa: PLR0913
   score = wer_score if metric == "wer" else cer_score
   mem_used_mb = run_record["memory_delta_mb"]
   duration = run_record["duration_seconds"]
-  print(f"  Done ({duration:.2f}s, mem: +{mem_used_mb}MB) {metric.upper()}: {score:.1f}%")
+  print(f"  → {metric.upper()}: {score:.1f}% ({duration:.1f}s, +{mem_used_mb:.0f}MB)")
   return score / 100
 
 
@@ -607,6 +612,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
 
     return _run_optimization_trial(
       trial.number,
+      args.n_trials,
       backend,
       model,
       compute_type,
