@@ -11,11 +11,12 @@ output "ssh_command" {
 output "vm_specs" {
   description = "VM specifications"
   value = {
-    gpu_flavor = var.gpu_flavor
-    disk_gb    = var.disk_size_gb
-    disk_type  = var.disk_type
-    region     = var.region
-    zone       = var.availability_zone
+    cpu       = var.cpu_count
+    ram_gb    = var.ram_gb
+    disk_gb   = var.disk_size_gb
+    disk_type = var.disk_type
+    region    = var.region
+    zone      = var.availability_zone
   }
 }
 

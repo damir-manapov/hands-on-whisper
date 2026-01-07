@@ -39,8 +39,11 @@ runcmd:
   # Install Python dependencies
   - /root/.local/bin/uv sync
 
-  # Download all Whisper models for benchmarking
-  - /root/.local/bin/uv run python src/download_models.py --backend all
+  # Models are downloaded on-demand when first used
+  # To pre-download specific models, SSH in and run:
+  #   uv run python src/download_models.py --backend faster-whisper --models large-v3
+  # Or download all (slow, ~15GB):
+  #   uv run python src/download_models.py --backend all
 
   # Verify NVIDIA driver is working
   - nvidia-smi > /root/nvidia-smi.log 2>&1 || echo "NVIDIA driver not ready yet"

@@ -71,13 +71,20 @@ data "openstack_images_image_v2" "ubuntu" {
   ]
 }
 
-# Get GPU flavor from Selectel's predefined flavors
-# GPU flavors are managed by Selectel and have names like:
-#   - "GPU T4 16GB" (NVIDIA T4)
-#   - "GPU A100 40GB" (NVIDIA A100)
-#   - "GPU A30 24GB" (NVIDIA A30)
-data "openstack_compute_flavor_v2" "gpu" {
-  name = var.gpu_flavor
+# Create a custom flavor for the VM
+# Note: GPU flavors require ordering through Selectel panel or contacting support
+# For GPU, you'll need to use a pool with GPU availability (e.g., ru-7a, ru-7c)
+# and request GPU quota from Selectel support
+resource "openstack_compute_flavor_v2" "whisper" {
+  name      = "whisper-${var.cpu_count}vcpu-${var.ram_gb}gb"
+  vcpus     = var.cpu_count
+  ram       = var.ram_gb * 1024
+  disk      = 0 # Using network boot disk
+  is_public = false
+
+  lifecycle {
+    create_before_destroy = true
+  }
 
   depends_on = [
     selectel_vpc_project_v2.whisper,
@@ -170,10 +177,10 @@ resource "openstack_networking_port_v2" "whisper" {
   ]
 }
 
-# GPU Compute instance
+# Compute instance
 resource "openstack_compute_instance_v2" "whisper" {
   name              = "whisper-${var.environment_name}"
-  flavor_id         = data.openstack_compute_flavor_v2.gpu.id
+  flavor_id         = openstack_compute_flavor_v2.whisper.id
   key_pair          = selectel_vpc_keypair_v2.whisper.name
   availability_zone = var.availability_zone
   user_data         = file("${path.module}/cloud-init.yaml")

@@ -50,18 +50,17 @@ variable "availability_zone" {
   default     = "ru-7b"
 }
 
-# GPU Configuration
-variable "gpu_flavor" {
-  description = "GPU flavor name. Options: 'SL1.4-16384.1xT4', 'SL1.8-32768.1xA30', 'SL1.12-122880.1xA100'"
-  type        = string
-  default     = "SL1.4-16384.1xT4" # T4 with 4 vCPU, 16GB RAM - cheapest option
+# VM Configuration
+variable "cpu_count" {
+  description = "Number of vCPUs"
+  type        = number
+  default     = 8
+}
 
-  # Note: Flavor names may vary. Check available flavors with:
-  #   openstack flavor list --long
-  # Common GPU flavors at Selectel:
-  #   - SL1.4-16384.1xT4     : 4 vCPU, 16GB RAM, 1x NVIDIA T4 (16GB)
-  #   - SL1.8-32768.1xA30    : 8 vCPU, 32GB RAM, 1x NVIDIA A30 (24GB)
-  #   - SL1.12-122880.1xA100 : 12 vCPU, 120GB RAM, 1x NVIDIA A100 (40GB)
+variable "ram_gb" {
+  description = "RAM in GB"
+  type        = number
+  default     = 32
 }
 
 variable "disk_size_gb" {

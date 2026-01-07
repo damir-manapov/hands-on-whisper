@@ -67,7 +67,8 @@ The cloud-init script automatically installs:
 - Python 3.11+ with uv
 - FFmpeg
 - hands-on-whisper repo with all dependencies
-- All Whisper models (faster-whisper, openai, whispercpp)
+
+**Models are downloaded on-demand** when first used (saves ~15GB download on each server creation).
 
 ## Running Benchmarks
 
@@ -76,7 +77,7 @@ After SSH'ing into the VM:
 ```bash
 cd /root/hands-on-whisper
 
-# Quick test
+# Quick test (will download the model on first run)
 uv run python src/transcribe.py transcribe calls/sherbakov_call.wav -l ru --device cuda
 
 # Full optimization (50 trials)
