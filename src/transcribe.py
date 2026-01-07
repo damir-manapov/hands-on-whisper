@@ -302,7 +302,9 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
   print(f"Running {len(combinations)} transcription(s)...")
 
   audio_path = Path(args.audio)
-  json_path = audio_path.with_suffix(".json")
+  # Auto-detect suffix from device: cuda->_gpu, cpu->_cpu
+  suffix = "_gpu" if "cuda" in args.device else "_cpu"
+  json_path = audio_path.with_suffix("").with_suffix(f"{suffix}.json")
 
   if json_path.exists():
     data = json.loads(json_path.read_text(encoding="utf-8"))
@@ -594,8 +596,9 @@ def cmd_optimize(args: argparse.Namespace) -> None:
   reference = ref_path.read_text(encoding="utf-8").strip()
   print(f"Reference: {len(reference.split())} words")
 
-  # Load or create JSON data
-  json_path = audio_path.with_suffix(".json")
+  # Load or create JSON data - auto-detect suffix from device
+  suffix = "_gpu" if args.device == "cuda" else "_cpu"
+  json_path = audio_path.with_suffix("").with_suffix(f"{suffix}.json")
   if json_path.exists():
     data = json.loads(json_path.read_text(encoding="utf-8"))
   else:
