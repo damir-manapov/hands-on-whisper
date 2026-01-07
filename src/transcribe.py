@@ -22,7 +22,7 @@ ALL_MODELS = ["tiny", "base", "small", "medium", "large-v3", "large-v3-turbo"]
 ALL_COMPUTE_TYPES = ["int8", "float16", "float32"]
 
 # Cloud backends (not included in optimization by default)
-CLOUD_BACKENDS = ["yandex"]
+CLOUD_BACKENDS = ["yandex", "openai-api"]
 
 
 def get_gpu_name() -> str | None:
@@ -225,6 +225,44 @@ def transcribe_whispercpp(  # noqa: PLR0913
     temperature=temperature,
   )
   return " ".join(segment.text.strip() for segment in segments)
+
+
+def transcribe_openai_api(
+  audio_path: str,
+  model: str = "whisper-1",
+  language: str | None = None,
+  temperature: float = 0.0,
+  api_key: str | None = None,
+) -> str:
+  """Transcribe using OpenAI Whisper API.
+
+  Requires:
+    - OPENAI_API_KEY environment variable
+  """
+  import os
+
+  import requests
+
+  api_key = api_key or os.environ.get("OPENAI_API_KEY")
+  if not api_key:
+    raise ValueError("OPENAI_API_KEY environment variable required")
+
+  url = "https://api.openai.com/v1/audio/transcriptions"
+  headers = {"Authorization": f"Bearer {api_key}"}
+
+  with open(audio_path, "rb") as f:
+    files = {"file": (Path(audio_path).name, f, "audio/mpeg")}
+    data = {"model": model, "temperature": str(temperature)}
+    if language:
+      # OpenAI expects ISO-639-1 codes (e.g., "ru" not "ru-RU")
+      data["language"] = language.split("-")[0] if "-" in language else language
+
+    response = requests.post(url, headers=headers, files=files, data=data, timeout=300)
+
+  if not response.ok:
+    raise ValueError(f"OpenAI API error {response.status_code}: {response.text}")
+
+  return response.json().get("text", "")
 
 
 def transcribe_yandex(
@@ -705,6 +743,16 @@ def _run_transcription(  # noqa: PLR0913
       api_key=os.environ.get("YANDEX_API_KEY"),
       folder_id=os.environ.get("YANDEX_FOLDER_ID"),
     )
+  elif backend == "openai-api":
+    # Map local model names to OpenAI API models
+    # Available: whisper-1, gpt-4o-transcribe, gpt-4o-mini-transcribe
+    openai_model_map = {
+      "whisper-1": "whisper-1",
+      "gpt-4o": "gpt-4o-transcribe",
+      "gpt-4o-mini": "gpt-4o-mini-transcribe",
+    }
+    api_model = openai_model_map.get(model, "whisper-1")
+    result = transcribe_openai_api(audio, api_model, language, temperature)
   else:
     msg = f"Unknown backend: {backend}"
     raise ValueError(msg)
@@ -1032,7 +1080,7 @@ Examples:
     "--backend",
     "-b",
     nargs="+",
-    choices=["faster-whisper", "openai", "whispercpp", "yandex"],
+    choices=["faster-whisper", "openai", "whispercpp", "yandex", "openai-api"],
     default=["faster-whisper"],
     help="Transcription backend(s) (default: faster-whisper)",
   )
@@ -1142,7 +1190,7 @@ Examples:
     "-b",
     nargs="+",
     default=None,
-    choices=["faster-whisper", "openai", "whispercpp", "yandex"],
+    choices=["faster-whisper", "openai", "whispercpp", "yandex", "openai-api"],
     help="Backends to search (default: all local backends)",
   )
   optim_parser.add_argument(

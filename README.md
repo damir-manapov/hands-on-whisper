@@ -1,6 +1,6 @@
 # hands-on-whisper
 
-Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), [whisper.cpp](https://github.com/ggml-org/whisper.cpp), and [Yandex SpeechKit](https://cloud.yandex.com/services/speechkit).
+Exploring speech recognition with [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [OpenAI Whisper](https://github.com/openai/whisper), [whisper.cpp](https://github.com/ggml-org/whisper.cpp), [OpenAI API](https://platform.openai.com/docs/guides/speech-to-text), and [Yandex SpeechKit](https://cloud.yandex.com/services/speechkit).
 
 ## Prerequisites
 
@@ -73,6 +73,26 @@ Quantization notes:
 - **f16**: float16 (default), best quality
 
 ### Cloud backends
+
+#### OpenAI Whisper API
+
+For comparing with OpenAI's cloud-hosted Whisper API:
+
+```bash
+# Set credentials
+export OPENAI_API_KEY="sk-..."
+
+# Transcribe with whisper-1 (Whisper V2)
+uv run python src/transcribe.py transcribe audio.wav --backend openai-api -l ru
+
+# Use GPT-4o transcription (better quality)
+uv run python src/transcribe.py transcribe audio.wav --backend openai-api -m gpt-4o -l ru
+
+# Adjust temperature (0-1, higher = more random)
+uv run python src/transcribe.py transcribe audio.wav --backend openai-api -m gpt-4o --temperature 0.2
+
+# Available models: whisper-1, gpt-4o, gpt-4o-mini
+```
 
 #### Yandex SpeechKit
 
