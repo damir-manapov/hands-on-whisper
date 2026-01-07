@@ -278,11 +278,24 @@ ffmpeg -i input.mp3 -af "pan=mono|c0=0.5*c0+0.5*c1,volume=2" -ar 16000 output.wa
 
 ## GPU Benchmarking
 
-Run benchmarks on cloud GPU instances using Terraform:
+Run benchmarks on cloud GPU instances using Terraform (Selectel):
+
+### Available GPU flavors (ru-7 region)
+
+| GPU | vCPU | RAM | Flavor ID | Price |
+|-----|------|-----|-----------|-------|
+| Tesla T4 (16GB) | 4 | 32GB | 3031 | ~52 ₽/hr |
+| Tesla T4 (16GB) | 8 | 32GB | 3033 | ~56 ₽/hr |
+| A100 (40GB) | 6 | 87GB | 3041 | ~218 ₽/hr |
+
+A100 is ~4x faster than T4 for Whisper inference.
+
+### Setup and run
 
 ```bash
 cd terraform/selectel
 cp terraform.tfvars.example terraform.tfvars
+# Edit terraform.tfvars - set gpu_flavor_id (3031 for T4, 3041 for A100)
 # Set credentials (see terraform/selectel/README.md)
 
 terraform init
