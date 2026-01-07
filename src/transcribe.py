@@ -304,7 +304,7 @@ def cmd_transcribe(args: argparse.Namespace) -> None:
   audio_path = Path(args.audio)
   # Auto-detect suffix from device: cuda->_gpu, cpu->_cpu
   suffix = "_gpu" if "cuda" in args.device else "_cpu"
-  json_path = audio_path.with_suffix("").with_suffix(f"{suffix}.json")
+  json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
 
   if json_path.exists():
     data = json.loads(json_path.read_text(encoding="utf-8"))
@@ -598,7 +598,7 @@ def cmd_optimize(args: argparse.Namespace) -> None:
 
   # Load or create JSON data - auto-detect suffix from device
   suffix = "_gpu" if args.device == "cuda" else "_cpu"
-  json_path = audio_path.with_suffix("").with_suffix(f"{suffix}.json")
+  json_path = audio_path.parent / f"{audio_path.stem}{suffix}.json"
   if json_path.exists():
     data = json.loads(json_path.read_text(encoding="utf-8"))
   else:
